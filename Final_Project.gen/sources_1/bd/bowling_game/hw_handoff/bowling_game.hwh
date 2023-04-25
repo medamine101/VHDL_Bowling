@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 25 17:40:11 2023" VIVADOVERSION="2021.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="bowling_game" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_div_25Mhz_0" PORT="clk"/>
+        <CONNECTION INSTANCE="pixel_pusher_0" PORT="clk"/>
+        <CONNECTION INSTANCE="framebuffer_0" PORT="clk1"/>
+        <CONNECTION INSTANCE="vga_ctrl_0" PORT="clk"/>
+        <CONNECTION INSTANCE="clock_div_60hz_0" PORT="clk"/>
+        <CONNECTION INSTANCE="controller_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="vga_r" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_R">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pixel_pusher_0" PORT="R"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="vga_b" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_B">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pixel_pusher_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="5" NAME="vga_g" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_G">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pixel_pusher_0" PORT="G"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="vga_hs" SIGIS="undef" SIGNAME="vga_ctrl_0_hs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_ctrl_0" PORT="hs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="vga_vs" SIGIS="undef" SIGNAME="vga_ctrl_0_vs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_ctrl_0" PORT="vs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn0" SIGIS="undef" SIGNAME="External_Ports_btn0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controller_0" PORT="right_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn3" SIGIS="undef" SIGNAME="External_Ports_btn3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controller_0" PORT="left_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn1" SIGIS="undef" SIGNAME="External_Ports_btn1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controller_0" PORT="down_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn2" SIGIS="undef" SIGNAME="External_Ports_btn2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controller_0" PORT="up_in"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/clock_div_25Mhz_0" HWVERSION="1.0" INSTANCE="clock_div_25Mhz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_div_25Mhz" VLNV="xilinx.com:module_ref:clock_div_25Mhz:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bowling_game_clock_div_25Mhz_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="div" SIGIS="undef" SIGNAME="clock_div_25Mhz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="en"/>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="en1"/>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="en2"/>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="en"/>
+            <CONNECTION INSTANCE="controller_0" PORT="en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_div_60hz_0" HWVERSION="1.0" INSTANCE="clock_div_60hz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_div_60hz" VLNV="xilinx.com:module_ref:clock_div_60hz:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bowling_game_clock_div_60hz_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="div" SIGIS="undef" SIGNAME="clock_div_60hz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="game_clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/controller_0" HWVERSION="1.0" INSTANCE="controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="controller" VLNV="xilinx.com:module_ref:controller:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bowling_game_controller_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="game_clk" SIGIS="clk" SIGNAME="clock_div_60hz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_60hz_0" PORT="div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="clock_div_25Mhz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_25Mhz_0" PORT="div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="right_in" SIGIS="undef" SIGNAME="External_Ports_btn0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="left_in" SIGIS="undef" SIGNAME="External_Ports_btn3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="up_in" SIGIS="undef" SIGNAME="External_Ports_btn2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="down_in" SIGIS="undef" SIGNAME="External_Ports_btn1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="fb_addr" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_fb_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="addr1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="fb_pixel" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_fb_pixel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="din1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="blank_time" SIGIS="undef" SIGNAME="vga_ctrl_0_blank_time">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="blank_time"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fb_wr_en" SIGIS="undef" SIGNAME="controller_0_fb_wr_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="wr_en1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="controller_0_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/framebuffer_0" HWVERSION="1.0" INSTANCE="framebuffer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="framebuffer" VLNV="xilinx.com:module_ref:framebuffer:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bowling_game_framebuffer_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk1" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en1" SIGIS="undef" SIGNAME="clock_div_25Mhz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_25Mhz_0" PORT="div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en2" SIGIS="undef" SIGNAME="clock_div_25Mhz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_25Mhz_0" PORT="div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="addr1" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_fb_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="fb_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="addr2" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wr_en1" SIGIS="undef" SIGNAME="controller_0_fb_wr_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="fb_wr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="din1" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_fb_pixel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="fb_pixel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="dout1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="dout2" RIGHT="0" SIGIS="undef" SIGNAME="framebuffer_0_dout2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="pixel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="controller_0_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/pixel_pusher_0" HWVERSION="1.0" INSTANCE="pixel_pusher_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pixel_pusher" VLNV="xilinx.com:module_ref:pixel_pusher:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bowling_game_pixel_pusher_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="clock_div_25Mhz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_25Mhz_0" PORT="div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vs" SIGIS="undef" SIGNAME="vga_ctrl_0_vs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="vs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="pixel" RIGHT="0" SIGIS="undef" SIGNAME="framebuffer_0_dout2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="dout2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="hcount" RIGHT="0" SIGIS="undef" SIGNAME="vga_ctrl_0_hcount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="hcount"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="vcount" RIGHT="0" SIGIS="undef" SIGNAME="vga_ctrl_0_vcount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="vcount"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid" SIGIS="undef" SIGNAME="vga_ctrl_0_vid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="vid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_r"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="G" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_G">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="pixel_pusher_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="framebuffer_0" PORT="addr2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="blank_time" SIGIS="undef" SIGNAME="vga_ctrl_0_blank_time">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_ctrl_0" PORT="blank_time"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/vga_ctrl_0" HWVERSION="1.0" INSTANCE="vga_ctrl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vga_ctrl" VLNV="xilinx.com:module_ref:vga_ctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="bowling_game_vga_ctrl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="clock_div_25Mhz_0_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_25Mhz_0" PORT="div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="hcount" RIGHT="0" SIGIS="undef" SIGNAME="vga_ctrl_0_hcount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="hcount"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="vcount" RIGHT="0" SIGIS="undef" SIGNAME="vga_ctrl_0_vcount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="vcount"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid" SIGIS="undef" SIGNAME="vga_ctrl_0_vid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="vid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="hs" SIGIS="undef" SIGNAME="vga_ctrl_0_hs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_hs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vs" SIGIS="undef" SIGNAME="vga_ctrl_0_vs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vga_vs"/>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="vs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="blank_time" SIGIS="undef" SIGNAME="vga_ctrl_0_blank_time">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pixel_pusher_0" PORT="blank_time"/>
+            <CONNECTION INSTANCE="controller_0" PORT="blank_time"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Apr 25 16:21:12 2023
+| Date         : Tue Apr 25 17:41:22 2023
 | Host         : ece55 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_utilization -file bowling_game_wrapper_utilization_synth.rpt -pb bowling_game_wrapper_utilization_synth.pb
 | Design       : bowling_game_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   19 |     0 |          0 |       100 | 19.00 |
+| Bonded IOB                  |   23 |     0 |          0 |       100 | 23.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         2 |  0.00 |
@@ -147,7 +147,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | OBUF     |   18 |                  IO |
-| IBUF     |    1 |                  IO |
+| IBUF     |    5 |                  IO |
 +----------+------+---------------------+
 
 
@@ -161,6 +161,7 @@ Table of Contents
 | bowling_game_pixel_pusher_0_0    |    1 |
 | bowling_game_framebuffer_0_0     |    1 |
 | bowling_game_controller_0_0      |    1 |
+| bowling_game_clock_div_60hz_0_0  |    1 |
 | bowling_game_clock_div_25Mhz_0_0 |    1 |
 +----------------------------------+------+
 

@@ -18,6 +18,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_gam
 # IP: bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_2/bowling_game_vga_ctrl_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_vga_ctrl_0_0 || ORIG_REF_NAME==bowling_game_vga_ctrl_0_0} -quiet] -quiet
 
+# IP: bd/bowling_game/ip/bowling_game_clock_div_60hz_0_0/bowling_game_clock_div_60hz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_clock_div_60hz_0_0 || ORIG_REF_NAME==bowling_game_clock_div_60hz_0_0} -quiet] -quiet
+
 # IP: bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_controller_0_0 || ORIG_REF_NAME==bowling_game_controller_0_0} -quiet] -quiet
 

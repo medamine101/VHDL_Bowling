@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Apr 25 16:21:45 2023
+| Date         : Tue Apr 25 17:41:54 2023
 | Host         : ece55 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_utilization -file bowling_game_wrapper_utilization_placed.rpt -pb bowling_game_wrapper_utilization_placed.pb
 | Design       : bowling_game_wrapper
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs              |  142 |     0 |          0 |     17600 |  0.81 |
-|   LUT as Logic          |  142 |     0 |          0 |     17600 |  0.81 |
+| Slice LUTs              |  297 |     0 |          0 |     17600 |  1.69 |
+|   LUT as Logic          |  297 |     0 |          0 |     17600 |  1.69 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
-| Slice Registers         |  126 |     0 |          0 |     35200 |  0.36 |
-|   Register as Flip Flop |  126 |     0 |          0 |     35200 |  0.36 |
+| Slice Registers         |  224 |     0 |          0 |     35200 |  0.64 |
+|   Register as Flip Flop |  224 |     0 |          0 |     35200 |  0.64 |
 |   Register as Latch     |    0 |     0 |          0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 4     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 122   |          Yes |       Reset |            - |
+| 220   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -67,22 +67,22 @@ Table of Contents
 +--------------------------------------------+------+-------+------------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+------+-------+------------+-----------+-------+
-| Slice                                      |   73 |     0 |          0 |      4400 |  1.66 |
-|   SLICEL                                   |   47 |     0 |            |           |       |
-|   SLICEM                                   |   26 |     0 |            |           |       |
-| LUT as Logic                               |  142 |     0 |          0 |     17600 |  0.81 |
+| Slice                                      |  140 |     0 |          0 |      4400 |  3.18 |
+|   SLICEL                                   |   97 |     0 |            |           |       |
+|   SLICEM                                   |   43 |     0 |            |           |       |
+| LUT as Logic                               |  297 |     0 |          0 |     17600 |  1.69 |
 |   using O5 output only                     |    0 |       |            |           |       |
-|   using O6 output only                     |   91 |       |            |           |       |
-|   using O5 and O6                          |   51 |       |            |           |       |
+|   using O6 output only                     |  189 |       |            |           |       |
+|   using O5 and O6                          |  108 |       |            |           |       |
 | LUT as Memory                              |    0 |     0 |          0 |      6000 |  0.00 |
 |   LUT as Distributed RAM                   |    0 |     0 |            |           |       |
 |   LUT as Shift Register                    |    0 |     0 |            |           |       |
-| Slice Registers                            |  126 |     0 |          0 |     35200 |  0.36 |
-|   Register driven from within the Slice    |  116 |       |            |           |       |
-|   Register driven from outside the Slice   |   10 |       |            |           |       |
-|     LUT in front of the register is unused |    2 |       |            |           |       |
-|     LUT in front of the register is used   |    8 |       |            |           |       |
-| Unique Control Sets                        |   10 |       |          0 |      4400 |  0.23 |
+| Slice Registers                            |  224 |     0 |          0 |     35200 |  0.64 |
+|   Register driven from within the Slice    |  211 |       |            |           |       |
+|   Register driven from outside the Slice   |   13 |       |            |           |       |
+|     LUT in front of the register is unused |    4 |       |            |           |       |
+|     LUT in front of the register is used   |    9 |       |            |           |       |
+| Unique Control Sets                        |   14 |       |          0 |      4400 |  0.32 |
 +--------------------------------------------+------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
 
@@ -117,9 +117,9 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   19 |    19 |          0 |       100 | 19.00 |
-|   IOB Master Pads           |    9 |       |            |           |       |
-|   IOB Slave Pads            |    9 |       |            |           |       |
+| Bonded IOB                  |   23 |    23 |          0 |       100 | 23.00 |
+|   IOB Master Pads           |   11 |       |            |           |       |
+|   IOB Slave Pads            |   11 |       |            |           |       |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         2 |  0.00 |
@@ -142,7 +142,7 @@ Table of Contents
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |          0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |          0 |         8 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |         2 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |         2 |  0.00 |
@@ -175,19 +175,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  122 |        Flop & Latch |
+| FDRE     |  220 |        Flop & Latch |
+| LUT2     |  198 |                 LUT |
+| CARRY4   |   83 |          CarryLogic |
+| LUT3     |   55 |                 LUT |
+| LUT4     |   53 |                 LUT |
 | LUT6     |   44 |                 LUT |
-| LUT3     |   43 |                 LUT |
-| LUT2     |   41 |                 LUT |
-| LUT5     |   40 |                 LUT |
+| LUT5     |   38 |                 LUT |
 | RAMB36E1 |   24 |        Block Memory |
-| CARRY4   |   23 |          CarryLogic |
 | OBUF     |   18 |                  IO |
-| LUT4     |   15 |                 LUT |
-| LUT1     |   10 |                 LUT |
+| LUT1     |   17 |                 LUT |
+| IBUF     |    5 |                  IO |
 | FDCE     |    4 |        Flop & Latch |
-| IBUF     |    1 |                  IO |
-| BUFG     |    1 |               Clock |
+| BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 
 
@@ -209,6 +209,7 @@ Table of Contents
 | bowling_game_pixel_pusher_0_0    |    1 |
 | bowling_game_framebuffer_0_0     |    1 |
 | bowling_game_controller_0_0      |    1 |
+| bowling_game_clock_div_60hz_0_0  |    1 |
 | bowling_game_clock_div_25Mhz_0_0 |    1 |
 +----------------------------------+------+
 

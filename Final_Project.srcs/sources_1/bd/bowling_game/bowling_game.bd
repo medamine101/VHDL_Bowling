@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x3A6BB505AF74435D",
+      "boundary_crc": "0xCED14D9AD19959E4",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../Final_Project.gen/sources_1/bd/bowling_game",
       "name": "bowling_game",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1"
+      "tool_version": "2021.1",
+      "validated": "true"
     },
     "design_tree": {
       "clock_div_25Mhz_0": "",
@@ -41,6 +42,18 @@
       },
       "vga_vs": {
         "direction": "O"
+      },
+      "btn0": {
+        "direction": "I"
+      },
+      "btn3": {
+        "direction": "I"
+      },
+      "btn1": {
+        "direction": "I"
+      },
+      "btn2": {
+        "direction": "I"
       }
     },
     "components": {
@@ -266,6 +279,18 @@
           "en": {
             "direction": "I"
           },
+          "right_in": {
+            "direction": "I"
+          },
+          "left_in": {
+            "direction": "I"
+          },
+          "up_in": {
+            "direction": "I"
+          },
+          "down_in": {
+            "direction": "I"
+          },
           "fb_addr": {
             "direction": "O",
             "left": "17",
@@ -290,6 +315,30 @@
       }
     },
     "nets": {
+      "btn0_1": {
+        "ports": [
+          "btn0",
+          "controller_0/right_in"
+        ]
+      },
+      "btn1_1": {
+        "ports": [
+          "btn1",
+          "controller_0/down_in"
+        ]
+      },
+      "btn2_1": {
+        "ports": [
+          "btn2",
+          "controller_0/up_in"
+        ]
+      },
+      "btn3_1": {
+        "ports": [
+          "btn3",
+          "controller_0/left_in"
+        ]
+      },
       "clk_1": {
         "ports": [
           "clk",

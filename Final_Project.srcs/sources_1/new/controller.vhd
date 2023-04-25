@@ -38,6 +38,8 @@ entity controller is
         en : in std_logic;
         right_in : in std_logic;
         left_in : in std_logic;
+        up_in : in std_logic;
+        down_in : in std_logic;
         fb_addr : out STD_LOGIC_VECTOR (17 downto 0);
         fb_pixel : out STD_LOGIC_VECTOR (2 downto 0);
         blank_time : in std_logic;
@@ -192,9 +194,15 @@ begin
                     
                     elsif left_in='1' then
                     
-                    end if;
-
+                        bowling_ball_location_x <= bowling_ball_location_x - 1;
                     
+                    end if;
+                    
+                    if up_in='1' then
+                        bowling_ball_location_y <= bowling_ball_location_y + 1;
+                    elsif down_in='1' then
+                        bowling_ball_location_y <= bowling_ball_location_y - 1;
+                    end if;
                     
                 
                     game_time <= run_logic;

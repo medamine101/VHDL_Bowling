@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="bowling_game_vga_ctrl_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682449557">
-  <File Type="VDS-TIMING-PB" Name="bowling_game_vga_ctrl_0_0_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="bowling_game_vga_ctrl_0_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="bowling_game_vga_ctrl_0_0.dcp"/>
   <File Type="REPORTS-TCL" Name="bowling_game_vga_ctrl_0_0_reports.tcl"/>
   <File Type="PA-TCL" Name="bowling_game_vga_ctrl_0_0.tcl"/>
+  <File Type="RDS-DCP" Name="bowling_game_vga_ctrl_0_0.dcp"/>
   <File Type="RDS-RDS" Name="bowling_game_vga_ctrl_0_0.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="bowling_game_vga_ctrl_0_0_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="bowling_game_vga_ctrl_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="bowling_game_vga_ctrl_0_0_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bowling_game_vga_ctrl_0_0">
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

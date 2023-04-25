@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Apr 25 16:21:45 2023
+| Date         : Tue Apr 25 17:41:54 2023
 | Host         : ece55 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_control_sets -verbose -file bowling_game_wrapper_control_sets_placed.rpt
 | Design       : bowling_game_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    10 |
-|    Minimum number of control sets                        |    10 |
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    58 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    10 |
-| >= 0 to < 4        |     1 |
+| Total control sets |    14 |
+| >= 0 to < 4        |     2 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     3 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     4 |
+| >= 16              |     7 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,31 +58,35 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              19 |           10 |
+| No           | No                    | No                     |              21 |           13 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              26 |            7 |
-| Yes          | No                    | No                     |              44 |           18 |
+| No           | Yes                   | No                     |              58 |           15 |
+| Yes          | No                    | No                     |              90 |           26 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              37 |           10 |
+| Yes          | Yes                   | No                     |              55 |           18 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+-------------------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |                        Enable Signal                        |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+-------------------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | bowling_game_i/clock_div_25Mhz_0/U0/div                     |                                               |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | bowling_game_i/controller_0/U0/color_cycle_clock[6]_i_1_n_0 |                                               |                2 |              7 |         3.50 |
-|  clk_IBUF_BUFG | bowling_game_i/controller_0/U0/pixel_x                      |                                               |                4 |              9 |         2.25 |
-|  clk_IBUF_BUFG | bowling_game_i/clock_div_25Mhz_0/U0/div                     | bowling_game_i/vga_ctrl_0/U0/horizontal_count |                2 |              9 |         4.50 |
-|  clk_IBUF_BUFG | bowling_game_i/controller_0/U0/pixel_y                      |                                               |                5 |              9 |         1.80 |
-|  clk_IBUF_BUFG | bowling_game_i/vga_ctrl_0/U0/horizontal_count               | bowling_game_i/vga_ctrl_0/U0/vertical_count   |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG | bowling_game_i/pixel_pusher_0/U0/addr_counter[17]_i_2_n_0   | bowling_game_i/pixel_pusher_0/U0/clear        |                5 |             18 |         3.60 |
-|  clk_IBUF_BUFG | bowling_game_i/controller_0/U0/fb_addr_0                    |                                               |                6 |             18 |         3.00 |
-|  clk_IBUF_BUFG |                                                             |                                               |               10 |             19 |         1.90 |
-|  clk_IBUF_BUFG |                                                             | bowling_game_i/clock_div_25Mhz_0/U0/clear     |                7 |             26 |         3.71 |
-+----------------+-------------------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
++----------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                 |                           Enable Signal                           |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
+|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG |                                                                   |                                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/clock_div_25Mhz_0/U0/div                           |                                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/color_cycle_clock[6]_i_1_n_0       |                                                   |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_x                            | bowling_game_i/controller_0/U0/pixel_x[8]_i_1_n_0 |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_y[8]_i_2_n_0                 | bowling_game_i/controller_0/U0/pixel_y[8]_i_1_n_0 |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/clock_div_25Mhz_0/U0/div                           | bowling_game_i/vga_ctrl_0/U0/horizontal_count     |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/vga_ctrl_0/U0/horizontal_count                     | bowling_game_i/vga_ctrl_0/U0/vertical_count       |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/fb_addr_0                          |                                                   |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/pixel_pusher_0/U0/addr_counter[17]_i_2_n_0         | bowling_game_i/pixel_pusher_0/U0/clear            |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG                               |                                                                   |                                                   |               12 |             20 |         1.67 |
+|  clk_IBUF_BUFG                               |                                                                   | bowling_game_i/clock_div_25Mhz_0/U0/clear         |                7 |             26 |         3.71 |
+|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG | bowling_game_i/controller_0/U0/bowling_ball_location_y[0]_i_1_n_0 |                                                   |                8 |             32 |         4.00 |
+|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG | bowling_game_i/controller_0/U0/bowling_ball_location_x[0]_i_1_n_0 |                                                   |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                               |                                                                   | bowling_game_i/clock_div_60hz_0/U0/clear          |                8 |             32 |         4.00 |
++----------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------+------------------+----------------+--------------+
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682454011">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682458820">
   <File Type="VDS-TIMING-PB" Name="bowling_game_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="bowling_game_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="bowling_game_wrapper.dcp"/>
@@ -30,6 +30,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_div_60hz.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -91,6 +97,7 @@
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_pixel_pusher_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_vga_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_60hz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_framebuffer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_25Mhz_0_0"/>
 </GenRun>
