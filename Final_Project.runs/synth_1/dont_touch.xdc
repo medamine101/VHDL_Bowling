@@ -6,19 +6,19 @@
 # Block Designs: bd/bowling_game/bowling_game.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game || ORIG_REF_NAME==bowling_game} -quiet] -quiet
 
-# IP: bd/bowling_game/ip/bowling_game_clock_div_25Mhz_0_0_1/bowling_game_clock_div_25Mhz_0_0.xci
+# IP: bd/bowling_game/ip/bowling_game_clock_div_25Mhz_0_0_2/bowling_game_clock_div_25Mhz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_clock_div_25Mhz_0_0 || ORIG_REF_NAME==bowling_game_clock_div_25Mhz_0_0} -quiet] -quiet
 
-# IP: bd/bowling_game/ip/bowling_game_pixel_pusher_0_0_1/bowling_game_pixel_pusher_0_0.xci
+# IP: bd/bowling_game/ip/bowling_game_pixel_pusher_0_0_2/bowling_game_pixel_pusher_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_pixel_pusher_0_0 || ORIG_REF_NAME==bowling_game_pixel_pusher_0_0} -quiet] -quiet
 
-# IP: bd/bowling_game/ip/bowling_game_framebuffer_0_0_1/bowling_game_framebuffer_0_0.xci
+# IP: bd/bowling_game/ip/bowling_game_framebuffer_0_0_2/bowling_game_framebuffer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_framebuffer_0_0 || ORIG_REF_NAME==bowling_game_framebuffer_0_0} -quiet] -quiet
 
-# IP: bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_1/bowling_game_vga_ctrl_0_0.xci
+# IP: bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_2/bowling_game_vga_ctrl_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_vga_ctrl_0_0 || ORIG_REF_NAME==bowling_game_vga_ctrl_0_0} -quiet] -quiet
 
-# IP: bd/bowling_game/ip/bowling_game_controller_0_0/bowling_game_controller_0_0.xci
+# IP: bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bowling_game_controller_0_0 || ORIG_REF_NAME==bowling_game_controller_0_0} -quiet] -quiet
 
-# XDC: c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/bowling_game_ooc.xdc
+# XDC: /home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/bowling_game_ooc.xdc

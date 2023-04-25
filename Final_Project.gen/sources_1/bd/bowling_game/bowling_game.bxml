@@ -2,53 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="bowling_game" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1682379131"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1682379131"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1682379131"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1682379131"/>
-    <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="synth\bowling_game.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-      </File>
-      <File Name="sim\bowling_game.vhd" Type="VHDL">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="bowling_game_ooc.xdc" Type="XDC">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="OUT_OF_CONTEXT"/>
-      </File>
-      <File Name="hw_handoff\bowling_game.hwh" Type="HwHandoff">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="bowling_game.bda">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="hw_handoff\bowling_game_bd.tcl">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="synth\bowling_game.hwdef">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="sim\bowling_game.protoinst">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-    </FileCollection>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1682455820"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1682455820"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1682455820"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1682455820"/>
+    <FileCollection Name="SOURCES" Type="SOURCES"/>
   </CompositeFile>
 </Root>

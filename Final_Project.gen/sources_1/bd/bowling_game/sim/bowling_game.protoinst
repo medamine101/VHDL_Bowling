@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"bowling_game": {
-			"proto_instances": {
-			}
-		}
-	}
-}

@@ -1,1 +1,1 @@
--wto "9bec0c295b104bc78435ec695854aefc" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "bowling_tb_behav" "xil_defaultlib.bowling_tb" -log "elaborate.log" 
+-wto "9bec0c295b104bc78435ec695854aefc" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "bowling_tb_behav" "xil_defaultlib.bowling_tb" -log "elaborate.log" 

@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Mon Apr 24 19:36:34 2023
-| Host             : medamine-MacBookProWin10 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date             : Tue Apr 25 16:21:56 2023
+| Host             : ece55 running 64-bit Ubuntu 20.04.2 LTS
 | Command          : report_power -file bowling_game_wrapper_power_routed.rpt -pb bowling_game_wrapper_power_summary_routed.pb -rpx bowling_game_wrapper_power_routed.rpx
 | Design           : bowling_game_wrapper
 | Device           : xc7z010clg400-1
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      331 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      121 |     17600 |            0.69 |
+| Slice Logic    |    <0.001 |      355 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      142 |     17600 |            0.81 |
 |   CARRY4       |    <0.001 |       23 |      4400 |            0.52 |
 |   Register     |    <0.001 |      126 |     35200 |            0.36 |
 |   Others       |     0.000 |       13 |       --- |             --- |
-| Signals        |     0.001 |      297 |       --- |             --- |
+| Signals        |     0.001 |      318 |       --- |             --- |
 | Block RAM      |     0.020 |       24 |        60 |           40.00 |
 | I/O            |    <0.001 |       19 |       100 |           19.00 |
 | Static Power   |     0.094 |          |           |                 |

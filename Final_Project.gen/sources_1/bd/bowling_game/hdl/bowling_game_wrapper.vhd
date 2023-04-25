@@ -1,8 +1,8 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
---Date        : Mon Apr 24 19:27:58 2023
---Host        : medamine-MacBookProWin10 running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+--Date        : Tue Apr 25 16:20:03 2023
+--Host        : ece55 running 64-bit Ubuntu 20.04.2 LTS
 --Command     : generate_target bowling_game_wrapper.bd
 --Design      : bowling_game_wrapper
 --Purpose     : IP block netlist

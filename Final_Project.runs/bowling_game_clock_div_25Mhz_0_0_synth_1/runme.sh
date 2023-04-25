@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/Downloads/Final_Project/Final_Project.runs/bowling_game_clock_div_25Mhz_0_0_synth_1'
+HD_PWD='/home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_clock_div_25Mhz_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

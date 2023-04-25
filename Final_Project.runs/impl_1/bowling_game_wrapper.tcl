@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/moham/Documents/Final_Project/Final_Project.runs/impl_1/bowling_game_wrapper.tcl"
+  variable script "/home/user/Documents/VHDL_Bowling/Final_Project.runs/impl_1/bowling_game_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,9 +123,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 2
+  set_param xicom.use_bs_reader 1
   open_checkpoint bowling_game_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/Users/moham/Documents/Final_Project/Final_Project.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/user/Documents/VHDL_Bowling/Final_Project.cache/wt [current_project]
 set_property TOP bowling_game_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Mon Apr 24 19:36:35 2023
-| Host         : medamine-MacBookProWin10 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Apr 25 16:21:57 2023
+| Host         : ece55 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_timing_summary -max_paths 10 -file bowling_game_wrapper_timing_summary_routed.rpt -pb bowling_game_wrapper_timing_summary_routed.pb -rpx bowling_game_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : bowling_game_wrapper
 | Device       : 7z010-clg400
@@ -140,7 +140,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      1.784        0.000                      0                 1137        0.093        0.000                      0                 1137        3.500        0.000                       0                   175  
+      1.493        0.000                      0                 1134        0.036        0.000                      0                 1134        3.500        0.000                       0                   175  
 
 
 All user specified timing constraints are met.
@@ -163,7 +163,7 @@ sys_clk_pin  {0.000 4.000}        8.000           125.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         1.784        0.000                      0                 1137        0.093        0.000                      0                 1137        3.500        0.000                       0                   175  
+sys_clk_pin         1.493        0.000                      0                 1134        0.036        0.000                      0                 1134        3.500        0.000                       0                   175  
 
 
 ------------------------------------------------------------------------------------------------
@@ -194,15 +194,15 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        1.784ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.093ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        1.493ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.036ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             1.784ns  (required time - arrival time)
+Slack (MET) :             1.493ns  (required time - arrival time)
   Source:                 bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CLKBWRCLK
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Destination:            bowling_game_i/pixel_pusher_0/U0/B_reg[4]/D
@@ -210,11 +210,11 @@ Slack (MET) :             1.784ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        6.054ns  (logic 3.545ns (58.556%)  route 2.509ns (41.444%))
+  Data Path Delay:        6.298ns  (logic 3.545ns (56.286%)  route 2.753ns (43.714%))
   Logic Levels:           3  (LUT3=1 LUT6=1 RAMB36E1=1)
-  Clock Path Skew:        -0.207ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.895ns = ( 12.895 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.379ns
+  Clock Path Skew:        -0.202ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.896ns = ( 12.896 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.375ns
     Clock Pessimism Removal (CPR):    0.277ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -231,20 +231,20 @@ Slack (MET) :             1.784ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.710     5.379    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X0Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CLKBWRCLK
+                         net (fo=174, routed)         1.706     5.375    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y12         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB36_X0Y10         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
-                                                      2.872     8.251 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CASCADEOUTB
-                         net (fo=1, routed)           0.065     8.316    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0_n_1
-    RAMB36_X0Y11         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
-                                                      0.425     8.741 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/DOBDO[0]
-                         net (fo=1, routed)           1.877    10.618    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0_n_67
-    SLICE_X30Y47         LUT6 (Prop_lut6_I3_O)        0.124    10.742 r  bowling_game_i/framebuffer_0/U0/dout2[0]_INST_0/O
-                         net (fo=1, routed)           0.567    11.309    bowling_game_i/pixel_pusher_0/U0/pixel[0]
-    SLICE_X30Y47         LUT3 (Prop_lut3_I2_O)        0.124    11.433 r  bowling_game_i/pixel_pusher_0/U0/B[4]_i_1/O
-                         net (fo=1, routed)           0.000    11.433    bowling_game_i/pixel_pusher_0/U0/B[4]_i_1_n_0
-    SLICE_X30Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/B_reg[4]/D
+    RAMB36_X0Y12         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.872     8.247 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CASCADEOUTB
+                         net (fo=1, routed)           0.065     8.312    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0_n_1
+    RAMB36_X0Y13         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.425     8.737 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/DOBDO[0]
+                         net (fo=1, routed)           1.759    10.497    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0_n_67
+    SLICE_X26Y47         LUT6 (Prop_lut6_I3_O)        0.124    10.621 r  bowling_game_i/framebuffer_0/U0/dout2[0]_INST_0/O
+                         net (fo=1, routed)           0.928    11.549    bowling_game_i/pixel_pusher_0/U0/pixel[0]
+    SLICE_X33Y47         LUT3 (Prop_lut3_I2_O)        0.124    11.673 r  bowling_game_i/pixel_pusher_0/U0/B[4]_i_1/O
+                         net (fo=1, routed)           0.000    11.673    bowling_game_i/pixel_pusher_0/U0/B[4]_i_1_n_0
+    SLICE_X33Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/B_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -254,29 +254,85 @@ Slack (MET) :             1.784ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.503    12.895    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X30Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/B_reg[4]/C
-                         clock pessimism              0.277    13.172    
-                         clock uncertainty           -0.035    13.136    
-    SLICE_X30Y47         FDRE (Setup_fdre_C_D)        0.081    13.217    bowling_game_i/pixel_pusher_0/U0/B_reg[4]
+                         net (fo=174, routed)         1.504    12.896    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X33Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/B_reg[4]/C
+                         clock pessimism              0.277    13.173    
+                         clock uncertainty           -0.035    13.137    
+    SLICE_X33Y47         FDRE (Setup_fdre_C_D)        0.029    13.166    bowling_game_i/pixel_pusher_0/U0/B_reg[4]
   -------------------------------------------------------------------
-                         required time                         13.217    
-                         arrival time                         -11.433    
+                         required time                         13.166    
+                         arrival time                         -11.673    
   -------------------------------------------------------------------
-                         slack                                  1.784    
+                         slack                                  1.493    
 
-Slack (MET) :             1.812ns  (required time - arrival time)
-  Source:                 bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_2/CLKBWRCLK
+Slack (MET) :             1.591ns  (required time - arrival time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRARDADDR[12]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/pixel_pusher_0/U0/R_reg[4]/D
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.691ns  (logic 0.456ns (8.013%)  route 5.235ns (91.987%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.117ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.937ns = ( 12.937 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.344ns
+    Clock Pessimism Removal (CPR):    0.291ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         1.676     5.344    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y43         FDRE (Prop_fdre_C_Q)         0.456     5.800 r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/Q
+                         net (fo=24, routed)          5.235    11.035    bowling_game_i/framebuffer_0/U0/addr1[12]
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         1.545    12.937    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKARDCLK
+                         clock pessimism              0.291    13.227    
+                         clock uncertainty           -0.035    13.192    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                     -0.566    12.626    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1
+  -------------------------------------------------------------------
+                         required time                         12.626    
+                         arrival time                         -11.035    
+  -------------------------------------------------------------------
+                         slack                                  1.591    
+
+Slack (MET) :             1.802ns  (required time - arrival time)
+  Source:                 bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/pixel_pusher_0/U0/G_reg[5]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        6.073ns  (logic 3.571ns (58.801%)  route 2.502ns (41.199%))
+  Data Path Delay:        5.996ns  (logic 3.545ns (59.119%)  route 2.451ns (40.881%))
   Logic Levels:           3  (LUT3=1 LUT6=1 RAMB36E1=1)
-  Clock Path Skew:        -0.198ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.895ns = ( 12.895 - 8.000 ) 
+  Clock Path Skew:        -0.197ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.896ns = ( 12.896 - 8.000 ) 
     Source Clock Delay      (SCD):    5.384ns
     Clock Pessimism Removal (CPR):    0.291ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
@@ -295,19 +351,19 @@ Slack (MET) :             1.812ns  (required time - arrival time)
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
                          net (fo=174, routed)         1.715     5.384    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_2/CLKBWRCLK
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
     RAMB36_X0Y6          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
-                                                      2.872     8.256 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_2/CASCADEOUTB
-                         net (fo=1, routed)           0.065     8.321    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_2_n_1
+                                                      2.872     8.256 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CASCADEOUTB
+                         net (fo=1, routed)           0.065     8.321    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1_n_1
     RAMB36_X0Y7          RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
-                                                      0.425     8.746 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_2/DOBDO[0]
-                         net (fo=1, routed)           1.784    10.530    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_2_n_67
-    SLICE_X29Y47         LUT6 (Prop_lut6_I5_O)        0.124    10.654 r  bowling_game_i/framebuffer_0/U0/dout2[2]_INST_0/O
-                         net (fo=1, routed)           0.653    11.307    bowling_game_i/pixel_pusher_0/U0/pixel[2]
-    SLICE_X30Y47         LUT3 (Prop_lut3_I2_O)        0.150    11.457 r  bowling_game_i/pixel_pusher_0/U0/R[4]_i_1/O
-                         net (fo=1, routed)           0.000    11.457    bowling_game_i/pixel_pusher_0/U0/R[4]_i_1_n_0
-    SLICE_X30Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/R_reg[4]/D
+                                                      0.425     8.746 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1/DOBDO[0]
+                         net (fo=1, routed)           1.779    10.525    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1_n_67
+    SLICE_X26Y46         LUT6 (Prop_lut6_I1_O)        0.124    10.649 r  bowling_game_i/framebuffer_0/U0/dout2[1]_INST_0/O
+                         net (fo=1, routed)           0.607    11.256    bowling_game_i/pixel_pusher_0/U0/pixel[1]
+    SLICE_X33Y47         LUT3 (Prop_lut3_I2_O)        0.124    11.380 r  bowling_game_i/pixel_pusher_0/U0/G[5]_i_1/O
+                         net (fo=1, routed)           0.000    11.380    bowling_game_i/pixel_pusher_0/U0/G[5]_i_1_n_0
+    SLICE_X33Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/G_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -317,198 +373,30 @@ Slack (MET) :             1.812ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.503    12.895    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X30Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/R_reg[4]/C
-                         clock pessimism              0.291    13.186    
-                         clock uncertainty           -0.035    13.150    
-    SLICE_X30Y47         FDRE (Setup_fdre_C_D)        0.118    13.268    bowling_game_i/pixel_pusher_0/U0/R_reg[4]
+                         net (fo=174, routed)         1.504    12.896    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X33Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/G_reg[5]/C
+                         clock pessimism              0.291    13.187    
+                         clock uncertainty           -0.035    13.151    
+    SLICE_X33Y47         FDRE (Setup_fdre_C_D)        0.031    13.182    bowling_game_i/pixel_pusher_0/U0/G_reg[5]
   -------------------------------------------------------------------
-                         required time                         13.268    
-                         arrival time                         -11.457    
+                         required time                         13.182    
+                         arrival time                         -11.380    
   -------------------------------------------------------------------
-                         slack                                  1.812    
+                         slack                                  1.802    
 
-Slack (MET) :             2.507ns  (required time - arrival time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/ADDRBWRADDR[3]
+Slack (MET) :             1.819ns  (required time - arrival time)
+  Source:                 bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_2/CLKBWRCLK
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.862ns  (logic 0.456ns (9.380%)  route 4.406ns (90.620%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.925ns = ( 12.925 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.346ns
-    Clock Pessimism Removal (CPR):    0.391ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           2.076     3.567    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.678     5.346    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y49         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y49         FDRE (Prop_fdre_C_Q)         0.456     5.802 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/Q
-                         net (fo=25, routed)          4.406    10.208    bowling_game_i/framebuffer_0/U0/addr2[3]
-    RAMB36_X1Y4          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/ADDRBWRADDR[3]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      8.000     8.000 r  
-    L16                                               0.000     8.000 r  clk (IN)
-                         net (fo=0)                   0.000     8.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.880    11.301    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.533    12.925    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y4          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/CLKBWRCLK
-                         clock pessimism              0.391    13.316    
-                         clock uncertainty           -0.035    13.280    
-    RAMB36_X1Y4          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[3])
-                                                     -0.566    12.714    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0
-  -------------------------------------------------------------------
-                         required time                         12.714    
-                         arrival time                         -10.208    
-  -------------------------------------------------------------------
-                         slack                                  2.507    
-
-Slack (MET) :             2.517ns  (required time - arrival time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[15]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/ADDRBWRADDR[15]
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.805ns  (logic 0.456ns (9.491%)  route 4.349ns (90.509%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.128ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.925ns = ( 12.925 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.329ns
-    Clock Pessimism Removal (CPR):    0.277ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           2.076     3.567    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.661     5.329    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y52         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[15]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y52         FDRE (Prop_fdre_C_Q)         0.456     5.785 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[15]/Q
-                         net (fo=37, routed)          4.349    10.134    bowling_game_i/framebuffer_0/U0/addr2[15]
-    RAMB36_X1Y4          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/ADDRBWRADDR[15]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      8.000     8.000 r  
-    L16                                               0.000     8.000 r  clk (IN)
-                         net (fo=0)                   0.000     8.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.880    11.301    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.533    12.925    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y4          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/CLKBWRCLK
-                         clock pessimism              0.277    13.201    
-                         clock uncertainty           -0.035    13.166    
-    RAMB36_X1Y4          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[15])
-                                                     -0.515    12.651    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0
-  -------------------------------------------------------------------
-                         required time                         12.651    
-                         arrival time                         -10.134    
-  -------------------------------------------------------------------
-                         slack                                  2.517    
-
-Slack (MET) :             2.555ns  (required time - arrival time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/ADDRBWRADDR[2]
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.813ns  (logic 0.456ns (9.474%)  route 4.357ns (90.526%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.925ns = ( 12.925 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.346ns
-    Clock Pessimism Removal (CPR):    0.391ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           2.076     3.567    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.678     5.346    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y49         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y49         FDRE (Prop_fdre_C_Q)         0.456     5.802 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[2]/Q
-                         net (fo=25, routed)          4.357    10.160    bowling_game_i/framebuffer_0/U0/addr2[2]
-    RAMB36_X1Y4          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/ADDRBWRADDR[2]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      8.000     8.000 r  
-    L16                                               0.000     8.000 r  clk (IN)
-                         net (fo=0)                   0.000     8.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.880    11.301    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.533    12.925    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y4          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/CLKBWRCLK
-                         clock pessimism              0.391    13.316    
-                         clock uncertainty           -0.035    13.280    
-    RAMB36_X1Y4          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[2])
-                                                     -0.566    12.714    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0
-  -------------------------------------------------------------------
-                         required time                         12.714    
-                         arrival time                         -10.160    
-  -------------------------------------------------------------------
-                         slack                                  2.555    
-
-Slack (MET) :             2.631ns  (required time - arrival time)
-  Source:                 bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/pixel_pusher_0/U0/G_reg[5]/D
+  Destination:            bowling_game_i/pixel_pusher_0/U0/R_reg[4]/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        5.216ns  (logic 3.545ns (67.959%)  route 1.671ns (32.041%))
+  Data Path Delay:        6.015ns  (logic 3.571ns (59.369%)  route 2.444ns (40.631%))
   Logic Levels:           3  (LUT3=1 LUT6=1 RAMB36E1=1)
-  Clock Path Skew:        -0.196ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.895ns = ( 12.895 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.368ns
+  Clock Path Skew:        -0.206ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.896ns = ( 12.896 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.379ns
     Clock Pessimism Removal (CPR):    0.277ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -525,20 +413,20 @@ Slack (MET) :             2.631ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.699     5.368    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y12         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
+                         net (fo=174, routed)         1.710     5.379    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_2/CLKBWRCLK
   -------------------------------------------------------------------    -------------------
-    RAMB36_X2Y12         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
-                                                      2.872     8.240 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CASCADEOUTB
-                         net (fo=1, routed)           0.065     8.305    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1_n_1
-    RAMB36_X2Y13         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
-                                                      0.425     8.730 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1/DOBDO[0]
-                         net (fo=1, routed)           1.312    10.042    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1_n_67
-    SLICE_X29Y47         LUT6 (Prop_lut6_I1_O)        0.124    10.166 r  bowling_game_i/framebuffer_0/U0/dout2[1]_INST_0/O
-                         net (fo=1, routed)           0.294    10.460    bowling_game_i/pixel_pusher_0/U0/pixel[1]
-    SLICE_X30Y47         LUT3 (Prop_lut3_I2_O)        0.124    10.584 r  bowling_game_i/pixel_pusher_0/U0/G[5]_i_1/O
-                         net (fo=1, routed)           0.000    10.584    bowling_game_i/pixel_pusher_0/U0/G[5]_i_1_n_0
-    SLICE_X30Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/G_reg[5]/D
+    RAMB36_X0Y10         RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_CASCADEOUTB)
+                                                      2.872     8.251 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_2/CASCADEOUTB
+                         net (fo=1, routed)           0.065     8.316    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_2_n_1
+    RAMB36_X0Y11         RAMB36E1 (Prop_ramb36e1_CASCADEINB_DOBDO[0])
+                                                      0.425     8.741 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2/DOBDO[0]
+                         net (fo=1, routed)           1.512    10.253    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2_n_67
+    SLICE_X26Y47         LUT6 (Prop_lut6_I3_O)        0.124    10.377 r  bowling_game_i/framebuffer_0/U0/dout2[2]_INST_0/O
+                         net (fo=1, routed)           0.867    11.244    bowling_game_i/pixel_pusher_0/U0/pixel[2]
+    SLICE_X33Y47         LUT3 (Prop_lut3_I2_O)        0.150    11.394 r  bowling_game_i/pixel_pusher_0/U0/R[4]_i_1/O
+                         net (fo=1, routed)           0.000    11.394    bowling_game_i/pixel_pusher_0/U0/R[4]_i_1_n_0
+    SLICE_X33Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/R_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -548,30 +436,30 @@ Slack (MET) :             2.631ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.503    12.895    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X30Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/G_reg[5]/C
-                         clock pessimism              0.277    13.172    
-                         clock uncertainty           -0.035    13.136    
-    SLICE_X30Y47         FDRE (Setup_fdre_C_D)        0.079    13.215    bowling_game_i/pixel_pusher_0/U0/G_reg[5]
+                         net (fo=174, routed)         1.504    12.896    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X33Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/R_reg[4]/C
+                         clock pessimism              0.277    13.173    
+                         clock uncertainty           -0.035    13.137    
+    SLICE_X33Y47         FDRE (Setup_fdre_C_D)        0.075    13.212    bowling_game_i/pixel_pusher_0/U0/R_reg[4]
   -------------------------------------------------------------------
-                         required time                         13.215    
-                         arrival time                         -10.584    
+                         required time                         13.212    
+                         arrival time                         -11.394    
   -------------------------------------------------------------------
-                         slack                                  2.631    
+                         slack                                  1.819    
 
-Slack (MET) :             2.781ns  (required time - arrival time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[10]/C
+Slack (MET) :             1.933ns  (required time - arrival time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/ADDRBWRADDR[10]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1/ADDRARDADDR[12]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.506ns  (logic 0.456ns (10.121%)  route 4.050ns (89.879%))
+  Data Path Delay:        5.353ns  (logic 0.456ns (8.519%)  route 4.897ns (91.481%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.112ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.927ns = ( 12.927 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.329ns
+  Clock Path Skew:        -0.113ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.941ns = ( 12.941 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.344ns
     Clock Pessimism Removal (CPR):    0.291ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -588,12 +476,12 @@ Slack (MET) :             2.781ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.661     5.329    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y51         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[10]/C
+                         net (fo=174, routed)         1.676     5.344    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y51         FDRE (Prop_fdre_C_Q)         0.456     5.785 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[10]/Q
-                         net (fo=25, routed)          4.050     9.835    bowling_game_i/framebuffer_0/U0/addr2[10]
-    RAMB36_X0Y11         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/ADDRBWRADDR[10]
+    SLICE_X26Y43         FDRE (Prop_fdre_C_Q)         0.456     5.800 r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/Q
+                         net (fo=24, routed)          4.897    10.697    bowling_game_i/framebuffer_0/U0/addr1[12]
+    RAMB36_X0Y7          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1/ADDRARDADDR[12]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -603,32 +491,32 @@ Slack (MET) :             2.781ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.535    12.927    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X0Y11         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/CLKBWRCLK
-                         clock pessimism              0.291    13.217    
-                         clock uncertainty           -0.035    13.182    
-    RAMB36_X0Y11         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[10])
-                                                     -0.566    12.616    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0
+                         net (fo=174, routed)         1.549    12.941    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y7          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1/CLKARDCLK
+                         clock pessimism              0.291    13.231    
+                         clock uncertainty           -0.035    13.196    
+    RAMB36_X0Y7          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                     -0.566    12.630    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_1
   -------------------------------------------------------------------
-                         required time                         12.616    
-                         arrival time                          -9.835    
+                         required time                         12.630    
+                         arrival time                         -10.697    
   -------------------------------------------------------------------
-                         slack                                  2.781    
+                         slack                                  1.933    
 
-Slack (MET) :             2.842ns  (required time - arrival time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
+Slack (MET) :             2.039ns  (required time - arrival time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[14]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_0/ADDRBWRADDR[3]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[14]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.524ns  (logic 0.456ns (10.080%)  route 4.068ns (89.920%))
+  Data Path Delay:        5.237ns  (logic 0.456ns (8.707%)  route 4.781ns (91.293%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.034ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.922ns = ( 12.922 - 8.000 ) 
+  Clock Path Skew:        -0.122ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.934ns = ( 12.934 - 8.000 ) 
     Source Clock Delay      (SCD):    5.346ns
-    Clock Pessimism Removal (CPR):    0.391ns
+    Clock Pessimism Removal (CPR):    0.291ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -645,11 +533,11 @@ Slack (MET) :             2.842ns  (required time - arrival time)
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
                          net (fo=174, routed)         1.678     5.346    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y49         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
+    SLICE_X31Y48         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[14]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y49         FDRE (Prop_fdre_C_Q)         0.456     5.802 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/Q
-                         net (fo=25, routed)          4.068     9.870    bowling_game_i/framebuffer_0/U0/addr2[3]
-    RAMB36_X1Y5          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_0/ADDRBWRADDR[3]
+    SLICE_X31Y48         FDRE (Prop_fdre_C_Q)         0.456     5.802 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[14]/Q
+                         net (fo=25, routed)          4.781    10.584    bowling_game_i/framebuffer_0/U0/addr2[14]
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[14]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -659,32 +547,32 @@ Slack (MET) :             2.842ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.530    12.922    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y5          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_0/CLKBWRCLK
-                         clock pessimism              0.391    13.313    
-                         clock uncertainty           -0.035    13.277    
-    RAMB36_X1Y5          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[3])
-                                                     -0.566    12.711    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_0
+                         net (fo=174, routed)         1.542    12.934    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
+                         clock pessimism              0.291    13.224    
+                         clock uncertainty           -0.035    13.189    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[14])
+                                                     -0.566    12.623    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1
   -------------------------------------------------------------------
-                         required time                         12.711    
-                         arrival time                          -9.870    
+                         required time                         12.623    
+                         arrival time                         -10.584    
   -------------------------------------------------------------------
-                         slack                                  2.842    
+                         slack                                  2.039    
 
-Slack (MET) :             2.849ns  (required time - arrival time)
-  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[15]/C
+Slack (MET) :             2.241ns  (required time - arrival time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[9]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2/ENARDEN
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[9]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        4.316ns  (logic 0.608ns (14.086%)  route 3.708ns (85.914%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        -0.154ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.910ns = ( 12.910 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.340ns
-    Clock Pessimism Removal (CPR):    0.277ns
+  Data Path Delay:        5.035ns  (logic 0.456ns (9.056%)  route 4.579ns (90.944%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.122ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.934ns = ( 12.934 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.346ns
+    Clock Pessimism Removal (CPR):    0.291ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -700,14 +588,12 @@ Slack (MET) :             2.849ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.672     5.340    bowling_game_i/controller_0/U0/clk
-    SLICE_X25Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[15]/C
+                         net (fo=174, routed)         1.678     5.346    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X31Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[9]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X25Y43         FDRE (Prop_fdre_C_Q)         0.456     5.796 r  bowling_game_i/controller_0/U0/fb_addr_reg[15]/Q
-                         net (fo=48, routed)          2.831     8.628    bowling_game_i/framebuffer_0/U0/addr1[15]
-    SLICE_X26Y62         LUT3 (Prop_lut3_I2_O)        0.152     8.780 r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2_ENARDEN_cooolgate_en_gate_55_LOPT_REMAP/O
-                         net (fo=1, routed)           0.877     9.657    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2_ENARDEN_cooolgate_en_sig_30
-    RAMB36_X1Y13         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2/ENARDEN
+    SLICE_X31Y47         FDRE (Prop_fdre_C_Q)         0.456     5.802 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[9]/Q
+                         net (fo=25, routed)          4.579    10.382    bowling_game_i/framebuffer_0/U0/addr2[9]
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[9]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -717,32 +603,32 @@ Slack (MET) :             2.849ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.518    12.910    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y13         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2/CLKARDCLK
-                         clock pessimism              0.277    13.186    
-                         clock uncertainty           -0.035    13.151    
-    RAMB36_X1Y13         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
-                                                     -0.645    12.506    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_2
+                         net (fo=174, routed)         1.542    12.934    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
+                         clock pessimism              0.291    13.224    
+                         clock uncertainty           -0.035    13.189    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[9])
+                                                     -0.566    12.623    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1
   -------------------------------------------------------------------
-                         required time                         12.506    
-                         arrival time                          -9.657    
+                         required time                         12.623    
+                         arrival time                         -10.382    
   -------------------------------------------------------------------
-                         slack                                  2.849    
+                         slack                                  2.241    
 
-Slack (MET) :             2.877ns  (required time - arrival time)
-  Source:                 bowling_game_i/controller_0/U0/pixel_y_reg[1]/C
+Slack (MET) :             2.243ns  (required time - arrival time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/controller_0/U0/fb_addr_reg[17]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[3]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        5.124ns  (logic 3.443ns (67.188%)  route 1.681ns (32.812%))
-  Logic Levels:           7  (CARRY4=5 LUT1=1 LUT2=1)
-  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.890ns = ( 12.890 - 8.000 ) 
-    Source Clock Delay      (SCD):    5.340ns
-    Clock Pessimism Removal (CPR):    0.425ns
+  Data Path Delay:        5.035ns  (logic 0.456ns (9.057%)  route 4.579ns (90.943%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.121ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.934ns = ( 12.934 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.345ns
+    Clock Pessimism Removal (CPR):    0.291ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
@@ -758,31 +644,12 @@ Slack (MET) :             2.877ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.076     3.567    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.672     5.340    bowling_game_i/controller_0/U0/clk
-    SLICE_X22Y44         FDRE                                         r  bowling_game_i/controller_0/U0/pixel_y_reg[1]/C
+                         net (fo=174, routed)         1.677     5.345    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X31Y45         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X22Y44         FDRE (Prop_fdre_C_Q)         0.456     5.796 f  bowling_game_i/controller_0/U0/pixel_y_reg[1]/Q
-                         net (fo=10, routed)          0.613     6.409    bowling_game_i/controller_0/U0/pixel_y_reg[1]
-    SLICE_X23Y42         LUT1 (Prop_lut1_I0_O)        0.124     6.533 r  bowling_game_i/controller_0/U0/multOp_carry_i_3/O
-                         net (fo=1, routed)           0.000     6.533    bowling_game_i/controller_0/U0/multOp_carry_i_3_n_0
-    SLICE_X23Y42         CARRY4 (Prop_carry4_S[1]_O[3])
-                                                      0.640     7.173 r  bowling_game_i/controller_0/U0/multOp_carry/O[3]
-                         net (fo=1, routed)           0.438     7.612    bowling_game_i/controller_0/U0/multOp_carry_n_4
-    SLICE_X24Y43         LUT2 (Prop_lut2_I1_O)        0.306     7.918 r  bowling_game_i/controller_0/U0/multOp__28_carry_i_3/O
-                         net (fo=1, routed)           0.000     7.918    bowling_game_i/controller_0/U0/multOp__28_carry_i_3_n_0
-    SLICE_X24Y43         CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     8.451 r  bowling_game_i/controller_0/U0/multOp__28_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     8.451    bowling_game_i/controller_0/U0/multOp__28_carry__0_n_0
-    SLICE_X24Y44         CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.323     8.774 r  bowling_game_i/controller_0/U0/multOp__28_carry__1/O[1]
-                         net (fo=1, routed)           0.630     9.404    bowling_game_i/controller_0/U0/multOp[13]
-    SLICE_X25Y43         CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.838    10.242 r  bowling_game_i/controller_0/U0/fb_addr_reg[16]_i_1/CO[3]
-                         net (fo=1, routed)           0.000    10.242    bowling_game_i/controller_0/U0/fb_addr_reg[16]_i_1_n_0
-    SLICE_X25Y44         CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.223    10.465 r  bowling_game_i/controller_0/U0/fb_addr_reg[17]_i_2/O[0]
-                         net (fo=1, routed)           0.000    10.465    bowling_game_i/controller_0/U0/pixel_loc[17]
-    SLICE_X25Y44         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[17]/D
+    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.456     5.801 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/Q
+                         net (fo=25, routed)          4.579    10.380    bowling_game_i/framebuffer_0/U0/addr2[3]
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[3]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -792,16 +659,129 @@ Slack (MET) :             2.877ns  (required time - arrival time)
     L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.880    11.301    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         1.498    12.890    bowling_game_i/controller_0/U0/clk
-    SLICE_X25Y44         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[17]/C
-                         clock pessimism              0.425    13.315    
-                         clock uncertainty           -0.035    13.280    
-    SLICE_X25Y44         FDRE (Setup_fdre_C_D)        0.062    13.342    bowling_game_i/controller_0/U0/fb_addr_reg[17]
+                         net (fo=174, routed)         1.542    12.934    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
+                         clock pessimism              0.291    13.224    
+                         clock uncertainty           -0.035    13.189    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[3])
+                                                     -0.566    12.623    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1
   -------------------------------------------------------------------
-                         required time                         13.342    
-                         arrival time                         -10.465    
+                         required time                         12.623    
+                         arrival time                         -10.380    
   -------------------------------------------------------------------
-                         slack                                  2.877    
+                         slack                                  2.243    
+
+Slack (MET) :             2.261ns  (required time - arrival time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[0]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.017ns  (logic 0.456ns (9.089%)  route 4.561ns (90.911%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.121ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.934ns = ( 12.934 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.345ns
+    Clock Pessimism Removal (CPR):    0.291ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         1.677     5.345    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X31Y45         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.456     5.801 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[0]/Q
+                         net (fo=25, routed)          4.561    10.362    bowling_game_i/framebuffer_0/U0/addr2[0]
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/ADDRBWRADDR[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         1.542    12.934    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y6          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1/CLKBWRCLK
+                         clock pessimism              0.291    13.224    
+                         clock uncertainty           -0.035    13.189    
+    RAMB36_X0Y6          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[0])
+                                                     -0.566    12.623    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_1
+  -------------------------------------------------------------------
+                         required time                         12.623    
+                         arrival time                         -10.362    
+  -------------------------------------------------------------------
+                         slack                                  2.261    
+
+Slack (MET) :             2.274ns  (required time - arrival time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_1/ADDRARDADDR[12]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.015ns  (logic 0.456ns (9.093%)  route 4.559ns (90.907%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.944ns = ( 12.944 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.344ns
+    Clock Pessimism Removal (CPR):    0.291ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.491     1.491 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.076     3.567    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     3.668 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         1.676     5.344    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y43         FDRE (Prop_fdre_C_Q)         0.456     5.800 r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/Q
+                         net (fo=24, routed)          4.559    10.359    bowling_game_i/framebuffer_0/U0/addr1[12]
+    RAMB36_X0Y8          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_1/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    L16                                               0.000     8.000 r  clk (IN)
+                         net (fo=0)                   0.000     8.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         1.421     9.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.880    11.301    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.392 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         1.552    12.944    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X0Y8          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_1/CLKARDCLK
+                         clock pessimism              0.291    13.234    
+                         clock uncertainty           -0.035    13.199    
+    RAMB36_X0Y8          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                     -0.566    12.633    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_1
+  -------------------------------------------------------------------
+                         required time                         12.633    
+                         arrival time                         -10.359    
+  -------------------------------------------------------------------
+                         slack                                  2.274    
 
 
 
@@ -809,19 +789,19 @@ Slack (MET) :             2.877ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.093ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[6]/C
+Slack (MET) :             0.036ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[6]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[12]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.593ns  (logic 0.141ns (23.772%)  route 0.452ns (76.228%))
+  Data Path Delay:        0.525ns  (logic 0.141ns (26.874%)  route 0.384ns (73.126%))
   Logic Levels:           0  
-  Clock Path Skew:        0.317ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.035ns
-    Source Clock Delay      (SCD):    1.472ns
+  Clock Path Skew:        0.306ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns
+    Source Clock Delay      (SCD):    1.477ns
     Clock Pessimism Removal (CPR):    0.247ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -833,12 +813,12 @@ Slack (MET) :             0.093ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.627     0.886    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.560     1.472    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y50         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[6]/C
+                         net (fo=174, routed)         0.565     1.477    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y50         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[6]/Q
-                         net (fo=25, routed)          0.452     2.065    bowling_game_i/framebuffer_0/U0/addr2[6]
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[6]
+    SLICE_X26Y43         FDRE (Prop_fdre_C_Q)         0.141     1.618 r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/Q
+                         net (fo=24, routed)          0.384     2.001    bowling_game_i/framebuffer_0/U0/addr1[12]
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[12]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -848,31 +828,31 @@ Slack (MET) :             0.093ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.683     1.130    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/CLKBWRCLK
-                         clock pessimism             -0.247     1.789    
-    RAMB36_X2Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[6])
-                                                      0.183     1.972    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2
+                         net (fo=174, routed)         0.870     2.029    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/CLKARDCLK
+                         clock pessimism             -0.247     1.783    
+    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                      0.183     1.966    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2
   -------------------------------------------------------------------
-                         required time                         -1.972    
-                         arrival time                           2.065    
+                         required time                         -1.966    
+                         arrival time                           2.001    
   -------------------------------------------------------------------
-                         slack                                  0.093    
+                         slack                                  0.036    
 
-Slack (MET) :             0.104ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[5]/C
+Slack (MET) :             0.071ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[5]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/ADDRARDADDR[12]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.604ns  (logic 0.141ns (23.338%)  route 0.463ns (76.662%))
+  Data Path Delay:        0.313ns  (logic 0.141ns (45.095%)  route 0.172ns (54.905%))
   Logic Levels:           0  
-  Clock Path Skew:        0.317ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.035ns
-    Source Clock Delay      (SCD):    1.472ns
-    Clock Pessimism Removal (CPR):    0.247ns
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.034ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.499ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -883,12 +863,12 @@ Slack (MET) :             0.104ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.627     0.886    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.560     1.472    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y50         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[5]/C
+                         net (fo=174, routed)         0.565     1.477    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y50         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[5]/Q
-                         net (fo=25, routed)          0.463     2.076    bowling_game_i/framebuffer_0/U0/addr2[5]
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[5]
+    SLICE_X26Y43         FDRE (Prop_fdre_C_Q)         0.141     1.618 r  bowling_game_i/controller_0/U0/fb_addr_reg[12]/Q
+                         net (fo=24, routed)          0.172     1.789    bowling_game_i/framebuffer_0/U0/addr1[12]
+    RAMB36_X1Y8          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/ADDRARDADDR[12]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -898,30 +878,80 @@ Slack (MET) :             0.104ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.683     1.130    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/CLKBWRCLK
-                         clock pessimism             -0.247     1.789    
-    RAMB36_X2Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[5])
-                                                      0.183     1.972    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2
+                         net (fo=174, routed)         0.875     2.034    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y8          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/CLKARDCLK
+                         clock pessimism             -0.499     1.535    
+    RAMB36_X1Y8          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[12])
+                                                      0.183     1.718    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1
   -------------------------------------------------------------------
-                         required time                         -1.972    
-                         arrival time                           2.076    
+                         required time                         -1.718    
+                         arrival time                           1.789    
   -------------------------------------------------------------------
-                         slack                                  0.104    
+                         slack                                  0.071    
 
-Slack (MET) :             0.105ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[1]/C
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[9]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_0/ADDRBWRADDR[1]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/ADDRARDADDR[9]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.595ns  (logic 0.141ns (23.689%)  route 0.454ns (76.311%))
+  Data Path Delay:        0.317ns  (logic 0.141ns (44.528%)  route 0.176ns (55.472%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.034ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.565     1.477    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y43         FDRE (Prop_fdre_C_Q)         0.141     1.618 r  bowling_game_i/controller_0/U0/fb_addr_reg[9]/Q
+                         net (fo=24, routed)          0.176     1.793    bowling_game_i/framebuffer_0/U0/addr1[9]
+    RAMB36_X1Y8          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/ADDRARDADDR[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.875     2.034    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y8          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/CLKARDCLK
+                         clock pessimism             -0.499     1.535    
+    RAMB36_X1Y8          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[9])
+                                                      0.183     1.718    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1
+  -------------------------------------------------------------------
+                         required time                         -1.718    
+                         arrival time                           1.793    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.099ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.589ns  (logic 0.141ns (23.944%)  route 0.448ns (76.056%))
   Logic Levels:           0  
   Clock Path Skew:        0.307ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.031ns
-    Source Clock Delay      (SCD):    1.478ns
+    Destination Clock Delay (DCD):    2.029ns
+    Source Clock Delay      (SCD):    1.476ns
     Clock Pessimism Removal (CPR):    0.247ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -933,12 +963,12 @@ Slack (MET) :             0.105ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.627     0.886    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.566     1.478    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y49         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[1]/C
+                         net (fo=174, routed)         0.564     1.476    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y42         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[6]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y49         FDRE (Prop_fdre_C_Q)         0.141     1.619 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[1]/Q
-                         net (fo=25, routed)          0.454     2.073    bowling_game_i/framebuffer_0/U0/addr2[1]
-    RAMB36_X2Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_0/ADDRBWRADDR[1]
+    SLICE_X26Y42         FDRE (Prop_fdre_C_Q)         0.141     1.617 r  bowling_game_i/controller_0/U0/fb_addr_reg[6]/Q
+                         net (fo=24, routed)          0.448     2.065    bowling_game_i/framebuffer_0/U0/addr1[6]
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[6]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -948,31 +978,131 @@ Slack (MET) :             0.105ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.683     1.130    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.872     2.031    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_0/CLKBWRCLK
-                         clock pessimism             -0.247     1.785    
-    RAMB36_X2Y10         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[1])
-                                                      0.183     1.968    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_0
+                         net (fo=174, routed)         0.870     2.029    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/CLKARDCLK
+                         clock pessimism             -0.247     1.783    
+    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.966    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2
   -------------------------------------------------------------------
-                         required time                         -1.968    
-                         arrival time                           2.073    
+                         required time                         -1.966    
+                         arrival time                           2.065    
+  -------------------------------------------------------------------
+                         slack                                  0.099    
+
+Slack (MET) :             0.100ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.590ns  (logic 0.141ns (23.902%)  route 0.449ns (76.098%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.307ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns
+    Source Clock Delay      (SCD):    1.476ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.564     1.476    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y42         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y42         FDRE (Prop_fdre_C_Q)         0.141     1.617 r  bowling_game_i/controller_0/U0/fb_addr_reg[7]/Q
+                         net (fo=24, routed)          0.449     2.066    bowling_game_i/framebuffer_0/U0/addr1[7]
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.870     2.029    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/CLKARDCLK
+                         clock pessimism             -0.247     1.783    
+    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[7])
+                                                      0.183     1.966    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2
+  -------------------------------------------------------------------
+                         required time                         -1.966    
+                         arrival time                           2.066    
+  -------------------------------------------------------------------
+                         slack                                  0.100    
+
+Slack (MET) :             0.105ns  (arrival time - required time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRBWRADDR[5]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.595ns  (logic 0.141ns (23.694%)  route 0.454ns (76.306%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.307ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.030ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.565     1.477    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X31Y46         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.618 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[5]/Q
+                         net (fo=25, routed)          0.454     2.072    bowling_game_i/framebuffer_0/U0/addr2[5]
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRBWRADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.871     2.030    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/CLKBWRCLK
+                         clock pessimism             -0.247     1.784    
+    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[5])
+                                                      0.183     1.967    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2
+  -------------------------------------------------------------------
+                         required time                         -1.967    
+                         arrival time                           2.072    
   -------------------------------------------------------------------
                          slack                                  0.105    
 
-Slack (MET) :             0.106ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[12]/C
+Slack (MET) :             0.123ns  (arrival time - required time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[12]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/ADDRBWRADDR[0]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.606ns  (logic 0.141ns (23.258%)  route 0.465ns (76.742%))
+  Data Path Delay:        0.384ns  (logic 0.141ns (36.728%)  route 0.243ns (63.272%))
   Logic Levels:           0  
-  Clock Path Skew:        0.317ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.035ns
-    Source Clock Delay      (SCD):    1.472ns
-    Clock Pessimism Removal (CPR):    0.247ns
+  Clock Path Skew:        0.077ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.034ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.480ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -983,12 +1113,12 @@ Slack (MET) :             0.106ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.627     0.886    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.560     1.472    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y52         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[12]/C
+                         net (fo=174, routed)         0.565     1.477    bowling_game_i/pixel_pusher_0/U0/clk
+    SLICE_X31Y45         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y52         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[12]/Q
-                         net (fo=25, routed)          0.465     2.078    bowling_game_i/framebuffer_0/U0/addr2[12]
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[12]
+    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.141     1.618 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[0]/Q
+                         net (fo=25, routed)          0.243     1.861    bowling_game_i/framebuffer_0/U0/addr2[0]
+    RAMB36_X1Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/ADDRBWRADDR[0]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -998,281 +1128,31 @@ Slack (MET) :             0.106ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.683     1.130    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/CLKBWRCLK
-                         clock pessimism             -0.247     1.789    
-    RAMB36_X2Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[12])
-                                                      0.183     1.972    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2
+                         net (fo=174, routed)         0.875     2.034    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/CLKBWRCLK
+                         clock pessimism             -0.480     1.554    
+    RAMB36_X1Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[0])
+                                                      0.183     1.737    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1
   -------------------------------------------------------------------
-                         required time                         -1.972    
-                         arrival time                           2.078    
+                         required time                         -1.737    
+                         arrival time                           1.861    
   -------------------------------------------------------------------
-                         slack                                  0.106    
+                         slack                                  0.123    
 
-Slack (MET) :             0.109ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[9]/C
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[10]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[9]
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/ADDRBWRADDR[10]
                             (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.609ns  (logic 0.141ns (23.162%)  route 0.468ns (76.838%))
+  Data Path Delay:        0.383ns  (logic 0.141ns (36.806%)  route 0.242ns (63.194%))
   Logic Levels:           0  
-  Clock Path Skew:        0.317ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.035ns
-    Source Clock Delay      (SCD):    1.472ns
-    Clock Pessimism Removal (CPR):    0.247ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.627     0.886    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.560     1.472    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y51         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[9]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y51         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[9]/Q
-                         net (fo=25, routed)          0.468     2.081    bowling_game_i/framebuffer_0/U0/addr2[9]
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[9]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.683     1.130    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/CLKBWRCLK
-                         clock pessimism             -0.247     1.789    
-    RAMB36_X2Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[9])
-                                                      0.183     1.972    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2
-  -------------------------------------------------------------------
-                         required time                         -1.972    
-                         arrival time                           2.081    
-  -------------------------------------------------------------------
-                         slack                                  0.109    
-
-Slack (MET) :             0.114ns  (arrival time - required time)
-  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1/ADDRARDADDR[4]
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.606ns  (logic 0.164ns (27.058%)  route 0.442ns (72.942%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.309ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.029ns
-    Source Clock Delay      (SCD):    1.474ns
-    Clock Pessimism Removal (CPR):    0.247ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.627     0.886    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.562     1.474    bowling_game_i/controller_0/U0/clk
-    SLICE_X24Y45         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X24Y45         FDRE (Prop_fdre_C_Q)         0.164     1.638 r  bowling_game_i/controller_0/U0/fb_addr_reg[4]/Q
-                         net (fo=24, routed)          0.442     2.080    bowling_game_i/framebuffer_0/U0/addr1[4]
-    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1/ADDRARDADDR[4]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.683     1.130    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.870     2.029    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1/CLKARDCLK
-                         clock pessimism             -0.247     1.783    
-    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[4])
-                                                      0.183     1.966    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1
-  -------------------------------------------------------------------
-                         required time                         -1.966    
-                         arrival time                           2.080    
-  -------------------------------------------------------------------
-                         slack                                  0.114    
-
-Slack (MET) :             0.115ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[7]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[7]
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.615ns  (logic 0.141ns (22.926%)  route 0.474ns (77.074%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.317ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.035ns
-    Source Clock Delay      (SCD):    1.472ns
-    Clock Pessimism Removal (CPR):    0.247ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.627     0.886    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.560     1.472    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y50         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[7]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y50         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[7]/Q
-                         net (fo=25, routed)          0.474     2.087    bowling_game_i/framebuffer_0/U0/addr2[7]
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[7]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.683     1.130    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/CLKBWRCLK
-                         clock pessimism             -0.247     1.789    
-    RAMB36_X2Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[7])
-                                                      0.183     1.972    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2
-  -------------------------------------------------------------------
-                         required time                         -1.972    
-                         arrival time                           2.087    
-  -------------------------------------------------------------------
-                         slack                                  0.115    
-
-Slack (MET) :             0.115ns  (arrival time - required time)
-  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[1]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1/ADDRARDADDR[1]
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.607ns  (logic 0.164ns (27.009%)  route 0.443ns (72.991%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.309ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.029ns
-    Source Clock Delay      (SCD):    1.474ns
-    Clock Pessimism Removal (CPR):    0.247ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.627     0.886    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.562     1.474    bowling_game_i/controller_0/U0/clk
-    SLICE_X24Y45         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[1]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X24Y45         FDRE (Prop_fdre_C_Q)         0.164     1.638 r  bowling_game_i/controller_0/U0/fb_addr_reg[1]/Q
-                         net (fo=24, routed)          0.443     2.081    bowling_game_i/framebuffer_0/U0/addr1[1]
-    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1/ADDRARDADDR[1]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.683     1.130    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.870     2.029    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1/CLKARDCLK
-                         clock pessimism             -0.247     1.783    
-    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[1])
-                                                      0.183     1.966    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_6_1
-  -------------------------------------------------------------------
-                         required time                         -1.966    
-                         arrival time                           2.081    
-  -------------------------------------------------------------------
-                         slack                                  0.115    
-
-Slack (MET) :             0.118ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[4]
-                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.618ns  (logic 0.141ns (22.806%)  route 0.477ns (77.194%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.317ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.035ns
-    Source Clock Delay      (SCD):    1.472ns
-    Clock Pessimism Removal (CPR):    0.247ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.627     0.886    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.560     1.472    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y50         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X31Y50         FDRE (Prop_fdre_C_Q)         0.141     1.613 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]/Q
-                         net (fo=25, routed)          0.477     2.090    bowling_game_i/framebuffer_0/U0/addr2[4]
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/ADDRBWRADDR[4]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock sys_clk_pin rise edge)
-                                                      0.000     0.000 r  
-    L16                                               0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.683     1.130    clk_IBUF
-    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
-    RAMB36_X2Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2/CLKBWRCLK
-                         clock pessimism             -0.247     1.789    
-    RAMB36_X2Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[4])
-                                                      0.183     1.972    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_5_2
-  -------------------------------------------------------------------
-                         required time                         -1.972    
-                         arrival time                           2.090    
-  -------------------------------------------------------------------
-                         slack                                  0.118    
-
-Slack (MET) :             0.120ns  (arrival time - required time)
-  Source:                 bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Destination:            bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]/D
-                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
-  Path Group:             sys_clk_pin
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        0.488ns  (logic 0.355ns (72.722%)  route 0.133ns (27.278%))
-  Logic Levels:           2  (CARRY4=2)
-  Clock Path Skew:        0.263ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.988ns
+  Clock Path Skew:        0.076ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.034ns
     Source Clock Delay      (SCD):    1.478ns
-    Clock Pessimism Removal (CPR):    0.247ns
+    Clock Pessimism Removal (CPR):    0.480ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -1284,17 +1164,11 @@ Slack (MET) :             0.120ns  (arrival time - required time)
                          net (fo=1, routed)           0.627     0.886    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
                          net (fo=174, routed)         0.566     1.478    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y49         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/C
+    SLICE_X31Y47         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[10]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y49         FDRE (Prop_fdre_C_Q)         0.141     1.619 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]/Q
-                         net (fo=25, routed)          0.132     1.751    bowling_game_i/pixel_pusher_0/U0/addr[3]
-    SLICE_X31Y49         CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.160     1.911 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]_i_1/CO[3]
-                         net (fo=1, routed)           0.001     1.912    bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[3]_i_1_n_0
-    SLICE_X31Y50         CARRY4 (Prop_carry4_CI_O[0])
-                                                      0.054     1.966 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[7]_i_1/O[0]
-                         net (fo=1, routed)           0.000     1.966    bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[7]_i_1_n_7
-    SLICE_X31Y50         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]/D
+    SLICE_X31Y47         FDRE (Prop_fdre_C_Q)         0.141     1.619 r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[10]/Q
+                         net (fo=25, routed)          0.242     1.861    bowling_game_i/framebuffer_0/U0/addr2[10]
+    RAMB36_X1Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/ADDRBWRADDR[10]
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -1304,15 +1178,116 @@ Slack (MET) :             0.120ns  (arrival time - required time)
     L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.683     1.130    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
-                         net (fo=174, routed)         0.829     1.988    bowling_game_i/pixel_pusher_0/U0/clk
-    SLICE_X31Y50         FDRE                                         r  bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]/C
-                         clock pessimism             -0.247     1.741    
-    SLICE_X31Y50         FDRE (Hold_fdre_C_D)         0.105     1.846    bowling_game_i/pixel_pusher_0/U0/addr_counter_reg[4]
+                         net (fo=174, routed)         0.875     2.034    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/CLKBWRCLK
+                         clock pessimism             -0.480     1.554    
+    RAMB36_X1Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_ADDRBWRADDR[10])
+                                                      0.183     1.737    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1
   -------------------------------------------------------------------
-                         required time                         -1.846    
-                         arrival time                           1.966    
+                         required time                         -1.737    
+                         arrival time                           1.861    
   -------------------------------------------------------------------
-                         slack                                  0.120    
+                         slack                                  0.124    
+
+Slack (MET) :             0.127ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[1]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.619ns  (logic 0.141ns (22.788%)  route 0.478ns (77.212%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.309ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.029ns
+    Source Clock Delay      (SCD):    1.474ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.562     1.474    bowling_game_i/controller_0/U0/clk
+    SLICE_X23Y43         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y43         FDRE (Prop_fdre_C_Q)         0.141     1.615 r  bowling_game_i/controller_0/U0/fb_addr_reg[1]/Q
+                         net (fo=24, routed)          0.478     2.092    bowling_game_i/framebuffer_0/U0/addr1[1]
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/ADDRARDADDR[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.870     2.029    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y10         RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2/CLKARDCLK
+                         clock pessimism             -0.247     1.783    
+    RAMB36_X1Y10         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[1])
+                                                      0.183     1.966    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_4_2
+  -------------------------------------------------------------------
+                         required time                         -1.966    
+                         arrival time                           2.092    
+  -------------------------------------------------------------------
+                         slack                                  0.127    
+
+Slack (MET) :             0.131ns  (arrival time - required time)
+  Source:                 bowling_game_i/controller_0/U0/fb_addr_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/ADDRARDADDR[13]
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.373ns  (logic 0.141ns (37.799%)  route 0.232ns (62.201%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.059ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.035ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.886    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.912 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.565     1.477    bowling_game_i/controller_0/U0/clk
+    SLICE_X26Y44         FDRE                                         r  bowling_game_i/controller_0/U0/fb_addr_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y44         FDRE (Prop_fdre_C_Q)         0.141     1.618 r  bowling_game_i/controller_0/U0/fb_addr_reg[13]/Q
+                         net (fo=24, routed)          0.232     1.850    bowling_game_i/framebuffer_0/U0/addr1[13]
+    RAMB36_X1Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/ADDRARDADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    L16                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    L16                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.130    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.159 r  clk_IBUF_BUFG_inst/O
+                         net (fo=174, routed)         0.876     2.035    bowling_game_i/framebuffer_0/U0/clk1
+    RAMB36_X1Y9          RAMB36E1                                     r  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/CLKARDCLK
+                         clock pessimism             -0.499     1.536    
+    RAMB36_X1Y9          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[13])
+                                                      0.183     1.719    bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1
+  -------------------------------------------------------------------
+                         required time                         -1.719    
+                         arrival time                           1.850    
+  -------------------------------------------------------------------
+                         slack                                  0.131    
 
 
 
@@ -1326,16 +1301,16 @@ Period(ns):         8.000
 Sources:            { clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y4   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y6   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y6   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_2/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y5   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y7   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y7   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_2/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y10  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y8   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y12  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_2/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y11  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y12  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y8   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X2Y10  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_0_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y13  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X1Y9   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X2Y11  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_1_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y12  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y8   bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y10  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_2_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            3.363         8.000       4.637      RAMB36_X0Y13  bowling_game_i/framebuffer_0/U0/framebuffer_memory_reg_3_0/CLKARDCLK
 Low Pulse Width   Slow    FDRE/C              n/a            0.500         4.000       3.500      SLICE_X32Y40  bowling_game_i/clock_div_25Mhz_0/U0/count_reg[0]/C
 Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.000       3.500      SLICE_X32Y40  bowling_game_i/clock_div_25Mhz_0/U0/count_reg[0]/C
 Low Pulse Width   Slow    FDRE/C              n/a            0.500         4.000       3.500      SLICE_X32Y42  bowling_game_i/clock_div_25Mhz_0/U0/count_reg[10]/C

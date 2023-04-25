@@ -1,40 +1,42 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.92277",
-   "Default View_TopLeft":"-400,-90",
+   "Default View_ScaleFactor":"0.588889",
+   "Default View_TopLeft":"-664,-80",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port port-id_clk -pg 1 -lvl 0 -x -340 -y -60 -defaultsOSRD
-preplace port port-id_vga_hs -pg 1 -lvl 4 -x 980 -y 460 -defaultsOSRD
-preplace port port-id_vga_vs -pg 1 -lvl 4 -x 980 -y 500 -defaultsOSRD
-preplace portBus vga_r -pg 1 -lvl 4 -x 980 -y 330 -defaultsOSRD
-preplace portBus vga_b -pg 1 -lvl 4 -x 980 -y 360 -defaultsOSRD
-preplace portBus vga_g -pg 1 -lvl 4 -x 980 -y 420 -defaultsOSRD
-preplace inst clock_div_25Mhz_0 -pg 1 -lvl 1 -x 70 -y 360 -defaultsOSRD
-preplace inst pixel_pusher_0 -pg 1 -lvl 3 -x 740 -y 350 -defaultsOSRD
-preplace inst framebuffer_0 -pg 1 -lvl 2 -x 400 -y 230 -defaultsOSRD
-preplace inst vga_ctrl_0 -pg 1 -lvl 3 -x 740 -y 570 -defaultsOSRD
-preplace inst controller_0 -pg 1 -lvl 1 -x 70 -y 530 -defaultsOSRD
-preplace netloc clk_1 1 0 3 -320 100 200 100 530
-preplace netloc clock_div_25Mhz_0_div 1 0 3 -310 300 210 360 540
-preplace netloc controller_0_fb_addr 1 1 1 200 220n
-preplace netloc controller_0_fb_pixel 1 1 1 230 280n
-preplace netloc controller_0_fb_wr_en 1 1 1 220 260n
-preplace netloc controller_0_rst 1 1 1 240 300n
-preplace netloc framebuffer_0_dout2 1 2 1 520 240n
-preplace netloc pixel_pusher_0_B 1 3 1 920 340n
-preplace netloc pixel_pusher_0_G 1 3 1 910 360n
-preplace netloc pixel_pusher_0_R 1 3 1 920 320n
-preplace netloc pixel_pusher_0_addr 1 1 3 250 730 N 730 900
-preplace netloc vga_ctrl_0_blank_time 1 0 4 -300 440 NJ 440 550J 690 860
-preplace netloc vga_ctrl_0_hcount 1 2 2 580 680 870
-preplace netloc vga_ctrl_0_hs 1 3 1 910 460n
-preplace netloc vga_ctrl_0_vcount 1 2 2 590 700 890
-preplace netloc vga_ctrl_0_vid 1 2 2 570 720 880
-preplace netloc vga_ctrl_0_vs 1 2 2 560 710 920
-levelinfo -pg 1 -340 70 400 740 980
-pagesize -pg 1 -db -bbox -sgen -410 -250 1100 830
+preplace port port-id_vga_hs -pg 1 -lvl 5 -x 980 -y 460 -defaultsOSRD
+preplace port port-id_vga_vs -pg 1 -lvl 5 -x 980 -y 500 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 5 -x 980 -y 330 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 5 -x 980 -y 360 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 5 -x 980 -y 420 -defaultsOSRD
+preplace inst clock_div_25Mhz_0 -pg 1 -lvl 2 -x 70 -y 360 -defaultsOSRD
+preplace inst pixel_pusher_0 -pg 1 -lvl 4 -x 740 -y 350 -defaultsOSRD
+preplace inst framebuffer_0 -pg 1 -lvl 3 -x 400 -y 230 -defaultsOSRD
+preplace inst vga_ctrl_0 -pg 1 -lvl 4 -x 740 -y 570 -defaultsOSRD
+preplace inst clock_div_60hz_0 -pg 1 -lvl 1 -x -210 -y 470 -defaultsOSRD
+preplace inst controller_0 -pg 1 -lvl 2 -x 70 -y 530 -defaultsOSRD
+preplace netloc clk_1 1 0 4 -320 160 -90 160 210 100 540
+preplace netloc clock_div_25Mhz_0_div 1 1 3 -80 300 240 360 550
+preplace netloc controller_0_fb_addr 1 2 1 210 220n
+preplace netloc controller_0_fb_pixel 1 2 1 230 280n
+preplace netloc controller_0_fb_wr_en 1 2 1 220 260n
+preplace netloc controller_0_rst 1 2 1 250 300n
+preplace netloc framebuffer_0_dout2 1 3 1 530 240n
+preplace netloc pixel_pusher_0_B 1 4 1 920 340n
+preplace netloc pixel_pusher_0_G 1 4 1 910 360n
+preplace netloc pixel_pusher_0_R 1 4 1 920 320n
+preplace netloc pixel_pusher_0_addr 1 2 3 250 90 N 90 880
+preplace netloc vga_ctrl_0_blank_time 1 1 4 -80 620 NJ 620 560J 690 870
+preplace netloc vga_ctrl_0_hcount 1 3 2 580 720 900
+preplace netloc vga_ctrl_0_hs 1 4 1 910 460n
+preplace netloc vga_ctrl_0_vcount 1 3 2 590 680 880
+preplace netloc vga_ctrl_0_vid 1 3 2 600 700 890
+preplace netloc vga_ctrl_0_vs 1 3 2 570 710 920
+preplace netloc clock_div_60hz_0_div 1 1 1 -100 470n
+levelinfo -pg 1 -340 -210 70 400 740 980
+pagesize -pg 1 -db -bbox -sgen -410 -250 1110 830
 "
 }
 0

@@ -7,14 +7,14 @@
       "name": "bowling_game",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1",
-      "validated": "true"
+      "tool_version": "2021.1"
     },
     "design_tree": {
       "clock_div_25Mhz_0": "",
       "pixel_pusher_0": "",
       "framebuffer_0": "",
       "vga_ctrl_0": "",
+      "clock_div_60hz_0": "",
       "controller_0": ""
     },
     "ports": {
@@ -47,7 +47,7 @@
       "clock_div_25Mhz_0": {
         "vlnv": "xilinx.com:module_ref:clock_div_25Mhz:1.0",
         "xci_name": "bowling_game_clock_div_25Mhz_0_0",
-        "xci_path": "ip\\bowling_game_clock_div_25Mhz_0_0_1\\bowling_game_clock_div_25Mhz_0_0.xci",
+        "xci_path": "ip/bowling_game_clock_div_25Mhz_0_0_2/bowling_game_clock_div_25Mhz_0_0.xci",
         "inst_hier_path": "clock_div_25Mhz_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -67,7 +67,7 @@
       "pixel_pusher_0": {
         "vlnv": "xilinx.com:module_ref:pixel_pusher:1.0",
         "xci_name": "bowling_game_pixel_pusher_0_0",
-        "xci_path": "ip\\bowling_game_pixel_pusher_0_0_1\\bowling_game_pixel_pusher_0_0.xci",
+        "xci_path": "ip/bowling_game_pixel_pusher_0_0_2/bowling_game_pixel_pusher_0_0.xci",
         "inst_hier_path": "pixel_pusher_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -131,7 +131,7 @@
       "framebuffer_0": {
         "vlnv": "xilinx.com:module_ref:framebuffer:1.0",
         "xci_name": "bowling_game_framebuffer_0_0",
-        "xci_path": "ip\\bowling_game_framebuffer_0_0_1\\bowling_game_framebuffer_0_0.xci",
+        "xci_path": "ip/bowling_game_framebuffer_0_0_2/bowling_game_framebuffer_0_0.xci",
         "inst_hier_path": "framebuffer_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -185,7 +185,7 @@
       "vga_ctrl_0": {
         "vlnv": "xilinx.com:module_ref:vga_ctrl:1.0",
         "xci_name": "bowling_game_vga_ctrl_0_0",
-        "xci_path": "ip\\bowling_game_vga_ctrl_0_0_1\\bowling_game_vga_ctrl_0_0.xci",
+        "xci_path": "ip/bowling_game_vga_ctrl_0_0_2/bowling_game_vga_ctrl_0_0.xci",
         "inst_hier_path": "vga_ctrl_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -224,10 +224,30 @@
           }
         }
       },
+      "clock_div_60hz_0": {
+        "vlnv": "xilinx.com:module_ref:clock_div_60hz:1.0",
+        "xci_name": "bowling_game_clock_div_60hz_0_0",
+        "xci_path": "ip/bowling_game_clock_div_60hz_0_0/bowling_game_clock_div_60hz_0_0.xci",
+        "inst_hier_path": "clock_div_60hz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div_60hz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "div": {
+            "direction": "O"
+          }
+        }
+      },
       "controller_0": {
         "vlnv": "xilinx.com:module_ref:controller:1.0",
         "xci_name": "bowling_game_controller_0_0",
-        "xci_path": "ip\\bowling_game_controller_0_0\\bowling_game_controller_0_0.xci",
+        "xci_path": "ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0.xci",
         "inst_hier_path": "controller_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -237,13 +257,11 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
+            "direction": "I"
+          },
+          "game_clk": {
+            "type": "clk",
+            "direction": "I"
           },
           "en": {
             "direction": "I"
@@ -279,6 +297,7 @@
           "pixel_pusher_0/clk",
           "framebuffer_0/clk1",
           "vga_ctrl_0/clk",
+          "clock_div_60hz_0/clk",
           "controller_0/clk"
         ]
       },
@@ -290,6 +309,12 @@
           "framebuffer_0/en2",
           "vga_ctrl_0/en",
           "controller_0/en"
+        ]
+      },
+      "clock_div_60hz_0_div": {
+        "ports": [
+          "clock_div_60hz_0/div",
+          "controller_0/game_clk"
         ]
       },
       "controller_0_fb_addr": {

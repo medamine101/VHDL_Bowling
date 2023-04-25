@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682379151">
-  <File Type="ROUTE-PWR" Name="bowling_game_wrapper_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="bowling_game_wrapper.tcl"/>
-  <File Type="BITSTR-MMI" Name="bowling_game_wrapper.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="bowling_game_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="bowling_game_wrapper_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="bowling_game_wrapper_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="bowling_game_wrapper_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="bowling_game_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="bowling_game_wrapper_opt.dcp"/>
-  <File Type="OPT-DRC" Name="bowling_game_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="bowling_game_wrapper.hwdef"/>
-  <File Type="PWROPT-DCP" Name="bowling_game_wrapper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="bowling_game_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="bowling_game_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="bowling_game_wrapper_placed.dcp"/>
-  <File Type="PLACE-IO" Name="bowling_game_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="bowling_game_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="bowling_game_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="bowling_game_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="bowling_game_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="bowling_game_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="bowling_game_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="bowling_game_wrapper.bin"/>
-  <File Type="PLACE-TIMING" Name="bowling_game_wrapper_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="bowling_game_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="bowling_game_wrapper.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="bowling_game_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="bowling_game_wrapper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="bowling_game_wrapper_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="bowling_game_wrapper.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="bowling_game_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="bowling_game_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="bowling_game_wrapper_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="bowling_game_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="bowling_game_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="bowling_game_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="bowling_game_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="bowling_game_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bowling_game_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bowling_game_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="bowling_game_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="bowling_game_wrapper_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="bowling_game_wrapper_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="bowling_game_wrapper_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="bowling_game_wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="bowling_game_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="bowling_game_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="bowling_game_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="bowling_game_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="bowling_game_wrapper_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="bowling_game_wrapper_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bowling_game_wrapper_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bowling_game_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="bowling_game_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="bowling_game_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="bowling_game_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="bowling_game_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="bowling_game_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="bowling_game_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="bowling_game_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="bowling_game_wrapper.nky"/>
-  <File Type="BITSTR-BMM" Name="bowling_game_wrapper_bd.bmm"/>
-  <File Type="PDI-FILE" Name="bowling_game_wrapper.pdi"/>
-  <File Type="RCFI_FILE" Name="bowling_game_wrapper.rcfi"/>
-  <File Type="CFI_FILE" Name="bowling_game_wrapper.cfi"/>
-  <File Type="RNPI_FILE" Name="bowling_game_wrapper.rnpi"/>
-  <File Type="NPI_FILE" Name="bowling_game_wrapper.npi"/>
-  <File Type="RBD_FILE" Name="bowling_game_wrapper.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682454011">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="bowling_game_wrapper.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="bowling_game_wrapper.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="bowling_game_wrapper.sysdef"/>
   <File Type="BG-BGN" Name="bowling_game_wrapper.bgn"/>
+  <File Type="RNPI_FILE" Name="bowling_game_wrapper.rnpi"/>
   <File Type="BG-DRC" Name="bowling_game_wrapper.drc"/>
+  <File Type="CFI_FILE" Name="bowling_game_wrapper.cfi"/>
+  <File Type="RCFI_FILE" Name="bowling_game_wrapper.rcfi"/>
+  <File Type="BITSTR-MMI" Name="bowling_game_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="bowling_game_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="bowling_game_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="bowling_game_wrapper.rbt"/>
+  <File Type="RBD_FILE" Name="bowling_game_wrapper.rbd"/>
+  <File Type="BITSTR-MSK" Name="bowling_game_wrapper.msk"/>
+  <File Type="NPI_FILE" Name="bowling_game_wrapper.npi"/>
+  <File Type="BG-BIN" Name="bowling_game_wrapper.bin"/>
+  <File Type="PDI-FILE" Name="bowling_game_wrapper.pdi"/>
+  <File Type="BG-BIT" Name="bowling_game_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="bowling_game_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="bowling_game_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="bowling_game_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="bowling_game_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="RDI-RDI" Name="bowling_game_wrapper.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="bowling_game_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="bowling_game_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bowling_game_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bowling_game_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="bowling_game_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="bowling_game_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="bowling_game_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="bowling_game_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="bowling_game_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bowling_game_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="bowling_game_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="bowling_game_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="bowling_game_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="bowling_game_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="bowling_game_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bowling_game_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bowling_game_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="bowling_game_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="bowling_game_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="bowling_game_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="bowling_game_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="bowling_game_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="bowling_game_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="bowling_game_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="bowling_game_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="bowling_game_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="bowling_game_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="bowling_game_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="bowling_game_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="bowling_game_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="bowling_game_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="bowling_game_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="bowling_game_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="bowling_game_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="bowling_game_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="bowling_game_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="bowling_game_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="bowling_game_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="bowling_game_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="bowling_game_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="bowling_game_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="bowling_game_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="bowling_game_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="bowling_game_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="bowling_game_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="bowling_game_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="bowling_game_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="bowling_game_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="bowling_game_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="bowling_game_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="bowling_game_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/clock_div_25Mhz.vhd">
@@ -162,9 +162,9 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="bowling_game_framebuffer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_25Mhz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_pixel_pusher_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_vga_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_framebuffer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_25Mhz_0_0"/>
 </GenRun>

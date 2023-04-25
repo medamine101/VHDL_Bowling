@@ -2,48 +2,49 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon Apr 24 15:55:53 2023
-# Process ID: 183138
-# Current directory: /home/user/Downloads/Final_Project/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1
+# Start of session at: Tue Apr 25 15:06:02 2023
+# Process ID: 1149807
+# Current directory: /home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1
 # Command line: vivado -log bowling_game_framebuffer_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bowling_game_framebuffer_0_0.tcl
-# Log file: /home/user/Downloads/Final_Project/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/bowling_game_framebuffer_0_0.vds
-# Journal file: /home/user/Downloads/Final_Project/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/vivado.jou
+# Log file: /home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/bowling_game_framebuffer_0_0.vds
+# Journal file: /home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source bowling_game_framebuffer_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID c0a711cbf77a990b) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips bowling_game_framebuffer_0_0]'
 Command: synth_design -top bowling_game_framebuffer_0_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 183378
+INFO: [Synth 8-7075] Helper process launched with PID 1150009
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2491.227 ; gain = 0.000 ; free physical = 5653 ; free virtual = 23054
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2459.195 ; gain = 0.000 ; free physical = 2456 ; free virtual = 21534
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'bowling_game_framebuffer_0_0' [/home/user/Downloads/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_1/synth/bowling_game_framebuffer_0_0.vhd:71]
-INFO: [Synth 8-3491] module 'framebuffer' declared at '/home/user/Downloads/Final_Project/Final_Project.srcs/sources_1/new/framebuffer.vhd:6' bound to instance 'U0' of component 'framebuffer' [/home/user/Downloads/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_1/synth/bowling_game_framebuffer_0_0.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'framebuffer' [/home/user/Downloads/Final_Project/Final_Project.srcs/sources_1/new/framebuffer.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'framebuffer' (1#1) [/home/user/Downloads/Final_Project/Final_Project.srcs/sources_1/new/framebuffer.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'bowling_game_framebuffer_0_0' (2#1) [/home/user/Downloads/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_1/synth/bowling_game_framebuffer_0_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_framebuffer_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_2/synth/bowling_game_framebuffer_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'framebuffer' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.srcs/sources_1/new/framebuffer.vhd:6' bound to instance 'U0' of component 'framebuffer' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_2/synth/bowling_game_framebuffer_0_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'framebuffer' [/home/user/Documents/VHDL_Bowling/Final_Project.srcs/sources_1/new/framebuffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'framebuffer' (1#1) [/home/user/Documents/VHDL_Bowling/Final_Project.srcs/sources_1/new/framebuffer.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'bowling_game_framebuffer_0_0' (2#1) [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_2/synth/bowling_game_framebuffer_0_0.vhd:71]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2491.227 ; gain = 0.000 ; free physical = 3865 ; free virtual = 21267
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2459.195 ; gain = 0.000 ; free physical = 1666 ; free virtual = 19637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2491.227 ; gain = 0.000 ; free physical = 4589 ; free virtual = 21990
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2459.195 ; gain = 0.000 ; free physical = 1689 ; free virtual = 19660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 4585 ; free virtual = 21987
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 1689 ; free virtual = 19660
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5338 ; free virtual = 22740
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 3230 ; free virtual = 21202
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -71,7 +72,7 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5041 ; free virtual = 22443
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2621 ; free virtual = 20594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -93,7 +94,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5041 ; free virtual = 22443
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2620 ; free virtual = 20594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -137,7 +138,7 @@ INFO: [Synth 8-7052] The timing for the instance U0/framebuffer_memory_reg_7_1 (
 INFO: [Synth 8-7052] The timing for the instance U0/framebuffer_memory_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance U0/framebuffer_memory_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5056 ; free virtual = 22458
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2633 ; free virtual = 20606
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -155,37 +156,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2793 ; free virtual = 20766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2793 ; free virtual = 20766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2793 ; free virtual = 20766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2793 ; free virtual = 20766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2792 ; free virtual = 20765
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2792 ; free virtual = 20765
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -216,30 +217,29 @@ Report Instance Areas:
 |2     |  U0     |framebuffer |    56|
 +------+---------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5132 ; free virtual = 22534
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2792 ; free virtual = 20765
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.102 ; gain = 7.875 ; free physical = 5139 ; free virtual = 22541
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2499.109 ; gain = 7.875 ; free physical = 5139 ; free virtual = 22541
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.070 ; gain = 7.875 ; free physical = 2795 ; free virtual = 20768
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2467.078 ; gain = 7.875 ; free physical = 2795 ; free virtual = 20768
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2499.109 ; gain = 0.000 ; free physical = 5190 ; free virtual = 22592
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2467.078 ; gain = 0.000 ; free physical = 2915 ; free virtual = 20889
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2555.129 ; gain = 0.000 ; free physical = 5200 ; free virtual = 22602
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2523.098 ; gain = 0.000 ; free physical = 3016 ; free virtual = 20989
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: 268efad4
 INFO: [Common 17-83] Releasing license: Synthesis
-44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2555.129 ; gain = 64.031 ; free physical = 5336 ; free virtual = 22738
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2523.098 ; gain = 64.031 ; free physical = 3155 ; free virtual = 21128
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Common 17-1381] The checkpoint '/home/user/Downloads/Final_Project/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/bowling_game_framebuffer_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2693.957 ; gain = 138.828 ; free physical = 4620 ; free virtual = 22021
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bowling_game_framebuffer_0_0, cache-ID = c0a711cbf77a990b
-INFO: [Common 17-1381] The checkpoint '/home/user/Downloads/Final_Project/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/bowling_game_framebuffer_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/bowling_game_framebuffer_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2692.926 ; gain = 169.828 ; free physical = 1749 ; free virtual = 19723
+INFO: [Common 17-1381] The checkpoint '/home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_framebuffer_0_0_synth_1/bowling_game_framebuffer_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bowling_game_framebuffer_0_0_utilization_synth.rpt -pb bowling_game_framebuffer_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 24 15:56:19 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 15:06:36 2023...

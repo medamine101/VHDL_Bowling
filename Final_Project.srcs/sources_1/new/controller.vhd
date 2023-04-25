@@ -34,7 +34,10 @@ use IEEE.NUMERIC_STD.ALL;
 entity controller is
     Port (
         clk : in std_logic;
+        game_clk : in std_logic;
         en : in std_logic;
+        right_in : in std_logic;
+        left_in : in std_logic;
         fb_addr : out STD_LOGIC_VECTOR (17 downto 0);
         fb_pixel : out STD_LOGIC_VECTOR (2 downto 0);
         blank_time : in std_logic;
@@ -57,24 +60,48 @@ signal pic_reset : std_logic := '0';
 
 type state is (rst_pic, pix_out, wait_rst, wait_after_pix);
 
+type game_state is (user_input, run_logic);
+
 signal curr_state : state := wait_rst;
+
+signal game_time : game_state := user_input;
 
 signal color_cycle_clock : unsigned(6 downto 0) := (others => '0');
 
 constant bowling_ball_width_x : integer := 20;
 constant bowling_ball_width_y : integer := 20;
-constant bowling_ball_location_x : integer := 200;
-constant bowling_ball_location_y : integer := 200;
+signal bowling_ball_location_x : integer := 200;
+signal bowling_ball_location_y : integer := 400;
 
 
---type bowling_ball_bitmap is array(0 to 19) of array(0 to 19) of unsiged(2 downto 0);
+type matrix is array(natural range <>, natural range <>) of integer;
 
---constant bowling_ball : bowling_ball_bitmap := (((3,3)));
+constant bowling_ball : matrix(0 to 19, 0 to 19) := ((7,7,7,7,7,7,7,0,0,0,0,0,0,7,7,7,7,7,7,7),
+                                                     (7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7),
+                                                     (7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7),
+                                                     (7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7),
+                                                     (7,7,0,0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,7,7),
+                                                     (7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7),
+                                                     (7,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7),
+                                                     (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                                     (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                                     (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                                     (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                                     (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                                     (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+                                                     (7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7),
+                                                     (7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7),
+                                                     (7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7),
+                                                     (7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7),
+                                                     (7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7),
+                                                     (7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7),
+                                                     (7,7,7,7,7,7,7,0,0,0,0,0,0,7,7,7,7,7,7,7));
 
 begin
 
     pixel_loc <=(pixel_y * 480) + pixel_x;
 
+    -- Render graphics
     process(clk)
     begin
     
@@ -86,8 +113,6 @@ begin
                     when wait_rst =>
                     
                         if blank_time='1' then
-                        
-                        
                         
                             color_cycle_clock <= color_cycle_clock + 1;
                             
@@ -106,16 +131,9 @@ begin
                     
                     when pix_out =>
                         rst <= '0';
-                    
---                        if assign_addy < 262144 then
---                            fb_pixel <= pixel;
---                            fb_addr <= STD_LOGIC_VECTOR(assign_addy);
---                            assign_addy <= assign_addy + 1;
---                        else
---                            assign_addy <= (others => '0');
---                            curr_state <= wait_after_pix;
---                        end if;
 
+
+                        -- background color
                         if pixel_y >= 480 then
                             pixel_x <= (others => '0');
                             pixel_y <= (others => '0');
@@ -132,6 +150,18 @@ begin
                             pixel_x <= pixel_x + 1;
                         
                         end if;
+                        
+                        -- bowling ball
+                        if (pixel_x < bowling_ball_location_x + bowling_ball_width_x and 
+                            bowling_ball_location_x <= pixel_x and 
+                            pixel_y < bowling_ball_location_y + bowling_ball_width_y and 
+                            bowling_ball_location_y <= pixel_y) then
+                            
+                                fb_pixel <= std_logic_vector(to_unsigned(bowling_ball(to_integer(pixel_y) - bowling_ball_location_y, 
+                                                                                      to_integer(pixel_x) - bowling_ball_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
                     
                     
                     when others =>
@@ -143,5 +173,40 @@ begin
     
     end process;
 
+
+    -- Game logic
+    process(game_clk)
+    begin
+    
+        if rising_edge(game_clk) then
+    
+            case game_time is
+            
+                when user_input =>
+                
+                    
+                    
+                    if right_in='1' then
+                        
+                        bowling_ball_location_x <= bowling_ball_location_x + 1;
+                    
+                    elsif left_in='1' then
+                    
+                    end if;
+
+                    
+                    
+                
+                    game_time <= run_logic;
+                
+                when run_logic =>
+                
+                    game_time <= user_input;
+            
+            end case;
+        
+        end if;
+    
+    end process;
 
 end Behavioral;

@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Mon Apr 24 16:32:48 2023
-| Host         : ece27 running 64-bit Ubuntu 20.04.2 LTS
+| Date         : Tue Apr 25 15:06:35 2023
+| Host         : ece55 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_utilization -file bowling_game_vga_ctrl_0_0_utilization_synth.rpt -pb bowling_game_vga_ctrl_0_0_utilization_synth.pb
 | Design       : bowling_game_vga_ctrl_0_0
 | Device       : 7z010clg400-1

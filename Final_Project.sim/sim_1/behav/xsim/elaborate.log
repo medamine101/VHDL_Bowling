@@ -1,7 +1,7 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 9bec0c295b104bc78435ec695854aefc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot bowling_tb_behav xil_defaultlib.bowling_tb -log elaborate.log 
-Using 2 slave threads.
+Running: /home/software/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 9bec0c295b104bc78435ec695854aefc --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot bowling_tb_behav xil_defaultlib.bowling_tb -log elaborate.log 
+Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis

@@ -3,92 +3,90 @@
     with args -log bowling_game_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bowling_game_wrapper.tcl
 
 
-
 ****** Vivado v2021.1 (64-bit)
-  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
   **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source bowling_game_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1135.973 ; gain = 0.000
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top bowling_game_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7772
+INFO: [Synth 8-7075] Helper process launched with PID 1253038
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2761 ; free virtual = 20889
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'bowling_game_wrapper' [C:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd:25]
-INFO: [Synth 8-3491] module 'bowling_game' declared at 'c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:14' bound to instance 'bowling_game_i' of component 'bowling_game' [C:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'bowling_game' [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:29]
-INFO: [Synth 8-3491] module 'bowling_game_clock_div_25Mhz_0_0' declared at 'C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_clock_div_25Mhz_0_0_stub.vhdl:5' bound to instance 'clock_div_25Mhz_0' of component 'bowling_game_clock_div_25Mhz_0_0' [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'bowling_game_clock_div_25Mhz_0_0' [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_clock_div_25Mhz_0_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'bowling_game_controller_0_0' declared at 'C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_controller_0_0_stub.vhdl:5' bound to instance 'controller_0' of component 'bowling_game_controller_0_0' [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'bowling_game_controller_0_0' [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_controller_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'bowling_game_framebuffer_0_0' declared at 'C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_framebuffer_0_0_stub.vhdl:5' bound to instance 'framebuffer_0' of component 'bowling_game_framebuffer_0_0' [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'bowling_game_framebuffer_0_0' [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_framebuffer_0_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'bowling_game_pixel_pusher_0_0' declared at 'C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_pixel_pusher_0_0_stub.vhdl:5' bound to instance 'pixel_pusher_0' of component 'bowling_game_pixel_pusher_0_0' [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'bowling_game_pixel_pusher_0_0' [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_pixel_pusher_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'bowling_game_vga_ctrl_0_0' declared at 'C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_vga_ctrl_0_0_stub.vhdl:5' bound to instance 'vga_ctrl_0' of component 'bowling_game_vga_ctrl_0_0' [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'bowling_game_vga_ctrl_0_0' [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/.Xil/Vivado-1784-medamine-MacBookProWin10/realtime/bowling_game_vga_ctrl_0_0_stub.vhdl:19]
-INFO: [Synth 8-256] done synthesizing module 'bowling_game' (1#1) [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'bowling_game_wrapper' (2#1) [C:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_wrapper' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd:25]
+INFO: [Synth 8-3491] module 'bowling_game' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:14' bound to instance 'bowling_game_i' of component 'bowling_game' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'bowling_game' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:29]
+INFO: [Synth 8-3491] module 'bowling_game_clock_div_25Mhz_0_0' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_clock_div_25Mhz_0_0_stub.vhdl:5' bound to instance 'clock_div_25Mhz_0' of component 'bowling_game_clock_div_25Mhz_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_clock_div_25Mhz_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_clock_div_25Mhz_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'bowling_game_controller_0_0' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_controller_0_0_stub.vhdl:5' bound to instance 'controller_0' of component 'bowling_game_controller_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_controller_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_controller_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'bowling_game_framebuffer_0_0' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_framebuffer_0_0_stub.vhdl:5' bound to instance 'framebuffer_0' of component 'bowling_game_framebuffer_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_framebuffer_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_framebuffer_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'bowling_game_pixel_pusher_0_0' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_pixel_pusher_0_0_stub.vhdl:5' bound to instance 'pixel_pusher_0' of component 'bowling_game_pixel_pusher_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_pixel_pusher_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_pixel_pusher_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'bowling_game_vga_ctrl_0_0' declared at '/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_vga_ctrl_0_0_stub.vhdl:5' bound to instance 'vga_ctrl_0' of component 'bowling_game_vga_ctrl_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'bowling_game_vga_ctrl_0_0' [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/.Xil/Vivado-1252617-ece55/realtime/bowling_game_vga_ctrl_0_0_stub.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'bowling_game' (1#1) [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/synth/bowling_game.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'bowling_game_wrapper' (2#1) [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd:25]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2027 ; free virtual = 20155
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 1935 ; free virtual = 20062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 1935 ; free virtual = 20062
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 1930 ; free virtual = 20057
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_clock_div_25Mhz_0_0_1/bowling_game_clock_div_25Mhz_0_0/bowling_game_clock_div_25Mhz_0_0_in_context.xdc] for cell 'bowling_game_i/clock_div_25Mhz_0'
-Finished Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_clock_div_25Mhz_0_0_1/bowling_game_clock_div_25Mhz_0_0/bowling_game_clock_div_25Mhz_0_0_in_context.xdc] for cell 'bowling_game_i/clock_div_25Mhz_0'
-Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_pixel_pusher_0_0_1/bowling_game_pixel_pusher_0_0/bowling_game_pixel_pusher_0_0_in_context.xdc] for cell 'bowling_game_i/pixel_pusher_0'
-Finished Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_pixel_pusher_0_0_1/bowling_game_pixel_pusher_0_0/bowling_game_pixel_pusher_0_0_in_context.xdc] for cell 'bowling_game_i/pixel_pusher_0'
-Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_1/bowling_game_framebuffer_0_0/bowling_game_framebuffer_0_0_in_context.xdc] for cell 'bowling_game_i/framebuffer_0'
-Finished Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_1/bowling_game_framebuffer_0_0/bowling_game_framebuffer_0_0_in_context.xdc] for cell 'bowling_game_i/framebuffer_0'
-Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_1/bowling_game_vga_ctrl_0_0/bowling_game_vga_ctrl_0_0_in_context.xdc] for cell 'bowling_game_i/vga_ctrl_0'
-Finished Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_1/bowling_game_vga_ctrl_0_0/bowling_game_vga_ctrl_0_0_in_context.xdc] for cell 'bowling_game_i/vga_ctrl_0'
-Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0/bowling_game_controller_0_0/bowling_game_controller_0_0_in_context.xdc] for cell 'bowling_game_i/controller_0'
-Finished Parsing XDC File [c:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0/bowling_game_controller_0_0/bowling_game_controller_0_0_in_context.xdc] for cell 'bowling_game_i/controller_0'
-Parsing XDC File [C:/Users/moham/Documents/Final_Project/Final_Project.srcs/constrs_1/new/zybo_old_board.xdc]
-Finished Parsing XDC File [C:/Users/moham/Documents/Final_Project/Final_Project.srcs/constrs_1/new/zybo_old_board.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/moham/Documents/Final_Project/Final_Project.srcs/constrs_1/new/zybo_old_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bowling_game_wrapper_propImpl.xdc].
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_clock_div_25Mhz_0_0_2/bowling_game_clock_div_25Mhz_0_0/bowling_game_clock_div_25Mhz_0_0_in_context.xdc] for cell 'bowling_game_i/clock_div_25Mhz_0'
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_clock_div_25Mhz_0_0_2/bowling_game_clock_div_25Mhz_0_0/bowling_game_clock_div_25Mhz_0_0_in_context.xdc] for cell 'bowling_game_i/clock_div_25Mhz_0'
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_pixel_pusher_0_0_2/bowling_game_pixel_pusher_0_0/bowling_game_pixel_pusher_0_0_in_context.xdc] for cell 'bowling_game_i/pixel_pusher_0'
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_pixel_pusher_0_0_2/bowling_game_pixel_pusher_0_0/bowling_game_pixel_pusher_0_0_in_context.xdc] for cell 'bowling_game_i/pixel_pusher_0'
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_2/bowling_game_framebuffer_0_0/bowling_game_framebuffer_0_0_in_context.xdc] for cell 'bowling_game_i/framebuffer_0'
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_framebuffer_0_0_2/bowling_game_framebuffer_0_0/bowling_game_framebuffer_0_0_in_context.xdc] for cell 'bowling_game_i/framebuffer_0'
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_2/bowling_game_vga_ctrl_0_0/bowling_game_vga_ctrl_0_0_in_context.xdc] for cell 'bowling_game_i/vga_ctrl_0'
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_vga_ctrl_0_0_2/bowling_game_vga_ctrl_0_0/bowling_game_vga_ctrl_0_0_in_context.xdc] for cell 'bowling_game_i/vga_ctrl_0'
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0/bowling_game_controller_0_0_in_context.xdc] for cell 'bowling_game_i/controller_0'
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0/bowling_game_controller_0_0_in_context.xdc] for cell 'bowling_game_i/controller_0'
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.srcs/constrs_1/new/zybo_old_board.xdc]
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.srcs/constrs_1/new/zybo_old_board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/Documents/VHDL_Bowling/Final_Project.srcs/constrs_1/new/zybo_old_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bowling_game_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bowling_game_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2675 ; free virtual = 20802
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2675 ; free virtual = 20802
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2741 ; free virtual = 20869
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2741 ; free virtual = 20869
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -100,10 +98,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for bowling_game_i/framebuffer_0. (co
 Applied set_property KEEP_HIERARCHY = SOFT for bowling_game_i/vga_ctrl_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for bowling_game_i/controller_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2741 ; free virtual = 20869
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2741 ; free virtual = 20869
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -125,25 +123,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2742 ; free virtual = 20869
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2615 ; free virtual = 20743
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2615 ; free virtual = 20742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -161,37 +159,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -221,16 +219,16 @@ Report Cell Usage:
 |7     |OBUF                                  |    18|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2606 ; free virtual = 20733
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 1135.973 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2668 ; free virtual = 20795
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2668 ; free virtual = 20795
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2658 ; free virtual = 20785
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1135.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2695 ; free virtual = 20822
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -238,7 +236,7 @@ Synth Design complete, checksum: a18511d3
 INFO: [Common 17-83] Releasing license: Synthesis
 31 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1135.973 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/moham/Documents/Final_Project/Final_Project.runs/synth_1/bowling_game_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2617.953 ; gain = 0.000 ; free physical = 2830 ; free virtual = 20957
+INFO: [Common 17-1381] The checkpoint '/home/user/Documents/VHDL_Bowling/Final_Project.runs/synth_1/bowling_game_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bowling_game_wrapper_utilization_synth.rpt -pb bowling_game_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 24 19:34:43 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 16:21:12 2023...
