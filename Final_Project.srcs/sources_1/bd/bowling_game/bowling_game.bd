@@ -1,0 +1,389 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3A6BB505AF74435D",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../Final_Project.gen/sources_1/bd/bowling_game",
+      "name": "bowling_game",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clock_div_25Mhz_0": "",
+      "pixel_pusher_0": "",
+      "framebuffer_0": "",
+      "vga_ctrl_0": "",
+      "controller_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "vga_r": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "vga_b": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "vga_g": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "vga_hs": {
+        "direction": "O"
+      },
+      "vga_vs": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clock_div_25Mhz_0": {
+        "vlnv": "xilinx.com:module_ref:clock_div_25Mhz:1.0",
+        "xci_name": "bowling_game_clock_div_25Mhz_0_0",
+        "xci_path": "ip\\bowling_game_clock_div_25Mhz_0_0_1\\bowling_game_clock_div_25Mhz_0_0.xci",
+        "inst_hier_path": "clock_div_25Mhz_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div_25Mhz",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "div": {
+            "direction": "O"
+          }
+        }
+      },
+      "pixel_pusher_0": {
+        "vlnv": "xilinx.com:module_ref:pixel_pusher:1.0",
+        "xci_name": "bowling_game_pixel_pusher_0_0",
+        "xci_path": "ip\\bowling_game_pixel_pusher_0_0_1\\bowling_game_pixel_pusher_0_0.xci",
+        "inst_hier_path": "pixel_pusher_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pixel_pusher",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "vs": {
+            "direction": "I"
+          },
+          "pixel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "hcount": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vcount": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vid": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "B": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "G": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "17",
+            "right": "0"
+          },
+          "blank_time": {
+            "direction": "I"
+          }
+        }
+      },
+      "framebuffer_0": {
+        "vlnv": "xilinx.com:module_ref:framebuffer:1.0",
+        "xci_name": "bowling_game_framebuffer_0_0",
+        "xci_path": "ip\\bowling_game_framebuffer_0_0_1\\bowling_game_framebuffer_0_0.xci",
+        "inst_hier_path": "framebuffer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "framebuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1": {
+            "direction": "I"
+          },
+          "en1": {
+            "direction": "I"
+          },
+          "en2": {
+            "direction": "I"
+          },
+          "addr1": {
+            "direction": "I",
+            "left": "17",
+            "right": "0"
+          },
+          "addr2": {
+            "direction": "I",
+            "left": "17",
+            "right": "0"
+          },
+          "wr_en1": {
+            "direction": "I"
+          },
+          "din1": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "dout1": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "dout2": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          }
+        }
+      },
+      "vga_ctrl_0": {
+        "vlnv": "xilinx.com:module_ref:vga_ctrl:1.0",
+        "xci_name": "bowling_game_vga_ctrl_0_0",
+        "xci_path": "ip\\bowling_game_vga_ctrl_0_0_1\\bowling_game_vga_ctrl_0_0.xci",
+        "inst_hier_path": "vga_ctrl_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_ctrl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "hcount": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "vcount": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "vid": {
+            "direction": "O"
+          },
+          "hs": {
+            "direction": "O"
+          },
+          "vs": {
+            "direction": "O"
+          },
+          "blank_time": {
+            "direction": "O"
+          }
+        }
+      },
+      "controller_0": {
+        "vlnv": "xilinx.com:module_ref:controller:1.0",
+        "xci_name": "bowling_game_controller_0_0",
+        "xci_path": "ip\\bowling_game_controller_0_0\\bowling_game_controller_0_0.xci",
+        "inst_hier_path": "controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "fb_addr": {
+            "direction": "O",
+            "left": "17",
+            "right": "0"
+          },
+          "fb_pixel": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "blank_time": {
+            "direction": "I"
+          },
+          "fb_wr_en": {
+            "direction": "O"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clock_div_25Mhz_0/clk",
+          "pixel_pusher_0/clk",
+          "framebuffer_0/clk1",
+          "vga_ctrl_0/clk",
+          "controller_0/clk"
+        ]
+      },
+      "clock_div_25Mhz_0_div": {
+        "ports": [
+          "clock_div_25Mhz_0/div",
+          "pixel_pusher_0/en",
+          "framebuffer_0/en1",
+          "framebuffer_0/en2",
+          "vga_ctrl_0/en",
+          "controller_0/en"
+        ]
+      },
+      "controller_0_fb_addr": {
+        "ports": [
+          "controller_0/fb_addr",
+          "framebuffer_0/addr1"
+        ]
+      },
+      "controller_0_fb_pixel": {
+        "ports": [
+          "controller_0/fb_pixel",
+          "framebuffer_0/din1"
+        ]
+      },
+      "controller_0_fb_wr_en": {
+        "ports": [
+          "controller_0/fb_wr_en",
+          "framebuffer_0/wr_en1"
+        ]
+      },
+      "controller_0_rst": {
+        "ports": [
+          "controller_0/rst",
+          "framebuffer_0/rst"
+        ]
+      },
+      "framebuffer_0_dout2": {
+        "ports": [
+          "framebuffer_0/dout2",
+          "pixel_pusher_0/pixel"
+        ]
+      },
+      "pixel_pusher_0_B": {
+        "ports": [
+          "pixel_pusher_0/B",
+          "vga_b"
+        ]
+      },
+      "pixel_pusher_0_G": {
+        "ports": [
+          "pixel_pusher_0/G",
+          "vga_g"
+        ]
+      },
+      "pixel_pusher_0_R": {
+        "ports": [
+          "pixel_pusher_0/R",
+          "vga_r"
+        ]
+      },
+      "pixel_pusher_0_addr": {
+        "ports": [
+          "pixel_pusher_0/addr",
+          "framebuffer_0/addr2"
+        ]
+      },
+      "vga_ctrl_0_blank_time": {
+        "ports": [
+          "vga_ctrl_0/blank_time",
+          "pixel_pusher_0/blank_time",
+          "controller_0/blank_time"
+        ]
+      },
+      "vga_ctrl_0_hcount": {
+        "ports": [
+          "vga_ctrl_0/hcount",
+          "pixel_pusher_0/hcount"
+        ]
+      },
+      "vga_ctrl_0_hs": {
+        "ports": [
+          "vga_ctrl_0/hs",
+          "vga_hs"
+        ]
+      },
+      "vga_ctrl_0_vcount": {
+        "ports": [
+          "vga_ctrl_0/vcount",
+          "pixel_pusher_0/vcount"
+        ]
+      },
+      "vga_ctrl_0_vid": {
+        "ports": [
+          "vga_ctrl_0/vid",
+          "pixel_pusher_0/vid"
+        ]
+      },
+      "vga_ctrl_0_vs": {
+        "ports": [
+          "vga_ctrl_0/vs",
+          "vga_vs",
+          "pixel_pusher_0/vs"
+        ]
+      }
+    }
+  }
+}

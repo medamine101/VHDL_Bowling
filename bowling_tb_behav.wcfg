@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bowling_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="bowling_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="100.001000001 ms"></ZoomEndTime>
+      <Cursor1Time time="100.001000000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/bowling_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/vga_b" type="array">
+      <obj_property name="ElementShortName">vga_b[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_b[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/vga_g" type="array">
+      <obj_property name="ElementShortName">vga_g[5:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_g[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/vga_hs" type="logic">
+      <obj_property name="ElementShortName">vga_hs</obj_property>
+      <obj_property name="ObjectShortName">vga_hs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/vga_r" type="array">
+      <obj_property name="ElementShortName">vga_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_r[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/vga_vs" type="logic">
+      <obj_property name="ElementShortName">vga_vs</obj_property>
+      <obj_property name="ObjectShortName">vga_vs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/vga_ctrl_0/U0/blank_time" type="logic">
+      <obj_property name="ElementShortName">blank_time</obj_property>
+      <obj_property name="ObjectShortName">blank_time</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/assign_addy" type="array">
+      <obj_property name="ElementShortName">assign_addy[18:0]</obj_property>
+      <obj_property name="ObjectShortName">assign_addy[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/fb_addr" type="array">
+      <obj_property name="ElementShortName">fb_addr[17:0]</obj_property>
+      <obj_property name="ObjectShortName">fb_addr[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/fb_pixel" type="array">
+      <obj_property name="ElementShortName">fb_pixel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fb_pixel[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/vga_ctrl_0/U0/vid" type="logic">
+      <obj_property name="ElementShortName">vid</obj_property>
+      <obj_property name="ObjectShortName">vid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/vga_ctrl_0/U0/hcount" type="array">
+      <obj_property name="ElementShortName">hcount[9:0]</obj_property>
+      <obj_property name="ObjectShortName">hcount[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/vga_ctrl_0/U0/vcount" type="array">
+      <obj_property name="ElementShortName">vcount[9:0]</obj_property>
+      <obj_property name="ObjectShortName">vcount[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/pixel_pusher_0/U0/addr_counter" type="array">
+      <obj_property name="ElementShortName">addr_counter[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_counter[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/vga_ctrl_0/U0/frameskip" type="logic">
+      <obj_property name="ElementShortName">frameskip</obj_property>
+      <obj_property name="ObjectShortName">frameskip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/curr_state" type="other">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/pixel_loc" type="array">
+      <obj_property name="ElementShortName">pixel_loc[17:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_loc[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/pixel_x" type="array">
+      <obj_property name="ElementShortName">pixel_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bowling_tb/bowl/bowling_game_i/controller_0/U0/pixel_y" type="array">
+      <obj_property name="ElementShortName">pixel_y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_y[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

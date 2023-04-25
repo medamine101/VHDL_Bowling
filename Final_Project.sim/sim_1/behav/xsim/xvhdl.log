@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/moham/Documents/Final_Project/Final_Project.srcs/sources_1/new/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/moham/Documents/Final_Project/Final_Project.ip_user_files/bd/bowling_game/ip/bowling_game_controller_0_0/sim/bowling_game_controller_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bowling_game_controller_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/moham/Documents/Final_Project/Final_Project.ip_user_files/bd/bowling_game/sim/bowling_game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bowling_game'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/moham/Documents/Final_Project/Final_Project.gen/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bowling_game_wrapper'
