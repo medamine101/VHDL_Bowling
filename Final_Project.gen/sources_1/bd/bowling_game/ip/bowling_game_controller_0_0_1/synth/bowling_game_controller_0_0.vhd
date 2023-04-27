@@ -66,7 +66,12 @@ ENTITY bowling_game_controller_0_0 IS
     fb_pixel : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     blank_time : IN STD_LOGIC;
     fb_wr_en : OUT STD_LOGIC;
-    rst : OUT STD_LOGIC
+    rst : OUT STD_LOGIC;
+    joystick_x : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    joystick_y : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    joystick_trigger : IN STD_LOGIC;
+    joystick_center : IN STD_LOGIC;
+    joystick_rst : OUT STD_LOGIC
   );
 END bowling_game_controller_0_0;
 
@@ -86,7 +91,12 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
       fb_pixel : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
       blank_time : IN STD_LOGIC;
       fb_wr_en : OUT STD_LOGIC;
-      rst : OUT STD_LOGIC
+      rst : OUT STD_LOGIC;
+      joystick_x : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      joystick_y : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      joystick_trigger : IN STD_LOGIC;
+      joystick_center : IN STD_LOGIC;
+      joystick_rst : OUT STD_LOGIC
     );
   END COMPONENT controller;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -99,6 +109,8 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
   ATTRIBUTE IP_DEFINITION_SOURCE OF bowling_game_controller_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
+  ATTRIBUTE X_INTERFACE_PARAMETER OF joystick_rst: SIGNAL IS "XIL_INTERFACENAME joystick_rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF joystick_rst: SIGNAL IS "xilinx.com:signal:reset:1.0 joystick_rst RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF rst: SIGNAL IS "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF rst: SIGNAL IS "xilinx.com:signal:reset:1.0 rst RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF game_clk: SIGNAL IS "XIL_INTERFACENAME game_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
@@ -119,6 +131,11 @@ BEGIN
       fb_pixel => fb_pixel,
       blank_time => blank_time,
       fb_wr_en => fb_wr_en,
-      rst => rst
+      rst => rst,
+      joystick_x => joystick_x,
+      joystick_y => joystick_y,
+      joystick_trigger => joystick_trigger,
+      joystick_center => joystick_center,
+      joystick_rst => joystick_rst
     );
 END bowling_game_controller_0_0_arch;

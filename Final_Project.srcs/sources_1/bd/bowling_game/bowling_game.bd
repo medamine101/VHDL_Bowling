@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCED14D9AD19959E4",
+      "boundary_crc": "0x115E3C2AE07A6199",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../Final_Project.gen/sources_1/bd/bowling_game",
       "name": "bowling_game",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.1"
+      "tool_version": "2021.1",
+      "validated": "true"
     },
     "design_tree": {
       "clock_div_25Mhz_0": "",
@@ -15,6 +16,7 @@
       "framebuffer_0": "",
       "vga_ctrl_0": "",
       "clock_div_60hz_0": "",
+      "pmod_joystick_0": "",
       "controller_0": ""
     },
     "ports": {
@@ -53,6 +55,18 @@
       },
       "btn2": {
         "direction": "I"
+      },
+      "MISO": {
+        "direction": "I"
+      },
+      "SCLK": {
+        "direction": "O"
+      },
+      "CS": {
+        "direction": "O"
+      },
+      "MOSI": {
+        "direction": "O"
       }
     },
     "components": {
@@ -256,6 +270,55 @@
           }
         }
       },
+      "pmod_joystick_0": {
+        "vlnv": "xilinx.com:module_ref:pmod_joystick:1.0",
+        "xci_name": "bowling_game_pmod_joystick_0_0",
+        "xci_path": "ip/bowling_game_pmod_joystick_0_0/bowling_game_pmod_joystick_0_0.xci",
+        "inst_hier_path": "pmod_joystick_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pmod_joystick",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset_n": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "miso": {
+            "direction": "I"
+          },
+          "mosi": {
+            "direction": "O"
+          },
+          "sclk": {
+            "direction": "O"
+          },
+          "cs_n": {
+            "direction": "O"
+          },
+          "x_position": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "y_position": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "trigger_button": {
+            "direction": "O"
+          },
+          "center_button": {
+            "direction": "O"
+          }
+        }
+      },
       "controller_0": {
         "vlnv": "xilinx.com:module_ref:controller:1.0",
         "xci_name": "bowling_game_controller_0_0",
@@ -309,11 +372,37 @@
           "rst": {
             "type": "rst",
             "direction": "O"
+          },
+          "joystick_x": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "joystick_y": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "joystick_trigger": {
+            "direction": "I"
+          },
+          "joystick_center": {
+            "direction": "I"
+          },
+          "joystick_rst": {
+            "type": "rst",
+            "direction": "O"
           }
         }
       }
     },
     "nets": {
+      "MISO_1": {
+        "ports": [
+          "MISO",
+          "pmod_joystick_0/miso"
+        ]
+      },
       "btn0_1": {
         "ports": [
           "btn0",
@@ -346,6 +435,7 @@
           "framebuffer_0/clk1",
           "vga_ctrl_0/clk",
           "clock_div_60hz_0/clk",
+          "pmod_joystick_0/clk",
           "controller_0/clk"
         ]
       },
@@ -383,6 +473,12 @@
           "framebuffer_0/wr_en1"
         ]
       },
+      "controller_0_joystick_rst": {
+        "ports": [
+          "controller_0/joystick_rst",
+          "pmod_joystick_0/reset_n"
+        ]
+      },
       "controller_0_rst": {
         "ports": [
           "controller_0/rst",
@@ -417,6 +513,48 @@
         "ports": [
           "pixel_pusher_0/addr",
           "framebuffer_0/addr2"
+        ]
+      },
+      "pmod_joystick_0_center_button": {
+        "ports": [
+          "pmod_joystick_0/center_button",
+          "controller_0/joystick_center"
+        ]
+      },
+      "pmod_joystick_0_cs_n": {
+        "ports": [
+          "pmod_joystick_0/cs_n",
+          "CS"
+        ]
+      },
+      "pmod_joystick_0_mosi": {
+        "ports": [
+          "pmod_joystick_0/mosi",
+          "MOSI"
+        ]
+      },
+      "pmod_joystick_0_sclk": {
+        "ports": [
+          "pmod_joystick_0/sclk",
+          "SCLK"
+        ]
+      },
+      "pmod_joystick_0_trigger_button": {
+        "ports": [
+          "pmod_joystick_0/trigger_button",
+          "controller_0/joystick_trigger"
+        ]
+      },
+      "pmod_joystick_0_x_position": {
+        "ports": [
+          "pmod_joystick_0/x_position",
+          "controller_0/joystick_x"
+        ]
+      },
+      "pmod_joystick_0_y_position": {
+        "ports": [
+          "pmod_joystick_0/y_position",
+          "controller_0/joystick_y"
         ]
       },
       "vga_ctrl_0_blank_time": {

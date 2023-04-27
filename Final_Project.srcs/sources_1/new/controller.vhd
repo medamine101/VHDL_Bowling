@@ -44,7 +44,12 @@ entity controller is
         fb_pixel : out STD_LOGIC_VECTOR (2 downto 0);
         blank_time : in std_logic;
         fb_wr_en : out std_logic := '1';
-        rst : out std_logic := '0'
+        rst : out std_logic := '0';
+        joystick_x : in std_logic_vector(7 downto 0);
+        joystick_y : in std_logic_vector(7 downto 0);
+        joystick_trigger : in std_logic;
+        joystick_center : in std_logic;
+        joystick_rst : out std_logic := '1'
     );
 end controller;
 
@@ -62,7 +67,7 @@ signal pic_reset : std_logic := '0';
 
 type state is (rst_pic, pix_out, wait_rst, wait_after_pix);
 
-type game_state is (user_input, run_logic);
+type game_state is (user_input, run_ball);
 
 signal curr_state : state := wait_rst;
 
@@ -188,28 +193,43 @@ begin
                 
                     
                     
-                    if right_in='1' then
+                    if unsigned(joystick_x) > 183 then
                         
+                        bowling_ball_location_x <= bowling_ball_location_x + 2;
+                        
+                    elsif unsigned(joystick_x) > 133 then
+                    
                         bowling_ball_location_x <= bowling_ball_location_x + 1;
                     
-                    elsif left_in='1' then
+                    end if;
+                    
+                    
+                    if unsigned(joystick_x) < 72 then
+                    
+                        bowling_ball_location_x <= bowling_ball_location_x - 2;
+                        
+                    elsif unsigned(joystick_x) < 122 then
                     
                         bowling_ball_location_x <= bowling_ball_location_x - 1;
                     
                     end if;
                     
-                    if up_in='1' then
-                        bowling_ball_location_y <= bowling_ball_location_y + 1;
-                    elsif down_in='1' then
-                        bowling_ball_location_y <= bowling_ball_location_y - 1;
+                    if (unsigned(joystick_y) < 122) and joystick_trigger='1' then
+                        game_time <= run_ball;
+                    else
+                        game_time <= user_input;
                     end if;
-                    
                 
-                    game_time <= run_logic;
+                when run_ball =>
                 
-                when run_logic =>
-                
-                    game_time <= user_input;
+                    if bowling_ball_location_y=0 then
+                        bowling_ball_location_x <= 200;
+                        bowling_ball_location_y <= 400;
+                        game_time <= user_input;
+                    else
+                        bowling_ball_location_y <= bowling_ball_location_y - 5;
+                        game_time <= run_ball;
+                    end if;
             
             end case;
         

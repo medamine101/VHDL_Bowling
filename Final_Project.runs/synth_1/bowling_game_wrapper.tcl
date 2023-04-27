@@ -83,6 +83,8 @@ set_property webtalk.parent_dir /home/user/Documents/VHDL_Bowling/Final_Project.
 set_property parent.project_path /home/user/Documents/VHDL_Bowling/Final_Project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property ip_repo_paths /home/user/Downloads/vivado-library-master [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/user/Documents/VHDL_Bowling/Final_Project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Apr 25 17:41:22 2023
-| Host         : ece55 running 64-bit Ubuntu 20.04.2 LTS
+| Date         : Thu Apr 27 18:49:05 2023
+| Host         : ece29 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_utilization -file bowling_game_wrapper_utilization_synth.rpt -pb bowling_game_wrapper_utilization_synth.pb
 | Design       : bowling_game_wrapper
 | Device       : 7z010clg400-1
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   23 |     0 |          0 |       100 | 23.00 |
+| Bonded IOB                  |   27 |     0 |          0 |       100 | 27.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         2 |  0.00 |
@@ -146,8 +146,8 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |   18 |                  IO |
-| IBUF     |    5 |                  IO |
+| OBUF     |   21 |                  IO |
+| IBUF     |    6 |                  IO |
 +----------+------+---------------------+
 
 
@@ -158,6 +158,7 @@ Table of Contents
 |             Ref Name             | Used |
 +----------------------------------+------+
 | bowling_game_vga_ctrl_0_0        |    1 |
+| bowling_game_pmod_joystick_0_0   |    1 |
 | bowling_game_pixel_pusher_0_0    |    1 |
 | bowling_game_framebuffer_0_0     |    1 |
 | bowling_game_controller_0_0      |    1 |

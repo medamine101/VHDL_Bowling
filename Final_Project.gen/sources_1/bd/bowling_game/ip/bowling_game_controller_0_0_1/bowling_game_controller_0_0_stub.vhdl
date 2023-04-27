@@ -1,8 +1,8 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
--- Date        : Tue Apr 25 17:40:47 2023
--- Host        : ece55 running 64-bit Ubuntu 20.04.2 LTS
+-- Date        : Thu Apr 27 18:48:29 2023
+-- Host        : ece29 running 64-bit Ubuntu 20.04.2 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0_stub.vhdl
 -- Design      : bowling_game_controller_0_0
@@ -25,7 +25,12 @@ entity bowling_game_controller_0_0 is
     fb_pixel : out STD_LOGIC_VECTOR ( 2 downto 0 );
     blank_time : in STD_LOGIC;
     fb_wr_en : out STD_LOGIC;
-    rst : out STD_LOGIC
+    rst : out STD_LOGIC;
+    joystick_x : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    joystick_y : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    joystick_trigger : in STD_LOGIC;
+    joystick_center : in STD_LOGIC;
+    joystick_rst : out STD_LOGIC
   );
 
 end bowling_game_controller_0_0;
@@ -34,7 +39,7 @@ architecture stub of bowling_game_controller_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,game_clk,en,right_in,left_in,up_in,down_in,fb_addr[17:0],fb_pixel[2:0],blank_time,fb_wr_en,rst";
+attribute black_box_pad_pin of stub : architecture is "clk,game_clk,en,right_in,left_in,up_in,down_in,fb_addr[17:0],fb_pixel[2:0],blank_time,fb_wr_en,rst,joystick_x[7:0],joystick_y[7:0],joystick_trigger,joystick_center,joystick_rst";
 attribute x_core_info : string;
 attribute x_core_info of stub : architecture is "controller,Vivado 2021.1";
 begin

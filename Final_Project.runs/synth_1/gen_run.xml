@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682458820">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682635682">
+  <File Type="VDS-TIMING-PB" Name="bowling_game_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bowling_game_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="bowling_game_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="bowling_game_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="bowling_game_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="bowling_game_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="bowling_game_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="bowling_game_wrapper_reports.tcl"/>
   <File Type="PA-TCL" Name="bowling_game_wrapper.tcl"/>
-  <File Type="RDS-DCP" Name="bowling_game_wrapper.dcp"/>
-  <File Type="RDS-RDS" Name="bowling_game_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="bowling_game_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="bowling_game_wrapper_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/clock_div_25Mhz.vhd">
@@ -44,6 +47,18 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pmod_joystick.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/bowling_game/bowling_game.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -53,6 +68,27 @@
     </File>
     <File Path="$PGENDIR/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SPI_Ctrl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SPImode0.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_div_66_67Khz.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -91,10 +127,11 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_25Mhz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_pmod_joystick_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_pixel_pusher_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_vga_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_framebuffer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_60hz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bowling_game_controller_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bowling_game_pixel_pusher_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bowling_game_vga_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bowling_game_clock_div_25Mhz_0_0"/>
 </GenRun>

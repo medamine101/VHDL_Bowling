@@ -1,8 +1,8 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Tue Apr 25 17:40:47 2023
-// Host        : ece55 running 64-bit Ubuntu 20.04.2 LTS
+// Date        : Thu Apr 27 18:48:29 2023
+// Host        : ece29 running 64-bit Ubuntu 20.04.2 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0_stub.v
 // Design      : bowling_game_controller_0_0
@@ -15,8 +15,9 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "controller,Vivado 2021.1" *)
 module bowling_game_controller_0_0(clk, game_clk, en, right_in, left_in, up_in, down_in, 
-  fb_addr, fb_pixel, blank_time, fb_wr_en, rst)
-/* synthesis syn_black_box black_box_pad_pin="clk,game_clk,en,right_in,left_in,up_in,down_in,fb_addr[17:0],fb_pixel[2:0],blank_time,fb_wr_en,rst" */;
+  fb_addr, fb_pixel, blank_time, fb_wr_en, rst, joystick_x, joystick_y, joystick_trigger, 
+  joystick_center, joystick_rst)
+/* synthesis syn_black_box black_box_pad_pin="clk,game_clk,en,right_in,left_in,up_in,down_in,fb_addr[17:0],fb_pixel[2:0],blank_time,fb_wr_en,rst,joystick_x[7:0],joystick_y[7:0],joystick_trigger,joystick_center,joystick_rst" */;
   input clk;
   input game_clk;
   input en;
@@ -29,4 +30,9 @@ module bowling_game_controller_0_0(clk, game_clk, en, right_in, left_in, up_in, 
   input blank_time;
   output fb_wr_en;
   output rst;
+  input [7:0]joystick_x;
+  input [7:0]joystick_y;
+  input joystick_trigger;
+  input joystick_center;
+  output joystick_rst;
 endmodule

@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# clock_div_25Mhz, clock_div_60hz, controller, framebuffer, pixel_pusher, vga_ctrl
+# clock_div_25Mhz, clock_div_60hz, controller, framebuffer, pixel_pusher, pmod_joystick, vga_ctrl
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -164,6 +164,10 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
+  set CS [ create_bd_port -dir O CS ]
+  set MISO [ create_bd_port -dir I MISO ]
+  set MOSI [ create_bd_port -dir O MOSI ]
+  set SCLK [ create_bd_port -dir O SCLK ]
   set btn0 [ create_bd_port -dir I btn0 ]
   set btn1 [ create_bd_port -dir I btn1 ]
   set btn2 [ create_bd_port -dir I btn2 ]
@@ -230,6 +234,17 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: pmod_joystick_0, and set properties
+  set block_name pmod_joystick
+  set block_cell_name pmod_joystick_0
+  if { [catch {set pmod_joystick_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $pmod_joystick_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: vga_ctrl_0, and set properties
   set block_name vga_ctrl
   set block_cell_name vga_ctrl_0
@@ -242,22 +257,31 @@ proc create_root_design { parentCell } {
    }
   
   # Create port connections
+  connect_bd_net -net MISO_1 [get_bd_ports MISO] [get_bd_pins pmod_joystick_0/miso]
   connect_bd_net -net btn0_1 [get_bd_ports btn0] [get_bd_pins controller_0/right_in]
   connect_bd_net -net btn1_1 [get_bd_ports btn1] [get_bd_pins controller_0/down_in]
   connect_bd_net -net btn2_1 [get_bd_ports btn2] [get_bd_pins controller_0/up_in]
   connect_bd_net -net btn3_1 [get_bd_ports btn3] [get_bd_pins controller_0/left_in]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clock_div_25Mhz_0/clk] [get_bd_pins clock_div_60hz_0/clk] [get_bd_pins controller_0/clk] [get_bd_pins framebuffer_0/clk1] [get_bd_pins pixel_pusher_0/clk] [get_bd_pins vga_ctrl_0/clk]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clock_div_25Mhz_0/clk] [get_bd_pins clock_div_60hz_0/clk] [get_bd_pins controller_0/clk] [get_bd_pins framebuffer_0/clk1] [get_bd_pins pixel_pusher_0/clk] [get_bd_pins pmod_joystick_0/clk] [get_bd_pins vga_ctrl_0/clk]
   connect_bd_net -net clock_div_25Mhz_0_div [get_bd_pins clock_div_25Mhz_0/div] [get_bd_pins controller_0/en] [get_bd_pins framebuffer_0/en1] [get_bd_pins framebuffer_0/en2] [get_bd_pins pixel_pusher_0/en] [get_bd_pins vga_ctrl_0/en]
   connect_bd_net -net clock_div_60hz_0_div [get_bd_pins clock_div_60hz_0/div] [get_bd_pins controller_0/game_clk]
   connect_bd_net -net controller_0_fb_addr [get_bd_pins controller_0/fb_addr] [get_bd_pins framebuffer_0/addr1]
   connect_bd_net -net controller_0_fb_pixel [get_bd_pins controller_0/fb_pixel] [get_bd_pins framebuffer_0/din1]
   connect_bd_net -net controller_0_fb_wr_en [get_bd_pins controller_0/fb_wr_en] [get_bd_pins framebuffer_0/wr_en1]
+  connect_bd_net -net controller_0_joystick_rst [get_bd_pins controller_0/joystick_rst] [get_bd_pins pmod_joystick_0/reset_n]
   connect_bd_net -net controller_0_rst [get_bd_pins controller_0/rst] [get_bd_pins framebuffer_0/rst]
   connect_bd_net -net framebuffer_0_dout2 [get_bd_pins framebuffer_0/dout2] [get_bd_pins pixel_pusher_0/pixel]
   connect_bd_net -net pixel_pusher_0_B [get_bd_ports vga_b] [get_bd_pins pixel_pusher_0/B]
   connect_bd_net -net pixel_pusher_0_G [get_bd_ports vga_g] [get_bd_pins pixel_pusher_0/G]
   connect_bd_net -net pixel_pusher_0_R [get_bd_ports vga_r] [get_bd_pins pixel_pusher_0/R]
   connect_bd_net -net pixel_pusher_0_addr [get_bd_pins framebuffer_0/addr2] [get_bd_pins pixel_pusher_0/addr]
+  connect_bd_net -net pmod_joystick_0_center_button [get_bd_pins controller_0/joystick_center] [get_bd_pins pmod_joystick_0/center_button]
+  connect_bd_net -net pmod_joystick_0_cs_n [get_bd_ports CS] [get_bd_pins pmod_joystick_0/cs_n]
+  connect_bd_net -net pmod_joystick_0_mosi [get_bd_ports MOSI] [get_bd_pins pmod_joystick_0/mosi]
+  connect_bd_net -net pmod_joystick_0_sclk [get_bd_ports SCLK] [get_bd_pins pmod_joystick_0/sclk]
+  connect_bd_net -net pmod_joystick_0_trigger_button [get_bd_pins controller_0/joystick_trigger] [get_bd_pins pmod_joystick_0/trigger_button]
+  connect_bd_net -net pmod_joystick_0_x_position [get_bd_pins controller_0/joystick_x] [get_bd_pins pmod_joystick_0/x_position]
+  connect_bd_net -net pmod_joystick_0_y_position [get_bd_pins controller_0/joystick_y] [get_bd_pins pmod_joystick_0/y_position]
   connect_bd_net -net vga_ctrl_0_blank_time [get_bd_pins controller_0/blank_time] [get_bd_pins pixel_pusher_0/blank_time] [get_bd_pins vga_ctrl_0/blank_time]
   connect_bd_net -net vga_ctrl_0_hcount [get_bd_pins pixel_pusher_0/hcount] [get_bd_pins vga_ctrl_0/hcount]
   connect_bd_net -net vga_ctrl_0_hs [get_bd_ports vga_hs] [get_bd_pins vga_ctrl_0/hs]
