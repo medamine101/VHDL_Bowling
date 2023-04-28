@@ -80,7 +80,6 @@ constant bowling_ball_width_y : integer := 20;
 signal bowling_ball_location_x : integer := 200;
 signal bowling_ball_location_y : integer := 400;
 
-
 type matrix is array(natural range <>, natural range <>) of integer;
 
 constant bowling_ball : matrix(0 to 19, 0 to 19) := ((7,7,7,7,7,7,7,0,0,0,0,0,0,7,7,7,7,7,7,7),
@@ -103,6 +102,36 @@ constant bowling_ball : matrix(0 to 19, 0 to 19) := ((7,7,7,7,7,7,7,0,0,0,0,0,0,
                                                      (7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,7),
                                                      (7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,7,7,7,7,7),
                                                      (7,7,7,7,7,7,7,0,0,0,0,0,0,7,7,7,7,7,7,7));
+
+constant pin_bowling : matrix(0 to 19, 0 to 9) := ((7,7,7,0,0,0,0,7,7,7),
+                                                   (7,7,0,7,7,7,7,0,7,7),
+                                                   (7,7,0,7,7,7,7,0,7,7),
+                                                   (7,7,0,7,7,7,7,0,7,7),
+                                                   (7,7,4,4,4,4,4,4,7,7),
+                                                   (7,7,0,7,7,7,7,0,7,7),
+                                                   (7,7,4,4,4,4,4,4,7,7),
+                                                   (7,7,0,7,7,7,7,0,7,7),
+                                                   (7,0,7,7,7,7,7,7,0,7),
+                                                   (7,0,7,7,7,7,7,7,0,7),
+                                                   (0,7,7,7,7,7,7,7,7,0),
+                                                   (0,7,7,7,7,7,7,7,7,0),
+                                                   (0,7,7,7,7,7,7,7,7,0),
+                                                   (0,7,7,7,7,7,7,7,7,0),
+                                                   (0,7,7,7,7,7,7,7,7,0),
+                                                   (7,0,7,7,7,7,7,7,0,7),
+                                                   (7,0,7,7,7,7,7,7,0,7),
+                                                   (7,0,7,7,7,7,7,7,0,7),
+                                                   (7,7,0,7,7,7,7,0,7,7),
+                                                   (7,7,7,0,0,0,0,7,7,7));
+
+
+
+constant pin_1_width_x : integer := 10;
+constant pin_1_width_y : integer := 20;
+signal pin_1_location_x : integer := 200;
+signal pin_1_location_y : integer := 200;
+signal pin_1_hit : integer := 400;
+
 
 begin
 
@@ -157,6 +186,18 @@ begin
                             pixel_x <= pixel_x + 1;
                         
                         end if;
+                        
+                        -- Bowling pin 1
+                        if (pixel_x < pin_1_location_x + pin_1_width_x and
+                            pin_1_location_x <= pixel_x and
+                            pixel_y < pin_1_location_y + pin_1_width_y and
+                            pin_1_location_y <= pixel_y) then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_1_location_y,
+                                                                                     to_integer(pixel_x) - pin_1_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
                         
                         -- bowling ball
                         if (pixel_x < bowling_ball_location_x + bowling_ball_width_x and 

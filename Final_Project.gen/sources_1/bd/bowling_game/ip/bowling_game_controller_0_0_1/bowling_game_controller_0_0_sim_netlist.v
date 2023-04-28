@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Thu Apr 27 18:48:29 2023
+// Date        : Thu Apr 27 20:46:59 2023
 // Host        : ece29 running 64-bit Ubuntu 20.04.2 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0_sim_netlist.v
@@ -88,16 +88,16 @@ module bowling_game_controller_0_0_controller
     blank_time,
     clk,
     game_clk,
-    joystick_trigger,
-    joystick_y);
+    joystick_y,
+    joystick_trigger);
   output [17:0]fb_addr;
   output [2:0]fb_pixel;
   input [6:0]joystick_x;
   input blank_time;
   input clk;
   input game_clk;
-  input joystick_trigger;
   input [6:0]joystick_y;
+  input joystick_trigger;
 
   wire \FSM_onehot_curr_state[0]_i_1_n_0 ;
   wire \FSM_onehot_curr_state[1]_i_1_n_0 ;
@@ -105,10 +105,21 @@ module bowling_game_controller_0_0_controller
   wire \FSM_onehot_curr_state_reg_n_0_[0] ;
   wire \FSM_onehot_curr_state_reg_n_0_[2] ;
   wire blank_time;
+  wire [2:0]\bowling_ball[0,0]__14 ;
+  wire [2:2]\bowling_ball[0,14] ;
+  wire [2:2]\bowling_ball[0,16] ;
+  wire bowling_ball_location_x0;
   wire \bowling_ball_location_x[0]_i_10_n_0 ;
   wire \bowling_ball_location_x[0]_i_11_n_0 ;
-  wire \bowling_ball_location_x[0]_i_1_n_0 ;
-  wire \bowling_ball_location_x[0]_i_3_n_0 ;
+  wire \bowling_ball_location_x[0]_i_12_n_0 ;
+  wire \bowling_ball_location_x[0]_i_13_n_0 ;
+  wire \bowling_ball_location_x[0]_i_14_n_0 ;
+  wire \bowling_ball_location_x[0]_i_15_n_0 ;
+  wire \bowling_ball_location_x[0]_i_16_n_0 ;
+  wire \bowling_ball_location_x[0]_i_17_n_0 ;
+  wire \bowling_ball_location_x[0]_i_18_n_0 ;
+  wire \bowling_ball_location_x[0]_i_19_n_0 ;
+  wire \bowling_ball_location_x[0]_i_2_n_0 ;
   wire \bowling_ball_location_x[0]_i_4_n_0 ;
   wire \bowling_ball_location_x[0]_i_5_n_0 ;
   wire \bowling_ball_location_x[0]_i_6_n_0 ;
@@ -119,66 +130,39 @@ module bowling_game_controller_0_0_controller
   wire \bowling_ball_location_x[12]_i_3_n_0 ;
   wire \bowling_ball_location_x[12]_i_4_n_0 ;
   wire \bowling_ball_location_x[12]_i_5_n_0 ;
-  wire \bowling_ball_location_x[12]_i_6_n_0 ;
-  wire \bowling_ball_location_x[12]_i_7_n_0 ;
-  wire \bowling_ball_location_x[12]_i_8_n_0 ;
-  wire \bowling_ball_location_x[12]_i_9_n_0 ;
   wire \bowling_ball_location_x[16]_i_2_n_0 ;
   wire \bowling_ball_location_x[16]_i_3_n_0 ;
   wire \bowling_ball_location_x[16]_i_4_n_0 ;
   wire \bowling_ball_location_x[16]_i_5_n_0 ;
-  wire \bowling_ball_location_x[16]_i_6_n_0 ;
-  wire \bowling_ball_location_x[16]_i_7_n_0 ;
-  wire \bowling_ball_location_x[16]_i_8_n_0 ;
-  wire \bowling_ball_location_x[16]_i_9_n_0 ;
   wire \bowling_ball_location_x[20]_i_2_n_0 ;
   wire \bowling_ball_location_x[20]_i_3_n_0 ;
   wire \bowling_ball_location_x[20]_i_4_n_0 ;
   wire \bowling_ball_location_x[20]_i_5_n_0 ;
-  wire \bowling_ball_location_x[20]_i_6_n_0 ;
-  wire \bowling_ball_location_x[20]_i_7_n_0 ;
-  wire \bowling_ball_location_x[20]_i_8_n_0 ;
-  wire \bowling_ball_location_x[20]_i_9_n_0 ;
   wire \bowling_ball_location_x[24]_i_2_n_0 ;
   wire \bowling_ball_location_x[24]_i_3_n_0 ;
   wire \bowling_ball_location_x[24]_i_4_n_0 ;
   wire \bowling_ball_location_x[24]_i_5_n_0 ;
-  wire \bowling_ball_location_x[24]_i_6_n_0 ;
-  wire \bowling_ball_location_x[24]_i_7_n_0 ;
-  wire \bowling_ball_location_x[24]_i_8_n_0 ;
-  wire \bowling_ball_location_x[24]_i_9_n_0 ;
   wire \bowling_ball_location_x[28]_i_2_n_0 ;
   wire \bowling_ball_location_x[28]_i_3_n_0 ;
   wire \bowling_ball_location_x[28]_i_4_n_0 ;
   wire \bowling_ball_location_x[28]_i_5_n_0 ;
-  wire \bowling_ball_location_x[28]_i_6_n_0 ;
-  wire \bowling_ball_location_x[28]_i_7_n_0 ;
-  wire \bowling_ball_location_x[28]_i_8_n_0 ;
   wire \bowling_ball_location_x[4]_i_2_n_0 ;
   wire \bowling_ball_location_x[4]_i_3_n_0 ;
   wire \bowling_ball_location_x[4]_i_4_n_0 ;
   wire \bowling_ball_location_x[4]_i_5_n_0 ;
-  wire \bowling_ball_location_x[4]_i_6_n_0 ;
-  wire \bowling_ball_location_x[4]_i_7_n_0 ;
-  wire \bowling_ball_location_x[4]_i_8_n_0 ;
-  wire \bowling_ball_location_x[4]_i_9_n_0 ;
   wire \bowling_ball_location_x[8]_i_2_n_0 ;
   wire \bowling_ball_location_x[8]_i_3_n_0 ;
   wire \bowling_ball_location_x[8]_i_4_n_0 ;
   wire \bowling_ball_location_x[8]_i_5_n_0 ;
-  wire \bowling_ball_location_x[8]_i_6_n_0 ;
-  wire \bowling_ball_location_x[8]_i_7_n_0 ;
-  wire \bowling_ball_location_x[8]_i_8_n_0 ;
-  wire \bowling_ball_location_x[8]_i_9_n_0 ;
   wire [31:0]bowling_ball_location_x_reg;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_0 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_1 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_2 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_3 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_4 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_5 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_6 ;
-  wire \bowling_ball_location_x_reg[0]_i_2_n_7 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_0 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_1 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_2 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_3 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_4 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_5 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_6 ;
+  wire \bowling_ball_location_x_reg[0]_i_3_n_7 ;
   wire \bowling_ball_location_x_reg[12]_i_1_n_0 ;
   wire \bowling_ball_location_x_reg[12]_i_1_n_1 ;
   wire \bowling_ball_location_x_reg[12]_i_1_n_2 ;
@@ -339,7 +323,7 @@ module bowling_game_controller_0_0_controller
   wire \fb_addr[8]_i_6_n_0 ;
   wire \fb_addr[8]_i_7_n_0 ;
   wire \fb_addr[8]_i_8_n_0 ;
-  wire fb_addr_0;
+  wire fb_addr_1;
   wire \fb_addr_reg[12]_i_1_n_0 ;
   wire \fb_addr_reg[12]_i_1_n_1 ;
   wire \fb_addr_reg[12]_i_1_n_2 ;
@@ -389,7 +373,10 @@ module bowling_game_controller_0_0_controller
   wire \fb_addr_reg[8]_i_2_n_2 ;
   wire \fb_addr_reg[8]_i_2_n_3 ;
   wire [2:0]fb_pixel;
-  wire fb_pixel2__15;
+  wire fb_pixel15_out;
+  wire fb_pixel1__25;
+  wire fb_pixel2;
+  wire fb_pixel23_in;
   wire fb_pixel2_carry__0_i_1_n_0;
   wire fb_pixel2_carry__0_i_2_n_0;
   wire fb_pixel2_carry__0_i_3_n_0;
@@ -426,7 +413,7 @@ module bowling_game_controller_0_0_controller
   wire fb_pixel2_carry_n_1;
   wire fb_pixel2_carry_n_2;
   wire fb_pixel2_carry_n_3;
-  wire fb_pixel3__15;
+  wire fb_pixel32_in;
   wire fb_pixel3_carry__0_i_10_n_0;
   wire fb_pixel3_carry__0_i_10_n_1;
   wire fb_pixel3_carry__0_i_10_n_2;
@@ -507,8 +494,9 @@ module bowling_game_controller_0_0_controller
   wire fb_pixel3_carry_n_2;
   wire fb_pixel3_carry_n_3;
   wire [31:1]fb_pixel4;
-  wire fb_pixel40_in;
-  wire fb_pixel4__15;
+  wire fb_pixel41_in;
+  wire fb_pixel44_in;
+  wire fb_pixel4__0;
   wire fb_pixel4_carry__0_i_1_n_0;
   wire fb_pixel4_carry__0_i_2_n_0;
   wire fb_pixel4_carry__0_i_3_n_0;
@@ -562,18 +550,18 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel4_inferred__1/i__carry_n_3 ;
   wire [31:1]fb_pixel5;
   wire \fb_pixel[0]_i_1_n_0 ;
-  wire \fb_pixel[0]_i_2_n_0 ;
   wire \fb_pixel[0]_i_3_n_0 ;
-  wire \fb_pixel[0]_i_4_n_0 ;
-  wire \fb_pixel[0]_i_5_n_0 ;
   wire \fb_pixel[0]_i_6_n_0 ;
+  wire \fb_pixel[0]_i_7_n_0 ;
   wire \fb_pixel[1]_i_1_n_0 ;
+  wire \fb_pixel[1]_i_2_n_0 ;
+  wire \fb_pixel[1]_i_4_n_0 ;
+  wire \fb_pixel[1]_i_5_n_0 ;
   wire \fb_pixel[2]_i_10_n_0 ;
   wire \fb_pixel[2]_i_11_n_0 ;
   wire \fb_pixel[2]_i_12_n_0 ;
   wire \fb_pixel[2]_i_13_n_0 ;
   wire \fb_pixel[2]_i_14_n_0 ;
-  wire \fb_pixel[2]_i_15_n_0 ;
   wire \fb_pixel[2]_i_16_n_0 ;
   wire \fb_pixel[2]_i_17_n_0 ;
   wire \fb_pixel[2]_i_18_n_0 ;
@@ -584,14 +572,21 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[2]_i_22_n_0 ;
   wire \fb_pixel[2]_i_23_n_0 ;
   wire \fb_pixel[2]_i_24_n_0 ;
-  wire \fb_pixel[2]_i_2_n_0 ;
-  wire \fb_pixel[2]_i_3_n_0 ;
+  wire \fb_pixel[2]_i_25_n_0 ;
+  wire \fb_pixel[2]_i_26_n_0 ;
+  wire \fb_pixel[2]_i_28_n_0 ;
+  wire \fb_pixel[2]_i_30_n_0 ;
+  wire \fb_pixel[2]_i_31_n_0 ;
+  wire \fb_pixel[2]_i_32_n_0 ;
+  wire \fb_pixel[2]_i_33_n_0 ;
+  wire \fb_pixel[2]_i_34_n_0 ;
+  wire \fb_pixel[2]_i_35_n_0 ;
   wire \fb_pixel[2]_i_4_n_0 ;
-  wire \fb_pixel[2]_i_5_n_0 ;
   wire \fb_pixel[2]_i_6_n_0 ;
   wire \fb_pixel[2]_i_7_n_0 ;
   wire \fb_pixel[2]_i_8_n_0 ;
   wire \fb_pixel[2]_i_9_n_0 ;
+  wire fb_pixel_0;
   wire game_clk;
   wire game_time;
   wire game_time0;
@@ -660,10 +655,13 @@ module bowling_game_controller_0_0_controller
   wire i__carry_i_9_n_1;
   wire i__carry_i_9_n_2;
   wire i__carry_i_9_n_3;
+  wire [3:3]in;
   wire joystick_trigger;
   wire [6:0]joystick_x;
   wire [6:0]joystick_y;
   wire [17:5]multOp;
+  wire p_0_in;
+  wire [1:1]\pin_bowling[0,0]__19 ;
   wire [2:0]pixel;
   wire \pixel[0]_i_1_n_0 ;
   wire \pixel[1]_i_1_n_0 ;
@@ -677,13 +675,13 @@ module bowling_game_controller_0_0_controller
   wire \pixel_x[2]_i_1_n_0 ;
   wire \pixel_x[3]_i_1_n_0 ;
   wire \pixel_x[4]_i_1_n_0 ;
-  wire \pixel_x[4]_i_2_n_0 ;
   wire \pixel_x[5]_i_1_n_0 ;
   wire \pixel_x[5]_i_2_n_0 ;
   wire \pixel_x[6]_i_1_n_0 ;
   wire \pixel_x[7]_i_1_n_0 ;
   wire \pixel_x[8]_i_1_n_0 ;
   wire \pixel_x[8]_i_2_n_0 ;
+  wire \pixel_x[8]_i_3_n_0 ;
   wire \pixel_x_reg_n_0_[0] ;
   wire \pixel_x_reg_n_0_[1] ;
   wire \pixel_x_reg_n_0_[2] ;
@@ -696,16 +694,13 @@ module bowling_game_controller_0_0_controller
   wire \pixel_y[0]_i_1_n_0 ;
   wire \pixel_y[1]_i_1_n_0 ;
   wire \pixel_y[2]_i_1_n_0 ;
-  wire \pixel_y[3]_i_1_n_0 ;
-  wire \pixel_y[4]_i_1_n_0 ;
-  wire \pixel_y[5]_i_1_n_0 ;
-  wire \pixel_y[5]_i_2_n_0 ;
-  wire \pixel_y[6]_i_1_n_0 ;
-  wire \pixel_y[7]_i_1_n_0 ;
+  wire \pixel_y[6]_i_2_n_0 ;
   wire \pixel_y[8]_i_1_n_0 ;
   wire \pixel_y[8]_i_2_n_0 ;
+  wire \pixel_y[8]_i_4_n_0 ;
   wire [8:0]pixel_y_reg;
-  wire [6:0]plusOp;
+  wire [8:3]plusOp;
+  wire [6:0]plusOp__0;
   wire [3:3]\NLW_bowling_ball_location_x_reg[28]_i_1_CO_UNCONNECTED ;
   wire [3:2]\NLW_bowling_ball_location_y_reg[31]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_bowling_ball_location_y_reg[31]_i_2_O_UNCONNECTED ;
@@ -737,34 +732,42 @@ module bowling_game_controller_0_0_controller
   wire [3:3]NLW_i__carry_i_9__2_O_UNCONNECTED;
 
   LUT5 #(
-    .INIT(32'h008F0755)) 
+    .INIT(32'h0C171417)) 
     \FSM_onehot_curr_state[0]_i_1 
-       (.I0(pixel_x),
-        .I1(\fb_addr[17]_i_3_n_0 ),
-        .I2(blank_time),
-        .I3(\FSM_onehot_curr_state_reg_n_0_[0] ),
-        .I4(\FSM_onehot_curr_state_reg_n_0_[2] ),
+       (.I0(blank_time),
+        .I1(\FSM_onehot_curr_state_reg_n_0_[2] ),
+        .I2(\FSM_onehot_curr_state_reg_n_0_[0] ),
+        .I3(pixel_x),
+        .I4(p_0_in),
         .O(\FSM_onehot_curr_state[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
-    .INIT(32'hFF20FA22)) 
+    .INIT(32'hF0E0FBE0)) 
     \FSM_onehot_curr_state[1]_i_1 
-       (.I0(pixel_x),
-        .I1(\fb_addr[17]_i_3_n_0 ),
-        .I2(blank_time),
-        .I3(\FSM_onehot_curr_state_reg_n_0_[0] ),
-        .I4(\FSM_onehot_curr_state_reg_n_0_[2] ),
+       (.I0(blank_time),
+        .I1(\FSM_onehot_curr_state_reg_n_0_[2] ),
+        .I2(\FSM_onehot_curr_state_reg_n_0_[0] ),
+        .I3(pixel_x),
+        .I4(p_0_in),
         .O(\FSM_onehot_curr_state[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
-    .INIT(32'h00700088)) 
+    .INIT(32'h03080808)) 
     \FSM_onehot_curr_state[2]_i_1 
-       (.I0(pixel_x),
-        .I1(\fb_addr[17]_i_3_n_0 ),
-        .I2(blank_time),
-        .I3(\FSM_onehot_curr_state_reg_n_0_[0] ),
-        .I4(\FSM_onehot_curr_state_reg_n_0_[2] ),
+       (.I0(blank_time),
+        .I1(\FSM_onehot_curr_state_reg_n_0_[2] ),
+        .I2(\FSM_onehot_curr_state_reg_n_0_[0] ),
+        .I3(pixel_x),
+        .I4(p_0_in),
         .O(\FSM_onehot_curr_state[2]_i_1_n_0 ));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \FSM_onehot_curr_state[2]_i_2 
+       (.I0(pixel_y_reg[6]),
+        .I1(pixel_y_reg[5]),
+        .I2(pixel_y_reg[8]),
+        .I3(pixel_y_reg[7]),
+        .O(p_0_in));
   (* FSM_ENCODED_STATES = "wait_rst:0001,pix_out:0010,iSTATE:1000,wait_after_pix:0100" *) 
   FDRE #(
     .INIT(1'b1)) 
@@ -792,765 +795,665 @@ module bowling_game_controller_0_0_controller
         .D(\FSM_onehot_curr_state[2]_i_1_n_0 ),
         .Q(\FSM_onehot_curr_state_reg_n_0_[2] ),
         .R(1'b0));
-  LUT4 #(
-    .INIT(16'h0151)) 
+  LUT5 #(
+    .INIT(32'h00000002)) 
     \bowling_ball_location_x[0]_i_1 
        (.I0(game_time),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(joystick_x[6]),
-        .I3(\bowling_ball_location_x[0]_i_4_n_0 ),
-        .O(\bowling_ball_location_x[0]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFF8001FF007FFE00)) 
+        .I1(\bowling_ball_location_x[0]_i_4_n_0 ),
+        .I2(\bowling_ball_location_x[0]_i_5_n_0 ),
+        .I3(\bowling_ball_location_x[0]_i_6_n_0 ),
+        .I4(\bowling_ball_location_x[0]_i_7_n_0 ),
+        .O(bowling_ball_location_x0));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT5 #(
+    .INIT(32'hAAAA8000)) 
     \bowling_ball_location_x[0]_i_10 
-       (.I0(joystick_x[3]),
-        .I1(joystick_x[4]),
+       (.I0(joystick_x[6]),
+        .I1(joystick_x[3]),
         .I2(joystick_x[2]),
-        .I3(joystick_x[5]),
-        .I4(joystick_x[6]),
-        .I5(bowling_ball_location_x_reg[0]),
+        .I3(joystick_x[4]),
+        .I4(joystick_x[5]),
         .O(\bowling_ball_location_x[0]_i_10_n_0 ));
-  LUT4 #(
-    .INIT(16'h1555)) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT5 #(
+    .INIT(32'h00005557)) 
     \bowling_ball_location_x[0]_i_11 
        (.I0(joystick_x[5]),
         .I1(joystick_x[4]),
+        .I2(joystick_x[3]),
+        .I3(joystick_x[2]),
+        .I4(joystick_x[6]),
+        .O(\bowling_ball_location_x[0]_i_11_n_0 ));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \bowling_ball_location_x[0]_i_12 
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[3]),
+        .O(\bowling_ball_location_x[0]_i_12_n_0 ));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \bowling_ball_location_x[0]_i_13 
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[2]),
+        .O(\bowling_ball_location_x[0]_i_13_n_0 ));
+  LUT5 #(
+    .INIT(32'h000DFFF2)) 
+    \bowling_ball_location_x[0]_i_14 
+       (.I0(\bowling_ball_location_x[0]_i_8_n_0 ),
+        .I1(joystick_x[6]),
+        .I2(\bowling_ball_location_x[0]_i_10_n_0 ),
+        .I3(\bowling_ball_location_x[0]_i_11_n_0 ),
+        .I4(bowling_ball_location_x_reg[1]),
+        .O(\bowling_ball_location_x[0]_i_14_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFD0002F)) 
+    \bowling_ball_location_x[0]_i_15 
+       (.I0(\bowling_ball_location_x[0]_i_8_n_0 ),
+        .I1(joystick_x[6]),
+        .I2(\bowling_ball_location_x[0]_i_10_n_0 ),
+        .I3(\bowling_ball_location_x[0]_i_11_n_0 ),
+        .I4(bowling_ball_location_x_reg[0]),
+        .O(\bowling_ball_location_x[0]_i_15_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \bowling_ball_location_x[0]_i_16 
+       (.I0(bowling_ball_location_y[11]),
+        .I1(bowling_ball_location_y[12]),
+        .I2(bowling_ball_location_y[9]),
+        .I3(bowling_ball_location_y[10]),
+        .O(\bowling_ball_location_x[0]_i_16_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \bowling_ball_location_x[0]_i_17 
+       (.I0(bowling_ball_location_y[3]),
+        .I1(bowling_ball_location_y[4]),
+        .I2(bowling_ball_location_y[1]),
+        .I3(bowling_ball_location_y[2]),
+        .O(\bowling_ball_location_x[0]_i_17_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \bowling_ball_location_x[0]_i_18 
+       (.I0(bowling_ball_location_y[27]),
+        .I1(bowling_ball_location_y[28]),
+        .I2(bowling_ball_location_y[25]),
+        .I3(bowling_ball_location_y[26]),
+        .O(\bowling_ball_location_x[0]_i_18_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \bowling_ball_location_x[0]_i_19 
+       (.I0(bowling_ball_location_y[19]),
+        .I1(bowling_ball_location_y[20]),
+        .I2(bowling_ball_location_y[17]),
+        .I3(bowling_ball_location_y[18]),
+        .O(\bowling_ball_location_x[0]_i_19_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000FFFFFFE2)) 
+    \bowling_ball_location_x[0]_i_2 
+       (.I0(\bowling_ball_location_x[0]_i_8_n_0 ),
+        .I1(joystick_x[6]),
+        .I2(\bowling_ball_location_x[0]_i_9_n_0 ),
+        .I3(\bowling_ball_location_x[0]_i_10_n_0 ),
+        .I4(\bowling_ball_location_x[0]_i_11_n_0 ),
+        .I5(game_time),
+        .O(\bowling_ball_location_x[0]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h2222222333333333)) 
+    \bowling_ball_location_x[0]_i_20 
+       (.I0(\bowling_ball_location_x[0]_i_8_n_0 ),
+        .I1(joystick_x[6]),
         .I2(joystick_x[2]),
         .I3(joystick_x[3]),
-        .O(\bowling_ball_location_x[0]_i_11_n_0 ));
-  LUT6 #(
-    .INIT(64'hA800000000000000)) 
-    \bowling_ball_location_x[0]_i_3 
-       (.I0(joystick_x[5]),
-        .I1(joystick_x[0]),
-        .I2(joystick_x[1]),
-        .I3(joystick_x[3]),
-        .I4(joystick_x[2]),
-        .I5(joystick_x[4]),
-        .O(\bowling_ball_location_x[0]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000010101)) 
-    \bowling_ball_location_x[0]_i_4 
-       (.I0(joystick_x[2]),
-        .I1(joystick_x[4]),
-        .I2(joystick_x[3]),
-        .I3(joystick_x[0]),
-        .I4(joystick_x[1]),
+        .I4(joystick_x[4]),
         .I5(joystick_x[5]),
+        .O(in));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    \bowling_ball_location_x[0]_i_4 
+       (.I0(bowling_ball_location_y[14]),
+        .I1(bowling_ball_location_y[13]),
+        .I2(bowling_ball_location_y[16]),
+        .I3(bowling_ball_location_y[15]),
+        .I4(\bowling_ball_location_x[0]_i_16_n_0 ),
         .O(\bowling_ball_location_x[0]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \bowling_ball_location_x[0]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(bowling_ball_location_y[6]),
+        .I1(bowling_ball_location_y[5]),
+        .I2(bowling_ball_location_y[8]),
+        .I3(bowling_ball_location_y[7]),
+        .I4(\bowling_ball_location_x[0]_i_17_n_0 ),
         .O(\bowling_ball_location_x[0]_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \bowling_ball_location_x[0]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(bowling_ball_location_y[30]),
+        .I1(bowling_ball_location_y[29]),
+        .I2(bowling_ball_location_y[31]),
+        .I3(bowling_ball_location_y[0]),
+        .I4(\bowling_ball_location_x[0]_i_18_n_0 ),
         .O(\bowling_ball_location_x[0]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \bowling_ball_location_x[0]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[3]),
+       (.I0(bowling_ball_location_y[22]),
+        .I1(bowling_ball_location_y[21]),
+        .I2(bowling_ball_location_y[24]),
+        .I3(bowling_ball_location_y[23]),
+        .I4(\bowling_ball_location_x[0]_i_19_n_0 ),
         .O(\bowling_ball_location_x[0]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
+  LUT6 #(
+    .INIT(64'h1FFFFFFFFFFFFFFF)) 
     \bowling_ball_location_x[0]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[2]),
+       (.I0(joystick_x[0]),
+        .I1(joystick_x[1]),
+        .I2(joystick_x[4]),
+        .I3(joystick_x[5]),
+        .I4(joystick_x[2]),
+        .I5(joystick_x[3]),
         .O(\bowling_ball_location_x[0]_i_8_n_0 ));
-  LUT4 #(
-    .INIT(16'hE41B)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFEEE)) 
     \bowling_ball_location_x[0]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(\bowling_ball_location_x[0]_i_11_n_0 ),
-        .I3(bowling_ball_location_x_reg[1]),
+       (.I0(joystick_x[2]),
+        .I1(joystick_x[5]),
+        .I2(joystick_x[0]),
+        .I3(joystick_x[1]),
+        .I4(joystick_x[3]),
+        .I5(joystick_x[4]),
         .O(\bowling_ball_location_x[0]_i_9_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[12]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[15]),
         .O(\bowling_ball_location_x[12]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[12]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[14]),
         .O(\bowling_ball_location_x[12]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[12]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[13]),
         .O(\bowling_ball_location_x[12]_i_4_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[12]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[12]),
         .O(\bowling_ball_location_x[12]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[12]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[15]),
-        .O(\bowling_ball_location_x[12]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[12]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[14]),
-        .O(\bowling_ball_location_x[12]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[12]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[13]),
-        .O(\bowling_ball_location_x[12]_i_8_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[12]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[12]),
-        .O(\bowling_ball_location_x[12]_i_9_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[16]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[19]),
         .O(\bowling_ball_location_x[16]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[16]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[18]),
         .O(\bowling_ball_location_x[16]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[16]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[17]),
         .O(\bowling_ball_location_x[16]_i_4_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[16]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[16]),
         .O(\bowling_ball_location_x[16]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[16]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[19]),
-        .O(\bowling_ball_location_x[16]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[16]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[18]),
-        .O(\bowling_ball_location_x[16]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[16]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[17]),
-        .O(\bowling_ball_location_x[16]_i_8_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[16]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[16]),
-        .O(\bowling_ball_location_x[16]_i_9_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[20]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[23]),
         .O(\bowling_ball_location_x[20]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[20]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[22]),
         .O(\bowling_ball_location_x[20]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[20]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[21]),
         .O(\bowling_ball_location_x[20]_i_4_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[20]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[20]),
         .O(\bowling_ball_location_x[20]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[20]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[23]),
-        .O(\bowling_ball_location_x[20]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[20]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[22]),
-        .O(\bowling_ball_location_x[20]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[20]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[21]),
-        .O(\bowling_ball_location_x[20]_i_8_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[20]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[20]),
-        .O(\bowling_ball_location_x[20]_i_9_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[24]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[27]),
         .O(\bowling_ball_location_x[24]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[24]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[26]),
         .O(\bowling_ball_location_x[24]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[24]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[25]),
         .O(\bowling_ball_location_x[24]_i_4_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[24]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[24]),
         .O(\bowling_ball_location_x[24]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[24]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[27]),
-        .O(\bowling_ball_location_x[24]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[24]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[26]),
-        .O(\bowling_ball_location_x[24]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[24]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[25]),
-        .O(\bowling_ball_location_x[24]_i_8_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[24]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[24]),
-        .O(\bowling_ball_location_x[24]_i_9_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[28]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[31]),
         .O(\bowling_ball_location_x[28]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[28]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[30]),
         .O(\bowling_ball_location_x[28]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[28]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[29]),
         .O(\bowling_ball_location_x[28]_i_4_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[28]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[31]),
-        .O(\bowling_ball_location_x[28]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[28]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[30]),
-        .O(\bowling_ball_location_x[28]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[28]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[29]),
-        .O(\bowling_ball_location_x[28]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[28]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[28]),
-        .O(\bowling_ball_location_x[28]_i_8_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
+    \bowling_ball_location_x[28]_i_5 
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[28]),
+        .O(\bowling_ball_location_x[28]_i_5_n_0 ));
+  LUT2 #(
+    .INIT(4'h6)) 
     \bowling_ball_location_x[4]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[7]),
         .O(\bowling_ball_location_x[4]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[4]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[6]),
         .O(\bowling_ball_location_x[4]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[4]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[5]),
         .O(\bowling_ball_location_x[4]_i_4_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[4]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[4]),
         .O(\bowling_ball_location_x[4]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[4]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[7]),
-        .O(\bowling_ball_location_x[4]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[4]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[6]),
-        .O(\bowling_ball_location_x[4]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[4]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[5]),
-        .O(\bowling_ball_location_x[4]_i_8_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[4]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[4]),
-        .O(\bowling_ball_location_x[4]_i_9_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[8]_i_2 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[11]),
         .O(\bowling_ball_location_x[8]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[8]_i_3 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[10]),
         .O(\bowling_ball_location_x[8]_i_3_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[8]_i_4 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[9]),
         .O(\bowling_ball_location_x[8]_i_4_n_0 ));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h6)) 
     \bowling_ball_location_x[8]_i_5 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
+       (.I0(in),
+        .I1(bowling_ball_location_x_reg[8]),
         .O(\bowling_ball_location_x[8]_i_5_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[8]_i_6 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[11]),
-        .O(\bowling_ball_location_x[8]_i_6_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[8]_i_7 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[10]),
-        .O(\bowling_ball_location_x[8]_i_7_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[8]_i_8 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[9]),
-        .O(\bowling_ball_location_x[8]_i_8_n_0 ));
-  LUT3 #(
-    .INIT(8'hE1)) 
-    \bowling_ball_location_x[8]_i_9 
-       (.I0(joystick_x[6]),
-        .I1(\bowling_ball_location_x[0]_i_3_n_0 ),
-        .I2(bowling_ball_location_x_reg[8]),
-        .O(\bowling_ball_location_x[8]_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[0] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
-        .D(\bowling_ball_location_x_reg[0]_i_2_n_7 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
+        .D(\bowling_ball_location_x_reg[0]_i_3_n_7 ),
         .Q(bowling_ball_location_x_reg[0]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
-  CARRY4 \bowling_ball_location_x_reg[0]_i_2 
+  CARRY4 \bowling_ball_location_x_reg[0]_i_3 
        (.CI(1'b0),
-        .CO({\bowling_ball_location_x_reg[0]_i_2_n_0 ,\bowling_ball_location_x_reg[0]_i_2_n_1 ,\bowling_ball_location_x_reg[0]_i_2_n_2 ,\bowling_ball_location_x_reg[0]_i_2_n_3 }),
+        .CO({\bowling_ball_location_x_reg[0]_i_3_n_0 ,\bowling_ball_location_x_reg[0]_i_3_n_1 ,\bowling_ball_location_x_reg[0]_i_3_n_2 ,\bowling_ball_location_x_reg[0]_i_3_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[0]_i_5_n_0 ,\bowling_ball_location_x[0]_i_6_n_0 ,bowling_ball_location_x_reg[1:0]}),
-        .O({\bowling_ball_location_x_reg[0]_i_2_n_4 ,\bowling_ball_location_x_reg[0]_i_2_n_5 ,\bowling_ball_location_x_reg[0]_i_2_n_6 ,\bowling_ball_location_x_reg[0]_i_2_n_7 }),
-        .S({\bowling_ball_location_x[0]_i_7_n_0 ,\bowling_ball_location_x[0]_i_8_n_0 ,\bowling_ball_location_x[0]_i_9_n_0 ,\bowling_ball_location_x[0]_i_10_n_0 }));
+        .DI(bowling_ball_location_x_reg[3:0]),
+        .O({\bowling_ball_location_x_reg[0]_i_3_n_4 ,\bowling_ball_location_x_reg[0]_i_3_n_5 ,\bowling_ball_location_x_reg[0]_i_3_n_6 ,\bowling_ball_location_x_reg[0]_i_3_n_7 }),
+        .S({\bowling_ball_location_x[0]_i_12_n_0 ,\bowling_ball_location_x[0]_i_13_n_0 ,\bowling_ball_location_x[0]_i_14_n_0 ,\bowling_ball_location_x[0]_i_15_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[10] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[8]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[10]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[11] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[8]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[11]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[12] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[12]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[12]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[12]_i_1 
        (.CI(\bowling_ball_location_x_reg[8]_i_1_n_0 ),
         .CO({\bowling_ball_location_x_reg[12]_i_1_n_0 ,\bowling_ball_location_x_reg[12]_i_1_n_1 ,\bowling_ball_location_x_reg[12]_i_1_n_2 ,\bowling_ball_location_x_reg[12]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[12]_i_2_n_0 ,\bowling_ball_location_x[12]_i_3_n_0 ,\bowling_ball_location_x[12]_i_4_n_0 ,\bowling_ball_location_x[12]_i_5_n_0 }),
+        .DI(bowling_ball_location_x_reg[15:12]),
         .O({\bowling_ball_location_x_reg[12]_i_1_n_4 ,\bowling_ball_location_x_reg[12]_i_1_n_5 ,\bowling_ball_location_x_reg[12]_i_1_n_6 ,\bowling_ball_location_x_reg[12]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[12]_i_6_n_0 ,\bowling_ball_location_x[12]_i_7_n_0 ,\bowling_ball_location_x[12]_i_8_n_0 ,\bowling_ball_location_x[12]_i_9_n_0 }));
+        .S({\bowling_ball_location_x[12]_i_2_n_0 ,\bowling_ball_location_x[12]_i_3_n_0 ,\bowling_ball_location_x[12]_i_4_n_0 ,\bowling_ball_location_x[12]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[13] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[12]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[13]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[14] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[12]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[14]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[15] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[12]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[15]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[16] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[16]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[16]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[16]_i_1 
        (.CI(\bowling_ball_location_x_reg[12]_i_1_n_0 ),
         .CO({\bowling_ball_location_x_reg[16]_i_1_n_0 ,\bowling_ball_location_x_reg[16]_i_1_n_1 ,\bowling_ball_location_x_reg[16]_i_1_n_2 ,\bowling_ball_location_x_reg[16]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[16]_i_2_n_0 ,\bowling_ball_location_x[16]_i_3_n_0 ,\bowling_ball_location_x[16]_i_4_n_0 ,\bowling_ball_location_x[16]_i_5_n_0 }),
+        .DI(bowling_ball_location_x_reg[19:16]),
         .O({\bowling_ball_location_x_reg[16]_i_1_n_4 ,\bowling_ball_location_x_reg[16]_i_1_n_5 ,\bowling_ball_location_x_reg[16]_i_1_n_6 ,\bowling_ball_location_x_reg[16]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[16]_i_6_n_0 ,\bowling_ball_location_x[16]_i_7_n_0 ,\bowling_ball_location_x[16]_i_8_n_0 ,\bowling_ball_location_x[16]_i_9_n_0 }));
+        .S({\bowling_ball_location_x[16]_i_2_n_0 ,\bowling_ball_location_x[16]_i_3_n_0 ,\bowling_ball_location_x[16]_i_4_n_0 ,\bowling_ball_location_x[16]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[17] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[16]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[17]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[18] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[16]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[18]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[19] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[16]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[19]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[1] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
-        .D(\bowling_ball_location_x_reg[0]_i_2_n_6 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
+        .D(\bowling_ball_location_x_reg[0]_i_3_n_6 ),
         .Q(bowling_ball_location_x_reg[1]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[20] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[20]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[20]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[20]_i_1 
        (.CI(\bowling_ball_location_x_reg[16]_i_1_n_0 ),
         .CO({\bowling_ball_location_x_reg[20]_i_1_n_0 ,\bowling_ball_location_x_reg[20]_i_1_n_1 ,\bowling_ball_location_x_reg[20]_i_1_n_2 ,\bowling_ball_location_x_reg[20]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[20]_i_2_n_0 ,\bowling_ball_location_x[20]_i_3_n_0 ,\bowling_ball_location_x[20]_i_4_n_0 ,\bowling_ball_location_x[20]_i_5_n_0 }),
+        .DI(bowling_ball_location_x_reg[23:20]),
         .O({\bowling_ball_location_x_reg[20]_i_1_n_4 ,\bowling_ball_location_x_reg[20]_i_1_n_5 ,\bowling_ball_location_x_reg[20]_i_1_n_6 ,\bowling_ball_location_x_reg[20]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[20]_i_6_n_0 ,\bowling_ball_location_x[20]_i_7_n_0 ,\bowling_ball_location_x[20]_i_8_n_0 ,\bowling_ball_location_x[20]_i_9_n_0 }));
+        .S({\bowling_ball_location_x[20]_i_2_n_0 ,\bowling_ball_location_x[20]_i_3_n_0 ,\bowling_ball_location_x[20]_i_4_n_0 ,\bowling_ball_location_x[20]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[21] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[20]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[21]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[22] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[20]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[22]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[23] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[20]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[23]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[24] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[24]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[24]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[24]_i_1 
        (.CI(\bowling_ball_location_x_reg[20]_i_1_n_0 ),
         .CO({\bowling_ball_location_x_reg[24]_i_1_n_0 ,\bowling_ball_location_x_reg[24]_i_1_n_1 ,\bowling_ball_location_x_reg[24]_i_1_n_2 ,\bowling_ball_location_x_reg[24]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[24]_i_2_n_0 ,\bowling_ball_location_x[24]_i_3_n_0 ,\bowling_ball_location_x[24]_i_4_n_0 ,\bowling_ball_location_x[24]_i_5_n_0 }),
+        .DI(bowling_ball_location_x_reg[27:24]),
         .O({\bowling_ball_location_x_reg[24]_i_1_n_4 ,\bowling_ball_location_x_reg[24]_i_1_n_5 ,\bowling_ball_location_x_reg[24]_i_1_n_6 ,\bowling_ball_location_x_reg[24]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[24]_i_6_n_0 ,\bowling_ball_location_x[24]_i_7_n_0 ,\bowling_ball_location_x[24]_i_8_n_0 ,\bowling_ball_location_x[24]_i_9_n_0 }));
+        .S({\bowling_ball_location_x[24]_i_2_n_0 ,\bowling_ball_location_x[24]_i_3_n_0 ,\bowling_ball_location_x[24]_i_4_n_0 ,\bowling_ball_location_x[24]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[25] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[24]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[25]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[26] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[24]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[26]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[27] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[24]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[27]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[28] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[28]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[28]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[28]_i_1 
        (.CI(\bowling_ball_location_x_reg[24]_i_1_n_0 ),
         .CO({\NLW_bowling_ball_location_x_reg[28]_i_1_CO_UNCONNECTED [3],\bowling_ball_location_x_reg[28]_i_1_n_1 ,\bowling_ball_location_x_reg[28]_i_1_n_2 ,\bowling_ball_location_x_reg[28]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,\bowling_ball_location_x[28]_i_2_n_0 ,\bowling_ball_location_x[28]_i_3_n_0 ,\bowling_ball_location_x[28]_i_4_n_0 }),
+        .DI({1'b0,bowling_ball_location_x_reg[30:28]}),
         .O({\bowling_ball_location_x_reg[28]_i_1_n_4 ,\bowling_ball_location_x_reg[28]_i_1_n_5 ,\bowling_ball_location_x_reg[28]_i_1_n_6 ,\bowling_ball_location_x_reg[28]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[28]_i_5_n_0 ,\bowling_ball_location_x[28]_i_6_n_0 ,\bowling_ball_location_x[28]_i_7_n_0 ,\bowling_ball_location_x[28]_i_8_n_0 }));
+        .S({\bowling_ball_location_x[28]_i_2_n_0 ,\bowling_ball_location_x[28]_i_3_n_0 ,\bowling_ball_location_x[28]_i_4_n_0 ,\bowling_ball_location_x[28]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[29] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[28]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[29]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[2] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
-        .D(\bowling_ball_location_x_reg[0]_i_2_n_5 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
+        .D(\bowling_ball_location_x_reg[0]_i_3_n_5 ),
         .Q(bowling_ball_location_x_reg[2]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[30] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[28]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[30]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[31] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[28]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[31]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDSE #(
     .INIT(1'b1)) 
     \bowling_ball_location_x_reg[3] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
-        .D(\bowling_ball_location_x_reg[0]_i_2_n_4 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
+        .D(\bowling_ball_location_x_reg[0]_i_3_n_4 ),
         .Q(bowling_ball_location_x_reg[3]),
-        .S(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .S(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[4] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[4]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[4]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[4]_i_1 
-       (.CI(\bowling_ball_location_x_reg[0]_i_2_n_0 ),
+       (.CI(\bowling_ball_location_x_reg[0]_i_3_n_0 ),
         .CO({\bowling_ball_location_x_reg[4]_i_1_n_0 ,\bowling_ball_location_x_reg[4]_i_1_n_1 ,\bowling_ball_location_x_reg[4]_i_1_n_2 ,\bowling_ball_location_x_reg[4]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[4]_i_2_n_0 ,\bowling_ball_location_x[4]_i_3_n_0 ,\bowling_ball_location_x[4]_i_4_n_0 ,\bowling_ball_location_x[4]_i_5_n_0 }),
+        .DI(bowling_ball_location_x_reg[7:4]),
         .O({\bowling_ball_location_x_reg[4]_i_1_n_4 ,\bowling_ball_location_x_reg[4]_i_1_n_5 ,\bowling_ball_location_x_reg[4]_i_1_n_6 ,\bowling_ball_location_x_reg[4]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[4]_i_6_n_0 ,\bowling_ball_location_x[4]_i_7_n_0 ,\bowling_ball_location_x[4]_i_8_n_0 ,\bowling_ball_location_x[4]_i_9_n_0 }));
+        .S({\bowling_ball_location_x[4]_i_2_n_0 ,\bowling_ball_location_x[4]_i_3_n_0 ,\bowling_ball_location_x[4]_i_4_n_0 ,\bowling_ball_location_x[4]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[5] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[4]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[5]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   FDSE #(
     .INIT(1'b1)) 
     \bowling_ball_location_x_reg[6] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[4]_i_1_n_5 ),
         .Q(bowling_ball_location_x_reg[6]),
-        .S(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .S(bowling_ball_location_x0));
   FDSE #(
     .INIT(1'b1)) 
     \bowling_ball_location_x_reg[7] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[4]_i_1_n_4 ),
         .Q(bowling_ball_location_x_reg[7]),
-        .S(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .S(bowling_ball_location_x0));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[8] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[8]_i_1_n_7 ),
         .Q(bowling_ball_location_x_reg[8]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
+        .R(bowling_ball_location_x0));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \bowling_ball_location_x_reg[8]_i_1 
        (.CI(\bowling_ball_location_x_reg[4]_i_1_n_0 ),
         .CO({\bowling_ball_location_x_reg[8]_i_1_n_0 ,\bowling_ball_location_x_reg[8]_i_1_n_1 ,\bowling_ball_location_x_reg[8]_i_1_n_2 ,\bowling_ball_location_x_reg[8]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x[8]_i_2_n_0 ,\bowling_ball_location_x[8]_i_3_n_0 ,\bowling_ball_location_x[8]_i_4_n_0 ,\bowling_ball_location_x[8]_i_5_n_0 }),
+        .DI(bowling_ball_location_x_reg[11:8]),
         .O({\bowling_ball_location_x_reg[8]_i_1_n_4 ,\bowling_ball_location_x_reg[8]_i_1_n_5 ,\bowling_ball_location_x_reg[8]_i_1_n_6 ,\bowling_ball_location_x_reg[8]_i_1_n_7 }),
-        .S({\bowling_ball_location_x[8]_i_6_n_0 ,\bowling_ball_location_x[8]_i_7_n_0 ,\bowling_ball_location_x[8]_i_8_n_0 ,\bowling_ball_location_x[8]_i_9_n_0 }));
+        .S({\bowling_ball_location_x[8]_i_2_n_0 ,\bowling_ball_location_x[8]_i_3_n_0 ,\bowling_ball_location_x[8]_i_4_n_0 ,\bowling_ball_location_x[8]_i_5_n_0 }));
   FDRE #(
     .INIT(1'b0)) 
     \bowling_ball_location_x_reg[9] 
        (.C(game_clk),
-        .CE(\bowling_ball_location_x[0]_i_1_n_0 ),
+        .CE(\bowling_ball_location_x[0]_i_2_n_0 ),
         .D(\bowling_ball_location_x_reg[8]_i_1_n_6 ),
         .Q(bowling_ball_location_x_reg[9]),
-        .R(\bowling_ball_location_y[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+        .R(bowling_ball_location_x0));
   LUT2 #(
     .INIT(4'h1)) 
     \bowling_ball_location_y[0]_i_1 
@@ -1667,52 +1570,55 @@ module bowling_game_controller_0_0_controller
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
     \bowling_ball_location_y[31]_i_10 
        (.I0(\bowling_ball_location_y[31]_i_12_n_0 ),
-        .I1(bowling_ball_location_y[16]),
-        .I2(bowling_ball_location_y[17]),
-        .I3(bowling_ball_location_y[28]),
-        .I4(bowling_ball_location_y[29]),
+        .I1(bowling_ball_location_y[14]),
+        .I2(bowling_ball_location_y[15]),
+        .I3(bowling_ball_location_y[12]),
+        .I4(bowling_ball_location_y[13]),
         .I5(\bowling_ball_location_y[31]_i_13_n_0 ),
         .O(\bowling_ball_location_y[31]_i_10_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \bowling_ball_location_y[31]_i_11 
-       (.I0(bowling_ball_location_y[9]),
-        .I1(bowling_ball_location_y[6]),
-        .I2(bowling_ball_location_y[4]),
-        .I3(bowling_ball_location_y[2]),
+       (.I0(bowling_ball_location_y[18]),
+        .I1(bowling_ball_location_y[19]),
+        .I2(bowling_ball_location_y[16]),
+        .I3(bowling_ball_location_y[17]),
         .O(\bowling_ball_location_y[31]_i_11_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \bowling_ball_location_y[31]_i_12 
-       (.I0(bowling_ball_location_y[18]),
-        .I1(bowling_ball_location_y[19]),
-        .I2(bowling_ball_location_y[26]),
-        .I3(bowling_ball_location_y[27]),
+       (.I0(bowling_ball_location_y[10]),
+        .I1(bowling_ball_location_y[11]),
+        .I2(bowling_ball_location_y[8]),
+        .I3(bowling_ball_location_y[9]),
         .O(\bowling_ball_location_y[31]_i_12_n_0 ));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
     \bowling_ball_location_y[31]_i_13 
-       (.I0(bowling_ball_location_y[25]),
-        .I1(bowling_ball_location_y[24]),
-        .I2(bowling_ball_location_y[23]),
-        .I3(bowling_ball_location_y[22]),
+       (.I0(bowling_ball_location_y[5]),
+        .I1(bowling_ball_location_y[4]),
+        .I2(bowling_ball_location_y[7]),
+        .I3(bowling_ball_location_y[6]),
         .I4(\bowling_ball_location_y[31]_i_14_n_0 ),
         .O(\bowling_ball_location_y[31]_i_13_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \bowling_ball_location_y[31]_i_14 
-       (.I0(bowling_ball_location_y[14]),
-        .I1(bowling_ball_location_y[15]),
-        .I2(bowling_ball_location_y[30]),
-        .I3(bowling_ball_location_y[31]),
+       (.I0(bowling_ball_location_y[2]),
+        .I1(bowling_ball_location_y[3]),
+        .I2(bowling_ball_location_y[0]),
+        .I3(bowling_ball_location_y[1]),
         .O(\bowling_ball_location_y[31]_i_14_n_0 ));
   LUT6 #(
-    .INIT(64'h0000000000000100)) 
+    .INIT(64'h0000000000000004)) 
     \bowling_ball_location_y[31]_i_3 
        (.I0(\bowling_ball_location_y[31]_i_7_n_0 ),
-        .I1(bowling_ball_location_y[0]),
-        .I2(bowling_ball_location_y[1]),
-        .I3(\bowling_ball_location_y[31]_i_8_n_0 ),
+        .I1(\bowling_ball_location_y[31]_i_8_n_0 ),
+        .I2(bowling_ball_location_y[31]),
+        .I3(bowling_ball_location_y[30]),
         .I4(\bowling_ball_location_y[31]_i_9_n_0 ),
         .I5(\bowling_ball_location_y[31]_i_10_n_0 ),
         .O(\bowling_ball_location_y[31]_i_3_n_0 ));
@@ -1734,25 +1640,26 @@ module bowling_game_controller_0_0_controller
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
     \bowling_ball_location_y[31]_i_7 
-       (.I0(bowling_ball_location_y[3]),
-        .I1(bowling_ball_location_y[5]),
-        .I2(bowling_ball_location_y[7]),
-        .I3(bowling_ball_location_y[8]),
+       (.I0(bowling_ball_location_y[21]),
+        .I1(bowling_ball_location_y[20]),
+        .I2(bowling_ball_location_y[23]),
+        .I3(bowling_ball_location_y[22]),
         .I4(\bowling_ball_location_y[31]_i_11_n_0 ),
         .O(\bowling_ball_location_y[31]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
     \bowling_ball_location_y[31]_i_8 
-       (.I0(bowling_ball_location_y[21]),
-        .I1(bowling_ball_location_y[20]),
+       (.I0(bowling_ball_location_y[28]),
+        .I1(bowling_ball_location_y[29]),
         .O(\bowling_ball_location_y[31]_i_8_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \bowling_ball_location_y[31]_i_9 
-       (.I0(bowling_ball_location_y[10]),
-        .I1(bowling_ball_location_y[11]),
-        .I2(bowling_ball_location_y[12]),
-        .I3(bowling_ball_location_y[13]),
+       (.I0(bowling_ball_location_y[26]),
+        .I1(bowling_ball_location_y[27]),
+        .I2(bowling_ball_location_y[24]),
+        .I3(bowling_ball_location_y[25]),
         .O(\bowling_ball_location_y[31]_i_9_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
@@ -2133,77 +2040,76 @@ module bowling_game_controller_0_0_controller
         .D(data0[9]),
         .Q(bowling_ball_location_y[9]),
         .R(\bowling_ball_location_y[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \color_cycle_clock[0]_i_1 
        (.I0(color_cycle_clock_reg[0]),
-        .O(plusOp[0]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+        .O(plusOp__0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \color_cycle_clock[1]_i_1 
        (.I0(color_cycle_clock_reg[0]),
         .I1(color_cycle_clock_reg[1]),
-        .O(plusOp[1]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+        .O(plusOp__0[1]));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
-    .INIT(8'h6A)) 
+    .INIT(8'h78)) 
     \color_cycle_clock[2]_i_1 
-       (.I0(color_cycle_clock_reg[2]),
+       (.I0(color_cycle_clock_reg[0]),
         .I1(color_cycle_clock_reg[1]),
-        .I2(color_cycle_clock_reg[0]),
-        .O(plusOp[2]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+        .I2(color_cycle_clock_reg[2]),
+        .O(plusOp__0[2]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
-    .INIT(16'h6AAA)) 
+    .INIT(16'h7F80)) 
     \color_cycle_clock[3]_i_1 
-       (.I0(color_cycle_clock_reg[3]),
+       (.I0(color_cycle_clock_reg[1]),
+        .I1(color_cycle_clock_reg[0]),
+        .I2(color_cycle_clock_reg[2]),
+        .I3(color_cycle_clock_reg[3]),
+        .O(plusOp__0[3]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \color_cycle_clock[4]_i_1 
+       (.I0(color_cycle_clock_reg[2]),
         .I1(color_cycle_clock_reg[0]),
         .I2(color_cycle_clock_reg[1]),
-        .I3(color_cycle_clock_reg[2]),
-        .O(plusOp[3]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT5 #(
-    .INIT(32'h6AAAAAAA)) 
-    \color_cycle_clock[4]_i_1 
-       (.I0(color_cycle_clock_reg[4]),
-        .I1(color_cycle_clock_reg[2]),
-        .I2(color_cycle_clock_reg[1]),
-        .I3(color_cycle_clock_reg[0]),
-        .I4(color_cycle_clock_reg[3]),
-        .O(plusOp[4]));
+        .I3(color_cycle_clock_reg[3]),
+        .I4(color_cycle_clock_reg[4]),
+        .O(plusOp__0[4]));
   LUT6 #(
-    .INIT(64'h6AAAAAAAAAAAAAAA)) 
+    .INIT(64'h7FFFFFFF80000000)) 
     \color_cycle_clock[5]_i_1 
-       (.I0(color_cycle_clock_reg[5]),
-        .I1(color_cycle_clock_reg[3]),
+       (.I0(color_cycle_clock_reg[3]),
+        .I1(color_cycle_clock_reg[1]),
         .I2(color_cycle_clock_reg[0]),
-        .I3(color_cycle_clock_reg[1]),
-        .I4(color_cycle_clock_reg[2]),
-        .I5(color_cycle_clock_reg[4]),
-        .O(plusOp[5]));
+        .I3(color_cycle_clock_reg[2]),
+        .I4(color_cycle_clock_reg[4]),
+        .I5(color_cycle_clock_reg[5]),
+        .O(plusOp__0[5]));
   LUT2 #(
     .INIT(4'h8)) 
     \color_cycle_clock[6]_i_1 
-       (.I0(blank_time),
-        .I1(\FSM_onehot_curr_state_reg_n_0_[0] ),
+       (.I0(\FSM_onehot_curr_state_reg_n_0_[0] ),
+        .I1(blank_time),
         .O(\color_cycle_clock[6]_i_1_n_0 ));
   LUT3 #(
-    .INIT(8'h6A)) 
+    .INIT(8'h78)) 
     \color_cycle_clock[6]_i_2 
-       (.I0(color_cycle_clock_reg[6]),
-        .I1(\color_cycle_clock[6]_i_3_n_0 ),
-        .I2(color_cycle_clock_reg[5]),
-        .O(plusOp[6]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+       (.I0(\color_cycle_clock[6]_i_3_n_0 ),
+        .I1(color_cycle_clock_reg[5]),
+        .I2(color_cycle_clock_reg[6]),
+        .O(plusOp__0[6]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h80000000)) 
     \color_cycle_clock[6]_i_3 
        (.I0(color_cycle_clock_reg[4]),
         .I1(color_cycle_clock_reg[2]),
-        .I2(color_cycle_clock_reg[1]),
-        .I3(color_cycle_clock_reg[0]),
+        .I2(color_cycle_clock_reg[0]),
+        .I3(color_cycle_clock_reg[1]),
         .I4(color_cycle_clock_reg[3]),
         .O(\color_cycle_clock[6]_i_3_n_0 ));
   FDRE #(
@@ -2211,7 +2117,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[0] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[0]),
+        .D(plusOp__0[0]),
         .Q(color_cycle_clock_reg[0]),
         .R(1'b0));
   FDRE #(
@@ -2219,7 +2125,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[1] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[1]),
+        .D(plusOp__0[1]),
         .Q(color_cycle_clock_reg[1]),
         .R(1'b0));
   FDRE #(
@@ -2227,7 +2133,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[2] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[2]),
+        .D(plusOp__0[2]),
         .Q(color_cycle_clock_reg[2]),
         .R(1'b0));
   FDRE #(
@@ -2235,7 +2141,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[3] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[3]),
+        .D(plusOp__0[3]),
         .Q(color_cycle_clock_reg[3]),
         .R(1'b0));
   FDRE #(
@@ -2243,7 +2149,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[4] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[4]),
+        .D(plusOp__0[4]),
         .Q(color_cycle_clock_reg[4]),
         .R(1'b0));
   FDRE #(
@@ -2251,7 +2157,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[5] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[5]),
+        .D(plusOp__0[5]),
         .Q(color_cycle_clock_reg[5]),
         .R(1'b0));
   FDRE #(
@@ -2259,7 +2165,7 @@ module bowling_game_controller_0_0_controller
     \color_cycle_clock_reg[6] 
        (.C(clk),
         .CE(\color_cycle_clock[6]_i_1_n_0 ),
-        .D(plusOp[6]),
+        .D(plusOp__0[6]),
         .Q(color_cycle_clock_reg[6]),
         .R(1'b0));
   LUT1 #(
@@ -2315,15 +2221,15 @@ module bowling_game_controller_0_0_controller
         .I1(\fb_addr_reg[17]_i_6_n_5 ),
         .O(\fb_addr[16]_i_4_n_0 ));
   LUT6 #(
-    .INIT(64'h000000002AAAAAAA)) 
+    .INIT(64'h0222222222222222)) 
     \fb_addr[17]_i_1 
        (.I0(pixel_x),
-        .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(\pixel_x_reg_n_0_[5] ),
-        .I5(\fb_addr[17]_i_3_n_0 ),
-        .O(fb_addr_0));
+        .I1(\fb_addr[17]_i_3_n_0 ),
+        .I2(pixel_y_reg[6]),
+        .I3(pixel_y_reg[5]),
+        .I4(pixel_y_reg[8]),
+        .I5(pixel_y_reg[7]),
+        .O(fb_addr_1));
   LUT2 #(
     .INIT(4'h9)) 
     \fb_addr[17]_i_10 
@@ -2351,17 +2257,17 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h9)) 
     \fb_addr[17]_i_14 
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[4]),
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[1]),
         .O(\fb_addr[17]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \fb_addr[17]_i_3 
-       (.I0(pixel_y_reg[7]),
-        .I1(pixel_y_reg[5]),
-        .I2(pixel_y_reg[8]),
-        .I3(pixel_y_reg[6]),
+       (.I0(\pixel_x_reg_n_0_[6] ),
+        .I1(\pixel_x_reg_n_0_[5] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(\pixel_x_reg_n_0_[7] ),
         .O(\fb_addr[17]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
@@ -2416,25 +2322,25 @@ module bowling_game_controller_0_0_controller
         .O(\fb_addr[8]_i_8_n_0 ));
   FDRE \fb_addr_reg[0] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(\pixel_x_reg_n_0_[0] ),
         .Q(fb_addr[0]),
         .R(1'b0));
   FDRE \fb_addr_reg[10] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[10]),
         .Q(fb_addr[10]),
         .R(1'b0));
   FDRE \fb_addr_reg[11] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[11]),
         .Q(fb_addr[11]),
         .R(1'b0));
   FDRE \fb_addr_reg[12] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[12]),
         .Q(fb_addr[12]),
         .R(1'b0));
@@ -2464,25 +2370,25 @@ module bowling_game_controller_0_0_controller
         .S({\fb_addr[12]_i_8_n_0 ,\fb_addr[12]_i_9_n_0 ,\fb_addr[12]_i_10_n_0 ,pixel_y_reg[0]}));
   FDRE \fb_addr_reg[13] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[13]),
         .Q(fb_addr[13]),
         .R(1'b0));
   FDRE \fb_addr_reg[14] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[14]),
         .Q(fb_addr[14]),
         .R(1'b0));
   FDRE \fb_addr_reg[15] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[15]),
         .Q(fb_addr[15]),
         .R(1'b0));
   FDRE \fb_addr_reg[16] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[16]),
         .Q(fb_addr[16]),
         .R(1'b0));
@@ -2504,7 +2410,7 @@ module bowling_game_controller_0_0_controller
         .S({\fb_addr_reg[17]_i_5_n_6 ,\fb_addr_reg[17]_i_5_n_7 ,\fb_addr[16]_i_3_n_0 ,\fb_addr[16]_i_4_n_0 }));
   FDRE \fb_addr_reg[17] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[17]),
         .Q(fb_addr[17]),
         .R(1'b0));
@@ -2542,49 +2448,49 @@ module bowling_game_controller_0_0_controller
         .S({\fb_addr[17]_i_11_n_0 ,\fb_addr[17]_i_12_n_0 ,\fb_addr[17]_i_13_n_0 ,\fb_addr[17]_i_14_n_0 }));
   FDRE \fb_addr_reg[1] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(\pixel_x_reg_n_0_[1] ),
         .Q(fb_addr[1]),
         .R(1'b0));
   FDRE \fb_addr_reg[2] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(\pixel_x_reg_n_0_[2] ),
         .Q(fb_addr[2]),
         .R(1'b0));
   FDRE \fb_addr_reg[3] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(\pixel_x_reg_n_0_[3] ),
         .Q(fb_addr[3]),
         .R(1'b0));
   FDRE \fb_addr_reg[4] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(\pixel_x_reg_n_0_[4] ),
         .Q(fb_addr[4]),
         .R(1'b0));
   FDRE \fb_addr_reg[5] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[5]),
         .Q(fb_addr[5]),
         .R(1'b0));
   FDRE \fb_addr_reg[6] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[6]),
         .Q(fb_addr[6]),
         .R(1'b0));
   FDRE \fb_addr_reg[7] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[7]),
         .Q(fb_addr[7]),
         .R(1'b0));
   FDRE \fb_addr_reg[8] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[8]),
         .Q(fb_addr[8]),
         .R(1'b0));
@@ -2606,7 +2512,7 @@ module bowling_game_controller_0_0_controller
         .S({\fb_addr[8]_i_7_n_0 ,\fb_addr[8]_i_8_n_0 ,pixel_y_reg[0],1'b0}));
   FDRE \fb_addr_reg[9] 
        (.C(clk),
-        .CE(fb_addr_0),
+        .CE(fb_addr_1),
         .D(pixel_loc[9]),
         .Q(fb_addr[9]),
         .R(1'b0));
@@ -2629,34 +2535,34 @@ module bowling_game_controller_0_0_controller
   LUT3 #(
     .INIT(8'h04)) 
     fb_pixel2_carry__0_i_1
-       (.I0(bowling_ball_location_y[9]),
+       (.I0(bowling_ball_location_y[8]),
         .I1(pixel_y_reg[8]),
-        .I2(bowling_ball_location_y[8]),
+        .I2(bowling_ball_location_y[9]),
         .O(fb_pixel2_carry__0_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__0_i_2
-       (.I0(bowling_ball_location_y[15]),
-        .I1(bowling_ball_location_y[14]),
+       (.I0(bowling_ball_location_y[14]),
+        .I1(bowling_ball_location_y[15]),
         .O(fb_pixel2_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__0_i_3
-       (.I0(bowling_ball_location_y[13]),
-        .I1(bowling_ball_location_y[12]),
+       (.I0(bowling_ball_location_y[12]),
+        .I1(bowling_ball_location_y[13]),
         .O(fb_pixel2_carry__0_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__0_i_4
-       (.I0(bowling_ball_location_y[11]),
-        .I1(bowling_ball_location_y[10]),
+       (.I0(bowling_ball_location_y[10]),
+        .I1(bowling_ball_location_y[11]),
         .O(fb_pixel2_carry__0_i_4_n_0));
   LUT3 #(
-    .INIT(8'h41)) 
+    .INIT(8'h09)) 
     fb_pixel2_carry__0_i_5
-       (.I0(bowling_ball_location_y[9]),
+       (.I0(pixel_y_reg[8]),
         .I1(bowling_ball_location_y[8]),
-        .I2(pixel_y_reg[8]),
+        .I2(bowling_ball_location_y[9]),
         .O(fb_pixel2_carry__0_i_5_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 fb_pixel2_carry__1
@@ -2669,31 +2575,31 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__1_i_1
-       (.I0(bowling_ball_location_y[23]),
-        .I1(bowling_ball_location_y[22]),
+       (.I0(bowling_ball_location_y[22]),
+        .I1(bowling_ball_location_y[23]),
         .O(fb_pixel2_carry__1_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__1_i_2
-       (.I0(bowling_ball_location_y[21]),
-        .I1(bowling_ball_location_y[20]),
+       (.I0(bowling_ball_location_y[20]),
+        .I1(bowling_ball_location_y[21]),
         .O(fb_pixel2_carry__1_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__1_i_3
-       (.I0(bowling_ball_location_y[19]),
-        .I1(bowling_ball_location_y[18]),
+       (.I0(bowling_ball_location_y[18]),
+        .I1(bowling_ball_location_y[19]),
         .O(fb_pixel2_carry__1_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__1_i_4
-       (.I0(bowling_ball_location_y[17]),
-        .I1(bowling_ball_location_y[16]),
+       (.I0(bowling_ball_location_y[16]),
+        .I1(bowling_ball_location_y[17]),
         .O(fb_pixel2_carry__1_i_4_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 fb_pixel2_carry__2
        (.CI(fb_pixel2_carry__1_n_0),
-        .CO({fb_pixel2__15,fb_pixel2_carry__2_n_1,fb_pixel2_carry__2_n_2,fb_pixel2_carry__2_n_3}),
+        .CO({fb_pixel23_in,fb_pixel2_carry__2_n_1,fb_pixel2_carry__2_n_2,fb_pixel2_carry__2_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_fb_pixel2_carry__2_O_UNCONNECTED[3:0]),
@@ -2701,90 +2607,90 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__2_i_1
-       (.I0(bowling_ball_location_y[31]),
-        .I1(bowling_ball_location_y[30]),
+       (.I0(bowling_ball_location_y[30]),
+        .I1(bowling_ball_location_y[31]),
         .O(fb_pixel2_carry__2_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__2_i_2
-       (.I0(bowling_ball_location_y[29]),
-        .I1(bowling_ball_location_y[28]),
+       (.I0(bowling_ball_location_y[28]),
+        .I1(bowling_ball_location_y[29]),
         .O(fb_pixel2_carry__2_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__2_i_3
-       (.I0(bowling_ball_location_y[27]),
-        .I1(bowling_ball_location_y[26]),
+       (.I0(bowling_ball_location_y[26]),
+        .I1(bowling_ball_location_y[27]),
         .O(fb_pixel2_carry__2_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel2_carry__2_i_4
-       (.I0(bowling_ball_location_y[25]),
-        .I1(bowling_ball_location_y[24]),
+       (.I0(bowling_ball_location_y[24]),
+        .I1(bowling_ball_location_y[25]),
         .O(fb_pixel2_carry__2_i_4_n_0));
   LUT4 #(
-    .INIT(16'h22B2)) 
+    .INIT(16'h2F02)) 
     fb_pixel2_carry_i_1
-       (.I0(pixel_y_reg[7]),
-        .I1(bowling_ball_location_y[7]),
-        .I2(pixel_y_reg[6]),
-        .I3(bowling_ball_location_y[6]),
+       (.I0(pixel_y_reg[6]),
+        .I1(bowling_ball_location_y[6]),
+        .I2(bowling_ball_location_y[7]),
+        .I3(pixel_y_reg[7]),
         .O(fb_pixel2_carry_i_1_n_0));
   LUT4 #(
-    .INIT(16'h2B22)) 
+    .INIT(16'h2F02)) 
     fb_pixel2_carry_i_2
-       (.I0(pixel_y_reg[5]),
-        .I1(bowling_ball_location_y[5]),
-        .I2(bowling_ball_location_y[4]),
-        .I3(pixel_y_reg[4]),
+       (.I0(pixel_y_reg[4]),
+        .I1(bowling_ball_location_y[4]),
+        .I2(bowling_ball_location_y[5]),
+        .I3(pixel_y_reg[5]),
         .O(fb_pixel2_carry_i_2_n_0));
   LUT4 #(
-    .INIT(16'h4F04)) 
+    .INIT(16'h2F02)) 
     fb_pixel2_carry_i_3
-       (.I0(bowling_ball_location_y[2]),
-        .I1(pixel_y_reg[2]),
+       (.I0(pixel_y_reg[2]),
+        .I1(bowling_ball_location_y[2]),
         .I2(bowling_ball_location_y[3]),
         .I3(pixel_y_reg[3]),
         .O(fb_pixel2_carry_i_3_n_0));
   LUT4 #(
-    .INIT(16'h22B2)) 
+    .INIT(16'h2F02)) 
     fb_pixel2_carry_i_4
-       (.I0(pixel_y_reg[1]),
-        .I1(bowling_ball_location_y[1]),
-        .I2(pixel_y_reg[0]),
-        .I3(bowling_ball_location_y[0]),
+       (.I0(pixel_y_reg[0]),
+        .I1(bowling_ball_location_y[0]),
+        .I2(bowling_ball_location_y[1]),
+        .I3(pixel_y_reg[1]),
         .O(fb_pixel2_carry_i_4_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel2_carry_i_5
-       (.I0(bowling_ball_location_y[7]),
-        .I1(pixel_y_reg[7]),
-        .I2(bowling_ball_location_y[6]),
-        .I3(pixel_y_reg[6]),
+       (.I0(pixel_y_reg[6]),
+        .I1(bowling_ball_location_y[6]),
+        .I2(pixel_y_reg[7]),
+        .I3(bowling_ball_location_y[7]),
         .O(fb_pixel2_carry_i_5_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel2_carry_i_6
-       (.I0(bowling_ball_location_y[4]),
-        .I1(pixel_y_reg[4]),
-        .I2(bowling_ball_location_y[5]),
-        .I3(pixel_y_reg[5]),
+       (.I0(pixel_y_reg[4]),
+        .I1(bowling_ball_location_y[4]),
+        .I2(pixel_y_reg[5]),
+        .I3(bowling_ball_location_y[5]),
         .O(fb_pixel2_carry_i_6_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel2_carry_i_7
-       (.I0(bowling_ball_location_y[2]),
-        .I1(pixel_y_reg[2]),
-        .I2(bowling_ball_location_y[3]),
-        .I3(pixel_y_reg[3]),
+       (.I0(pixel_y_reg[2]),
+        .I1(bowling_ball_location_y[2]),
+        .I2(pixel_y_reg[3]),
+        .I3(bowling_ball_location_y[3]),
         .O(fb_pixel2_carry_i_7_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel2_carry_i_8
-       (.I0(bowling_ball_location_y[0]),
-        .I1(pixel_y_reg[0]),
-        .I2(bowling_ball_location_y[1]),
-        .I3(pixel_y_reg[1]),
+       (.I0(pixel_y_reg[0]),
+        .I1(bowling_ball_location_y[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(bowling_ball_location_y[1]),
         .O(fb_pixel2_carry_i_8_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 fb_pixel3_carry
@@ -2805,8 +2711,8 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__0_i_1
-       (.I0(fb_pixel4[15]),
-        .I1(fb_pixel4[14]),
+       (.I0(fb_pixel4[14]),
+        .I1(fb_pixel4[15]),
         .O(fb_pixel3_carry__0_i_1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 fb_pixel3_carry__0_i_10
@@ -2819,21 +2725,21 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__0_i_2
-       (.I0(fb_pixel4[13]),
-        .I1(fb_pixel4[12]),
+       (.I0(fb_pixel4[12]),
+        .I1(fb_pixel4[13]),
         .O(fb_pixel3_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__0_i_3
-       (.I0(fb_pixel4[11]),
-        .I1(fb_pixel4[10]),
+       (.I0(fb_pixel4[10]),
+        .I1(fb_pixel4[11]),
         .O(fb_pixel3_carry__0_i_3_n_0));
   LUT3 #(
-    .INIT(8'hBA)) 
+    .INIT(8'hF2)) 
     fb_pixel3_carry__0_i_4
-       (.I0(fb_pixel4[9]),
+       (.I0(fb_pixel4[8]),
         .I1(pixel_y_reg[8]),
-        .I2(fb_pixel4[8]),
+        .I2(fb_pixel4[9]),
         .O(fb_pixel3_carry__0_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -2854,11 +2760,11 @@ module bowling_game_controller_0_0_controller
         .I1(fb_pixel4[11]),
         .O(fb_pixel3_carry__0_i_7_n_0));
   LUT3 #(
-    .INIT(8'h41)) 
+    .INIT(8'h09)) 
     fb_pixel3_carry__0_i_8
-       (.I0(fb_pixel4[9]),
-        .I1(fb_pixel4[8]),
-        .I2(pixel_y_reg[8]),
+       (.I0(fb_pixel4[8]),
+        .I1(pixel_y_reg[8]),
+        .I2(fb_pixel4[9]),
         .O(fb_pixel3_carry__0_i_8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 fb_pixel3_carry__0_i_9
@@ -2879,8 +2785,8 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__1_i_1
-       (.I0(fb_pixel4[23]),
-        .I1(fb_pixel4[22]),
+       (.I0(fb_pixel4[22]),
+        .I1(fb_pixel4[23]),
         .O(fb_pixel3_carry__1_i_1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 fb_pixel3_carry__1_i_10
@@ -2893,20 +2799,20 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__1_i_2
-       (.I0(fb_pixel4[21]),
-        .I1(fb_pixel4[20]),
+       (.I0(fb_pixel4[20]),
+        .I1(fb_pixel4[21]),
         .O(fb_pixel3_carry__1_i_2_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__1_i_3
-       (.I0(fb_pixel4[19]),
-        .I1(fb_pixel4[18]),
+       (.I0(fb_pixel4[18]),
+        .I1(fb_pixel4[19]),
         .O(fb_pixel3_carry__1_i_3_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__1_i_4
-       (.I0(fb_pixel4[17]),
-        .I1(fb_pixel4[16]),
+       (.I0(fb_pixel4[16]),
+        .I1(fb_pixel4[17]),
         .O(fb_pixel3_carry__1_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -2943,7 +2849,7 @@ module bowling_game_controller_0_0_controller
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 fb_pixel3_carry__2
        (.CI(fb_pixel3_carry__1_n_0),
-        .CO({fb_pixel3__15,fb_pixel3_carry__2_n_1,fb_pixel3_carry__2_n_2,fb_pixel3_carry__2_n_3}),
+        .CO({fb_pixel32_in,fb_pixel3_carry__2_n_1,fb_pixel3_carry__2_n_2,fb_pixel3_carry__2_n_3}),
         .CYINIT(1'b0),
         .DI({fb_pixel3_carry__2_i_1_n_0,fb_pixel3_carry__2_i_2_n_0,fb_pixel3_carry__2_i_3_n_0,fb_pixel3_carry__2_i_4_n_0}),
         .O(NLW_fb_pixel3_carry__2_O_UNCONNECTED[3:0]),
@@ -2951,8 +2857,8 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__2_i_1
-       (.I0(fb_pixel4[31]),
-        .I1(fb_pixel4[30]),
+       (.I0(fb_pixel4[30]),
+        .I1(fb_pixel4[31]),
         .O(fb_pixel3_carry__2_i_1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 fb_pixel3_carry__2_i_10
@@ -2965,20 +2871,20 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__2_i_2
-       (.I0(fb_pixel4[29]),
-        .I1(fb_pixel4[28]),
+       (.I0(fb_pixel4[28]),
+        .I1(fb_pixel4[29]),
         .O(fb_pixel3_carry__2_i_2_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__2_i_3
-       (.I0(fb_pixel4[27]),
-        .I1(fb_pixel4[26]),
+       (.I0(fb_pixel4[26]),
+        .I1(fb_pixel4[27]),
         .O(fb_pixel3_carry__2_i_3_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     fb_pixel3_carry__2_i_4
-       (.I0(fb_pixel4[25]),
-        .I1(fb_pixel4[24]),
+       (.I0(fb_pixel4[24]),
+        .I1(fb_pixel4[25]),
         .O(fb_pixel3_carry__2_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -3013,12 +2919,12 @@ module bowling_game_controller_0_0_controller
         .O({NLW_fb_pixel3_carry__2_i_9_O_UNCONNECTED[3],fb_pixel4[31:29]}),
         .S({1'b0,bowling_ball_location_y[31:29]}));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     fb_pixel3_carry_i_1
-       (.I0(pixel_y_reg[7]),
-        .I1(fb_pixel4[7]),
-        .I2(fb_pixel4[6]),
-        .I3(pixel_y_reg[6]),
+       (.I0(fb_pixel4[6]),
+        .I1(pixel_y_reg[6]),
+        .I2(pixel_y_reg[7]),
+        .I3(fb_pixel4[7]),
         .O(fb_pixel3_carry_i_1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 fb_pixel3_carry_i_10
@@ -3039,52 +2945,52 @@ module bowling_game_controller_0_0_controller
        (.I0(bowling_ball_location_y[2]),
         .O(fb_pixel3_carry_i_12_n_0));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     fb_pixel3_carry_i_2
-       (.I0(pixel_y_reg[5]),
-        .I1(fb_pixel4[5]),
-        .I2(fb_pixel4[4]),
-        .I3(pixel_y_reg[4]),
+       (.I0(fb_pixel4[4]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[5]),
+        .I3(fb_pixel4[5]),
         .O(fb_pixel3_carry_i_2_n_0));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     fb_pixel3_carry_i_3
-       (.I0(pixel_y_reg[3]),
-        .I1(fb_pixel4[3]),
-        .I2(fb_pixel4[2]),
-        .I3(pixel_y_reg[2]),
+       (.I0(fb_pixel4[2]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .I3(fb_pixel4[3]),
         .O(fb_pixel3_carry_i_3_n_0));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     fb_pixel3_carry_i_4
-       (.I0(pixel_y_reg[1]),
-        .I1(fb_pixel4[1]),
-        .I2(bowling_ball_location_y[0]),
-        .I3(pixel_y_reg[0]),
+       (.I0(bowling_ball_location_y[0]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(fb_pixel4[1]),
         .O(fb_pixel3_carry_i_4_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel3_carry_i_5
-       (.I0(fb_pixel4[7]),
-        .I1(pixel_y_reg[7]),
-        .I2(fb_pixel4[6]),
-        .I3(pixel_y_reg[6]),
+       (.I0(fb_pixel4[6]),
+        .I1(pixel_y_reg[6]),
+        .I2(fb_pixel4[7]),
+        .I3(pixel_y_reg[7]),
         .O(fb_pixel3_carry_i_5_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel3_carry_i_6
-       (.I0(fb_pixel4[5]),
-        .I1(pixel_y_reg[5]),
-        .I2(fb_pixel4[4]),
-        .I3(pixel_y_reg[4]),
+       (.I0(fb_pixel4[4]),
+        .I1(pixel_y_reg[4]),
+        .I2(fb_pixel4[5]),
+        .I3(pixel_y_reg[5]),
         .O(fb_pixel3_carry_i_6_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel3_carry_i_7
-       (.I0(fb_pixel4[3]),
-        .I1(pixel_y_reg[3]),
-        .I2(fb_pixel4[2]),
-        .I3(pixel_y_reg[2]),
+       (.I0(fb_pixel4[2]),
+        .I1(pixel_y_reg[2]),
+        .I2(fb_pixel4[3]),
+        .I3(pixel_y_reg[3]),
         .O(fb_pixel3_carry_i_7_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
@@ -3121,34 +3027,34 @@ module bowling_game_controller_0_0_controller
   LUT3 #(
     .INIT(8'h04)) 
     fb_pixel4_carry__0_i_1
-       (.I0(bowling_ball_location_x_reg[9]),
+       (.I0(bowling_ball_location_x_reg[8]),
         .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(bowling_ball_location_x_reg[8]),
+        .I2(bowling_ball_location_x_reg[9]),
         .O(fb_pixel4_carry__0_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__0_i_2
-       (.I0(bowling_ball_location_x_reg[15]),
-        .I1(bowling_ball_location_x_reg[14]),
+       (.I0(bowling_ball_location_x_reg[14]),
+        .I1(bowling_ball_location_x_reg[15]),
         .O(fb_pixel4_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__0_i_3
-       (.I0(bowling_ball_location_x_reg[13]),
-        .I1(bowling_ball_location_x_reg[12]),
+       (.I0(bowling_ball_location_x_reg[12]),
+        .I1(bowling_ball_location_x_reg[13]),
         .O(fb_pixel4_carry__0_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__0_i_4
-       (.I0(bowling_ball_location_x_reg[11]),
-        .I1(bowling_ball_location_x_reg[10]),
+       (.I0(bowling_ball_location_x_reg[10]),
+        .I1(bowling_ball_location_x_reg[11]),
         .O(fb_pixel4_carry__0_i_4_n_0));
   LUT3 #(
-    .INIT(8'h41)) 
+    .INIT(8'h09)) 
     fb_pixel4_carry__0_i_5
-       (.I0(bowling_ball_location_x_reg[9]),
+       (.I0(\pixel_x_reg_n_0_[8] ),
         .I1(bowling_ball_location_x_reg[8]),
-        .I2(\pixel_x_reg_n_0_[8] ),
+        .I2(bowling_ball_location_x_reg[9]),
         .O(fb_pixel4_carry__0_i_5_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 fb_pixel4_carry__1
@@ -3161,31 +3067,31 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__1_i_1
-       (.I0(bowling_ball_location_x_reg[23]),
-        .I1(bowling_ball_location_x_reg[22]),
+       (.I0(bowling_ball_location_x_reg[22]),
+        .I1(bowling_ball_location_x_reg[23]),
         .O(fb_pixel4_carry__1_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__1_i_2
-       (.I0(bowling_ball_location_x_reg[21]),
-        .I1(bowling_ball_location_x_reg[20]),
+       (.I0(bowling_ball_location_x_reg[20]),
+        .I1(bowling_ball_location_x_reg[21]),
         .O(fb_pixel4_carry__1_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__1_i_3
-       (.I0(bowling_ball_location_x_reg[19]),
-        .I1(bowling_ball_location_x_reg[18]),
+       (.I0(bowling_ball_location_x_reg[18]),
+        .I1(bowling_ball_location_x_reg[19]),
         .O(fb_pixel4_carry__1_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__1_i_4
-       (.I0(bowling_ball_location_x_reg[17]),
-        .I1(bowling_ball_location_x_reg[16]),
+       (.I0(bowling_ball_location_x_reg[16]),
+        .I1(bowling_ball_location_x_reg[17]),
         .O(fb_pixel4_carry__1_i_4_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 fb_pixel4_carry__2
        (.CI(fb_pixel4_carry__1_n_0),
-        .CO({fb_pixel4__15,fb_pixel4_carry__2_n_1,fb_pixel4_carry__2_n_2,fb_pixel4_carry__2_n_3}),
+        .CO({fb_pixel41_in,fb_pixel4_carry__2_n_1,fb_pixel4_carry__2_n_2,fb_pixel4_carry__2_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_fb_pixel4_carry__2_O_UNCONNECTED[3:0]),
@@ -3193,90 +3099,90 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__2_i_1
-       (.I0(bowling_ball_location_x_reg[31]),
-        .I1(bowling_ball_location_x_reg[30]),
+       (.I0(bowling_ball_location_x_reg[30]),
+        .I1(bowling_ball_location_x_reg[31]),
         .O(fb_pixel4_carry__2_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__2_i_2
-       (.I0(bowling_ball_location_x_reg[29]),
-        .I1(bowling_ball_location_x_reg[28]),
+       (.I0(bowling_ball_location_x_reg[28]),
+        .I1(bowling_ball_location_x_reg[29]),
         .O(fb_pixel4_carry__2_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__2_i_3
-       (.I0(bowling_ball_location_x_reg[27]),
-        .I1(bowling_ball_location_x_reg[26]),
+       (.I0(bowling_ball_location_x_reg[26]),
+        .I1(bowling_ball_location_x_reg[27]),
         .O(fb_pixel4_carry__2_i_3_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     fb_pixel4_carry__2_i_4
-       (.I0(bowling_ball_location_x_reg[25]),
-        .I1(bowling_ball_location_x_reg[24]),
+       (.I0(bowling_ball_location_x_reg[24]),
+        .I1(bowling_ball_location_x_reg[25]),
         .O(fb_pixel4_carry__2_i_4_n_0));
   LUT4 #(
-    .INIT(16'h22B2)) 
+    .INIT(16'h2F02)) 
     fb_pixel4_carry_i_1
-       (.I0(\pixel_x_reg_n_0_[7] ),
-        .I1(bowling_ball_location_x_reg[7]),
-        .I2(\pixel_x_reg_n_0_[6] ),
-        .I3(bowling_ball_location_x_reg[6]),
+       (.I0(\pixel_x_reg_n_0_[6] ),
+        .I1(bowling_ball_location_x_reg[6]),
+        .I2(bowling_ball_location_x_reg[7]),
+        .I3(\pixel_x_reg_n_0_[7] ),
         .O(fb_pixel4_carry_i_1_n_0));
   LUT4 #(
-    .INIT(16'h2B22)) 
+    .INIT(16'h2F02)) 
     fb_pixel4_carry_i_2
-       (.I0(\pixel_x_reg_n_0_[5] ),
-        .I1(bowling_ball_location_x_reg[5]),
-        .I2(bowling_ball_location_x_reg[4]),
-        .I3(\pixel_x_reg_n_0_[4] ),
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(bowling_ball_location_x_reg[4]),
+        .I2(bowling_ball_location_x_reg[5]),
+        .I3(\pixel_x_reg_n_0_[5] ),
         .O(fb_pixel4_carry_i_2_n_0));
   LUT4 #(
-    .INIT(16'h4F04)) 
+    .INIT(16'h2F02)) 
     fb_pixel4_carry_i_3
-       (.I0(bowling_ball_location_x_reg[2]),
-        .I1(\pixel_x_reg_n_0_[2] ),
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(bowling_ball_location_x_reg[2]),
         .I2(bowling_ball_location_x_reg[3]),
         .I3(\pixel_x_reg_n_0_[3] ),
         .O(fb_pixel4_carry_i_3_n_0));
   LUT4 #(
-    .INIT(16'h20F2)) 
+    .INIT(16'h2F02)) 
     fb_pixel4_carry_i_4
        (.I0(\pixel_x_reg_n_0_[0] ),
         .I1(bowling_ball_location_x_reg[0]),
-        .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(bowling_ball_location_x_reg[1]),
+        .I2(bowling_ball_location_x_reg[1]),
+        .I3(\pixel_x_reg_n_0_[1] ),
         .O(fb_pixel4_carry_i_4_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel4_carry_i_5
-       (.I0(bowling_ball_location_x_reg[7]),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .I2(bowling_ball_location_x_reg[6]),
-        .I3(\pixel_x_reg_n_0_[6] ),
+       (.I0(\pixel_x_reg_n_0_[6] ),
+        .I1(bowling_ball_location_x_reg[6]),
+        .I2(\pixel_x_reg_n_0_[7] ),
+        .I3(bowling_ball_location_x_reg[7]),
         .O(fb_pixel4_carry_i_5_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel4_carry_i_6
-       (.I0(bowling_ball_location_x_reg[4]),
-        .I1(\pixel_x_reg_n_0_[4] ),
-        .I2(bowling_ball_location_x_reg[5]),
-        .I3(\pixel_x_reg_n_0_[5] ),
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(bowling_ball_location_x_reg[4]),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(bowling_ball_location_x_reg[5]),
         .O(fb_pixel4_carry_i_6_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel4_carry_i_7
-       (.I0(bowling_ball_location_x_reg[2]),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(bowling_ball_location_x_reg[3]),
-        .I3(\pixel_x_reg_n_0_[3] ),
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(bowling_ball_location_x_reg[2]),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(bowling_ball_location_x_reg[3]),
         .O(fb_pixel4_carry_i_7_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     fb_pixel4_carry_i_8
-       (.I0(bowling_ball_location_x_reg[0]),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(bowling_ball_location_x_reg[1]),
-        .I3(\pixel_x_reg_n_0_[1] ),
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(bowling_ball_location_x_reg[0]),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(bowling_ball_location_x_reg[1]),
         .O(fb_pixel4_carry_i_8_n_0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 \fb_pixel4_inferred__1/i__carry 
@@ -3293,7 +3199,7 @@ module bowling_game_controller_0_0_controller
         .CYINIT(1'b0),
         .DI({i__carry_i_1__0_n_0,i__carry_i_2__0_n_0,i__carry_i_3__0_n_0,i__carry_i_4__0_n_0}),
         .O(\NLW_fb_pixel4_inferred__1/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__0_n_0,i__carry_i_6__0_n_0,i__carry_i_7__0_n_0,i__carry_i_8__0_n_0}));
+        .S({i__carry_i_5__2_n_0,i__carry_i_6__2_n_0,i__carry_i_7__2_n_0,i__carry_i_8__0_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 \fb_pixel4_inferred__1/i__carry__1 
        (.CI(\fb_pixel4_inferred__1/i__carry__0_n_0 ),
@@ -3301,301 +3207,436 @@ module bowling_game_controller_0_0_controller
         .CYINIT(1'b0),
         .DI({i__carry_i_1__1_n_0,i__carry_i_2__1_n_0,i__carry_i_3__1_n_0,i__carry_i_4__1_n_0}),
         .O(\NLW_fb_pixel4_inferred__1/i__carry__1_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__1_n_0,i__carry_i_6__1_n_0,i__carry_i_7__1_n_0,i__carry_i_8__1_n_0}));
+        .S({i__carry_i_5__1_n_0,i__carry_i_6__1_n_0,i__carry_i_7__1_n_0,i__carry_i_8__2_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 \fb_pixel4_inferred__1/i__carry__2 
        (.CI(\fb_pixel4_inferred__1/i__carry__1_n_0 ),
-        .CO({fb_pixel40_in,\fb_pixel4_inferred__1/i__carry__2_n_1 ,\fb_pixel4_inferred__1/i__carry__2_n_2 ,\fb_pixel4_inferred__1/i__carry__2_n_3 }),
+        .CO({fb_pixel44_in,\fb_pixel4_inferred__1/i__carry__2_n_1 ,\fb_pixel4_inferred__1/i__carry__2_n_2 ,\fb_pixel4_inferred__1/i__carry__2_n_3 }),
         .CYINIT(1'b0),
         .DI({i__carry_i_1__2_n_0,i__carry_i_2__2_n_0,i__carry_i_3__2_n_0,i__carry_i_4__2_n_0}),
         .O(\NLW_fb_pixel4_inferred__1/i__carry__2_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__2_n_0,i__carry_i_6__2_n_0,i__carry_i_7__2_n_0,i__carry_i_8__2_n_0}));
-  LUT6 #(
-    .INIT(64'hAFAFCFFFA0A0C000)) 
+        .S({i__carry_i_5__0_n_0,i__carry_i_6__0_n_0,i__carry_i_7__0_n_0,i__carry_i_8__1_n_0}));
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     \fb_pixel[0]_i_1 
-       (.I0(\fb_pixel[0]_i_2_n_0 ),
-        .I1(pixel[0]),
-        .I2(pixel_x),
-        .I3(\fb_pixel[2]_i_3_n_0 ),
-        .I4(\fb_pixel[2]_i_4_n_0 ),
-        .I5(fb_pixel[0]),
+       (.I0(\bowling_ball[0,0]__14 [0]),
+        .I1(fb_pixel15_out),
+        .I2(\fb_pixel[0]_i_3_n_0 ),
+        .I3(fb_pixel_0),
+        .I4(fb_pixel[0]),
         .O(\fb_pixel[0]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \fb_pixel[0]_i_2 
-       (.I0(\fb_pixel[2]_i_5_n_0 ),
-        .I1(\fb_pixel[2]_i_6_n_0 ),
-        .I2(\fb_pixel[2]_i_7_n_0 ),
-        .I3(\fb_pixel[0]_i_3_n_0 ),
-        .I4(\fb_pixel[2]_i_9_n_0 ),
-        .I5(\fb_pixel[0]_i_4_n_0 ),
-        .O(\fb_pixel[0]_i_2_n_0 ));
-  LUT4 #(
-    .INIT(16'h1400)) 
+       (.I0(\bowling_ball[0,14] ),
+        .I1(\bowling_ball[0,16] ),
+        .I2(\fb_pixel[2]_i_8_n_0 ),
+        .I3(\fb_pixel[2]_i_9_n_0 ),
+        .I4(\fb_pixel[2]_i_10_n_0 ),
+        .I5(\fb_pixel[2]_i_11_n_0 ),
+        .O(\bowling_ball[0,0]__14 [0]));
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \fb_pixel[0]_i_3 
-       (.I0(\fb_pixel[2]_i_13_n_0 ),
-        .I1(\fb_pixel[2]_i_14_n_0 ),
-        .I2(\fb_pixel[2]_i_16_n_0 ),
-        .I3(\fb_pixel[2]_i_12_n_0 ),
+       (.I0(\pin_bowling[0,0]__19 ),
+        .I1(fb_pixel1__25),
+        .I2(pixel[0]),
         .O(\fb_pixel[0]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'h8200002800828200)) 
+    .INIT(64'h2002088080082002)) 
     \fb_pixel[0]_i_4 
-       (.I0(\fb_pixel[0]_i_5_n_0 ),
-        .I1(bowling_ball_location_y[1]),
-        .I2(pixel_y_reg[1]),
-        .I3(\fb_pixel[2]_i_16_n_0 ),
+       (.I0(\fb_pixel[0]_i_6_n_0 ),
+        .I1(\fb_pixel[2]_i_19_n_0 ),
+        .I2(bowling_ball_location_y[1]),
+        .I3(pixel_y_reg[1]),
         .I4(bowling_ball_location_y[0]),
         .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[0]_i_4_n_0 ));
-  LUT5 #(
-    .INIT(32'h90060990)) 
+        .O(\bowling_ball[0,14] ));
+  LUT4 #(
+    .INIT(16'h0041)) 
     \fb_pixel[0]_i_5 
+       (.I0(\fb_pixel[2]_i_18_n_0 ),
+        .I1(\fb_pixel[2]_i_20_n_0 ),
+        .I2(\fb_pixel[2]_i_19_n_0 ),
+        .I3(\fb_pixel[2]_i_17_n_0 ),
+        .O(\bowling_ball[0,16] ));
+  LUT5 #(
+    .INIT(32'h90090690)) 
+    \fb_pixel[0]_i_6 
        (.I0(pixel_y_reg[3]),
         .I1(bowling_ball_location_y[3]),
-        .I2(\fb_pixel[0]_i_6_n_0 ),
-        .I3(pixel_y_reg[2]),
-        .I4(bowling_ball_location_y[2]),
-        .O(\fb_pixel[0]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+        .I2(pixel_y_reg[2]),
+        .I3(bowling_ball_location_y[2]),
+        .I4(\fb_pixel[0]_i_7_n_0 ),
+        .O(\fb_pixel[0]_i_6_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'hBB2B)) 
-    \fb_pixel[0]_i_6 
+    \fb_pixel[0]_i_7 
        (.I0(pixel_y_reg[1]),
         .I1(bowling_ball_location_y[1]),
         .I2(bowling_ball_location_y[0]),
         .I3(pixel_y_reg[0]),
-        .O(\fb_pixel[0]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFAFCFFFA0A0C000)) 
+        .O(\fb_pixel[0]_i_7_n_0 ));
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     \fb_pixel[1]_i_1 
-       (.I0(\fb_pixel[2]_i_2_n_0 ),
-        .I1(pixel[1]),
-        .I2(pixel_x),
-        .I3(\fb_pixel[2]_i_3_n_0 ),
-        .I4(\fb_pixel[2]_i_4_n_0 ),
-        .I5(fb_pixel[1]),
+       (.I0(\bowling_ball[0,0]__14 [2]),
+        .I1(fb_pixel15_out),
+        .I2(\fb_pixel[1]_i_2_n_0 ),
+        .I3(fb_pixel_0),
+        .I4(fb_pixel[1]),
         .O(\fb_pixel[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \fb_pixel[1]_i_2 
+       (.I0(\pin_bowling[0,0]__19 ),
+        .I1(fb_pixel1__25),
+        .I2(pixel[1]),
+        .O(\fb_pixel[1]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hAFAFCFFFA0A0C000)) 
+    .INIT(64'h33224CCCB7F6C4C4)) 
+    \fb_pixel[1]_i_4 
+       (.I0(\fb_pixel[2]_i_26_n_0 ),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h1D1D151FC88C888C)) 
+    \fb_pixel[1]_i_5 
+       (.I0(\fb_pixel[2]_i_26_n_0 ),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_5_n_0 ));
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     \fb_pixel[2]_i_1 
-       (.I0(\fb_pixel[2]_i_2_n_0 ),
-        .I1(pixel[2]),
-        .I2(pixel_x),
-        .I3(\fb_pixel[2]_i_3_n_0 ),
-        .I4(\fb_pixel[2]_i_4_n_0 ),
-        .I5(fb_pixel[2]),
+       (.I0(\bowling_ball[0,0]__14 [2]),
+        .I1(fb_pixel15_out),
+        .I2(\fb_pixel[2]_i_4_n_0 ),
+        .I3(fb_pixel_0),
+        .I4(fb_pixel[2]),
         .O(\fb_pixel[2]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h00B0000000003000)) 
+    .INIT(64'h0000009696960096)) 
     \fb_pixel[2]_i_10 
-       (.I0(\fb_pixel[2]_i_11_n_0 ),
-        .I1(\fb_pixel[2]_i_13_n_0 ),
-        .I2(\fb_pixel[2]_i_12_n_0 ),
-        .I3(\fb_pixel[2]_i_14_n_0 ),
-        .I4(\fb_pixel[2]_i_16_n_0 ),
-        .I5(\fb_pixel[2]_i_15_n_0 ),
+       (.I0(\fb_pixel[2]_i_24_n_0 ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(bowling_ball_location_x_reg[0]),
+        .I3(\fb_pixel[2]_i_23_n_0 ),
+        .I4(\fb_pixel[2]_i_22_n_0 ),
+        .I5(\fb_pixel[2]_i_25_n_0 ),
         .O(\fb_pixel[2]_i_10_n_0 ));
   LUT6 #(
-    .INIT(64'hC30C003000208208)) 
+    .INIT(64'h20002A2A20200A2A)) 
     \fb_pixel[2]_i_11 
-       (.I0(\fb_pixel[2]_i_17_n_0 ),
-        .I1(\fb_pixel[2]_i_21_n_0 ),
-        .I2(bowling_ball_location_x_reg[3]),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\fb_pixel[2]_i_22_n_0 ),
-        .I5(\fb_pixel[2]_i_23_n_0 ),
+       (.I0(\fb_pixel[2]_i_16_n_0 ),
+        .I1(\fb_pixel[2]_i_19_n_0 ),
+        .I2(\fb_pixel[2]_i_18_n_0 ),
+        .I3(\fb_pixel[2]_i_20_n_0 ),
+        .I4(\fb_pixel[2]_i_17_n_0 ),
+        .I5(\fb_pixel[2]_i_21_n_0 ),
         .O(\fb_pixel[2]_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'h1D1D353FC88C888C)) 
+    \fb_pixel[2]_i_12 
+       (.I0(\fb_pixel[2]_i_26_n_0 ),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_12_n_0 ));
+  LUT4 #(
+    .INIT(16'h8034)) 
+    \fb_pixel[2]_i_13 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_13_n_0 ));
+  LUT6 #(
+    .INIT(64'h33334CCCB7F6C4C4)) 
+    \fb_pixel[2]_i_14 
+       (.I0(\fb_pixel[2]_i_26_n_0 ),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_14_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000008000000)) 
+    \fb_pixel[2]_i_15 
+       (.I0(fb_pixel2),
+        .I1(\fb_pixel[2]_i_28_n_0 ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(fb_pixel4__0),
+        .I4(\fb_pixel[2]_i_30_n_0 ),
+        .I5(pixel_y_reg[8]),
+        .O(fb_pixel1__25));
+  LUT6 #(
+    .INIT(64'h9204920400000492)) 
+    \fb_pixel[2]_i_16 
+       (.I0(\fb_pixel[2]_i_31_n_0 ),
+        .I1(bowling_ball_location_x_reg[3]),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\fb_pixel[2]_i_32_n_0 ),
+        .I4(\fb_pixel[2]_i_22_n_0 ),
+        .I5(\fb_pixel[2]_i_33_n_0 ),
+        .O(\fb_pixel[2]_i_16_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
-    .INIT(8'h96)) 
-    \fb_pixel[2]_i_12 
-       (.I0(bowling_ball_location_y[3]),
-        .I1(pixel_y_reg[3]),
-        .I2(\fb_pixel[2]_i_24_n_0 ),
-        .O(\fb_pixel[2]_i_12_n_0 ));
+    .INIT(8'h69)) 
+    \fb_pixel[2]_i_17 
+       (.I0(\fb_pixel[2]_i_34_n_0 ),
+        .I1(bowling_ball_location_y[3]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_17_n_0 ));
   LUT6 #(
-    .INIT(64'h6966666699996966)) 
-    \fb_pixel[2]_i_13 
-       (.I0(bowling_ball_location_y[2]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[0]),
-        .I3(bowling_ball_location_y[0]),
-        .I4(bowling_ball_location_y[1]),
-        .I5(pixel_y_reg[1]),
-        .O(\fb_pixel[2]_i_13_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT4 #(
-    .INIT(16'h4BB4)) 
-    \fb_pixel[2]_i_14 
+    .INIT(64'h40F4BF0BBF0B40F4)) 
+    \fb_pixel[2]_i_18 
        (.I0(pixel_y_reg[0]),
         .I1(bowling_ball_location_y[0]),
         .I2(bowling_ball_location_y[1]),
         .I3(pixel_y_reg[1]),
-        .O(\fb_pixel[2]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT2 #(
-    .INIT(4'h9)) 
-    \fb_pixel[2]_i_15 
-       (.I0(pixel_y_reg[0]),
-        .I1(bowling_ball_location_y[0]),
-        .O(\fb_pixel[2]_i_15_n_0 ));
+        .I4(bowling_ball_location_y[2]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_18_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
-    .INIT(32'h96996696)) 
-    \fb_pixel[2]_i_16 
-       (.I0(bowling_ball_location_y[4]),
-        .I1(pixel_y_reg[4]),
-        .I2(pixel_y_reg[3]),
-        .I3(bowling_ball_location_y[3]),
-        .I4(\fb_pixel[2]_i_24_n_0 ),
-        .O(\fb_pixel[2]_i_16_n_0 ));
-  LUT6 #(
-    .INIT(64'h9699969966969699)) 
-    \fb_pixel[2]_i_17 
-       (.I0(bowling_ball_location_x_reg[2]),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(bowling_ball_location_x_reg[1]),
-        .I4(bowling_ball_location_x_reg[0]),
-        .I5(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[2]_i_17_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT5 #(
-    .INIT(32'h96996696)) 
-    \fb_pixel[2]_i_18 
-       (.I0(bowling_ball_location_x_reg[4]),
-        .I1(\pixel_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(bowling_ball_location_x_reg[3]),
-        .I4(\fb_pixel[2]_i_21_n_0 ),
-        .O(\fb_pixel[2]_i_18_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT4 #(
-    .INIT(16'h9969)) 
+    .INIT(32'h4DB2B24D)) 
     \fb_pixel[2]_i_19 
-       (.I0(bowling_ball_location_x_reg[1]),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(bowling_ball_location_x_reg[0]),
-        .I3(\pixel_x_reg_n_0_[0] ),
+       (.I0(\fb_pixel[2]_i_34_n_0 ),
+        .I1(bowling_ball_location_y[3]),
+        .I2(pixel_y_reg[3]),
+        .I3(bowling_ball_location_y[4]),
+        .I4(pixel_y_reg[4]),
         .O(\fb_pixel[2]_i_19_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \fb_pixel[2]_i_2 
-       (.I0(\fb_pixel[2]_i_5_n_0 ),
-        .I1(\fb_pixel[2]_i_6_n_0 ),
-        .I2(\fb_pixel[2]_i_7_n_0 ),
-        .I3(\fb_pixel[2]_i_8_n_0 ),
-        .I4(\fb_pixel[2]_i_9_n_0 ),
-        .I5(\fb_pixel[2]_i_10_n_0 ),
-        .O(\fb_pixel[2]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'h69)) 
+       (.I0(\fb_pixel[2]_i_6_n_0 ),
+        .I1(\fb_pixel[2]_i_7_n_0 ),
+        .I2(\fb_pixel[2]_i_8_n_0 ),
+        .I3(\fb_pixel[2]_i_9_n_0 ),
+        .I4(\fb_pixel[2]_i_10_n_0 ),
+        .I5(\fb_pixel[2]_i_11_n_0 ),
+        .O(\bowling_ball[0,0]__14 [2]));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT4 #(
+    .INIT(16'h2DD2)) 
     \fb_pixel[2]_i_20 
-       (.I0(bowling_ball_location_x_reg[3]),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\fb_pixel[2]_i_21_n_0 ),
+       (.I0(bowling_ball_location_y[0]),
+        .I1(pixel_y_reg[0]),
+        .I2(bowling_ball_location_y[1]),
+        .I3(pixel_y_reg[1]),
         .O(\fb_pixel[2]_i_20_n_0 ));
-  LUT6 #(
-    .INIT(64'hBF0BFFFF0000BF0B)) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT2 #(
+    .INIT(4'h9)) 
     \fb_pixel[2]_i_21 
+       (.I0(pixel_y_reg[0]),
+        .I1(bowling_ball_location_y[0]),
+        .O(\fb_pixel[2]_i_21_n_0 ));
+  LUT6 #(
+    .INIT(64'h40F4BF0BBF0B40F4)) 
+    \fb_pixel[2]_i_22 
        (.I0(\pixel_x_reg_n_0_[0] ),
         .I1(bowling_ball_location_x_reg[0]),
         .I2(bowling_ball_location_x_reg[1]),
         .I3(\pixel_x_reg_n_0_[1] ),
         .I4(bowling_ball_location_x_reg[2]),
         .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_21_n_0 ));
-  LUT2 #(
-    .INIT(4'h9)) 
-    \fb_pixel[2]_i_22 
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(bowling_ball_location_x_reg[4]),
         .O(\fb_pixel[2]_i_22_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT2 #(
-    .INIT(4'h9)) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT3 #(
+    .INIT(8'h69)) 
     \fb_pixel[2]_i_23 
-       (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(bowling_ball_location_x_reg[0]),
+       (.I0(\fb_pixel[2]_i_31_n_0 ),
+        .I1(bowling_ball_location_x_reg[3]),
+        .I2(\pixel_x_reg_n_0_[3] ),
         .O(\fb_pixel[2]_i_23_n_0 ));
-  LUT6 #(
-    .INIT(64'hBB2BFFFF0000BB2B)) 
+  LUT4 #(
+    .INIT(16'h2DD2)) 
     \fb_pixel[2]_i_24 
-       (.I0(pixel_y_reg[1]),
-        .I1(bowling_ball_location_y[1]),
-        .I2(bowling_ball_location_y[0]),
-        .I3(pixel_y_reg[0]),
-        .I4(bowling_ball_location_y[2]),
-        .I5(pixel_y_reg[2]),
+       (.I0(bowling_ball_location_x_reg[0]),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(bowling_ball_location_x_reg[1]),
+        .I3(\pixel_x_reg_n_0_[1] ),
         .O(\fb_pixel[2]_i_24_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT5 #(
-    .INIT(32'h15555555)) 
-    \fb_pixel[2]_i_3 
-       (.I0(\fb_addr[17]_i_3_n_0 ),
-        .I1(\pixel_x_reg_n_0_[5] ),
-        .I2(\pixel_x_reg_n_0_[6] ),
-        .I3(\pixel_x_reg_n_0_[7] ),
-        .I4(\pixel_x_reg_n_0_[8] ),
-        .O(\fb_pixel[2]_i_3_n_0 ));
+    .INIT(32'h4DB2B24D)) 
+    \fb_pixel[2]_i_25 
+       (.I0(\fb_pixel[2]_i_31_n_0 ),
+        .I1(bowling_ball_location_x_reg[3]),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(bowling_ball_location_x_reg[4]),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[2]_i_25_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT4 #(
+    .INIT(16'h9021)) 
+    \fb_pixel[2]_i_26 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_26_n_0 ));
+  LUT6 #(
+    .INIT(64'hEEEEEEEAAAAAAAAA)) 
+    \fb_pixel[2]_i_27 
+       (.I0(pixel_y_reg[8]),
+        .I1(pixel_y_reg[7]),
+        .I2(pixel_y_reg[5]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[4]),
+        .I5(pixel_y_reg[6]),
+        .O(fb_pixel2));
+  LUT6 #(
+    .INIT(64'h0155FFFFFFFFFFFF)) 
+    \fb_pixel[2]_i_28 
+       (.I0(\pixel_x_reg_n_0_[5] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\fb_pixel[2]_i_35_n_0 ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\pixel_x_reg_n_0_[7] ),
+        .I5(\pixel_x_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_28_n_0 ));
+  LUT6 #(
+    .INIT(64'hEEEEEEEAAAAAAAAA)) 
+    \fb_pixel[2]_i_29 
+       (.I0(\pixel_x_reg_n_0_[8] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\pixel_x_reg_n_0_[6] ),
+        .O(fb_pixel4__0));
   LUT4 #(
     .INIT(16'h8000)) 
+    \fb_pixel[2]_i_3 
+       (.I0(fb_pixel23_in),
+        .I1(fb_pixel44_in),
+        .I2(fb_pixel41_in),
+        .I3(fb_pixel32_in),
+        .O(fb_pixel15_out));
+  LUT6 #(
+    .INIT(64'h007FFFFFFFFFFFFF)) 
+    \fb_pixel[2]_i_30 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[5]),
+        .I4(pixel_y_reg[7]),
+        .I5(pixel_y_reg[6]),
+        .O(\fb_pixel[2]_i_30_n_0 ));
+  LUT6 #(
+    .INIT(64'hB2BBBBBB2222B2BB)) 
+    \fb_pixel[2]_i_31 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(bowling_ball_location_x_reg[2]),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(bowling_ball_location_x_reg[0]),
+        .I4(bowling_ball_location_x_reg[1]),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_31_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_32 
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(bowling_ball_location_x_reg[4]),
+        .O(\fb_pixel[2]_i_32_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_33 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(bowling_ball_location_x_reg[0]),
+        .O(\fb_pixel[2]_i_33_n_0 ));
+  LUT6 #(
+    .INIT(64'hB2BBBBBB2222B2BB)) 
+    \fb_pixel[2]_i_34 
+       (.I0(pixel_y_reg[2]),
+        .I1(bowling_ball_location_y[2]),
+        .I2(pixel_y_reg[0]),
+        .I3(bowling_ball_location_y[0]),
+        .I4(bowling_ball_location_y[1]),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_34_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_35 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_35_n_0 ));
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     \fb_pixel[2]_i_4 
-       (.I0(fb_pixel40_in),
-        .I1(fb_pixel4__15),
-        .I2(fb_pixel2__15),
-        .I3(fb_pixel3__15),
-        .O(\fb_pixel[2]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'hA88828A808080808)) 
-    \fb_pixel[2]_i_5 
-       (.I0(\fb_pixel[2]_i_11_n_0 ),
-        .I1(\fb_pixel[2]_i_12_n_0 ),
-        .I2(\fb_pixel[2]_i_13_n_0 ),
-        .I3(\fb_pixel[2]_i_14_n_0 ),
-        .I4(\fb_pixel[2]_i_15_n_0 ),
-        .I5(\fb_pixel[2]_i_16_n_0 ),
-        .O(\fb_pixel[2]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0400FD7F00400000)) 
-    \fb_pixel[2]_i_6 
-       (.I0(\fb_pixel[2]_i_11_n_0 ),
-        .I1(\fb_pixel[2]_i_16_n_0 ),
+       (.I0(\fb_pixel[2]_i_12_n_0 ),
+        .I1(\fb_pixel[2]_i_13_n_0 ),
         .I2(\fb_pixel[2]_i_14_n_0 ),
-        .I3(\fb_pixel[2]_i_15_n_0 ),
-        .I4(\fb_pixel[2]_i_13_n_0 ),
-        .I5(\fb_pixel[2]_i_12_n_0 ),
+        .I3(fb_pixel1__25),
+        .I4(pixel[2]),
+        .O(\fb_pixel[2]_i_4_n_0 ));
+  LUT5 #(
+    .INIT(32'hAAAA888A)) 
+    \fb_pixel[2]_i_5 
+       (.I0(pixel_x),
+        .I1(fb_pixel1__25),
+        .I2(\fb_addr[17]_i_3_n_0 ),
+        .I3(p_0_in),
+        .I4(fb_pixel15_out),
+        .O(fb_pixel_0));
+  LUT6 #(
+    .INIT(64'h0000002303000000)) 
+    \fb_pixel[2]_i_6 
+       (.I0(\fb_pixel[2]_i_16_n_0 ),
+        .I1(\fb_pixel[2]_i_17_n_0 ),
+        .I2(\fb_pixel[2]_i_18_n_0 ),
+        .I3(\fb_pixel[2]_i_19_n_0 ),
+        .I4(\fb_pixel[2]_i_20_n_0 ),
+        .I5(\fb_pixel[2]_i_21_n_0 ),
         .O(\fb_pixel[2]_i_6_n_0 ));
   LUT6 #(
-    .INIT(64'hFBBFBBBB9BB9B77B)) 
+    .INIT(64'h000000000F00808F)) 
     \fb_pixel[2]_i_7 
-       (.I0(\fb_pixel[2]_i_17_n_0 ),
-        .I1(\fb_pixel[2]_i_18_n_0 ),
-        .I2(bowling_ball_location_x_reg[0]),
-        .I3(\pixel_x_reg_n_0_[0] ),
+       (.I0(\fb_pixel[2]_i_21_n_0 ),
+        .I1(\fb_pixel[2]_i_16_n_0 ),
+        .I2(\fb_pixel[2]_i_18_n_0 ),
+        .I3(\fb_pixel[2]_i_20_n_0 ),
         .I4(\fb_pixel[2]_i_19_n_0 ),
-        .I5(\fb_pixel[2]_i_20_n_0 ),
+        .I5(\fb_pixel[2]_i_17_n_0 ),
         .O(\fb_pixel[2]_i_7_n_0 ));
   LUT6 #(
-    .INIT(64'h808F0F0000000000)) 
+    .INIT(64'h01A2009A009A01A2)) 
     \fb_pixel[2]_i_8 
-       (.I0(\fb_pixel[2]_i_15_n_0 ),
-        .I1(\fb_pixel[2]_i_11_n_0 ),
-        .I2(\fb_pixel[2]_i_13_n_0 ),
-        .I3(\fb_pixel[2]_i_14_n_0 ),
-        .I4(\fb_pixel[2]_i_16_n_0 ),
-        .I5(\fb_pixel[2]_i_12_n_0 ),
+       (.I0(\fb_pixel[2]_i_22_n_0 ),
+        .I1(\fb_pixel[2]_i_23_n_0 ),
+        .I2(\fb_pixel[2]_i_24_n_0 ),
+        .I3(\fb_pixel[2]_i_25_n_0 ),
+        .I4(bowling_ball_location_x_reg[0]),
+        .I5(\pixel_x_reg_n_0_[0] ),
         .O(\fb_pixel[2]_i_8_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFF96FF969696FF)) 
+    .INIT(64'h010000000010FD7F)) 
     \fb_pixel[2]_i_9 
-       (.I0(\fb_pixel[2]_i_19_n_0 ),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(bowling_ball_location_x_reg[0]),
-        .I3(\fb_pixel[2]_i_18_n_0 ),
-        .I4(\fb_pixel[2]_i_17_n_0 ),
-        .I5(\fb_pixel[2]_i_20_n_0 ),
+       (.I0(\fb_pixel[2]_i_16_n_0 ),
+        .I1(\fb_pixel[2]_i_19_n_0 ),
+        .I2(\fb_pixel[2]_i_21_n_0 ),
+        .I3(\fb_pixel[2]_i_20_n_0 ),
+        .I4(\fb_pixel[2]_i_18_n_0 ),
+        .I5(\fb_pixel[2]_i_17_n_0 ),
         .O(\fb_pixel[2]_i_9_n_0 ));
   FDRE \fb_pixel_reg[0] 
        (.C(clk),
@@ -3609,6 +3650,11 @@ module bowling_game_controller_0_0_controller
         .D(\fb_pixel[1]_i_1_n_0 ),
         .Q(fb_pixel[1]),
         .R(1'b0));
+  MUXF7 \fb_pixel_reg[1]_i_3 
+       (.I0(\fb_pixel[1]_i_4_n_0 ),
+        .I1(\fb_pixel[1]_i_5_n_0 ),
+        .O(\pin_bowling[0,0]__19 ),
+        .S(\fb_pixel[2]_i_13_n_0 ));
   FDRE \fb_pixel_reg[2] 
        (.C(clk),
         .CE(1'b1),
@@ -3616,23 +3662,23 @@ module bowling_game_controller_0_0_controller
         .Q(fb_pixel[2]),
         .R(1'b0));
   LUT5 #(
-    .INIT(32'h0008FF08)) 
+    .INIT(32'h00FF4040)) 
     game_time_i_1
-       (.I0(game_time_i_2_n_0),
-        .I1(joystick_trigger),
-        .I2(joystick_y[6]),
-        .I3(game_time),
-        .I4(\bowling_ball_location_y[31]_i_3_n_0 ),
+       (.I0(joystick_y[6]),
+        .I1(game_time_i_2_n_0),
+        .I2(joystick_trigger),
+        .I3(\bowling_ball_location_y[31]_i_3_n_0 ),
+        .I4(game_time),
         .O(game_time0));
   LUT6 #(
     .INIT(64'h1FFFFFFFFFFFFFFF)) 
     game_time_i_2
-       (.I0(joystick_y[1]),
-        .I1(joystick_y[0]),
-        .I2(joystick_y[3]),
-        .I3(joystick_y[2]),
-        .I4(joystick_y[5]),
-        .I5(joystick_y[4]),
+       (.I0(joystick_y[0]),
+        .I1(joystick_y[1]),
+        .I2(joystick_y[4]),
+        .I3(joystick_y[5]),
+        .I4(joystick_y[2]),
+        .I5(joystick_y[3]),
         .O(game_time_i_2_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3643,12 +3689,12 @@ module bowling_game_controller_0_0_controller
         .Q(game_time),
         .R(1'b0));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     i__carry_i_1
-       (.I0(\pixel_x_reg_n_0_[7] ),
-        .I1(fb_pixel5[7]),
-        .I2(fb_pixel5[6]),
-        .I3(\pixel_x_reg_n_0_[6] ),
+       (.I0(fb_pixel5[6]),
+        .I1(\pixel_x_reg_n_0_[6] ),
+        .I2(\pixel_x_reg_n_0_[7] ),
+        .I3(fb_pixel5[7]),
         .O(i__carry_i_1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 i__carry_i_10
@@ -3695,113 +3741,113 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_1__0
-       (.I0(fb_pixel5[15]),
-        .I1(fb_pixel5[14]),
+       (.I0(fb_pixel5[14]),
+        .I1(fb_pixel5[15]),
         .O(i__carry_i_1__0_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_1__1
-       (.I0(fb_pixel5[23]),
-        .I1(fb_pixel5[22]),
+       (.I0(fb_pixel5[22]),
+        .I1(fb_pixel5[23]),
         .O(i__carry_i_1__1_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_1__2
-       (.I0(fb_pixel5[31]),
-        .I1(fb_pixel5[30]),
+       (.I0(fb_pixel5[30]),
+        .I1(fb_pixel5[31]),
         .O(i__carry_i_1__2_n_0));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     i__carry_i_2
-       (.I0(\pixel_x_reg_n_0_[5] ),
-        .I1(fb_pixel5[5]),
-        .I2(fb_pixel5[4]),
-        .I3(\pixel_x_reg_n_0_[4] ),
+       (.I0(fb_pixel5[4]),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(fb_pixel5[5]),
         .O(i__carry_i_2_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_2__0
-       (.I0(fb_pixel5[13]),
-        .I1(fb_pixel5[12]),
+       (.I0(fb_pixel5[12]),
+        .I1(fb_pixel5[13]),
         .O(i__carry_i_2__0_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_2__1
-       (.I0(fb_pixel5[21]),
-        .I1(fb_pixel5[20]),
+       (.I0(fb_pixel5[20]),
+        .I1(fb_pixel5[21]),
         .O(i__carry_i_2__1_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_2__2
-       (.I0(fb_pixel5[29]),
-        .I1(fb_pixel5[28]),
+       (.I0(fb_pixel5[28]),
+        .I1(fb_pixel5[29]),
         .O(i__carry_i_2__2_n_0));
   LUT4 #(
-    .INIT(16'h44D4)) 
+    .INIT(16'h2F02)) 
     i__carry_i_3
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(fb_pixel5[3]),
-        .I2(fb_pixel5[2]),
-        .I3(\pixel_x_reg_n_0_[2] ),
+       (.I0(fb_pixel5[2]),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(fb_pixel5[3]),
         .O(i__carry_i_3_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_3__0
-       (.I0(fb_pixel5[11]),
-        .I1(fb_pixel5[10]),
+       (.I0(fb_pixel5[10]),
+        .I1(fb_pixel5[11]),
         .O(i__carry_i_3__0_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_3__1
-       (.I0(fb_pixel5[19]),
-        .I1(fb_pixel5[18]),
+       (.I0(fb_pixel5[18]),
+        .I1(fb_pixel5[19]),
         .O(i__carry_i_3__1_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_3__2
-       (.I0(fb_pixel5[27]),
-        .I1(fb_pixel5[26]),
+       (.I0(fb_pixel5[26]),
+        .I1(fb_pixel5[27]),
         .O(i__carry_i_3__2_n_0));
   LUT4 #(
-    .INIT(16'h4D44)) 
+    .INIT(16'h2F02)) 
     i__carry_i_4
-       (.I0(\pixel_x_reg_n_0_[1] ),
-        .I1(fb_pixel5[1]),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(bowling_ball_location_x_reg[0]),
+       (.I0(bowling_ball_location_x_reg[0]),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(fb_pixel5[1]),
         .O(i__carry_i_4_n_0));
   LUT3 #(
-    .INIT(8'hBA)) 
+    .INIT(8'hF2)) 
     i__carry_i_4__0
-       (.I0(fb_pixel5[9]),
+       (.I0(fb_pixel5[8]),
         .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(fb_pixel5[8]),
+        .I2(fb_pixel5[9]),
         .O(i__carry_i_4__0_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_4__1
-       (.I0(fb_pixel5[17]),
-        .I1(fb_pixel5[16]),
+       (.I0(fb_pixel5[16]),
+        .I1(fb_pixel5[17]),
         .O(i__carry_i_4__1_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_4__2
-       (.I0(fb_pixel5[25]),
-        .I1(fb_pixel5[24]),
+       (.I0(fb_pixel5[24]),
+        .I1(fb_pixel5[25]),
         .O(i__carry_i_4__2_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     i__carry_i_5
-       (.I0(fb_pixel5[7]),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .I2(fb_pixel5[6]),
-        .I3(\pixel_x_reg_n_0_[6] ),
+       (.I0(fb_pixel5[6]),
+        .I1(\pixel_x_reg_n_0_[6] ),
+        .I2(fb_pixel5[7]),
+        .I3(\pixel_x_reg_n_0_[7] ),
         .O(i__carry_i_5_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_5__0
-       (.I0(fb_pixel5[14]),
-        .I1(fb_pixel5[15]),
+       (.I0(fb_pixel5[30]),
+        .I1(fb_pixel5[31]),
         .O(i__carry_i_5__0_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -3812,22 +3858,22 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_5__2
-       (.I0(fb_pixel5[30]),
-        .I1(fb_pixel5[31]),
+       (.I0(fb_pixel5[14]),
+        .I1(fb_pixel5[15]),
         .O(i__carry_i_5__2_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     i__carry_i_6
-       (.I0(fb_pixel5[5]),
-        .I1(\pixel_x_reg_n_0_[5] ),
-        .I2(fb_pixel5[4]),
-        .I3(\pixel_x_reg_n_0_[4] ),
+       (.I0(fb_pixel5[4]),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(fb_pixel5[5]),
+        .I3(\pixel_x_reg_n_0_[5] ),
         .O(i__carry_i_6_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_6__0
-       (.I0(fb_pixel5[12]),
-        .I1(fb_pixel5[13]),
+       (.I0(fb_pixel5[28]),
+        .I1(fb_pixel5[29]),
         .O(i__carry_i_6__0_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -3838,22 +3884,22 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_6__2
-       (.I0(fb_pixel5[28]),
-        .I1(fb_pixel5[29]),
+       (.I0(fb_pixel5[12]),
+        .I1(fb_pixel5[13]),
         .O(i__carry_i_6__2_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
     i__carry_i_7
-       (.I0(fb_pixel5[3]),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(fb_pixel5[2]),
-        .I3(\pixel_x_reg_n_0_[2] ),
+       (.I0(fb_pixel5[2]),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(fb_pixel5[3]),
+        .I3(\pixel_x_reg_n_0_[3] ),
         .O(i__carry_i_7_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_7__0
-       (.I0(fb_pixel5[10]),
-        .I1(fb_pixel5[11]),
+       (.I0(fb_pixel5[26]),
+        .I1(fb_pixel5[27]),
         .O(i__carry_i_7__0_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -3864,8 +3910,8 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_7__2
-       (.I0(fb_pixel5[26]),
-        .I1(fb_pixel5[27]),
+       (.I0(fb_pixel5[10]),
+        .I1(fb_pixel5[11]),
         .O(i__carry_i_7__2_n_0));
   LUT4 #(
     .INIT(16'h9009)) 
@@ -3876,23 +3922,23 @@ module bowling_game_controller_0_0_controller
         .I3(\pixel_x_reg_n_0_[1] ),
         .O(i__carry_i_8_n_0));
   LUT3 #(
-    .INIT(8'h41)) 
+    .INIT(8'h09)) 
     i__carry_i_8__0
-       (.I0(fb_pixel5[9]),
-        .I1(fb_pixel5[8]),
-        .I2(\pixel_x_reg_n_0_[8] ),
+       (.I0(fb_pixel5[8]),
+        .I1(\pixel_x_reg_n_0_[8] ),
+        .I2(fb_pixel5[9]),
         .O(i__carry_i_8__0_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_8__1
-       (.I0(fb_pixel5[16]),
-        .I1(fb_pixel5[17]),
+       (.I0(fb_pixel5[24]),
+        .I1(fb_pixel5[25]),
         .O(i__carry_i_8__1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_8__2
-       (.I0(fb_pixel5[24]),
-        .I1(fb_pixel5[25]),
+       (.I0(fb_pixel5[16]),
+        .I1(fb_pixel5[17]),
         .O(i__carry_i_8__2_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 i__carry_i_9
@@ -3932,7 +3978,7 @@ module bowling_game_controller_0_0_controller
        (.I0(\pixel[2]_i_2_n_0 ),
         .I1(pixel[0]),
         .O(\pixel[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \pixel[1]_i_1 
@@ -3940,32 +3986,33 @@ module bowling_game_controller_0_0_controller
         .I1(\pixel[2]_i_2_n_0 ),
         .I2(pixel[1]),
         .O(\pixel[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \pixel[2]_i_1 
-       (.I0(pixel[1]),
-        .I1(pixel[0]),
+       (.I0(pixel[0]),
+        .I1(pixel[1]),
         .I2(\pixel[2]_i_2_n_0 ),
         .I3(pixel[2]),
         .O(\pixel[2]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h0001)) 
-    \pixel[2]_i_2 
-       (.I0(color_cycle_clock_reg[6]),
-        .I1(color_cycle_clock_reg[2]),
-        .I2(color_cycle_clock_reg[3]),
-        .I3(\pixel[2]_i_3_n_0 ),
-        .O(\pixel[2]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFEFFFFFFFFFFFF)) 
-    \pixel[2]_i_3 
-       (.I0(color_cycle_clock_reg[1]),
-        .I1(color_cycle_clock_reg[0]),
+    .INIT(64'h0000000200000000)) 
+    \pixel[2]_i_2 
+       (.I0(\FSM_onehot_curr_state_reg_n_0_[0] ),
+        .I1(color_cycle_clock_reg[6]),
         .I2(color_cycle_clock_reg[4]),
         .I3(color_cycle_clock_reg[5]),
-        .I4(blank_time),
-        .I5(\FSM_onehot_curr_state_reg_n_0_[0] ),
+        .I4(\pixel[2]_i_3_n_0 ),
+        .I5(blank_time),
+        .O(\pixel[2]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \pixel[2]_i_3 
+       (.I0(color_cycle_clock_reg[2]),
+        .I1(color_cycle_clock_reg[3]),
+        .I2(color_cycle_clock_reg[0]),
+        .I3(color_cycle_clock_reg[1]),
         .O(\pixel[2]_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3991,116 +4038,122 @@ module bowling_game_controller_0_0_controller
         .D(\pixel[2]_i_1_n_0 ),
         .Q(pixel[2]),
         .R(1'b0));
-  LUT6 #(
-    .INIT(64'h0000000000007FFF)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h15555555)) 
     \pixel_x[0]_i_1 
-       (.I0(\pixel_x_reg_n_0_[8] ),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .I2(\pixel_x_reg_n_0_[6] ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(\fb_addr[17]_i_3_n_0 ),
-        .I5(\pixel_x_reg_n_0_[0] ),
-        .O(\pixel_x[0]_i_1_n_0 ));
-  LUT2 #(
-    .INIT(4'h6)) 
-    \pixel_x[1]_i_1 
        (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[6] ),
+        .O(\pixel_x[0]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h0666666666666666)) 
+    \pixel_x[1]_i_1 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[7] ),
+        .I3(\pixel_x_reg_n_0_[8] ),
+        .I4(\pixel_x_reg_n_0_[5] ),
+        .I5(\pixel_x_reg_n_0_[6] ),
         .O(\pixel_x[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'h6A)) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT4 #(
+    .INIT(16'h006A)) 
     \pixel_x[2]_i_1 
        (.I0(\pixel_x_reg_n_0_[2] ),
         .I1(\pixel_x_reg_n_0_[1] ),
         .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\fb_addr[17]_i_3_n_0 ),
         .O(\pixel_x[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT4 #(
-    .INIT(16'h6AAA)) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT5 #(
+    .INIT(32'h00006AAA)) 
     \pixel_x[3]_i_1 
        (.I0(\pixel_x_reg_n_0_[3] ),
         .I1(\pixel_x_reg_n_0_[2] ),
         .I2(\pixel_x_reg_n_0_[0] ),
         .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\fb_addr[17]_i_3_n_0 ),
         .O(\pixel_x[3]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hAAAAAAAA80000000)) 
+    .INIT(64'h000000006AAAAAAA)) 
     \pixel_x[4]_i_1 
-       (.I0(pixel_x),
-        .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(\pixel_x_reg_n_0_[5] ),
-        .I5(\fb_addr[17]_i_3_n_0 ),
-        .O(\pixel_x[4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT5 #(
-    .INIT(32'h6AAAAAAA)) 
-    \pixel_x[4]_i_2 
        (.I0(\pixel_x_reg_n_0_[4] ),
         .I1(\pixel_x_reg_n_0_[3] ),
         .I2(\pixel_x_reg_n_0_[1] ),
         .I3(\pixel_x_reg_n_0_[0] ),
         .I4(\pixel_x_reg_n_0_[2] ),
-        .O(\pixel_x[4]_i_2_n_0 ));
-  LUT4 #(
-    .INIT(16'h2F80)) 
+        .I5(\fb_addr[17]_i_3_n_0 ),
+        .O(\pixel_x[4]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h15AA55AA)) 
     \pixel_x[5]_i_1 
-       (.I0(\fb_pixel[2]_i_3_n_0 ),
-        .I1(\pixel_x[5]_i_2_n_0 ),
-        .I2(pixel_x),
+       (.I0(\pixel_x[5]_i_2_n_0 ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
         .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[6] ),
         .O(\pixel_x[5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT5 #(
     .INIT(32'h80000000)) 
     \pixel_x[5]_i_2 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\pixel_x_reg_n_0_[4] ),
-        .O(\pixel_x[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT4 #(
-    .INIT(16'h2F80)) 
-    \pixel_x[6]_i_1 
-       (.I0(\fb_pixel[2]_i_3_n_0 ),
-        .I1(\pixel_x[8]_i_2_n_0 ),
-        .I2(pixel_x),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .O(\pixel_x[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT5 #(
-    .INIT(32'h2AFF8000)) 
-    \pixel_x[7]_i_1 
-       (.I0(\fb_pixel[2]_i_3_n_0 ),
-        .I1(\pixel_x[8]_i_2_n_0 ),
-        .I2(\pixel_x_reg_n_0_[6] ),
-        .I3(pixel_x),
-        .I4(\pixel_x_reg_n_0_[7] ),
-        .O(\pixel_x[7]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h00006AEA00002AAA)) 
-    \pixel_x[8]_i_1 
-       (.I0(\pixel_x_reg_n_0_[8] ),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .I2(\pixel_x_reg_n_0_[6] ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(\fb_addr[17]_i_3_n_0 ),
-        .I5(\pixel_x[8]_i_2_n_0 ),
-        .O(\pixel_x[8]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h8000000000000000)) 
-    \pixel_x[8]_i_2 
        (.I0(\pixel_x_reg_n_0_[4] ),
         .I1(\pixel_x_reg_n_0_[2] ),
         .I2(\pixel_x_reg_n_0_[0] ),
         .I3(\pixel_x_reg_n_0_[1] ),
         .I4(\pixel_x_reg_n_0_[3] ),
-        .I5(\pixel_x_reg_n_0_[5] ),
+        .O(\pixel_x[5]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT5 #(
+    .INIT(32'h1555AAAA)) 
+    \pixel_x[6]_i_1 
+       (.I0(\pixel_x[8]_i_3_n_0 ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[6] ),
+        .O(\pixel_x[6]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT5 #(
+    .INIT(32'h2666CCCC)) 
+    \pixel_x[7]_i_1 
+       (.I0(\pixel_x[8]_i_3_n_0 ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[6] ),
+        .O(\pixel_x[7]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \pixel_x[8]_i_1 
+       (.I0(pixel_y_reg[7]),
+        .I1(pixel_y_reg[8]),
+        .I2(pixel_y_reg[5]),
+        .I3(pixel_y_reg[6]),
+        .I4(pixel_x),
+        .O(\pixel_x[8]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h3878F0F0)) 
+    \pixel_x[8]_i_2 
+       (.I0(\pixel_x[8]_i_3_n_0 ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[6] ),
         .O(\pixel_x[8]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \pixel_x[8]_i_3 
+       (.I0(\pixel_x_reg_n_0_[5] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .I5(\pixel_x_reg_n_0_[4] ),
+        .O(\pixel_x[8]_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[0] 
@@ -4108,7 +4161,7 @@ module bowling_game_controller_0_0_controller
         .CE(pixel_x),
         .D(\pixel_x[0]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[0] ),
-        .R(1'b0));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[1] 
@@ -4116,7 +4169,7 @@ module bowling_game_controller_0_0_controller
         .CE(pixel_x),
         .D(\pixel_x[1]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[1] ),
-        .R(\pixel_x[4]_i_1_n_0 ));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[2] 
@@ -4124,7 +4177,7 @@ module bowling_game_controller_0_0_controller
         .CE(pixel_x),
         .D(\pixel_x[2]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[2] ),
-        .R(\pixel_x[4]_i_1_n_0 ));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[3] 
@@ -4132,226 +4185,231 @@ module bowling_game_controller_0_0_controller
         .CE(pixel_x),
         .D(\pixel_x[3]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[3] ),
-        .R(\pixel_x[4]_i_1_n_0 ));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[4] 
        (.C(clk),
         .CE(pixel_x),
-        .D(\pixel_x[4]_i_2_n_0 ),
+        .D(\pixel_x[4]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[4] ),
-        .R(\pixel_x[4]_i_1_n_0 ));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[5] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(pixel_x),
         .D(\pixel_x[5]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[5] ),
-        .R(1'b0));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[6] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(pixel_x),
         .D(\pixel_x[6]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[6] ),
-        .R(1'b0));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[7] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(pixel_x),
         .D(\pixel_x[7]_i_1_n_0 ),
         .Q(\pixel_x_reg_n_0_[7] ),
-        .R(1'b0));
+        .R(\pixel_x[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_x_reg[8] 
        (.C(clk),
         .CE(pixel_x),
-        .D(\pixel_x[8]_i_1_n_0 ),
+        .D(\pixel_x[8]_i_2_n_0 ),
         .Q(\pixel_x_reg_n_0_[8] ),
-        .R(1'b0));
-  LUT6 #(
-    .INIT(64'h0000FFFF7FFF0000)) 
+        .R(\pixel_x[8]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
     \pixel_y[0]_i_1 
-       (.I0(pixel_y_reg[6]),
-        .I1(pixel_y_reg[8]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[7]),
-        .I4(\pixel_x[4]_i_1_n_0 ),
-        .I5(pixel_y_reg[0]),
+       (.I0(pixel_y_reg[0]),
         .O(\pixel_y[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT4 #(
-    .INIT(16'h1F20)) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
     \pixel_y[1]_i_1 
        (.I0(pixel_y_reg[0]),
-        .I1(\fb_addr[17]_i_3_n_0 ),
-        .I2(\pixel_x[4]_i_1_n_0 ),
-        .I3(pixel_y_reg[1]),
+        .I1(pixel_y_reg[1]),
         .O(\pixel_y[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT5 #(
-    .INIT(32'h07FF0800)) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
     \pixel_y[2]_i_1 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[2]),
+        .O(\pixel_y[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT4 #(
+    .INIT(16'h7F80)) 
+    \pixel_y[3]_i_1 
        (.I0(pixel_y_reg[1]),
         .I1(pixel_y_reg[0]),
-        .I2(\fb_addr[17]_i_3_n_0 ),
-        .I3(\pixel_x[4]_i_1_n_0 ),
-        .I4(pixel_y_reg[2]),
-        .O(\pixel_y[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h6AAA)) 
-    \pixel_y[3]_i_1 
-       (.I0(pixel_y_reg[3]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[0]),
-        .O(\pixel_y[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .O(plusOp[3]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT5 #(
-    .INIT(32'h6AAAAAAA)) 
+    .INIT(32'h7FFF8000)) 
     \pixel_y[4]_i_1 
-       (.I0(pixel_y_reg[4]),
-        .I1(pixel_y_reg[3]),
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[4]),
+        .O(plusOp[4]));
+  LUT6 #(
+    .INIT(64'h7FFFFFFF80000000)) 
+    \pixel_y[5]_i_1 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[1]),
         .I2(pixel_y_reg[0]),
-        .I3(pixel_y_reg[1]),
-        .I4(pixel_y_reg[2]),
-        .O(\pixel_y[4]_i_1_n_0 ));
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[4]),
+        .I5(pixel_y_reg[5]),
+        .O(plusOp[5]));
+  LUT6 #(
+    .INIT(64'hF7FFFFFF08000000)) 
+    \pixel_y[6]_i_1 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[2]),
+        .I2(\pixel_y[6]_i_2_n_0 ),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[5]),
+        .I5(pixel_y_reg[6]),
+        .O(plusOp[6]));
+  LUT2 #(
+    .INIT(4'h7)) 
+    \pixel_y[6]_i_2 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .O(\pixel_y[6]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
+    \pixel_y[7]_i_1 
+       (.I0(\pixel_y[8]_i_4_n_0 ),
+        .I1(pixel_y_reg[6]),
+        .I2(pixel_y_reg[7]),
+        .O(plusOp[7]));
   LUT5 #(
     .INIT(32'h80000000)) 
-    \pixel_y[5]_i_1 
-       (.I0(pixel_y_reg[6]),
-        .I1(pixel_y_reg[8]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[7]),
-        .I4(\pixel_x[4]_i_1_n_0 ),
-        .O(\pixel_y[5]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h6AAAAAAAAAAAAAAA)) 
-    \pixel_y[5]_i_2 
-       (.I0(pixel_y_reg[5]),
-        .I1(pixel_y_reg[4]),
-        .I2(pixel_y_reg[2]),
-        .I3(pixel_y_reg[1]),
-        .I4(pixel_y_reg[0]),
-        .I5(pixel_y_reg[3]),
-        .O(\pixel_y[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT5 #(
-    .INIT(32'h55552AAA)) 
-    \pixel_y[6]_i_1 
-       (.I0(pixel_y_reg[6]),
-        .I1(pixel_y_reg[8]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[7]),
-        .I4(\pixel_y[8]_i_2_n_0 ),
-        .O(\pixel_y[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT5 #(
-    .INIT(32'h55AA7F00)) 
-    \pixel_y[7]_i_1 
-       (.I0(pixel_y_reg[6]),
-        .I1(pixel_y_reg[8]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[7]),
-        .I4(\pixel_y[8]_i_2_n_0 ),
-        .O(\pixel_y[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT5 #(
-    .INIT(32'h6ECC4CCC)) 
     \pixel_y[8]_i_1 
-       (.I0(pixel_y_reg[6]),
+       (.I0(pixel_y_reg[7]),
         .I1(pixel_y_reg[8]),
         .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[7]),
-        .I4(\pixel_y[8]_i_2_n_0 ),
+        .I3(pixel_y_reg[6]),
+        .I4(pixel_x),
         .O(\pixel_y[8]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h8000000000000000)) 
+    .INIT(64'hA888888888888888)) 
     \pixel_y[8]_i_2 
-       (.I0(pixel_y_reg[4]),
-        .I1(pixel_y_reg[2]),
+       (.I0(pixel_x),
+        .I1(\fb_addr[17]_i_3_n_0 ),
+        .I2(pixel_y_reg[6]),
+        .I3(pixel_y_reg[5]),
+        .I4(pixel_y_reg[8]),
+        .I5(pixel_y_reg[7]),
+        .O(\pixel_y[8]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT4 #(
+    .INIT(16'h7F80)) 
+    \pixel_y[8]_i_3 
+       (.I0(pixel_y_reg[6]),
+        .I1(\pixel_y[8]_i_4_n_0 ),
+        .I2(pixel_y_reg[7]),
+        .I3(pixel_y_reg[8]),
+        .O(plusOp[8]));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \pixel_y[8]_i_4 
+       (.I0(pixel_y_reg[5]),
+        .I1(pixel_y_reg[3]),
         .I2(pixel_y_reg[1]),
         .I3(pixel_y_reg[0]),
-        .I4(pixel_y_reg[3]),
-        .I5(pixel_y_reg[5]),
-        .O(\pixel_y[8]_i_2_n_0 ));
+        .I4(pixel_y_reg[2]),
+        .I5(pixel_y_reg[4]),
+        .O(\pixel_y[8]_i_4_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[0] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(\pixel_y[8]_i_2_n_0 ),
         .D(\pixel_y[0]_i_1_n_0 ),
         .Q(pixel_y_reg[0]),
-        .R(1'b0));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[1] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(\pixel_y[8]_i_2_n_0 ),
         .D(\pixel_y[1]_i_1_n_0 ),
         .Q(pixel_y_reg[1]),
-        .R(1'b0));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[2] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(\pixel_y[8]_i_2_n_0 ),
         .D(\pixel_y[2]_i_1_n_0 ),
         .Q(pixel_y_reg[2]),
-        .R(1'b0));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[3] 
        (.C(clk),
-        .CE(\pixel_x[4]_i_1_n_0 ),
-        .D(\pixel_y[3]_i_1_n_0 ),
+        .CE(\pixel_y[8]_i_2_n_0 ),
+        .D(plusOp[3]),
         .Q(pixel_y_reg[3]),
-        .R(\pixel_y[5]_i_1_n_0 ));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[4] 
        (.C(clk),
-        .CE(\pixel_x[4]_i_1_n_0 ),
-        .D(\pixel_y[4]_i_1_n_0 ),
+        .CE(\pixel_y[8]_i_2_n_0 ),
+        .D(plusOp[4]),
         .Q(pixel_y_reg[4]),
-        .R(\pixel_y[5]_i_1_n_0 ));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[5] 
        (.C(clk),
-        .CE(\pixel_x[4]_i_1_n_0 ),
-        .D(\pixel_y[5]_i_2_n_0 ),
+        .CE(\pixel_y[8]_i_2_n_0 ),
+        .D(plusOp[5]),
         .Q(pixel_y_reg[5]),
-        .R(\pixel_y[5]_i_1_n_0 ));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[6] 
        (.C(clk),
-        .CE(\pixel_x[4]_i_1_n_0 ),
-        .D(\pixel_y[6]_i_1_n_0 ),
+        .CE(\pixel_y[8]_i_2_n_0 ),
+        .D(plusOp[6]),
         .Q(pixel_y_reg[6]),
-        .R(1'b0));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[7] 
        (.C(clk),
-        .CE(\pixel_x[4]_i_1_n_0 ),
-        .D(\pixel_y[7]_i_1_n_0 ),
+        .CE(\pixel_y[8]_i_2_n_0 ),
+        .D(plusOp[7]),
         .Q(pixel_y_reg[7]),
-        .R(1'b0));
+        .R(\pixel_y[8]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[8] 
        (.C(clk),
-        .CE(\pixel_x[4]_i_1_n_0 ),
-        .D(\pixel_y[8]_i_1_n_0 ),
+        .CE(\pixel_y[8]_i_2_n_0 ),
+        .D(plusOp[8]),
         .Q(pixel_y_reg[8]),
-        .R(1'b0));
+        .R(\pixel_y[8]_i_1_n_0 ));
 endmodule
 `ifndef GLBL
 `define GLBL
