@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 27 20:46:19 2023" VIVADOVERSION="2021.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon May  1 15:55:05 2023" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="bowling_game" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -132,6 +132,8 @@
     <MODULE COREREVISION="1" FULLNAME="/controller_0" HWVERSION="1.0" INSTANCE="controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="controller" VLNV="xilinx.com:module_ref:controller:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
+        <PARAMETER NAME="pin_cluster_location_x" VALUE="240"/>
+        <PARAMETER NAME="pin_cluster_location_y" VALUE="100"/>
         <PARAMETER NAME="Component_Name" VALUE="bowling_game_controller_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>

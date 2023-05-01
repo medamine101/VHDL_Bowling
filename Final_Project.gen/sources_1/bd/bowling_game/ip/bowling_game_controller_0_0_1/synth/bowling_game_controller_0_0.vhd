@@ -79,6 +79,10 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF bowling_game_controller_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT controller IS
+    GENERIC (
+      pin_cluster_location_x : INTEGER;
+      pin_cluster_location_y : INTEGER
+    );
     PORT (
       clk : IN STD_LOGIC;
       game_clk : IN STD_LOGIC;
@@ -104,7 +108,7 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF bowling_game_controller_0_0_arch : ARCHITECTURE IS "bowling_game_controller_0_0,controller,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF bowling_game_controller_0_0_arch: ARCHITECTURE IS "bowling_game_controller_0_0,controller,{x_ipProduct=Vivado 2021.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF bowling_game_controller_0_0_arch: ARCHITECTURE IS "bowling_game_controller_0_0,controller,{x_ipProduct=Vivado 2021.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,pin_cluster_location_x=240,pin_cluster_location_y=100}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF bowling_game_controller_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -119,6 +123,10 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : controller
+    GENERIC MAP (
+      pin_cluster_location_x => 240,
+      pin_cluster_location_y => 100
+    )
     PORT MAP (
       clk => clk,
       game_clk => game_clk,

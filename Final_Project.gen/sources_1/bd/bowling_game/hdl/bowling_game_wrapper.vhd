@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
---Date        : Thu Apr 27 20:46:19 2023
+--Date        : Mon May  1 15:55:04 2023
 --Host        : ece29 running 64-bit Ubuntu 20.04.2 LTS
 --Command     : generate_target bowling_game_wrapper.bd
 --Design      : bowling_game_wrapper

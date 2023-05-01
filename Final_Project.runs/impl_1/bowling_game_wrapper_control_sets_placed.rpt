@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Apr 27 20:48:09 2023
+| Date         : Mon May  1 15:56:54 2023
 | Host         : ece29 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_control_sets -verbose -file bowling_game_wrapper_control_sets_placed.rpt
 | Design       : bowling_game_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    24 |
-|    Minimum number of control sets                        |    24 |
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    85 |
+| Unused register locations in slices containing registers |    90 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,14 +39,14 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    24 |
-| >= 0 to < 4        |     2 |
-| >= 4 to < 6        |     3 |
+| Total control sets |    26 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     4 |
 | >= 6 to < 8        |     4 |
-| >= 8 to < 10       |     4 |
+| >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     1 |
+| >= 14 to < 16      |     2 |
 | >= 16              |     9 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              43 |           28 |
+| No           | No                    | No                     |              60 |           39 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              58 |           15 |
-| Yes          | No                    | No                     |              95 |           29 |
+| Yes          | No                    | No                     |              99 |           26 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             151 |           42 |
+| Yes          | Yes                   | No                     |             141 |           42 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -75,28 +75,30 @@ Table of Contents
 +----------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
 |  bowling_game_i/clock_div_60hz_0/U0/div_BUFG | bowling_game_i/controller_0/U0/game_time                              |                                                                       |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                               | bowling_game_i/clock_div_25Mhz_0/U0/div                               |                                                                       |                1 |              1 |         1.00 |
-|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG |                                                                       |                                                                       |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/clk_toggles[4]_i_2_n_0 | bowling_game_i/pmod_joystick_0/U0/spi_master_0/clk_toggles[4]_i_1_n_0 |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_x[4]_i_1_n_0                     |                                                                       |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_x                                |                                                                       |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_x[4]_i_1_n_0                     | bowling_game_i/controller_0/U0/pixel_y[6]_i_1_n_0                     |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_x                                | bowling_game_i/controller_0/U0/pixel_x[4]_i_1_n_0                     |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/clk_toggles[4]_i_2_n_0 | bowling_game_i/pmod_joystick_0/U0/spi_master_0/clk_toggles[4]_i_1_n_0 |                3 |              5 |         1.67 |
 |  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/count0_0               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/count[5]_i_1__0_n_0    |                1 |              5 |         5.00 |
-|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/E[0]                   |                                                                       |                1 |              7 |         7.00 |
-|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/color_cycle_clock[6]_i_1_n_0           |                                                                       |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/E[0]                   |                                                                       |                2 |              7 |         3.50 |
 |  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/rx_data[7]_i_1_n_0     |                                                                       |                1 |              7 |         7.00 |
 |  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/E[1]                   |                                                                       |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/color_cycle_clock[6]_i_1_n_0           |                                                                       |                2 |              7 |         3.50 |
 |  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/rx_buffer0             |                                                                       |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_x                                | bowling_game_i/controller_0/U0/pixel_x[8]_i_1_n_0                     |                4 |              9 |         2.25 |
-|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/pixel_y[8]_i_2_n_0                     | bowling_game_i/controller_0/U0/pixel_y[8]_i_1_n_0                     |                2 |              9 |         4.50 |
 |  clk_IBUF_BUFG                               | bowling_game_i/clock_div_25Mhz_0/U0/div                               | bowling_game_i/vga_ctrl_0/U0/horizontal_count                         |                3 |              9 |         3.00 |
-|  clk_IBUF_BUFG                               | bowling_game_i/vga_ctrl_0/U0/horizontal_count                         | bowling_game_i/vga_ctrl_0/U0/vertical_count                           |                3 |             10 |         3.33 |
-|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/x_position[7]_i_1_n_0               |                                                                       |                5 |             15 |         3.00 |
-|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/fb_addr_1                              |                                                                       |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/vga_ctrl_0/U0/horizontal_count                         | bowling_game_i/vga_ctrl_0/U0/vertical_count                           |                4 |             10 |         2.50 |
+|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG |                                                                       |                                                                       |               10 |             15 |         1.50 |
+|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/x_position[7]_i_1_n_0               |                                                                       |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG                               | bowling_game_i/controller_0/U0/fb_addr[17]_i_1_n_0                    |                                                                       |                5 |             18 |         3.60 |
 |  clk_IBUF_BUFG                               | bowling_game_i/pixel_pusher_0/U0/addr_counter[17]_i_2_n_0             | bowling_game_i/pixel_pusher_0/U0/clear                                |                5 |             18 |         3.60 |
-|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/busy_reg_1[0]          |                                                                       |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/busy_reg_1[0]          |                                                                       |                5 |             24 |         4.80 |
 |  clk_IBUF_BUFG                               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/count0_0               | bowling_game_i/pmod_joystick_0/U0/spi_master_0/count[31]_i_1_n_0      |                7 |             26 |         3.71 |
 |  clk_IBUF_BUFG                               |                                                                       | bowling_game_i/clock_div_25Mhz_0/U0/clear                             |                7 |             26 |         3.71 |
 |  bowling_game_i/clock_div_60hz_0/U0/div_BUFG | bowling_game_i/controller_0/U0/game_time                              | bowling_game_i/controller_0/U0/bowling_ball_location_y[31]_i_1_n_0    |                8 |             28 |         3.50 |
 |  clk_IBUF_BUFG                               |                                                                       | bowling_game_i/clock_div_60hz_0/U0/clear                              |                8 |             32 |         4.00 |
-|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG | bowling_game_i/controller_0/U0/bowling_ball_location_x[0]_i_2_n_0     | bowling_game_i/controller_0/U0/bowling_ball_location_x0               |                8 |             32 |         4.00 |
-|  clk_IBUF_BUFG                               |                                                                       |                                                                       |               26 |             39 |         1.50 |
+|  bowling_game_i/clock_div_60hz_0/U0/div_BUFG | bowling_game_i/controller_0/U0/bowling_ball_location_x[0]_i_1_n_0     | bowling_game_i/controller_0/U0/bowling_ball_location_y[31]_i_1_n_0    |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                               |                                                                       |                                                                       |               29 |             45 |         1.55 |
 +----------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
 
 

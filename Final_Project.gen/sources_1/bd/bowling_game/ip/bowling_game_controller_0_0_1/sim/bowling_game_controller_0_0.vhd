@@ -79,6 +79,10 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF bowling_game_controller_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT controller IS
+    GENERIC (
+      pin_cluster_location_x : INTEGER;
+      pin_cluster_location_y : INTEGER
+    );
     PORT (
       clk : IN STD_LOGIC;
       game_clk : IN STD_LOGIC;
@@ -113,6 +117,10 @@ ARCHITECTURE bowling_game_controller_0_0_arch OF bowling_game_controller_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : controller
+    GENERIC MAP (
+      pin_cluster_location_x => 240,
+      pin_cluster_location_y => 100
+    )
     PORT MAP (
       clk => clk,
       game_clk => game_clk,

@@ -32,6 +32,10 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity controller is
+    Generic(
+        pin_cluster_location_x : integer := 240;
+        pin_cluster_location_y : integer := 100
+    );
     Port (
         clk : in std_logic;
         game_clk : in std_logic;
@@ -72,6 +76,8 @@ type game_state is (user_input, run_ball);
 signal curr_state : state := wait_rst;
 
 signal game_time : game_state := user_input;
+
+signal game_turn : std_logic := '0';
 
 signal color_cycle_clock : unsigned(6 downto 0) := (others => '0');
 
@@ -125,12 +131,49 @@ constant pin_bowling : matrix(0 to 19, 0 to 9) := ((7,7,7,0,0,0,0,7,7,7),
                                                    (7,7,7,0,0,0,0,7,7,7));
 
 
+constant pin_width_x : integer := 10;
+constant pin_width_y : integer := 20;
 
-constant pin_1_width_x : integer := 10;
-constant pin_1_width_y : integer := 20;
-signal pin_1_location_x : integer := 200;
-signal pin_1_location_y : integer := 200;
-signal pin_1_hit : integer := 400;
+
+signal pin_1_location_x : integer := pin_cluster_location_x - 30;
+signal pin_1_location_y : integer := pin_cluster_location_y;
+signal pin_1_hit : std_logic := '0';
+
+signal pin_2_location_x : integer := pin_cluster_location_x - 10;
+signal pin_2_location_y : integer := pin_cluster_location_y;
+signal pin_2_hit : std_logic := '0';
+
+signal pin_3_location_x : integer := pin_cluster_location_x + 10;
+signal pin_3_location_y : integer := pin_cluster_location_y;
+signal pin_3_hit : std_logic := '0';
+
+signal pin_4_location_x : integer := pin_cluster_location_x + 30;
+signal pin_4_location_y : integer := pin_cluster_location_y;
+signal pin_4_hit : std_logic := '0';
+
+signal pin_5_location_x : integer := pin_cluster_location_x - 20;
+signal pin_5_location_y : integer := pin_cluster_location_y + 100;
+signal pin_5_hit : std_logic := '0';
+
+signal pin_6_location_x : integer := pin_cluster_location_x;
+signal pin_6_location_y : integer := pin_cluster_location_y + 100;
+signal pin_6_hit : std_logic := '0';
+
+signal pin_7_location_x : integer := pin_cluster_location_x + 20;
+signal pin_7_location_y : integer := pin_cluster_location_y + 100;
+signal pin_7_hit : std_logic := '0';
+
+signal pin_8_location_x : integer := pin_cluster_location_x - 10;
+signal pin_8_location_y : integer := pin_cluster_location_y + 200;
+signal pin_8_hit : std_logic := '0';
+
+signal pin_9_location_x : integer := pin_cluster_location_x + 10;
+signal pin_9_location_y : integer := pin_cluster_location_y + 200;
+signal pin_9_hit : std_logic := '0';
+
+signal pin_10_location_x : integer := pin_cluster_location_x;
+signal pin_10_location_y : integer := pin_cluster_location_y + 300;
+signal pin_10_hit : std_logic := '0';
 
 
 begin
@@ -188,15 +231,125 @@ begin
                         end if;
                         
                         -- Bowling pin 1
-                        if (pixel_x < pin_1_location_x + pin_1_width_x and
+                        if (pixel_x < pin_1_location_x + pin_width_x and
                             pin_1_location_x <= pixel_x and
-                            pixel_y < pin_1_location_y + pin_1_width_y and
-                            pin_1_location_y <= pixel_y) then
+                            pixel_y < pin_1_location_y + pin_width_y and
+                            pin_1_location_y <= pixel_y and
+                            pin_1_hit='0') then
                         
                                 fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_1_location_y,
                                                                                      to_integer(pixel_x) - pin_1_location_x), fb_pixel'length));
                         
                         end if;
+                        
+                        -- Bowling pin 2
+                        if (pixel_x < pin_2_location_x + pin_width_x and
+                            pin_2_location_x <= pixel_x and
+                            pixel_y < pin_2_location_y + pin_width_y and
+                            pin_2_location_y <= pixel_y and
+                            pin_2_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_2_location_y,
+                                                                                     to_integer(pixel_x) - pin_2_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 3
+                        if (pixel_x < pin_3_location_x + pin_width_x and
+                            pin_3_location_x <= pixel_x and
+                            pixel_y < pin_3_location_y + pin_width_y and
+                            pin_3_location_y <= pixel_y and
+                            pin_3_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_3_location_y,
+                                                                                     to_integer(pixel_x) - pin_3_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 4
+                        if (pixel_x < pin_4_location_x + pin_width_x and
+                            pin_4_location_x <= pixel_x and
+                            pixel_y < pin_4_location_y + pin_width_y and
+                            pin_4_location_y <= pixel_y and
+                            pin_4_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_4_location_y,
+                                                                                     to_integer(pixel_x) - pin_4_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 5
+                        if (pixel_x < pin_5_location_x + pin_width_x and
+                            pin_5_location_x <= pixel_x and
+                            pixel_y < pin_5_location_y + pin_width_y and
+                            pin_5_location_y <= pixel_y and
+                            pin_5_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_5_location_y,
+                                                                                     to_integer(pixel_x) - pin_5_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 6
+                        if (pixel_x < pin_6_location_x + pin_width_x and
+                            pin_6_location_x <= pixel_x and
+                            pixel_y < pin_6_location_y + pin_width_y and
+                            pin_6_location_y <= pixel_y and
+                            pin_6_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_6_location_y,
+                                                                                     to_integer(pixel_x) - pin_6_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 7
+                        if (pixel_x < pin_7_location_x + pin_width_x and
+                            pin_7_location_x <= pixel_x and
+                            pixel_y < pin_7_location_y + pin_width_y and
+                            pin_7_location_y <= pixel_y and
+                            pin_7_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_7_location_y,
+                                                                                     to_integer(pixel_x) - pin_7_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 8
+                        if (pixel_x < pin_8_location_x + pin_width_x and
+                            pin_8_location_x <= pixel_x and
+                            pixel_y < pin_8_location_y + pin_width_y and
+                            pin_8_location_y <= pixel_y and
+                            pin_8_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_8_location_y,
+                                                                                     to_integer(pixel_x) - pin_8_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 9
+                        if (pixel_x < pin_9_location_x + pin_width_x and
+                            pin_9_location_x <= pixel_x and
+                            pixel_y < pin_9_location_y + pin_width_y and
+                            pin_9_location_y <= pixel_y and
+                            pin_9_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_9_location_y,
+                                                                                     to_integer(pixel_x) - pin_9_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
+                        -- Bowling pin 10
+                        if (pixel_x < pin_10_location_x + pin_width_x and
+                            pin_10_location_x <= pixel_x and
+                            pixel_y < pin_10_location_y + pin_width_y and
+                            pin_10_location_y <= pixel_y and
+                            pin_10_hit='0') then
+                        
+                                fb_pixel <= std_logic_vector(to_unsigned(pin_bowling(to_integer(pixel_y) - pin_10_location_y,
+                                                                                     to_integer(pixel_x) - pin_10_location_x), fb_pixel'length));
+                        
+                        end if;
+                        
                         
                         
                         -- bowling ball
@@ -263,9 +416,122 @@ begin
                 
                 when run_ball =>
                 
+                
+                    if (bowling_ball_location_x < pin_1_location_x + pin_width_x and
+                        pin_1_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_1_location_y + pin_width_y and
+                        pin_1_location_y < bowling_ball_location_y) then
+                        
+                            pin_1_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_2_location_x + pin_width_x and
+                        pin_2_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_2_location_y + pin_width_y and
+                        pin_2_location_y < bowling_ball_location_y) then
+                        
+                            pin_2_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_3_location_x + pin_width_x and
+                        pin_3_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_3_location_y + pin_width_y and
+                        pin_3_location_y < bowling_ball_location_y) then
+                        
+                            pin_3_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_4_location_x + pin_width_x and
+                        pin_4_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_4_location_y + pin_width_y and
+                        pin_4_location_y < bowling_ball_location_y) then
+                        
+                            pin_4_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_5_location_x + pin_width_x and
+                        pin_5_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_5_location_y + pin_width_y and
+                        pin_5_location_y < bowling_ball_location_y) then
+                        
+                            pin_5_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_6_location_x + pin_width_x and
+                        pin_6_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_6_location_y + pin_width_y and
+                        pin_6_location_y < bowling_ball_location_y) then
+                        
+                            pin_6_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_7_location_x + pin_width_x and
+                        pin_7_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_7_location_y + pin_width_y and
+                        pin_7_location_y < bowling_ball_location_y) then
+                        
+                            pin_7_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_8_location_x + pin_width_x and
+                        pin_8_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_8_location_y + pin_width_y and
+                        pin_8_location_y < bowling_ball_location_y) then
+                        
+                            pin_8_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_9_location_x + pin_width_x and
+                        pin_9_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_9_location_y + pin_width_y and
+                        pin_9_location_y < bowling_ball_location_y) then
+                        
+                            pin_9_hit <= '1';
+                        
+                    end if;
+                    
+                    if (bowling_ball_location_x < pin_10_location_x + pin_width_x and
+                        pin_10_location_x - bowling_ball_width_x < bowling_ball_location_x and
+                        bowling_ball_location_y < pin_10_location_y + pin_width_y and
+                        pin_10_location_y < bowling_ball_location_y) then
+                        
+                            pin_10_hit <= '1';
+                        
+                    end if;
+                    
+                
+                
                     if bowling_ball_location_y=0 then
                         bowling_ball_location_x <= 200;
                         bowling_ball_location_y <= 400;
+                        
+                        if game_turn='0' then
+                            game_turn <= '1';
+                        else
+                            game_turn <= '0';
+                            pin_1_hit<='0';
+                            pin_2_hit<='0';
+                            pin_3_hit<='0';
+                            pin_4_hit<='0';
+                            pin_5_hit<='0';
+                            pin_6_hit<='0';
+                            pin_7_hit<='0';
+                            pin_8_hit<='0';
+                            pin_9_hit<='0';
+                            pin_10_hit<='0';
+                            
+                        
+                        end if;
+                        
+                        
                         game_time <= user_input;
                     else
                         bowling_ball_location_y <= bowling_ball_location_y - 5;

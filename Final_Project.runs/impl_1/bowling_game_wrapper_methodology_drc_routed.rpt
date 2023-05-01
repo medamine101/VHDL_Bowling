@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Apr 27 20:48:18 2023
+| Date         : Mon May  1 15:57:05 2023
 | Host         : ece29 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_methodology -file bowling_game_wrapper_methodology_drc_routed.rpt -pb bowling_game_wrapper_methodology_drc_routed.pb -rpx bowling_game_wrapper_methodology_drc_routed.rpx
 | Design       : bowling_game_wrapper
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 87
+             Violations found: 98
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 65         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 76         |
 | TIMING-18 | Warning          | Missing input or output delay | 22         |
 +-----------+------------------+-------------------------------+------------+
 
@@ -356,6 +356,61 @@ Related violations: <none>
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
 The clock pin bowling_game_i/controller_0/U0/game_time_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/game_turn_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_10_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_1_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_2_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_3_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_4_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_5_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_6_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_7_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_8_hit_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Critical Warning
+Non-clocked sequential cell  
+The clock pin bowling_game_i/controller_0/U0/pin_9_hit_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-18#1 Warning
