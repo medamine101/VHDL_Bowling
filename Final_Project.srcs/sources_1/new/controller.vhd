@@ -71,11 +71,11 @@ signal pic_reset : std_logic := '0';
 
 type state is (rst_pic, pix_out, wait_rst, wait_after_pix);
 
-type game_state is (user_input, run_ball);
+type game_state is (user_input, run_ball, game_init);
 
 signal curr_state : state := wait_rst;
 
-signal game_time : game_state := user_input;
+signal game_time : game_state := game_init;
 
 signal game_turn : std_logic := '0';
 
@@ -83,8 +83,11 @@ signal color_cycle_clock : unsigned(6 downto 0) := (others => '0');
 
 constant bowling_ball_width_x : integer := 20;
 constant bowling_ball_width_y : integer := 20;
-signal bowling_ball_location_x : integer := 200;
+signal bowling_ball_location_x : integer := 240;
 signal bowling_ball_location_y : integer := 400;
+
+signal ball_tilt_right : std_logic := '0';
+signal ball_tilt_left : std_logic := '0';
 
 type matrix is array(natural range <>, natural range <>) of integer;
 
@@ -383,6 +386,21 @@ begin
     
             case game_time is
             
+                when game_init =>
+                
+                    pin_1_location_y <= 50;
+                    pin_2_location_y <= 50;
+                    pin_3_location_y <= 50;
+                    pin_4_location_y <= 50;
+                    pin_5_location_y <= 100;
+                    pin_6_location_y <= 100;
+                    pin_7_location_y <= 100;
+                    pin_8_location_y <= 150;
+                    pin_9_location_y <= 150;
+                    pin_10_location_y <= 200;
+                    
+                    game_time <= user_input;
+            
                 when user_input =>
                 
                     
@@ -409,13 +427,20 @@ begin
                     end if;
                     
                     if (unsigned(joystick_y) < 122) and joystick_trigger='1' then
+                    
+                        if unsigned(joystick_x) > 183 then
+                            ball_tilt_right <= '1';
+                        elsif unsigned(joystick_x) < 72 then
+                            ball_tilt_left <= '1';
+                        end if;
+                    
+                    
                         game_time <= run_ball;
                     else
                         game_time <= user_input;
                     end if;
                 
                 when run_ball =>
-                
                 
                     if (bowling_ball_location_x < pin_1_location_x + pin_width_x and
                         pin_1_location_x - bowling_ball_width_x < bowling_ball_location_x and
@@ -510,7 +535,7 @@ begin
                 
                 
                     if bowling_ball_location_y=0 then
-                        bowling_ball_location_x <= 200;
+                        bowling_ball_location_x <= 240;
                         bowling_ball_location_y <= 400;
                         
                         if game_turn='0' then
@@ -528,12 +553,24 @@ begin
                             pin_9_hit<='0';
                             pin_10_hit<='0';
                             
+                            ball_tilt_right <= '0';
+                            ball_tilt_left <= '0';
+                            
                         
                         end if;
                         
                         
                         game_time <= user_input;
                     else
+                        
+                        if ball_tilt_left='1' then
+                            bowling_ball_location_x <= bowling_ball_location_x - 1;
+                        end if;
+                        
+                        if ball_tilt_right='1' then
+                            bowling_ball_location_x <= bowling_ball_location_x + 1;
+                        end if;
+                    
                         bowling_ball_location_y <= bowling_ball_location_y - 5;
                         game_time <= run_ball;
                     end if;
