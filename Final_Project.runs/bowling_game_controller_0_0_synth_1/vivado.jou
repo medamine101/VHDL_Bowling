@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Mon May  1 16:45:04 2023
-# Process ID: 1792401
+# Start of session at: Tue May  2 16:11:53 2023
+# Process ID: 2176062
 # Current directory: /home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_controller_0_0_synth_1
 # Command line: vivado -log bowling_game_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bowling_game_controller_0_0.tcl
 # Log file: /home/user/Documents/VHDL_Bowling/Final_Project.runs/bowling_game_controller_0_0_synth_1/bowling_game_controller_0_0.vds

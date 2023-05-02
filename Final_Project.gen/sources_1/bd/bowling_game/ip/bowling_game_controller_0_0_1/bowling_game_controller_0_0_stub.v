@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Mon May  1 16:45:36 2023
+// Date        : Tue May  2 16:12:22 2023
 // Host        : ece29 running 64-bit Ubuntu 20.04.2 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0_stub.v

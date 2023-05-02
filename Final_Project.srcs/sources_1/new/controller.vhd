@@ -89,6 +89,8 @@ signal bowling_ball_location_y : integer := 400;
 signal ball_tilt_right : std_logic := '0';
 signal ball_tilt_left : std_logic := '0';
 
+signal railing_up : std_logic := '0';
+
 type matrix is array(natural range <>, natural range <>) of integer;
 
 constant bowling_ball : matrix(0 to 19, 0 to 19) := ((7,7,7,7,7,7,7,0,0,0,0,0,0,7,7,7,7,7,7,7),
@@ -196,11 +198,11 @@ begin
                     
                         if blank_time='1' then
                         
-                            color_cycle_clock <= color_cycle_clock + 1;
+--                            color_cycle_clock <= color_cycle_clock + 1;
                             
-                            if color_cycle_clock = 0 then
-                                pixel <= std_logic_vector(unsigned(pixel) + 1);
-                            end if;
+--                            if color_cycle_clock = 0 then
+--                                pixel <= std_logic_vector(unsigned(pixel) + 1);
+--                            end if;
                             
                             curr_state <= pix_out;
                         end if;
@@ -227,7 +229,18 @@ begin
                         
                         else
                             
-                            fb_pixel <= pixel;
+                            fb_pixel <= "111";
+                            
+                            -- Side Lines
+                            if ((pixel_x > 150) and (pixel_x < 170)) or ((pixel_x < 340) and (pixel_x > 320)) then
+                                fb_pixel <= "000";
+                            end if;
+                            
+                            if railing_up='1' and (((pixel_x > 165) and (pixel_x < 170)) or ((pixel_x < 325) and (pixel_x > 320)))then
+                                fb_pixel <= "010";
+                            end if;
+                            
+                            
                             fb_addr <= STD_LOGIC_VECTOR(pixel_loc);
                             pixel_x <= pixel_x + 1;
                         
@@ -404,27 +417,41 @@ begin
                 when user_input =>
                 
                     
+                    if right_in='1' then
+                        railing_up <= '1';
+                    end if;
                     
-                    if unsigned(joystick_x) > 183 then
-                        
-                        bowling_ball_location_x <= bowling_ball_location_x + 2;
-                        
-                    elsif unsigned(joystick_x) > 133 then
+                    if left_in='1' then
+                        railing_up <= '0';
+                    end if;
+                   
                     
-                        bowling_ball_location_x <= bowling_ball_location_x + 1;
+                    if bowling_ball_location_x < 320 then
+                        if unsigned(joystick_x) > 183 then
+                    
+                            bowling_ball_location_x <= bowling_ball_location_x + 2;
+                            
+                        elsif unsigned(joystick_x) > 133 then
+                        
+                            bowling_ball_location_x <= bowling_ball_location_x + 1;
+                        
+                        end if;
                     
                     end if;
                     
+                    if bowling_ball_location_x > 150 then
+                        if unsigned(joystick_x) < 72 then
                     
-                    if unsigned(joystick_x) < 72 then
-                    
-                        bowling_ball_location_x <= bowling_ball_location_x - 2;
+                            bowling_ball_location_x <= bowling_ball_location_x - 2;
+                            
+                        elsif unsigned(joystick_x) < 122 then
                         
-                    elsif unsigned(joystick_x) < 122 then
-                    
-                        bowling_ball_location_x <= bowling_ball_location_x - 1;
-                    
+                            bowling_ball_location_x <= bowling_ball_location_x - 1;
+                        
+                        end if;
                     end if;
+                    
+                    
                     
                     if (unsigned(joystick_y) < 122) and joystick_trigger='1' then
                     
@@ -532,7 +559,19 @@ begin
                         
                     end if;
                     
-                
+                    if railing_up='1' then
+                    
+                        if bowling_ball_location_x < 170 then
+                            ball_tilt_left <= '0';
+                            ball_tilt_right <= '1';
+                        end if;
+                        
+                        if bowling_ball_location_x > 300 then
+                            ball_tilt_left <= '1';
+                            ball_tilt_right <= '0';
+                        end if;
+                    
+                    end if;
                 
                     if bowling_ball_location_y=0 then
                         bowling_ball_location_x <= 240;
