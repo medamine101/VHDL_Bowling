@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Tue May  2 16:12:22 2023
+// Date        : Tue May  2 21:11:26 2023
 // Host        : ece29 running 64-bit Ubuntu 20.04.2 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/user/Documents/VHDL_Bowling/Final_Project.gen/sources_1/bd/bowling_game/ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0_sim_netlist.v
@@ -114,64 +114,19 @@ module bowling_game_controller_0_0_controller
   wire \FSM_onehot_curr_state_reg_n_0_[0] ;
   wire \FSM_onehot_curr_state_reg_n_0_[2] ;
   wire \FSM_onehot_game_time[1]_i_1_n_0 ;
+  wire \FSM_onehot_game_time[1]_i_3_n_0 ;
   wire \FSM_onehot_game_time[2]_i_1_n_0 ;
+  wire \FSM_onehot_game_time[2]_i_3_n_0 ;
   wire \FSM_onehot_game_time[2]_i_4_n_0 ;
   wire \FSM_onehot_game_time[2]_i_5_n_0 ;
-  wire \FSM_onehot_game_time[2]_i_6_n_0 ;
   wire \FSM_onehot_game_time_reg_n_0_[1] ;
   wire \FSM_onehot_game_time_reg_n_0_[2] ;
   wire ball_tilt_left_i_1_n_0;
   wire ball_tilt_left_i_2_n_0;
-  wire ball_tilt_left_i_3_n_0;
   wire ball_tilt_left_reg_n_0;
   wire ball_tilt_right0;
-  wire ball_tilt_right1__15;
-  wire ball_tilt_right1_carry__0_i_1_n_0;
-  wire ball_tilt_right1_carry__0_i_2_n_0;
-  wire ball_tilt_right1_carry__0_i_3_n_0;
-  wire ball_tilt_right1_carry__0_i_4_n_0;
-  wire ball_tilt_right1_carry__0_i_5_n_0;
-  wire ball_tilt_right1_carry__0_i_6_n_0;
-  wire ball_tilt_right1_carry__0_i_7_n_0;
-  wire ball_tilt_right1_carry__0_n_0;
-  wire ball_tilt_right1_carry__0_n_1;
-  wire ball_tilt_right1_carry__0_n_2;
-  wire ball_tilt_right1_carry__0_n_3;
-  wire ball_tilt_right1_carry__1_i_1_n_0;
-  wire ball_tilt_right1_carry__1_i_2_n_0;
-  wire ball_tilt_right1_carry__1_i_3_n_0;
-  wire ball_tilt_right1_carry__1_i_4_n_0;
-  wire ball_tilt_right1_carry__1_i_5_n_0;
-  wire ball_tilt_right1_carry__1_i_6_n_0;
-  wire ball_tilt_right1_carry__1_i_7_n_0;
-  wire ball_tilt_right1_carry__1_i_8_n_0;
-  wire ball_tilt_right1_carry__1_n_0;
-  wire ball_tilt_right1_carry__1_n_1;
-  wire ball_tilt_right1_carry__1_n_2;
-  wire ball_tilt_right1_carry__1_n_3;
-  wire ball_tilt_right1_carry__2_i_1_n_0;
-  wire ball_tilt_right1_carry__2_i_2_n_0;
-  wire ball_tilt_right1_carry__2_i_3_n_0;
-  wire ball_tilt_right1_carry__2_i_4_n_0;
-  wire ball_tilt_right1_carry__2_i_5_n_0;
-  wire ball_tilt_right1_carry__2_i_6_n_0;
-  wire ball_tilt_right1_carry__2_i_7_n_0;
-  wire ball_tilt_right1_carry__2_i_8_n_0;
-  wire ball_tilt_right1_carry__2_n_1;
-  wire ball_tilt_right1_carry__2_n_2;
-  wire ball_tilt_right1_carry__2_n_3;
-  wire ball_tilt_right1_carry_i_1_n_0;
-  wire ball_tilt_right1_carry_i_2_n_0;
-  wire ball_tilt_right1_carry_i_3_n_0;
-  wire ball_tilt_right1_carry_i_4_n_0;
-  wire ball_tilt_right1_carry_i_5_n_0;
-  wire ball_tilt_right1_carry_i_6_n_0;
-  wire ball_tilt_right1_carry_i_7_n_0;
-  wire ball_tilt_right1_carry_n_0;
-  wire ball_tilt_right1_carry_n_1;
-  wire ball_tilt_right1_carry_n_2;
-  wire ball_tilt_right1_carry_n_3;
   wire ball_tilt_right_i_10_n_0;
+  wire ball_tilt_right_i_11_n_0;
   wire ball_tilt_right_i_12_n_0;
   wire ball_tilt_right_i_13_n_0;
   wire ball_tilt_right_i_14_n_0;
@@ -181,7 +136,6 @@ module bowling_game_controller_0_0_controller
   wire ball_tilt_right_i_19_n_0;
   wire ball_tilt_right_i_1_n_0;
   wire ball_tilt_right_i_20_n_0;
-  wire ball_tilt_right_i_21_n_0;
   wire ball_tilt_right_i_22_n_0;
   wire ball_tilt_right_i_23_n_0;
   wire ball_tilt_right_i_24_n_0;
@@ -189,35 +143,80 @@ module bowling_game_controller_0_0_controller
   wire ball_tilt_right_i_26_n_0;
   wire ball_tilt_right_i_27_n_0;
   wire ball_tilt_right_i_28_n_0;
+  wire ball_tilt_right_i_29_n_0;
   wire ball_tilt_right_i_2_n_0;
+  wire ball_tilt_right_i_31_n_0;
+  wire ball_tilt_right_i_32_n_0;
+  wire ball_tilt_right_i_33_n_0;
+  wire ball_tilt_right_i_34_n_0;
+  wire ball_tilt_right_i_36_n_0;
+  wire ball_tilt_right_i_37_n_0;
+  wire ball_tilt_right_i_38_n_0;
+  wire ball_tilt_right_i_39_n_0;
   wire ball_tilt_right_i_3_n_0;
+  wire ball_tilt_right_i_40_n_0;
+  wire ball_tilt_right_i_41_n_0;
+  wire ball_tilt_right_i_42_n_0;
+  wire ball_tilt_right_i_44_n_0;
+  wire ball_tilt_right_i_45_n_0;
+  wire ball_tilt_right_i_46_n_0;
+  wire ball_tilt_right_i_47_n_0;
+  wire ball_tilt_right_i_48_n_0;
+  wire ball_tilt_right_i_49_n_0;
   wire ball_tilt_right_i_4_n_0;
-  wire ball_tilt_right_i_7_n_0;
+  wire ball_tilt_right_i_50_n_0;
+  wire ball_tilt_right_i_51_n_0;
+  wire ball_tilt_right_i_52_n_0;
+  wire ball_tilt_right_i_53_n_0;
+  wire ball_tilt_right_i_54_n_0;
+  wire ball_tilt_right_i_55_n_0;
+  wire ball_tilt_right_i_56_n_0;
+  wire ball_tilt_right_i_57_n_0;
+  wire ball_tilt_right_i_58_n_0;
+  wire ball_tilt_right_i_59_n_0;
+  wire ball_tilt_right_i_60_n_0;
+  wire ball_tilt_right_i_61_n_0;
+  wire ball_tilt_right_i_62_n_0;
   wire ball_tilt_right_i_8_n_0;
   wire ball_tilt_right_i_9_n_0;
-  wire ball_tilt_right_reg_i_11_n_0;
-  wire ball_tilt_right_reg_i_11_n_1;
-  wire ball_tilt_right_reg_i_11_n_2;
-  wire ball_tilt_right_reg_i_11_n_3;
   wire ball_tilt_right_reg_i_16_n_0;
   wire ball_tilt_right_reg_i_16_n_1;
   wire ball_tilt_right_reg_i_16_n_2;
   wire ball_tilt_right_reg_i_16_n_3;
+  wire ball_tilt_right_reg_i_21_n_0;
+  wire ball_tilt_right_reg_i_21_n_1;
+  wire ball_tilt_right_reg_i_21_n_2;
+  wire ball_tilt_right_reg_i_21_n_3;
+  wire ball_tilt_right_reg_i_30_n_0;
+  wire ball_tilt_right_reg_i_30_n_1;
+  wire ball_tilt_right_reg_i_30_n_2;
+  wire ball_tilt_right_reg_i_30_n_3;
+  wire ball_tilt_right_reg_i_35_n_0;
+  wire ball_tilt_right_reg_i_35_n_1;
+  wire ball_tilt_right_reg_i_35_n_2;
+  wire ball_tilt_right_reg_i_35_n_3;
+  wire ball_tilt_right_reg_i_43_n_0;
+  wire ball_tilt_right_reg_i_43_n_1;
+  wire ball_tilt_right_reg_i_43_n_2;
+  wire ball_tilt_right_reg_i_43_n_3;
+  wire ball_tilt_right_reg_i_5_n_0;
   wire ball_tilt_right_reg_i_5_n_1;
   wire ball_tilt_right_reg_i_5_n_2;
   wire ball_tilt_right_reg_i_5_n_3;
-  wire ball_tilt_right_reg_i_6_n_0;
   wire ball_tilt_right_reg_i_6_n_1;
   wire ball_tilt_right_reg_i_6_n_2;
   wire ball_tilt_right_reg_i_6_n_3;
+  wire ball_tilt_right_reg_i_7_n_0;
+  wire ball_tilt_right_reg_i_7_n_1;
+  wire ball_tilt_right_reg_i_7_n_2;
+  wire ball_tilt_right_reg_i_7_n_3;
   wire ball_tilt_right_reg_n_0;
   wire blank_time;
-  wire \bowling_ball[0,1]/i__n_0 ;
   wire [31:1]bowling_ball_location_x0;
   wire [31:0]bowling_ball_location_x00_in;
   wire [31:1]bowling_ball_location_x03_in;
-  wire bowling_ball_location_x116_in;
-  wire bowling_ball_location_x1__3;
+  wire bowling_ball_location_x1;
+  wire bowling_ball_location_x114_in;
   wire \bowling_ball_location_x[0]_i_1_n_0 ;
   wire \bowling_ball_location_x[0]_i_2_n_0 ;
   wire \bowling_ball_location_x[0]_i_3_n_0 ;
@@ -826,166 +825,35 @@ module bowling_game_controller_0_0_controller
   wire \fb_addr_reg[8]_i_2_n_2 ;
   wire \fb_addr_reg[8]_i_2_n_3 ;
   wire [2:0]fb_pixel;
-  wire fb_pixel140_out__1;
-  wire fb_pixel143_out__1;
-  wire fb_pixel147_out__9;
-  wire fb_pixel153_out__9;
-  wire fb_pixel156_out__1;
-  wire fb_pixel160_out__8;
-  wire fb_pixel168_out__1;
-  wire fb_pixel174_out__1;
-  wire fb_pixel182_out__2;
-  wire fb_pixel187_out__2;
-  wire fb_pixel1__12;
-  wire fb_pixel285_in;
-  wire fb_pixel2_carry__0_i_1_n_0;
-  wire fb_pixel2_carry__0_i_2_n_0;
-  wire fb_pixel2_carry__0_i_3_n_0;
-  wire fb_pixel2_carry__0_i_4_n_0;
-  wire fb_pixel2_carry__0_i_5_n_0;
-  wire fb_pixel2_carry__0_n_0;
-  wire fb_pixel2_carry__0_n_1;
-  wire fb_pixel2_carry__0_n_2;
-  wire fb_pixel2_carry__0_n_3;
-  wire fb_pixel2_carry__1_i_1_n_0;
-  wire fb_pixel2_carry__1_i_2_n_0;
-  wire fb_pixel2_carry__1_i_3_n_0;
-  wire fb_pixel2_carry__1_i_4_n_0;
-  wire fb_pixel2_carry__1_n_0;
-  wire fb_pixel2_carry__1_n_1;
-  wire fb_pixel2_carry__1_n_2;
-  wire fb_pixel2_carry__1_n_3;
-  wire fb_pixel2_carry__2_i_1_n_0;
-  wire fb_pixel2_carry__2_i_2_n_0;
-  wire fb_pixel2_carry__2_i_3_n_0;
-  wire fb_pixel2_carry__2_i_4_n_0;
-  wire fb_pixel2_carry__2_n_1;
-  wire fb_pixel2_carry__2_n_2;
-  wire fb_pixel2_carry__2_n_3;
-  wire fb_pixel2_carry_i_1_n_0;
-  wire fb_pixel2_carry_i_2_n_0;
-  wire fb_pixel2_carry_i_3_n_0;
-  wire fb_pixel2_carry_i_4_n_0;
-  wire fb_pixel2_carry_i_5_n_0;
-  wire fb_pixel2_carry_i_6_n_0;
-  wire fb_pixel2_carry_i_7_n_0;
-  wire fb_pixel2_carry_i_8_n_0;
-  wire fb_pixel2_carry_n_0;
-  wire fb_pixel2_carry_n_1;
-  wire fb_pixel2_carry_n_2;
-  wire fb_pixel2_carry_n_3;
-  wire fb_pixel350_in;
-  wire fb_pixel365_in;
-  wire fb_pixel379_in;
-  wire fb_pixel384_in;
-  wire fb_pixel3__4;
-  wire fb_pixel3_carry__0_i_1_n_0;
-  wire fb_pixel3_carry_i_1_n_0;
-  wire fb_pixel3_carry_i_2_n_0;
-  wire fb_pixel3_carry_i_3_n_0;
-  wire fb_pixel3_carry_i_4_n_0;
-  wire fb_pixel3_carry_i_5_n_0;
-  wire fb_pixel3_carry_i_6_n_0;
-  wire fb_pixel3_carry_i_7_n_0;
-  wire fb_pixel3_carry_i_8_n_0;
-  wire fb_pixel3_carry_n_0;
-  wire fb_pixel3_carry_n_1;
-  wire fb_pixel3_carry_n_2;
-  wire fb_pixel3_carry_n_3;
-  wire \fb_pixel3_inferred__0/i__carry_n_0 ;
-  wire \fb_pixel3_inferred__0/i__carry_n_1 ;
-  wire \fb_pixel3_inferred__0/i__carry_n_2 ;
-  wire \fb_pixel3_inferred__0/i__carry_n_3 ;
-  wire \fb_pixel3_inferred__1/i__carry_n_0 ;
-  wire \fb_pixel3_inferred__1/i__carry_n_1 ;
-  wire \fb_pixel3_inferred__1/i__carry_n_2 ;
-  wire \fb_pixel3_inferred__1/i__carry_n_3 ;
-  wire \fb_pixel3_inferred__2/i__carry_n_0 ;
-  wire \fb_pixel3_inferred__2/i__carry_n_1 ;
-  wire \fb_pixel3_inferred__2/i__carry_n_2 ;
-  wire \fb_pixel3_inferred__2/i__carry_n_3 ;
-  wire \fb_pixel3_inferred__3/i__carry__0_n_0 ;
-  wire \fb_pixel3_inferred__3/i__carry__0_n_1 ;
-  wire \fb_pixel3_inferred__3/i__carry__0_n_2 ;
-  wire \fb_pixel3_inferred__3/i__carry__0_n_3 ;
-  wire \fb_pixel3_inferred__3/i__carry__1_n_0 ;
-  wire \fb_pixel3_inferred__3/i__carry__1_n_1 ;
-  wire \fb_pixel3_inferred__3/i__carry__1_n_2 ;
-  wire \fb_pixel3_inferred__3/i__carry__1_n_3 ;
-  wire \fb_pixel3_inferred__3/i__carry__2_n_1 ;
-  wire \fb_pixel3_inferred__3/i__carry__2_n_2 ;
-  wire \fb_pixel3_inferred__3/i__carry__2_n_3 ;
-  wire \fb_pixel3_inferred__3/i__carry_n_0 ;
-  wire \fb_pixel3_inferred__3/i__carry_n_1 ;
-  wire \fb_pixel3_inferred__3/i__carry_n_2 ;
-  wire \fb_pixel3_inferred__3/i__carry_n_3 ;
-  wire fb_pixel449_in;
-  wire fb_pixel464_in;
-  wire fb_pixel478_in;
-  wire fb_pixel483_in;
-  wire fb_pixel486_in;
-  wire fb_pixel488_in;
-  wire fb_pixel491_in;
-  wire fb_pixel4__4;
-  wire fb_pixel4_carry__0_i_1_n_0;
-  wire fb_pixel4_carry_i_1_n_0;
-  wire fb_pixel4_carry_i_2_n_0;
-  wire fb_pixel4_carry_i_3_n_0;
-  wire fb_pixel4_carry_i_4_n_0;
-  wire fb_pixel4_carry_i_5_n_0;
-  wire fb_pixel4_carry_i_6_n_0;
-  wire fb_pixel4_carry_i_7_n_0;
-  wire fb_pixel4_carry_i_8_n_0;
-  wire fb_pixel4_carry_n_0;
-  wire fb_pixel4_carry_n_1;
-  wire fb_pixel4_carry_n_2;
-  wire fb_pixel4_carry_n_3;
-  wire \fb_pixel4_inferred__0/i__carry_n_1 ;
-  wire \fb_pixel4_inferred__0/i__carry_n_2 ;
-  wire \fb_pixel4_inferred__0/i__carry_n_3 ;
-  wire \fb_pixel4_inferred__1/i__carry_n_0 ;
-  wire \fb_pixel4_inferred__1/i__carry_n_1 ;
-  wire \fb_pixel4_inferred__1/i__carry_n_2 ;
-  wire \fb_pixel4_inferred__1/i__carry_n_3 ;
-  wire \fb_pixel4_inferred__2/i__carry_n_1 ;
-  wire \fb_pixel4_inferred__2/i__carry_n_2 ;
-  wire \fb_pixel4_inferred__2/i__carry_n_3 ;
-  wire \fb_pixel4_inferred__4/i__carry__0_n_0 ;
-  wire \fb_pixel4_inferred__4/i__carry__0_n_1 ;
-  wire \fb_pixel4_inferred__4/i__carry__0_n_2 ;
-  wire \fb_pixel4_inferred__4/i__carry__0_n_3 ;
-  wire \fb_pixel4_inferred__4/i__carry__1_n_0 ;
-  wire \fb_pixel4_inferred__4/i__carry__1_n_1 ;
-  wire \fb_pixel4_inferred__4/i__carry__1_n_2 ;
-  wire \fb_pixel4_inferred__4/i__carry__1_n_3 ;
-  wire \fb_pixel4_inferred__4/i__carry__2_n_1 ;
-  wire \fb_pixel4_inferred__4/i__carry__2_n_2 ;
-  wire \fb_pixel4_inferred__4/i__carry__2_n_3 ;
-  wire \fb_pixel4_inferred__4/i__carry_n_0 ;
-  wire \fb_pixel4_inferred__4/i__carry_n_1 ;
-  wire \fb_pixel4_inferred__4/i__carry_n_2 ;
-  wire \fb_pixel4_inferred__4/i__carry_n_3 ;
-  wire \fb_pixel4_inferred__5/i__carry__0_n_0 ;
-  wire \fb_pixel4_inferred__5/i__carry__0_n_1 ;
-  wire \fb_pixel4_inferred__5/i__carry__0_n_2 ;
-  wire \fb_pixel4_inferred__5/i__carry__0_n_3 ;
-  wire \fb_pixel4_inferred__5/i__carry__1_n_0 ;
-  wire \fb_pixel4_inferred__5/i__carry__1_n_1 ;
-  wire \fb_pixel4_inferred__5/i__carry__1_n_2 ;
-  wire \fb_pixel4_inferred__5/i__carry__1_n_3 ;
-  wire \fb_pixel4_inferred__5/i__carry__2_n_1 ;
-  wire \fb_pixel4_inferred__5/i__carry__2_n_2 ;
-  wire \fb_pixel4_inferred__5/i__carry__2_n_3 ;
-  wire \fb_pixel4_inferred__5/i__carry_n_0 ;
-  wire \fb_pixel4_inferred__5/i__carry_n_1 ;
-  wire \fb_pixel4_inferred__5/i__carry_n_2 ;
-  wire \fb_pixel4_inferred__5/i__carry_n_3 ;
-  wire [3:1]fb_pixel5;
-  wire \fb_pixel5_inferred__0/i__carry_n_0 ;
-  wire \fb_pixel5_inferred__0/i__carry_n_2 ;
-  wire \fb_pixel5_inferred__0/i__carry_n_3 ;
-  wire \fb_pixel5_inferred__0/i__carry_n_5 ;
-  wire \fb_pixel5_inferred__0/i__carry_n_6 ;
+  wire fb_pixel1;
+  wire fb_pixel1106_out;
+  wire fb_pixel1111_out;
+  wire fb_pixel163_out;
+  wire fb_pixel166_out;
+  wire fb_pixel169_out;
+  wire fb_pixel173_out;
+  wire fb_pixel179_out;
+  wire fb_pixel182_out;
+  wire fb_pixel186_out;
+  wire fb_pixel194_out;
+  wire fb_pixel199_out;
+  wire fb_pixel2109_in;
+  wire fb_pixel3103_in;
+  wire fb_pixel3108_in;
+  wire fb_pixel360_in;
+  wire fb_pixel376_in;
+  wire fb_pixel391_in;
+  wire fb_pixel4;
+  wire fb_pixel4102_in;
+  wire fb_pixel4107_in;
+  wire fb_pixel4110_in;
+  wire fb_pixel4112_in;
+  wire fb_pixel4115_in;
+  wire fb_pixel475_in;
+  wire fb_pixel490_in;
+  wire fb_pixel558_in;
+  wire \fb_pixel[0]_i_10_n_0 ;
+  wire \fb_pixel[0]_i_11_n_0 ;
   wire \fb_pixel[0]_i_12_n_0 ;
   wire \fb_pixel[0]_i_13_n_0 ;
   wire \fb_pixel[0]_i_14_n_0 ;
@@ -995,18 +863,126 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[0]_i_18_n_0 ;
   wire \fb_pixel[0]_i_19_n_0 ;
   wire \fb_pixel[0]_i_1_n_0 ;
+  wire \fb_pixel[0]_i_20_n_0 ;
+  wire \fb_pixel[0]_i_21_n_0 ;
+  wire \fb_pixel[0]_i_22_n_0 ;
+  wire \fb_pixel[0]_i_23_n_0 ;
+  wire \fb_pixel[0]_i_24_n_0 ;
+  wire \fb_pixel[0]_i_25_n_0 ;
+  wire \fb_pixel[0]_i_26_n_0 ;
+  wire \fb_pixel[0]_i_27_n_0 ;
+  wire \fb_pixel[0]_i_28_n_0 ;
+  wire \fb_pixel[0]_i_29_n_0 ;
   wire \fb_pixel[0]_i_2_n_0 ;
+  wire \fb_pixel[0]_i_30_n_0 ;
+  wire \fb_pixel[0]_i_31_n_0 ;
+  wire \fb_pixel[0]_i_32_n_0 ;
+  wire \fb_pixel[0]_i_33_n_0 ;
+  wire \fb_pixel[0]_i_34_n_0 ;
+  wire \fb_pixel[0]_i_35_n_0 ;
+  wire \fb_pixel[0]_i_36_n_0 ;
+  wire \fb_pixel[0]_i_37_n_0 ;
+  wire \fb_pixel[0]_i_38_n_0 ;
+  wire \fb_pixel[0]_i_39_n_0 ;
   wire \fb_pixel[0]_i_3_n_0 ;
-  wire \fb_pixel[0]_i_4_n_0 ;
+  wire \fb_pixel[0]_i_40_n_0 ;
+  wire \fb_pixel[0]_i_41_n_0 ;
+  wire \fb_pixel[0]_i_42_n_0 ;
+  wire \fb_pixel[0]_i_43_n_0 ;
+  wire \fb_pixel[0]_i_44_n_0 ;
+  wire \fb_pixel[0]_i_45_n_0 ;
+  wire \fb_pixel[0]_i_46_n_0 ;
+  wire \fb_pixel[0]_i_47_n_0 ;
+  wire \fb_pixel[0]_i_48_n_0 ;
+  wire \fb_pixel[0]_i_49_n_0 ;
+  wire \fb_pixel[0]_i_50_n_0 ;
+  wire \fb_pixel[0]_i_51_n_0 ;
+  wire \fb_pixel[0]_i_52_n_0 ;
+  wire \fb_pixel[0]_i_53_n_0 ;
+  wire \fb_pixel[0]_i_54_n_0 ;
+  wire \fb_pixel[0]_i_55_n_0 ;
+  wire \fb_pixel[0]_i_56_n_0 ;
   wire \fb_pixel[0]_i_5_n_0 ;
   wire \fb_pixel[0]_i_6_n_0 ;
   wire \fb_pixel[0]_i_7_n_0 ;
-  wire \fb_pixel[0]_i_8_n_0 ;
   wire \fb_pixel[0]_i_9_n_0 ;
-  wire \fb_pixel[1]_i_10_n_0 ;
+  wire \fb_pixel[1]_i_100_n_0 ;
+  wire \fb_pixel[1]_i_101_n_0 ;
+  wire \fb_pixel[1]_i_102_n_0 ;
+  wire \fb_pixel[1]_i_103_n_0 ;
+  wire \fb_pixel[1]_i_104_n_0 ;
+  wire \fb_pixel[1]_i_105_n_0 ;
+  wire \fb_pixel[1]_i_106_n_0 ;
+  wire \fb_pixel[1]_i_107_n_0 ;
+  wire \fb_pixel[1]_i_108_n_0 ;
+  wire \fb_pixel[1]_i_109_n_0 ;
+  wire \fb_pixel[1]_i_110_n_0 ;
+  wire \fb_pixel[1]_i_111_n_0 ;
+  wire \fb_pixel[1]_i_112_n_0 ;
+  wire \fb_pixel[1]_i_113_n_0 ;
+  wire \fb_pixel[1]_i_114_n_0 ;
+  wire \fb_pixel[1]_i_115_n_0 ;
+  wire \fb_pixel[1]_i_116_n_0 ;
+  wire \fb_pixel[1]_i_117_n_0 ;
+  wire \fb_pixel[1]_i_118_n_0 ;
+  wire \fb_pixel[1]_i_119_n_0 ;
+  wire \fb_pixel[1]_i_11_n_0 ;
+  wire \fb_pixel[1]_i_120_n_0 ;
+  wire \fb_pixel[1]_i_121_n_0 ;
+  wire \fb_pixel[1]_i_122_n_0 ;
+  wire \fb_pixel[1]_i_123_n_0 ;
+  wire \fb_pixel[1]_i_124_n_0 ;
+  wire \fb_pixel[1]_i_125_n_0 ;
+  wire \fb_pixel[1]_i_126_n_0 ;
+  wire \fb_pixel[1]_i_127_n_0 ;
+  wire \fb_pixel[1]_i_128_n_0 ;
+  wire \fb_pixel[1]_i_129_n_0 ;
+  wire \fb_pixel[1]_i_12_n_0 ;
+  wire \fb_pixel[1]_i_130_n_0 ;
+  wire \fb_pixel[1]_i_131_n_0 ;
+  wire \fb_pixel[1]_i_132_n_0 ;
+  wire \fb_pixel[1]_i_133_n_0 ;
+  wire \fb_pixel[1]_i_134_n_0 ;
+  wire \fb_pixel[1]_i_135_n_0 ;
+  wire \fb_pixel[1]_i_136_n_0 ;
+  wire \fb_pixel[1]_i_137_n_0 ;
+  wire \fb_pixel[1]_i_138_n_0 ;
+  wire \fb_pixel[1]_i_139_n_0 ;
+  wire \fb_pixel[1]_i_13_n_0 ;
+  wire \fb_pixel[1]_i_140_n_0 ;
+  wire \fb_pixel[1]_i_141_n_0 ;
+  wire \fb_pixel[1]_i_142_n_0 ;
+  wire \fb_pixel[1]_i_143_n_0 ;
+  wire \fb_pixel[1]_i_144_n_0 ;
+  wire \fb_pixel[1]_i_145_n_0 ;
+  wire \fb_pixel[1]_i_146_n_0 ;
+  wire \fb_pixel[1]_i_147_n_0 ;
+  wire \fb_pixel[1]_i_148_n_0 ;
+  wire \fb_pixel[1]_i_149_n_0 ;
   wire \fb_pixel[1]_i_14_n_0 ;
+  wire \fb_pixel[1]_i_150_n_0 ;
+  wire \fb_pixel[1]_i_151_n_0 ;
+  wire \fb_pixel[1]_i_152_n_0 ;
+  wire \fb_pixel[1]_i_153_n_0 ;
+  wire \fb_pixel[1]_i_154_n_0 ;
+  wire \fb_pixel[1]_i_155_n_0 ;
+  wire \fb_pixel[1]_i_156_n_0 ;
+  wire \fb_pixel[1]_i_157_n_0 ;
+  wire \fb_pixel[1]_i_158_n_0 ;
+  wire \fb_pixel[1]_i_159_n_0 ;
   wire \fb_pixel[1]_i_15_n_0 ;
+  wire \fb_pixel[1]_i_161_n_0 ;
+  wire \fb_pixel[1]_i_162_n_0 ;
+  wire \fb_pixel[1]_i_163_n_0 ;
+  wire \fb_pixel[1]_i_164_n_0 ;
+  wire \fb_pixel[1]_i_165_n_0 ;
+  wire \fb_pixel[1]_i_166_n_0 ;
+  wire \fb_pixel[1]_i_167_n_0 ;
+  wire \fb_pixel[1]_i_168_n_0 ;
+  wire \fb_pixel[1]_i_169_n_0 ;
   wire \fb_pixel[1]_i_16_n_0 ;
+  wire \fb_pixel[1]_i_170_n_0 ;
+  wire \fb_pixel[1]_i_171_n_0 ;
   wire \fb_pixel[1]_i_17_n_0 ;
   wire \fb_pixel[1]_i_18_n_0 ;
   wire \fb_pixel[1]_i_19_n_0 ;
@@ -1028,6 +1004,7 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[1]_i_33_n_0 ;
   wire \fb_pixel[1]_i_34_n_0 ;
   wire \fb_pixel[1]_i_35_n_0 ;
+  wire \fb_pixel[1]_i_36_n_0 ;
   wire \fb_pixel[1]_i_37_n_0 ;
   wire \fb_pixel[1]_i_38_n_0 ;
   wire \fb_pixel[1]_i_39_n_0 ;
@@ -1055,45 +1032,280 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[1]_i_59_n_0 ;
   wire \fb_pixel[1]_i_5_n_0 ;
   wire \fb_pixel[1]_i_60_n_0 ;
+  wire \fb_pixel[1]_i_63_n_0 ;
+  wire \fb_pixel[1]_i_64_n_0 ;
+  wire \fb_pixel[1]_i_65_n_0 ;
+  wire \fb_pixel[1]_i_66_n_0 ;
+  wire \fb_pixel[1]_i_67_n_0 ;
+  wire \fb_pixel[1]_i_68_n_0 ;
+  wire \fb_pixel[1]_i_69_n_0 ;
   wire \fb_pixel[1]_i_6_n_0 ;
+  wire \fb_pixel[1]_i_70_n_0 ;
+  wire \fb_pixel[1]_i_71_n_0 ;
+  wire \fb_pixel[1]_i_72_n_0 ;
+  wire \fb_pixel[1]_i_73_n_0 ;
+  wire \fb_pixel[1]_i_74_n_0 ;
+  wire \fb_pixel[1]_i_75_n_0 ;
+  wire \fb_pixel[1]_i_76_n_0 ;
+  wire \fb_pixel[1]_i_77_n_0 ;
+  wire \fb_pixel[1]_i_78_n_0 ;
+  wire \fb_pixel[1]_i_79_n_0 ;
   wire \fb_pixel[1]_i_7_n_0 ;
+  wire \fb_pixel[1]_i_80_n_0 ;
+  wire \fb_pixel[1]_i_81_n_0 ;
+  wire \fb_pixel[1]_i_82_n_0 ;
+  wire \fb_pixel[1]_i_83_n_0 ;
+  wire \fb_pixel[1]_i_84_n_0 ;
+  wire \fb_pixel[1]_i_85_n_0 ;
+  wire \fb_pixel[1]_i_86_n_0 ;
+  wire \fb_pixel[1]_i_87_n_0 ;
+  wire \fb_pixel[1]_i_88_n_0 ;
+  wire \fb_pixel[1]_i_89_n_0 ;
+  wire \fb_pixel[1]_i_8_n_0 ;
+  wire \fb_pixel[1]_i_90_n_0 ;
+  wire \fb_pixel[1]_i_91_n_0 ;
+  wire \fb_pixel[1]_i_92_n_0 ;
+  wire \fb_pixel[1]_i_93_n_0 ;
+  wire \fb_pixel[1]_i_94_n_0 ;
+  wire \fb_pixel[1]_i_95_n_0 ;
+  wire \fb_pixel[1]_i_96_n_0 ;
+  wire \fb_pixel[1]_i_97_n_0 ;
+  wire \fb_pixel[1]_i_98_n_0 ;
+  wire \fb_pixel[1]_i_99_n_0 ;
+  wire \fb_pixel[1]_i_9_n_0 ;
   wire \fb_pixel[2]_i_100_n_0 ;
   wire \fb_pixel[2]_i_101_n_0 ;
   wire \fb_pixel[2]_i_102_n_0 ;
+  wire \fb_pixel[2]_i_105_n_0 ;
+  wire \fb_pixel[2]_i_106_n_0 ;
+  wire \fb_pixel[2]_i_107_n_0 ;
   wire \fb_pixel[2]_i_10_n_0 ;
+  wire \fb_pixel[2]_i_110_n_0 ;
+  wire \fb_pixel[2]_i_111_n_0 ;
+  wire \fb_pixel[2]_i_112_n_0 ;
+  wire \fb_pixel[2]_i_113_n_0 ;
+  wire \fb_pixel[2]_i_114_n_0 ;
+  wire \fb_pixel[2]_i_115_n_0 ;
+  wire \fb_pixel[2]_i_116_n_0 ;
+  wire \fb_pixel[2]_i_117_n_0 ;
+  wire \fb_pixel[2]_i_119_n_0 ;
   wire \fb_pixel[2]_i_11_n_0 ;
+  wire \fb_pixel[2]_i_120_n_0 ;
+  wire \fb_pixel[2]_i_121_n_0 ;
+  wire \fb_pixel[2]_i_122_n_0 ;
+  wire \fb_pixel[2]_i_123_n_0 ;
+  wire \fb_pixel[2]_i_124_n_0 ;
+  wire \fb_pixel[2]_i_125_n_0 ;
+  wire \fb_pixel[2]_i_126_n_0 ;
+  wire \fb_pixel[2]_i_127_n_0 ;
+  wire \fb_pixel[2]_i_128_n_0 ;
+  wire \fb_pixel[2]_i_129_n_0 ;
   wire \fb_pixel[2]_i_12_n_0 ;
+  wire \fb_pixel[2]_i_130_n_0 ;
+  wire \fb_pixel[2]_i_132_n_0 ;
+  wire \fb_pixel[2]_i_133_n_0 ;
+  wire \fb_pixel[2]_i_134_n_0 ;
+  wire \fb_pixel[2]_i_135_n_0 ;
+  wire \fb_pixel[2]_i_137_n_0 ;
+  wire \fb_pixel[2]_i_138_n_0 ;
+  wire \fb_pixel[2]_i_139_n_0 ;
   wire \fb_pixel[2]_i_13_n_0 ;
+  wire \fb_pixel[2]_i_140_n_0 ;
+  wire \fb_pixel[2]_i_142_n_0 ;
+  wire \fb_pixel[2]_i_143_n_0 ;
+  wire \fb_pixel[2]_i_144_n_0 ;
+  wire \fb_pixel[2]_i_145_n_0 ;
+  wire \fb_pixel[2]_i_146_n_0 ;
+  wire \fb_pixel[2]_i_147_n_0 ;
+  wire \fb_pixel[2]_i_148_n_0 ;
+  wire \fb_pixel[2]_i_149_n_0 ;
   wire \fb_pixel[2]_i_14_n_0 ;
+  wire \fb_pixel[2]_i_154_n_0 ;
+  wire \fb_pixel[2]_i_155_n_0 ;
+  wire \fb_pixel[2]_i_156_n_0 ;
+  wire \fb_pixel[2]_i_157_n_0 ;
+  wire \fb_pixel[2]_i_158_n_0 ;
+  wire \fb_pixel[2]_i_159_n_0 ;
   wire \fb_pixel[2]_i_15_n_0 ;
+  wire \fb_pixel[2]_i_160_n_0 ;
+  wire \fb_pixel[2]_i_161_n_0 ;
+  wire \fb_pixel[2]_i_165_n_0 ;
+  wire \fb_pixel[2]_i_166_n_0 ;
+  wire \fb_pixel[2]_i_167_n_0 ;
+  wire \fb_pixel[2]_i_168_n_0 ;
+  wire \fb_pixel[2]_i_169_n_0 ;
   wire \fb_pixel[2]_i_16_n_0 ;
+  wire \fb_pixel[2]_i_170_n_0 ;
+  wire \fb_pixel[2]_i_171_n_0 ;
+  wire \fb_pixel[2]_i_172_n_0 ;
+  wire \fb_pixel[2]_i_174_n_0 ;
+  wire \fb_pixel[2]_i_175_n_0 ;
+  wire \fb_pixel[2]_i_176_n_0 ;
+  wire \fb_pixel[2]_i_177_n_0 ;
+  wire \fb_pixel[2]_i_179_n_0 ;
   wire \fb_pixel[2]_i_17_n_0 ;
-  wire \fb_pixel[2]_i_18_n_0 ;
-  wire \fb_pixel[2]_i_19_n_0 ;
+  wire \fb_pixel[2]_i_180_n_0 ;
+  wire \fb_pixel[2]_i_182_n_0 ;
+  wire \fb_pixel[2]_i_183_n_0 ;
+  wire \fb_pixel[2]_i_184_n_0 ;
+  wire \fb_pixel[2]_i_185_n_0 ;
+  wire \fb_pixel[2]_i_186_n_0 ;
+  wire \fb_pixel[2]_i_187_n_0 ;
+  wire \fb_pixel[2]_i_188_n_0 ;
+  wire \fb_pixel[2]_i_192_n_0 ;
+  wire \fb_pixel[2]_i_193_n_0 ;
+  wire \fb_pixel[2]_i_194_n_0 ;
+  wire \fb_pixel[2]_i_195_n_0 ;
+  wire \fb_pixel[2]_i_196_n_0 ;
+  wire \fb_pixel[2]_i_197_n_0 ;
+  wire \fb_pixel[2]_i_198_n_0 ;
+  wire \fb_pixel[2]_i_199_n_0 ;
   wire \fb_pixel[2]_i_1_n_0 ;
-  wire \fb_pixel[2]_i_21_n_0 ;
-  wire \fb_pixel[2]_i_22_n_0 ;
-  wire \fb_pixel[2]_i_23_n_0 ;
+  wire \fb_pixel[2]_i_201_n_0 ;
+  wire \fb_pixel[2]_i_202_n_0 ;
+  wire \fb_pixel[2]_i_203_n_0 ;
+  wire \fb_pixel[2]_i_204_n_0 ;
+  wire \fb_pixel[2]_i_205_n_0 ;
+  wire \fb_pixel[2]_i_206_n_0 ;
+  wire \fb_pixel[2]_i_207_n_0 ;
+  wire \fb_pixel[2]_i_208_n_0 ;
+  wire \fb_pixel[2]_i_210_n_0 ;
+  wire \fb_pixel[2]_i_211_n_0 ;
+  wire \fb_pixel[2]_i_212_n_0 ;
+  wire \fb_pixel[2]_i_213_n_0 ;
+  wire \fb_pixel[2]_i_214_n_0 ;
+  wire \fb_pixel[2]_i_216_n_0 ;
+  wire \fb_pixel[2]_i_217_n_0 ;
+  wire \fb_pixel[2]_i_218_n_0 ;
+  wire \fb_pixel[2]_i_219_n_0 ;
+  wire \fb_pixel[2]_i_220_n_0 ;
+  wire \fb_pixel[2]_i_222_n_0 ;
+  wire \fb_pixel[2]_i_223_n_0 ;
+  wire \fb_pixel[2]_i_224_n_0 ;
+  wire \fb_pixel[2]_i_225_n_0 ;
+  wire \fb_pixel[2]_i_226_n_0 ;
+  wire \fb_pixel[2]_i_227_n_0 ;
+  wire \fb_pixel[2]_i_228_n_0 ;
+  wire \fb_pixel[2]_i_229_n_0 ;
+  wire \fb_pixel[2]_i_233_n_0 ;
+  wire \fb_pixel[2]_i_234_n_0 ;
+  wire \fb_pixel[2]_i_235_n_0 ;
+  wire \fb_pixel[2]_i_236_n_0 ;
+  wire \fb_pixel[2]_i_237_n_0 ;
+  wire \fb_pixel[2]_i_238_n_0 ;
+  wire \fb_pixel[2]_i_239_n_0 ;
+  wire \fb_pixel[2]_i_240_n_0 ;
+  wire \fb_pixel[2]_i_243_n_0 ;
+  wire \fb_pixel[2]_i_244_n_0 ;
+  wire \fb_pixel[2]_i_245_n_0 ;
+  wire \fb_pixel[2]_i_246_n_0 ;
+  wire \fb_pixel[2]_i_247_n_0 ;
+  wire \fb_pixel[2]_i_248_n_0 ;
+  wire \fb_pixel[2]_i_249_n_0 ;
   wire \fb_pixel[2]_i_24_n_0 ;
+  wire \fb_pixel[2]_i_250_n_0 ;
+  wire \fb_pixel[2]_i_251_n_0 ;
+  wire \fb_pixel[2]_i_252_n_0 ;
+  wire \fb_pixel[2]_i_253_n_0 ;
+  wire \fb_pixel[2]_i_254_n_0 ;
+  wire \fb_pixel[2]_i_255_n_0 ;
+  wire \fb_pixel[2]_i_256_n_0 ;
+  wire \fb_pixel[2]_i_257_n_0 ;
+  wire \fb_pixel[2]_i_258_n_0 ;
+  wire \fb_pixel[2]_i_259_n_0 ;
   wire \fb_pixel[2]_i_25_n_0 ;
+  wire \fb_pixel[2]_i_260_n_0 ;
+  wire \fb_pixel[2]_i_261_n_0 ;
+  wire \fb_pixel[2]_i_262_n_0 ;
+  wire \fb_pixel[2]_i_263_n_0 ;
+  wire \fb_pixel[2]_i_264_n_0 ;
+  wire \fb_pixel[2]_i_265_n_0 ;
+  wire \fb_pixel[2]_i_266_n_0 ;
+  wire \fb_pixel[2]_i_267_n_0 ;
+  wire \fb_pixel[2]_i_269_n_0 ;
   wire \fb_pixel[2]_i_26_n_0 ;
+  wire \fb_pixel[2]_i_271_n_0 ;
+  wire \fb_pixel[2]_i_272_n_0 ;
+  wire \fb_pixel[2]_i_276_n_0 ;
+  wire \fb_pixel[2]_i_277_n_0 ;
+  wire \fb_pixel[2]_i_278_n_0 ;
+  wire \fb_pixel[2]_i_279_n_0 ;
   wire \fb_pixel[2]_i_27_n_0 ;
+  wire \fb_pixel[2]_i_280_n_0 ;
+  wire \fb_pixel[2]_i_281_n_0 ;
+  wire \fb_pixel[2]_i_282_n_0 ;
+  wire \fb_pixel[2]_i_283_n_0 ;
+  wire \fb_pixel[2]_i_284_n_0 ;
+  wire \fb_pixel[2]_i_285_n_0 ;
+  wire \fb_pixel[2]_i_286_n_0 ;
+  wire \fb_pixel[2]_i_287_n_0 ;
+  wire \fb_pixel[2]_i_288_n_0 ;
+  wire \fb_pixel[2]_i_289_n_0 ;
   wire \fb_pixel[2]_i_28_n_0 ;
+  wire \fb_pixel[2]_i_290_n_0 ;
+  wire \fb_pixel[2]_i_291_n_0 ;
+  wire \fb_pixel[2]_i_292_n_0 ;
+  wire \fb_pixel[2]_i_293_n_0 ;
+  wire \fb_pixel[2]_i_294_n_0 ;
+  wire \fb_pixel[2]_i_295_n_0 ;
+  wire \fb_pixel[2]_i_296_n_0 ;
+  wire \fb_pixel[2]_i_297_n_0 ;
+  wire \fb_pixel[2]_i_298_n_0 ;
+  wire \fb_pixel[2]_i_299_n_0 ;
   wire \fb_pixel[2]_i_29_n_0 ;
   wire \fb_pixel[2]_i_2_n_0 ;
+  wire \fb_pixel[2]_i_300_n_0 ;
+  wire \fb_pixel[2]_i_301_n_0 ;
+  wire \fb_pixel[2]_i_302_n_0 ;
+  wire \fb_pixel[2]_i_303_n_0 ;
+  wire \fb_pixel[2]_i_304_n_0 ;
+  wire \fb_pixel[2]_i_305_n_0 ;
+  wire \fb_pixel[2]_i_306_n_0 ;
+  wire \fb_pixel[2]_i_307_n_0 ;
   wire \fb_pixel[2]_i_30_n_0 ;
+  wire \fb_pixel[2]_i_310_n_0 ;
+  wire \fb_pixel[2]_i_311_n_0 ;
+  wire \fb_pixel[2]_i_312_n_0 ;
+  wire \fb_pixel[2]_i_313_n_0 ;
+  wire \fb_pixel[2]_i_314_n_0 ;
+  wire \fb_pixel[2]_i_315_n_0 ;
+  wire \fb_pixel[2]_i_316_n_0 ;
+  wire \fb_pixel[2]_i_317_n_0 ;
   wire \fb_pixel[2]_i_31_n_0 ;
+  wire \fb_pixel[2]_i_321_n_0 ;
+  wire \fb_pixel[2]_i_322_n_0 ;
+  wire \fb_pixel[2]_i_323_n_0 ;
+  wire \fb_pixel[2]_i_324_n_0 ;
+  wire \fb_pixel[2]_i_325_n_0 ;
+  wire \fb_pixel[2]_i_326_n_0 ;
+  wire \fb_pixel[2]_i_327_n_0 ;
+  wire \fb_pixel[2]_i_328_n_0 ;
+  wire \fb_pixel[2]_i_329_n_0 ;
   wire \fb_pixel[2]_i_32_n_0 ;
+  wire \fb_pixel[2]_i_330_n_0 ;
+  wire \fb_pixel[2]_i_331_n_0 ;
+  wire \fb_pixel[2]_i_332_n_0 ;
+  wire \fb_pixel[2]_i_333_n_0 ;
+  wire \fb_pixel[2]_i_334_n_0 ;
+  wire \fb_pixel[2]_i_335_n_0 ;
+  wire \fb_pixel[2]_i_336_n_0 ;
+  wire \fb_pixel[2]_i_337_n_0 ;
+  wire \fb_pixel[2]_i_338_n_0 ;
   wire \fb_pixel[2]_i_33_n_0 ;
+  wire \fb_pixel[2]_i_341_n_0 ;
+  wire \fb_pixel[2]_i_343_n_0 ;
+  wire \fb_pixel[2]_i_344_n_0 ;
+  wire \fb_pixel[2]_i_345_n_0 ;
+  wire \fb_pixel[2]_i_346_n_0 ;
+  wire \fb_pixel[2]_i_347_n_0 ;
   wire \fb_pixel[2]_i_34_n_0 ;
   wire \fb_pixel[2]_i_35_n_0 ;
   wire \fb_pixel[2]_i_36_n_0 ;
   wire \fb_pixel[2]_i_37_n_0 ;
+  wire \fb_pixel[2]_i_38_n_0 ;
+  wire \fb_pixel[2]_i_39_n_0 ;
   wire \fb_pixel[2]_i_3_n_0 ;
-  wire \fb_pixel[2]_i_40_n_0 ;
   wire \fb_pixel[2]_i_41_n_0 ;
-  wire \fb_pixel[2]_i_42_n_0 ;
-  wire \fb_pixel[2]_i_43_n_0 ;
   wire \fb_pixel[2]_i_44_n_0 ;
   wire \fb_pixel[2]_i_45_n_0 ;
   wire \fb_pixel[2]_i_46_n_0 ;
@@ -1106,22 +1318,20 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[2]_i_52_n_0 ;
   wire \fb_pixel[2]_i_53_n_0 ;
   wire \fb_pixel[2]_i_54_n_0 ;
-  wire \fb_pixel[2]_i_55_n_0 ;
   wire \fb_pixel[2]_i_56_n_0 ;
   wire \fb_pixel[2]_i_57_n_0 ;
   wire \fb_pixel[2]_i_58_n_0 ;
   wire \fb_pixel[2]_i_59_n_0 ;
   wire \fb_pixel[2]_i_5_n_0 ;
-  wire \fb_pixel[2]_i_60_n_0 ;
   wire \fb_pixel[2]_i_61_n_0 ;
+  wire \fb_pixel[2]_i_62_n_0 ;
+  wire \fb_pixel[2]_i_63_n_0 ;
   wire \fb_pixel[2]_i_64_n_0 ;
-  wire \fb_pixel[2]_i_65_n_0 ;
   wire \fb_pixel[2]_i_66_n_0 ;
   wire \fb_pixel[2]_i_67_n_0 ;
   wire \fb_pixel[2]_i_68_n_0 ;
   wire \fb_pixel[2]_i_69_n_0 ;
   wire \fb_pixel[2]_i_6_n_0 ;
-  wire \fb_pixel[2]_i_70_n_0 ;
   wire \fb_pixel[2]_i_71_n_0 ;
   wire \fb_pixel[2]_i_72_n_0 ;
   wire \fb_pixel[2]_i_73_n_0 ;
@@ -1130,7 +1340,6 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[2]_i_76_n_0 ;
   wire \fb_pixel[2]_i_77_n_0 ;
   wire \fb_pixel[2]_i_78_n_0 ;
-  wire \fb_pixel[2]_i_79_n_0 ;
   wire \fb_pixel[2]_i_7_n_0 ;
   wire \fb_pixel[2]_i_80_n_0 ;
   wire \fb_pixel[2]_i_81_n_0 ;
@@ -1142,21 +1351,248 @@ module bowling_game_controller_0_0_controller
   wire \fb_pixel[2]_i_87_n_0 ;
   wire \fb_pixel[2]_i_88_n_0 ;
   wire \fb_pixel[2]_i_8_n_0 ;
-  wire \fb_pixel[2]_i_90_n_0 ;
   wire \fb_pixel[2]_i_91_n_0 ;
-  wire \fb_pixel[2]_i_92_n_0 ;
-  wire \fb_pixel[2]_i_93_n_0 ;
   wire \fb_pixel[2]_i_95_n_0 ;
   wire \fb_pixel[2]_i_96_n_0 ;
   wire \fb_pixel[2]_i_97_n_0 ;
   wire \fb_pixel[2]_i_98_n_0 ;
   wire \fb_pixel[2]_i_99_n_0 ;
   wire \fb_pixel[2]_i_9_n_0 ;
-  wire \fb_pixel_reg[1]_i_13_n_0 ;
+  wire \fb_pixel_reg[2]_i_108_n_1 ;
+  wire \fb_pixel_reg[2]_i_108_n_2 ;
+  wire \fb_pixel_reg[2]_i_108_n_3 ;
+  wire \fb_pixel_reg[2]_i_131_n_0 ;
+  wire \fb_pixel_reg[2]_i_131_n_1 ;
+  wire \fb_pixel_reg[2]_i_131_n_2 ;
+  wire \fb_pixel_reg[2]_i_131_n_3 ;
+  wire \fb_pixel_reg[2]_i_136_n_0 ;
+  wire \fb_pixel_reg[2]_i_136_n_1 ;
+  wire \fb_pixel_reg[2]_i_136_n_2 ;
+  wire \fb_pixel_reg[2]_i_136_n_3 ;
+  wire \fb_pixel_reg[2]_i_141_n_0 ;
+  wire \fb_pixel_reg[2]_i_141_n_1 ;
+  wire \fb_pixel_reg[2]_i_141_n_2 ;
+  wire \fb_pixel_reg[2]_i_141_n_3 ;
+  wire \fb_pixel_reg[2]_i_150_n_2 ;
+  wire \fb_pixel_reg[2]_i_150_n_3 ;
+  wire \fb_pixel_reg[2]_i_150_n_5 ;
+  wire \fb_pixel_reg[2]_i_150_n_6 ;
+  wire \fb_pixel_reg[2]_i_150_n_7 ;
+  wire \fb_pixel_reg[2]_i_151_n_0 ;
+  wire \fb_pixel_reg[2]_i_151_n_1 ;
+  wire \fb_pixel_reg[2]_i_151_n_2 ;
+  wire \fb_pixel_reg[2]_i_151_n_3 ;
+  wire \fb_pixel_reg[2]_i_151_n_4 ;
+  wire \fb_pixel_reg[2]_i_151_n_5 ;
+  wire \fb_pixel_reg[2]_i_151_n_6 ;
+  wire \fb_pixel_reg[2]_i_151_n_7 ;
+  wire \fb_pixel_reg[2]_i_152_n_0 ;
+  wire \fb_pixel_reg[2]_i_152_n_1 ;
+  wire \fb_pixel_reg[2]_i_152_n_2 ;
+  wire \fb_pixel_reg[2]_i_152_n_3 ;
+  wire \fb_pixel_reg[2]_i_152_n_4 ;
+  wire \fb_pixel_reg[2]_i_152_n_5 ;
+  wire \fb_pixel_reg[2]_i_152_n_6 ;
+  wire \fb_pixel_reg[2]_i_152_n_7 ;
+  wire \fb_pixel_reg[2]_i_153_n_0 ;
+  wire \fb_pixel_reg[2]_i_153_n_1 ;
+  wire \fb_pixel_reg[2]_i_153_n_2 ;
+  wire \fb_pixel_reg[2]_i_153_n_3 ;
+  wire \fb_pixel_reg[2]_i_162_n_2 ;
+  wire \fb_pixel_reg[2]_i_162_n_3 ;
+  wire \fb_pixel_reg[2]_i_162_n_5 ;
+  wire \fb_pixel_reg[2]_i_162_n_6 ;
+  wire \fb_pixel_reg[2]_i_162_n_7 ;
+  wire \fb_pixel_reg[2]_i_163_n_0 ;
+  wire \fb_pixel_reg[2]_i_163_n_1 ;
+  wire \fb_pixel_reg[2]_i_163_n_2 ;
+  wire \fb_pixel_reg[2]_i_163_n_3 ;
+  wire \fb_pixel_reg[2]_i_163_n_4 ;
+  wire \fb_pixel_reg[2]_i_163_n_5 ;
+  wire \fb_pixel_reg[2]_i_163_n_6 ;
+  wire \fb_pixel_reg[2]_i_163_n_7 ;
+  wire \fb_pixel_reg[2]_i_164_n_0 ;
+  wire \fb_pixel_reg[2]_i_164_n_1 ;
+  wire \fb_pixel_reg[2]_i_164_n_2 ;
+  wire \fb_pixel_reg[2]_i_164_n_3 ;
+  wire \fb_pixel_reg[2]_i_164_n_4 ;
+  wire \fb_pixel_reg[2]_i_164_n_5 ;
+  wire \fb_pixel_reg[2]_i_164_n_6 ;
+  wire \fb_pixel_reg[2]_i_164_n_7 ;
+  wire \fb_pixel_reg[2]_i_173_n_0 ;
+  wire \fb_pixel_reg[2]_i_173_n_1 ;
+  wire \fb_pixel_reg[2]_i_173_n_2 ;
+  wire \fb_pixel_reg[2]_i_173_n_3 ;
+  wire \fb_pixel_reg[2]_i_178_n_0 ;
+  wire \fb_pixel_reg[2]_i_178_n_1 ;
+  wire \fb_pixel_reg[2]_i_178_n_2 ;
+  wire \fb_pixel_reg[2]_i_178_n_3 ;
+  wire \fb_pixel_reg[2]_i_181_n_0 ;
+  wire \fb_pixel_reg[2]_i_181_n_1 ;
+  wire \fb_pixel_reg[2]_i_181_n_2 ;
+  wire \fb_pixel_reg[2]_i_181_n_3 ;
+  wire \fb_pixel_reg[2]_i_18_n_1 ;
+  wire \fb_pixel_reg[2]_i_18_n_2 ;
+  wire \fb_pixel_reg[2]_i_18_n_3 ;
+  wire \fb_pixel_reg[2]_i_19_n_1 ;
+  wire \fb_pixel_reg[2]_i_19_n_2 ;
+  wire \fb_pixel_reg[2]_i_19_n_3 ;
+  wire \fb_pixel_reg[2]_i_200_n_0 ;
+  wire \fb_pixel_reg[2]_i_200_n_1 ;
+  wire \fb_pixel_reg[2]_i_200_n_2 ;
+  wire \fb_pixel_reg[2]_i_200_n_3 ;
+  wire \fb_pixel_reg[2]_i_209_n_0 ;
+  wire \fb_pixel_reg[2]_i_209_n_1 ;
+  wire \fb_pixel_reg[2]_i_209_n_2 ;
+  wire \fb_pixel_reg[2]_i_209_n_3 ;
+  wire \fb_pixel_reg[2]_i_20_n_1 ;
+  wire \fb_pixel_reg[2]_i_20_n_2 ;
+  wire \fb_pixel_reg[2]_i_20_n_3 ;
+  wire \fb_pixel_reg[2]_i_215_n_0 ;
+  wire \fb_pixel_reg[2]_i_215_n_1 ;
+  wire \fb_pixel_reg[2]_i_215_n_2 ;
+  wire \fb_pixel_reg[2]_i_215_n_3 ;
+  wire \fb_pixel_reg[2]_i_21_n_1 ;
+  wire \fb_pixel_reg[2]_i_21_n_2 ;
+  wire \fb_pixel_reg[2]_i_21_n_3 ;
+  wire \fb_pixel_reg[2]_i_221_n_0 ;
+  wire \fb_pixel_reg[2]_i_221_n_1 ;
+  wire \fb_pixel_reg[2]_i_221_n_2 ;
+  wire \fb_pixel_reg[2]_i_221_n_3 ;
+  wire \fb_pixel_reg[2]_i_230_n_0 ;
+  wire \fb_pixel_reg[2]_i_230_n_1 ;
+  wire \fb_pixel_reg[2]_i_230_n_2 ;
+  wire \fb_pixel_reg[2]_i_230_n_3 ;
+  wire \fb_pixel_reg[2]_i_230_n_4 ;
+  wire \fb_pixel_reg[2]_i_230_n_5 ;
+  wire \fb_pixel_reg[2]_i_230_n_6 ;
+  wire \fb_pixel_reg[2]_i_230_n_7 ;
+  wire \fb_pixel_reg[2]_i_231_n_0 ;
+  wire \fb_pixel_reg[2]_i_231_n_1 ;
+  wire \fb_pixel_reg[2]_i_231_n_2 ;
+  wire \fb_pixel_reg[2]_i_231_n_3 ;
+  wire \fb_pixel_reg[2]_i_231_n_4 ;
+  wire \fb_pixel_reg[2]_i_231_n_5 ;
+  wire \fb_pixel_reg[2]_i_231_n_6 ;
+  wire \fb_pixel_reg[2]_i_231_n_7 ;
+  wire \fb_pixel_reg[2]_i_232_n_0 ;
+  wire \fb_pixel_reg[2]_i_232_n_1 ;
+  wire \fb_pixel_reg[2]_i_232_n_2 ;
+  wire \fb_pixel_reg[2]_i_232_n_3 ;
+  wire \fb_pixel_reg[2]_i_241_n_0 ;
+  wire \fb_pixel_reg[2]_i_241_n_1 ;
+  wire \fb_pixel_reg[2]_i_241_n_2 ;
+  wire \fb_pixel_reg[2]_i_241_n_3 ;
+  wire \fb_pixel_reg[2]_i_241_n_4 ;
+  wire \fb_pixel_reg[2]_i_241_n_5 ;
+  wire \fb_pixel_reg[2]_i_241_n_6 ;
+  wire \fb_pixel_reg[2]_i_241_n_7 ;
+  wire \fb_pixel_reg[2]_i_242_n_0 ;
+  wire \fb_pixel_reg[2]_i_242_n_1 ;
+  wire \fb_pixel_reg[2]_i_242_n_2 ;
+  wire \fb_pixel_reg[2]_i_242_n_3 ;
+  wire \fb_pixel_reg[2]_i_242_n_4 ;
+  wire \fb_pixel_reg[2]_i_242_n_5 ;
+  wire \fb_pixel_reg[2]_i_242_n_6 ;
+  wire \fb_pixel_reg[2]_i_242_n_7 ;
+  wire \fb_pixel_reg[2]_i_268_n_0 ;
+  wire \fb_pixel_reg[2]_i_268_n_1 ;
+  wire \fb_pixel_reg[2]_i_268_n_2 ;
+  wire \fb_pixel_reg[2]_i_268_n_3 ;
+  wire \fb_pixel_reg[2]_i_270_n_0 ;
+  wire \fb_pixel_reg[2]_i_270_n_1 ;
+  wire \fb_pixel_reg[2]_i_270_n_2 ;
+  wire \fb_pixel_reg[2]_i_270_n_3 ;
+  wire \fb_pixel_reg[2]_i_273_n_1 ;
+  wire \fb_pixel_reg[2]_i_273_n_3 ;
+  wire \fb_pixel_reg[2]_i_273_n_6 ;
+  wire \fb_pixel_reg[2]_i_274_n_1 ;
+  wire \fb_pixel_reg[2]_i_274_n_3 ;
+  wire \fb_pixel_reg[2]_i_274_n_6 ;
+  wire \fb_pixel_reg[2]_i_275_n_0 ;
+  wire \fb_pixel_reg[2]_i_275_n_2 ;
+  wire \fb_pixel_reg[2]_i_275_n_3 ;
+  wire \fb_pixel_reg[2]_i_275_n_5 ;
+  wire \fb_pixel_reg[2]_i_275_n_6 ;
+  wire \fb_pixel_reg[2]_i_308_n_0 ;
+  wire \fb_pixel_reg[2]_i_308_n_1 ;
+  wire \fb_pixel_reg[2]_i_308_n_2 ;
+  wire \fb_pixel_reg[2]_i_308_n_3 ;
+  wire \fb_pixel_reg[2]_i_308_n_4 ;
+  wire \fb_pixel_reg[2]_i_308_n_5 ;
+  wire \fb_pixel_reg[2]_i_308_n_6 ;
+  wire \fb_pixel_reg[2]_i_308_n_7 ;
+  wire \fb_pixel_reg[2]_i_309_n_0 ;
+  wire \fb_pixel_reg[2]_i_309_n_1 ;
+  wire \fb_pixel_reg[2]_i_309_n_2 ;
+  wire \fb_pixel_reg[2]_i_309_n_3 ;
+  wire \fb_pixel_reg[2]_i_309_n_4 ;
+  wire \fb_pixel_reg[2]_i_309_n_5 ;
+  wire \fb_pixel_reg[2]_i_309_n_6 ;
+  wire \fb_pixel_reg[2]_i_309_n_7 ;
+  wire \fb_pixel_reg[2]_i_318_n_0 ;
+  wire \fb_pixel_reg[2]_i_318_n_1 ;
+  wire \fb_pixel_reg[2]_i_318_n_2 ;
+  wire \fb_pixel_reg[2]_i_318_n_3 ;
+  wire \fb_pixel_reg[2]_i_318_n_4 ;
+  wire \fb_pixel_reg[2]_i_318_n_5 ;
+  wire \fb_pixel_reg[2]_i_318_n_6 ;
+  wire \fb_pixel_reg[2]_i_318_n_7 ;
+  wire \fb_pixel_reg[2]_i_319_n_0 ;
+  wire \fb_pixel_reg[2]_i_319_n_1 ;
+  wire \fb_pixel_reg[2]_i_319_n_2 ;
+  wire \fb_pixel_reg[2]_i_319_n_3 ;
+  wire \fb_pixel_reg[2]_i_319_n_4 ;
+  wire \fb_pixel_reg[2]_i_319_n_5 ;
+  wire \fb_pixel_reg[2]_i_319_n_6 ;
+  wire \fb_pixel_reg[2]_i_319_n_7 ;
+  wire \fb_pixel_reg[2]_i_320_n_1 ;
+  wire \fb_pixel_reg[2]_i_320_n_3 ;
+  wire \fb_pixel_reg[2]_i_320_n_6 ;
+  wire \fb_pixel_reg[2]_i_320_n_7 ;
+  wire \fb_pixel_reg[2]_i_339_n_0 ;
+  wire \fb_pixel_reg[2]_i_339_n_1 ;
+  wire \fb_pixel_reg[2]_i_339_n_2 ;
+  wire \fb_pixel_reg[2]_i_339_n_3 ;
+  wire \fb_pixel_reg[2]_i_339_n_4 ;
+  wire \fb_pixel_reg[2]_i_339_n_5 ;
+  wire \fb_pixel_reg[2]_i_339_n_6 ;
+  wire \fb_pixel_reg[2]_i_339_n_7 ;
+  wire \fb_pixel_reg[2]_i_340_n_0 ;
+  wire \fb_pixel_reg[2]_i_340_n_1 ;
+  wire \fb_pixel_reg[2]_i_340_n_2 ;
+  wire \fb_pixel_reg[2]_i_340_n_3 ;
+  wire \fb_pixel_reg[2]_i_340_n_4 ;
+  wire \fb_pixel_reg[2]_i_340_n_5 ;
+  wire \fb_pixel_reg[2]_i_340_n_6 ;
+  wire \fb_pixel_reg[2]_i_340_n_7 ;
+  wire \fb_pixel_reg[2]_i_342_n_1 ;
+  wire \fb_pixel_reg[2]_i_342_n_3 ;
+  wire \fb_pixel_reg[2]_i_342_n_6 ;
+  wire \fb_pixel_reg[2]_i_342_n_7 ;
+  wire \fb_pixel_reg[2]_i_60_n_0 ;
+  wire \fb_pixel_reg[2]_i_60_n_1 ;
+  wire \fb_pixel_reg[2]_i_60_n_2 ;
+  wire \fb_pixel_reg[2]_i_60_n_3 ;
+  wire \fb_pixel_reg[2]_i_65_n_0 ;
+  wire \fb_pixel_reg[2]_i_65_n_1 ;
+  wire \fb_pixel_reg[2]_i_65_n_2 ;
+  wire \fb_pixel_reg[2]_i_65_n_3 ;
+  wire \fb_pixel_reg[2]_i_70_n_0 ;
+  wire \fb_pixel_reg[2]_i_70_n_1 ;
+  wire \fb_pixel_reg[2]_i_70_n_2 ;
+  wire \fb_pixel_reg[2]_i_70_n_3 ;
+  wire \fb_pixel_reg[2]_i_79_n_0 ;
+  wire \fb_pixel_reg[2]_i_79_n_1 ;
+  wire \fb_pixel_reg[2]_i_79_n_2 ;
+  wire \fb_pixel_reg[2]_i_79_n_3 ;
+  wire \fb_pixel_reg[2]_i_89_n_1 ;
+  wire \fb_pixel_reg[2]_i_89_n_2 ;
+  wire \fb_pixel_reg[2]_i_89_n_3 ;
   wire game_clk;
-  wire game_time0__6;
+  wire game_time;
+  wire game_time0;
   wire \game_time[0]_i_1_n_0 ;
-  wire game_time__45;
   wire \game_time_reg_n_0_[0] ;
   wire game_turn;
   wire game_turn_i_10_n_0;
@@ -1173,555 +1609,417 @@ module bowling_game_controller_0_0_controller
   wire game_turn_i_7_n_0;
   wire game_turn_i_8_n_0;
   wire game_turn_i_9_n_0;
-  wire i__carry__0_i_10_n_0;
-  wire i__carry__0_i_10_n_1;
-  wire i__carry__0_i_10_n_2;
-  wire i__carry__0_i_10_n_3;
-  wire i__carry__0_i_10_n_4;
-  wire i__carry__0_i_10_n_5;
-  wire i__carry__0_i_10_n_6;
-  wire i__carry__0_i_10_n_7;
-  wire i__carry__0_i_1__0_n_0;
-  wire i__carry__0_i_1__1_n_0;
-  wire i__carry__0_i_1__2_n_0;
-  wire i__carry__0_i_1__3_n_0;
-  wire i__carry__0_i_1__4_n_0;
-  wire i__carry__0_i_1_n_0;
-  wire i__carry__0_i_2__0_n_0;
-  wire i__carry__0_i_2__1_n_0;
-  wire i__carry__0_i_2__2_n_0;
-  wire i__carry__0_i_2__3_n_0;
-  wire i__carry__0_i_2_n_0;
-  wire i__carry__0_i_3__0_n_0;
-  wire i__carry__0_i_3_n_0;
-  wire i__carry__0_i_4__0_n_0;
-  wire i__carry__0_i_4_n_0;
-  wire i__carry__0_i_5__0_n_0;
-  wire i__carry__0_i_5_n_0;
-  wire i__carry__0_i_6_n_0;
-  wire i__carry__0_i_7_n_0;
-  wire i__carry__0_i_8_n_0;
-  wire i__carry__0_i_9_n_0;
-  wire i__carry__0_i_9_n_1;
-  wire i__carry__0_i_9_n_2;
-  wire i__carry__0_i_9_n_3;
-  wire i__carry__0_i_9_n_4;
-  wire i__carry__0_i_9_n_5;
-  wire i__carry__0_i_9_n_6;
-  wire i__carry__0_i_9_n_7;
-  wire i__carry__1_i_10_n_0;
-  wire i__carry__1_i_10_n_1;
-  wire i__carry__1_i_10_n_2;
-  wire i__carry__1_i_10_n_3;
-  wire i__carry__1_i_10_n_4;
-  wire i__carry__1_i_10_n_5;
-  wire i__carry__1_i_10_n_6;
-  wire i__carry__1_i_10_n_7;
-  wire i__carry__1_i_1__0_n_0;
-  wire i__carry__1_i_1_n_0;
-  wire i__carry__1_i_2__0_n_0;
-  wire i__carry__1_i_2_n_0;
-  wire i__carry__1_i_3__0_n_0;
-  wire i__carry__1_i_3_n_0;
-  wire i__carry__1_i_4__0_n_0;
-  wire i__carry__1_i_4_n_0;
-  wire i__carry__1_i_5_n_0;
-  wire i__carry__1_i_6_n_0;
-  wire i__carry__1_i_7_n_0;
-  wire i__carry__1_i_8_n_0;
-  wire i__carry__1_i_9_n_0;
-  wire i__carry__1_i_9_n_1;
-  wire i__carry__1_i_9_n_2;
-  wire i__carry__1_i_9_n_3;
-  wire i__carry__1_i_9_n_4;
-  wire i__carry__1_i_9_n_5;
-  wire i__carry__1_i_9_n_6;
-  wire i__carry__1_i_9_n_7;
-  wire i__carry__2_i_10_n_0;
-  wire i__carry__2_i_10_n_1;
-  wire i__carry__2_i_10_n_2;
-  wire i__carry__2_i_10_n_3;
-  wire i__carry__2_i_10_n_4;
-  wire i__carry__2_i_10_n_5;
-  wire i__carry__2_i_10_n_6;
-  wire i__carry__2_i_10_n_7;
-  wire i__carry__2_i_1__0_n_0;
-  wire i__carry__2_i_1_n_0;
-  wire i__carry__2_i_2__0_n_0;
-  wire i__carry__2_i_2_n_0;
-  wire i__carry__2_i_3__0_n_0;
-  wire i__carry__2_i_3_n_0;
-  wire i__carry__2_i_4__0_n_0;
-  wire i__carry__2_i_4_n_0;
-  wire i__carry__2_i_5_n_0;
-  wire i__carry__2_i_6_n_0;
-  wire i__carry__2_i_7_n_0;
-  wire i__carry__2_i_8_n_0;
-  wire i__carry__2_i_9_n_2;
-  wire i__carry__2_i_9_n_3;
-  wire i__carry__2_i_9_n_5;
-  wire i__carry__2_i_9_n_6;
-  wire i__carry__2_i_9_n_7;
-  wire i__carry_i_10__0_n_0;
-  wire i__carry_i_10__0_n_1;
-  wire i__carry_i_10__0_n_2;
-  wire i__carry_i_10__0_n_3;
-  wire i__carry_i_10__0_n_4;
-  wire i__carry_i_10__0_n_5;
-  wire i__carry_i_10__0_n_6;
-  wire i__carry_i_10__0_n_7;
-  wire i__carry_i_10__1_n_0;
-  wire i__carry_i_10__1_n_1;
-  wire i__carry_i_10__1_n_2;
-  wire i__carry_i_10__1_n_3;
-  wire i__carry_i_10__1_n_4;
-  wire i__carry_i_10__1_n_5;
-  wire i__carry_i_10__1_n_6;
-  wire i__carry_i_10__1_n_7;
-  wire i__carry_i_10__2_n_0;
-  wire i__carry_i_10__2_n_1;
-  wire i__carry_i_10__2_n_2;
-  wire i__carry_i_10__2_n_3;
-  wire i__carry_i_10__2_n_4;
-  wire i__carry_i_10__2_n_5;
-  wire i__carry_i_10__2_n_6;
-  wire i__carry_i_10__2_n_7;
-  wire i__carry_i_10__3_n_0;
-  wire i__carry_i_10__3_n_1;
-  wire i__carry_i_10__3_n_2;
-  wire i__carry_i_10__3_n_3;
-  wire i__carry_i_10__3_n_4;
-  wire i__carry_i_10__3_n_5;
-  wire i__carry_i_10__3_n_6;
-  wire i__carry_i_10__3_n_7;
-  wire i__carry_i_10_n_0;
-  wire i__carry_i_10_n_1;
-  wire i__carry_i_10_n_2;
-  wire i__carry_i_10_n_3;
-  wire i__carry_i_10_n_4;
-  wire i__carry_i_10_n_5;
-  wire i__carry_i_10_n_6;
-  wire i__carry_i_10_n_7;
-  wire i__carry_i_11__0_n_0;
-  wire i__carry_i_11_n_0;
-  wire i__carry_i_12__0_n_0;
-  wire i__carry_i_12_n_0;
-  wire i__carry_i_1__0_n_0;
-  wire i__carry_i_1__10_n_0;
-  wire i__carry_i_1__11_n_0;
-  wire i__carry_i_1__1_n_0;
-  wire i__carry_i_1__2_n_0;
-  wire i__carry_i_1__3_n_0;
-  wire i__carry_i_1__4_n_0;
-  wire i__carry_i_1__5_n_0;
-  wire i__carry_i_1__6_n_0;
-  wire i__carry_i_1__7_n_0;
-  wire i__carry_i_1__8_n_0;
-  wire i__carry_i_1__9_n_0;
-  wire i__carry_i_1_n_0;
-  wire i__carry_i_2__0_n_0;
-  wire i__carry_i_2__10_n_0;
-  wire i__carry_i_2__1_n_0;
-  wire i__carry_i_2__2_n_0;
-  wire i__carry_i_2__3_n_0;
-  wire i__carry_i_2__4_n_0;
-  wire i__carry_i_2__5_n_0;
-  wire i__carry_i_2__6_n_0;
-  wire i__carry_i_2__7_n_0;
-  wire i__carry_i_2__8_n_0;
-  wire i__carry_i_2__9_n_0;
-  wire i__carry_i_2_n_0;
-  wire i__carry_i_3__0_n_0;
-  wire i__carry_i_3__10_n_0;
-  wire i__carry_i_3__1_n_0;
-  wire i__carry_i_3__2_n_0;
-  wire i__carry_i_3__3_n_0;
-  wire i__carry_i_3__4_n_0;
-  wire i__carry_i_3__5_n_0;
-  wire i__carry_i_3__6_n_0;
-  wire i__carry_i_3__7_n_0;
-  wire i__carry_i_3__8_n_0;
-  wire i__carry_i_3__9_n_0;
-  wire i__carry_i_3_n_0;
-  wire i__carry_i_4__0_n_0;
-  wire i__carry_i_4__10_n_0;
-  wire i__carry_i_4__1_n_0;
-  wire i__carry_i_4__2_n_0;
-  wire i__carry_i_4__3_n_0;
-  wire i__carry_i_4__4_n_0;
-  wire i__carry_i_4__5_n_0;
-  wire i__carry_i_4__6_n_0;
-  wire i__carry_i_4__7_n_0;
-  wire i__carry_i_4__8_n_0;
-  wire i__carry_i_4__9_n_0;
-  wire i__carry_i_4_n_0;
-  wire i__carry_i_5__0_n_0;
-  wire i__carry_i_5__10_n_0;
-  wire i__carry_i_5__1_n_0;
-  wire i__carry_i_5__2_n_0;
-  wire i__carry_i_5__3_n_0;
-  wire i__carry_i_5__4_n_0;
-  wire i__carry_i_5__5_n_0;
-  wire i__carry_i_5__6_n_0;
-  wire i__carry_i_5__7_n_0;
-  wire i__carry_i_5__8_n_0;
-  wire i__carry_i_5__9_n_0;
-  wire i__carry_i_5_n_0;
-  wire i__carry_i_6__0_n_0;
-  wire i__carry_i_6__10_n_0;
-  wire i__carry_i_6__1_n_0;
-  wire i__carry_i_6__2_n_0;
-  wire i__carry_i_6__3_n_0;
-  wire i__carry_i_6__4_n_0;
-  wire i__carry_i_6__5_n_0;
-  wire i__carry_i_6__6_n_0;
-  wire i__carry_i_6__7_n_0;
-  wire i__carry_i_6__8_n_0;
-  wire i__carry_i_6__9_n_0;
-  wire i__carry_i_6_n_0;
-  wire i__carry_i_7__0_n_0;
-  wire i__carry_i_7__10_n_0;
-  wire i__carry_i_7__1_n_0;
-  wire i__carry_i_7__2_n_0;
-  wire i__carry_i_7__3_n_0;
-  wire i__carry_i_7__4_n_0;
-  wire i__carry_i_7__5_n_0;
-  wire i__carry_i_7__6_n_0;
-  wire i__carry_i_7__7_n_0;
-  wire i__carry_i_7__8_n_0;
-  wire i__carry_i_7__9_n_0;
-  wire i__carry_i_7_n_0;
-  wire i__carry_i_8__0_n_0;
-  wire i__carry_i_8__10_n_0;
-  wire i__carry_i_8__1_n_0;
-  wire i__carry_i_8__2_n_0;
-  wire i__carry_i_8__3_n_0;
-  wire i__carry_i_8__4_n_0;
-  wire i__carry_i_8__5_n_0;
-  wire i__carry_i_8__6_n_0;
-  wire i__carry_i_8__7_n_0;
-  wire i__carry_i_8__8_n_0;
-  wire i__carry_i_8__9_n_0;
-  wire i__carry_i_8_n_0;
-  wire i__carry_i_9__0_n_0;
-  wire i__carry_i_9__0_n_1;
-  wire i__carry_i_9__0_n_2;
-  wire i__carry_i_9__0_n_3;
-  wire i__carry_i_9__0_n_4;
-  wire i__carry_i_9__0_n_5;
-  wire i__carry_i_9__0_n_6;
-  wire i__carry_i_9__0_n_7;
-  wire i__carry_i_9__1_n_0;
-  wire i__carry_i_9__1_n_1;
-  wire i__carry_i_9__1_n_2;
-  wire i__carry_i_9__1_n_3;
-  wire i__carry_i_9__1_n_4;
-  wire i__carry_i_9__1_n_5;
-  wire i__carry_i_9__1_n_6;
-  wire i__carry_i_9__1_n_7;
-  wire i__carry_i_9__2_n_0;
-  wire i__carry_i_9__2_n_1;
-  wire i__carry_i_9__2_n_2;
-  wire i__carry_i_9__2_n_3;
-  wire i__carry_i_9__2_n_4;
-  wire i__carry_i_9__2_n_5;
-  wire i__carry_i_9__2_n_6;
-  wire i__carry_i_9__2_n_7;
-  wire i__carry_i_9__3_n_2;
-  wire i__carry_i_9__3_n_3;
-  wire i__carry_i_9__3_n_5;
-  wire i__carry_i_9__3_n_6;
-  wire i__carry_i_9__3_n_7;
-  wire i__carry_i_9_n_0;
-  wire i__carry_i_9_n_1;
-  wire i__carry_i_9_n_2;
-  wire i__carry_i_9_n_3;
-  wire i__carry_i_9_n_4;
-  wire i__carry_i_9_n_5;
-  wire i__carry_i_9_n_6;
-  wire i__carry_i_9_n_7;
-  wire i__i_1_n_0;
-  wire i__i_2_n_0;
-  wire i__i_3_n_0;
-  wire i__i_4_n_0;
-  wire i__i_5_n_0;
+  wire [31:0]in17;
   wire joystick_trigger;
   wire [6:0]joystick_x;
   wire [6:0]joystick_y;
   wire left_in;
   wire [17:5]multOp;
-  wire [8:0]p_0_in;
-  wire p_0_in_0;
-  wire pin_10_hit1__15;
-  wire pin_10_hit1_carry__0_i_1_n_0;
-  wire pin_10_hit1_carry__0_i_2_n_0;
-  wire pin_10_hit1_carry__0_i_3_n_0;
-  wire pin_10_hit1_carry__0_i_4_n_0;
-  wire pin_10_hit1_carry__0_i_5_n_0;
-  wire pin_10_hit1_carry__0_i_6_n_0;
-  wire pin_10_hit1_carry__0_i_7_n_0;
-  wire pin_10_hit1_carry__0_i_8_n_0;
-  wire pin_10_hit1_carry__0_n_0;
-  wire pin_10_hit1_carry__0_n_1;
-  wire pin_10_hit1_carry__0_n_2;
-  wire pin_10_hit1_carry__0_n_3;
-  wire pin_10_hit1_carry__1_i_1_n_0;
-  wire pin_10_hit1_carry__1_i_2_n_0;
-  wire pin_10_hit1_carry__1_i_3_n_0;
-  wire pin_10_hit1_carry__1_i_4_n_0;
-  wire pin_10_hit1_carry__1_i_5_n_0;
-  wire pin_10_hit1_carry__1_i_6_n_0;
-  wire pin_10_hit1_carry__1_i_7_n_0;
-  wire pin_10_hit1_carry__1_i_8_n_0;
-  wire pin_10_hit1_carry__1_n_0;
-  wire pin_10_hit1_carry__1_n_1;
-  wire pin_10_hit1_carry__1_n_2;
-  wire pin_10_hit1_carry__1_n_3;
-  wire pin_10_hit1_carry__2_i_1_n_0;
-  wire pin_10_hit1_carry__2_i_2_n_0;
-  wire pin_10_hit1_carry__2_i_3_n_0;
-  wire pin_10_hit1_carry__2_i_4_n_0;
-  wire pin_10_hit1_carry__2_i_5_n_0;
-  wire pin_10_hit1_carry__2_i_6_n_0;
-  wire pin_10_hit1_carry__2_i_7_n_0;
-  wire pin_10_hit1_carry__2_i_8_n_0;
-  wire pin_10_hit1_carry__2_n_1;
-  wire pin_10_hit1_carry__2_n_2;
-  wire pin_10_hit1_carry__2_n_3;
-  wire pin_10_hit1_carry_i_1_n_0;
-  wire pin_10_hit1_carry_i_2_n_0;
-  wire pin_10_hit1_carry_i_3_n_0;
-  wire pin_10_hit1_carry_i_4_n_0;
-  wire pin_10_hit1_carry_i_5_n_0;
-  wire pin_10_hit1_carry_i_6_n_0;
-  wire pin_10_hit1_carry_i_7_n_0;
-  wire pin_10_hit1_carry_i_8_n_0;
-  wire pin_10_hit1_carry_n_0;
-  wire pin_10_hit1_carry_n_1;
-  wire pin_10_hit1_carry_n_2;
-  wire pin_10_hit1_carry_n_3;
-  wire pin_10_hit2__14;
-  wire pin_10_hit2_carry__0_i_1_n_0;
-  wire pin_10_hit2_carry__0_i_2_n_0;
-  wire pin_10_hit2_carry__0_i_3_n_0;
-  wire pin_10_hit2_carry__0_i_4_n_0;
-  wire pin_10_hit2_carry__0_n_0;
-  wire pin_10_hit2_carry__0_n_1;
-  wire pin_10_hit2_carry__0_n_2;
-  wire pin_10_hit2_carry__0_n_3;
-  wire pin_10_hit2_carry__1_i_1_n_0;
-  wire pin_10_hit2_carry__1_i_2_n_0;
-  wire pin_10_hit2_carry__1_i_3_n_0;
-  wire pin_10_hit2_carry__1_i_4_n_0;
-  wire pin_10_hit2_carry__1_n_0;
-  wire pin_10_hit2_carry__1_n_1;
-  wire pin_10_hit2_carry__1_n_2;
-  wire pin_10_hit2_carry__1_n_3;
-  wire pin_10_hit2_carry__2_i_1_n_0;
-  wire pin_10_hit2_carry__2_i_2_n_0;
-  wire pin_10_hit2_carry__2_i_3_n_0;
-  wire pin_10_hit2_carry__2_n_2;
-  wire pin_10_hit2_carry__2_n_3;
-  wire pin_10_hit2_carry_i_1_n_0;
-  wire pin_10_hit2_carry_i_2_n_0;
-  wire pin_10_hit2_carry_i_3_n_0;
-  wire pin_10_hit2_carry_i_4_n_0;
-  wire pin_10_hit2_carry_i_5_n_0;
-  wire pin_10_hit2_carry_i_6_n_0;
-  wire pin_10_hit2_carry_i_7_n_0;
-  wire pin_10_hit2_carry_i_8_n_0;
-  wire pin_10_hit2_carry_n_0;
-  wire pin_10_hit2_carry_n_1;
-  wire pin_10_hit2_carry_n_2;
-  wire pin_10_hit2_carry_n_3;
+  wire [0:0]\number_8[0,13] ;
+  wire p_0_in;
+  wire [8:0]p_0_in__0;
+  wire pin_10_hit_i_10_n_0;
+  wire pin_10_hit_i_11_n_0;
+  wire pin_10_hit_i_12_n_0;
+  wire pin_10_hit_i_13_n_0;
+  wire pin_10_hit_i_14_n_0;
+  wire pin_10_hit_i_15_n_0;
+  wire pin_10_hit_i_16_n_0;
+  wire pin_10_hit_i_17_n_0;
+  wire pin_10_hit_i_19_n_0;
   wire pin_10_hit_i_1_n_0;
-  wire pin_10_hit_i_2_n_0;
+  wire pin_10_hit_i_20_n_0;
+  wire pin_10_hit_i_21_n_0;
+  wire pin_10_hit_i_22_n_0;
+  wire pin_10_hit_i_24_n_0;
+  wire pin_10_hit_i_25_n_0;
+  wire pin_10_hit_i_26_n_0;
+  wire pin_10_hit_i_27_n_0;
+  wire pin_10_hit_i_28_n_0;
+  wire pin_10_hit_i_29_n_0;
+  wire pin_10_hit_i_30_n_0;
+  wire pin_10_hit_i_31_n_0;
+  wire pin_10_hit_i_33_n_0;
+  wire pin_10_hit_i_34_n_0;
+  wire pin_10_hit_i_35_n_0;
+  wire pin_10_hit_i_36_n_0;
+  wire pin_10_hit_i_38_n_0;
+  wire pin_10_hit_i_39_n_0;
+  wire pin_10_hit_i_40_n_0;
+  wire pin_10_hit_i_41_n_0;
+  wire pin_10_hit_i_42_n_0;
+  wire pin_10_hit_i_43_n_0;
+  wire pin_10_hit_i_44_n_0;
+  wire pin_10_hit_i_45_n_0;
+  wire pin_10_hit_i_46_n_0;
+  wire pin_10_hit_i_47_n_0;
+  wire pin_10_hit_i_48_n_0;
+  wire pin_10_hit_i_49_n_0;
+  wire pin_10_hit_i_50_n_0;
+  wire pin_10_hit_i_51_n_0;
+  wire pin_10_hit_i_52_n_0;
+  wire pin_10_hit_i_53_n_0;
+  wire pin_10_hit_i_54_n_0;
+  wire pin_10_hit_i_55_n_0;
+  wire pin_10_hit_i_56_n_0;
+  wire pin_10_hit_i_57_n_0;
+  wire pin_10_hit_i_58_n_0;
+  wire pin_10_hit_i_59_n_0;
+  wire pin_10_hit_i_60_n_0;
+  wire pin_10_hit_i_61_n_0;
+  wire pin_10_hit_i_6_n_0;
+  wire pin_10_hit_i_7_n_0;
+  wire pin_10_hit_i_8_n_0;
+  wire pin_10_hit_reg_i_18_n_0;
+  wire pin_10_hit_reg_i_18_n_1;
+  wire pin_10_hit_reg_i_18_n_2;
+  wire pin_10_hit_reg_i_18_n_3;
+  wire pin_10_hit_reg_i_23_n_0;
+  wire pin_10_hit_reg_i_23_n_1;
+  wire pin_10_hit_reg_i_23_n_2;
+  wire pin_10_hit_reg_i_23_n_3;
+  wire pin_10_hit_reg_i_32_n_0;
+  wire pin_10_hit_reg_i_32_n_1;
+  wire pin_10_hit_reg_i_32_n_2;
+  wire pin_10_hit_reg_i_32_n_3;
+  wire pin_10_hit_reg_i_37_n_0;
+  wire pin_10_hit_reg_i_37_n_1;
+  wire pin_10_hit_reg_i_37_n_2;
+  wire pin_10_hit_reg_i_37_n_3;
+  wire pin_10_hit_reg_i_3_n_2;
+  wire pin_10_hit_reg_i_3_n_3;
+  wire pin_10_hit_reg_i_4_n_1;
+  wire pin_10_hit_reg_i_4_n_2;
+  wire pin_10_hit_reg_i_4_n_3;
+  wire pin_10_hit_reg_i_5_n_0;
+  wire pin_10_hit_reg_i_5_n_1;
+  wire pin_10_hit_reg_i_5_n_2;
+  wire pin_10_hit_reg_i_5_n_3;
+  wire pin_10_hit_reg_i_9_n_0;
+  wire pin_10_hit_reg_i_9_n_1;
+  wire pin_10_hit_reg_i_9_n_2;
+  wire pin_10_hit_reg_i_9_n_3;
   wire pin_10_hit_reg_n_0;
-  wire pin_1_hit1_carry__0_i_1_n_0;
-  wire pin_1_hit1_carry__0_i_2_n_0;
-  wire pin_1_hit1_carry__0_i_3_n_0;
-  wire pin_1_hit1_carry__0_i_4_n_0;
-  wire pin_1_hit1_carry__0_i_5_n_0;
-  wire pin_1_hit1_carry__0_i_6_n_0;
-  wire pin_1_hit1_carry__0_i_7_n_0;
-  wire pin_1_hit1_carry__0_i_8_n_0;
-  wire pin_1_hit1_carry__0_n_0;
-  wire pin_1_hit1_carry__0_n_1;
-  wire pin_1_hit1_carry__0_n_2;
-  wire pin_1_hit1_carry__0_n_3;
-  wire pin_1_hit1_carry__1_i_1_n_0;
-  wire pin_1_hit1_carry__1_i_2_n_0;
-  wire pin_1_hit1_carry__1_i_3_n_0;
-  wire pin_1_hit1_carry__1_i_4_n_0;
-  wire pin_1_hit1_carry__1_i_5_n_0;
-  wire pin_1_hit1_carry__1_i_6_n_0;
-  wire pin_1_hit1_carry__1_i_7_n_0;
-  wire pin_1_hit1_carry__1_i_8_n_0;
-  wire pin_1_hit1_carry__1_n_0;
-  wire pin_1_hit1_carry__1_n_1;
-  wire pin_1_hit1_carry__1_n_2;
-  wire pin_1_hit1_carry__1_n_3;
-  wire pin_1_hit1_carry__2_i_1_n_0;
-  wire pin_1_hit1_carry__2_i_2_n_0;
-  wire pin_1_hit1_carry__2_i_3_n_0;
-  wire pin_1_hit1_carry__2_i_4_n_0;
-  wire pin_1_hit1_carry__2_i_5_n_0;
-  wire pin_1_hit1_carry__2_i_6_n_0;
-  wire pin_1_hit1_carry__2_i_7_n_0;
-  wire pin_1_hit1_carry__2_i_8_n_0;
-  wire pin_1_hit1_carry__2_n_1;
-  wire pin_1_hit1_carry__2_n_2;
-  wire pin_1_hit1_carry__2_n_3;
-  wire pin_1_hit1_carry_i_1_n_0;
-  wire pin_1_hit1_carry_i_2_n_0;
-  wire pin_1_hit1_carry_i_3_n_0;
-  wire pin_1_hit1_carry_i_4_n_0;
-  wire pin_1_hit1_carry_i_5_n_0;
-  wire pin_1_hit1_carry_i_6_n_0;
-  wire pin_1_hit1_carry_i_7_n_0;
-  wire pin_1_hit1_carry_i_8_n_0;
-  wire pin_1_hit1_carry_n_0;
-  wire pin_1_hit1_carry_n_1;
-  wire pin_1_hit1_carry_n_2;
-  wire pin_1_hit1_carry_n_3;
-  wire pin_1_hit2_carry__0_i_1_n_0;
-  wire pin_1_hit2_carry__0_i_2_n_0;
-  wire pin_1_hit2_carry__0_i_3_n_0;
-  wire pin_1_hit2_carry__0_i_4_n_0;
-  wire pin_1_hit2_carry__0_n_0;
-  wire pin_1_hit2_carry__0_n_1;
-  wire pin_1_hit2_carry__0_n_2;
-  wire pin_1_hit2_carry__0_n_3;
-  wire pin_1_hit2_carry__1_i_1_n_0;
-  wire pin_1_hit2_carry__1_i_2_n_0;
-  wire pin_1_hit2_carry__1_i_3_n_0;
-  wire pin_1_hit2_carry__1_i_4_n_0;
-  wire pin_1_hit2_carry__1_n_0;
-  wire pin_1_hit2_carry__1_n_1;
-  wire pin_1_hit2_carry__1_n_2;
-  wire pin_1_hit2_carry__1_n_3;
-  wire pin_1_hit2_carry__2_i_1_n_0;
-  wire pin_1_hit2_carry__2_i_2_n_0;
-  wire pin_1_hit2_carry__2_i_3_n_0;
-  wire pin_1_hit2_carry__2_i_4_n_0;
-  wire pin_1_hit2_carry__2_n_1;
-  wire pin_1_hit2_carry__2_n_2;
-  wire pin_1_hit2_carry__2_n_3;
-  wire pin_1_hit2_carry_i_10_n_0;
-  wire pin_1_hit2_carry_i_1_n_0;
-  wire pin_1_hit2_carry_i_2_n_0;
-  wire pin_1_hit2_carry_i_3_n_0;
-  wire pin_1_hit2_carry_i_4_n_0;
-  wire pin_1_hit2_carry_i_5_n_0;
-  wire pin_1_hit2_carry_i_6_n_0;
-  wire pin_1_hit2_carry_i_7_n_0;
-  wire pin_1_hit2_carry_i_8_n_0;
-  wire pin_1_hit2_carry_i_9_n_3;
-  wire pin_1_hit2_carry_n_0;
-  wire pin_1_hit2_carry_n_1;
-  wire pin_1_hit2_carry_n_2;
-  wire pin_1_hit2_carry_n_3;
-  wire pin_1_hit3;
-  wire pin_1_hit336_in;
-  wire pin_1_hit_i_10_n_0;
+  wire pin_1_hit_i_101_n_0;
+  wire pin_1_hit_i_102_n_0;
+  wire pin_1_hit_i_103_n_0;
+  wire pin_1_hit_i_104_n_0;
+  wire pin_1_hit_i_105_n_0;
+  wire pin_1_hit_i_106_n_0;
+  wire pin_1_hit_i_107_n_0;
+  wire pin_1_hit_i_108_n_0;
+  wire pin_1_hit_i_109_n_0;
+  wire pin_1_hit_i_110_n_0;
+  wire pin_1_hit_i_111_n_0;
+  wire pin_1_hit_i_112_n_0;
+  wire pin_1_hit_i_113_n_0;
+  wire pin_1_hit_i_114_n_0;
+  wire pin_1_hit_i_115_n_0;
+  wire pin_1_hit_i_116_n_0;
+  wire pin_1_hit_i_117_n_0;
+  wire pin_1_hit_i_118_n_0;
+  wire pin_1_hit_i_119_n_0;
   wire pin_1_hit_i_11_n_0;
+  wire pin_1_hit_i_120_n_0;
   wire pin_1_hit_i_12_n_0;
   wire pin_1_hit_i_13_n_0;
   wire pin_1_hit_i_14_n_0;
   wire pin_1_hit_i_15_n_0;
+  wire pin_1_hit_i_16_n_0;
   wire pin_1_hit_i_17_n_0;
   wire pin_1_hit_i_18_n_0;
   wire pin_1_hit_i_1_n_0;
-  wire pin_1_hit_i_20_n_0;
   wire pin_1_hit_i_21_n_0;
-  wire pin_1_hit_i_22_n_0;
   wire pin_1_hit_i_23_n_0;
   wire pin_1_hit_i_24_n_0;
   wire pin_1_hit_i_25_n_0;
   wire pin_1_hit_i_26_n_0;
-  wire pin_1_hit_i_27_n_0;
+  wire pin_1_hit_i_28_n_0;
   wire pin_1_hit_i_29_n_0;
-  wire pin_1_hit_i_2_n_0;
   wire pin_1_hit_i_30_n_0;
   wire pin_1_hit_i_31_n_0;
   wire pin_1_hit_i_32_n_0;
+  wire pin_1_hit_i_33_n_0;
   wire pin_1_hit_i_34_n_0;
   wire pin_1_hit_i_35_n_0;
-  wire pin_1_hit_i_36_n_0;
   wire pin_1_hit_i_37_n_0;
   wire pin_1_hit_i_38_n_0;
   wire pin_1_hit_i_39_n_0;
-  wire pin_1_hit_i_3_n_0;
   wire pin_1_hit_i_40_n_0;
   wire pin_1_hit_i_41_n_0;
+  wire pin_1_hit_i_42_n_0;
   wire pin_1_hit_i_43_n_0;
   wire pin_1_hit_i_44_n_0;
-  wire pin_1_hit_i_45_n_0;
   wire pin_1_hit_i_46_n_0;
   wire pin_1_hit_i_47_n_0;
   wire pin_1_hit_i_48_n_0;
   wire pin_1_hit_i_49_n_0;
-  wire pin_1_hit_i_50_n_0;
+  wire pin_1_hit_i_4_n_0;
   wire pin_1_hit_i_51_n_0;
   wire pin_1_hit_i_52_n_0;
   wire pin_1_hit_i_53_n_0;
   wire pin_1_hit_i_54_n_0;
-  wire pin_1_hit_i_55_n_0;
   wire pin_1_hit_i_56_n_0;
   wire pin_1_hit_i_57_n_0;
   wire pin_1_hit_i_58_n_0;
   wire pin_1_hit_i_59_n_0;
-  wire pin_1_hit_i_6_n_0;
+  wire pin_1_hit_i_5_n_0;
+  wire pin_1_hit_i_60_n_0;
+  wire pin_1_hit_i_61_n_0;
+  wire pin_1_hit_i_62_n_0;
+  wire pin_1_hit_i_63_n_0;
+  wire pin_1_hit_i_65_n_0;
+  wire pin_1_hit_i_66_n_0;
+  wire pin_1_hit_i_67_n_0;
+  wire pin_1_hit_i_68_n_0;
+  wire pin_1_hit_i_69_n_0;
+  wire pin_1_hit_i_70_n_0;
+  wire pin_1_hit_i_71_n_0;
+  wire pin_1_hit_i_72_n_0;
+  wire pin_1_hit_i_74_n_0;
+  wire pin_1_hit_i_75_n_0;
+  wire pin_1_hit_i_76_n_0;
+  wire pin_1_hit_i_77_n_0;
+  wire pin_1_hit_i_78_n_0;
+  wire pin_1_hit_i_79_n_0;
+  wire pin_1_hit_i_7_n_0;
+  wire pin_1_hit_i_80_n_0;
+  wire pin_1_hit_i_81_n_0;
+  wire pin_1_hit_i_82_n_0;
+  wire pin_1_hit_i_83_n_0;
+  wire pin_1_hit_i_84_n_0;
+  wire pin_1_hit_i_85_n_0;
+  wire pin_1_hit_i_86_n_0;
+  wire pin_1_hit_i_87_n_0;
+  wire pin_1_hit_i_88_n_0;
+  wire pin_1_hit_i_89_n_0;
   wire pin_1_hit_i_8_n_0;
+  wire pin_1_hit_i_90_n_0;
+  wire pin_1_hit_i_92_n_0;
+  wire pin_1_hit_i_93_n_0;
+  wire pin_1_hit_i_94_n_0;
+  wire pin_1_hit_i_95_n_0;
+  wire pin_1_hit_i_96_n_0;
+  wire pin_1_hit_i_97_n_0;
+  wire pin_1_hit_i_98_n_0;
+  wire pin_1_hit_i_99_n_0;
   wire pin_1_hit_i_9_n_0;
-  wire pin_1_hit_reg_i_16_n_0;
-  wire pin_1_hit_reg_i_16_n_1;
-  wire pin_1_hit_reg_i_16_n_2;
-  wire pin_1_hit_reg_i_16_n_3;
-  wire pin_1_hit_reg_i_19_n_0;
+  wire pin_1_hit_reg_i_100_n_0;
+  wire pin_1_hit_reg_i_100_n_1;
+  wire pin_1_hit_reg_i_100_n_2;
+  wire pin_1_hit_reg_i_100_n_3;
+  wire pin_1_hit_reg_i_10_n_0;
+  wire pin_1_hit_reg_i_10_n_1;
+  wire pin_1_hit_reg_i_10_n_2;
+  wire pin_1_hit_reg_i_10_n_3;
   wire pin_1_hit_reg_i_19_n_1;
   wire pin_1_hit_reg_i_19_n_2;
   wire pin_1_hit_reg_i_19_n_3;
-  wire pin_1_hit_reg_i_28_n_0;
-  wire pin_1_hit_reg_i_28_n_1;
-  wire pin_1_hit_reg_i_28_n_2;
-  wire pin_1_hit_reg_i_28_n_3;
-  wire pin_1_hit_reg_i_33_n_0;
-  wire pin_1_hit_reg_i_33_n_1;
-  wire pin_1_hit_reg_i_33_n_2;
-  wire pin_1_hit_reg_i_33_n_3;
-  wire pin_1_hit_reg_i_42_n_0;
-  wire pin_1_hit_reg_i_42_n_1;
-  wire pin_1_hit_reg_i_42_n_2;
-  wire pin_1_hit_reg_i_42_n_3;
-  wire pin_1_hit_reg_i_4_n_1;
-  wire pin_1_hit_reg_i_4_n_2;
-  wire pin_1_hit_reg_i_4_n_3;
-  wire pin_1_hit_reg_i_5_n_3;
-  wire pin_1_hit_reg_i_7_n_0;
-  wire pin_1_hit_reg_i_7_n_1;
-  wire pin_1_hit_reg_i_7_n_2;
-  wire pin_1_hit_reg_i_7_n_3;
+  wire pin_1_hit_reg_i_20_n_1;
+  wire pin_1_hit_reg_i_20_n_2;
+  wire pin_1_hit_reg_i_20_n_3;
+  wire pin_1_hit_reg_i_22_n_0;
+  wire pin_1_hit_reg_i_22_n_1;
+  wire pin_1_hit_reg_i_22_n_2;
+  wire pin_1_hit_reg_i_22_n_3;
+  wire pin_1_hit_reg_i_27_n_0;
+  wire pin_1_hit_reg_i_27_n_1;
+  wire pin_1_hit_reg_i_27_n_2;
+  wire pin_1_hit_reg_i_27_n_3;
+  wire pin_1_hit_reg_i_2_n_2;
+  wire pin_1_hit_reg_i_2_n_3;
+  wire pin_1_hit_reg_i_36_n_0;
+  wire pin_1_hit_reg_i_36_n_1;
+  wire pin_1_hit_reg_i_36_n_2;
+  wire pin_1_hit_reg_i_36_n_3;
+  wire pin_1_hit_reg_i_3_n_1;
+  wire pin_1_hit_reg_i_3_n_2;
+  wire pin_1_hit_reg_i_3_n_3;
+  wire pin_1_hit_reg_i_45_n_0;
+  wire pin_1_hit_reg_i_45_n_1;
+  wire pin_1_hit_reg_i_45_n_2;
+  wire pin_1_hit_reg_i_45_n_3;
+  wire pin_1_hit_reg_i_50_n_0;
+  wire pin_1_hit_reg_i_50_n_1;
+  wire pin_1_hit_reg_i_50_n_2;
+  wire pin_1_hit_reg_i_50_n_3;
+  wire pin_1_hit_reg_i_55_n_0;
+  wire pin_1_hit_reg_i_55_n_1;
+  wire pin_1_hit_reg_i_55_n_2;
+  wire pin_1_hit_reg_i_55_n_3;
+  wire pin_1_hit_reg_i_64_n_0;
+  wire pin_1_hit_reg_i_64_n_1;
+  wire pin_1_hit_reg_i_64_n_2;
+  wire pin_1_hit_reg_i_64_n_3;
+  wire pin_1_hit_reg_i_6_n_0;
+  wire pin_1_hit_reg_i_6_n_1;
+  wire pin_1_hit_reg_i_6_n_2;
+  wire pin_1_hit_reg_i_6_n_3;
+  wire pin_1_hit_reg_i_73_n_0;
+  wire pin_1_hit_reg_i_73_n_1;
+  wire pin_1_hit_reg_i_73_n_2;
+  wire pin_1_hit_reg_i_73_n_3;
+  wire pin_1_hit_reg_i_91_n_0;
+  wire pin_1_hit_reg_i_91_n_1;
+  wire pin_1_hit_reg_i_91_n_2;
+  wire pin_1_hit_reg_i_91_n_3;
   wire pin_1_hit_reg_n_0;
   wire pin_1_location_y;
   wire \pin_1_location_y[4]_i_1_n_0 ;
   wire \pin_1_location_y[6]_i_1_n_0 ;
-  wire pin_2_hit3;
-  wire pin_2_hit334_in;
+  wire pin_2_hit_i_10_n_0;
+  wire pin_2_hit_i_11_n_0;
+  wire pin_2_hit_i_12_n_0;
+  wire pin_2_hit_i_13_n_0;
+  wire pin_2_hit_i_14_n_0;
+  wire pin_2_hit_i_15_n_0;
+  wire pin_2_hit_i_17_n_0;
+  wire pin_2_hit_i_18_n_0;
+  wire pin_2_hit_i_19_n_0;
   wire pin_2_hit_i_1_n_0;
+  wire pin_2_hit_i_20_n_0;
+  wire pin_2_hit_i_22_n_0;
+  wire pin_2_hit_i_23_n_0;
+  wire pin_2_hit_i_24_n_0;
+  wire pin_2_hit_i_25_n_0;
+  wire pin_2_hit_i_26_n_0;
+  wire pin_2_hit_i_27_n_0;
+  wire pin_2_hit_i_28_n_0;
+  wire pin_2_hit_i_29_n_0;
   wire pin_2_hit_i_2_n_0;
-  wire pin_2_hit_i_3_n_0;
-  wire pin_2_hit_i_4_n_0;
+  wire pin_2_hit_i_31_n_0;
+  wire pin_2_hit_i_32_n_0;
+  wire pin_2_hit_i_33_n_0;
+  wire pin_2_hit_i_34_n_0;
+  wire pin_2_hit_i_36_n_0;
+  wire pin_2_hit_i_37_n_0;
+  wire pin_2_hit_i_38_n_0;
+  wire pin_2_hit_i_39_n_0;
+  wire pin_2_hit_i_40_n_0;
+  wire pin_2_hit_i_41_n_0;
+  wire pin_2_hit_i_42_n_0;
+  wire pin_2_hit_i_43_n_0;
+  wire pin_2_hit_i_44_n_0;
+  wire pin_2_hit_i_45_n_0;
+  wire pin_2_hit_i_46_n_0;
+  wire pin_2_hit_i_47_n_0;
+  wire pin_2_hit_i_48_n_0;
+  wire pin_2_hit_i_49_n_0;
+  wire pin_2_hit_i_50_n_0;
+  wire pin_2_hit_i_51_n_0;
+  wire pin_2_hit_i_52_n_0;
+  wire pin_2_hit_i_53_n_0;
+  wire pin_2_hit_i_54_n_0;
+  wire pin_2_hit_i_55_n_0;
+  wire pin_2_hit_i_6_n_0;
+  wire pin_2_hit_i_8_n_0;
+  wire pin_2_hit_i_9_n_0;
+  wire pin_2_hit_reg_i_16_n_0;
+  wire pin_2_hit_reg_i_16_n_1;
+  wire pin_2_hit_reg_i_16_n_2;
+  wire pin_2_hit_reg_i_16_n_3;
+  wire pin_2_hit_reg_i_21_n_0;
+  wire pin_2_hit_reg_i_21_n_1;
+  wire pin_2_hit_reg_i_21_n_2;
+  wire pin_2_hit_reg_i_21_n_3;
+  wire pin_2_hit_reg_i_30_n_0;
+  wire pin_2_hit_reg_i_30_n_1;
+  wire pin_2_hit_reg_i_30_n_2;
+  wire pin_2_hit_reg_i_30_n_3;
+  wire pin_2_hit_reg_i_35_n_0;
+  wire pin_2_hit_reg_i_35_n_1;
+  wire pin_2_hit_reg_i_35_n_2;
+  wire pin_2_hit_reg_i_35_n_3;
+  wire pin_2_hit_reg_i_4_n_1;
+  wire pin_2_hit_reg_i_4_n_2;
+  wire pin_2_hit_reg_i_4_n_3;
+  wire pin_2_hit_reg_i_5_n_0;
+  wire pin_2_hit_reg_i_5_n_1;
+  wire pin_2_hit_reg_i_5_n_2;
+  wire pin_2_hit_reg_i_5_n_3;
+  wire pin_2_hit_reg_i_7_n_0;
+  wire pin_2_hit_reg_i_7_n_1;
+  wire pin_2_hit_reg_i_7_n_2;
+  wire pin_2_hit_reg_i_7_n_3;
   wire pin_2_hit_reg_n_0;
-  wire pin_3_hit3;
-  wire pin_3_hit332_in;
+  wire pin_3_hit_i_10_n_0;
+  wire pin_3_hit_i_11_n_0;
+  wire pin_3_hit_i_12_n_0;
+  wire pin_3_hit_i_13_n_0;
+  wire pin_3_hit_i_14_n_0;
+  wire pin_3_hit_i_15_n_0;
+  wire pin_3_hit_i_16_n_0;
+  wire pin_3_hit_i_18_n_0;
+  wire pin_3_hit_i_19_n_0;
   wire pin_3_hit_i_1_n_0;
-  wire pin_3_hit_i_2_n_0;
+  wire pin_3_hit_i_20_n_0;
+  wire pin_3_hit_i_21_n_0;
+  wire pin_3_hit_i_23_n_0;
+  wire pin_3_hit_i_24_n_0;
+  wire pin_3_hit_i_25_n_0;
+  wire pin_3_hit_i_26_n_0;
+  wire pin_3_hit_i_27_n_0;
+  wire pin_3_hit_i_28_n_0;
+  wire pin_3_hit_i_29_n_0;
+  wire pin_3_hit_i_30_n_0;
+  wire pin_3_hit_i_32_n_0;
+  wire pin_3_hit_i_33_n_0;
+  wire pin_3_hit_i_34_n_0;
+  wire pin_3_hit_i_35_n_0;
+  wire pin_3_hit_i_37_n_0;
+  wire pin_3_hit_i_38_n_0;
+  wire pin_3_hit_i_39_n_0;
+  wire pin_3_hit_i_40_n_0;
+  wire pin_3_hit_i_41_n_0;
+  wire pin_3_hit_i_42_n_0;
+  wire pin_3_hit_i_43_n_0;
+  wire pin_3_hit_i_44_n_0;
+  wire pin_3_hit_i_45_n_0;
+  wire pin_3_hit_i_46_n_0;
+  wire pin_3_hit_i_47_n_0;
+  wire pin_3_hit_i_48_n_0;
+  wire pin_3_hit_i_49_n_0;
+  wire pin_3_hit_i_50_n_0;
+  wire pin_3_hit_i_51_n_0;
+  wire pin_3_hit_i_52_n_0;
+  wire pin_3_hit_i_53_n_0;
+  wire pin_3_hit_i_54_n_0;
+  wire pin_3_hit_i_55_n_0;
+  wire pin_3_hit_i_56_n_0;
+  wire pin_3_hit_i_5_n_0;
+  wire pin_3_hit_i_6_n_0;
+  wire pin_3_hit_i_7_n_0;
+  wire pin_3_hit_i_9_n_0;
+  wire pin_3_hit_reg_i_17_n_0;
+  wire pin_3_hit_reg_i_17_n_1;
+  wire pin_3_hit_reg_i_17_n_2;
+  wire pin_3_hit_reg_i_17_n_3;
+  wire pin_3_hit_reg_i_22_n_0;
+  wire pin_3_hit_reg_i_22_n_1;
+  wire pin_3_hit_reg_i_22_n_2;
+  wire pin_3_hit_reg_i_22_n_3;
+  wire pin_3_hit_reg_i_2_n_2;
+  wire pin_3_hit_reg_i_2_n_3;
+  wire pin_3_hit_reg_i_31_n_0;
+  wire pin_3_hit_reg_i_31_n_1;
+  wire pin_3_hit_reg_i_31_n_2;
+  wire pin_3_hit_reg_i_31_n_3;
+  wire pin_3_hit_reg_i_36_n_0;
+  wire pin_3_hit_reg_i_36_n_1;
+  wire pin_3_hit_reg_i_36_n_2;
+  wire pin_3_hit_reg_i_36_n_3;
+  wire pin_3_hit_reg_i_3_n_1;
+  wire pin_3_hit_reg_i_3_n_2;
+  wire pin_3_hit_reg_i_3_n_3;
+  wire pin_3_hit_reg_i_4_n_0;
+  wire pin_3_hit_reg_i_4_n_1;
+  wire pin_3_hit_reg_i_4_n_2;
+  wire pin_3_hit_reg_i_4_n_3;
+  wire pin_3_hit_reg_i_8_n_0;
+  wire pin_3_hit_reg_i_8_n_1;
+  wire pin_3_hit_reg_i_8_n_2;
+  wire pin_3_hit_reg_i_8_n_3;
   wire pin_3_hit_reg_n_0;
-  wire pin_4_hit1;
-  wire pin_4_hit2;
-  wire pin_4_hit3;
-  wire pin_4_hit331_in;
   wire pin_4_hit_i_10_n_0;
   wire pin_4_hit_i_11_n_0;
   wire pin_4_hit_i_12_n_0;
@@ -1802,144 +2100,31 @@ module bowling_game_controller_0_0_controller
   wire pin_4_hit_reg_i_8_n_3;
   wire pin_4_hit_reg_n_0;
   wire [6:4]pin_4_location_y;
-  wire pin_5_hit1_carry__0_i_1_n_0;
-  wire pin_5_hit1_carry__0_i_2_n_0;
-  wire pin_5_hit1_carry__0_i_3_n_0;
-  wire pin_5_hit1_carry__0_i_4_n_0;
-  wire pin_5_hit1_carry__0_i_5_n_0;
-  wire pin_5_hit1_carry__0_i_6_n_0;
-  wire pin_5_hit1_carry__0_i_7_n_0;
-  wire pin_5_hit1_carry__0_i_8_n_0;
-  wire pin_5_hit1_carry__0_n_0;
-  wire pin_5_hit1_carry__0_n_1;
-  wire pin_5_hit1_carry__0_n_2;
-  wire pin_5_hit1_carry__0_n_3;
-  wire pin_5_hit1_carry__1_i_1_n_0;
-  wire pin_5_hit1_carry__1_i_2_n_0;
-  wire pin_5_hit1_carry__1_i_3_n_0;
-  wire pin_5_hit1_carry__1_i_4_n_0;
-  wire pin_5_hit1_carry__1_i_5_n_0;
-  wire pin_5_hit1_carry__1_i_6_n_0;
-  wire pin_5_hit1_carry__1_i_7_n_0;
-  wire pin_5_hit1_carry__1_i_8_n_0;
-  wire pin_5_hit1_carry__1_n_0;
-  wire pin_5_hit1_carry__1_n_1;
-  wire pin_5_hit1_carry__1_n_2;
-  wire pin_5_hit1_carry__1_n_3;
-  wire pin_5_hit1_carry__2_i_1_n_0;
-  wire pin_5_hit1_carry__2_i_2_n_0;
-  wire pin_5_hit1_carry__2_i_3_n_0;
-  wire pin_5_hit1_carry__2_i_4_n_0;
-  wire pin_5_hit1_carry__2_i_5_n_0;
-  wire pin_5_hit1_carry__2_i_6_n_0;
-  wire pin_5_hit1_carry__2_i_7_n_0;
-  wire pin_5_hit1_carry__2_i_8_n_0;
-  wire pin_5_hit1_carry__2_n_1;
-  wire pin_5_hit1_carry__2_n_2;
-  wire pin_5_hit1_carry__2_n_3;
-  wire pin_5_hit1_carry_i_1_n_0;
-  wire pin_5_hit1_carry_i_2_n_0;
-  wire pin_5_hit1_carry_i_3_n_0;
-  wire pin_5_hit1_carry_i_4_n_0;
-  wire pin_5_hit1_carry_i_5_n_0;
-  wire pin_5_hit1_carry_i_6_n_0;
-  wire pin_5_hit1_carry_i_7_n_0;
-  wire pin_5_hit1_carry_i_8_n_0;
-  wire pin_5_hit1_carry_n_0;
-  wire pin_5_hit1_carry_n_1;
-  wire pin_5_hit1_carry_n_2;
-  wire pin_5_hit1_carry_n_3;
-  wire pin_5_hit2_carry__0_i_1_n_0;
-  wire pin_5_hit2_carry__0_i_2_n_0;
-  wire pin_5_hit2_carry__0_i_3_n_0;
-  wire pin_5_hit2_carry__0_i_4_n_0;
-  wire pin_5_hit2_carry__0_n_0;
-  wire pin_5_hit2_carry__0_n_1;
-  wire pin_5_hit2_carry__0_n_2;
-  wire pin_5_hit2_carry__0_n_3;
-  wire pin_5_hit2_carry__1_i_1_n_0;
-  wire pin_5_hit2_carry__1_i_2_n_0;
-  wire pin_5_hit2_carry__1_i_3_n_0;
-  wire pin_5_hit2_carry__1_i_4_n_0;
-  wire pin_5_hit2_carry__1_n_0;
-  wire pin_5_hit2_carry__1_n_1;
-  wire pin_5_hit2_carry__1_n_2;
-  wire pin_5_hit2_carry__1_n_3;
-  wire pin_5_hit2_carry__2_i_1_n_0;
-  wire pin_5_hit2_carry__2_i_2_n_0;
-  wire pin_5_hit2_carry__2_i_3_n_0;
-  wire pin_5_hit2_carry__2_n_2;
-  wire pin_5_hit2_carry__2_n_3;
-  wire pin_5_hit2_carry_i_10_n_1;
-  wire pin_5_hit2_carry_i_10_n_3;
-  wire pin_5_hit2_carry_i_10_n_6;
-  wire pin_5_hit2_carry_i_1_n_0;
-  wire pin_5_hit2_carry_i_2_n_0;
-  wire pin_5_hit2_carry_i_3_n_0;
-  wire pin_5_hit2_carry_i_4_n_0;
-  wire pin_5_hit2_carry_i_5_n_0;
-  wire pin_5_hit2_carry_i_6_n_0;
-  wire pin_5_hit2_carry_i_7_n_0;
-  wire pin_5_hit2_carry_i_8_n_0;
-  wire pin_5_hit2_carry_i_9_n_1;
-  wire pin_5_hit2_carry_i_9_n_3;
-  wire pin_5_hit2_carry_i_9_n_6;
-  wire pin_5_hit2_carry_n_0;
-  wire pin_5_hit2_carry_n_1;
-  wire pin_5_hit2_carry_n_2;
-  wire pin_5_hit2_carry_n_3;
-  wire pin_5_hit330_in;
-  wire pin_5_hit3__15;
-  wire pin_5_hit3_carry__0_i_1_n_0;
-  wire pin_5_hit3_carry__0_i_2_n_0;
-  wire pin_5_hit3_carry__0_i_3_n_0;
-  wire pin_5_hit3_carry__0_i_4_n_0;
-  wire pin_5_hit3_carry__0_i_5_n_0;
-  wire pin_5_hit3_carry__0_i_6_n_0;
-  wire pin_5_hit3_carry__0_i_7_n_0;
-  wire pin_5_hit3_carry__0_i_8_n_0;
-  wire pin_5_hit3_carry__0_n_0;
-  wire pin_5_hit3_carry__0_n_1;
-  wire pin_5_hit3_carry__0_n_2;
-  wire pin_5_hit3_carry__0_n_3;
-  wire pin_5_hit3_carry__1_i_1_n_0;
-  wire pin_5_hit3_carry__1_i_2_n_0;
-  wire pin_5_hit3_carry__1_i_3_n_0;
-  wire pin_5_hit3_carry__1_i_4_n_0;
-  wire pin_5_hit3_carry__1_i_5_n_0;
-  wire pin_5_hit3_carry__1_i_6_n_0;
-  wire pin_5_hit3_carry__1_i_7_n_0;
-  wire pin_5_hit3_carry__1_i_8_n_0;
-  wire pin_5_hit3_carry__1_n_0;
-  wire pin_5_hit3_carry__1_n_1;
-  wire pin_5_hit3_carry__1_n_2;
-  wire pin_5_hit3_carry__1_n_3;
-  wire pin_5_hit3_carry__2_i_1_n_0;
-  wire pin_5_hit3_carry__2_i_2_n_0;
-  wire pin_5_hit3_carry__2_i_3_n_0;
-  wire pin_5_hit3_carry__2_i_4_n_0;
-  wire pin_5_hit3_carry__2_i_5_n_0;
-  wire pin_5_hit3_carry__2_i_6_n_0;
-  wire pin_5_hit3_carry__2_i_7_n_0;
-  wire pin_5_hit3_carry__2_i_8_n_0;
-  wire pin_5_hit3_carry__2_n_1;
-  wire pin_5_hit3_carry__2_n_2;
-  wire pin_5_hit3_carry__2_n_3;
-  wire pin_5_hit3_carry_i_1_n_0;
-  wire pin_5_hit3_carry_i_2_n_0;
-  wire pin_5_hit3_carry_i_3_n_0;
-  wire pin_5_hit3_carry_i_4_n_0;
-  wire pin_5_hit3_carry_i_5_n_0;
-  wire pin_5_hit3_carry_i_6_n_0;
-  wire pin_5_hit3_carry_i_7_n_0;
-  wire pin_5_hit3_carry_n_0;
-  wire pin_5_hit3_carry_n_1;
-  wire pin_5_hit3_carry_n_2;
-  wire pin_5_hit3_carry_n_3;
+  wire pin_5_hit_i_100_n_0;
+  wire pin_5_hit_i_101_n_0;
+  wire pin_5_hit_i_102_n_0;
+  wire pin_5_hit_i_103_n_0;
+  wire pin_5_hit_i_104_n_0;
+  wire pin_5_hit_i_105_n_0;
+  wire pin_5_hit_i_106_n_0;
+  wire pin_5_hit_i_107_n_0;
+  wire pin_5_hit_i_108_n_0;
+  wire pin_5_hit_i_109_n_0;
   wire pin_5_hit_i_10_n_0;
+  wire pin_5_hit_i_110_n_0;
+  wire pin_5_hit_i_111_n_0;
+  wire pin_5_hit_i_112_n_0;
+  wire pin_5_hit_i_113_n_0;
+  wire pin_5_hit_i_114_n_0;
+  wire pin_5_hit_i_115_n_0;
+  wire pin_5_hit_i_116_n_0;
+  wire pin_5_hit_i_117_n_0;
+  wire pin_5_hit_i_118_n_0;
+  wire pin_5_hit_i_119_n_0;
   wire pin_5_hit_i_11_n_0;
-  wire pin_5_hit_i_12_n_0;
+  wire pin_5_hit_i_120_n_0;
   wire pin_5_hit_i_13_n_0;
+  wire pin_5_hit_i_14_n_0;
   wire pin_5_hit_i_15_n_0;
   wire pin_5_hit_i_16_n_0;
   wire pin_5_hit_i_17_n_0;
@@ -1947,36 +2132,138 @@ module bowling_game_controller_0_0_controller
   wire pin_5_hit_i_19_n_0;
   wire pin_5_hit_i_1_n_0;
   wire pin_5_hit_i_20_n_0;
-  wire pin_5_hit_i_21_n_0;
   wire pin_5_hit_i_22_n_0;
   wire pin_5_hit_i_23_n_0;
   wire pin_5_hit_i_24_n_0;
-  wire pin_5_hit_i_25_n_0;
   wire pin_5_hit_i_26_n_0;
+  wire pin_5_hit_i_27_n_0;
+  wire pin_5_hit_i_28_n_0;
+  wire pin_5_hit_i_29_n_0;
   wire pin_5_hit_i_2_n_0;
-  wire pin_5_hit_i_5_n_0;
-  wire pin_5_hit_i_6_n_0;
-  wire pin_5_hit_i_7_n_0;
+  wire pin_5_hit_i_30_n_0;
+  wire pin_5_hit_i_31_n_0;
+  wire pin_5_hit_i_32_n_0;
+  wire pin_5_hit_i_33_n_0;
+  wire pin_5_hit_i_35_n_0;
+  wire pin_5_hit_i_36_n_0;
+  wire pin_5_hit_i_37_n_0;
+  wire pin_5_hit_i_38_n_0;
+  wire pin_5_hit_i_40_n_0;
+  wire pin_5_hit_i_41_n_0;
+  wire pin_5_hit_i_42_n_0;
+  wire pin_5_hit_i_43_n_0;
+  wire pin_5_hit_i_44_n_0;
+  wire pin_5_hit_i_45_n_0;
+  wire pin_5_hit_i_46_n_0;
+  wire pin_5_hit_i_47_n_0;
+  wire pin_5_hit_i_49_n_0;
+  wire pin_5_hit_i_50_n_0;
+  wire pin_5_hit_i_51_n_0;
+  wire pin_5_hit_i_52_n_0;
+  wire pin_5_hit_i_54_n_0;
+  wire pin_5_hit_i_55_n_0;
+  wire pin_5_hit_i_56_n_0;
+  wire pin_5_hit_i_57_n_0;
+  wire pin_5_hit_i_58_n_0;
+  wire pin_5_hit_i_59_n_0;
+  wire pin_5_hit_i_60_n_0;
+  wire pin_5_hit_i_61_n_0;
+  wire pin_5_hit_i_63_n_0;
+  wire pin_5_hit_i_64_n_0;
+  wire pin_5_hit_i_65_n_0;
+  wire pin_5_hit_i_66_n_0;
+  wire pin_5_hit_i_68_n_0;
+  wire pin_5_hit_i_69_n_0;
+  wire pin_5_hit_i_70_n_0;
+  wire pin_5_hit_i_71_n_0;
+  wire pin_5_hit_i_72_n_0;
+  wire pin_5_hit_i_73_n_0;
+  wire pin_5_hit_i_74_n_0;
+  wire pin_5_hit_i_75_n_0;
+  wire pin_5_hit_i_77_n_0;
+  wire pin_5_hit_i_78_n_0;
+  wire pin_5_hit_i_79_n_0;
+  wire pin_5_hit_i_80_n_0;
+  wire pin_5_hit_i_82_n_0;
+  wire pin_5_hit_i_83_n_0;
+  wire pin_5_hit_i_84_n_0;
+  wire pin_5_hit_i_85_n_0;
+  wire pin_5_hit_i_86_n_0;
+  wire pin_5_hit_i_87_n_0;
+  wire pin_5_hit_i_88_n_0;
+  wire pin_5_hit_i_89_n_0;
   wire pin_5_hit_i_8_n_0;
-  wire pin_5_hit_reg_i_14_n_0;
-  wire pin_5_hit_reg_i_14_n_1;
-  wire pin_5_hit_reg_i_14_n_2;
-  wire pin_5_hit_reg_i_14_n_3;
+  wire pin_5_hit_i_90_n_0;
+  wire pin_5_hit_i_91_n_0;
+  wire pin_5_hit_i_92_n_0;
+  wire pin_5_hit_i_93_n_0;
+  wire pin_5_hit_i_94_n_0;
+  wire pin_5_hit_i_95_n_0;
+  wire pin_5_hit_i_96_n_0;
+  wire pin_5_hit_i_97_n_0;
+  wire pin_5_hit_i_98_n_0;
+  wire pin_5_hit_i_99_n_0;
+  wire pin_5_hit_i_9_n_0;
+  wire pin_5_hit_reg_i_12_n_0;
+  wire pin_5_hit_reg_i_12_n_1;
+  wire pin_5_hit_reg_i_12_n_2;
+  wire pin_5_hit_reg_i_12_n_3;
+  wire pin_5_hit_reg_i_21_n_0;
+  wire pin_5_hit_reg_i_21_n_1;
+  wire pin_5_hit_reg_i_21_n_2;
+  wire pin_5_hit_reg_i_21_n_3;
+  wire pin_5_hit_reg_i_25_n_0;
+  wire pin_5_hit_reg_i_25_n_1;
+  wire pin_5_hit_reg_i_25_n_2;
+  wire pin_5_hit_reg_i_25_n_3;
+  wire pin_5_hit_reg_i_34_n_0;
+  wire pin_5_hit_reg_i_34_n_1;
+  wire pin_5_hit_reg_i_34_n_2;
+  wire pin_5_hit_reg_i_34_n_3;
+  wire pin_5_hit_reg_i_39_n_0;
+  wire pin_5_hit_reg_i_39_n_1;
+  wire pin_5_hit_reg_i_39_n_2;
+  wire pin_5_hit_reg_i_39_n_3;
   wire pin_5_hit_reg_i_3_n_1;
   wire pin_5_hit_reg_i_3_n_2;
   wire pin_5_hit_reg_i_3_n_3;
-  wire pin_5_hit_reg_i_4_n_0;
+  wire pin_5_hit_reg_i_48_n_0;
+  wire pin_5_hit_reg_i_48_n_1;
+  wire pin_5_hit_reg_i_48_n_2;
+  wire pin_5_hit_reg_i_48_n_3;
   wire pin_5_hit_reg_i_4_n_1;
   wire pin_5_hit_reg_i_4_n_2;
   wire pin_5_hit_reg_i_4_n_3;
-  wire pin_5_hit_reg_i_9_n_0;
-  wire pin_5_hit_reg_i_9_n_1;
-  wire pin_5_hit_reg_i_9_n_2;
-  wire pin_5_hit_reg_i_9_n_3;
+  wire pin_5_hit_reg_i_53_n_0;
+  wire pin_5_hit_reg_i_53_n_1;
+  wire pin_5_hit_reg_i_53_n_2;
+  wire pin_5_hit_reg_i_53_n_3;
+  wire pin_5_hit_reg_i_5_n_2;
+  wire pin_5_hit_reg_i_5_n_3;
+  wire pin_5_hit_reg_i_62_n_0;
+  wire pin_5_hit_reg_i_62_n_1;
+  wire pin_5_hit_reg_i_62_n_2;
+  wire pin_5_hit_reg_i_62_n_3;
+  wire pin_5_hit_reg_i_67_n_0;
+  wire pin_5_hit_reg_i_67_n_1;
+  wire pin_5_hit_reg_i_67_n_2;
+  wire pin_5_hit_reg_i_67_n_3;
+  wire pin_5_hit_reg_i_6_n_1;
+  wire pin_5_hit_reg_i_6_n_2;
+  wire pin_5_hit_reg_i_6_n_3;
+  wire pin_5_hit_reg_i_76_n_0;
+  wire pin_5_hit_reg_i_76_n_1;
+  wire pin_5_hit_reg_i_76_n_2;
+  wire pin_5_hit_reg_i_76_n_3;
+  wire pin_5_hit_reg_i_7_n_0;
+  wire pin_5_hit_reg_i_7_n_1;
+  wire pin_5_hit_reg_i_7_n_2;
+  wire pin_5_hit_reg_i_7_n_3;
+  wire pin_5_hit_reg_i_81_n_0;
+  wire pin_5_hit_reg_i_81_n_1;
+  wire pin_5_hit_reg_i_81_n_2;
+  wire pin_5_hit_reg_i_81_n_3;
   wire pin_5_hit_reg_n_0;
-  wire pin_6_hit3;
-  wire pin_6_hit328_in;
-  wire pin_6_hit_i_10_n_0;
   wire pin_6_hit_i_11_n_0;
   wire pin_6_hit_i_12_n_0;
   wire pin_6_hit_i_13_n_0;
@@ -1984,24 +2271,25 @@ module bowling_game_controller_0_0_controller
   wire pin_6_hit_i_15_n_0;
   wire pin_6_hit_i_16_n_0;
   wire pin_6_hit_i_17_n_0;
-  wire pin_6_hit_i_19_n_0;
+  wire pin_6_hit_i_18_n_0;
   wire pin_6_hit_i_1_n_0;
   wire pin_6_hit_i_20_n_0;
   wire pin_6_hit_i_21_n_0;
   wire pin_6_hit_i_22_n_0;
-  wire pin_6_hit_i_24_n_0;
+  wire pin_6_hit_i_23_n_0;
   wire pin_6_hit_i_25_n_0;
   wire pin_6_hit_i_26_n_0;
   wire pin_6_hit_i_27_n_0;
   wire pin_6_hit_i_28_n_0;
   wire pin_6_hit_i_29_n_0;
+  wire pin_6_hit_i_2_n_0;
   wire pin_6_hit_i_30_n_0;
   wire pin_6_hit_i_31_n_0;
-  wire pin_6_hit_i_33_n_0;
+  wire pin_6_hit_i_32_n_0;
   wire pin_6_hit_i_34_n_0;
   wire pin_6_hit_i_35_n_0;
   wire pin_6_hit_i_36_n_0;
-  wire pin_6_hit_i_38_n_0;
+  wire pin_6_hit_i_37_n_0;
   wire pin_6_hit_i_39_n_0;
   wire pin_6_hit_i_40_n_0;
   wire pin_6_hit_i_41_n_0;
@@ -2022,46 +2310,42 @@ module bowling_game_controller_0_0_controller
   wire pin_6_hit_i_56_n_0;
   wire pin_6_hit_i_57_n_0;
   wire pin_6_hit_i_58_n_0;
-  wire pin_6_hit_i_5_n_0;
+  wire pin_6_hit_i_59_n_0;
   wire pin_6_hit_i_6_n_0;
   wire pin_6_hit_i_7_n_0;
   wire pin_6_hit_i_8_n_0;
-  wire pin_6_hit_reg_i_18_n_0;
-  wire pin_6_hit_reg_i_18_n_1;
-  wire pin_6_hit_reg_i_18_n_2;
-  wire pin_6_hit_reg_i_18_n_3;
-  wire pin_6_hit_reg_i_23_n_0;
-  wire pin_6_hit_reg_i_23_n_1;
-  wire pin_6_hit_reg_i_23_n_2;
-  wire pin_6_hit_reg_i_23_n_3;
-  wire pin_6_hit_reg_i_2_n_1;
-  wire pin_6_hit_reg_i_2_n_2;
-  wire pin_6_hit_reg_i_2_n_3;
-  wire pin_6_hit_reg_i_32_n_0;
-  wire pin_6_hit_reg_i_32_n_1;
-  wire pin_6_hit_reg_i_32_n_2;
-  wire pin_6_hit_reg_i_32_n_3;
-  wire pin_6_hit_reg_i_37_n_0;
-  wire pin_6_hit_reg_i_37_n_1;
-  wire pin_6_hit_reg_i_37_n_2;
-  wire pin_6_hit_reg_i_37_n_3;
+  wire pin_6_hit_i_9_n_0;
+  wire pin_6_hit_reg_i_10_n_0;
+  wire pin_6_hit_reg_i_10_n_1;
+  wire pin_6_hit_reg_i_10_n_2;
+  wire pin_6_hit_reg_i_10_n_3;
+  wire pin_6_hit_reg_i_19_n_0;
+  wire pin_6_hit_reg_i_19_n_1;
+  wire pin_6_hit_reg_i_19_n_2;
+  wire pin_6_hit_reg_i_19_n_3;
+  wire pin_6_hit_reg_i_24_n_0;
+  wire pin_6_hit_reg_i_24_n_1;
+  wire pin_6_hit_reg_i_24_n_2;
+  wire pin_6_hit_reg_i_24_n_3;
+  wire pin_6_hit_reg_i_33_n_0;
+  wire pin_6_hit_reg_i_33_n_1;
+  wire pin_6_hit_reg_i_33_n_2;
+  wire pin_6_hit_reg_i_33_n_3;
+  wire pin_6_hit_reg_i_38_n_0;
+  wire pin_6_hit_reg_i_38_n_1;
+  wire pin_6_hit_reg_i_38_n_2;
+  wire pin_6_hit_reg_i_38_n_3;
   wire pin_6_hit_reg_i_3_n_1;
   wire pin_6_hit_reg_i_3_n_2;
   wire pin_6_hit_reg_i_3_n_3;
-  wire pin_6_hit_reg_i_4_n_0;
   wire pin_6_hit_reg_i_4_n_1;
   wire pin_6_hit_reg_i_4_n_2;
   wire pin_6_hit_reg_i_4_n_3;
-  wire pin_6_hit_reg_i_9_n_0;
-  wire pin_6_hit_reg_i_9_n_1;
-  wire pin_6_hit_reg_i_9_n_2;
-  wire pin_6_hit_reg_i_9_n_3;
+  wire pin_6_hit_reg_i_5_n_0;
+  wire pin_6_hit_reg_i_5_n_1;
+  wire pin_6_hit_reg_i_5_n_2;
+  wire pin_6_hit_reg_i_5_n_3;
   wire pin_6_hit_reg_n_0;
-  wire pin_7_hit1;
-  wire pin_7_hit2;
-  wire pin_7_hit3;
-  wire pin_7_hit327_in;
-  wire pin_7_hit_i_10_n_0;
   wire pin_7_hit_i_11_n_0;
   wire pin_7_hit_i_12_n_0;
   wire pin_7_hit_i_13_n_0;
@@ -2069,12 +2353,12 @@ module bowling_game_controller_0_0_controller
   wire pin_7_hit_i_15_n_0;
   wire pin_7_hit_i_16_n_0;
   wire pin_7_hit_i_17_n_0;
-  wire pin_7_hit_i_19_n_0;
+  wire pin_7_hit_i_18_n_0;
   wire pin_7_hit_i_1_n_0;
   wire pin_7_hit_i_20_n_0;
   wire pin_7_hit_i_21_n_0;
   wire pin_7_hit_i_22_n_0;
-  wire pin_7_hit_i_24_n_0;
+  wire pin_7_hit_i_23_n_0;
   wire pin_7_hit_i_25_n_0;
   wire pin_7_hit_i_26_n_0;
   wire pin_7_hit_i_27_n_0;
@@ -2082,12 +2366,12 @@ module bowling_game_controller_0_0_controller
   wire pin_7_hit_i_29_n_0;
   wire pin_7_hit_i_30_n_0;
   wire pin_7_hit_i_31_n_0;
-  wire pin_7_hit_i_33_n_0;
+  wire pin_7_hit_i_32_n_0;
   wire pin_7_hit_i_34_n_0;
   wire pin_7_hit_i_35_n_0;
   wire pin_7_hit_i_36_n_0;
   wire pin_7_hit_i_37_n_0;
-  wire pin_7_hit_i_39_n_0;
+  wire pin_7_hit_i_38_n_0;
   wire pin_7_hit_i_40_n_0;
   wire pin_7_hit_i_41_n_0;
   wire pin_7_hit_i_42_n_0;
@@ -2107,159 +2391,71 @@ module bowling_game_controller_0_0_controller
   wire pin_7_hit_i_56_n_0;
   wire pin_7_hit_i_57_n_0;
   wire pin_7_hit_i_58_n_0;
-  wire pin_7_hit_i_5_n_0;
+  wire pin_7_hit_i_59_n_0;
   wire pin_7_hit_i_6_n_0;
   wire pin_7_hit_i_7_n_0;
   wire pin_7_hit_i_8_n_0;
-  wire pin_7_hit_reg_i_18_n_0;
-  wire pin_7_hit_reg_i_18_n_1;
-  wire pin_7_hit_reg_i_18_n_2;
-  wire pin_7_hit_reg_i_18_n_3;
-  wire pin_7_hit_reg_i_23_n_0;
-  wire pin_7_hit_reg_i_23_n_1;
-  wire pin_7_hit_reg_i_23_n_2;
-  wire pin_7_hit_reg_i_23_n_3;
-  wire pin_7_hit_reg_i_2_n_1;
-  wire pin_7_hit_reg_i_2_n_2;
-  wire pin_7_hit_reg_i_2_n_3;
-  wire pin_7_hit_reg_i_32_n_0;
-  wire pin_7_hit_reg_i_32_n_1;
-  wire pin_7_hit_reg_i_32_n_2;
-  wire pin_7_hit_reg_i_32_n_3;
-  wire pin_7_hit_reg_i_38_n_0;
-  wire pin_7_hit_reg_i_38_n_1;
-  wire pin_7_hit_reg_i_38_n_2;
-  wire pin_7_hit_reg_i_38_n_3;
+  wire pin_7_hit_i_9_n_0;
+  wire pin_7_hit_reg_i_10_n_0;
+  wire pin_7_hit_reg_i_10_n_1;
+  wire pin_7_hit_reg_i_10_n_2;
+  wire pin_7_hit_reg_i_10_n_3;
+  wire pin_7_hit_reg_i_19_n_0;
+  wire pin_7_hit_reg_i_19_n_1;
+  wire pin_7_hit_reg_i_19_n_2;
+  wire pin_7_hit_reg_i_19_n_3;
+  wire pin_7_hit_reg_i_24_n_0;
+  wire pin_7_hit_reg_i_24_n_1;
+  wire pin_7_hit_reg_i_24_n_2;
+  wire pin_7_hit_reg_i_24_n_3;
+  wire pin_7_hit_reg_i_33_n_0;
+  wire pin_7_hit_reg_i_33_n_1;
+  wire pin_7_hit_reg_i_33_n_2;
+  wire pin_7_hit_reg_i_33_n_3;
+  wire pin_7_hit_reg_i_39_n_0;
+  wire pin_7_hit_reg_i_39_n_1;
+  wire pin_7_hit_reg_i_39_n_2;
+  wire pin_7_hit_reg_i_39_n_3;
   wire pin_7_hit_reg_i_3_n_1;
   wire pin_7_hit_reg_i_3_n_2;
   wire pin_7_hit_reg_i_3_n_3;
-  wire pin_7_hit_reg_i_4_n_0;
   wire pin_7_hit_reg_i_4_n_1;
   wire pin_7_hit_reg_i_4_n_2;
   wire pin_7_hit_reg_i_4_n_3;
-  wire pin_7_hit_reg_i_9_n_0;
-  wire pin_7_hit_reg_i_9_n_1;
-  wire pin_7_hit_reg_i_9_n_2;
-  wire pin_7_hit_reg_i_9_n_3;
+  wire pin_7_hit_reg_i_5_n_0;
+  wire pin_7_hit_reg_i_5_n_1;
+  wire pin_7_hit_reg_i_5_n_2;
+  wire pin_7_hit_reg_i_5_n_3;
   wire pin_7_hit_reg_n_0;
-  wire pin_8_hit1_carry__0_i_1_n_0;
-  wire pin_8_hit1_carry__0_i_2_n_0;
-  wire pin_8_hit1_carry__0_i_3_n_0;
-  wire pin_8_hit1_carry__0_i_4_n_0;
-  wire pin_8_hit1_carry__0_i_5_n_0;
-  wire pin_8_hit1_carry__0_i_6_n_0;
-  wire pin_8_hit1_carry__0_i_7_n_0;
-  wire pin_8_hit1_carry__0_i_8_n_0;
-  wire pin_8_hit1_carry__0_n_0;
-  wire pin_8_hit1_carry__0_n_1;
-  wire pin_8_hit1_carry__0_n_2;
-  wire pin_8_hit1_carry__0_n_3;
-  wire pin_8_hit1_carry__1_i_1_n_0;
-  wire pin_8_hit1_carry__1_i_2_n_0;
-  wire pin_8_hit1_carry__1_i_3_n_0;
-  wire pin_8_hit1_carry__1_i_4_n_0;
-  wire pin_8_hit1_carry__1_i_5_n_0;
-  wire pin_8_hit1_carry__1_i_6_n_0;
-  wire pin_8_hit1_carry__1_i_7_n_0;
-  wire pin_8_hit1_carry__1_i_8_n_0;
-  wire pin_8_hit1_carry__1_n_0;
-  wire pin_8_hit1_carry__1_n_1;
-  wire pin_8_hit1_carry__1_n_2;
-  wire pin_8_hit1_carry__1_n_3;
-  wire pin_8_hit1_carry__2_i_1_n_0;
-  wire pin_8_hit1_carry__2_i_2_n_0;
-  wire pin_8_hit1_carry__2_i_3_n_0;
-  wire pin_8_hit1_carry__2_i_4_n_0;
-  wire pin_8_hit1_carry__2_i_5_n_0;
-  wire pin_8_hit1_carry__2_i_6_n_0;
-  wire pin_8_hit1_carry__2_i_7_n_0;
-  wire pin_8_hit1_carry__2_i_8_n_0;
-  wire pin_8_hit1_carry__2_n_1;
-  wire pin_8_hit1_carry__2_n_2;
-  wire pin_8_hit1_carry__2_n_3;
-  wire pin_8_hit1_carry_i_1_n_0;
-  wire pin_8_hit1_carry_i_2_n_0;
-  wire pin_8_hit1_carry_i_3_n_0;
-  wire pin_8_hit1_carry_i_4_n_0;
-  wire pin_8_hit1_carry_i_5_n_0;
-  wire pin_8_hit1_carry_i_6_n_0;
-  wire pin_8_hit1_carry_i_7_n_0;
-  wire pin_8_hit1_carry_i_8_n_0;
-  wire pin_8_hit1_carry_n_0;
-  wire pin_8_hit1_carry_n_1;
-  wire pin_8_hit1_carry_n_2;
-  wire pin_8_hit1_carry_n_3;
-  wire pin_8_hit2_carry__0_i_1_n_0;
-  wire pin_8_hit2_carry__0_i_2_n_0;
-  wire pin_8_hit2_carry__0_i_3_n_0;
-  wire pin_8_hit2_carry__0_i_4_n_0;
-  wire pin_8_hit2_carry__0_i_5_n_0;
-  wire pin_8_hit2_carry__0_n_0;
-  wire pin_8_hit2_carry__0_n_1;
-  wire pin_8_hit2_carry__0_n_2;
-  wire pin_8_hit2_carry__0_n_3;
-  wire pin_8_hit2_carry__1_i_1_n_0;
-  wire pin_8_hit2_carry__1_i_2_n_0;
-  wire pin_8_hit2_carry__1_i_3_n_0;
-  wire pin_8_hit2_carry__1_i_4_n_0;
-  wire pin_8_hit2_carry__1_n_0;
-  wire pin_8_hit2_carry__1_n_1;
-  wire pin_8_hit2_carry__1_n_2;
-  wire pin_8_hit2_carry__1_n_3;
-  wire pin_8_hit2_carry__2_i_1_n_0;
-  wire pin_8_hit2_carry__2_i_2_n_0;
-  wire pin_8_hit2_carry__2_i_3_n_0;
-  wire pin_8_hit2_carry__2_i_4_n_0;
-  wire pin_8_hit2_carry__2_n_1;
-  wire pin_8_hit2_carry__2_n_2;
-  wire pin_8_hit2_carry__2_n_3;
-  wire pin_8_hit2_carry_i_10_n_0;
-  wire pin_8_hit2_carry_i_1_n_0;
-  wire pin_8_hit2_carry_i_2_n_0;
-  wire pin_8_hit2_carry_i_3_n_0;
-  wire pin_8_hit2_carry_i_4_n_0;
-  wire pin_8_hit2_carry_i_5_n_0;
-  wire pin_8_hit2_carry_i_6_n_0;
-  wire pin_8_hit2_carry_i_7_n_0;
-  wire pin_8_hit2_carry_i_8_n_0;
-  wire pin_8_hit2_carry_i_9_n_1;
-  wire pin_8_hit2_carry_i_9_n_3;
-  wire pin_8_hit2_carry_i_9_n_6;
-  wire pin_8_hit2_carry_i_9_n_7;
-  wire pin_8_hit2_carry_n_0;
-  wire pin_8_hit2_carry_n_1;
-  wire pin_8_hit2_carry_n_2;
-  wire pin_8_hit2_carry_n_3;
   wire pin_8_hit_i_10_n_0;
   wire pin_8_hit_i_11_n_0;
   wire pin_8_hit_i_12_n_0;
   wire pin_8_hit_i_13_n_0;
   wire pin_8_hit_i_15_n_0;
+  wire pin_8_hit_i_16_n_0;
   wire pin_8_hit_i_17_n_0;
   wire pin_8_hit_i_18_n_0;
-  wire pin_8_hit_i_19_n_0;
   wire pin_8_hit_i_1_n_0;
   wire pin_8_hit_i_20_n_0;
   wire pin_8_hit_i_21_n_0;
   wire pin_8_hit_i_22_n_0;
   wire pin_8_hit_i_23_n_0;
   wire pin_8_hit_i_24_n_0;
+  wire pin_8_hit_i_25_n_0;
   wire pin_8_hit_i_26_n_0;
   wire pin_8_hit_i_27_n_0;
-  wire pin_8_hit_i_28_n_0;
   wire pin_8_hit_i_29_n_0;
-  wire pin_8_hit_i_2_n_0;
+  wire pin_8_hit_i_30_n_0;
   wire pin_8_hit_i_31_n_0;
   wire pin_8_hit_i_32_n_0;
-  wire pin_8_hit_i_33_n_0;
   wire pin_8_hit_i_34_n_0;
   wire pin_8_hit_i_35_n_0;
   wire pin_8_hit_i_36_n_0;
   wire pin_8_hit_i_37_n_0;
   wire pin_8_hit_i_38_n_0;
+  wire pin_8_hit_i_39_n_0;
   wire pin_8_hit_i_40_n_0;
   wire pin_8_hit_i_41_n_0;
-  wire pin_8_hit_i_42_n_0;
   wire pin_8_hit_i_43_n_0;
   wire pin_8_hit_i_44_n_0;
   wire pin_8_hit_i_45_n_0;
@@ -2273,6 +2469,14 @@ module bowling_game_controller_0_0_controller
   wire pin_8_hit_i_53_n_0;
   wire pin_8_hit_i_54_n_0;
   wire pin_8_hit_i_55_n_0;
+  wire pin_8_hit_i_56_n_0;
+  wire pin_8_hit_i_57_n_0;
+  wire pin_8_hit_i_58_n_0;
+  wire pin_8_hit_i_59_n_0;
+  wire pin_8_hit_i_60_n_0;
+  wire pin_8_hit_i_61_n_0;
+  wire pin_8_hit_i_62_n_0;
+  wire pin_8_hit_i_63_n_0;
   wire pin_8_hit_i_6_n_0;
   wire pin_8_hit_i_7_n_0;
   wire pin_8_hit_i_8_n_0;
@@ -2281,116 +2485,43 @@ module bowling_game_controller_0_0_controller
   wire pin_8_hit_reg_i_14_n_1;
   wire pin_8_hit_reg_i_14_n_2;
   wire pin_8_hit_reg_i_14_n_3;
-  wire pin_8_hit_reg_i_16_n_0;
-  wire pin_8_hit_reg_i_16_n_1;
-  wire pin_8_hit_reg_i_16_n_2;
-  wire pin_8_hit_reg_i_16_n_3;
-  wire pin_8_hit_reg_i_25_n_0;
-  wire pin_8_hit_reg_i_25_n_1;
-  wire pin_8_hit_reg_i_25_n_2;
-  wire pin_8_hit_reg_i_25_n_3;
-  wire pin_8_hit_reg_i_30_n_0;
-  wire pin_8_hit_reg_i_30_n_1;
-  wire pin_8_hit_reg_i_30_n_2;
-  wire pin_8_hit_reg_i_30_n_3;
-  wire pin_8_hit_reg_i_39_n_0;
-  wire pin_8_hit_reg_i_39_n_1;
-  wire pin_8_hit_reg_i_39_n_2;
-  wire pin_8_hit_reg_i_39_n_3;
+  wire pin_8_hit_reg_i_19_n_0;
+  wire pin_8_hit_reg_i_19_n_1;
+  wire pin_8_hit_reg_i_19_n_2;
+  wire pin_8_hit_reg_i_19_n_3;
+  wire pin_8_hit_reg_i_28_n_0;
+  wire pin_8_hit_reg_i_28_n_1;
+  wire pin_8_hit_reg_i_28_n_2;
+  wire pin_8_hit_reg_i_28_n_3;
+  wire pin_8_hit_reg_i_33_n_0;
+  wire pin_8_hit_reg_i_33_n_1;
+  wire pin_8_hit_reg_i_33_n_2;
+  wire pin_8_hit_reg_i_33_n_3;
   wire pin_8_hit_reg_i_3_n_1;
   wire pin_8_hit_reg_i_3_n_2;
   wire pin_8_hit_reg_i_3_n_3;
+  wire pin_8_hit_reg_i_42_n_0;
+  wire pin_8_hit_reg_i_42_n_1;
+  wire pin_8_hit_reg_i_42_n_2;
+  wire pin_8_hit_reg_i_42_n_3;
+  wire pin_8_hit_reg_i_4_n_1;
+  wire pin_8_hit_reg_i_4_n_2;
+  wire pin_8_hit_reg_i_4_n_3;
   wire pin_8_hit_reg_i_5_n_0;
   wire pin_8_hit_reg_i_5_n_1;
   wire pin_8_hit_reg_i_5_n_2;
   wire pin_8_hit_reg_i_5_n_3;
   wire pin_8_hit_reg_n_0;
-  wire pin_9_hit1;
-  wire pin_9_hit2;
-  wire pin_9_hit_i_10_n_0;
-  wire pin_9_hit_i_11_n_0;
-  wire pin_9_hit_i_12_n_0;
-  wire pin_9_hit_i_14_n_0;
-  wire pin_9_hit_i_15_n_0;
-  wire pin_9_hit_i_16_n_0;
-  wire pin_9_hit_i_18_n_0;
-  wire pin_9_hit_i_19_n_0;
   wire pin_9_hit_i_1_n_0;
-  wire pin_9_hit_i_20_n_0;
-  wire pin_9_hit_i_21_n_0;
-  wire pin_9_hit_i_22_n_0;
-  wire pin_9_hit_i_23_n_0;
-  wire pin_9_hit_i_24_n_0;
-  wire pin_9_hit_i_25_n_0;
-  wire pin_9_hit_i_27_n_0;
-  wire pin_9_hit_i_28_n_0;
-  wire pin_9_hit_i_29_n_0;
-  wire pin_9_hit_i_30_n_0;
-  wire pin_9_hit_i_32_n_0;
-  wire pin_9_hit_i_33_n_0;
-  wire pin_9_hit_i_34_n_0;
-  wire pin_9_hit_i_35_n_0;
-  wire pin_9_hit_i_36_n_0;
-  wire pin_9_hit_i_37_n_0;
-  wire pin_9_hit_i_38_n_0;
-  wire pin_9_hit_i_39_n_0;
-  wire pin_9_hit_i_41_n_0;
-  wire pin_9_hit_i_42_n_0;
-  wire pin_9_hit_i_43_n_0;
-  wire pin_9_hit_i_44_n_0;
-  wire pin_9_hit_i_45_n_0;
-  wire pin_9_hit_i_46_n_0;
-  wire pin_9_hit_i_47_n_0;
-  wire pin_9_hit_i_48_n_0;
-  wire pin_9_hit_i_49_n_0;
-  wire pin_9_hit_i_50_n_0;
-  wire pin_9_hit_i_51_n_0;
-  wire pin_9_hit_i_52_n_0;
-  wire pin_9_hit_i_53_n_0;
-  wire pin_9_hit_i_54_n_0;
-  wire pin_9_hit_i_55_n_0;
-  wire pin_9_hit_i_56_n_0;
-  wire pin_9_hit_i_5_n_0;
-  wire pin_9_hit_i_6_n_0;
-  wire pin_9_hit_i_7_n_0;
-  wire pin_9_hit_i_8_n_0;
-  wire pin_9_hit_i_9_n_0;
-  wire pin_9_hit_reg_i_13_n_0;
-  wire pin_9_hit_reg_i_13_n_1;
-  wire pin_9_hit_reg_i_13_n_2;
-  wire pin_9_hit_reg_i_13_n_3;
-  wire pin_9_hit_reg_i_17_n_0;
-  wire pin_9_hit_reg_i_17_n_1;
-  wire pin_9_hit_reg_i_17_n_2;
-  wire pin_9_hit_reg_i_17_n_3;
-  wire pin_9_hit_reg_i_26_n_0;
-  wire pin_9_hit_reg_i_26_n_1;
-  wire pin_9_hit_reg_i_26_n_2;
-  wire pin_9_hit_reg_i_26_n_3;
-  wire pin_9_hit_reg_i_2_n_1;
-  wire pin_9_hit_reg_i_2_n_2;
-  wire pin_9_hit_reg_i_2_n_3;
-  wire pin_9_hit_reg_i_31_n_0;
-  wire pin_9_hit_reg_i_31_n_1;
-  wire pin_9_hit_reg_i_31_n_2;
-  wire pin_9_hit_reg_i_31_n_3;
-  wire pin_9_hit_reg_i_3_n_2;
-  wire pin_9_hit_reg_i_3_n_3;
-  wire pin_9_hit_reg_i_40_n_0;
-  wire pin_9_hit_reg_i_40_n_1;
-  wire pin_9_hit_reg_i_40_n_2;
-  wire pin_9_hit_reg_i_40_n_3;
-  wire pin_9_hit_reg_i_4_n_0;
-  wire pin_9_hit_reg_i_4_n_1;
-  wire pin_9_hit_reg_i_4_n_2;
-  wire pin_9_hit_reg_i_4_n_3;
+  wire pin_9_hit_i_2_n_0;
   wire pin_9_hit_reg_n_0;
-  wire [1:1]\pin_bowling[0,0]__5 ;
+  wire [1:1]\pin_bowling[0,0] ;
   wire [17:5]pixel_loc;
   wire pixel_x;
   wire \pixel_x[5]_i_2_n_0 ;
-  wire \pixel_x[6]_i_2_n_0 ;
-  wire \pixel_x[6]_i_3_n_0 ;
+  wire \pixel_x[7]_i_2_n_0 ;
+  wire \pixel_x[7]_i_3_n_0 ;
+  wire \pixel_x[7]_i_4_n_0 ;
   wire \pixel_x[8]_i_2_n_0 ;
   wire \pixel_x_reg_n_0_[0] ;
   wire \pixel_x_reg_n_0_[1] ;
@@ -2402,20 +2533,262 @@ module bowling_game_controller_0_0_controller
   wire \pixel_x_reg_n_0_[7] ;
   wire \pixel_x_reg_n_0_[8] ;
   wire pixel_y;
-  wire \pixel_y[5]_i_2_n_0 ;
+  wire \pixel_y[7]_i_2_n_0 ;
   wire \pixel_y[8]_i_3_n_0 ;
-  wire [8:0]pixel_y_reg;
+  wire \pixel_y[8]_i_4_n_0 ;
+  wire \pixel_y[8]_i_5_n_0 ;
+  wire [4:0]pixel_y_reg;
+  wire [8:5]pixel_y_reg__0;
   wire railing_up_i_1_n_0;
   wire railing_up_reg_n_0;
   wire right_in;
-  wire [3:0]NLW_ball_tilt_right1_carry_O_UNCONNECTED;
-  wire [3:0]NLW_ball_tilt_right1_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_ball_tilt_right1_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_ball_tilt_right1_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_ball_tilt_right_reg_i_11_O_UNCONNECTED;
+  wire [31:0]score;
+  wire score138_out;
+  wire score145_out;
+  wire score157_out;
+  wire score2;
+  wire score231_in;
+  wire score243_in;
+  wire score255_in;
+  wire score3;
+  wire score330_in;
+  wire score342_in;
+  wire score354_in;
+  wire score4;
+  wire score421_in;
+  wire score426_in;
+  wire score427_in;
+  wire score429_in;
+  wire score432_in;
+  wire score436_in;
+  wire score437_in;
+  wire score439_in;
+  wire score440_in;
+  wire score446_in;
+  wire score447_in;
+  wire score451_in;
+  wire score452_in;
+  wire \score[0]_i_1_n_0 ;
+  wire \score[10]_i_1_n_0 ;
+  wire \score[11]_i_1_n_0 ;
+  wire \score[12]_i_1_n_0 ;
+  wire \score[13]_i_1_n_0 ;
+  wire \score[14]_i_1_n_0 ;
+  wire \score[15]_i_1_n_0 ;
+  wire \score[16]_i_1_n_0 ;
+  wire \score[17]_i_1_n_0 ;
+  wire \score[18]_i_1_n_0 ;
+  wire \score[19]_i_1_n_0 ;
+  wire \score[1]_i_1_n_0 ;
+  wire \score[20]_i_1_n_0 ;
+  wire \score[21]_i_1_n_0 ;
+  wire \score[22]_i_1_n_0 ;
+  wire \score[23]_i_1_n_0 ;
+  wire \score[24]_i_1_n_0 ;
+  wire \score[25]_i_1_n_0 ;
+  wire \score[26]_i_1_n_0 ;
+  wire \score[27]_i_1_n_0 ;
+  wire \score[28]_i_1_n_0 ;
+  wire \score[29]_i_1_n_0 ;
+  wire \score[2]_i_1_n_0 ;
+  wire \score[30]_i_1_n_0 ;
+  wire \score[31]_i_1_n_0 ;
+  wire \score[31]_i_2_n_0 ;
+  wire \score[31]_i_3_n_0 ;
+  wire \score[3]_i_10_n_0 ;
+  wire \score[3]_i_11_n_0 ;
+  wire \score[3]_i_12_n_0 ;
+  wire \score[3]_i_13_n_0 ;
+  wire \score[3]_i_14_n_0 ;
+  wire \score[3]_i_15_n_0 ;
+  wire \score[3]_i_16_n_0 ;
+  wire \score[3]_i_17_n_0 ;
+  wire \score[3]_i_18_n_0 ;
+  wire \score[3]_i_19_n_0 ;
+  wire \score[3]_i_1_n_0 ;
+  wire \score[3]_i_20_n_0 ;
+  wire \score[3]_i_21_n_0 ;
+  wire \score[3]_i_22_n_0 ;
+  wire \score[3]_i_23_n_0 ;
+  wire \score[3]_i_24_n_0 ;
+  wire \score[3]_i_25_n_0 ;
+  wire \score[3]_i_26_n_0 ;
+  wire \score[3]_i_4_n_0 ;
+  wire \score[3]_i_5_n_0 ;
+  wire \score[3]_i_6_n_0 ;
+  wire \score[3]_i_7_n_0 ;
+  wire \score[3]_i_9_n_0 ;
+  wire \score[4]_i_1_n_0 ;
+  wire \score[5]_i_1_n_0 ;
+  wire \score[6]_i_1_n_0 ;
+  wire \score[7]_i_1_n_0 ;
+  wire \score[8]_i_1_n_0 ;
+  wire \score[9]_i_1_n_0 ;
+  wire \score_reg[11]_i_2_n_0 ;
+  wire \score_reg[11]_i_2_n_1 ;
+  wire \score_reg[11]_i_2_n_2 ;
+  wire \score_reg[11]_i_2_n_3 ;
+  wire \score_reg[11]_i_3_n_0 ;
+  wire \score_reg[11]_i_3_n_1 ;
+  wire \score_reg[11]_i_3_n_2 ;
+  wire \score_reg[11]_i_3_n_3 ;
+  wire \score_reg[11]_i_3_n_4 ;
+  wire \score_reg[11]_i_3_n_5 ;
+  wire \score_reg[11]_i_3_n_6 ;
+  wire \score_reg[11]_i_3_n_7 ;
+  wire \score_reg[11]_i_4_n_0 ;
+  wire \score_reg[11]_i_4_n_1 ;
+  wire \score_reg[11]_i_4_n_2 ;
+  wire \score_reg[11]_i_4_n_3 ;
+  wire \score_reg[11]_i_4_n_4 ;
+  wire \score_reg[11]_i_4_n_5 ;
+  wire \score_reg[11]_i_4_n_6 ;
+  wire \score_reg[11]_i_4_n_7 ;
+  wire \score_reg[15]_i_2_n_0 ;
+  wire \score_reg[15]_i_2_n_1 ;
+  wire \score_reg[15]_i_2_n_2 ;
+  wire \score_reg[15]_i_2_n_3 ;
+  wire \score_reg[15]_i_3_n_0 ;
+  wire \score_reg[15]_i_3_n_1 ;
+  wire \score_reg[15]_i_3_n_2 ;
+  wire \score_reg[15]_i_3_n_3 ;
+  wire \score_reg[15]_i_3_n_4 ;
+  wire \score_reg[15]_i_3_n_5 ;
+  wire \score_reg[15]_i_3_n_6 ;
+  wire \score_reg[15]_i_3_n_7 ;
+  wire \score_reg[15]_i_4_n_0 ;
+  wire \score_reg[15]_i_4_n_1 ;
+  wire \score_reg[15]_i_4_n_2 ;
+  wire \score_reg[15]_i_4_n_3 ;
+  wire \score_reg[15]_i_4_n_4 ;
+  wire \score_reg[15]_i_4_n_5 ;
+  wire \score_reg[15]_i_4_n_6 ;
+  wire \score_reg[15]_i_4_n_7 ;
+  wire \score_reg[19]_i_2_n_0 ;
+  wire \score_reg[19]_i_2_n_1 ;
+  wire \score_reg[19]_i_2_n_2 ;
+  wire \score_reg[19]_i_2_n_3 ;
+  wire \score_reg[19]_i_3_n_0 ;
+  wire \score_reg[19]_i_3_n_1 ;
+  wire \score_reg[19]_i_3_n_2 ;
+  wire \score_reg[19]_i_3_n_3 ;
+  wire \score_reg[19]_i_3_n_4 ;
+  wire \score_reg[19]_i_3_n_5 ;
+  wire \score_reg[19]_i_3_n_6 ;
+  wire \score_reg[19]_i_3_n_7 ;
+  wire \score_reg[19]_i_4_n_0 ;
+  wire \score_reg[19]_i_4_n_1 ;
+  wire \score_reg[19]_i_4_n_2 ;
+  wire \score_reg[19]_i_4_n_3 ;
+  wire \score_reg[19]_i_4_n_4 ;
+  wire \score_reg[19]_i_4_n_5 ;
+  wire \score_reg[19]_i_4_n_6 ;
+  wire \score_reg[19]_i_4_n_7 ;
+  wire \score_reg[23]_i_2_n_0 ;
+  wire \score_reg[23]_i_2_n_1 ;
+  wire \score_reg[23]_i_2_n_2 ;
+  wire \score_reg[23]_i_2_n_3 ;
+  wire \score_reg[23]_i_3_n_0 ;
+  wire \score_reg[23]_i_3_n_1 ;
+  wire \score_reg[23]_i_3_n_2 ;
+  wire \score_reg[23]_i_3_n_3 ;
+  wire \score_reg[23]_i_3_n_4 ;
+  wire \score_reg[23]_i_3_n_5 ;
+  wire \score_reg[23]_i_3_n_6 ;
+  wire \score_reg[23]_i_3_n_7 ;
+  wire \score_reg[23]_i_4_n_0 ;
+  wire \score_reg[23]_i_4_n_1 ;
+  wire \score_reg[23]_i_4_n_2 ;
+  wire \score_reg[23]_i_4_n_3 ;
+  wire \score_reg[23]_i_4_n_4 ;
+  wire \score_reg[23]_i_4_n_5 ;
+  wire \score_reg[23]_i_4_n_6 ;
+  wire \score_reg[23]_i_4_n_7 ;
+  wire \score_reg[27]_i_2_n_0 ;
+  wire \score_reg[27]_i_2_n_1 ;
+  wire \score_reg[27]_i_2_n_2 ;
+  wire \score_reg[27]_i_2_n_3 ;
+  wire \score_reg[27]_i_3_n_0 ;
+  wire \score_reg[27]_i_3_n_1 ;
+  wire \score_reg[27]_i_3_n_2 ;
+  wire \score_reg[27]_i_3_n_3 ;
+  wire \score_reg[27]_i_3_n_4 ;
+  wire \score_reg[27]_i_3_n_5 ;
+  wire \score_reg[27]_i_3_n_6 ;
+  wire \score_reg[27]_i_3_n_7 ;
+  wire \score_reg[27]_i_4_n_0 ;
+  wire \score_reg[27]_i_4_n_1 ;
+  wire \score_reg[27]_i_4_n_2 ;
+  wire \score_reg[27]_i_4_n_3 ;
+  wire \score_reg[27]_i_4_n_4 ;
+  wire \score_reg[27]_i_4_n_5 ;
+  wire \score_reg[27]_i_4_n_6 ;
+  wire \score_reg[27]_i_4_n_7 ;
+  wire \score_reg[31]_i_4_n_1 ;
+  wire \score_reg[31]_i_4_n_2 ;
+  wire \score_reg[31]_i_4_n_3 ;
+  wire \score_reg[31]_i_5_n_1 ;
+  wire \score_reg[31]_i_5_n_2 ;
+  wire \score_reg[31]_i_5_n_3 ;
+  wire \score_reg[31]_i_5_n_4 ;
+  wire \score_reg[31]_i_5_n_5 ;
+  wire \score_reg[31]_i_5_n_6 ;
+  wire \score_reg[31]_i_5_n_7 ;
+  wire \score_reg[31]_i_6_n_1 ;
+  wire \score_reg[31]_i_6_n_2 ;
+  wire \score_reg[31]_i_6_n_3 ;
+  wire \score_reg[31]_i_6_n_4 ;
+  wire \score_reg[31]_i_6_n_5 ;
+  wire \score_reg[31]_i_6_n_6 ;
+  wire \score_reg[31]_i_6_n_7 ;
+  wire \score_reg[3]_i_2_n_0 ;
+  wire \score_reg[3]_i_2_n_1 ;
+  wire \score_reg[3]_i_2_n_2 ;
+  wire \score_reg[3]_i_2_n_3 ;
+  wire \score_reg[3]_i_3_n_0 ;
+  wire \score_reg[3]_i_3_n_1 ;
+  wire \score_reg[3]_i_3_n_2 ;
+  wire \score_reg[3]_i_3_n_3 ;
+  wire \score_reg[3]_i_3_n_4 ;
+  wire \score_reg[3]_i_3_n_5 ;
+  wire \score_reg[3]_i_3_n_6 ;
+  wire \score_reg[3]_i_3_n_7 ;
+  wire \score_reg[3]_i_8_n_0 ;
+  wire \score_reg[3]_i_8_n_1 ;
+  wire \score_reg[3]_i_8_n_2 ;
+  wire \score_reg[3]_i_8_n_3 ;
+  wire \score_reg[3]_i_8_n_4 ;
+  wire \score_reg[3]_i_8_n_5 ;
+  wire \score_reg[3]_i_8_n_6 ;
+  wire \score_reg[3]_i_8_n_7 ;
+  wire \score_reg[7]_i_2_n_0 ;
+  wire \score_reg[7]_i_2_n_1 ;
+  wire \score_reg[7]_i_2_n_2 ;
+  wire \score_reg[7]_i_2_n_3 ;
+  wire \score_reg[7]_i_3_n_0 ;
+  wire \score_reg[7]_i_3_n_1 ;
+  wire \score_reg[7]_i_3_n_2 ;
+  wire \score_reg[7]_i_3_n_3 ;
+  wire \score_reg[7]_i_3_n_4 ;
+  wire \score_reg[7]_i_3_n_5 ;
+  wire \score_reg[7]_i_3_n_6 ;
+  wire \score_reg[7]_i_3_n_7 ;
+  wire \score_reg[7]_i_4_n_0 ;
+  wire \score_reg[7]_i_4_n_1 ;
+  wire \score_reg[7]_i_4_n_2 ;
+  wire \score_reg[7]_i_4_n_3 ;
+  wire \score_reg[7]_i_4_n_4 ;
+  wire \score_reg[7]_i_4_n_5 ;
+  wire \score_reg[7]_i_4_n_6 ;
+  wire \score_reg[7]_i_4_n_7 ;
   wire [3:0]NLW_ball_tilt_right_reg_i_16_O_UNCONNECTED;
+  wire [3:0]NLW_ball_tilt_right_reg_i_21_O_UNCONNECTED;
+  wire [3:0]NLW_ball_tilt_right_reg_i_30_O_UNCONNECTED;
+  wire [3:0]NLW_ball_tilt_right_reg_i_35_O_UNCONNECTED;
+  wire [3:0]NLW_ball_tilt_right_reg_i_43_O_UNCONNECTED;
   wire [3:0]NLW_ball_tilt_right_reg_i_5_O_UNCONNECTED;
   wire [3:0]NLW_ball_tilt_right_reg_i_6_O_UNCONNECTED;
+  wire [3:0]NLW_ball_tilt_right_reg_i_7_O_UNCONNECTED;
   wire [3:2]\NLW_bowling_ball_location_x_reg[31]_i_11_CO_UNCONNECTED ;
   wire [3:3]\NLW_bowling_ball_location_x_reg[31]_i_11_O_UNCONNECTED ;
   wire [3:0]\NLW_bowling_ball_location_x_reg[31]_i_12_O_UNCONNECTED ;
@@ -2440,76 +2813,100 @@ module bowling_game_controller_0_0_controller
   wire [3:2]\NLW_fb_addr_reg[17]_i_4_O_UNCONNECTED ;
   wire [3:3]\NLW_fb_addr_reg[17]_i_5_CO_UNCONNECTED ;
   wire [0:0]\NLW_fb_addr_reg[8]_i_2_O_UNCONNECTED ;
-  wire [3:0]NLW_fb_pixel2_carry_O_UNCONNECTED;
-  wire [3:0]NLW_fb_pixel2_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_fb_pixel2_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_fb_pixel2_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_fb_pixel3_carry_O_UNCONNECTED;
-  wire [3:1]NLW_fb_pixel3_carry__0_CO_UNCONNECTED;
-  wire [3:0]NLW_fb_pixel3_carry__0_O_UNCONNECTED;
-  wire [3:0]\NLW_fb_pixel3_inferred__0/i__carry_O_UNCONNECTED ;
-  wire [3:1]\NLW_fb_pixel3_inferred__0/i__carry__0_CO_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__0/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__1/i__carry_O_UNCONNECTED ;
-  wire [3:1]\NLW_fb_pixel3_inferred__1/i__carry__0_CO_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__1/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__2/i__carry_O_UNCONNECTED ;
-  wire [3:1]\NLW_fb_pixel3_inferred__2/i__carry__0_CO_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__2/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__3/i__carry_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__3/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__3/i__carry__1_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel3_inferred__3/i__carry__2_O_UNCONNECTED ;
-  wire [3:0]NLW_fb_pixel4_carry_O_UNCONNECTED;
-  wire [3:1]NLW_fb_pixel4_carry__0_CO_UNCONNECTED;
-  wire [3:0]NLW_fb_pixel4_carry__0_O_UNCONNECTED;
-  wire [3:0]\NLW_fb_pixel4_inferred__0/i__carry_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__1/i__carry_O_UNCONNECTED ;
-  wire [3:1]\NLW_fb_pixel4_inferred__1/i__carry__0_CO_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__1/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__2/i__carry_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__4/i__carry_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__4/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__4/i__carry__1_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__4/i__carry__2_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__5/i__carry_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__5/i__carry__0_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__5/i__carry__1_O_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel4_inferred__5/i__carry__2_O_UNCONNECTED ;
-  wire [2:2]\NLW_fb_pixel5_inferred__0/i__carry_CO_UNCONNECTED ;
-  wire [3:0]\NLW_fb_pixel5_inferred__0/i__carry_O_UNCONNECTED ;
-  wire [3:2]NLW_i__carry__2_i_9_CO_UNCONNECTED;
-  wire [3:3]NLW_i__carry__2_i_9_O_UNCONNECTED;
-  wire [3:2]NLW_i__carry_i_9__3_CO_UNCONNECTED;
-  wire [3:3]NLW_i__carry_i_9__3_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit1_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit1_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit1_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit1_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit2_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit2_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit2_carry__1_O_UNCONNECTED;
-  wire [3:3]NLW_pin_10_hit2_carry__2_CO_UNCONNECTED;
-  wire [3:0]NLW_pin_10_hit2_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit1_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit1_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit1_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit1_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit2_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit2_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit2_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit2_carry__2_O_UNCONNECTED;
-  wire [3:1]NLW_pin_1_hit2_carry_i_9_CO_UNCONNECTED;
-  wire [3:2]NLW_pin_1_hit2_carry_i_9_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_16_O_UNCONNECTED;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_108_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_109_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_109_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_131_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_136_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_141_O_UNCONNECTED ;
+  wire [3:2]\NLW_fb_pixel_reg[2]_i_150_CO_UNCONNECTED ;
+  wire [3:3]\NLW_fb_pixel_reg[2]_i_150_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_153_O_UNCONNECTED ;
+  wire [3:2]\NLW_fb_pixel_reg[2]_i_162_CO_UNCONNECTED ;
+  wire [3:3]\NLW_fb_pixel_reg[2]_i_162_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_173_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_178_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_18_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_181_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_189_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_189_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_19_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_190_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_190_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_20_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_200_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_209_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_21_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_215_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_221_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_232_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_268_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_270_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_273_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_273_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_274_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_274_O_UNCONNECTED ;
+  wire [2:2]\NLW_fb_pixel_reg[2]_i_275_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_275_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_320_CO_UNCONNECTED ;
+  wire [3:2]\NLW_fb_pixel_reg[2]_i_320_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_342_CO_UNCONNECTED ;
+  wire [3:2]\NLW_fb_pixel_reg[2]_i_342_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_60_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_65_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_70_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_79_O_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_89_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_90_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_90_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_93_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_93_O_UNCONNECTED ;
+  wire [3:1]\NLW_fb_pixel_reg[2]_i_94_CO_UNCONNECTED ;
+  wire [3:0]\NLW_fb_pixel_reg[2]_i_94_O_UNCONNECTED ;
+  wire [3:0]NLW_pin_10_hit_reg_i_18_O_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_23_O_UNCONNECTED;
+  wire [3:3]NLW_pin_10_hit_reg_i_3_CO_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_3_O_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_32_O_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_37_O_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_4_O_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_5_O_UNCONNECTED;
+  wire [3:0]NLW_pin_10_hit_reg_i_9_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_10_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_100_O_UNCONNECTED;
   wire [3:0]NLW_pin_1_hit_reg_i_19_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_28_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_33_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_4_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_42_O_UNCONNECTED;
-  wire [3:2]NLW_pin_1_hit_reg_i_5_CO_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_5_O_UNCONNECTED;
-  wire [3:0]NLW_pin_1_hit_reg_i_7_O_UNCONNECTED;
+  wire [3:3]NLW_pin_1_hit_reg_i_2_CO_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_2_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_20_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_22_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_27_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_3_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_36_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_45_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_50_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_55_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_6_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_64_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_73_O_UNCONNECTED;
+  wire [3:0]NLW_pin_1_hit_reg_i_91_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_16_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_21_O_UNCONNECTED;
+  wire [3:1]NLW_pin_2_hit_reg_i_3_CO_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_3_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_30_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_35_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_4_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_5_O_UNCONNECTED;
+  wire [3:0]NLW_pin_2_hit_reg_i_7_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_17_O_UNCONNECTED;
+  wire [3:3]NLW_pin_3_hit_reg_i_2_CO_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_2_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_22_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_3_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_31_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_36_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_4_O_UNCONNECTED;
+  wire [3:0]NLW_pin_3_hit_reg_i_8_O_UNCONNECTED;
   wire [3:0]NLW_pin_4_hit_reg_i_17_O_UNCONNECTED;
   wire [3:3]NLW_pin_4_hit_reg_i_2_CO_UNCONNECTED;
   wire [3:0]NLW_pin_4_hit_reg_i_2_O_UNCONNECTED;
@@ -2519,71 +2916,50 @@ module bowling_game_controller_0_0_controller
   wire [3:0]NLW_pin_4_hit_reg_i_36_O_UNCONNECTED;
   wire [3:0]NLW_pin_4_hit_reg_i_4_O_UNCONNECTED;
   wire [3:0]NLW_pin_4_hit_reg_i_8_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit1_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit1_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit1_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit1_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit2_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit2_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit2_carry__1_O_UNCONNECTED;
-  wire [3:3]NLW_pin_5_hit2_carry__2_CO_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit2_carry__2_O_UNCONNECTED;
-  wire [3:1]NLW_pin_5_hit2_carry_i_10_CO_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit2_carry_i_10_O_UNCONNECTED;
-  wire [3:1]NLW_pin_5_hit2_carry_i_9_CO_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit2_carry_i_9_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit3_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit3_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit3_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit3_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit_reg_i_14_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_12_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_21_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_25_O_UNCONNECTED;
   wire [3:0]NLW_pin_5_hit_reg_i_3_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_34_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_39_O_UNCONNECTED;
   wire [3:0]NLW_pin_5_hit_reg_i_4_O_UNCONNECTED;
-  wire [3:0]NLW_pin_5_hit_reg_i_9_O_UNCONNECTED;
-  wire [3:0]NLW_pin_6_hit_reg_i_18_O_UNCONNECTED;
-  wire [3:0]NLW_pin_6_hit_reg_i_2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_6_hit_reg_i_23_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_48_O_UNCONNECTED;
+  wire [3:3]NLW_pin_5_hit_reg_i_5_CO_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_5_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_53_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_6_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_62_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_67_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_7_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_76_O_UNCONNECTED;
+  wire [3:0]NLW_pin_5_hit_reg_i_81_O_UNCONNECTED;
+  wire [3:0]NLW_pin_6_hit_reg_i_10_O_UNCONNECTED;
+  wire [3:0]NLW_pin_6_hit_reg_i_19_O_UNCONNECTED;
+  wire [3:0]NLW_pin_6_hit_reg_i_24_O_UNCONNECTED;
   wire [3:0]NLW_pin_6_hit_reg_i_3_O_UNCONNECTED;
-  wire [3:0]NLW_pin_6_hit_reg_i_32_O_UNCONNECTED;
-  wire [3:0]NLW_pin_6_hit_reg_i_37_O_UNCONNECTED;
+  wire [3:0]NLW_pin_6_hit_reg_i_33_O_UNCONNECTED;
+  wire [3:0]NLW_pin_6_hit_reg_i_38_O_UNCONNECTED;
   wire [3:0]NLW_pin_6_hit_reg_i_4_O_UNCONNECTED;
-  wire [3:0]NLW_pin_6_hit_reg_i_9_O_UNCONNECTED;
-  wire [3:0]NLW_pin_7_hit_reg_i_18_O_UNCONNECTED;
-  wire [3:0]NLW_pin_7_hit_reg_i_2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_7_hit_reg_i_23_O_UNCONNECTED;
+  wire [3:0]NLW_pin_6_hit_reg_i_5_O_UNCONNECTED;
+  wire [3:0]NLW_pin_7_hit_reg_i_10_O_UNCONNECTED;
+  wire [3:0]NLW_pin_7_hit_reg_i_19_O_UNCONNECTED;
+  wire [3:0]NLW_pin_7_hit_reg_i_24_O_UNCONNECTED;
   wire [3:0]NLW_pin_7_hit_reg_i_3_O_UNCONNECTED;
-  wire [3:0]NLW_pin_7_hit_reg_i_32_O_UNCONNECTED;
-  wire [3:0]NLW_pin_7_hit_reg_i_38_O_UNCONNECTED;
+  wire [3:0]NLW_pin_7_hit_reg_i_33_O_UNCONNECTED;
+  wire [3:0]NLW_pin_7_hit_reg_i_39_O_UNCONNECTED;
   wire [3:0]NLW_pin_7_hit_reg_i_4_O_UNCONNECTED;
-  wire [3:0]NLW_pin_7_hit_reg_i_9_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit1_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit1_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit1_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit1_carry__2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit2_carry_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit2_carry__0_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit2_carry__1_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit2_carry__2_O_UNCONNECTED;
-  wire [3:1]NLW_pin_8_hit2_carry_i_9_CO_UNCONNECTED;
-  wire [3:2]NLW_pin_8_hit2_carry_i_9_O_UNCONNECTED;
+  wire [3:0]NLW_pin_7_hit_reg_i_5_O_UNCONNECTED;
   wire [3:0]NLW_pin_8_hit_reg_i_14_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit_reg_i_16_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit_reg_i_25_O_UNCONNECTED;
+  wire [3:0]NLW_pin_8_hit_reg_i_19_O_UNCONNECTED;
+  wire [3:0]NLW_pin_8_hit_reg_i_28_O_UNCONNECTED;
   wire [3:0]NLW_pin_8_hit_reg_i_3_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit_reg_i_30_O_UNCONNECTED;
-  wire [3:0]NLW_pin_8_hit_reg_i_39_O_UNCONNECTED;
-  wire [3:1]NLW_pin_8_hit_reg_i_4_CO_UNCONNECTED;
+  wire [3:0]NLW_pin_8_hit_reg_i_33_O_UNCONNECTED;
   wire [3:0]NLW_pin_8_hit_reg_i_4_O_UNCONNECTED;
+  wire [3:0]NLW_pin_8_hit_reg_i_42_O_UNCONNECTED;
   wire [3:0]NLW_pin_8_hit_reg_i_5_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_13_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_17_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_2_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_26_O_UNCONNECTED;
-  wire [3:3]NLW_pin_9_hit_reg_i_3_CO_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_3_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_31_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_4_O_UNCONNECTED;
-  wire [3:0]NLW_pin_9_hit_reg_i_40_O_UNCONNECTED;
+  wire [3:3]\NLW_score_reg[31]_i_4_CO_UNCONNECTED ;
+  wire [3:3]\NLW_score_reg[31]_i_5_CO_UNCONNECTED ;
+  wire [3:3]\NLW_score_reg[31]_i_6_CO_UNCONNECTED ;
 
   LUT5 #(
     .INIT(32'h22170617)) 
@@ -2592,9 +2968,9 @@ module bowling_game_controller_0_0_controller
         .I1(\FSM_onehot_curr_state_reg_n_0_[0] ),
         .I2(blank_time),
         .I3(pixel_x),
-        .I4(p_0_in_0),
+        .I4(p_0_in),
         .O(\FSM_onehot_curr_state[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'hCCC8FDC8)) 
     \FSM_onehot_curr_state[1]_i_1 
@@ -2602,9 +2978,9 @@ module bowling_game_controller_0_0_controller
         .I1(\FSM_onehot_curr_state_reg_n_0_[0] ),
         .I2(blank_time),
         .I3(pixel_x),
-        .I4(p_0_in_0),
+        .I4(p_0_in),
         .O(\FSM_onehot_curr_state[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'h11202020)) 
     \FSM_onehot_curr_state[2]_i_1 
@@ -2612,7 +2988,7 @@ module bowling_game_controller_0_0_controller
         .I1(\FSM_onehot_curr_state_reg_n_0_[0] ),
         .I2(blank_time),
         .I3(pixel_x),
-        .I4(p_0_in_0),
+        .I4(p_0_in),
         .O(\FSM_onehot_curr_state[2]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "wait_rst:0001,pix_out:0010,iSTATE:1000,wait_after_pix:0100" *) 
   FDRE #(
@@ -2641,24 +3017,41 @@ module bowling_game_controller_0_0_controller
         .D(\FSM_onehot_curr_state[2]_i_1_n_0 ),
         .Q(\FSM_onehot_curr_state_reg_n_0_[2] ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
     .INIT(32'hAEFFAEAE)) 
     \FSM_onehot_game_time[1]_i_1 
        (.I0(pin_1_location_y),
         .I1(\FSM_onehot_game_time_reg_n_0_[1] ),
-        .I2(game_time0__6),
-        .I3(game_time__45),
+        .I2(game_time0),
+        .I3(game_time),
         .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
         .O(\FSM_onehot_game_time[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT4 #(
-    .INIT(16'hF888)) 
+  LUT5 #(
+    .INIT(32'hAABABABA)) 
+    \FSM_onehot_game_time[1]_i_2 
+       (.I0(\FSM_onehot_game_time[1]_i_3_n_0 ),
+        .I1(joystick_y[6]),
+        .I2(joystick_trigger),
+        .I3(joystick_y[5]),
+        .I4(joystick_y[4]),
+        .O(game_time0));
+  LUT6 #(
+    .INIT(64'h00700070007000F0)) 
+    \FSM_onehot_game_time[1]_i_3 
+       (.I0(joystick_y[3]),
+        .I1(joystick_y[2]),
+        .I2(joystick_trigger),
+        .I3(joystick_y[6]),
+        .I4(joystick_y[0]),
+        .I5(joystick_y[1]),
+        .O(\FSM_onehot_game_time[1]_i_3_n_0 ));
+  LUT3 #(
+    .INIT(8'hF8)) 
     \FSM_onehot_game_time[2]_i_1 
-       (.I0(game_time__45),
-        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I2(game_time0__6),
-        .I3(\FSM_onehot_game_time_reg_n_0_[1] ),
+       (.I0(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I1(game_time),
+        .I2(\FSM_onehot_game_time[2]_i_3_n_0 ),
         .O(\FSM_onehot_game_time[2]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFEFFFEFE)) 
@@ -2669,16 +3062,14 @@ module bowling_game_controller_0_0_controller
         .I3(\bowling_ball_location_y_reg_n_0_[16] ),
         .I4(\bowling_ball_location_y_reg_n_0_[15] ),
         .I5(\FSM_onehot_game_time[2]_i_5_n_0 ),
-        .O(game_time__45));
-  LUT5 #(
-    .INIT(32'hAABABABA)) 
+        .O(game_time));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \FSM_onehot_game_time[2]_i_3 
-       (.I0(\FSM_onehot_game_time[2]_i_6_n_0 ),
-        .I1(joystick_y[6]),
-        .I2(joystick_trigger),
-        .I3(joystick_y[5]),
-        .I4(joystick_y[4]),
-        .O(game_time0__6));
+       (.I0(game_time0),
+        .I1(\FSM_onehot_game_time_reg_n_0_[1] ),
+        .O(\FSM_onehot_game_time[2]_i_3_n_0 ));
   LUT3 #(
     .INIT(8'hFE)) 
     \FSM_onehot_game_time[2]_i_4 
@@ -2686,7 +3077,7 @@ module bowling_game_controller_0_0_controller
         .I1(\bowling_ball_location_y_reg_n_0_[17] ),
         .I2(\bowling_ball_location_y_reg_n_0_[16] ),
         .O(\FSM_onehot_game_time[2]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \FSM_onehot_game_time[2]_i_5 
@@ -2694,16 +3085,6 @@ module bowling_game_controller_0_0_controller
         .I1(\bowling_ball_location_y_reg_n_0_[1] ),
         .I2(\bowling_ball_location_y_reg_n_0_[0] ),
         .O(\FSM_onehot_game_time[2]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h00700070007000F0)) 
-    \FSM_onehot_game_time[2]_i_6 
-       (.I0(joystick_y[3]),
-        .I1(joystick_y[2]),
-        .I2(joystick_trigger),
-        .I3(joystick_y[6]),
-        .I4(joystick_y[0]),
-        .I5(joystick_y[1]),
-        .O(\FSM_onehot_game_time[2]_i_6_n_0 ));
   (* FSM_ENCODED_STATES = "game_init:001,user_input:010,run_ball:100" *) 
   FDRE #(
     .INIT(1'b1)) 
@@ -2732,45 +3113,35 @@ module bowling_game_controller_0_0_controller
         .Q(\FSM_onehot_game_time_reg_n_0_[2] ),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hAAAABFFFAAAA8000)) 
+    .INIT(64'hAAAAFFBFAAAA0080)) 
     ball_tilt_left_i_1
        (.I0(ball_tilt_left_i_2_n_0),
-        .I1(game_time0__6),
-        .I2(ball_tilt_left_i_3_n_0),
-        .I3(bowling_ball_location_x116_in),
-        .I4(ball_tilt_right_i_4_n_0),
+        .I1(bowling_ball_location_x114_in),
+        .I2(\FSM_onehot_game_time[2]_i_3_n_0 ),
+        .I3(bowling_ball_location_x1),
+        .I4(ball_tilt_right_i_3_n_0),
         .I5(ball_tilt_left_reg_n_0),
         .O(ball_tilt_left_i_1_n_0));
   LUT6 #(
-    .INIT(64'hFFEAEAEAEAEAEAEA)) 
+    .INIT(64'hEAFFEAEAEAEAEAEA)) 
     ball_tilt_left_i_2
        (.I0(pin_1_location_y),
-        .I1(bowling_ball_location_x116_in),
-        .I2(\FSM_onehot_game_time_reg_n_0_[1] ),
-        .I3(pin_2_hit_i_3_n_0),
+        .I1(\FSM_onehot_game_time_reg_n_0_[1] ),
+        .I2(bowling_ball_location_x114_in),
+        .I3(\bowling_ball_location_y[31]_i_3_n_0 ),
         .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(ball_tilt_right1__15),
+        .I5(ball_tilt_right_reg_i_5_n_0),
         .O(ball_tilt_left_i_2_n_0));
-  LUT6 #(
-    .INIT(64'h222A2A2A2A2A2A2A)) 
-    ball_tilt_left_i_3
-       (.I0(\FSM_onehot_game_time_reg_n_0_[1] ),
-        .I1(joystick_x[6]),
-        .I2(joystick_x[5]),
-        .I3(joystick_x[3]),
-        .I4(joystick_x[4]),
-        .I5(joystick_x[2]),
-        .O(ball_tilt_left_i_3_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT5 #(
     .INIT(32'h000001FF)) 
-    ball_tilt_left_i_4
+    ball_tilt_left_i_3
        (.I0(joystick_x[2]),
         .I1(joystick_x[4]),
         .I2(joystick_x[3]),
         .I3(joystick_x[5]),
         .I4(joystick_x[6]),
-        .O(bowling_ball_location_x116_in));
+        .O(bowling_ball_location_x114_in));
   FDRE #(
     .INIT(1'b0)) 
     ball_tilt_left_reg
@@ -2779,370 +3150,339 @@ module bowling_game_controller_0_0_controller
         .D(ball_tilt_left_i_1_n_0),
         .Q(ball_tilt_left_reg_n_0),
         .R(1'b0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right1_carry
-       (.CI(1'b0),
-        .CO({ball_tilt_right1_carry_n_0,ball_tilt_right1_carry_n_1,ball_tilt_right1_carry_n_2,ball_tilt_right1_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({ball_tilt_right1_carry_i_1_n_0,ball_tilt_right1_carry_i_2_n_0,1'b0,ball_tilt_right1_carry_i_3_n_0}),
-        .O(NLW_ball_tilt_right1_carry_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right1_carry_i_4_n_0,ball_tilt_right1_carry_i_5_n_0,ball_tilt_right1_carry_i_6_n_0,ball_tilt_right1_carry_i_7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right1_carry__0
-       (.CI(ball_tilt_right1_carry_n_0),
-        .CO({ball_tilt_right1_carry__0_n_0,ball_tilt_right1_carry__0_n_1,ball_tilt_right1_carry__0_n_2,ball_tilt_right1_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({ball_tilt_right1_carry__0_i_1_n_0,ball_tilt_right1_carry__0_i_2_n_0,ball_tilt_right1_carry__0_i_3_n_0,\bowling_ball_location_x_reg_n_0_[9] }),
-        .O(NLW_ball_tilt_right1_carry__0_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right1_carry__0_i_4_n_0,ball_tilt_right1_carry__0_i_5_n_0,ball_tilt_right1_carry__0_i_6_n_0,ball_tilt_right1_carry__0_i_7_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__0_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
-        .O(ball_tilt_right1_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__0_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
-        .O(ball_tilt_right1_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__0_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
-        .O(ball_tilt_right1_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__0_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(ball_tilt_right1_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__0_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
-        .O(ball_tilt_right1_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__0_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
-        .O(ball_tilt_right1_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    ball_tilt_right1_carry__0_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(ball_tilt_right1_carry__0_i_7_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right1_carry__1
-       (.CI(ball_tilt_right1_carry__0_n_0),
-        .CO({ball_tilt_right1_carry__1_n_0,ball_tilt_right1_carry__1_n_1,ball_tilt_right1_carry__1_n_2,ball_tilt_right1_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({ball_tilt_right1_carry__1_i_1_n_0,ball_tilt_right1_carry__1_i_2_n_0,ball_tilt_right1_carry__1_i_3_n_0,ball_tilt_right1_carry__1_i_4_n_0}),
-        .O(NLW_ball_tilt_right1_carry__1_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right1_carry__1_i_5_n_0,ball_tilt_right1_carry__1_i_6_n_0,ball_tilt_right1_carry__1_i_7_n_0,ball_tilt_right1_carry__1_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__1_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
-        .O(ball_tilt_right1_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__1_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
-        .O(ball_tilt_right1_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__1_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
-        .O(ball_tilt_right1_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__1_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
-        .O(ball_tilt_right1_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__1_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(ball_tilt_right1_carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__1_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
-        .O(ball_tilt_right1_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__1_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
-        .O(ball_tilt_right1_carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__1_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(ball_tilt_right1_carry__1_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right1_carry__2
-       (.CI(ball_tilt_right1_carry__1_n_0),
-        .CO({ball_tilt_right1__15,ball_tilt_right1_carry__2_n_1,ball_tilt_right1_carry__2_n_2,ball_tilt_right1_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({ball_tilt_right1_carry__2_i_1_n_0,ball_tilt_right1_carry__2_i_2_n_0,ball_tilt_right1_carry__2_i_3_n_0,ball_tilt_right1_carry__2_i_4_n_0}),
-        .O(NLW_ball_tilt_right1_carry__2_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right1_carry__2_i_5_n_0,ball_tilt_right1_carry__2_i_6_n_0,ball_tilt_right1_carry__2_i_7_n_0,ball_tilt_right1_carry__2_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'h2)) 
-    ball_tilt_right1_carry__2_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
-        .O(ball_tilt_right1_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__2_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
-        .O(ball_tilt_right1_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__2_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
-        .O(ball_tilt_right1_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry__2_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
-        .O(ball_tilt_right1_carry__2_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__2_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(ball_tilt_right1_carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__2_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
-        .O(ball_tilt_right1_carry__2_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__2_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
-        .O(ball_tilt_right1_carry__2_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry__2_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(ball_tilt_right1_carry__2_i_8_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
-        .O(ball_tilt_right1_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    ball_tilt_right1_carry_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(ball_tilt_right1_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    ball_tilt_right1_carry_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
-        .O(ball_tilt_right1_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(ball_tilt_right1_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    ball_tilt_right1_carry_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(ball_tilt_right1_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    ball_tilt_right1_carry_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(ball_tilt_right1_carry_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    ball_tilt_right1_carry_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
-        .O(ball_tilt_right1_carry_i_7_n_0));
-  LUT6 #(
-    .INIT(64'hFFEEFFFFFFEEF000)) 
+  LUT5 #(
+    .INIT(32'hAABFAA80)) 
     ball_tilt_right_i_1
-       (.I0(pin_1_location_y),
-        .I1(ball_tilt_right_i_2_n_0),
-        .I2(game_time0__6),
+       (.I0(ball_tilt_right_i_2_n_0),
+        .I1(bowling_ball_location_x1),
+        .I2(\FSM_onehot_game_time[2]_i_3_n_0 ),
         .I3(ball_tilt_right_i_3_n_0),
-        .I4(ball_tilt_right_i_4_n_0),
-        .I5(ball_tilt_right_reg_n_0),
+        .I4(ball_tilt_right_reg_n_0),
         .O(ball_tilt_right_i_1_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     ball_tilt_right_i_10
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
         .O(ball_tilt_right_i_10_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    ball_tilt_right_i_11
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
+        .O(ball_tilt_right_i_11_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(ball_tilt_right_i_12_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_13
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(ball_tilt_right_i_13_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_14
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(ball_tilt_right_i_14_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(ball_tilt_right_i_15_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_17
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(ball_tilt_right_i_17_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_18
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(ball_tilt_right_i_18_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_19
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(ball_tilt_right_i_19_n_0));
-  LUT4 #(
-    .INIT(16'h0800)) 
+  LUT6 #(
+    .INIT(64'hEEEFEEEEEEEEEEEE)) 
     ball_tilt_right_i_2
-       (.I0(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I1(ball_tilt_right0),
-        .I2(ball_tilt_right1__15),
-        .I3(pin_2_hit_i_3_n_0),
+       (.I0(pin_1_location_y),
+        .I1(ball_tilt_right_i_4_n_0),
+        .I2(\bowling_ball_location_y[31]_i_3_n_0 ),
+        .I3(ball_tilt_right_reg_i_5_n_0),
+        .I4(ball_tilt_right0),
+        .I5(\FSM_onehot_game_time_reg_n_0_[2] ),
         .O(ball_tilt_right_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     ball_tilt_right_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(ball_tilt_right_i_20_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    ball_tilt_right_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .O(ball_tilt_right_i_21_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT2 #(
+    .INIT(4'hE)) 
     ball_tilt_right_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
         .O(ball_tilt_right_i_22_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT2 #(
+    .INIT(4'hE)) 
     ball_tilt_right_i_23
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
         .O(ball_tilt_right_i_23_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT2 #(
+    .INIT(4'hE)) 
     ball_tilt_right_i_24
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
         .O(ball_tilt_right_i_24_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'hE)) 
     ball_tilt_right_i_25
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
         .O(ball_tilt_right_i_25_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     ball_tilt_right_i_26
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(ball_tilt_right_i_26_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     ball_tilt_right_i_27
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
         .O(ball_tilt_right_i_27_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     ball_tilt_right_i_28
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(ball_tilt_right_i_28_n_0));
-  LUT6 #(
-    .INIT(64'hA888888800000000)) 
-    ball_tilt_right_i_3
-       (.I0(joystick_x[6]),
-        .I1(joystick_x[5]),
-        .I2(joystick_x[3]),
-        .I3(joystick_x[4]),
-        .I4(joystick_x[2]),
-        .I5(\FSM_onehot_game_time_reg_n_0_[1] ),
-        .O(ball_tilt_right_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_29
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(ball_tilt_right_i_29_n_0));
   LUT5 #(
-    .INIT(32'hFFFFE000)) 
-    ball_tilt_right_i_4
-       (.I0(ball_tilt_right1__15),
-        .I1(ball_tilt_right0),
-        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+    .INIT(32'hFEAA0000)) 
+    ball_tilt_right_i_3
+       (.I0(\bowling_ball_location_y[31]_i_3_n_0 ),
+        .I1(ball_tilt_right_reg_i_5_n_0),
+        .I2(ball_tilt_right0),
         .I3(railing_up_reg_n_0),
-        .I4(pin_1_hit_i_6_n_0),
+        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(ball_tilt_right_i_3_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_31
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(ball_tilt_right_i_31_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_32
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(ball_tilt_right_i_32_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_33
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(ball_tilt_right_i_33_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_34
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(ball_tilt_right_i_34_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    ball_tilt_right_i_36
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+        .O(ball_tilt_right_i_36_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    ball_tilt_right_i_37
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+        .O(ball_tilt_right_i_37_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    ball_tilt_right_i_38
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+        .O(ball_tilt_right_i_38_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_39
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(ball_tilt_right_i_39_n_0));
+  LUT6 #(
+    .INIT(64'h8880808080808080)) 
+    ball_tilt_right_i_4
+       (.I0(\FSM_onehot_game_time_reg_n_0_[1] ),
+        .I1(joystick_x[6]),
+        .I2(joystick_x[5]),
+        .I3(joystick_x[3]),
+        .I4(joystick_x[4]),
+        .I5(joystick_x[2]),
         .O(ball_tilt_right_i_4_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    ball_tilt_right_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(ball_tilt_right_i_7_n_0));
+    ball_tilt_right_i_40
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(ball_tilt_right_i_40_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    ball_tilt_right_i_41
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(ball_tilt_right_i_41_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ball_tilt_right_i_42
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(ball_tilt_right_i_42_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_44
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(ball_tilt_right_i_44_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_45
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(ball_tilt_right_i_45_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_46
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(ball_tilt_right_i_46_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_47
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(ball_tilt_right_i_47_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    ball_tilt_right_i_48
+       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+        .O(ball_tilt_right_i_48_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    ball_tilt_right_i_49
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(ball_tilt_right_i_49_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    ball_tilt_right_i_50
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(ball_tilt_right_i_50_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_51
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(ball_tilt_right_i_51_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ball_tilt_right_i_52
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(ball_tilt_right_i_52_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    ball_tilt_right_i_53
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(ball_tilt_right_i_53_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    ball_tilt_right_i_54
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(ball_tilt_right_i_54_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    ball_tilt_right_i_55
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .O(ball_tilt_right_i_55_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    ball_tilt_right_i_56
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(ball_tilt_right_i_56_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    ball_tilt_right_i_57
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(ball_tilt_right_i_57_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    ball_tilt_right_i_58
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(ball_tilt_right_i_58_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ball_tilt_right_i_59
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(ball_tilt_right_i_59_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ball_tilt_right_i_60
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(ball_tilt_right_i_60_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ball_tilt_right_i_61
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .O(ball_tilt_right_i_61_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    ball_tilt_right_i_62
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(ball_tilt_right_i_62_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
     ball_tilt_right_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
         .O(ball_tilt_right_i_8_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     ball_tilt_right_i_9
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
         .O(ball_tilt_right_i_9_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3153,47 +3493,69 @@ module bowling_game_controller_0_0_controller
         .Q(ball_tilt_right_reg_n_0),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right_reg_i_11
-       (.CI(ball_tilt_right_reg_i_16_n_0),
-        .CO({ball_tilt_right_reg_i_11_n_0,ball_tilt_right_reg_i_11_n_1,ball_tilt_right_reg_i_11_n_2,ball_tilt_right_reg_i_11_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_ball_tilt_right_reg_i_11_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right_i_17_n_0,ball_tilt_right_i_18_n_0,ball_tilt_right_i_19_n_0,ball_tilt_right_i_20_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 ball_tilt_right_reg_i_16
-       (.CI(1'b0),
+       (.CI(ball_tilt_right_reg_i_30_n_0),
         .CO({ball_tilt_right_reg_i_16_n_0,ball_tilt_right_reg_i_16_n_1,ball_tilt_right_reg_i_16_n_2,ball_tilt_right_reg_i_16_n_3}),
         .CYINIT(1'b0),
-        .DI({ball_tilt_right_i_21_n_0,ball_tilt_right_i_22_n_0,ball_tilt_right_i_23_n_0,ball_tilt_right_i_24_n_0}),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_ball_tilt_right_reg_i_16_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right_i_25_n_0,ball_tilt_right_i_26_n_0,ball_tilt_right_i_27_n_0,ball_tilt_right_i_28_n_0}));
+        .S({ball_tilt_right_i_31_n_0,ball_tilt_right_i_32_n_0,ball_tilt_right_i_33_n_0,ball_tilt_right_i_34_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right_reg_i_5
-       (.CI(ball_tilt_right_reg_i_6_n_0),
-        .CO({ball_tilt_right0,ball_tilt_right_reg_i_5_n_1,ball_tilt_right_reg_i_5_n_2,ball_tilt_right_reg_i_5_n_3}),
+  CARRY4 ball_tilt_right_reg_i_21
+       (.CI(ball_tilt_right_reg_i_35_n_0),
+        .CO({ball_tilt_right_reg_i_21_n_0,ball_tilt_right_reg_i_21_n_1,ball_tilt_right_reg_i_21_n_2,ball_tilt_right_reg_i_21_n_3}),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
-        .O(NLW_ball_tilt_right_reg_i_5_O_UNCONNECTED[3:0]),
-        .S({ball_tilt_right_i_7_n_0,ball_tilt_right_i_8_n_0,ball_tilt_right_i_9_n_0,ball_tilt_right_i_10_n_0}));
+        .DI({ball_tilt_right_i_36_n_0,ball_tilt_right_i_37_n_0,ball_tilt_right_i_38_n_0,\bowling_ball_location_x_reg_n_0_[9] }),
+        .O(NLW_ball_tilt_right_reg_i_21_O_UNCONNECTED[3:0]),
+        .S({ball_tilt_right_i_39_n_0,ball_tilt_right_i_40_n_0,ball_tilt_right_i_41_n_0,ball_tilt_right_i_42_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 ball_tilt_right_reg_i_6
-       (.CI(ball_tilt_right_reg_i_11_n_0),
-        .CO({ball_tilt_right_reg_i_6_n_0,ball_tilt_right_reg_i_6_n_1,ball_tilt_right_reg_i_6_n_2,ball_tilt_right_reg_i_6_n_3}),
+  CARRY4 ball_tilt_right_reg_i_30
+       (.CI(ball_tilt_right_reg_i_43_n_0),
+        .CO({ball_tilt_right_reg_i_30_n_0,ball_tilt_right_reg_i_30_n_1,ball_tilt_right_reg_i_30_n_2,ball_tilt_right_reg_i_30_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_ball_tilt_right_reg_i_6_O_UNCONNECTED[3:0]),
+        .O(NLW_ball_tilt_right_reg_i_30_O_UNCONNECTED[3:0]),
+        .S({ball_tilt_right_i_44_n_0,ball_tilt_right_i_45_n_0,ball_tilt_right_i_46_n_0,ball_tilt_right_i_47_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 ball_tilt_right_reg_i_35
+       (.CI(1'b0),
+        .CO({ball_tilt_right_reg_i_35_n_0,ball_tilt_right_reg_i_35_n_1,ball_tilt_right_reg_i_35_n_2,ball_tilt_right_reg_i_35_n_3}),
+        .CYINIT(1'b0),
+        .DI({ball_tilt_right_i_48_n_0,ball_tilt_right_i_49_n_0,1'b0,ball_tilt_right_i_50_n_0}),
+        .O(NLW_ball_tilt_right_reg_i_35_O_UNCONNECTED[3:0]),
+        .S({ball_tilt_right_i_51_n_0,ball_tilt_right_i_52_n_0,ball_tilt_right_i_53_n_0,ball_tilt_right_i_54_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 ball_tilt_right_reg_i_43
+       (.CI(1'b0),
+        .CO({ball_tilt_right_reg_i_43_n_0,ball_tilt_right_reg_i_43_n_1,ball_tilt_right_reg_i_43_n_2,ball_tilt_right_reg_i_43_n_3}),
+        .CYINIT(1'b0),
+        .DI({ball_tilt_right_i_55_n_0,ball_tilt_right_i_56_n_0,ball_tilt_right_i_57_n_0,ball_tilt_right_i_58_n_0}),
+        .O(NLW_ball_tilt_right_reg_i_43_O_UNCONNECTED[3:0]),
+        .S({ball_tilt_right_i_59_n_0,ball_tilt_right_i_60_n_0,ball_tilt_right_i_61_n_0,ball_tilt_right_i_62_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 ball_tilt_right_reg_i_5
+       (.CI(ball_tilt_right_reg_i_7_n_0),
+        .CO({ball_tilt_right_reg_i_5_n_0,ball_tilt_right_reg_i_5_n_1,ball_tilt_right_reg_i_5_n_2,ball_tilt_right_reg_i_5_n_3}),
+        .CYINIT(1'b0),
+        .DI({ball_tilt_right_i_8_n_0,ball_tilt_right_i_9_n_0,ball_tilt_right_i_10_n_0,ball_tilt_right_i_11_n_0}),
+        .O(NLW_ball_tilt_right_reg_i_5_O_UNCONNECTED[3:0]),
         .S({ball_tilt_right_i_12_n_0,ball_tilt_right_i_13_n_0,ball_tilt_right_i_14_n_0,ball_tilt_right_i_15_n_0}));
-  LUT6 #(
-    .INIT(64'h140000000041FFFF)) 
-    \bowling_ball[0,1]/i_ 
-       (.I0(i__i_1_n_0),
-        .I1(pixel_y_reg[0]),
-        .I2(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I3(i__i_2_n_0),
-        .I4(i__i_3_n_0),
-        .I5(i__i_4_n_0),
-        .O(\bowling_ball[0,1]/i__n_0 ));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 ball_tilt_right_reg_i_6
+       (.CI(ball_tilt_right_reg_i_16_n_0),
+        .CO({ball_tilt_right0,ball_tilt_right_reg_i_6_n_1,ball_tilt_right_reg_i_6_n_2,ball_tilt_right_reg_i_6_n_3}),
+        .CYINIT(1'b0),
+        .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
+        .O(NLW_ball_tilt_right_reg_i_6_O_UNCONNECTED[3:0]),
+        .S({ball_tilt_right_i_17_n_0,ball_tilt_right_i_18_n_0,ball_tilt_right_i_19_n_0,ball_tilt_right_i_20_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 ball_tilt_right_reg_i_7
+       (.CI(ball_tilt_right_reg_i_21_n_0),
+        .CO({ball_tilt_right_reg_i_7_n_0,ball_tilt_right_reg_i_7_n_1,ball_tilt_right_reg_i_7_n_2,ball_tilt_right_reg_i_7_n_3}),
+        .CYINIT(1'b0),
+        .DI({ball_tilt_right_i_22_n_0,ball_tilt_right_i_23_n_0,ball_tilt_right_i_24_n_0,ball_tilt_right_i_25_n_0}),
+        .O(NLW_ball_tilt_right_reg_i_7_O_UNCONNECTED[3:0]),
+        .S({ball_tilt_right_i_26_n_0,ball_tilt_right_i_27_n_0,ball_tilt_right_i_28_n_0,ball_tilt_right_i_29_n_0}));
   LUT6 #(
     .INIT(64'hFFFFAABAAABAAABA)) 
     \bowling_ball_location_x[0]_i_1 
@@ -3204,7 +3566,7 @@ module bowling_game_controller_0_0_controller
         .I4(\bowling_ball_location_x[0]_i_3_n_0 ),
         .I5(bowling_ball_location_x00_in[0]),
         .O(\bowling_ball_location_x[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT4 #(
     .INIT(16'hFEEE)) 
     \bowling_ball_location_x[0]_i_2 
@@ -3218,19 +3580,19 @@ module bowling_game_controller_0_0_controller
     \bowling_ball_location_x[0]_i_3 
        (.I0(\FSM_onehot_game_time_reg_n_0_[1] ),
         .I1(\bowling_ball_location_x[31]_i_14_n_0 ),
-        .I2(bowling_ball_location_x116_in),
+        .I2(bowling_ball_location_x114_in),
         .I3(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
-        .I4(bowling_ball_location_x1__3),
+        .I4(bowling_ball_location_x1),
         .O(\bowling_ball_location_x[0]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h00080000003F0000)) 
     \bowling_ball_location_x[0]_i_5 
        (.I0(\bowling_ball_location_x[31]_i_14_n_0 ),
         .I1(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
-        .I2(bowling_ball_location_x116_in),
+        .I2(bowling_ball_location_x114_in),
         .I3(\bowling_ball_location_x_reg_n_0_[0] ),
         .I4(\FSM_onehot_game_time_reg_n_0_[1] ),
-        .I5(bowling_ball_location_x1__3),
+        .I5(bowling_ball_location_x1),
         .O(\bowling_ball_location_x[0]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
@@ -3854,7 +4216,7 @@ module bowling_game_controller_0_0_controller
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFF80)) 
     \bowling_ball_location_x[31]_i_1 
-       (.I0(bowling_ball_location_x1__3),
+       (.I0(bowling_ball_location_x1),
         .I1(\bowling_ball_location_x_reg[31]_i_4_n_3 ),
         .I2(\FSM_onehot_game_time_reg_n_0_[1] ),
         .I3(\bowling_ball_location_y[31]_i_1_n_0 ),
@@ -3869,7 +4231,7 @@ module bowling_game_controller_0_0_controller
         .I2(ball_tilt_right_reg_n_0),
         .I3(\bowling_ball_location_x[31]_i_24_n_0 ),
         .I4(\FSM_onehot_game_time_reg_n_0_[1] ),
-        .I5(bowling_ball_location_x1__3),
+        .I5(bowling_ball_location_x1),
         .O(\bowling_ball_location_x[31]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
@@ -3901,7 +4263,7 @@ module bowling_game_controller_0_0_controller
     \bowling_ball_location_x[31]_i_17 
        (.I0(\FSM_onehot_game_time_reg_n_0_[1] ),
         .I1(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
-        .I2(bowling_ball_location_x116_in),
+        .I2(bowling_ball_location_x114_in),
         .O(\bowling_ball_location_x[31]_i_17_n_0 ));
   LUT5 #(
     .INIT(32'hFFEAEAEA)) 
@@ -3912,11 +4274,11 @@ module bowling_game_controller_0_0_controller
         .I3(\bowling_ball_location_x[31]_i_10_n_0 ),
         .I4(\bowling_ball_location_x_reg[31]_i_11_n_5 ),
         .O(\bowling_ball_location_x[31]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT4 #(
     .INIT(16'h4000)) 
     \bowling_ball_location_x[31]_i_20 
-       (.I0(bowling_ball_location_x116_in),
+       (.I0(bowling_ball_location_x114_in),
         .I1(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
         .I2(\FSM_onehot_game_time_reg_n_0_[1] ),
         .I3(\bowling_ball_location_x[31]_i_14_n_0 ),
@@ -3940,7 +4302,7 @@ module bowling_game_controller_0_0_controller
     .INIT(8'h1F)) 
     \bowling_ball_location_x[31]_i_24 
        (.I0(\bowling_ball_location_x[31]_i_14_n_0 ),
-        .I1(bowling_ball_location_x116_in),
+        .I1(bowling_ball_location_x114_in),
         .I2(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
         .O(\bowling_ball_location_x[31]_i_24_n_0 ));
   LUT2 #(
@@ -3967,7 +4329,7 @@ module bowling_game_controller_0_0_controller
        (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
         .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(\bowling_ball_location_x[31]_i_29_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT5 #(
     .INIT(32'hFF800000)) 
     \bowling_ball_location_x[31]_i_3 
@@ -3976,8 +4338,8 @@ module bowling_game_controller_0_0_controller
         .I2(joystick_x[3]),
         .I3(joystick_x[5]),
         .I4(joystick_x[6]),
-        .O(bowling_ball_location_x1__3));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+        .O(bowling_ball_location_x1));
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \bowling_ball_location_x[31]_i_30 
@@ -4033,7 +4395,7 @@ module bowling_game_controller_0_0_controller
        (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
         .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(\bowling_ball_location_x[31]_i_39_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \bowling_ball_location_x[31]_i_40 
@@ -4150,6 +4512,7 @@ module bowling_game_controller_0_0_controller
        (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
         .I1(\bowling_ball_location_x_reg_n_0_[16] ),
         .O(\bowling_ball_location_x[31]_i_59_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT4 #(
     .INIT(16'hFEEE)) 
     \bowling_ball_location_x[31]_i_6 
@@ -4281,7 +4644,7 @@ module bowling_game_controller_0_0_controller
        (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
         .I1(\bowling_ball_location_x_reg_n_0_[3] ),
         .O(\bowling_ball_location_x[31]_i_79_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'hAABA)) 
     \bowling_ball_location_x[31]_i_8 
@@ -4441,24 +4804,25 @@ module bowling_game_controller_0_0_controller
        (.I0(\bowling_ball_location_x[31]_i_14_n_0 ),
         .I1(\FSM_onehot_game_time_reg_n_0_[1] ),
         .I2(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
-        .I3(bowling_ball_location_x116_in),
+        .I3(bowling_ball_location_x114_in),
         .I4(ball_tilt_right_reg_n_0),
         .I5(\FSM_onehot_game_time_reg_n_0_[2] ),
         .O(\bowling_ball_location_x[7]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT4 #(
     .INIT(16'hF444)) 
     \bowling_ball_location_x[7]_i_4 
-       (.I0(bowling_ball_location_x1__3),
+       (.I0(bowling_ball_location_x1),
         .I1(\bowling_ball_location_x[7]_i_7_n_0 ),
         .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
         .I3(ball_tilt_right_reg_n_0),
         .O(\bowling_ball_location_x[7]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT4 #(
     .INIT(16'h5700)) 
     \bowling_ball_location_x[7]_i_7 
        (.I0(\bowling_ball_location_x_reg[31]_i_15_n_0 ),
-        .I1(bowling_ball_location_x116_in),
+        .I1(bowling_ball_location_x114_in),
         .I2(\bowling_ball_location_x[31]_i_14_n_0 ),
         .I3(\FSM_onehot_game_time_reg_n_0_[1] ),
         .O(\bowling_ball_location_x[7]_i_7_n_0 ));
@@ -5104,7 +5468,7 @@ module bowling_game_controller_0_0_controller
         .D(\bowling_ball_location_x[9]_i_1_n_0 ),
         .Q(\bowling_ball_location_x_reg_n_0_[9] ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \bowling_ball_location_y[0]_i_1 
@@ -5257,7 +5621,7 @@ module bowling_game_controller_0_0_controller
     \bowling_ball_location_y[3]_i_4 
        (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
         .O(\bowling_ball_location_y[3]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'hEFE0)) 
     \bowling_ball_location_y[4]_i_1 
@@ -5286,7 +5650,7 @@ module bowling_game_controller_0_0_controller
     \bowling_ball_location_y[6]_i_5 
        (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
         .O(\bowling_ball_location_y[6]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT4 #(
     .INIT(16'hEFE0)) 
     \bowling_ball_location_y[7]_i_1 
@@ -5295,7 +5659,7 @@ module bowling_game_controller_0_0_controller
         .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
         .I3(\bowling_ball_location_y_reg_n_0_[7] ),
         .O(\bowling_ball_location_y[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT4 #(
     .INIT(16'hEFE0)) 
     \bowling_ball_location_y[8]_i_1 
@@ -5632,13 +5996,13 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h6)) 
     \fb_addr[12]_i_3 
-       (.I0(pixel_y_reg[6]),
+       (.I0(pixel_y_reg__0[6]),
         .I1(\fb_addr_reg[17]_i_6_n_6 ),
         .O(\fb_addr[12]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \fb_addr[12]_i_4 
-       (.I0(pixel_y_reg[5]),
+       (.I0(pixel_y_reg__0[5]),
         .I1(\fb_addr_reg[17]_i_6_n_7 ),
         .O(\fb_addr[12]_i_4_n_0 ));
   LUT2 #(
@@ -5667,13 +6031,13 @@ module bowling_game_controller_0_0_controller
   LUT2 #(
     .INIT(4'h6)) 
     \fb_addr[16]_i_3 
-       (.I0(pixel_y_reg[8]),
+       (.I0(pixel_y_reg__0[8]),
         .I1(\fb_addr_reg[17]_i_6_n_4 ),
         .O(\fb_addr[16]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \fb_addr[16]_i_4 
-       (.I0(pixel_y_reg[7]),
+       (.I0(pixel_y_reg__0[7]),
         .I1(\fb_addr_reg[17]_i_6_n_5 ),
         .O(\fb_addr[16]_i_4_n_0 ));
   LUT6 #(
@@ -5684,31 +6048,31 @@ module bowling_game_controller_0_0_controller
         .I2(\pixel_x_reg_n_0_[5] ),
         .I3(\pixel_x_reg_n_0_[7] ),
         .I4(\pixel_x_reg_n_0_[6] ),
-        .I5(p_0_in_0),
+        .I5(p_0_in),
         .O(\fb_addr[17]_i_1_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \fb_addr[17]_i_10 
-       (.I0(pixel_y_reg[5]),
-        .I1(pixel_y_reg[8]),
+       (.I0(pixel_y_reg__0[5]),
+        .I1(pixel_y_reg__0[8]),
         .O(\fb_addr[17]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \fb_addr[17]_i_11 
        (.I0(pixel_y_reg[4]),
-        .I1(pixel_y_reg[7]),
+        .I1(pixel_y_reg__0[7]),
         .O(\fb_addr[17]_i_11_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \fb_addr[17]_i_12 
        (.I0(pixel_y_reg[3]),
-        .I1(pixel_y_reg[6]),
+        .I1(pixel_y_reg__0[6]),
         .O(\fb_addr[17]_i_12_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \fb_addr[17]_i_13 
        (.I0(pixel_y_reg[2]),
-        .I1(pixel_y_reg[5]),
+        .I1(pixel_y_reg__0[5]),
         .O(\fb_addr[17]_i_13_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
@@ -5716,29 +6080,29 @@ module bowling_game_controller_0_0_controller
        (.I0(pixel_y_reg[1]),
         .I1(pixel_y_reg[4]),
         .O(\fb_addr[17]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \fb_addr[17]_i_3 
-       (.I0(pixel_y_reg[8]),
-        .I1(pixel_y_reg[5]),
-        .I2(pixel_y_reg[6]),
-        .I3(pixel_y_reg[7]),
-        .O(p_0_in_0));
+       (.I0(pixel_y_reg__0[8]),
+        .I1(pixel_y_reg__0[5]),
+        .I2(pixel_y_reg__0[6]),
+        .I3(pixel_y_reg__0[7]),
+        .O(p_0_in));
   LUT1 #(
     .INIT(2'h1)) 
     \fb_addr[17]_i_7 
-       (.I0(pixel_y_reg[8]),
+       (.I0(pixel_y_reg__0[8]),
         .O(\fb_addr[17]_i_7_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \fb_addr[17]_i_8 
-       (.I0(pixel_y_reg[7]),
+       (.I0(pixel_y_reg__0[7]),
         .O(\fb_addr[17]_i_8_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \fb_addr[17]_i_9 
-       (.I0(pixel_y_reg[6]),
+       (.I0(pixel_y_reg__0[6]),
         .O(\fb_addr[17]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
@@ -5813,7 +6177,7 @@ module bowling_game_controller_0_0_controller
        (.CI(\fb_addr_reg[8]_i_2_n_0 ),
         .CO({\fb_addr_reg[12]_i_2_n_0 ,\fb_addr_reg[12]_i_2_n_1 ,\fb_addr_reg[12]_i_2_n_2 ,\fb_addr_reg[12]_i_2_n_3 }),
         .CYINIT(1'b0),
-        .DI(pixel_y_reg[6:3]),
+        .DI({pixel_y_reg__0[6:5],pixel_y_reg[4:3]}),
         .O(multOp[11:8]),
         .S({\fb_addr[12]_i_3_n_0 ,\fb_addr[12]_i_4_n_0 ,\fb_addr[12]_i_5_n_0 ,\fb_addr[12]_i_6_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
@@ -5861,7 +6225,7 @@ module bowling_game_controller_0_0_controller
        (.CI(\fb_addr_reg[12]_i_2_n_0 ),
         .CO({\fb_addr_reg[16]_i_2_n_0 ,\fb_addr_reg[16]_i_2_n_1 ,\fb_addr_reg[16]_i_2_n_2 ,\fb_addr_reg[16]_i_2_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,pixel_y_reg[8:7]}),
+        .DI({1'b0,1'b0,pixel_y_reg__0[8:7]}),
         .O(multOp[15:12]),
         .S({\fb_addr_reg[17]_i_5_n_6 ,\fb_addr_reg[17]_i_5_n_7 ,\fb_addr[16]_i_3_n_0 ,\fb_addr[16]_i_4_n_0 }));
   FDRE \fb_addr_reg[17] 
@@ -5891,7 +6255,7 @@ module bowling_game_controller_0_0_controller
        (.CI(\fb_addr_reg[17]_i_6_n_0 ),
         .CO({\NLW_fb_addr_reg[17]_i_5_CO_UNCONNECTED [3],\fb_addr_reg[17]_i_5_n_1 ,\fb_addr_reg[17]_i_5_n_2 ,\fb_addr_reg[17]_i_5_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,pixel_y_reg[7:5]}),
+        .DI({1'b0,pixel_y_reg__0[7:5]}),
         .O({\fb_addr_reg[17]_i_5_n_4 ,\fb_addr_reg[17]_i_5_n_5 ,\fb_addr_reg[17]_i_5_n_6 ,\fb_addr_reg[17]_i_5_n_7 }),
         .S({\fb_addr[17]_i_7_n_0 ,\fb_addr[17]_i_8_n_0 ,\fb_addr[17]_i_9_n_0 ,\fb_addr[17]_i_10_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
@@ -5972,687 +6336,535 @@ module bowling_game_controller_0_0_controller
         .D(pixel_loc[9]),
         .Q(fb_addr[9]),
         .R(1'b0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 fb_pixel2_carry
-       (.CI(1'b0),
-        .CO({fb_pixel2_carry_n_0,fb_pixel2_carry_n_1,fb_pixel2_carry_n_2,fb_pixel2_carry_n_3}),
-        .CYINIT(1'b1),
-        .DI({fb_pixel2_carry_i_1_n_0,fb_pixel2_carry_i_2_n_0,fb_pixel2_carry_i_3_n_0,fb_pixel2_carry_i_4_n_0}),
-        .O(NLW_fb_pixel2_carry_O_UNCONNECTED[3:0]),
-        .S({fb_pixel2_carry_i_5_n_0,fb_pixel2_carry_i_6_n_0,fb_pixel2_carry_i_7_n_0,fb_pixel2_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 fb_pixel2_carry__0
-       (.CI(fb_pixel2_carry_n_0),
-        .CO({fb_pixel2_carry__0_n_0,fb_pixel2_carry__0_n_1,fb_pixel2_carry__0_n_2,fb_pixel2_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,fb_pixel2_carry__0_i_1_n_0}),
-        .O(NLW_fb_pixel2_carry__0_O_UNCONNECTED[3:0]),
-        .S({fb_pixel2_carry__0_i_2_n_0,fb_pixel2_carry__0_i_3_n_0,fb_pixel2_carry__0_i_4_n_0,fb_pixel2_carry__0_i_5_n_0}));
-  LUT3 #(
-    .INIT(8'h02)) 
-    fb_pixel2_carry__0_i_1
-       (.I0(pixel_y_reg[8]),
-        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(fb_pixel2_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(fb_pixel2_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(fb_pixel2_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(fb_pixel2_carry__0_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    fb_pixel2_carry__0_i_5
-       (.I0(pixel_y_reg[8]),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(fb_pixel2_carry__0_i_5_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 fb_pixel2_carry__1
-       (.CI(fb_pixel2_carry__0_n_0),
-        .CO({fb_pixel2_carry__1_n_0,fb_pixel2_carry__1_n_1,fb_pixel2_carry__1_n_2,fb_pixel2_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_fb_pixel2_carry__1_O_UNCONNECTED[3:0]),
-        .S({fb_pixel2_carry__1_i_1_n_0,fb_pixel2_carry__1_i_2_n_0,fb_pixel2_carry__1_i_3_n_0,fb_pixel2_carry__1_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(fb_pixel2_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(fb_pixel2_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(fb_pixel2_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(fb_pixel2_carry__1_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 fb_pixel2_carry__2
-       (.CI(fb_pixel2_carry__1_n_0),
-        .CO({fb_pixel285_in,fb_pixel2_carry__2_n_1,fb_pixel2_carry__2_n_2,fb_pixel2_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_fb_pixel2_carry__2_O_UNCONNECTED[3:0]),
-        .S({fb_pixel2_carry__2_i_1_n_0,fb_pixel2_carry__2_i_2_n_0,fb_pixel2_carry__2_i_3_n_0,fb_pixel2_carry__2_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(fb_pixel2_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(fb_pixel2_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(fb_pixel2_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    fb_pixel2_carry__2_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(fb_pixel2_carry__2_i_4_n_0));
-  LUT4 #(
-    .INIT(16'h7150)) 
-    fb_pixel2_carry_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
-        .I2(pixel_y_reg[7]),
-        .I3(pixel_y_reg[6]),
-        .O(fb_pixel2_carry_i_1_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    fb_pixel2_carry_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(pixel_y_reg[4]),
-        .I3(pixel_y_reg[5]),
-        .O(fb_pixel2_carry_i_2_n_0));
-  LUT4 #(
-    .INIT(16'h7150)) 
-    fb_pixel2_carry_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I2(pixel_y_reg[3]),
-        .I3(pixel_y_reg[2]),
-        .O(fb_pixel2_carry_i_3_n_0));
-  LUT4 #(
-    .INIT(16'h7150)) 
-    fb_pixel2_carry_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[0]),
-        .O(fb_pixel2_carry_i_4_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    fb_pixel2_carry_i_5
-       (.I0(pixel_y_reg[6]),
-        .I1(pixel_y_reg[7]),
-        .I2(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(fb_pixel2_carry_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    fb_pixel2_carry_i_6
-       (.I0(pixel_y_reg[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I3(pixel_y_reg[5]),
-        .O(fb_pixel2_carry_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    fb_pixel2_carry_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I2(pixel_y_reg[2]),
-        .I3(pixel_y_reg[3]),
-        .O(fb_pixel2_carry_i_7_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    fb_pixel2_carry_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[0]),
-        .O(fb_pixel2_carry_i_8_n_0));
-  CARRY4 fb_pixel3_carry
-       (.CI(1'b0),
-        .CO({fb_pixel3_carry_n_0,fb_pixel3_carry_n_1,fb_pixel3_carry_n_2,fb_pixel3_carry_n_3}),
-        .CYINIT(1'b1),
-        .DI({fb_pixel3_carry_i_1_n_0,fb_pixel3_carry_i_2_n_0,fb_pixel3_carry_i_3_n_0,fb_pixel3_carry_i_4_n_0}),
-        .O(NLW_fb_pixel3_carry_O_UNCONNECTED[3:0]),
-        .S({fb_pixel3_carry_i_5_n_0,fb_pixel3_carry_i_6_n_0,fb_pixel3_carry_i_7_n_0,fb_pixel3_carry_i_8_n_0}));
-  CARRY4 fb_pixel3_carry__0
-       (.CI(fb_pixel3_carry_n_0),
-        .CO({NLW_fb_pixel3_carry__0_CO_UNCONNECTED[3:1],fb_pixel3__4}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,pixel_y_reg[8]}),
-        .O(NLW_fb_pixel3_carry__0_O_UNCONNECTED[3:0]),
-        .S({1'b0,1'b0,1'b0,fb_pixel3_carry__0_i_1_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    fb_pixel3_carry__0_i_1
-       (.I0(pixel_y_reg[8]),
-        .O(fb_pixel3_carry__0_i_1_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    fb_pixel3_carry_i_1
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[7]),
-        .O(fb_pixel3_carry_i_1_n_0));
-  LUT3 #(
-    .INIT(8'h08)) 
-    fb_pixel3_carry_i_2
-       (.I0(pixel_y_reg[5]),
-        .I1(pixel_y_reg[4]),
-        .I2(pin_4_location_y[4]),
-        .O(fb_pixel3_carry_i_2_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    fb_pixel3_carry_i_3
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[3]),
-        .O(fb_pixel3_carry_i_3_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    fb_pixel3_carry_i_4
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .O(fb_pixel3_carry_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    fb_pixel3_carry_i_5
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[7]),
-        .O(fb_pixel3_carry_i_5_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    fb_pixel3_carry_i_6
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[5]),
-        .I2(pixel_y_reg[4]),
-        .O(fb_pixel3_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    fb_pixel3_carry_i_7
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[3]),
-        .O(fb_pixel3_carry_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    fb_pixel3_carry_i_8
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .O(fb_pixel3_carry_i_8_n_0));
-  CARRY4 \fb_pixel3_inferred__0/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel3_inferred__0/i__carry_n_0 ,\fb_pixel3_inferred__0/i__carry_n_1 ,\fb_pixel3_inferred__0/i__carry_n_2 ,\fb_pixel3_inferred__0/i__carry_n_3 }),
-        .CYINIT(1'b1),
-        .DI({i__carry_i_1__5_n_0,i__carry_i_2__0_n_0,i__carry_i_3__0_n_0,i__carry_i_4__9_n_0}),
-        .O(\NLW_fb_pixel3_inferred__0/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__2_n_0,i__carry_i_6__4_n_0,i__carry_i_7__5_n_0,i__carry_i_8__9_n_0}));
-  CARRY4 \fb_pixel3_inferred__0/i__carry__0 
-       (.CI(\fb_pixel3_inferred__0/i__carry_n_0 ),
-        .CO({\NLW_fb_pixel3_inferred__0/i__carry__0_CO_UNCONNECTED [3:1],fb_pixel350_in}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,pixel_y_reg[8]}),
-        .O(\NLW_fb_pixel3_inferred__0/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({1'b0,1'b0,1'b0,i__carry__0_i_1__2_n_0}));
-  CARRY4 \fb_pixel3_inferred__1/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel3_inferred__1/i__carry_n_0 ,\fb_pixel3_inferred__1/i__carry_n_1 ,\fb_pixel3_inferred__1/i__carry_n_2 ,\fb_pixel3_inferred__1/i__carry_n_3 }),
-        .CYINIT(1'b1),
-        .DI({i__carry_i_1__1_n_0,i__carry_i_2_n_0,i__carry_i_3__4_n_0,i__carry_i_4_n_0}),
-        .O(\NLW_fb_pixel3_inferred__1/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__4_n_0,i__carry_i_6__3_n_0,i__carry_i_7__4_n_0,i__carry_i_8__10_n_0}));
-  CARRY4 \fb_pixel3_inferred__1/i__carry__0 
-       (.CI(\fb_pixel3_inferred__1/i__carry_n_0 ),
-        .CO({\NLW_fb_pixel3_inferred__1/i__carry__0_CO_UNCONNECTED [3:1],fb_pixel365_in}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,i__carry__0_i_1__3_n_0}),
-        .O(\NLW_fb_pixel3_inferred__1/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({1'b0,1'b0,1'b0,i__carry__0_i_2__2_n_0}));
-  CARRY4 \fb_pixel3_inferred__2/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel3_inferred__2/i__carry_n_0 ,\fb_pixel3_inferred__2/i__carry_n_1 ,\fb_pixel3_inferred__2/i__carry_n_2 ,\fb_pixel3_inferred__2/i__carry_n_3 }),
-        .CYINIT(1'b1),
-        .DI({i__carry_i_1__0_n_0,i__carry_i_2__5_n_0,i__carry_i_3_n_0,i__carry_i_4__10_n_0}),
-        .O(\NLW_fb_pixel3_inferred__2/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__8_n_0,i__carry_i_6__5_n_0,i__carry_i_7__3_n_0,i__carry_i_8__3_n_0}));
-  CARRY4 \fb_pixel3_inferred__2/i__carry__0 
-       (.CI(\fb_pixel3_inferred__2/i__carry_n_0 ),
-        .CO({\NLW_fb_pixel3_inferred__2/i__carry__0_CO_UNCONNECTED [3:1],fb_pixel379_in}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,i__carry__0_i_1__1_n_0}),
-        .O(\NLW_fb_pixel3_inferred__2/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({1'b0,1'b0,1'b0,i__carry__0_i_2__1_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel3_inferred__3/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel3_inferred__3/i__carry_n_0 ,\fb_pixel3_inferred__3/i__carry_n_1 ,\fb_pixel3_inferred__3/i__carry_n_2 ,\fb_pixel3_inferred__3/i__carry_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__3_n_0,i__carry_i_2__4_n_0,i__carry_i_3__2_n_0,i__carry_i_4__2_n_0}),
-        .O(\NLW_fb_pixel3_inferred__3/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__1_n_0,i__carry_i_6__1_n_0,i__carry_i_7_n_0,i__carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel3_inferred__3/i__carry__0 
-       (.CI(\fb_pixel3_inferred__3/i__carry_n_0 ),
-        .CO({\fb_pixel3_inferred__3/i__carry__0_n_0 ,\fb_pixel3_inferred__3/i__carry__0_n_1 ,\fb_pixel3_inferred__3/i__carry__0_n_2 ,\fb_pixel3_inferred__3/i__carry__0_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry__0_i_1_n_0,i__carry__0_i_2_n_0,i__carry__0_i_3_n_0,i__carry__0_i_4_n_0}),
-        .O(\NLW_fb_pixel3_inferred__3/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({i__carry__0_i_5_n_0,i__carry__0_i_6_n_0,i__carry__0_i_7_n_0,i__carry__0_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel3_inferred__3/i__carry__1 
-       (.CI(\fb_pixel3_inferred__3/i__carry__0_n_0 ),
-        .CO({\fb_pixel3_inferred__3/i__carry__1_n_0 ,\fb_pixel3_inferred__3/i__carry__1_n_1 ,\fb_pixel3_inferred__3/i__carry__1_n_2 ,\fb_pixel3_inferred__3/i__carry__1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry__1_i_1_n_0,i__carry__1_i_2_n_0,i__carry__1_i_3_n_0,i__carry__1_i_4_n_0}),
-        .O(\NLW_fb_pixel3_inferred__3/i__carry__1_O_UNCONNECTED [3:0]),
-        .S({i__carry__1_i_5_n_0,i__carry__1_i_6_n_0,i__carry__1_i_7_n_0,i__carry__1_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel3_inferred__3/i__carry__2 
-       (.CI(\fb_pixel3_inferred__3/i__carry__1_n_0 ),
-        .CO({fb_pixel384_in,\fb_pixel3_inferred__3/i__carry__2_n_1 ,\fb_pixel3_inferred__3/i__carry__2_n_2 ,\fb_pixel3_inferred__3/i__carry__2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry__2_i_1_n_0,i__carry__2_i_2_n_0,i__carry__2_i_3_n_0,i__carry__2_i_4_n_0}),
-        .O(\NLW_fb_pixel3_inferred__3/i__carry__2_O_UNCONNECTED [3:0]),
-        .S({i__carry__2_i_5_n_0,i__carry__2_i_6_n_0,i__carry__2_i_7_n_0,i__carry__2_i_8_n_0}));
-  CARRY4 fb_pixel4_carry
-       (.CI(1'b0),
-        .CO({fb_pixel4_carry_n_0,fb_pixel4_carry_n_1,fb_pixel4_carry_n_2,fb_pixel4_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({fb_pixel4_carry_i_1_n_0,fb_pixel4_carry_i_2_n_0,fb_pixel4_carry_i_3_n_0,fb_pixel4_carry_i_4_n_0}),
-        .O(NLW_fb_pixel4_carry_O_UNCONNECTED[3:0]),
-        .S({fb_pixel4_carry_i_5_n_0,fb_pixel4_carry_i_6_n_0,fb_pixel4_carry_i_7_n_0,fb_pixel4_carry_i_8_n_0}));
-  CARRY4 fb_pixel4_carry__0
-       (.CI(fb_pixel4_carry_n_0),
-        .CO({NLW_fb_pixel4_carry__0_CO_UNCONNECTED[3:1],fb_pixel4__4}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_fb_pixel4_carry__0_O_UNCONNECTED[3:0]),
-        .S({1'b0,1'b0,1'b0,fb_pixel4_carry__0_i_1_n_0}));
-  LUT1 #(
-    .INIT(2'h1)) 
-    fb_pixel4_carry__0_i_1
-       (.I0(pixel_y_reg[8]),
-        .O(fb_pixel4_carry__0_i_1_n_0));
-  LUT4 #(
-    .INIT(16'h5110)) 
-    fb_pixel4_carry_i_1
-       (.I0(pixel_y_reg[7]),
-        .I1(pixel_y_reg[6]),
-        .I2(pin_4_location_y[4]),
-        .I3(pin_4_location_y[6]),
-        .O(fb_pixel4_carry_i_1_n_0));
-  LUT3 #(
-    .INIT(8'h07)) 
-    fb_pixel4_carry_i_2
-       (.I0(pixel_y_reg[5]),
-        .I1(pixel_y_reg[4]),
-        .I2(pin_4_location_y[4]),
-        .O(fb_pixel4_carry_i_2_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    fb_pixel4_carry_i_3
-       (.I0(pixel_y_reg[3]),
-        .I1(pixel_y_reg[2]),
-        .I2(fb_pixel5[2]),
-        .I3(fb_pixel5[3]),
-        .O(fb_pixel4_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    fb_pixel4_carry_i_4
-       (.I0(fb_pixel5[1]),
-        .I1(pixel_y_reg[1]),
-        .O(fb_pixel4_carry_i_4_n_0));
-  LUT4 #(
-    .INIT(16'h0861)) 
-    fb_pixel4_carry_i_5
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[6]),
-        .I3(pixel_y_reg[7]),
-        .O(fb_pixel4_carry_i_5_n_0));
-  LUT3 #(
-    .INIT(8'h24)) 
-    fb_pixel4_carry_i_6
-       (.I0(pixel_y_reg[4]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[5]),
-        .O(fb_pixel4_carry_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    fb_pixel4_carry_i_7
-       (.I0(fb_pixel5[3]),
-        .I1(fb_pixel5[2]),
-        .I2(pixel_y_reg[2]),
-        .I3(pixel_y_reg[3]),
-        .O(fb_pixel4_carry_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    fb_pixel4_carry_i_8
-       (.I0(fb_pixel5[1]),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .O(fb_pixel4_carry_i_8_n_0));
-  CARRY4 \fb_pixel4_inferred__0/i__carry 
-       (.CI(1'b0),
-        .CO({fb_pixel449_in,\fb_pixel4_inferred__0/i__carry_n_1 ,\fb_pixel4_inferred__0/i__carry_n_2 ,\fb_pixel4_inferred__0/i__carry_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__4_n_0,i__carry_i_2__2_n_0,i__carry_i_3__1_n_0,i__carry_i_4__1_n_0}),
-        .O(\NLW_fb_pixel4_inferred__0/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__9_n_0,i__carry_i_6__0_n_0,i__carry_i_7__0_n_0,i__carry_i_8__1_n_0}));
-  CARRY4 \fb_pixel4_inferred__1/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel4_inferred__1/i__carry_n_0 ,\fb_pixel4_inferred__1/i__carry_n_1 ,\fb_pixel4_inferred__1/i__carry_n_2 ,\fb_pixel4_inferred__1/i__carry_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__2_n_0,i__carry_i_2__3_n_0,i__carry_i_3__10_n_0,i__carry_i_4__3_n_0}),
-        .O(\NLW_fb_pixel4_inferred__1/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__3_n_0,i__carry_i_6__2_n_0,i__carry_i_7__2_n_0,i__carry_i_8__2_n_0}));
-  CARRY4 \fb_pixel4_inferred__1/i__carry__0 
-       (.CI(\fb_pixel4_inferred__1/i__carry_n_0 ),
-        .CO({\NLW_fb_pixel4_inferred__1/i__carry__0_CO_UNCONNECTED [3:1],fb_pixel464_in}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,i__carry__0_i_1__4_n_0}),
-        .O(\NLW_fb_pixel4_inferred__1/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({1'b0,1'b0,1'b0,i__carry__0_i_2__3_n_0}));
-  CARRY4 \fb_pixel4_inferred__2/i__carry 
-       (.CI(1'b0),
-        .CO({fb_pixel478_in,\fb_pixel4_inferred__2/i__carry_n_1 ,\fb_pixel4_inferred__2/i__carry_n_2 ,\fb_pixel4_inferred__2/i__carry_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__6_n_0,i__carry_i_2__6_n_0,i__carry_i_3__3_n_0,i__carry_i_4__0_n_0}),
-        .O(\NLW_fb_pixel4_inferred__2/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__10_n_0,i__carry_i_6_n_0,i__carry_i_7__1_n_0,i__carry_i_8__0_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__4/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel4_inferred__4/i__carry_n_0 ,\fb_pixel4_inferred__4/i__carry_n_1 ,\fb_pixel4_inferred__4/i__carry_n_2 ,\fb_pixel4_inferred__4/i__carry_n_3 }),
-        .CYINIT(1'b1),
-        .DI({i__carry_i_1_n_0,i__carry_i_2__1_n_0,i__carry_i_3__5_n_0,i__carry_i_4__4_n_0}),
-        .O(\NLW_fb_pixel4_inferred__4/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__0_n_0,i__carry_i_6__6_n_0,i__carry_i_7__6_n_0,i__carry_i_8__4_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__4/i__carry__0 
-       (.CI(\fb_pixel4_inferred__4/i__carry_n_0 ),
-        .CO({\fb_pixel4_inferred__4/i__carry__0_n_0 ,\fb_pixel4_inferred__4/i__carry__0_n_1 ,\fb_pixel4_inferred__4/i__carry__0_n_2 ,\fb_pixel4_inferred__4/i__carry__0_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,i__carry__0_i_1__0_n_0}),
-        .O(\NLW_fb_pixel4_inferred__4/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({i__carry__0_i_2__0_n_0,i__carry__0_i_3__0_n_0,i__carry__0_i_4__0_n_0,i__carry__0_i_5__0_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__4/i__carry__1 
-       (.CI(\fb_pixel4_inferred__4/i__carry__0_n_0 ),
-        .CO({\fb_pixel4_inferred__4/i__carry__1_n_0 ,\fb_pixel4_inferred__4/i__carry__1_n_1 ,\fb_pixel4_inferred__4/i__carry__1_n_2 ,\fb_pixel4_inferred__4/i__carry__1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(\NLW_fb_pixel4_inferred__4/i__carry__1_O_UNCONNECTED [3:0]),
-        .S({i__carry__1_i_1__0_n_0,i__carry__1_i_2__0_n_0,i__carry__1_i_3__0_n_0,i__carry__1_i_4__0_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__4/i__carry__2 
-       (.CI(\fb_pixel4_inferred__4/i__carry__1_n_0 ),
-        .CO({fb_pixel483_in,\fb_pixel4_inferred__4/i__carry__2_n_1 ,\fb_pixel4_inferred__4/i__carry__2_n_2 ,\fb_pixel4_inferred__4/i__carry__2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(\NLW_fb_pixel4_inferred__4/i__carry__2_O_UNCONNECTED [3:0]),
-        .S({i__carry__2_i_1__0_n_0,i__carry__2_i_2__0_n_0,i__carry__2_i_3__0_n_0,i__carry__2_i_4__0_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__5/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel4_inferred__5/i__carry_n_0 ,\fb_pixel4_inferred__5/i__carry_n_1 ,\fb_pixel4_inferred__5/i__carry_n_2 ,\fb_pixel4_inferred__5/i__carry_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__7_n_0,i__carry_i_2__7_n_0,i__carry_i_3__6_n_0,i__carry_i_4__5_n_0}),
-        .O(\NLW_fb_pixel4_inferred__5/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5_n_0,i__carry_i_6__7_n_0,i__carry_i_7__7_n_0,i__carry_i_8__5_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__5/i__carry__0 
-       (.CI(\fb_pixel4_inferred__5/i__carry_n_0 ),
-        .CO({\fb_pixel4_inferred__5/i__carry__0_n_0 ,\fb_pixel4_inferred__5/i__carry__0_n_1 ,\fb_pixel4_inferred__5/i__carry__0_n_2 ,\fb_pixel4_inferred__5/i__carry__0_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__8_n_0,i__carry_i_2__8_n_0,i__carry_i_3__7_n_0,i__carry_i_4__6_n_0}),
-        .O(\NLW_fb_pixel4_inferred__5/i__carry__0_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__5_n_0,i__carry_i_6__8_n_0,i__carry_i_7__8_n_0,i__carry_i_8__6_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__5/i__carry__1 
-       (.CI(\fb_pixel4_inferred__5/i__carry__0_n_0 ),
-        .CO({\fb_pixel4_inferred__5/i__carry__1_n_0 ,\fb_pixel4_inferred__5/i__carry__1_n_1 ,\fb_pixel4_inferred__5/i__carry__1_n_2 ,\fb_pixel4_inferred__5/i__carry__1_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__9_n_0,i__carry_i_2__9_n_0,i__carry_i_3__8_n_0,i__carry_i_4__7_n_0}),
-        .O(\NLW_fb_pixel4_inferred__5/i__carry__1_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__6_n_0,i__carry_i_6__9_n_0,i__carry_i_7__9_n_0,i__carry_i_8__7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 \fb_pixel4_inferred__5/i__carry__2 
-       (.CI(\fb_pixel4_inferred__5/i__carry__1_n_0 ),
-        .CO({fb_pixel486_in,\fb_pixel4_inferred__5/i__carry__2_n_1 ,\fb_pixel4_inferred__5/i__carry__2_n_2 ,\fb_pixel4_inferred__5/i__carry__2_n_3 }),
-        .CYINIT(1'b0),
-        .DI({i__carry_i_1__10_n_0,i__carry_i_2__10_n_0,i__carry_i_3__9_n_0,i__carry_i_4__8_n_0}),
-        .O(\NLW_fb_pixel4_inferred__5/i__carry__2_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_5__7_n_0,i__carry_i_6__10_n_0,i__carry_i_7__10_n_0,i__carry_i_8__8_n_0}));
-  CARRY4 \fb_pixel5_inferred__0/i__carry 
-       (.CI(1'b0),
-        .CO({\fb_pixel5_inferred__0/i__carry_n_0 ,\NLW_fb_pixel5_inferred__0/i__carry_CO_UNCONNECTED [2],\fb_pixel5_inferred__0/i__carry_n_2 ,\fb_pixel5_inferred__0/i__carry_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,pin_4_location_y[4],1'b0}),
-        .O({\NLW_fb_pixel5_inferred__0/i__carry_O_UNCONNECTED [3],\fb_pixel5_inferred__0/i__carry_n_5 ,\fb_pixel5_inferred__0/i__carry_n_6 ,\NLW_fb_pixel5_inferred__0/i__carry_O_UNCONNECTED [0]}),
-        .S({1'b1,pin_4_location_y[6],i__carry_i_1__11_n_0,1'b0}));
   LUT6 #(
-    .INIT(64'hBBBAFFFFBBBA0000)) 
+    .INIT(64'hFFEAFFFFFFEA0000)) 
     \fb_pixel[0]_i_1 
        (.I0(\fb_pixel[0]_i_2_n_0 ),
-        .I1(\fb_pixel[1]_i_3_n_0 ),
-        .I2(\fb_pixel[0]_i_3_n_0 ),
-        .I3(\fb_pixel[0]_i_4_n_0 ),
+        .I1(\fb_pixel[0]_i_3_n_0 ),
+        .I2(fb_pixel1111_out),
+        .I3(\fb_pixel[0]_i_5_n_0 ),
         .I4(\fb_pixel[2]_i_6_n_0 ),
         .I5(fb_pixel[0]),
         .O(\fb_pixel[0]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFF0000FE000000)) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT3 #(
+    .INIT(8'h69)) 
     \fb_pixel[0]_i_10 
-       (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(\fb_pixel[1]_i_39_n_0 ),
-        .I2(\fb_pixel[0]_i_18_n_0 ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(\pixel_x_reg_n_0_[8] ),
-        .I5(\pixel_x_reg_n_0_[7] ),
-        .O(fb_pixel488_in));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
-  LUT4 #(
-    .INIT(16'h020F)) 
-    \fb_pixel[0]_i_11 
-       (.I0(\fb_pixel[0]_i_19_n_0 ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .I2(\pixel_x_reg_n_0_[8] ),
-        .I3(\pixel_x_reg_n_0_[7] ),
-        .O(fb_pixel491_in));
+       (.I0(pixel_y_reg[3]),
+        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I2(\fb_pixel[1]_i_33_n_0 ),
+        .O(\fb_pixel[0]_i_10_n_0 ));
   LUT6 #(
-    .INIT(64'h8080808080800080)) 
+    .INIT(64'hFCACFFFF0CAC0000)) 
+    \fb_pixel[0]_i_11 
+       (.I0(\fb_pixel[0]_i_14_n_0 ),
+        .I1(\fb_pixel[0]_i_15_n_0 ),
+        .I2(\fb_pixel[1]_i_23_n_0 ),
+        .I3(\fb_pixel[1]_i_24_n_0 ),
+        .I4(fb_pixel1),
+        .I5(\fb_pixel[0]_i_16_n_0 ),
+        .O(\fb_pixel[0]_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'h00FF82FF00FFA624)) 
     \fb_pixel[0]_i_12 
-       (.I0(railing_up_reg_n_0),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\pixel_x[5]_i_2_n_0 ),
-        .I4(\pixel_x_reg_n_0_[4] ),
-        .I5(\pixel_x_reg_n_0_[3] ),
+       (.I0(pixel_y_reg[2]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg[1]),
+        .I3(\fb_pixel[2]_i_99_n_0 ),
+        .I4(\fb_pixel[2]_i_100_n_0 ),
+        .I5(pixel_y_reg[0]),
         .O(\fb_pixel[0]_i_12_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT5 #(
-    .INIT(32'h00001113)) 
+  LUT6 #(
+    .INIT(64'h0000030044000000)) 
     \fb_pixel[0]_i_13 
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(\pixel_x_reg_n_0_[5] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\pixel_x_reg_n_0_[7] ),
+       (.I0(\fb_pixel[2]_i_32_n_0 ),
+        .I1(\fb_pixel[2]_i_33_n_0 ),
+        .I2(\fb_pixel[2]_i_37_n_0 ),
+        .I3(\pixel_y[8]_i_5_n_0 ),
+        .I4(pixel_y_reg[2]),
+        .I5(\fb_pixel[2]_i_7_n_0 ),
         .O(\fb_pixel[0]_i_13_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFF008000)) 
+    .INIT(64'hFFFFFFFFFEFEFE32)) 
     \fb_pixel[0]_i_14 
-       (.I0(\pixel_x_reg_n_0_[1] ),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[4] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
-        .I5(\pixel_x_reg_n_0_[5] ),
+       (.I0(\fb_pixel[0]_i_17_n_0 ),
+        .I1(\fb_pixel[0]_i_18_n_0 ),
+        .I2(\fb_pixel[0]_i_19_n_0 ),
+        .I3(\fb_pixel[0]_i_20_n_0 ),
+        .I4(\fb_pixel[0]_i_21_n_0 ),
+        .I5(\fb_pixel[1]_i_68_n_0 ),
         .O(\fb_pixel[0]_i_14_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFF002AAA8A)) 
+    .INIT(64'hFFFFFFFFFFFFFFA8)) 
     \fb_pixel[0]_i_15 
-       (.I0(\fb_pixel[1]_i_23_n_0 ),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .I4(\pixel_x_reg_n_0_[2] ),
-        .I5(\fb_pixel[2]_i_35_n_0 ),
+       (.I0(\fb_pixel[1]_i_26_n_0 ),
+        .I1(\fb_pixel[0]_i_22_n_0 ),
+        .I2(\fb_pixel[0]_i_23_n_0 ),
+        .I3(\fb_pixel[1]_i_28_n_0 ),
+        .I4(\fb_pixel[0]_i_24_n_0 ),
+        .I5(\fb_pixel[0]_i_25_n_0 ),
         .O(\fb_pixel[0]_i_15_n_0 ));
-  LUT6 #(
-    .INIT(64'hFF00AAAACCCCF0F0)) 
+  (* SOFT_HLUTNM = "soft_lutpair88" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
     \fb_pixel[0]_i_16 
-       (.I0(\fb_pixel[1]_i_29_n_0 ),
-        .I1(\fb_pixel[1]_i_30_n_0 ),
-        .I2(\fb_pixel[1]_i_21_n_0 ),
-        .I3(\fb_pixel[1]_i_20_n_0 ),
-        .I4(\fb_pixel[2]_i_12_n_0 ),
-        .I5(\fb_pixel[2]_i_14_n_0 ),
+       (.I0(\fb_pixel[1]_i_21_n_0 ),
+        .I1(\fb_pixel[1]_i_22_n_0 ),
         .O(\fb_pixel[0]_i_16_n_0 ));
   LUT6 #(
-    .INIT(64'hFF00CCCCAAAAF0F0)) 
+    .INIT(64'hEEE222E200000000)) 
     \fb_pixel[0]_i_17 
-       (.I0(\fb_pixel[1]_i_29_n_0 ),
-        .I1(\fb_pixel[1]_i_30_n_0 ),
-        .I2(\fb_pixel[1]_i_21_n_0 ),
-        .I3(\fb_pixel[1]_i_20_n_0 ),
-        .I4(\fb_pixel[1]_i_19_n_0 ),
-        .I5(\fb_pixel[1]_i_18_n_0 ),
+       (.I0(\fb_pixel[1]_i_100_n_0 ),
+        .I1(\fb_pixel[1]_i_101_n_0 ),
+        .I2(\fb_pixel[0]_i_26_n_0 ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\fb_pixel[0]_i_27_n_0 ),
+        .I5(\pixel_x_reg_n_0_[4] ),
         .O(\fb_pixel[0]_i_17_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
+  LUT6 #(
+    .INIT(64'h0000000010FF1010)) 
     \fb_pixel[0]_i_18 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
+       (.I0(\fb_pixel[1]_i_97_n_0 ),
+        .I1(\fb_pixel[1]_i_122_n_0 ),
+        .I2(\fb_pixel[1]_i_113_n_0 ),
+        .I3(\fb_pixel[0]_i_28_n_0 ),
+        .I4(\fb_pixel[1]_i_96_n_0 ),
+        .I5(\fb_pixel[2]_i_184_n_0 ),
         .O(\fb_pixel[0]_i_18_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT5 #(
-    .INIT(32'h0F1F0FFF)) 
+  LUT6 #(
+    .INIT(64'h00000000FFFF1F11)) 
     \fb_pixel[0]_i_19 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\pixel_x_reg_n_0_[4] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
+       (.I0(\pixel_y[8]_i_4_n_0 ),
+        .I1(\fb_pixel[0]_i_29_n_0 ),
+        .I2(\fb_pixel[0]_i_30_n_0 ),
+        .I3(pixel_y_reg[4]),
+        .I4(\fb_pixel[0]_i_31_n_0 ),
+        .I5(\pixel_x_reg_n_0_[4] ),
         .O(\fb_pixel[0]_i_19_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFF80000000)) 
+    .INIT(64'hFFFFEA00EA00EA00)) 
     \fb_pixel[0]_i_2 
-       (.I0(fb_pixel285_in),
-        .I1(fb_pixel486_in),
-        .I2(fb_pixel384_in),
-        .I3(fb_pixel483_in),
-        .I4(\fb_pixel[2]_i_17_n_0 ),
-        .I5(\fb_pixel[1]_i_16_n_0 ),
+       (.I0(\fb_pixel[0]_i_6_n_0 ),
+        .I1(\fb_pixel[0]_i_7_n_0 ),
+        .I2(\fb_pixel[2]_i_29_n_0 ),
+        .I3(\fb_pixel[2]_i_24_n_0 ),
+        .I4(\pin_bowling[0,0] ),
+        .I5(\fb_pixel[2]_i_8_n_0 ),
         .O(\fb_pixel[0]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFFF0001)) 
-    \fb_pixel[0]_i_3 
-       (.I0(\fb_pixel[0]_i_5_n_0 ),
-        .I1(\fb_pixel[2]_i_26_n_0 ),
-        .I2(\fb_pixel[2]_i_25_n_0 ),
-        .I3(\fb_pixel[0]_i_6_n_0 ),
-        .I4(\fb_pixel[0]_i_7_n_0 ),
-        .I5(\fb_pixel[0]_i_8_n_0 ),
-        .O(\fb_pixel[0]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h2)) 
-    \fb_pixel[0]_i_4 
-       (.I0(\fb_pixel_reg[1]_i_13_n_0 ),
-        .I1(\fb_pixel[2]_i_25_n_0 ),
-        .O(\fb_pixel[0]_i_4_n_0 ));
-  LUT4 #(
-    .INIT(16'hF888)) 
-    \fb_pixel[0]_i_5 
-       (.I0(\fb_pixel[0]_i_9_n_0 ),
-        .I1(fb_pixel488_in),
-        .I2(fb_pixel491_in),
-        .I3(\fb_pixel[0]_i_12_n_0 ),
-        .O(\fb_pixel[0]_i_5_n_0 ));
+    .INIT(64'hB111111100000000)) 
+    \fb_pixel[0]_i_20 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\fb_pixel[1]_i_98_n_0 ),
+        .I5(\fb_pixel[0]_i_32_n_0 ),
+        .O(\fb_pixel[0]_i_20_n_0 ));
   LUT5 #(
-    .INIT(32'hF8888888)) 
-    \fb_pixel[0]_i_6 
-       (.I0(\fb_pixel[0]_i_13_n_0 ),
-        .I1(fb_pixel488_in),
-        .I2(fb_pixel491_in),
-        .I3(\fb_pixel[0]_i_14_n_0 ),
-        .I4(\pixel_x_reg_n_0_[7] ),
-        .O(\fb_pixel[0]_i_6_n_0 ));
+    .INIT(32'h44444440)) 
+    \fb_pixel[0]_i_21 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\fb_pixel[0]_i_33_n_0 ),
+        .I3(\fb_pixel[0]_i_34_n_0 ),
+        .I4(\fb_pixel[0]_i_35_n_0 ),
+        .O(\fb_pixel[0]_i_21_n_0 ));
   LUT6 #(
-    .INIT(64'hF8F8F888F888F888)) 
-    \fb_pixel[0]_i_7 
-       (.I0(\fb_pixel[1]_i_10_n_0 ),
-        .I1(\fb_pixel[2]_i_42_n_0 ),
-        .I2(fb_pixel168_out__1),
-        .I3(\fb_pixel[0]_i_15_n_0 ),
-        .I4(\fb_pixel[1]_i_24_n_0 ),
-        .I5(\fb_pixel[2]_i_34_n_0 ),
-        .O(\fb_pixel[0]_i_7_n_0 ));
+    .INIT(64'h88CC808088008080)) 
+    \fb_pixel[0]_i_22 
+       (.I0(\fb_pixel[0]_i_36_n_0 ),
+        .I1(\fb_pixel[1]_i_75_n_0 ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\fb_pixel[0]_i_37_n_0 ),
+        .O(\fb_pixel[0]_i_22_n_0 ));
+  LUT6 #(
+    .INIT(64'hBBBBBAAABAAABAAA)) 
+    \fb_pixel[0]_i_23 
+       (.I0(\fb_pixel[0]_i_38_n_0 ),
+        .I1(\fb_pixel[1]_i_75_n_0 ),
+        .I2(\fb_pixel[0]_i_39_n_0 ),
+        .I3(\fb_pixel[1]_i_105_n_0 ),
+        .I4(\fb_pixel[0]_i_40_n_0 ),
+        .I5(\fb_pixel[1]_i_104_n_0 ),
+        .O(\fb_pixel[0]_i_23_n_0 ));
+  LUT6 #(
+    .INIT(64'h4444444440444000)) 
+    \fb_pixel[0]_i_24 
+       (.I0(\fb_pixel[1]_i_66_n_0 ),
+        .I1(\fb_pixel[1]_i_67_n_0 ),
+        .I2(\fb_pixel[1]_i_129_n_0 ),
+        .I3(\fb_pixel[1]_i_75_n_0 ),
+        .I4(\fb_pixel[1]_i_128_n_0 ),
+        .I5(\fb_pixel[1]_i_127_n_0 ),
+        .O(\fb_pixel[0]_i_24_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000ACA000000000)) 
+    \fb_pixel[0]_i_25 
+       (.I0(\fb_pixel[0]_i_41_n_0 ),
+        .I1(\fb_pixel[1]_i_75_n_0 ),
+        .I2(\fb_pixel[1]_i_126_n_0 ),
+        .I3(\fb_pixel[0]_i_42_n_0 ),
+        .I4(\fb_pixel[1]_i_67_n_0 ),
+        .I5(\fb_pixel[1]_i_66_n_0 ),
+        .O(\fb_pixel[0]_i_25_n_0 ));
+  LUT6 #(
+    .INIT(64'hAABABAAABABABABA)) 
+    \fb_pixel[0]_i_26 
+       (.I0(\fb_pixel[1]_i_138_n_0 ),
+        .I1(pixel_y_reg[3]),
+        .I2(\fb_pixel[1]_i_155_n_0 ),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[0]),
+        .I5(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[0]_i_26_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFEEEEFEEE)) 
+    \fb_pixel[0]_i_27 
+       (.I0(\fb_pixel[1]_i_135_n_0 ),
+        .I1(\fb_pixel[1]_i_136_n_0 ),
+        .I2(\fb_pixel[0]_i_43_n_0 ),
+        .I3(\fb_pixel[0]_i_44_n_0 ),
+        .I4(pixel_y_reg[0]),
+        .I5(\fb_pixel[1]_i_108_n_0 ),
+        .O(\fb_pixel[0]_i_27_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  LUT3 #(
+    .INIT(8'hFE)) 
+    \fb_pixel[0]_i_28 
+       (.I0(\fb_pixel[2]_i_186_n_0 ),
+        .I1(\fb_pixel[2]_i_187_n_0 ),
+        .I2(score[19]),
+        .O(\fb_pixel[0]_i_28_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[0]_i_29 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .O(\fb_pixel[0]_i_29_n_0 ));
+  LUT5 #(
+    .INIT(32'h02FF0200)) 
+    \fb_pixel[0]_i_3 
+       (.I0(\fb_pixel[1]_i_12_n_0 ),
+        .I1(\fb_pixel[0]_i_9_n_0 ),
+        .I2(\fb_pixel[0]_i_10_n_0 ),
+        .I3(\fb_pixel[1]_i_14_n_0 ),
+        .I4(\fb_pixel[1]_i_15_n_0 ),
+        .O(\fb_pixel[0]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  LUT4 #(
+    .INIT(16'hDFFF)) 
+    \fb_pixel[0]_i_30 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .O(\fb_pixel[0]_i_30_n_0 ));
+  LUT6 #(
+    .INIT(64'hF4FAF4FAFEF0FFF0)) 
+    \fb_pixel[0]_i_31 
+       (.I0(pixel_y_reg[3]),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\fb_pixel[1]_i_101_n_0 ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[1]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[0]_i_31_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  LUT4 #(
+    .INIT(16'h7CCC)) 
+    \fb_pixel[0]_i_32 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .O(\fb_pixel[0]_i_32_n_0 ));
+  LUT6 #(
+    .INIT(64'h0004040404040404)) 
+    \fb_pixel[0]_i_33 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(pixel_y_reg[4]),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[0]_i_33_n_0 ));
+  LUT6 #(
+    .INIT(64'h0001000000000000)) 
+    \fb_pixel[0]_i_34 
+       (.I0(pixel_y_reg[0]),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[0]_i_34_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  LUT5 #(
+    .INIT(32'h00002AEA)) 
+    \fb_pixel[0]_i_35 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[1]),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[0]_i_35_n_0 ));
+  LUT6 #(
+    .INIT(64'hEFEFEFEFEFEFEFE0)) 
+    \fb_pixel[0]_i_36 
+       (.I0(\fb_pixel[0]_i_45_n_0 ),
+        .I1(\fb_pixel[1]_i_159_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\fb_pixel[0]_i_46_n_0 ),
+        .I4(\fb_pixel[0]_i_47_n_0 ),
+        .I5(\fb_pixel[1]_i_154_n_0 ),
+        .O(\fb_pixel[0]_i_36_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFEFFFFFFFE0000)) 
+    \fb_pixel[0]_i_37 
+       (.I0(\fb_pixel[1]_i_149_n_0 ),
+        .I1(\fb_pixel[0]_i_48_n_0 ),
+        .I2(\fb_pixel[1]_i_152_n_0 ),
+        .I3(\fb_pixel[1]_i_153_n_0 ),
+        .I4(\fb_pixel[0]_i_49_n_0 ),
+        .I5(\fb_pixel[1]_i_111_n_0 ),
+        .O(\fb_pixel[0]_i_37_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFEF002000200020)) 
+    \fb_pixel[0]_i_38 
+       (.I0(\fb_pixel[1]_i_72_n_0 ),
+        .I1(\fb_pixel[2]_i_184_n_0 ),
+        .I2(\fb_pixel[1]_i_113_n_0 ),
+        .I3(\fb_pixel[1]_i_122_n_0 ),
+        .I4(\fb_pixel[0]_i_50_n_0 ),
+        .I5(\fb_pixel[1]_i_110_n_0 ),
+        .O(\fb_pixel[0]_i_38_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[0]_i_39 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[0]_i_39_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \fb_pixel[0]_i_4 
+       (.I0(fb_pixel2109_in),
+        .I1(fb_pixel4107_in),
+        .I2(fb_pixel4110_in),
+        .I3(fb_pixel3108_in),
+        .O(fb_pixel1111_out));
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  LUT3 #(
+    .INIT(8'h40)) 
+    \fb_pixel[0]_i_40 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[0]_i_40_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
-    .INIT(32'h0000B888)) 
-    \fb_pixel[0]_i_8 
-       (.I0(\fb_pixel[0]_i_16_n_0 ),
-        .I1(fb_pixel156_out__1),
-        .I2(fb_pixel153_out__9),
-        .I3(\fb_pixel[0]_i_17_n_0 ),
-        .I4(\fb_pixel[2]_i_10_n_0 ),
-        .O(\fb_pixel[0]_i_8_n_0 ));
+    .INIT(32'h222AFFFF)) 
+    \fb_pixel[0]_i_41 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .I4(\fb_pixel[1]_i_118_n_0 ),
+        .O(\fb_pixel[0]_i_41_n_0 ));
   LUT6 #(
-    .INIT(64'h0004000400040404)) 
-    \fb_pixel[0]_i_9 
-       (.I0(\fb_pixel[0]_i_18_n_0 ),
-        .I1(railing_up_reg_n_0),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
+    .INIT(64'h0008888800000000)) 
+    \fb_pixel[0]_i_42 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[2]),
+        .I5(\fb_pixel[1]_i_118_n_0 ),
+        .O(\fb_pixel[0]_i_42_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  LUT3 #(
+    .INIT(8'h08)) 
+    \fb_pixel[0]_i_43 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[4]),
+        .O(\fb_pixel[0]_i_43_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair93" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[0]_i_44 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[0]_i_44_n_0 ));
+  LUT6 #(
+    .INIT(64'hEEEEAFAAAAAAAAAA)) 
+    \fb_pixel[0]_i_45 
+       (.I0(\fb_pixel[0]_i_51_n_0 ),
+        .I1(\fb_pixel[0]_i_52_n_0 ),
+        .I2(\pixel_y[8]_i_4_n_0 ),
+        .I3(\fb_pixel[1]_i_157_n_0 ),
         .I4(\pixel_x_reg_n_0_[0] ),
         .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[0]_i_45_n_0 ));
+  LUT6 #(
+    .INIT(64'hEAEAEAFFEAEAEAEA)) 
+    \fb_pixel[0]_i_46 
+       (.I0(\fb_pixel[1]_i_115_n_0 ),
+        .I1(\fb_pixel[0]_i_53_n_0 ),
+        .I2(\fb_pixel[1]_i_156_n_0 ),
+        .I3(\fb_pixel[1]_i_142_n_0 ),
+        .I4(\fb_pixel[0]_i_29_n_0 ),
+        .I5(\fb_pixel[0]_i_43_n_0 ),
+        .O(\fb_pixel[0]_i_46_n_0 ));
+  LUT6 #(
+    .INIT(64'h0030203000000000)) 
+    \fb_pixel[0]_i_47 
+       (.I0(pixel_y_reg[1]),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[0]_i_47_n_0 ));
+  LUT6 #(
+    .INIT(64'hEEFEEEFEEEFEFFFF)) 
+    \fb_pixel[0]_i_48 
+       (.I0(\fb_pixel[0]_i_54_n_0 ),
+        .I1(\fb_pixel[0]_i_55_n_0 ),
+        .I2(\fb_pixel[0]_i_56_n_0 ),
+        .I3(\fb_pixel[1]_i_168_n_0 ),
+        .I4(\fb_pixel[1]_i_157_n_0 ),
+        .I5(\fb_pixel[1]_i_142_n_0 ),
+        .O(\fb_pixel[0]_i_48_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair94" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \fb_pixel[0]_i_49 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[0]_i_49_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000FFFF3310)) 
+    \fb_pixel[0]_i_5 
+       (.I0(\fb_pixel[2]_i_31_n_0 ),
+        .I1(\fb_pixel[1]_i_11_n_0 ),
+        .I2(\fb_pixel[0]_i_11_n_0 ),
+        .I3(\fb_pixel[1]_i_6_n_0 ),
+        .I4(\fb_pixel[1]_i_17_n_0 ),
+        .I5(\fb_pixel[2]_i_4_n_0 ),
+        .O(\fb_pixel[0]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000FFFFFFF2)) 
+    \fb_pixel[0]_i_50 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\fb_pixel[1]_i_108_n_0 ),
+        .I4(\fb_pixel[1]_i_107_n_0 ),
+        .I5(\pixel_x[7]_i_3_n_0 ),
+        .O(\fb_pixel[0]_i_50_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h08000000)) 
+    \fb_pixel[0]_i_51 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[4]),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[0]_i_51_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'hAAAA0090)) 
+    \fb_pixel[0]_i_52 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[0]_i_52_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  LUT3 #(
+    .INIT(8'h40)) 
+    \fb_pixel[0]_i_53 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(pixel_y_reg[4]),
+        .O(\fb_pixel[0]_i_53_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000080000000)) 
+    \fb_pixel[0]_i_54 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[2]),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(pixel_y_reg[4]),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[0]_i_54_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000054000000)) 
+    \fb_pixel[0]_i_55 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[1]),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(pixel_y_reg[4]),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[0]_i_55_n_0 ));
+  LUT6 #(
+    .INIT(64'h0001000000000000)) 
+    \fb_pixel[0]_i_56 
+       (.I0(pixel_y_reg[1]),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[0]_i_56_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFF8A88828A)) 
+    \fb_pixel[0]_i_6 
+       (.I0(\fb_pixel[0]_i_12_n_0 ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\fb_pixel[2]_i_25_n_0 ),
+        .O(\fb_pixel[0]_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000FFFFA6820082)) 
+    \fb_pixel[0]_i_7 
+       (.I0(pixel_y_reg[2]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .I4(\fb_pixel[2]_i_99_n_0 ),
+        .I5(\fb_pixel[2]_i_100_n_0 ),
+        .O(\fb_pixel[0]_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'hEEEEEEEEEEEEEFEE)) 
+    \fb_pixel[0]_i_8 
+       (.I0(\fb_pixel[0]_i_13_n_0 ),
+        .I1(\fb_pixel[2]_i_10_n_0 ),
+        .I2(\fb_pixel[2]_i_7_n_0 ),
+        .I3(pixel_y_reg[0]),
+        .I4(\fb_pixel[2]_i_33_n_0 ),
+        .I5(\fb_pixel[2]_i_32_n_0 ),
+        .O(\pin_bowling[0,0] ));
+  LUT6 #(
+    .INIT(64'h6999666966996666)) 
+    \fb_pixel[0]_i_9 
+       (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .I4(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I5(\bowling_ball_location_y_reg_n_0_[0] ),
         .O(\fb_pixel[0]_i_9_n_0 ));
   LUT6 #(
     .INIT(64'hFFF2FFFFFFF20000)) 
@@ -6660,564 +6872,1610 @@ module bowling_game_controller_0_0_controller
        (.I0(\fb_pixel[1]_i_2_n_0 ),
         .I1(\fb_pixel[1]_i_3_n_0 ),
         .I2(\fb_pixel[1]_i_4_n_0 ),
-        .I3(\fb_pixel[2]_i_4_n_0 ),
+        .I3(\fb_pixel[1]_i_5_n_0 ),
         .I4(\fb_pixel[2]_i_6_n_0 ),
         .I5(fb_pixel[1]),
         .O(\fb_pixel[1]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFF00CCCCAAAAF0F0)) 
+    .INIT(64'hA888888888888888)) 
     \fb_pixel[1]_i_10 
-       (.I0(\fb_pixel[1]_i_29_n_0 ),
-        .I1(\fb_pixel[1]_i_30_n_0 ),
-        .I2(\fb_pixel[1]_i_21_n_0 ),
-        .I3(\fb_pixel[1]_i_20_n_0 ),
-        .I4(\fb_pixel[2]_i_46_n_0 ),
-        .I5(\fb_pixel[2]_i_47_n_0 ),
-        .O(\fb_pixel[1]_i_10_n_0 ));
+       (.I0(\fb_pixel[1]_i_30_n_0 ),
+        .I1(\pixel_x_reg_n_0_[8] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[7] ),
+        .I5(\pixel_x_reg_n_0_[6] ),
+        .O(fb_pixel1));
   LUT6 #(
-    .INIT(64'h0010000000000000)) 
-    \fb_pixel[1]_i_11 
-       (.I0(\fb_pixel[1]_i_25_n_0 ),
-        .I1(pin_10_hit_reg_n_0),
-        .I2(fb_pixel379_in),
-        .I3(\pixel_x_reg_n_0_[8] ),
-        .I4(fb_pixel478_in),
-        .I5(\fb_pixel[1]_i_31_n_0 ),
-        .O(fb_pixel182_out__2));
-  LUT4 #(
-    .INIT(16'h4000)) 
-    \fb_pixel[1]_i_12 
-       (.I0(pin_9_hit_reg_n_0),
-        .I1(fb_pixel464_in),
-        .I2(fb_pixel365_in),
-        .I3(\fb_pixel[1]_i_32_n_0 ),
-        .O(fb_pixel174_out__1));
-  LUT4 #(
-    .INIT(16'h0010)) 
-    \fb_pixel[1]_i_14 
-       (.I0(fb_pixel147_out__9),
-        .I1(fb_pixel143_out__1),
-        .I2(\fb_pixel[0]_i_5_n_0 ),
-        .I3(\fb_pixel[2]_i_64_n_0 ),
-        .O(\fb_pixel[1]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
-  LUT4 #(
-    .INIT(16'h0001)) 
-    \fb_pixel[1]_i_15 
-       (.I0(fb_pixel147_out__9),
-        .I1(fb_pixel143_out__1),
-        .I2(\fb_pixel[2]_i_64_n_0 ),
-        .I3(\fb_pixel[0]_i_6_n_0 ),
-        .O(\fb_pixel[1]_i_15_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFEA00EA00EA00)) 
-    \fb_pixel[1]_i_16 
-       (.I0(\fb_pixel[1]_i_35_n_0 ),
-        .I1(\fb_pixel[1]_i_24_n_0 ),
-        .I2(\fb_pixel[2]_i_32_n_0 ),
-        .I3(\fb_pixel[2]_i_27_n_0 ),
-        .I4(\pin_bowling[0,0]__5 ),
-        .I5(\fb_pixel[2]_i_15_n_0 ),
-        .O(\fb_pixel[1]_i_16_n_0 ));
-  LUT2 #(
-    .INIT(4'h2)) 
-    \fb_pixel[1]_i_17 
-       (.I0(fb_pixel153_out__9),
-        .I1(fb_pixel156_out__1),
-        .O(\fb_pixel[1]_i_17_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
-  LUT4 #(
-    .INIT(16'h0A60)) 
-    \fb_pixel[1]_i_18 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[1]_i_18_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
-  LUT4 #(
-    .INIT(16'h2482)) 
-    \fb_pixel[1]_i_19 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_19_n_0 ));
-  LUT6 #(
-    .INIT(64'hF0FFF0EEF000F0EE)) 
-    \fb_pixel[1]_i_2 
-       (.I0(\fb_pixel[1]_i_5_n_0 ),
-        .I1(\fb_pixel[1]_i_6_n_0 ),
-        .I2(\fb_pixel[1]_i_7_n_0 ),
-        .I3(fb_pixel168_out__1),
-        .I4(fb_pixel160_out__8),
-        .I5(\fb_pixel[1]_i_10_n_0 ),
-        .O(\fb_pixel[1]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'hB1000FB10F0F000F)) 
-    \fb_pixel[1]_i_20 
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[1]),
-        .I2(\fb_pixel[2]_i_75_n_0 ),
-        .I3(pin_4_location_y[4]),
-        .I4(pixel_y_reg[2]),
-        .I5(\fb_pixel[2]_i_77_n_0 ),
-        .O(\fb_pixel[1]_i_20_n_0 ));
-  LUT6 #(
-    .INIT(64'h70070000EAFEFFAF)) 
-    \fb_pixel[1]_i_21 
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[1]),
-        .I2(pin_4_location_y[4]),
-        .I3(pixel_y_reg[2]),
-        .I4(\fb_pixel[2]_i_77_n_0 ),
-        .I5(\fb_pixel[2]_i_75_n_0 ),
-        .O(\fb_pixel[1]_i_21_n_0 ));
-  LUT6 #(
-    .INIT(64'h000000CA000000AC)) 
-    \fb_pixel[1]_i_22 
-       (.I0(\fb_pixel[1]_i_29_n_0 ),
-        .I1(\fb_pixel[1]_i_30_n_0 ),
-        .I2(\pixel_x_reg_n_0_[0] ),
+    .INIT(64'hFEFFFEFEFE00FEFE)) 
+    \fb_pixel[1]_i_100 
+       (.I0(\fb_pixel[1]_i_131_n_0 ),
+        .I1(\fb_pixel[1]_i_132_n_0 ),
+        .I2(\fb_pixel[1]_i_133_n_0 ),
         .I3(\pixel_x_reg_n_0_[2] ),
         .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[1]_i_22_n_0 ));
+        .I5(\fb_pixel[1]_i_134_n_0 ),
+        .O(\fb_pixel[1]_i_100_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  LUT3 #(
+    .INIT(8'hCA)) 
+    \fb_pixel[1]_i_101 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[1]_i_101_n_0 ));
   LUT6 #(
-    .INIT(64'h00FF82FF00FFA624)) 
-    \fb_pixel[1]_i_23 
-       (.I0(pixel_y_reg[2]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[1]),
-        .I3(\fb_pixel[2]_i_68_n_0 ),
-        .I4(\fb_pixel[2]_i_69_n_0 ),
-        .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[1]_i_23_n_0 ));
+    .INIT(64'hFEFFFEFFFEFFFE00)) 
+    \fb_pixel[1]_i_102 
+       (.I0(\fb_pixel[1]_i_135_n_0 ),
+        .I1(\fb_pixel[1]_i_136_n_0 ),
+        .I2(\fb_pixel[1]_i_137_n_0 ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\fb_pixel[1]_i_138_n_0 ),
+        .I5(\fb_pixel[1]_i_139_n_0 ),
+        .O(\fb_pixel[1]_i_102_n_0 ));
   LUT6 #(
-    .INIT(64'h0000FFFFA6820082)) 
-    \fb_pixel[1]_i_24 
-       (.I0(pixel_y_reg[2]),
-        .I1(pin_4_location_y[4]),
+    .INIT(64'hAAAFEAAAAAAAAAAA)) 
+    \fb_pixel[1]_i_103 
+       (.I0(\fb_pixel[0]_i_31_n_0 ),
+        .I1(pixel_y_reg[4]),
         .I2(pixel_y_reg[1]),
         .I3(pixel_y_reg[0]),
-        .I4(\fb_pixel[2]_i_68_n_0 ),
-        .I5(\fb_pixel[2]_i_69_n_0 ),
-        .O(\fb_pixel[1]_i_24_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT5 #(
-    .INIT(32'h00007FFF)) 
-    \fb_pixel[1]_i_25 
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(\pixel_x_reg_n_0_[5] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(\pixel_x_reg_n_0_[8] ),
-        .O(\fb_pixel[1]_i_25_n_0 ));
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_103_n_0 ));
   LUT6 #(
-    .INIT(64'h00000000FFF80000)) 
-    \fb_pixel[1]_i_26 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[4] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[5] ),
-        .I5(\fb_pixel[1]_i_37_n_0 ),
-        .O(\fb_pixel[1]_i_26_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \fb_pixel[1]_i_27 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(\pixel_x_reg_n_0_[4] ),
-        .I5(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[1]_i_27_n_0 ));
-  LUT6 #(
-    .INIT(64'h0103030300000000)) 
-    \fb_pixel[1]_i_28 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .I4(\pixel_x_reg_n_0_[2] ),
-        .I5(\fb_pixel[1]_i_38_n_0 ),
-        .O(\fb_pixel[1]_i_28_n_0 ));
-  LUT6 #(
-    .INIT(64'hB21B2332B33B2332)) 
-    \fb_pixel[1]_i_29 
-       (.I0(\fb_pixel[2]_i_77_n_0 ),
-        .I1(\fb_pixel[2]_i_75_n_0 ),
-        .I2(pin_4_location_y[4]),
-        .I3(pixel_y_reg[2]),
-        .I4(pixel_y_reg[1]),
-        .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[1]_i_29_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFF8000)) 
-    \fb_pixel[1]_i_3 
-       (.I0(fb_pixel285_in),
-        .I1(fb_pixel486_in),
-        .I2(fb_pixel384_in),
-        .I3(fb_pixel483_in),
-        .I4(fb_pixel182_out__2),
-        .I5(fb_pixel174_out__1),
-        .O(\fb_pixel[1]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hA33AB21BA21AB21B)) 
-    \fb_pixel[1]_i_30 
-       (.I0(\fb_pixel[2]_i_77_n_0 ),
-        .I1(\fb_pixel[2]_i_75_n_0 ),
-        .I2(pin_4_location_y[4]),
-        .I3(pixel_y_reg[2]),
-        .I4(pixel_y_reg[1]),
-        .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[1]_i_30_n_0 ));
-  LUT6 #(
-    .INIT(64'h7FFFFFFFFFFFFFFF)) 
-    \fb_pixel[1]_i_31 
-       (.I0(\pixel_x_reg_n_0_[6] ),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\pixel_x_reg_n_0_[4] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
-        .I5(\fb_pixel[1]_i_39_n_0 ),
-        .O(\fb_pixel[1]_i_31_n_0 ));
-  LUT6 #(
-    .INIT(64'hAAAAAAAAAABAAAAA)) 
-    \fb_pixel[1]_i_32 
-       (.I0(\fb_pixel[1]_i_40_n_0 ),
-        .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\fb_pixel[1]_i_37_n_0 ),
-        .I4(\fb_pixel[1]_i_39_n_0 ),
-        .I5(\fb_pixel[2]_i_86_n_0 ),
-        .O(\fb_pixel[1]_i_32_n_0 ));
-  LUT6 #(
-    .INIT(64'hBBBBB888B888B888)) 
-    \fb_pixel[1]_i_33 
-       (.I0(\fb_pixel[1]_i_41_n_0 ),
-        .I1(fb_pixel143_out__1),
-        .I2(\fb_pixel[1]_i_42_n_0 ),
-        .I3(\fb_pixel[1]_i_43_n_0 ),
-        .I4(fb_pixel140_out__1),
-        .I5(\fb_pixel[1]_i_44_n_0 ),
-        .O(\fb_pixel[1]_i_33_n_0 ));
-  LUT6 #(
-    .INIT(64'hFF00AAAACCCCF0F0)) 
-    \fb_pixel[1]_i_34 
-       (.I0(\fb_pixel[1]_i_45_n_0 ),
-        .I1(\fb_pixel[1]_i_46_n_0 ),
-        .I2(\fb_pixel[1]_i_47_n_0 ),
-        .I3(\fb_pixel[1]_i_48_n_0 ),
-        .I4(\fb_pixel[1]_i_49_n_0 ),
-        .I5(\fb_pixel[1]_i_50_n_0 ),
-        .O(\fb_pixel[1]_i_34_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFA282A0A2)) 
-    \fb_pixel[1]_i_35 
-       (.I0(\fb_pixel[1]_i_23_n_0 ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
-        .I5(\fb_pixel[2]_i_28_n_0 ),
-        .O(\fb_pixel[1]_i_35_n_0 ));
-  LUT6 #(
-    .INIT(64'hEEEEEEEEEEEEEFEE)) 
-    \fb_pixel[1]_i_36 
-       (.I0(\fb_pixel[1]_i_51_n_0 ),
-        .I1(\fb_pixel[2]_i_16_n_0 ),
-        .I2(\fb_pixel[2]_i_23_n_0 ),
-        .I3(pixel_y_reg[1]),
+    .INIT(64'hFFFFFFFFEFEEEEEE)) 
+    \fb_pixel[1]_i_104 
+       (.I0(\fb_pixel[1]_i_140_n_0 ),
+        .I1(\fb_pixel[1]_i_141_n_0 ),
+        .I2(\fb_pixel[1]_i_142_n_0 ),
+        .I3(\fb_pixel[1]_i_143_n_0 ),
         .I4(pixel_y_reg[0]),
-        .I5(\fb_pixel[2]_i_14_n_0 ),
-        .O(\pin_bowling[0,0]__5 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+        .I5(\fb_pixel[1]_i_144_n_0 ),
+        .O(\fb_pixel[1]_i_104_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFAAFFAABA)) 
+    \fb_pixel[1]_i_105 
+       (.I0(\fb_pixel[1]_i_145_n_0 ),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg[3]),
+        .I4(\fb_pixel[1]_i_146_n_0 ),
+        .I5(\fb_pixel[1]_i_147_n_0 ),
+        .O(\fb_pixel[1]_i_105_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  LUT5 #(
+    .INIT(32'h57577FF5)) 
+    \fb_pixel[1]_i_106 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_106_n_0 ));
+  LUT6 #(
+    .INIT(64'h00C400DC00C000C0)) 
+    \fb_pixel[1]_i_107 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[4]),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_107_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h01000000)) 
+    \fb_pixel[1]_i_108 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_108_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT2 #(
-    .INIT(4'h7)) 
-    \fb_pixel[1]_i_37 
-       (.I0(\pixel_x_reg_n_0_[7] ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .O(\fb_pixel[1]_i_37_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \fb_pixel[1]_i_38 
-       (.I0(\pixel_x_reg_n_0_[6] ),
-        .I1(\pixel_x_reg_n_0_[7] ),
-        .O(\fb_pixel[1]_i_38_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+    .INIT(4'h2)) 
+    \fb_pixel[1]_i_109 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_109_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \fb_pixel[1]_i_39 
+    \fb_pixel[1]_i_11 
+       (.I0(\fb_pixel[2]_i_16_n_0 ),
+        .I1(fb_pixel182_out),
+        .O(\fb_pixel[1]_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hC3D30303C303C303)) 
+    \fb_pixel[1]_i_110 
+       (.I0(\fb_pixel[0]_i_29_n_0 ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[2]),
+        .I5(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_110_n_0 ));
+  LUT6 #(
+    .INIT(64'hEE77FFCC7F000000)) 
+    \fb_pixel[1]_i_111 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(\fb_pixel[1]_i_148_n_0 ),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[3]),
+        .I5(pixel_y_reg[4]),
+        .O(\fb_pixel[1]_i_111_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    \fb_pixel[1]_i_112 
+       (.I0(\fb_pixel[1]_i_149_n_0 ),
+        .I1(\fb_pixel[1]_i_150_n_0 ),
+        .I2(\fb_pixel[1]_i_151_n_0 ),
+        .I3(\fb_pixel[1]_i_152_n_0 ),
+        .I4(\fb_pixel[1]_i_153_n_0 ),
+        .O(\fb_pixel[1]_i_112_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000011150000)) 
+    \fb_pixel[1]_i_113 
+       (.I0(\fb_pixel[2]_i_186_n_0 ),
+        .I1(score[3]),
+        .I2(score[2]),
+        .I3(score[1]),
+        .I4(score[0]),
+        .I5(\fb_pixel[2]_i_185_n_0 ),
+        .O(\fb_pixel[1]_i_113_n_0 ));
+  LUT6 #(
+    .INIT(64'hAEEEAAAAAAEEAAAA)) 
+    \fb_pixel[1]_i_114 
+       (.I0(\fb_pixel[1]_i_154_n_0 ),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .I4(\fb_pixel[1]_i_155_n_0 ),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_114_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000001F20000)) 
+    \fb_pixel[1]_i_115 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[4]),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_115_n_0 ));
+  LUT6 #(
+    .INIT(64'h00F0000011000000)) 
+    \fb_pixel[1]_i_116 
+       (.I0(\pixel_y[8]_i_4_n_0 ),
+        .I1(\fb_pixel[0]_i_29_n_0 ),
+        .I2(\fb_pixel[1]_i_156_n_0 ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(pixel_y_reg[4]),
+        .O(\fb_pixel[1]_i_116_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFF0020)) 
+    \fb_pixel[1]_i_117 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\fb_pixel[1]_i_157_n_0 ),
+        .I3(\pixel_y[8]_i_4_n_0 ),
+        .I4(\fb_pixel[1]_i_158_n_0 ),
+        .I5(\fb_pixel[1]_i_159_n_0 ),
+        .O(\fb_pixel[1]_i_117_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  LUT4 #(
+    .INIT(16'h50E0)) 
+    \fb_pixel[1]_i_118 
        (.I0(\pixel_x_reg_n_0_[2] ),
         .I1(\pixel_x_reg_n_0_[1] ),
-        .O(\fb_pixel[1]_i_39_n_0 ));
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_118_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFF11111110)) 
-    \fb_pixel[1]_i_4 
-       (.I0(\fb_pixel[2]_i_25_n_0 ),
-        .I1(\fb_pixel[1]_i_3_n_0 ),
-        .I2(\fb_pixel_reg[1]_i_13_n_0 ),
-        .I3(\fb_pixel[1]_i_14_n_0 ),
-        .I4(\fb_pixel[1]_i_15_n_0 ),
-        .I5(\fb_pixel[1]_i_16_n_0 ),
-        .O(\fb_pixel[1]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000100000)) 
-    \fb_pixel[1]_i_40 
-       (.I0(\pixel_x_reg_n_0_[4] ),
+    .INIT(64'h0000B080B080B080)) 
+    \fb_pixel[1]_i_119 
+       (.I0(\number_8[0,13] ),
         .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\fb_pixel[1]_i_38_n_0 ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(\pixel_x_reg_n_0_[8] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\fb_pixel[1]_i_125_n_0 ),
+        .I4(\pixel_x_reg_n_0_[1] ),
         .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[1]_i_40_n_0 ));
+        .O(\fb_pixel[1]_i_119_n_0 ));
   LUT6 #(
-    .INIT(64'hFF00AAAACCCCF0F0)) 
-    \fb_pixel[1]_i_41 
-       (.I0(\fb_pixel[1]_i_45_n_0 ),
-        .I1(\fb_pixel[1]_i_46_n_0 ),
-        .I2(\fb_pixel[1]_i_47_n_0 ),
-        .I3(\fb_pixel[1]_i_48_n_0 ),
-        .I4(\fb_pixel[2]_i_98_n_0 ),
-        .I5(\fb_pixel[2]_i_97_n_0 ),
-        .O(\fb_pixel[1]_i_41_n_0 ));
+    .INIT(64'h0C71710CD30404D3)) 
+    \fb_pixel[1]_i_12 
+       (.I0(\fb_pixel[1]_i_31_n_0 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .I4(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I5(\fb_pixel[1]_i_32_n_0 ),
+        .O(\fb_pixel[1]_i_12_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  LUT5 #(
+    .INIT(32'h20000330)) 
+    \fb_pixel[1]_i_120 
+       (.I0(\number_8[0,13] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[1]_i_120_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  LUT4 #(
+    .INIT(16'h4300)) 
+    \fb_pixel[1]_i_121 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[1]_i_121_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  LUT3 #(
+    .INIT(8'hFE)) 
+    \fb_pixel[1]_i_122 
+       (.I0(\fb_pixel[2]_i_187_n_0 ),
+        .I1(score[18]),
+        .I2(score[19]),
+        .O(\fb_pixel[1]_i_122_n_0 ));
+  LUT5 #(
+    .INIT(32'h00000004)) 
+    \fb_pixel[1]_i_123 
+       (.I0(\fb_pixel[2]_i_185_n_0 ),
+        .I1(\fb_pixel[1]_i_161_n_0 ),
+        .I2(\fb_pixel[2]_i_186_n_0 ),
+        .I3(\fb_pixel[2]_i_267_n_0 ),
+        .I4(\fb_pixel[1]_i_162_n_0 ),
+        .O(\fb_pixel[1]_i_123_n_0 ));
   LUT6 #(
-    .INIT(64'hFF00CCCCAAAAF0F0)) 
-    \fb_pixel[1]_i_42 
-       (.I0(\fb_pixel[1]_i_45_n_0 ),
-        .I1(\fb_pixel[1]_i_46_n_0 ),
-        .I2(\fb_pixel[1]_i_47_n_0 ),
-        .I3(\fb_pixel[1]_i_48_n_0 ),
-        .I4(\fb_pixel[1]_i_52_n_0 ),
-        .I5(\fb_pixel[1]_i_53_n_0 ),
-        .O(\fb_pixel[1]_i_42_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000030E00000)) 
-    \fb_pixel[1]_i_43 
+    .INIT(64'h6A2A2AAA00000000)) 
+    \fb_pixel[1]_i_124 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[1]),
+        .I5(\fb_pixel[1]_i_163_n_0 ),
+        .O(\fb_pixel[1]_i_124_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  LUT5 #(
+    .INIT(32'h57000000)) 
+    \fb_pixel[1]_i_125 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_125_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  LUT4 #(
+    .INIT(16'h3092)) 
+    \fb_pixel[1]_i_126 
        (.I0(\pixel_x_reg_n_0_[1] ),
         .I1(\pixel_x_reg_n_0_[2] ),
         .I2(\pixel_x_reg_n_0_[4] ),
         .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\fb_pixel[2]_i_90_n_0 ),
-        .I5(fb_pixel140_out__1),
-        .O(\fb_pixel[1]_i_43_n_0 ));
-  LUT6 #(
-    .INIT(64'hFF00AAAACCCCF0F0)) 
-    \fb_pixel[1]_i_44 
-       (.I0(\fb_pixel[1]_i_45_n_0 ),
-        .I1(\fb_pixel[1]_i_46_n_0 ),
-        .I2(\fb_pixel[1]_i_47_n_0 ),
-        .I3(\fb_pixel[1]_i_48_n_0 ),
-        .I4(\fb_pixel[1]_i_54_n_0 ),
-        .I5(\fb_pixel[1]_i_55_n_0 ),
-        .O(\fb_pixel[1]_i_44_n_0 ));
-  LUT6 #(
-    .INIT(64'h3113177133331771)) 
-    \fb_pixel[1]_i_45 
-       (.I0(\fb_pixel[1]_i_56_n_0 ),
-        .I1(\fb_pixel[1]_i_57_n_0 ),
-        .I2(pixel_y_reg[1]),
-        .I3(pin_4_location_y[4]),
-        .I4(\fb_pixel[1]_i_58_n_0 ),
-        .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[1]_i_45_n_0 ));
-  LUT6 #(
-    .INIT(64'h000055555885FFFF)) 
-    \fb_pixel[1]_i_46 
-       (.I0(\fb_pixel[1]_i_58_n_0 ),
-        .I1(pixel_y_reg[0]),
-        .I2(pin_4_location_y[4]),
-        .I3(pixel_y_reg[1]),
-        .I4(\fb_pixel[1]_i_56_n_0 ),
-        .I5(\fb_pixel[1]_i_57_n_0 ),
-        .O(\fb_pixel[1]_i_46_n_0 ));
-  LUT6 #(
-    .INIT(64'h3113FFFF3113ABBA)) 
-    \fb_pixel[1]_i_47 
-       (.I0(pixel_y_reg[0]),
-        .I1(\fb_pixel[1]_i_59_n_0 ),
-        .I2(pin_4_location_y[4]),
-        .I3(pixel_y_reg[1]),
-        .I4(\fb_pixel[1]_i_57_n_0 ),
-        .I5(\fb_pixel[1]_i_56_n_0 ),
-        .O(\fb_pixel[1]_i_47_n_0 ));
-  LUT6 #(
-    .INIT(64'h00F0FFF000F099F9)) 
-    \fb_pixel[1]_i_48 
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[1]),
-        .I2(\fb_pixel[1]_i_56_n_0 ),
-        .I3(\fb_pixel[1]_i_57_n_0 ),
-        .I4(\fb_pixel[1]_i_59_n_0 ),
-        .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[1]_i_48_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+        .O(\fb_pixel[1]_i_126_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT4 #(
-    .INIT(16'h0A81)) 
-    \fb_pixel[1]_i_49 
+    .INIT(16'h0014)) 
+    \fb_pixel[1]_i_127 
        (.I0(\pixel_x_reg_n_0_[2] ),
         .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_49_n_0 ));
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_127_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  LUT5 #(
+    .INIT(32'h20808080)) 
+    \fb_pixel[1]_i_128 
+       (.I0(\number_8[0,13] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[1]_i_128_n_0 ));
   LUT6 #(
-    .INIT(64'hAAAAAAAA82028000)) 
-    \fb_pixel[1]_i_5 
-       (.I0(\fb_pixel[1]_i_17_n_0 ),
-        .I1(\fb_pixel[1]_i_18_n_0 ),
-        .I2(\fb_pixel[1]_i_19_n_0 ),
-        .I3(\fb_pixel[1]_i_20_n_0 ),
-        .I4(\fb_pixel[1]_i_21_n_0 ),
-        .I5(\fb_pixel[2]_i_40_n_0 ),
-        .O(\fb_pixel[1]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
-  LUT4 #(
-    .INIT(16'h8209)) 
-    \fb_pixel[1]_i_50 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_50_n_0 ));
-  LUT6 #(
-    .INIT(64'h1010F0F0F0F0F000)) 
-    \fb_pixel[1]_i_51 
-       (.I0(pixel_y_reg[2]),
-        .I1(pixel_y_reg[1]),
-        .I2(\fb_pixel[1]_i_60_n_0 ),
-        .I3(pixel_y_reg[0]),
-        .I4(\fb_pixel[2]_i_78_n_0 ),
-        .I5(\fb_pixel[2]_i_12_n_0 ),
-        .O(\fb_pixel[1]_i_51_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
-  LUT4 #(
-    .INIT(16'h1442)) 
-    \fb_pixel[1]_i_52 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_52_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
-  LUT4 #(
-    .INIT(16'h5006)) 
-    \fb_pixel[1]_i_53 
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_53_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
-  LUT4 #(
-    .INIT(16'hC018)) 
-    \fb_pixel[1]_i_54 
-       (.I0(\pixel_x_reg_n_0_[1] ),
+    .INIT(64'h2A002A002A002A2A)) 
+    \fb_pixel[1]_i_129 
+       (.I0(\pixel_x_reg_n_0_[4] ),
         .I1(\pixel_x_reg_n_0_[2] ),
         .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_54_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+        .I3(pixel_y_reg[4]),
+        .I4(\pixel_y[8]_i_5_n_0 ),
+        .I5(\pixel_y[8]_i_4_n_0 ),
+        .O(\fb_pixel[1]_i_129_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT4 #(
-    .INIT(16'h2890)) 
+    .INIT(16'h0096)) 
+    \fb_pixel[1]_i_13 
+       (.I0(\fb_pixel[1]_i_33_n_0 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I2(pixel_y_reg[3]),
+        .I3(\fb_pixel[0]_i_9_n_0 ),
+        .O(\fb_pixel[1]_i_13_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  LUT4 #(
+    .INIT(16'hF751)) 
+    \fb_pixel[1]_i_130 
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_130_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000007000000068)) 
+    \fb_pixel[1]_i_131 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[4]),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_131_n_0 ));
+  LUT6 #(
+    .INIT(64'h00DD55550FDD5555)) 
+    \fb_pixel[1]_i_132 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\fb_pixel[1]_i_164_n_0 ),
+        .I2(\fb_pixel[1]_i_157_n_0 ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_132_n_0 ));
+  LUT6 #(
+    .INIT(64'h00400000F0C00000)) 
+    \fb_pixel[1]_i_133 
+       (.I0(\fb_pixel[1]_i_165_n_0 ),
+        .I1(\fb_pixel[1]_i_166_n_0 ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(pixel_y_reg[4]),
+        .I5(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_133_n_0 ));
+  LUT6 #(
+    .INIT(64'h3F7C40C03FFCC0C0)) 
+    \fb_pixel[1]_i_134 
+       (.I0(\fb_pixel[1]_i_148_n_0 ),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[4]),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_134_n_0 ));
+  LUT6 #(
+    .INIT(64'h00A0A000F088F000)) 
+    \fb_pixel[1]_i_135 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[4]),
+        .I5(\fb_pixel[0]_i_29_n_0 ),
+        .O(\fb_pixel[1]_i_135_n_0 ));
+  LUT6 #(
+    .INIT(64'h0C00080000000000)) 
+    \fb_pixel[1]_i_136 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\fb_pixel[1]_i_167_n_0 ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_136_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000000002000F)) 
+    \fb_pixel[1]_i_137 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(pixel_y_reg[0]),
+        .I2(\pixel_y[8]_i_4_n_0 ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[1]),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_137_n_0 ));
+  LUT6 #(
+    .INIT(64'h02000200200020C0)) 
+    \fb_pixel[1]_i_138 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[2]),
+        .I3(\fb_pixel[1]_i_142_n_0 ),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_138_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000007D0000)) 
+    \fb_pixel[1]_i_139 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(pixel_y_reg[4]),
+        .I5(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_139_n_0 ));
+  LUT6 #(
+    .INIT(64'h010000018CC6C68C)) 
+    \fb_pixel[1]_i_14 
+       (.I0(\fb_pixel[1]_i_34_n_0 ),
+        .I1(\fb_pixel[1]_i_35_n_0 ),
+        .I2(\fb_pixel[1]_i_36_n_0 ),
+        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\fb_pixel[1]_i_37_n_0 ),
+        .O(\fb_pixel[1]_i_14_n_0 ));
+  LUT6 #(
+    .INIT(64'h2200AA00F200AA00)) 
+    \fb_pixel[1]_i_140 
+       (.I0(pixel_y_reg[3]),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg[2]),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\pixel_y[8]_i_5_n_0 ),
+        .O(\fb_pixel[1]_i_140_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  LUT5 #(
+    .INIT(32'hC0808080)) 
+    \fb_pixel[1]_i_141 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[2]),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_141_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair93" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \fb_pixel[1]_i_142 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_142_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \fb_pixel[1]_i_143 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_143_n_0 ));
+  LUT6 #(
+    .INIT(64'h02C202C2F3F202C2)) 
+    \fb_pixel[1]_i_144 
+       (.I0(\fb_pixel[1]_i_146_n_0 ),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .I3(\fb_pixel[1]_i_142_n_0 ),
+        .I4(pixel_y_reg[4]),
+        .I5(\fb_pixel[0]_i_29_n_0 ),
+        .O(\fb_pixel[1]_i_144_n_0 ));
+  LUT6 #(
+    .INIT(64'hFC001111FCF0F1F1)) 
+    \fb_pixel[1]_i_145 
+       (.I0(\fb_pixel[1]_i_157_n_0 ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[3]),
+        .I5(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[1]_i_145_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  LUT5 #(
+    .INIT(32'h05000700)) 
+    \fb_pixel[1]_i_146 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(pixel_y_reg[4]),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_146_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  LUT5 #(
+    .INIT(32'h5404F404)) 
+    \fb_pixel[1]_i_147 
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_147_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  LUT3 #(
+    .INIT(8'hEA)) 
+    \fb_pixel[1]_i_148 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_148_n_0 ));
+  LUT6 #(
+    .INIT(64'h0010003000300000)) 
+    \fb_pixel[1]_i_149 
+       (.I0(pixel_y_reg[0]),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(pixel_y_reg[4]),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(pixel_y_reg[1]),
+        .I5(\fb_pixel[1]_i_167_n_0 ),
+        .O(\fb_pixel[1]_i_149_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFEAEAFFAA)) 
+    \fb_pixel[1]_i_15 
+       (.I0(\fb_pixel[1]_i_38_n_0 ),
+        .I1(\fb_pixel[1]_i_39_n_0 ),
+        .I2(\fb_pixel[1]_i_40_n_0 ),
+        .I3(\fb_pixel[1]_i_41_n_0 ),
+        .I4(\fb_pixel[1]_i_42_n_0 ),
+        .I5(\fb_pixel[1]_i_43_n_0 ),
+        .O(\fb_pixel[1]_i_15_n_0 ));
+  LUT6 #(
+    .INIT(64'hC040404040004000)) 
+    \fb_pixel[1]_i_150 
+       (.I0(pixel_y_reg[3]),
+        .I1(\fb_pixel[1]_i_155_n_0 ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_150_n_0 ));
+  LUT6 #(
+    .INIT(64'h5500000355000000)) 
+    \fb_pixel[1]_i_151 
+       (.I0(\fb_pixel[1]_i_157_n_0 ),
+        .I1(\fb_pixel[1]_i_168_n_0 ),
+        .I2(pixel_y_reg[1]),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(\fb_pixel[0]_i_43_n_0 ),
+        .O(\fb_pixel[1]_i_151_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF55575557555755)) 
+    \fb_pixel[1]_i_152 
+       (.I0(\fb_pixel[1]_i_148_n_0 ),
+        .I1(\fb_pixel[1]_i_169_n_0 ),
+        .I2(\fb_pixel[1]_i_168_n_0 ),
+        .I3(\fb_pixel[1]_i_155_n_0 ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\fb_pixel[1]_i_170_n_0 ),
+        .O(\fb_pixel[1]_i_152_n_0 ));
+  LUT6 #(
+    .INIT(64'h7700760000080000)) 
+    \fb_pixel[1]_i_153 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(\fb_pixel[0]_i_29_n_0 ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(pixel_y_reg[4]),
+        .O(\fb_pixel[1]_i_153_n_0 ));
+  LUT6 #(
+    .INIT(64'h400000000000AB00)) 
+    \fb_pixel[1]_i_154 
+       (.I0(\pixel_y[8]_i_4_n_0 ),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[4]),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_154_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair94" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[1]_i_155 
+       (.I0(pixel_y_reg[4]),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_155_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  LUT4 #(
+    .INIT(16'h1454)) 
+    \fb_pixel[1]_i_156 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_156_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'hEF)) 
+    \fb_pixel[1]_i_157 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[4]),
+        .O(\fb_pixel[1]_i_157_n_0 ));
+  LUT6 #(
+    .INIT(64'hF400540050045004)) 
+    \fb_pixel[1]_i_158 
+       (.I0(\fb_pixel[1]_i_142_n_0 ),
+        .I1(\fb_pixel[1]_i_171_n_0 ),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .I4(\fb_pixel[1]_i_155_n_0 ),
+        .I5(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_158_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000000404080F)) 
+    \fb_pixel[1]_i_159 
+       (.I0(pixel_y_reg[0]),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_y[8]_i_4_n_0 ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[1]),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_159_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000007400)) 
+    \fb_pixel[1]_i_16 
+       (.I0(\fb_pixel[1]_i_44_n_0 ),
+        .I1(\fb_pixel[1]_i_31_n_0 ),
+        .I2(\fb_pixel[0]_i_9_n_0 ),
+        .I3(\fb_pixel[1]_i_45_n_0 ),
+        .I4(\fb_pixel[1]_i_46_n_0 ),
+        .I5(\fb_pixel[1]_i_32_n_0 ),
+        .O(\fb_pixel[1]_i_16_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  LUT5 #(
+    .INIT(32'h1F1F8000)) 
+    \fb_pixel[1]_i_160 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[4]),
+        .O(\number_8[0,13] ));
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  LUT4 #(
+    .INIT(16'h5700)) 
+    \fb_pixel[1]_i_161 
+       (.I0(score[3]),
+        .I1(score[2]),
+        .I2(score[1]),
+        .I3(score[0]),
+        .O(\fb_pixel[1]_i_161_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \fb_pixel[1]_i_162 
+       (.I0(score[10]),
+        .I1(score[11]),
+        .I2(score[12]),
+        .I3(score[13]),
+        .O(\fb_pixel[1]_i_162_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  LUT5 #(
+    .INIT(32'h0088C000)) 
+    \fb_pixel[1]_i_163 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_163_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'h021AAAA0)) 
+    \fb_pixel[1]_i_164 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_164_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[1]_i_165 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_165_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \fb_pixel[1]_i_166 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_166_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair91" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[1]_i_167 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_167_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  LUT4 #(
+    .INIT(16'h4000)) 
+    \fb_pixel[1]_i_168 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .O(\fb_pixel[1]_i_168_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair91" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \fb_pixel[1]_i_169 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_169_n_0 ));
+  LUT6 #(
+    .INIT(64'hBB8BB888B888B888)) 
+    \fb_pixel[1]_i_17 
+       (.I0(\fb_pixel[1]_i_47_n_0 ),
+        .I1(fb_pixel194_out),
+        .I2(fb_pixel186_out),
+        .I3(\fb_pixel[1]_i_48_n_0 ),
+        .I4(fb_pixel182_out),
+        .I5(\fb_pixel[1]_i_49_n_0 ),
+        .O(\fb_pixel[1]_i_17_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  LUT4 #(
+    .INIT(16'h0074)) 
+    \fb_pixel[1]_i_170 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_170_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[1]_i_171 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_171_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFF111000001110)) 
+    \fb_pixel[1]_i_18 
+       (.I0(fb_pixel173_out),
+        .I1(fb_pixel169_out),
+        .I2(\fb_pixel[1]_i_50_n_0 ),
+        .I3(\fb_pixel[1]_i_51_n_0 ),
+        .I4(fb_pixel179_out),
+        .I5(\fb_pixel[1]_i_52_n_0 ),
+        .O(\fb_pixel[1]_i_18_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF00CCCCAAAAF0F0)) 
+    \fb_pixel[1]_i_19 
+       (.I0(\fb_pixel[1]_i_53_n_0 ),
+        .I1(\fb_pixel[1]_i_54_n_0 ),
+        .I2(\fb_pixel[1]_i_55_n_0 ),
+        .I3(\fb_pixel[1]_i_56_n_0 ),
+        .I4(\fb_pixel[2]_i_123_n_0 ),
+        .I5(\fb_pixel[2]_i_124_n_0 ),
+        .O(\fb_pixel[1]_i_19_n_0 ));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAFFEAEAEA)) 
+    \fb_pixel[1]_i_2 
+       (.I0(\fb_pixel[1]_i_6_n_0 ),
+        .I1(\fb_pixel[1]_i_7_n_0 ),
+        .I2(\fb_pixel[1]_i_8_n_0 ),
+        .I3(\fb_pixel[1]_i_9_n_0 ),
+        .I4(fb_pixel1),
+        .I5(\fb_pixel[2]_i_31_n_0 ),
+        .O(\fb_pixel[1]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF00AAAACCCCF0F0)) 
+    \fb_pixel[1]_i_20 
+       (.I0(\fb_pixel[1]_i_53_n_0 ),
+        .I1(\fb_pixel[1]_i_54_n_0 ),
+        .I2(\fb_pixel[1]_i_55_n_0 ),
+        .I3(\fb_pixel[1]_i_56_n_0 ),
+        .I4(\fb_pixel[1]_i_57_n_0 ),
+        .I5(\fb_pixel[1]_i_58_n_0 ),
+        .O(\fb_pixel[1]_i_20_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFF888F888F888)) 
+    \fb_pixel[1]_i_21 
+       (.I0(\fb_pixel[1]_i_59_n_0 ),
+        .I1(railing_up_reg_n_0),
+        .I2(\fb_pixel[1]_i_60_n_0 ),
+        .I3(fb_pixel4112_in),
+        .I4(fb_pixel4115_in),
+        .I5(\fb_pixel[1]_i_63_n_0 ),
+        .O(\fb_pixel[1]_i_21_n_0 ));
+  LUT5 #(
+    .INIT(32'hFEEEEEEE)) 
+    \fb_pixel[1]_i_22 
+       (.I0(\fb_pixel[1]_i_59_n_0 ),
+        .I1(\fb_pixel[1]_i_64_n_0 ),
+        .I2(fb_pixel4115_in),
+        .I3(\fb_pixel[1]_i_65_n_0 ),
+        .I4(\pixel_x_reg_n_0_[7] ),
+        .O(\fb_pixel[1]_i_22_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  LUT5 #(
+    .INIT(32'hFF0F8F7F)) 
+    \fb_pixel[1]_i_23 
+       (.I0(score[0]),
+        .I1(score[1]),
+        .I2(\fb_pixel[2]_i_101_n_0 ),
+        .I3(score[3]),
+        .I4(score[2]),
+        .O(\fb_pixel[1]_i_23_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[1]_i_24 
+       (.I0(\fb_pixel[1]_i_66_n_0 ),
+        .I1(\fb_pixel[1]_i_67_n_0 ),
+        .O(\fb_pixel[1]_i_24_n_0 ));
+  LUT5 #(
+    .INIT(32'h44444440)) 
+    \fb_pixel[1]_i_25 
+       (.I0(\fb_pixel[1]_i_24_n_0 ),
+        .I1(\fb_pixel[1]_i_23_n_0 ),
+        .I2(\fb_pixel[1]_i_68_n_0 ),
+        .I3(\fb_pixel[1]_i_69_n_0 ),
+        .I4(\fb_pixel[1]_i_70_n_0 ),
+        .O(\fb_pixel[1]_i_25_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \fb_pixel[1]_i_26 
+       (.I0(\fb_pixel[1]_i_67_n_0 ),
+        .I1(\fb_pixel[1]_i_66_n_0 ),
+        .O(\fb_pixel[1]_i_26_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFAFAFFEEFAFA)) 
+    \fb_pixel[1]_i_27 
+       (.I0(\fb_pixel[1]_i_71_n_0 ),
+        .I1(\fb_pixel[1]_i_72_n_0 ),
+        .I2(\fb_pixel[1]_i_73_n_0 ),
+        .I3(\fb_pixel[1]_i_74_n_0 ),
+        .I4(\fb_pixel[1]_i_75_n_0 ),
+        .I5(\fb_pixel[1]_i_76_n_0 ),
+        .O(\fb_pixel[1]_i_27_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  LUT4 #(
+    .INIT(16'h0B08)) 
+    \fb_pixel[1]_i_28 
+       (.I0(\fb_pixel[1]_i_77_n_0 ),
+        .I1(\fb_pixel[1]_i_66_n_0 ),
+        .I2(\fb_pixel[1]_i_67_n_0 ),
+        .I3(\fb_pixel[1]_i_78_n_0 ),
+        .O(\fb_pixel[1]_i_28_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000F8F8FF000000)) 
+    \fb_pixel[1]_i_29 
+       (.I0(\fb_pixel[1]_i_79_n_0 ),
+        .I1(\fb_pixel[1]_i_75_n_0 ),
+        .I2(\fb_pixel[1]_i_80_n_0 ),
+        .I3(\fb_pixel[1]_i_81_n_0 ),
+        .I4(\fb_pixel[1]_i_67_n_0 ),
+        .I5(\fb_pixel[1]_i_66_n_0 ),
+        .O(\fb_pixel[1]_i_29_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[1]_i_3 
+       (.I0(\fb_pixel[1]_i_11_n_0 ),
+        .I1(\fb_pixel[2]_i_4_n_0 ),
+        .O(\fb_pixel[1]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'h0800000008080000)) 
+    \fb_pixel[1]_i_30 
+       (.I0(fb_pixel558_in),
+        .I1(pixel_y_reg__0[8]),
+        .I2(\fb_pixel[1]_i_82_n_0 ),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg__0[5]),
+        .I5(\pixel_y[8]_i_4_n_0 ),
+        .O(\fb_pixel[1]_i_30_n_0 ));
+  LUT6 #(
+    .INIT(64'h3CC33C3C28822828)) 
+    \fb_pixel[1]_i_31 
+       (.I0(\fb_pixel[1]_i_83_n_0 ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\fb_pixel[1]_i_84_n_0 ),
+        .O(\fb_pixel[1]_i_31_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT5 #(
+    .INIT(32'h693CC369)) 
+    \fb_pixel[1]_i_32 
+       (.I0(\fb_pixel[1]_i_33_n_0 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(pixel_y_reg[4]),
+        .I3(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_32_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF5F7F5755051501)) 
+    \fb_pixel[1]_i_33 
+       (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[1]_i_33_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  LUT4 #(
+    .INIT(16'h695A)) 
+    \fb_pixel[1]_i_34 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_34_n_0 ));
+  LUT6 #(
+    .INIT(64'h6999696966696666)) 
+    \fb_pixel[1]_i_35 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I5(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_35_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  LUT3 #(
+    .INIT(8'h69)) 
+    \fb_pixel[1]_i_36 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I2(\fb_pixel[1]_i_85_n_0 ),
+        .O(\fb_pixel[1]_i_36_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  LUT5 #(
+    .INIT(32'h4BB4D22D)) 
+    \fb_pixel[1]_i_37 
+       (.I0(\fb_pixel[1]_i_85_n_0 ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I2(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_37_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT5 #(
+    .INIT(32'h04040444)) 
+    \fb_pixel[1]_i_38 
+       (.I0(\fb_pixel[1]_i_31_n_0 ),
+        .I1(\fb_pixel[1]_i_45_n_0 ),
+        .I2(\fb_pixel[0]_i_9_n_0 ),
+        .I3(\fb_pixel[1]_i_32_n_0 ),
+        .I4(\fb_pixel[1]_i_44_n_0 ),
+        .O(\fb_pixel[1]_i_38_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'h04)) 
+    \fb_pixel[1]_i_39 
+       (.I0(\fb_pixel[1]_i_31_n_0 ),
+        .I1(\fb_pixel[0]_i_9_n_0 ),
+        .I2(\fb_pixel[1]_i_32_n_0 ),
+        .O(\fb_pixel[1]_i_39_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFF08F8000000000)) 
+    \fb_pixel[1]_i_4 
+       (.I0(\fb_pixel[1]_i_12_n_0 ),
+        .I1(\fb_pixel[1]_i_13_n_0 ),
+        .I2(\fb_pixel[1]_i_14_n_0 ),
+        .I3(\fb_pixel[1]_i_15_n_0 ),
+        .I4(\fb_pixel[1]_i_16_n_0 ),
+        .I5(fb_pixel1111_out),
+        .O(\fb_pixel[1]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT5 #(
+    .INIT(32'h2FF2CBBC)) 
+    \fb_pixel[1]_i_40 
+       (.I0(\fb_pixel[0]_i_10_n_0 ),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .I3(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I4(\bowling_ball_location_y_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_40_n_0 ));
+  LUT6 #(
+    .INIT(64'h0202020282020222)) 
+    \fb_pixel[1]_i_41 
+       (.I0(\fb_pixel[1]_i_31_n_0 ),
+        .I1(\fb_pixel[0]_i_10_n_0 ),
+        .I2(\fb_pixel[0]_i_9_n_0 ),
+        .I3(\fb_pixel[1]_i_44_n_0 ),
+        .I4(\fb_pixel[1]_i_46_n_0 ),
+        .I5(\fb_pixel[1]_i_32_n_0 ),
+        .O(\fb_pixel[1]_i_41_n_0 ));
+  LUT5 #(
+    .INIT(32'h03888803)) 
+    \fb_pixel[1]_i_42 
+       (.I0(\fb_pixel[1]_i_84_n_0 ),
+        .I1(\fb_pixel[1]_i_37_n_0 ),
+        .I2(\fb_pixel[1]_i_36_n_0 ),
+        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_42_n_0 ));
+  LUT6 #(
+    .INIT(64'h5514415500000000)) 
+    \fb_pixel[1]_i_43 
+       (.I0(\fb_pixel[0]_i_9_n_0 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(pixel_y_reg[0]),
+        .I3(\fb_pixel[1]_i_44_n_0 ),
+        .I4(\fb_pixel[1]_i_32_n_0 ),
+        .I5(\fb_pixel[1]_i_45_n_0 ),
+        .O(\fb_pixel[1]_i_43_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT4 #(
+    .INIT(16'h693C)) 
+    \fb_pixel[1]_i_44 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[0] ),
+        .O(\fb_pixel[1]_i_44_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  LUT4 #(
+    .INIT(16'h8228)) 
+    \fb_pixel[1]_i_45 
+       (.I0(\fb_pixel[1]_i_42_n_0 ),
+        .I1(\fb_pixel[1]_i_33_n_0 ),
+        .I2(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[1]_i_45_n_0 ));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \fb_pixel[1]_i_46 
+       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I1(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_46_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFEAEAEA)) 
+    \fb_pixel[1]_i_47 
+       (.I0(\fb_pixel[2]_i_41_n_0 ),
+        .I1(\fb_pixel[2]_i_38_n_0 ),
+        .I2(\fb_pixel[0]_i_12_n_0 ),
+        .I3(\fb_pixel[0]_i_7_n_0 ),
+        .I4(\fb_pixel[2]_i_39_n_0 ),
+        .O(\fb_pixel[1]_i_47_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF00CCCCAAAAF0F0)) 
+    \fb_pixel[1]_i_48 
+       (.I0(\fb_pixel[2]_i_112_n_0 ),
+        .I1(\fb_pixel[2]_i_113_n_0 ),
+        .I2(\fb_pixel[1]_i_86_n_0 ),
+        .I3(\fb_pixel[1]_i_87_n_0 ),
+        .I4(\fb_pixel[2]_i_58_n_0 ),
+        .I5(\fb_pixel[2]_i_59_n_0 ),
+        .O(\fb_pixel[1]_i_48_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF00AAAACCCCF0F0)) 
+    \fb_pixel[1]_i_49 
+       (.I0(\fb_pixel[2]_i_112_n_0 ),
+        .I1(\fb_pixel[2]_i_113_n_0 ),
+        .I2(\fb_pixel[1]_i_86_n_0 ),
+        .I3(\fb_pixel[1]_i_87_n_0 ),
+        .I4(\fb_pixel[2]_i_32_n_0 ),
+        .I5(\fb_pixel[2]_i_33_n_0 ),
+        .O(\fb_pixel[1]_i_49_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \fb_pixel[1]_i_5 
+       (.I0(\fb_pixel[2]_i_4_n_0 ),
+        .I1(\fb_pixel[1]_i_17_n_0 ),
+        .I2(\fb_pixel[0]_i_2_n_0 ),
+        .O(\fb_pixel[1]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'hAAAAAAAA82028000)) 
+    \fb_pixel[1]_i_50 
+       (.I0(\fb_pixel[2]_i_205_n_0 ),
+        .I1(\fb_pixel[2]_i_208_n_0 ),
+        .I2(\fb_pixel[2]_i_207_n_0 ),
+        .I3(\fb_pixel[1]_i_56_n_0 ),
+        .I4(\fb_pixel[1]_i_55_n_0 ),
+        .I5(\fb_pixel[2]_i_206_n_0 ),
+        .O(\fb_pixel[1]_i_50_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFF88800000000)) 
+    \fb_pixel[1]_i_51 
+       (.I0(\fb_pixel[2]_i_39_n_0 ),
+        .I1(\fb_pixel[1]_i_56_n_0 ),
+        .I2(\fb_pixel[1]_i_55_n_0 ),
+        .I3(\fb_pixel[2]_i_38_n_0 ),
+        .I4(\fb_pixel[2]_i_119_n_0 ),
+        .I5(fb_pixel166_out),
+        .O(\fb_pixel[1]_i_51_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF00CCCCAAAAF0F0)) 
+    \fb_pixel[1]_i_52 
+       (.I0(\fb_pixel[2]_i_112_n_0 ),
+        .I1(\fb_pixel[2]_i_113_n_0 ),
+        .I2(\fb_pixel[1]_i_86_n_0 ),
+        .I3(\fb_pixel[1]_i_87_n_0 ),
+        .I4(\fb_pixel[1]_i_88_n_0 ),
+        .I5(\fb_pixel[1]_i_89_n_0 ),
+        .O(\fb_pixel[1]_i_52_n_0 ));
+  LUT6 #(
+    .INIT(64'h3113177133331771)) 
+    \fb_pixel[1]_i_53 
+       (.I0(\fb_pixel[1]_i_90_n_0 ),
+        .I1(\fb_pixel[2]_i_202_n_0 ),
+        .I2(pixel_y_reg[1]),
+        .I3(pin_4_location_y[4]),
+        .I4(\fb_pixel[1]_i_91_n_0 ),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_53_n_0 ));
+  LUT6 #(
+    .INIT(64'hCC7C7C771D313103)) 
+    \fb_pixel[1]_i_54 
+       (.I0(\fb_pixel[1]_i_92_n_0 ),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[2]),
+        .I3(\fb_pixel[2]_i_204_n_0 ),
+        .I4(pin_4_location_y[6]),
+        .I5(\fb_pixel[1]_i_93_n_0 ),
+        .O(\fb_pixel[1]_i_54_n_0 ));
+  LUT6 #(
+    .INIT(64'h3113FFFF3113ABBA)) 
     \fb_pixel[1]_i_55 
+       (.I0(pixel_y_reg[0]),
+        .I1(\fb_pixel[2]_i_203_n_0 ),
+        .I2(pin_4_location_y[4]),
+        .I3(pixel_y_reg[1]),
+        .I4(\fb_pixel[2]_i_202_n_0 ),
+        .I5(\fb_pixel[1]_i_90_n_0 ),
+        .O(\fb_pixel[1]_i_55_n_0 ));
+  LUT6 #(
+    .INIT(64'h00F0FFF000F099F9)) 
+    \fb_pixel[1]_i_56 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[1]),
+        .I2(\fb_pixel[1]_i_90_n_0 ),
+        .I3(\fb_pixel[2]_i_202_n_0 ),
+        .I4(\fb_pixel[2]_i_203_n_0 ),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_56_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  LUT4 #(
+    .INIT(16'h1418)) 
+    \fb_pixel[1]_i_57 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_57_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  LUT4 #(
+    .INIT(16'h0492)) 
+    \fb_pixel[1]_i_58 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[1]_i_58_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT5 #(
+    .INIT(32'hFFF810F0)) 
+    \fb_pixel[1]_i_59 
+       (.I0(\pixel_x_reg_n_0_[6] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(fb_pixel4112_in),
+        .I3(\pixel_x_reg_n_0_[8] ),
+        .I4(fb_pixel4115_in),
+        .O(\fb_pixel[1]_i_59_n_0 ));
+  LUT6 #(
+    .INIT(64'hBBABBAAABAAABAAA)) 
+    \fb_pixel[1]_i_6 
+       (.I0(\fb_pixel[1]_i_18_n_0 ),
+        .I1(fb_pixel179_out),
+        .I2(fb_pixel173_out),
+        .I3(\fb_pixel[1]_i_19_n_0 ),
+        .I4(fb_pixel169_out),
+        .I5(\fb_pixel[1]_i_20_n_0 ),
+        .O(\fb_pixel[1]_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'h0004000400040404)) 
+    \fb_pixel[1]_i_60 
+       (.I0(\fb_pixel[1]_i_94_n_0 ),
+        .I1(railing_up_reg_n_0),
+        .I2(\pixel_x_reg_n_0_[7] ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_60_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFF0000FE000000)) 
+    \fb_pixel[1]_i_61 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\fb_pixel[2]_i_176_n_0 ),
+        .I2(\fb_pixel[1]_i_94_n_0 ),
+        .I3(\pixel_x_reg_n_0_[6] ),
+        .I4(\pixel_x_reg_n_0_[8] ),
+        .I5(\pixel_x_reg_n_0_[7] ),
+        .O(fb_pixel4112_in));
+  LUT4 #(
+    .INIT(16'h020F)) 
+    \fb_pixel[1]_i_62 
+       (.I0(\fb_pixel[1]_i_95_n_0 ),
+        .I1(\pixel_x_reg_n_0_[6] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(\pixel_x_reg_n_0_[7] ),
+        .O(fb_pixel4115_in));
+  LUT6 #(
+    .INIT(64'h8080808080800080)) 
+    \fb_pixel[1]_i_63 
+       (.I0(railing_up_reg_n_0),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\pixel_x[5]_i_2_n_0 ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_63_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000001F00000000)) 
+    \fb_pixel[1]_i_64 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[7] ),
+        .I4(\pixel_x_reg_n_0_[5] ),
+        .I5(fb_pixel4112_in),
+        .O(\fb_pixel[1]_i_64_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFF008000)) 
+    \fb_pixel[1]_i_65 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .I5(\pixel_x_reg_n_0_[5] ),
+        .O(\fb_pixel[1]_i_65_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  LUT5 #(
+    .INIT(32'h00000004)) 
+    \fb_pixel[1]_i_66 
+       (.I0(\fb_pixel[2]_i_184_n_0 ),
+        .I1(\fb_pixel[1]_i_96_n_0 ),
+        .I2(score[19]),
+        .I3(\fb_pixel[2]_i_187_n_0 ),
+        .I4(\fb_pixel[2]_i_186_n_0 ),
+        .O(\fb_pixel[1]_i_66_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    \fb_pixel[1]_i_67 
+       (.I0(\fb_pixel[1]_i_97_n_0 ),
+        .I1(\fb_pixel[2]_i_187_n_0 ),
+        .I2(score[18]),
+        .I3(score[19]),
+        .I4(\fb_pixel[2]_i_184_n_0 ),
+        .O(\fb_pixel[1]_i_67_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000800C0C00)) 
+    \fb_pixel[1]_i_68 
+       (.I0(\fb_pixel[1]_i_98_n_0 ),
+        .I1(\fb_pixel[0]_i_18_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_68_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFF000082A20000)) 
+    \fb_pixel[1]_i_69 
+       (.I0(\fb_pixel[1]_i_99_n_0 ),
+        .I1(\pixel_y[8]_i_4_n_0 ),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg[1]),
+        .I4(\fb_pixel[0]_i_18_n_0 ),
+        .I5(\fb_pixel[0]_i_21_n_0 ),
+        .O(\fb_pixel[1]_i_69_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair88" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \fb_pixel[1]_i_7 
+       (.I0(\fb_pixel[1]_i_21_n_0 ),
+        .I1(\fb_pixel[1]_i_22_n_0 ),
+        .O(\fb_pixel[1]_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'h00E200E200FF0000)) 
+    \fb_pixel[1]_i_70 
+       (.I0(\fb_pixel[1]_i_100_n_0 ),
+        .I1(\fb_pixel[1]_i_101_n_0 ),
+        .I2(\fb_pixel[1]_i_102_n_0 ),
+        .I3(\fb_pixel[0]_i_18_n_0 ),
+        .I4(\fb_pixel[1]_i_103_n_0 ),
+        .I5(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[1]_i_70_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000008800F0)) 
+    \fb_pixel[1]_i_71 
+       (.I0(\fb_pixel[1]_i_104_n_0 ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\fb_pixel[1]_i_105_n_0 ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .I5(\fb_pixel[1]_i_75_n_0 ),
+        .O(\fb_pixel[1]_i_71_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  LUT5 #(
+    .INIT(32'h0000FBFF)) 
+    \fb_pixel[1]_i_72 
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_y[8]_i_4_n_0 ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\fb_pixel[1]_i_106_n_0 ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[1]_i_72_n_0 ));
+  LUT6 #(
+    .INIT(64'h5555555400000000)) 
+    \fb_pixel[1]_i_73 
+       (.I0(\pixel_x[7]_i_3_n_0 ),
+        .I1(\fb_pixel[1]_i_107_n_0 ),
+        .I2(\fb_pixel[1]_i_108_n_0 ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\fb_pixel[1]_i_109_n_0 ),
+        .I5(\fb_pixel[1]_i_110_n_0 ),
+        .O(\fb_pixel[1]_i_73_n_0 ));
+  LUT6 #(
+    .INIT(64'h4444404400004000)) 
+    \fb_pixel[1]_i_74 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\fb_pixel[1]_i_111_n_0 ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .I5(\fb_pixel[1]_i_112_n_0 ),
+        .O(\fb_pixel[1]_i_74_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  LUT5 #(
+    .INIT(32'h00000004)) 
+    \fb_pixel[1]_i_75 
+       (.I0(\fb_pixel[2]_i_184_n_0 ),
+        .I1(\fb_pixel[1]_i_113_n_0 ),
+        .I2(score[19]),
+        .I3(score[18]),
+        .I4(\fb_pixel[2]_i_187_n_0 ),
+        .O(\fb_pixel[1]_i_75_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFE00FE00000000)) 
+    \fb_pixel[1]_i_76 
+       (.I0(\fb_pixel[1]_i_114_n_0 ),
+        .I1(\fb_pixel[1]_i_115_n_0 ),
+        .I2(\fb_pixel[1]_i_116_n_0 ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\fb_pixel[1]_i_117_n_0 ),
+        .I5(\fb_pixel[1]_i_101_n_0 ),
+        .O(\fb_pixel[1]_i_76_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000000200AA)) 
+    \fb_pixel[1]_i_77 
+       (.I0(pixel_y_reg[4]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg[2]),
+        .I5(\fb_pixel[1]_i_118_n_0 ),
+        .O(\fb_pixel[1]_i_77_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFEEFFFFFCEEFCFC)) 
+    \fb_pixel[1]_i_78 
+       (.I0(\fb_pixel[1]_i_119_n_0 ),
+        .I1(\fb_pixel[1]_i_120_n_0 ),
+        .I2(\fb_pixel[1]_i_121_n_0 ),
+        .I3(\fb_pixel[1]_i_122_n_0 ),
+        .I4(\fb_pixel[1]_i_123_n_0 ),
+        .I5(\fb_pixel[1]_i_124_n_0 ),
+        .O(\fb_pixel[1]_i_78_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  LUT5 #(
+    .INIT(32'h00202000)) 
+    \fb_pixel[1]_i_79 
+       (.I0(\fb_pixel[1]_i_125_n_0 ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[1]_i_79_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT3 #(
+    .INIT(8'h8F)) 
+    \fb_pixel[1]_i_8 
+       (.I0(\fb_pixel[1]_i_23_n_0 ),
+        .I1(\fb_pixel[1]_i_24_n_0 ),
+        .I2(fb_pixel1),
+        .O(\fb_pixel[1]_i_8_n_0 ));
+  LUT6 #(
+    .INIT(64'h222AAAAA22222222)) 
+    \fb_pixel[1]_i_80 
+       (.I0(\fb_pixel[1]_i_126_n_0 ),
+        .I1(\fb_pixel[1]_i_118_n_0 ),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[2]),
+        .I5(pixel_y_reg[4]),
+        .O(\fb_pixel[1]_i_80_n_0 ));
+  LUT6 #(
+    .INIT(64'hEEEEEFEEEEEEEAEE)) 
+    \fb_pixel[1]_i_81 
+       (.I0(\fb_pixel[1]_i_127_n_0 ),
+        .I1(\fb_pixel[1]_i_128_n_0 ),
+        .I2(\fb_pixel[2]_i_184_n_0 ),
+        .I3(\fb_pixel[1]_i_113_n_0 ),
+        .I4(\fb_pixel[1]_i_122_n_0 ),
+        .I5(\fb_pixel[1]_i_129_n_0 ),
+        .O(\fb_pixel[1]_i_81_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[1]_i_82 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
+        .O(\fb_pixel[1]_i_82_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  LUT4 #(
+    .INIT(16'h0069)) 
+    \fb_pixel[1]_i_83 
+       (.I0(\fb_pixel[1]_i_130_n_0 ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\fb_pixel[1]_i_37_n_0 ),
+        .O(\fb_pixel[1]_i_83_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  LUT5 #(
+    .INIT(32'h90090690)) 
+    \fb_pixel[1]_i_84 
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\fb_pixel[1]_i_130_n_0 ),
+        .I3(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[1]_i_84_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF7F775755151101)) 
+    \fb_pixel[1]_i_85 
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I2(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[1]_i_85_n_0 ));
+  LUT6 #(
+    .INIT(64'h00007007FFFFEAAE)) 
+    \fb_pixel[1]_i_86 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[2]),
+        .I3(pin_4_location_y[4]),
+        .I4(\fb_pixel[2]_i_128_n_0 ),
+        .I5(\fb_pixel[2]_i_127_n_0 ),
+        .O(\fb_pixel[1]_i_86_n_0 ));
+  LUT6 #(
+    .INIT(64'h3C0C0C3C1D0C0C1D)) 
+    \fb_pixel[1]_i_87 
+       (.I0(pixel_y_reg[1]),
+        .I1(\fb_pixel[2]_i_128_n_0 ),
+        .I2(\fb_pixel[2]_i_127_n_0 ),
+        .I3(pin_4_location_y[4]),
+        .I4(pixel_y_reg[2]),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_87_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  LUT4 #(
+    .INIT(16'h2482)) 
+    \fb_pixel[1]_i_88 
        (.I0(\pixel_x_reg_n_0_[2] ),
         .I1(\pixel_x_reg_n_0_[1] ),
         .I2(\pixel_x_reg_n_0_[3] ),
         .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[1]_i_55_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+        .O(\fb_pixel[1]_i_88_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  LUT4 #(
+    .INIT(16'h3048)) 
+    \fb_pixel[1]_i_89 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_89_n_0 ));
+  LUT6 #(
+    .INIT(64'hBBBBBBBBBBBBBAAA)) 
+    \fb_pixel[1]_i_9 
+       (.I0(\fb_pixel[1]_i_25_n_0 ),
+        .I1(\fb_pixel[1]_i_23_n_0 ),
+        .I2(\fb_pixel[1]_i_26_n_0 ),
+        .I3(\fb_pixel[1]_i_27_n_0 ),
+        .I4(\fb_pixel[1]_i_28_n_0 ),
+        .I5(\fb_pixel[1]_i_29_n_0 ),
+        .O(\fb_pixel[1]_i_9_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT5 #(
     .INIT(32'h9599A9AA)) 
-    \fb_pixel[1]_i_56 
+    \fb_pixel[1]_i_90 
        (.I0(pixel_y_reg[3]),
         .I1(pixel_y_reg[2]),
         .I2(pixel_y_reg[1]),
         .I3(pin_4_location_y[4]),
         .I4(pin_4_location_y[6]),
-        .O(\fb_pixel[1]_i_56_n_0 ));
-  LUT6 #(
-    .INIT(64'h020BFFF5FDF4000A)) 
-    \fb_pixel[1]_i_57 
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[1]),
-        .I2(pixel_y_reg[3]),
-        .I3(pixel_y_reg[2]),
-        .I4(pin_4_location_y[4]),
-        .I5(pixel_y_reg[4]),
-        .O(\fb_pixel[1]_i_57_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+        .O(\fb_pixel[1]_i_90_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT4 #(
-    .INIT(16'h6966)) 
-    \fb_pixel[1]_i_58 
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[1]),
-        .I3(pin_4_location_y[4]),
-        .O(\fb_pixel[1]_i_58_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT5 #(
-    .INIT(32'hFFF759AE)) 
-    \fb_pixel[1]_i_59 
-       (.I0(pin_4_location_y[6]),
+    .INIT(16'h59A6)) 
+    \fb_pixel[1]_i_91 
+       (.I0(pixel_y_reg[2]),
         .I1(pin_4_location_y[4]),
         .I2(pixel_y_reg[1]),
+        .I3(pin_4_location_y[6]),
+        .O(\fb_pixel[1]_i_91_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  LUT5 #(
+    .INIT(32'h2DD26FF6)) 
+    \fb_pixel[1]_i_92 
+       (.I0(pixel_y_reg[1]),
+        .I1(pin_4_location_y[4]),
+        .I2(pin_4_location_y[6]),
         .I3(pixel_y_reg[2]),
-        .I4(pixel_y_reg[3]),
-        .O(\fb_pixel[1]_i_59_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFF918000000000)) 
-    \fb_pixel[1]_i_6 
-       (.I0(\fb_pixel[2]_i_14_n_0 ),
-        .I1(\fb_pixel[2]_i_12_n_0 ),
-        .I2(\fb_pixel[1]_i_20_n_0 ),
-        .I3(\fb_pixel[1]_i_21_n_0 ),
-        .I4(\fb_pixel[1]_i_22_n_0 ),
-        .I5(fb_pixel156_out__1),
-        .O(\fb_pixel[1]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+        .I4(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_92_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair92" *) 
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[1]_i_93 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[4]),
+        .O(\fb_pixel[1]_i_93_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  LUT3 #(
+    .INIT(8'hFE)) 
+    \fb_pixel[1]_i_94 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .O(\fb_pixel[1]_i_94_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT5 #(
-    .INIT(32'h41144141)) 
-    \fb_pixel[1]_i_60 
-       (.I0(\fb_pixel[2]_i_14_n_0 ),
-        .I1(pin_4_location_y[6]),
-        .I2(pixel_y_reg[4]),
-        .I3(pixel_y_reg[3]),
-        .I4(pin_4_location_y[4]),
-        .O(\fb_pixel[1]_i_60_n_0 ));
+    .INIT(32'h0F1F0FFF)) 
+    \fb_pixel[1]_i_95 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[1]_i_95_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000000078)) 
+    \fb_pixel[1]_i_96 
+       (.I0(score[0]),
+        .I1(score[1]),
+        .I2(score[2]),
+        .I3(score[3]),
+        .I4(score[18]),
+        .I5(\fb_pixel[2]_i_185_n_0 ),
+        .O(\fb_pixel[1]_i_96_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFF999)) 
+    \fb_pixel[1]_i_97 
+       (.I0(score[1]),
+        .I1(score[0]),
+        .I2(score[2]),
+        .I3(score[3]),
+        .I4(\fb_pixel[2]_i_185_n_0 ),
+        .I5(\fb_pixel[2]_i_186_n_0 ),
+        .O(\fb_pixel[1]_i_97_n_0 ));
+  LUT6 #(
+    .INIT(64'hEAEAEEEEEAEAEEEF)) 
+    \fb_pixel[1]_i_98 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(pixel_y_reg[4]),
+        .I2(\pixel_y[8]_i_4_n_0 ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(pixel_y_reg[1]),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[1]_i_98_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT5 #(
-    .INIT(32'hFFEAEAEA)) 
-    \fb_pixel[1]_i_7 
-       (.I0(\fb_pixel[2]_i_35_n_0 ),
-        .I1(\fb_pixel[2]_i_33_n_0 ),
-        .I2(\fb_pixel[1]_i_23_n_0 ),
-        .I3(\fb_pixel[1]_i_24_n_0 ),
-        .I4(\fb_pixel[2]_i_34_n_0 ),
-        .O(\fb_pixel[1]_i_7_n_0 ));
+    .INIT(32'h808000FF)) 
+    \fb_pixel[1]_i_99 
+       (.I0(\fb_pixel[1]_i_98_n_0 ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[1]_i_99_n_0 ));
   LUT6 #(
-    .INIT(64'h0080008000800000)) 
-    \fb_pixel[1]_i_8 
-       (.I0(\fb_pixel[1]_i_25_n_0 ),
-        .I1(fb_pixel365_in),
-        .I2(fb_pixel464_in),
-        .I3(pin_8_hit_reg_n_0),
-        .I4(\pixel_x_reg_n_0_[8] ),
-        .I5(\fb_pixel[1]_i_26_n_0 ),
-        .O(fb_pixel168_out__1));
-  LUT6 #(
-    .INIT(64'h0040000000000000)) 
-    \fb_pixel[1]_i_9 
-       (.I0(pin_7_hit_reg_n_0),
-        .I1(fb_pixel350_in),
-        .I2(fb_pixel449_in),
-        .I3(\fb_pixel[1]_i_27_n_0 ),
-        .I4(\pixel_x_reg_n_0_[8] ),
-        .I5(\fb_pixel[1]_i_28_n_0 ),
-        .O(fb_pixel160_out__8));
-  LUT6 #(
-    .INIT(64'hFFFEFFFFFFFE0000)) 
+    .INIT(64'hFFAEFFFFFFAE0000)) 
     \fb_pixel[2]_i_1 
        (.I0(\fb_pixel[2]_i_2_n_0 ),
         .I1(\fb_pixel[2]_i_3_n_0 ),
@@ -7226,945 +8484,2275 @@ module bowling_game_controller_0_0_controller
         .I4(\fb_pixel[2]_i_6_n_0 ),
         .I5(fb_pixel[2]),
         .O(\fb_pixel[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFBAABAAAA)) 
     \fb_pixel[2]_i_10 
-       (.I0(fb_pixel168_out__1),
-        .I1(fb_pixel160_out__8),
+       (.I0(\fb_pixel[2]_i_34_n_0 ),
+        .I1(pixel_y_reg[2]),
+        .I2(pin_4_location_y[4]),
+        .I3(pixel_y_reg[3]),
+        .I4(\fb_pixel[2]_i_35_n_0 ),
+        .I5(\fb_pixel[2]_i_36_n_0 ),
         .O(\fb_pixel[2]_i_10_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
-  LUT2 #(
-    .INIT(4'h9)) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  LUT5 #(
+    .INIT(32'h6A669599)) 
     \fb_pixel[2]_i_100 
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[1]),
+        .I3(pin_4_location_y[4]),
+        .I4(pin_4_location_y[6]),
         .O(\fb_pixel[2]_i_100_n_0 ));
-  LUT3 #(
-    .INIT(8'h01)) 
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
     \fb_pixel[2]_i_101 
-       (.I0(\pixel_x_reg_n_0_[8] ),
-        .I1(\pixel_x_reg_n_0_[5] ),
-        .I2(pin_1_hit_reg_n_0),
+       (.I0(\fb_pixel[2]_i_184_n_0 ),
+        .I1(score[19]),
+        .I2(score[18]),
+        .I3(\fb_pixel[2]_i_185_n_0 ),
+        .I4(\fb_pixel[2]_i_186_n_0 ),
+        .I5(\fb_pixel[2]_i_187_n_0 ),
         .O(\fb_pixel[2]_i_101_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT4 #(
-    .INIT(16'h30E0)) 
+  LUT6 #(
+    .INIT(64'h002AAAA8AAAAAAAA)) 
     \fb_pixel[2]_i_102 
-       (.I0(\pixel_x_reg_n_0_[1] ),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(\pixel_x_reg_n_0_[4] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
+       (.I0(pixel_x),
+        .I1(score[0]),
+        .I2(score[1]),
+        .I3(score[2]),
+        .I4(score[3]),
+        .I5(\pixel_x[7]_i_4_n_0 ),
         .O(\fb_pixel[2]_i_102_n_0 ));
   LUT6 #(
-    .INIT(64'hAA8888888888A8A8)) 
-    \fb_pixel[2]_i_11 
-       (.I0(\fb_pixel[2]_i_42_n_0 ),
-        .I1(\fb_pixel[2]_i_43_n_0 ),
-        .I2(\fb_pixel[2]_i_44_n_0 ),
-        .I3(\fb_pixel[2]_i_45_n_0 ),
-        .I4(\fb_pixel[2]_i_46_n_0 ),
-        .I5(\fb_pixel[2]_i_47_n_0 ),
-        .O(\fb_pixel[2]_i_11_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
-  LUT4 #(
-    .INIT(16'h4205)) 
-    \fb_pixel[2]_i_12 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[2]_i_12_n_0 ));
-  LUT6 #(
-    .INIT(64'h4004044040044004)) 
-    \fb_pixel[2]_i_13 
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[2]),
-        .I2(pin_4_location_y[6]),
-        .I3(pixel_y_reg[4]),
-        .I4(pixel_y_reg[3]),
-        .I5(pin_4_location_y[4]),
-        .O(\fb_pixel[2]_i_13_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
-  LUT4 #(
-    .INIT(16'h4106)) 
-    \fb_pixel[2]_i_14 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[2]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+    .INIT(64'h0000222220222020)) 
+    \fb_pixel[2]_i_103 
+       (.I0(\fb_pixel[2]_i_188_n_0 ),
+        .I1(\pixel_x_reg_n_0_[5] ),
+        .I2(\fb_pixel[2]_i_177_n_0 ),
+        .I3(\pixel_x[5]_i_2_n_0 ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .I5(\pixel_x_reg_n_0_[4] ),
+        .O(fb_pixel173_out));
   LUT5 #(
-    .INIT(32'h2AAAAAAA)) 
-    \fb_pixel[2]_i_15 
-       (.I0(fb_pixel182_out__2),
-        .I1(fb_pixel483_in),
-        .I2(fb_pixel384_in),
-        .I3(fb_pixel486_in),
-        .I4(fb_pixel285_in),
-        .O(\fb_pixel[2]_i_15_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFF8B888F88)) 
-    \fb_pixel[2]_i_16 
-       (.I0(\fb_pixel[2]_i_48_n_0 ),
-        .I1(\fb_pixel[2]_i_14_n_0 ),
-        .I2(\fb_pixel[2]_i_23_n_0 ),
-        .I3(\fb_pixel[2]_i_12_n_0 ),
-        .I4(\fb_pixel[2]_i_49_n_0 ),
-        .I5(\fb_pixel[2]_i_50_n_0 ),
-        .O(\fb_pixel[2]_i_16_n_0 ));
-  LUT6 #(
-    .INIT(64'hBBBBBBBBBBB8B8B8)) 
-    \fb_pixel[2]_i_17 
-       (.I0(\fb_pixel[2]_i_51_n_0 ),
-        .I1(\fb_pixel[2]_i_19_n_0 ),
-        .I2(\fb_pixel[2]_i_52_n_0 ),
-        .I3(\fb_pixel[2]_i_53_n_0 ),
-        .I4(\fb_pixel[2]_i_54_n_0 ),
-        .I5(\fb_pixel[2]_i_55_n_0 ),
-        .O(\fb_pixel[2]_i_17_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000900090909000)) 
-    \fb_pixel[2]_i_18 
-       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I1(pixel_y_reg[0]),
-        .I2(\fb_pixel[2]_i_56_n_0 ),
-        .I3(i__i_3_n_0),
-        .I4(\fb_pixel[2]_i_57_n_0 ),
-        .I5(i__i_2_n_0),
-        .O(\fb_pixel[2]_i_18_n_0 ));
-  LUT6 #(
-    .INIT(64'h00001001C99C4CC4)) 
-    \fb_pixel[2]_i_19 
-       (.I0(\fb_pixel[2]_i_58_n_0 ),
-        .I1(\fb_pixel[2]_i_59_n_0 ),
-        .I2(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .I4(\fb_pixel[2]_i_60_n_0 ),
-        .I5(\fb_pixel[2]_i_61_n_0 ),
-        .O(\fb_pixel[2]_i_19_n_0 ));
-  LUT6 #(
-    .INIT(64'hBBBBBBBBBABABBBA)) 
-    \fb_pixel[2]_i_2 
-       (.I0(\fb_pixel[2]_i_7_n_0 ),
-        .I1(\fb_pixel[1]_i_3_n_0 ),
-        .I2(\fb_pixel[2]_i_8_n_0 ),
-        .I3(\fb_pixel[2]_i_9_n_0 ),
-        .I4(\fb_pixel[2]_i_10_n_0 ),
-        .I5(\fb_pixel[2]_i_11_n_0 ),
-        .O(\fb_pixel[2]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT4 #(
-    .INIT(16'h8000)) 
-    \fb_pixel[2]_i_20 
-       (.I0(fb_pixel285_in),
-        .I1(fb_pixel486_in),
-        .I2(fb_pixel384_in),
-        .I3(fb_pixel483_in),
-        .O(fb_pixel187_out__2));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT5 #(
-    .INIT(32'hD7D7D73C)) 
-    \fb_pixel[2]_i_21 
-       (.I0(\fb_pixel[2]_i_12_n_0 ),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[3]),
-        .I3(pixel_y_reg[2]),
-        .I4(pixel_y_reg[1]),
-        .O(\fb_pixel[2]_i_21_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT4 #(
-    .INIT(16'h2DD2)) 
-    \fb_pixel[2]_i_22 
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[3]),
-        .I2(pixel_y_reg[4]),
-        .I3(pin_4_location_y[6]),
-        .O(\fb_pixel[2]_i_22_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT3 #(
-    .INIT(8'hF6)) 
-    \fb_pixel[2]_i_23 
-       (.I0(pixel_y_reg[3]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[2]),
-        .O(\fb_pixel[2]_i_23_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+    .INIT(32'h00800000)) 
+    \fb_pixel[2]_i_104 
+       (.I0(fb_pixel558_in),
+        .I1(fb_pixel360_in),
+        .I2(fb_pixel4),
+        .I3(pin_3_hit_reg_n_0),
+        .I4(\fb_pixel[2]_i_95_n_0 ),
+        .O(fb_pixel169_out));
+  (* SOFT_HLUTNM = "soft_lutpair89" *) 
   LUT2 #(
-    .INIT(4'h6)) 
-    \fb_pixel[2]_i_24 
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_24_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \fb_pixel[2]_i_25 
-       (.I0(fb_pixel156_out__1),
-        .I1(fb_pixel153_out__9),
-        .I2(\fb_pixel[2]_i_10_n_0 ),
-        .O(\fb_pixel[2]_i_25_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
-  LUT3 #(
-    .INIT(8'hFE)) 
-    \fb_pixel[2]_i_26 
-       (.I0(fb_pixel147_out__9),
-        .I1(fb_pixel143_out__1),
-        .I2(\fb_pixel[2]_i_64_n_0 ),
-        .O(\fb_pixel[2]_i_26_n_0 ));
-  LUT6 #(
-    .INIT(64'h000000002AAAAAAA)) 
-    \fb_pixel[2]_i_27 
-       (.I0(fb_pixel174_out__1),
-        .I1(fb_pixel285_in),
-        .I2(fb_pixel486_in),
-        .I3(fb_pixel384_in),
-        .I4(fb_pixel483_in),
-        .I5(fb_pixel182_out__2),
-        .O(\fb_pixel[2]_i_27_n_0 ));
-  LUT6 #(
-    .INIT(64'h00A000C000C000A0)) 
-    \fb_pixel[2]_i_28 
-       (.I0(\fb_pixel[2]_i_65_n_0 ),
-        .I1(\fb_pixel[2]_i_66_n_0 ),
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_105 
+       (.I0(fb_pixel166_out),
+        .I1(fb_pixel163_out),
+        .O(\fb_pixel[2]_i_105_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  LUT4 #(
+    .INIT(16'hFEEE)) 
+    \fb_pixel[2]_i_106 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
         .I2(\pixel_x_reg_n_0_[1] ),
         .I3(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_106_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT3 #(
+    .INIT(8'h7F)) 
+    \fb_pixel[2]_i_107 
+       (.I0(\pixel_x_reg_n_0_[6] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .O(\fb_pixel[2]_i_107_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000050504)) 
+    \fb_pixel[2]_i_11 
+       (.I0(\fb_pixel[2]_i_37_n_0 ),
+        .I1(\fb_pixel[2]_i_7_n_0 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[1]),
+        .I5(\fb_pixel[2]_i_33_n_0 ),
+        .O(\fb_pixel[2]_i_11_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \fb_pixel[2]_i_110 
+       (.I0(fb_pixel376_in),
+        .I1(fb_pixel475_in),
+        .O(\fb_pixel[2]_i_110_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF80000000000000)) 
+    \fb_pixel[2]_i_111 
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[7] ),
+        .I5(\pixel_x_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_111_n_0 ));
+  LUT6 #(
+    .INIT(64'h7117133173371331)) 
+    \fb_pixel[2]_i_112 
+       (.I0(\fb_pixel[2]_i_128_n_0 ),
+        .I1(\fb_pixel[2]_i_127_n_0 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pin_4_location_y[4]),
+        .I4(pixel_y_reg[1]),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_112_n_0 ));
+  LUT6 #(
+    .INIT(64'h5335711751157117)) 
+    \fb_pixel[2]_i_113 
+       (.I0(\fb_pixel[2]_i_128_n_0 ),
+        .I1(\fb_pixel[2]_i_127_n_0 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pin_4_location_y[4]),
+        .I4(pixel_y_reg[1]),
+        .I5(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_113_n_0 ));
+  LUT6 #(
+    .INIT(64'h0A000C000C000A00)) 
+    \fb_pixel[2]_i_114 
+       (.I0(\fb_pixel[1]_i_53_n_0 ),
+        .I1(\fb_pixel[1]_i_54_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .I5(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_114_n_0 ));
+  LUT6 #(
+    .INIT(64'hA0AAA0ACA0CAA0AA)) 
+    \fb_pixel[2]_i_115 
+       (.I0(\fb_pixel[2]_i_116_n_0 ),
+        .I1(\fb_pixel[2]_i_117_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .I5(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_115_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  LUT5 #(
+    .INIT(32'h75576776)) 
+    \fb_pixel[2]_i_116 
+       (.I0(\fb_pixel[2]_i_202_n_0 ),
+        .I1(\fb_pixel[2]_i_203_n_0 ),
+        .I2(pin_4_location_y[4]),
+        .I3(pixel_y_reg[1]),
+        .I4(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_116_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFF00004114)) 
+    \fb_pixel[2]_i_117 
+       (.I0(\fb_pixel[2]_i_202_n_0 ),
+        .I1(pin_4_location_y[6]),
+        .I2(\fb_pixel[2]_i_204_n_0 ),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[0]),
+        .I5(\fb_pixel[1]_i_56_n_0 ),
+        .O(\fb_pixel[2]_i_117_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000002000)) 
+    \fb_pixel[2]_i_118 
+       (.I0(\fb_pixel[2]_i_106_n_0 ),
+        .I1(pin_2_hit_reg_n_0),
+        .I2(fb_pixel4),
+        .I3(fb_pixel360_in),
+        .I4(\fb_pixel[2]_i_107_n_0 ),
+        .I5(\fb_pixel[2]_i_88_n_0 ),
+        .O(fb_pixel166_out));
+  LUT6 #(
+    .INIT(64'hC000A000A000C000)) 
+    \fb_pixel[2]_i_119 
+       (.I0(\fb_pixel[1]_i_53_n_0 ),
+        .I1(\fb_pixel[1]_i_54_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
         .I4(\pixel_x_reg_n_0_[0] ),
         .I5(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[2]_i_28_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+        .O(\fb_pixel[2]_i_119_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFF0000F8880000)) 
+    \fb_pixel[2]_i_12 
+       (.I0(\fb_pixel[2]_i_38_n_0 ),
+        .I1(\fb_pixel[2]_i_26_n_0 ),
+        .I2(\fb_pixel[2]_i_39_n_0 ),
+        .I3(\fb_pixel[2]_i_28_n_0 ),
+        .I4(fb_pixel194_out),
+        .I5(\fb_pixel[2]_i_41_n_0 ),
+        .O(\fb_pixel[2]_i_12_n_0 ));
+  LUT6 #(
+    .INIT(64'hA8A888888888AA88)) 
+    \fb_pixel[2]_i_120 
+       (.I0(\fb_pixel[2]_i_205_n_0 ),
+        .I1(\fb_pixel[2]_i_206_n_0 ),
+        .I2(\fb_pixel[2]_i_117_n_0 ),
+        .I3(\fb_pixel[2]_i_116_n_0 ),
+        .I4(\fb_pixel[2]_i_207_n_0 ),
+        .I5(\fb_pixel[2]_i_208_n_0 ),
+        .O(\fb_pixel[2]_i_120_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000FFFEEEEE)) 
+    \fb_pixel[2]_i_121 
+       (.I0(\fb_pixel[1]_i_29_n_0 ),
+        .I1(\fb_pixel[1]_i_28_n_0 ),
+        .I2(\fb_pixel[0]_i_23_n_0 ),
+        .I3(\fb_pixel[0]_i_22_n_0 ),
+        .I4(\fb_pixel[1]_i_26_n_0 ),
+        .I5(\fb_pixel[1]_i_23_n_0 ),
+        .O(\fb_pixel[2]_i_121_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT5 #(
+    .INIT(32'h11010101)) 
+    \fb_pixel[2]_i_122 
+       (.I0(\fb_pixel[1]_i_22_n_0 ),
+        .I1(\fb_pixel[1]_i_21_n_0 ),
+        .I2(fb_pixel1),
+        .I3(\fb_pixel[1]_i_24_n_0 ),
+        .I4(\fb_pixel[1]_i_23_n_0 ),
+        .O(\fb_pixel[2]_i_122_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  LUT4 #(
+    .INIT(16'h8049)) 
+    \fb_pixel[2]_i_123 
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_123_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  LUT4 #(
+    .INIT(16'h0A81)) 
+    \fb_pixel[2]_i_124 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_124_n_0 ));
+  LUT6 #(
+    .INIT(64'hACCA000000000000)) 
+    \fb_pixel[2]_i_125 
+       (.I0(\fb_pixel[1]_i_53_n_0 ),
+        .I1(\fb_pixel[1]_i_54_n_0 ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_125_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  LUT4 #(
+    .INIT(16'h6FF6)) 
+    \fb_pixel[2]_i_126 
+       (.I0(pixel_y_reg[3]),
+        .I1(pin_4_location_y[6]),
+        .I2(pin_4_location_y[4]),
+        .I3(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_126_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  LUT5 #(
+    .INIT(32'hF50A718E)) 
+    \fb_pixel[2]_i_127 
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[4]),
+        .I4(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_127_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  LUT4 #(
+    .INIT(16'h4BB4)) 
+    \fb_pixel[2]_i_128 
+       (.I0(pixel_y_reg[2]),
+        .I1(pin_4_location_y[4]),
+        .I2(pin_4_location_y[6]),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_128_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    \fb_pixel[2]_i_129 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[6] ),
+        .I3(\pixel_x_reg_n_0_[5] ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_129_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  LUT4 #(
+    .INIT(16'h4440)) 
+    \fb_pixel[2]_i_13 
+       (.I0(fb_pixel182_out),
+        .I1(fb_pixel179_out),
+        .I2(\fb_pixel[2]_i_44_n_0 ),
+        .I3(\fb_pixel[2]_i_45_n_0 ),
+        .O(\fb_pixel[2]_i_13_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000000080)) 
+    \fb_pixel[2]_i_130 
+       (.I0(fb_pixel376_in),
+        .I1(fb_pixel475_in),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(pin_7_hit_reg_n_0),
+        .I4(\pixel_x_reg_n_0_[6] ),
+        .I5(\pixel_x_reg_n_0_[7] ),
+        .O(\fb_pixel[2]_i_130_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_132 
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
+        .O(\fb_pixel[2]_i_132_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_133 
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(\fb_pixel[2]_i_133_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_134 
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
+        .O(\fb_pixel[2]_i_134_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_135 
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(\fb_pixel[2]_i_135_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_137 
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(\fb_pixel[2]_i_137_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_138 
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(\fb_pixel[2]_i_138_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_139 
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(\fb_pixel[2]_i_139_n_0 ));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAA88888)) 
+    \fb_pixel[2]_i_14 
+       (.I0(\fb_pixel[2]_i_46_n_0 ),
+        .I1(\fb_pixel[2]_i_47_n_0 ),
+        .I2(\fb_pixel[2]_i_48_n_0 ),
+        .I3(\fb_pixel[2]_i_49_n_0 ),
+        .I4(\fb_pixel[2]_i_50_n_0 ),
+        .I5(\fb_pixel[2]_i_51_n_0 ),
+        .O(\fb_pixel[2]_i_14_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_140 
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(\fb_pixel[2]_i_140_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_142 
+       (.I0(\fb_pixel_reg[2]_i_152_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_152_n_5 ),
+        .O(\fb_pixel[2]_i_142_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_143 
+       (.I0(\fb_pixel_reg[2]_i_230_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_152_n_7 ),
+        .O(\fb_pixel[2]_i_143_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_144 
+       (.I0(\fb_pixel_reg[2]_i_230_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_230_n_5 ),
+        .O(\fb_pixel[2]_i_144_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_145 
+       (.I0(\fb_pixel_reg[2]_i_231_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_230_n_7 ),
+        .O(\fb_pixel[2]_i_145_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_146 
+       (.I0(\fb_pixel_reg[2]_i_152_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_152_n_6 ),
+        .O(\fb_pixel[2]_i_146_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_147 
+       (.I0(\fb_pixel_reg[2]_i_152_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_230_n_4 ),
+        .O(\fb_pixel[2]_i_147_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_148 
+       (.I0(\fb_pixel_reg[2]_i_230_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_230_n_6 ),
+        .O(\fb_pixel[2]_i_148_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_149 
+       (.I0(\fb_pixel_reg[2]_i_230_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_231_n_4 ),
+        .O(\fb_pixel[2]_i_149_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFF000098100000)) 
+    \fb_pixel[2]_i_15 
+       (.I0(\fb_pixel[2]_i_32_n_0 ),
+        .I1(\fb_pixel[2]_i_33_n_0 ),
+        .I2(\fb_pixel[2]_i_52_n_0 ),
+        .I3(\fb_pixel[2]_i_53_n_0 ),
+        .I4(fb_pixel182_out),
+        .I5(\fb_pixel[2]_i_54_n_0 ),
+        .O(\fb_pixel[2]_i_15_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_154 
+       (.I0(\fb_pixel_reg[2]_i_164_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_164_n_5 ),
+        .O(\fb_pixel[2]_i_154_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_155 
+       (.I0(\fb_pixel_reg[2]_i_241_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_164_n_7 ),
+        .O(\fb_pixel[2]_i_155_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_156 
+       (.I0(\fb_pixel_reg[2]_i_241_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_241_n_5 ),
+        .O(\fb_pixel[2]_i_156_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_157 
+       (.I0(\fb_pixel_reg[2]_i_242_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_241_n_7 ),
+        .O(\fb_pixel[2]_i_157_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_158 
+       (.I0(\fb_pixel_reg[2]_i_164_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_164_n_6 ),
+        .O(\fb_pixel[2]_i_158_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_159 
+       (.I0(\fb_pixel_reg[2]_i_164_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_241_n_4 ),
+        .O(\fb_pixel[2]_i_159_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair90" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_16 
+       (.I0(fb_pixel194_out),
+        .I1(fb_pixel186_out),
+        .O(\fb_pixel[2]_i_16_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_160 
+       (.I0(\fb_pixel_reg[2]_i_241_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_241_n_6 ),
+        .O(\fb_pixel[2]_i_160_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_161 
+       (.I0(\fb_pixel_reg[2]_i_241_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_242_n_4 ),
+        .O(\fb_pixel[2]_i_161_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_165 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_165_n_0 ));
+  LUT3 #(
+    .INIT(8'h4F)) 
+    \fb_pixel[2]_i_166 
+       (.I0(pixel_y_reg__0[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_166_n_0 ));
+  LUT3 #(
+    .INIT(8'h23)) 
+    \fb_pixel[2]_i_167 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[5]),
+        .I2(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_167_n_0 ));
+  LUT3 #(
+    .INIT(8'h2B)) 
+    \fb_pixel[2]_i_168 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_168_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_169 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_169_n_0 ));
+  LUT6 #(
+    .INIT(64'hAA8888888888A8A8)) 
+    \fb_pixel[2]_i_17 
+       (.I0(\fb_pixel[2]_i_56_n_0 ),
+        .I1(\fb_pixel[2]_i_57_n_0 ),
+        .I2(\fb_pixel[2]_i_52_n_0 ),
+        .I3(\fb_pixel[2]_i_53_n_0 ),
+        .I4(\fb_pixel[2]_i_58_n_0 ),
+        .I5(\fb_pixel[2]_i_59_n_0 ),
+        .O(\fb_pixel[2]_i_17_n_0 ));
+  LUT3 #(
+    .INIT(8'h84)) 
+    \fb_pixel[2]_i_170 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg__0[7]),
+        .I2(pixel_y_reg__0[6]),
+        .O(\fb_pixel[2]_i_170_n_0 ));
+  LUT3 #(
+    .INIT(8'h24)) 
+    \fb_pixel[2]_i_171 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_171_n_0 ));
+  LUT3 #(
+    .INIT(8'h84)) 
+    \fb_pixel[2]_i_172 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_172_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_174 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_174_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_175 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_175_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_176 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_176_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_177 
+       (.I0(\pixel_x_reg_n_0_[7] ),
+        .I1(\pixel_x_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_177_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_179 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_179_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_180 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_180_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_182 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_182_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_183 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_183_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    \fb_pixel[2]_i_184 
+       (.I0(score[13]),
+        .I1(score[12]),
+        .I2(score[11]),
+        .I3(score[10]),
+        .I4(\fb_pixel[2]_i_267_n_0 ),
+        .O(\fb_pixel[2]_i_184_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \fb_pixel[2]_i_185 
+       (.I0(score[5]),
+        .I1(score[4]),
+        .I2(score[9]),
+        .I3(score[8]),
+        .I4(score[6]),
+        .I5(score[7]),
+        .O(\fb_pixel[2]_i_185_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \fb_pixel[2]_i_186 
+       (.I0(score[30]),
+        .I1(score[31]),
+        .I2(score[29]),
+        .I3(score[28]),
+        .I4(score[26]),
+        .I5(score[27]),
+        .O(\fb_pixel[2]_i_186_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \fb_pixel[2]_i_187 
+       (.I0(score[25]),
+        .I1(score[24]),
+        .I2(score[23]),
+        .I3(score[22]),
+        .I4(score[20]),
+        .I5(score[21]),
+        .O(\fb_pixel[2]_i_187_n_0 ));
+  LUT6 #(
+    .INIT(64'h0010000000000000)) 
+    \fb_pixel[2]_i_188 
+       (.I0(\pixel_x_reg_n_0_[7] ),
+        .I1(\pixel_x_reg_n_0_[6] ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(pin_4_hit_reg_n_0),
+        .I4(fb_pixel360_in),
+        .I5(fb_pixel4),
+        .O(\fb_pixel[2]_i_188_n_0 ));
+  LUT6 #(
+    .INIT(64'h0100000000000000)) 
+    \fb_pixel[2]_i_191 
+       (.I0(\pixel_x_reg_n_0_[8] ),
+        .I1(pin_1_hit_reg_n_0),
+        .I2(\fb_pixel[2]_i_111_n_0 ),
+        .I3(fb_pixel4),
+        .I4(fb_pixel360_in),
+        .I5(\fb_pixel[2]_i_272_n_0 ),
+        .O(fb_pixel163_out));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_192 
+       (.I0(\fb_pixel_reg[2]_i_273_n_1 ),
+        .I1(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_192_n_0 ));
+  LUT4 #(
+    .INIT(16'h5071)) 
+    \fb_pixel[2]_i_193 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(\fb_pixel_reg[2]_i_273_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_274_n_1 ),
+        .O(\fb_pixel[2]_i_193_n_0 ));
+  LUT4 #(
+    .INIT(16'h5071)) 
+    \fb_pixel[2]_i_194 
+       (.I0(pixel_y_reg__0[5]),
+        .I1(pixel_y_reg[4]),
+        .I2(\fb_pixel_reg[2]_i_274_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_275_n_0 ),
+        .O(\fb_pixel[2]_i_194_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_195 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .I2(\fb_pixel_reg[2]_i_275_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_275_n_5 ),
+        .O(\fb_pixel[2]_i_195_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \fb_pixel[2]_i_196 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(\fb_pixel_reg[2]_i_273_n_1 ),
+        .O(\fb_pixel[2]_i_196_n_0 ));
+  LUT4 #(
+    .INIT(16'h4182)) 
+    \fb_pixel[2]_i_197 
+       (.I0(\fb_pixel_reg[2]_i_274_n_1 ),
+        .I1(\fb_pixel_reg[2]_i_273_n_6 ),
+        .I2(pixel_y_reg__0[7]),
+        .I3(pixel_y_reg__0[6]),
+        .O(\fb_pixel[2]_i_197_n_0 ));
+  LUT4 #(
+    .INIT(16'h4182)) 
+    \fb_pixel[2]_i_198 
+       (.I0(\fb_pixel_reg[2]_i_275_n_0 ),
+        .I1(\fb_pixel_reg[2]_i_274_n_6 ),
+        .I2(pixel_y_reg__0[5]),
+        .I3(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_198_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_199 
+       (.I0(\fb_pixel_reg[2]_i_275_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_275_n_5 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_199_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFCCCCCC40)) 
+    \fb_pixel[2]_i_2 
+       (.I0(\fb_pixel[2]_i_7_n_0 ),
+        .I1(\fb_pixel[2]_i_8_n_0 ),
+        .I2(\fb_pixel[2]_i_9_n_0 ),
+        .I3(\fb_pixel[2]_i_10_n_0 ),
+        .I4(\fb_pixel[2]_i_11_n_0 ),
+        .I5(\fb_pixel[1]_i_4_n_0 ),
+        .O(\fb_pixel[2]_i_2_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_201 
+       (.I0(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_201_n_0 ));
+  LUT6 #(
+    .INIT(64'h1501EAFEEEFF1100)) 
+    \fb_pixel[2]_i_202 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[1]),
+        .I3(pin_4_location_y[6]),
+        .I4(pixel_y_reg[4]),
+        .I5(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_202_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  LUT5 #(
+    .INIT(32'hFFF759AE)) 
+    \fb_pixel[2]_i_203 
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_203_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_204 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_204_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair89" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_205 
+       (.I0(fb_pixel163_out),
+        .I1(fb_pixel166_out),
+        .O(\fb_pixel[2]_i_205_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000CAAC0000)) 
+    \fb_pixel[2]_i_206 
+       (.I0(\fb_pixel[1]_i_53_n_0 ),
+        .I1(\fb_pixel[1]_i_54_n_0 ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_206_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  LUT4 #(
+    .INIT(16'h1442)) 
+    \fb_pixel[2]_i_207 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_207_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  LUT4 #(
+    .INIT(16'h0918)) 
+    \fb_pixel[2]_i_208 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_208_n_0 ));
+  LUT3 #(
+    .INIT(8'h02)) 
+    \fb_pixel[2]_i_210 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[8] ),
+        .O(\fb_pixel[2]_i_210_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_211 
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
+        .O(\fb_pixel[2]_i_211_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_212 
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(\fb_pixel[2]_i_212_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_213 
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(\fb_pixel[2]_i_213_n_0 ));
+  LUT3 #(
+    .INIT(8'h09)) 
+    \fb_pixel[2]_i_214 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(\fb_pixel[2]_i_214_n_0 ));
+  LUT3 #(
+    .INIT(8'h02)) 
+    \fb_pixel[2]_i_216 
+       (.I0(\pixel_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(\fb_pixel[2]_i_216_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_217 
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(\fb_pixel[2]_i_217_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_218 
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(\fb_pixel[2]_i_218_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_219 
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(\fb_pixel[2]_i_219_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000008000000000)) 
+    \fb_pixel[2]_i_22 
+       (.I0(\fb_pixel[2]_i_88_n_0 ),
+        .I1(fb_pixel4102_in),
+        .I2(fb_pixel3103_in),
+        .I3(\pixel_x_reg_n_0_[8] ),
+        .I4(pin_10_hit_reg_n_0),
+        .I5(\fb_pixel[2]_i_91_n_0 ),
+        .O(fb_pixel1106_out));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_220 
+       (.I0(\pixel_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I2(\bowling_ball_location_x_reg_n_0_[8] ),
+        .O(\fb_pixel[2]_i_220_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_222 
+       (.I0(\fb_pixel_reg[2]_i_231_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_231_n_5 ),
+        .O(\fb_pixel[2]_i_222_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_223 
+       (.I0(\fb_pixel_reg[2]_i_308_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_231_n_7 ),
+        .O(\fb_pixel[2]_i_223_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_224 
+       (.I0(\fb_pixel_reg[2]_i_308_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_308_n_5 ),
+        .O(\fb_pixel[2]_i_224_n_0 ));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \fb_pixel[2]_i_225 
+       (.I0(\pixel_x_reg_n_0_[8] ),
+        .I1(\fb_pixel_reg[2]_i_309_n_4 ),
+        .I2(\fb_pixel_reg[2]_i_308_n_7 ),
+        .O(\fb_pixel[2]_i_225_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_226 
+       (.I0(\fb_pixel_reg[2]_i_231_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_231_n_6 ),
+        .O(\fb_pixel[2]_i_226_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_227 
+       (.I0(\fb_pixel_reg[2]_i_231_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_308_n_4 ),
+        .O(\fb_pixel[2]_i_227_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_228 
+       (.I0(\fb_pixel_reg[2]_i_308_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_308_n_6 ),
+        .O(\fb_pixel[2]_i_228_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_229 
+       (.I0(\fb_pixel_reg[2]_i_309_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_308_n_7 ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .O(\fb_pixel[2]_i_229_n_0 ));
+  LUT5 #(
+    .INIT(32'h00800000)) 
+    \fb_pixel[2]_i_23 
+       (.I0(fb_pixel558_in),
+        .I1(fb_pixel490_in),
+        .I2(fb_pixel391_in),
+        .I3(pin_9_hit_reg_n_0),
+        .I4(\fb_pixel[2]_i_95_n_0 ),
+        .O(fb_pixel199_out));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_233 
+       (.I0(\fb_pixel_reg[2]_i_242_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_242_n_5 ),
+        .O(\fb_pixel[2]_i_233_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_234 
+       (.I0(\fb_pixel_reg[2]_i_318_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_242_n_7 ),
+        .O(\fb_pixel[2]_i_234_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_235 
+       (.I0(\fb_pixel_reg[2]_i_318_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_318_n_5 ),
+        .O(\fb_pixel[2]_i_235_n_0 ));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \fb_pixel[2]_i_236 
+       (.I0(pixel_y_reg__0[8]),
+        .I1(\fb_pixel_reg[2]_i_319_n_4 ),
+        .I2(\fb_pixel_reg[2]_i_318_n_7 ),
+        .O(\fb_pixel[2]_i_236_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_237 
+       (.I0(\fb_pixel_reg[2]_i_242_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_242_n_6 ),
+        .O(\fb_pixel[2]_i_237_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_238 
+       (.I0(\fb_pixel_reg[2]_i_242_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_318_n_4 ),
+        .O(\fb_pixel[2]_i_238_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_239 
+       (.I0(\fb_pixel_reg[2]_i_318_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_318_n_6 ),
+        .O(\fb_pixel[2]_i_239_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000002AAAAAAA)) 
+    \fb_pixel[2]_i_24 
+       (.I0(fb_pixel199_out),
+        .I1(fb_pixel2109_in),
+        .I2(fb_pixel4107_in),
+        .I3(fb_pixel4110_in),
+        .I4(fb_pixel3108_in),
+        .I5(fb_pixel1106_out),
+        .O(\fb_pixel[2]_i_24_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_240 
+       (.I0(\fb_pixel_reg[2]_i_319_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_318_n_7 ),
+        .I2(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_240_n_0 ));
+  LUT3 #(
+    .INIT(8'h08)) 
+    \fb_pixel[2]_i_243 
+       (.I0(pixel_y_reg__0[6]),
+        .I1(pixel_y_reg__0[7]),
+        .I2(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_243_n_0 ));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \fb_pixel[2]_i_244 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_244_n_0 ));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    \fb_pixel[2]_i_245 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_245_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_246 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_246_n_0 ));
+  LUT3 #(
+    .INIT(8'h84)) 
+    \fb_pixel[2]_i_247 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg__0[7]),
+        .I2(pixel_y_reg__0[6]),
+        .O(\fb_pixel[2]_i_247_n_0 ));
+  LUT3 #(
+    .INIT(8'h09)) 
+    \fb_pixel[2]_i_248 
+       (.I0(pixel_y_reg[4]),
+        .I1(pin_4_location_y[6]),
+        .I2(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_248_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_249 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_249_n_0 ));
+  LUT6 #(
+    .INIT(64'h0A000C000C000A00)) 
+    \fb_pixel[2]_i_25 
+       (.I0(\fb_pixel[2]_i_96_n_0 ),
+        .I1(\fb_pixel[2]_i_97_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[3] ),
+        .I5(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_25_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_250 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_250_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_251 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(\fb_pixel_reg[2]_i_320_n_1 ),
+        .I3(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_251_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_252 
+       (.I0(pixel_y_reg__0[5]),
+        .I1(pixel_y_reg[4]),
+        .I2(\fb_pixel_reg[2]_i_320_n_7 ),
+        .I3(\fb_pixel_reg[2]_i_320_n_6 ),
+        .O(\fb_pixel[2]_i_252_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_253 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_253_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_254 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_254_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_255 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(\fb_pixel_reg[2]_i_320_n_1 ),
+        .I3(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_255_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_256 
+       (.I0(\fb_pixel_reg[2]_i_320_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_320_n_7 ),
+        .I2(pixel_y_reg__0[5]),
+        .I3(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_256_n_0 ));
+  LUT3 #(
+    .INIT(8'h06)) 
+    \fb_pixel[2]_i_257 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_257_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_258 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_258_n_0 ));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    \fb_pixel[2]_i_259 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_259_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h73376776)) 
-    \fb_pixel[2]_i_29 
-       (.I0(\fb_pixel[2]_i_67_n_0 ),
-        .I1(\fb_pixel[2]_i_68_n_0 ),
+    \fb_pixel[2]_i_26 
+       (.I0(\fb_pixel[2]_i_98_n_0 ),
+        .I1(\fb_pixel[2]_i_99_n_0 ),
         .I2(pixel_y_reg[1]),
         .I3(pin_4_location_y[4]),
         .I4(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_26_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_260 
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_260_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_261 
+       (.I0(pixel_y_reg[3]),
+        .I1(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_261_n_0 ));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    \fb_pixel[2]_i_262 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_262_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_263 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_263_n_0 ));
+  LUT4 #(
+    .INIT(16'h9009)) 
+    \fb_pixel[2]_i_264 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[4]),
+        .I2(pin_4_location_y[6]),
+        .I3(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_264_n_0 ));
+  LUT3 #(
+    .INIT(8'h84)) 
+    \fb_pixel[2]_i_265 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_265_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_266 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_266_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \fb_pixel[2]_i_267 
+       (.I0(score[14]),
+        .I1(score[15]),
+        .I2(score[16]),
+        .I3(score[17]),
+        .O(\fb_pixel[2]_i_267_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_269 
+       (.I0(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_269_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  LUT4 #(
+    .INIT(16'hBA9B)) 
+    \fb_pixel[2]_i_27 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_27_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_271 
+       (.I0(pixel_y_reg__0[8]),
+        .O(\fb_pixel[2]_i_271_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFF00FF00E0)) 
+    \fb_pixel[2]_i_272 
+       (.I0(\fb_pixel[2]_i_176_n_0 ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\fb_pixel[2]_i_337_n_0 ),
+        .I4(\pixel_x_reg_n_0_[5] ),
+        .I5(\pixel_x_reg_n_0_[8] ),
+        .O(\fb_pixel[2]_i_272_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_276 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_276_n_0 ));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    \fb_pixel[2]_i_277 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg__0[5]),
+        .I2(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_277_n_0 ));
+  LUT4 #(
+    .INIT(16'h7150)) 
+    \fb_pixel[2]_i_278 
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_278_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_279 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_279_n_0 ));
+  LUT6 #(
+    .INIT(64'h6723626723622323)) 
+    \fb_pixel[2]_i_28 
+       (.I0(\fb_pixel[2]_i_100_n_0 ),
+        .I1(\fb_pixel[2]_i_99_n_0 ),
+        .I2(pixel_y_reg[0]),
+        .I3(pixel_y_reg[1]),
+        .I4(pin_4_location_y[4]),
+        .I5(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_28_n_0 ));
+  LUT3 #(
+    .INIT(8'h84)) 
+    \fb_pixel[2]_i_280 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_280_n_0 ));
+  LUT3 #(
+    .INIT(8'h09)) 
+    \fb_pixel[2]_i_281 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg__0[5]),
+        .I2(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_281_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_282 
+       (.I0(pin_4_location_y[4]),
+        .I1(pin_4_location_y[6]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_282_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_283 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_283_n_0 ));
+  LUT4 #(
+    .INIT(16'h7150)) 
+    \fb_pixel[2]_i_284 
+       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
+        .I2(pixel_y_reg__0[7]),
+        .I3(pixel_y_reg__0[6]),
+        .O(\fb_pixel[2]_i_284_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_285 
+       (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(pixel_y_reg[4]),
+        .I3(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_285_n_0 ));
+  LUT4 #(
+    .INIT(16'h7150)) 
+    \fb_pixel[2]_i_286 
+       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_286_n_0 ));
+  LUT4 #(
+    .INIT(16'h7150)) 
+    \fb_pixel[2]_i_287 
+       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_287_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_288 
+       (.I0(pixel_y_reg__0[6]),
+        .I1(pixel_y_reg__0[7]),
+        .I2(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_288_n_0 ));
+  LUT4 #(
+    .INIT(16'h9009)) 
+    \fb_pixel[2]_i_289 
+       (.I0(pixel_y_reg[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I3(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_289_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  LUT4 #(
+    .INIT(16'h0120)) 
+    \fb_pixel[2]_i_29 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
         .O(\fb_pixel[2]_i_29_n_0 ));
-  LUT5 #(
-    .INIT(32'hFF008000)) 
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_290 
+       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_290_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_291 
+       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_291_n_0 ));
+  LUT4 #(
+    .INIT(16'h7150)) 
+    \fb_pixel[2]_i_292 
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I2(\pixel_x_reg_n_0_[7] ),
+        .I3(\pixel_x_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_292_n_0 ));
+  LUT4 #(
+    .INIT(16'h22B2)) 
+    \fb_pixel[2]_i_293 
+       (.I0(\pixel_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I2(\pixel_x_reg_n_0_[4] ),
+        .I3(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(\fb_pixel[2]_i_293_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_294 
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_294_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_295 
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_295_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_296 
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I2(\pixel_x_reg_n_0_[6] ),
+        .I3(\pixel_x_reg_n_0_[7] ),
+        .O(\fb_pixel[2]_i_296_n_0 ));
+  LUT4 #(
+    .INIT(16'h9009)) 
+    \fb_pixel[2]_i_297 
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(\fb_pixel[2]_i_297_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_298 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I3(\bowling_ball_location_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_298_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_299 
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_299_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFAAAAFFFE)) 
     \fb_pixel[2]_i_3 
        (.I0(\fb_pixel[2]_i_12_n_0 ),
         .I1(\fb_pixel[2]_i_13_n_0 ),
         .I2(\fb_pixel[2]_i_14_n_0 ),
         .I3(\fb_pixel[2]_i_15_n_0 ),
         .I4(\fb_pixel[2]_i_16_n_0 ),
+        .I5(\fb_pixel[2]_i_17_n_0 ),
         .O(\fb_pixel[2]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
-  LUT4 #(
-    .INIT(16'hD9CD)) 
+  LUT5 #(
+    .INIT(32'h8080CFCC)) 
     \fb_pixel[2]_i_30 
-       (.I0(\pixel_x_reg_n_0_[1] ),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
+       (.I0(\fb_pixel[2]_i_101_n_0 ),
+        .I1(\fb_pixel[2]_i_102_n_0 ),
+        .I2(fb_pixel1),
+        .I3(pixel_x),
+        .I4(\pixel_x[7]_i_4_n_0 ),
         .O(\fb_pixel[2]_i_30_n_0 ));
-  LUT6 #(
-    .INIT(64'h6723626723622323)) 
-    \fb_pixel[2]_i_31 
-       (.I0(\fb_pixel[2]_i_69_n_0 ),
-        .I1(\fb_pixel[2]_i_68_n_0 ),
-        .I2(pixel_y_reg[0]),
-        .I3(pixel_y_reg[1]),
-        .I4(pin_4_location_y[4]),
-        .I5(pixel_y_reg[2]),
-        .O(\fb_pixel[2]_i_31_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT4 #(
-    .INIT(16'h0410)) 
-    \fb_pixel[2]_i_32 
+    .INIT(16'h50D4)) 
+    \fb_pixel[2]_i_300 
+       (.I0(\pixel_x_reg_n_0_[7] ),
+        .I1(\fb_pixel_reg[2]_i_309_n_6 ),
+        .I2(\fb_pixel_reg[2]_i_309_n_5 ),
+        .I3(\pixel_x_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_300_n_0 ));
+  LUT4 #(
+    .INIT(16'h22B2)) 
+    \fb_pixel[2]_i_301 
+       (.I0(\fb_pixel_reg[2]_i_309_n_7 ),
+        .I1(\pixel_x_reg_n_0_[5] ),
+        .I2(\fb_pixel_reg[2]_i_339_n_4 ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[2]_i_301_n_0 ));
+  LUT4 #(
+    .INIT(16'h50D4)) 
+    \fb_pixel[2]_i_302 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\fb_pixel_reg[2]_i_339_n_6 ),
+        .I2(\fb_pixel_reg[2]_i_339_n_5 ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_302_n_0 ));
+  LUT4 #(
+    .INIT(16'h44D4)) 
+    \fb_pixel[2]_i_303 
        (.I0(\pixel_x_reg_n_0_[1] ),
-        .I1(\pixel_x_reg_n_0_[2] ),
+        .I1(\fb_pixel_reg[2]_i_339_n_7 ),
+        .I2(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_303_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_304 
+       (.I0(\fb_pixel_reg[2]_i_309_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_309_n_6 ),
+        .I2(\pixel_x_reg_n_0_[6] ),
+        .I3(\pixel_x_reg_n_0_[7] ),
+        .O(\fb_pixel[2]_i_304_n_0 ));
+  LUT4 #(
+    .INIT(16'h9009)) 
+    \fb_pixel[2]_i_305 
+       (.I0(\fb_pixel_reg[2]_i_309_n_7 ),
+        .I1(\pixel_x_reg_n_0_[5] ),
+        .I2(\fb_pixel_reg[2]_i_339_n_4 ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .O(\fb_pixel[2]_i_305_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_306 
+       (.I0(\fb_pixel_reg[2]_i_339_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_339_n_6 ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_306_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_307 
+       (.I0(\fb_pixel_reg[2]_i_339_n_7 ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I2(\pixel_x_reg_n_0_[1] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_307_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \fb_pixel[2]_i_31 
+       (.I0(fb_pixel179_out),
+        .I1(fb_pixel173_out),
+        .I2(fb_pixel169_out),
+        .I3(\fb_pixel[2]_i_105_n_0 ),
+        .O(\fb_pixel[2]_i_31_n_0 ));
+  LUT4 #(
+    .INIT(16'h50D4)) 
+    \fb_pixel[2]_i_310 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(\fb_pixel_reg[2]_i_319_n_6 ),
+        .I2(\fb_pixel_reg[2]_i_319_n_5 ),
+        .I3(pixel_y_reg__0[6]),
+        .O(\fb_pixel[2]_i_310_n_0 ));
+  LUT4 #(
+    .INIT(16'h50D4)) 
+    \fb_pixel[2]_i_311 
+       (.I0(pixel_y_reg__0[5]),
+        .I1(\fb_pixel_reg[2]_i_340_n_4 ),
+        .I2(\fb_pixel_reg[2]_i_319_n_7 ),
+        .I3(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_311_n_0 ));
+  LUT4 #(
+    .INIT(16'h50D4)) 
+    \fb_pixel[2]_i_312 
+       (.I0(pixel_y_reg[3]),
+        .I1(\fb_pixel_reg[2]_i_340_n_6 ),
+        .I2(\fb_pixel_reg[2]_i_340_n_5 ),
+        .I3(pixel_y_reg[2]),
+        .O(\fb_pixel[2]_i_312_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_313 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .I2(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I3(\fb_pixel_reg[2]_i_340_n_7 ),
+        .O(\fb_pixel[2]_i_313_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_314 
+       (.I0(\fb_pixel_reg[2]_i_319_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_319_n_6 ),
+        .I2(pixel_y_reg__0[6]),
+        .I3(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_314_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_315 
+       (.I0(\fb_pixel_reg[2]_i_319_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_340_n_4 ),
+        .I2(pixel_y_reg__0[5]),
+        .I3(pixel_y_reg[4]),
+        .O(\fb_pixel[2]_i_315_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_316 
+       (.I0(\fb_pixel_reg[2]_i_340_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_340_n_6 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_316_n_0 ));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    \fb_pixel[2]_i_317 
+       (.I0(\fb_pixel_reg[2]_i_340_n_7 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(pixel_y_reg[1]),
+        .I3(pixel_y_reg[0]),
+        .O(\fb_pixel[2]_i_317_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  LUT4 #(
+    .INIT(16'h1085)) 
+    \fb_pixel[2]_i_32 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
         .I2(\pixel_x_reg_n_0_[0] ),
         .I3(\pixel_x_reg_n_0_[3] ),
         .O(\fb_pixel[2]_i_32_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
-  LUT4 #(
-    .INIT(16'h07FB)) 
-    \fb_pixel[2]_i_33 
-       (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_33_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
-  LUT4 #(
-    .INIT(16'h0804)) 
-    \fb_pixel[2]_i_34 
-       (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_34_n_0 ));
-  LUT6 #(
-    .INIT(64'hCAAC000000000000)) 
-    \fb_pixel[2]_i_35 
-       (.I0(\fb_pixel[2]_i_65_n_0 ),
-        .I1(\fb_pixel[2]_i_66_n_0 ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_35_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFF000098100000)) 
-    \fb_pixel[2]_i_36 
-       (.I0(\fb_pixel[2]_i_12_n_0 ),
-        .I1(\fb_pixel[2]_i_14_n_0 ),
-        .I2(\fb_pixel[2]_i_44_n_0 ),
-        .I3(\fb_pixel[2]_i_45_n_0 ),
-        .I4(fb_pixel156_out__1),
-        .I5(\fb_pixel[1]_i_22_n_0 ),
-        .O(\fb_pixel[2]_i_36_n_0 ));
-  LUT6 #(
-    .INIT(64'hAAAAFFFEAAAAAAFE)) 
-    \fb_pixel[2]_i_37 
-       (.I0(\fb_pixel[2]_i_70_n_0 ),
-        .I1(\fb_pixel[2]_i_71_n_0 ),
-        .I2(\fb_pixel[2]_i_72_n_0 ),
-        .I3(fb_pixel143_out__1),
-        .I4(fb_pixel147_out__9),
-        .I5(\fb_pixel[2]_i_73_n_0 ),
-        .O(\fb_pixel[2]_i_37_n_0 ));
-  LUT6 #(
-    .INIT(64'h4440404040404040)) 
-    \fb_pixel[2]_i_38 
-       (.I0(\fb_pixel[1]_i_26_n_0 ),
-        .I1(\fb_pixel[2]_i_74_n_0 ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
-        .I5(\pixel_x_reg_n_0_[4] ),
-        .O(fb_pixel153_out__9));
-  LUT6 #(
-    .INIT(64'h0100000000000000)) 
-    \fb_pixel[2]_i_39 
-       (.I0(\fb_pixel[1]_i_25_n_0 ),
-        .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(pin_6_hit_reg_n_0),
-        .I3(fb_pixel449_in),
-        .I4(fb_pixel350_in),
-        .I5(\fb_pixel[1]_i_31_n_0 ),
-        .O(fb_pixel156_out__1));
-  LUT5 #(
-    .INIT(32'hBAAA0000)) 
-    \fb_pixel[2]_i_4 
-       (.I0(\fb_pixel[2]_i_17_n_0 ),
-        .I1(i__i_1_n_0),
-        .I2(\fb_pixel[2]_i_18_n_0 ),
-        .I3(\fb_pixel[2]_i_19_n_0 ),
-        .I4(fb_pixel187_out__2),
-        .O(\fb_pixel[2]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000ACCA00000000)) 
-    \fb_pixel[2]_i_40 
-       (.I0(\fb_pixel[1]_i_29_n_0 ),
-        .I1(\fb_pixel[1]_i_30_n_0 ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_40_n_0 ));
-  LUT6 #(
-    .INIT(64'hCCAC0000CACCCCCC)) 
-    \fb_pixel[2]_i_41 
-       (.I0(\fb_pixel[2]_i_45_n_0 ),
-        .I1(\fb_pixel[2]_i_44_n_0 ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_41_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \fb_pixel[2]_i_42 
-       (.I0(fb_pixel160_out__8),
-        .I1(fb_pixel168_out__1),
-        .O(\fb_pixel[2]_i_42_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000C0A00000A0C0)) 
-    \fb_pixel[2]_i_43 
-       (.I0(\fb_pixel[1]_i_29_n_0 ),
-        .I1(\fb_pixel[1]_i_30_n_0 ),
-        .I2(\pixel_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[2]_i_43_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
-  LUT4 #(
-    .INIT(16'h5776)) 
-    \fb_pixel[2]_i_44 
-       (.I0(\fb_pixel[2]_i_75_n_0 ),
-        .I1(\fb_pixel[2]_i_76_n_0 ),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_44_n_0 ));
-  LUT6 #(
-    .INIT(64'h82658265007D82FF)) 
-    \fb_pixel[2]_i_45 
-       (.I0(\fb_pixel[2]_i_77_n_0 ),
-        .I1(pixel_y_reg[2]),
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \fb_pixel[2]_i_321 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_321_n_0 ));
+  LUT3 #(
+    .INIT(8'h08)) 
+    \fb_pixel[2]_i_322 
+       (.I0(pixel_y_reg__0[5]),
+        .I1(pixel_y_reg[4]),
         .I2(pin_4_location_y[4]),
-        .I3(\fb_pixel[2]_i_75_n_0 ),
-        .I4(pixel_y_reg[1]),
-        .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_45_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+        .O(\fb_pixel[2]_i_322_n_0 ));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \fb_pixel[2]_i_323 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_323_n_0 ));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    \fb_pixel[2]_i_324 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_324_n_0 ));
+  LUT3 #(
+    .INIT(8'h09)) 
+    \fb_pixel[2]_i_325 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_325_n_0 ));
+  LUT3 #(
+    .INIT(8'h90)) 
+    \fb_pixel[2]_i_326 
+       (.I0(pixel_y_reg[4]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_326_n_0 ));
+  LUT3 #(
+    .INIT(8'h09)) 
+    \fb_pixel[2]_i_327 
+       (.I0(pin_4_location_y[6]),
+        .I1(pixel_y_reg[2]),
+        .I2(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_327_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_328 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_328_n_0 ));
   LUT4 #(
-    .INIT(16'h1680)) 
-    \fb_pixel[2]_i_46 
-       (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_46_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+    .INIT(16'h5110)) 
+    \fb_pixel[2]_i_329 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pin_4_location_y[4]),
+        .I3(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_329_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT4 #(
-    .INIT(16'h600A)) 
-    \fb_pixel[2]_i_47 
+    .INIT(16'h0914)) 
+    \fb_pixel[2]_i_33 
        (.I0(\pixel_x_reg_n_0_[2] ),
         .I1(\pixel_x_reg_n_0_[1] ),
         .I2(\pixel_x_reg_n_0_[3] ),
         .I3(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[2]_i_47_n_0 ));
-  LUT6 #(
-    .INIT(64'h00000050BFFA5555)) 
-    \fb_pixel[2]_i_48 
-       (.I0(\fb_pixel[2]_i_12_n_0 ),
+        .O(\fb_pixel[2]_i_33_n_0 ));
+  LUT3 #(
+    .INIT(8'h07)) 
+    \fb_pixel[2]_i_330 
+       (.I0(pixel_y_reg__0[5]),
+        .I1(pixel_y_reg[4]),
+        .I2(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_330_n_0 ));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    \fb_pixel[2]_i_331 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .I2(\fb_pixel_reg[2]_i_342_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_342_n_1 ),
+        .O(\fb_pixel[2]_i_331_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \fb_pixel[2]_i_332 
+       (.I0(\fb_pixel_reg[2]_i_342_n_7 ),
+        .I1(pixel_y_reg[1]),
+        .O(\fb_pixel[2]_i_332_n_0 ));
+  LUT4 #(
+    .INIT(16'h0861)) 
+    \fb_pixel[2]_i_333 
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(pixel_y_reg__0[6]),
+        .I3(pixel_y_reg__0[7]),
+        .O(\fb_pixel[2]_i_333_n_0 ));
+  LUT3 #(
+    .INIT(8'h42)) 
+    \fb_pixel[2]_i_334 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg__0[5]),
+        .O(\fb_pixel[2]_i_334_n_0 ));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    \fb_pixel[2]_i_335 
+       (.I0(\fb_pixel_reg[2]_i_342_n_1 ),
+        .I1(\fb_pixel_reg[2]_i_342_n_6 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_335_n_0 ));
+  LUT3 #(
+    .INIT(8'h21)) 
+    \fb_pixel[2]_i_336 
+       (.I0(\fb_pixel_reg[2]_i_342_n_7 ),
         .I1(pixel_y_reg[0]),
         .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[2]),
-        .I4(\fb_pixel[2]_i_78_n_0 ),
-        .I5(\fb_pixel[2]_i_22_n_0 ),
-        .O(\fb_pixel[2]_i_48_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+        .O(\fb_pixel[2]_i_336_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h7)) 
+    \fb_pixel[2]_i_337 
+       (.I0(\pixel_x_reg_n_0_[7] ),
+        .I1(\pixel_x_reg_n_0_[6] ),
+        .O(\fb_pixel[2]_i_337_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_338 
+       (.I0(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_338_n_0 ));
+  LUT6 #(
+    .INIT(64'h01000100C37DC33C)) 
+    \fb_pixel[2]_i_34 
+       (.I0(pixel_y_reg[2]),
+        .I1(\fb_pixel[2]_i_33_n_0 ),
+        .I2(\fb_pixel[2]_i_37_n_0 ),
+        .I3(\fb_pixel[2]_i_32_n_0 ),
+        .I4(pixel_y_reg[1]),
+        .I5(\fb_pixel[2]_i_7_n_0 ),
+        .O(\fb_pixel[2]_i_34_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_341 
+       (.I0(pin_4_location_y[4]),
+        .O(\fb_pixel[2]_i_341_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_343 
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(\fb_pixel[2]_i_343_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_344 
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_344_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_345 
+       (.I0(\bowling_ball_location_y_reg_n_0_[4] ),
+        .O(\fb_pixel[2]_i_345_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_346 
+       (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_346_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \fb_pixel[2]_i_347 
+       (.I0(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_347_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  LUT5 #(
+    .INIT(32'h8FD080D0)) 
+    \fb_pixel[2]_i_35 
+       (.I0(pixel_y_reg[0]),
+        .I1(\fb_pixel[2]_i_7_n_0 ),
+        .I2(\fb_pixel[2]_i_32_n_0 ),
+        .I3(pixel_y_reg[1]),
+        .I4(\fb_pixel[2]_i_33_n_0 ),
+        .O(\fb_pixel[2]_i_35_n_0 ));
+  LUT6 #(
+    .INIT(64'h1000010110000000)) 
+    \fb_pixel[2]_i_36 
+       (.I0(\fb_pixel[2]_i_7_n_0 ),
+        .I1(\fb_pixel[2]_i_33_n_0 ),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[0]),
+        .I4(pixel_y_reg[1]),
+        .I5(\fb_pixel[2]_i_32_n_0 ),
+        .O(\fb_pixel[2]_i_36_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair92" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
+    \fb_pixel[2]_i_37 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_37_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  LUT4 #(
+    .INIT(16'h5677)) 
+    \fb_pixel[2]_i_38 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_38_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  LUT4 #(
+    .INIT(16'h2100)) 
+    \fb_pixel[2]_i_39 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_39_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFF8000)) 
+    \fb_pixel[2]_i_4 
+       (.I0(fb_pixel2109_in),
+        .I1(fb_pixel4107_in),
+        .I2(fb_pixel4110_in),
+        .I3(fb_pixel3108_in),
+        .I4(fb_pixel1106_out),
+        .I5(fb_pixel199_out),
+        .O(\fb_pixel[2]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000002000)) 
+    \fb_pixel[2]_i_40 
+       (.I0(\fb_pixel[2]_i_106_n_0 ),
+        .I1(pin_8_hit_reg_n_0),
+        .I2(fb_pixel391_in),
+        .I3(fb_pixel490_in),
+        .I4(\fb_pixel[2]_i_107_n_0 ),
+        .I5(\fb_pixel[2]_i_88_n_0 ),
+        .O(fb_pixel194_out));
+  LUT6 #(
+    .INIT(64'hC000A000A000C000)) 
+    \fb_pixel[2]_i_41 
+       (.I0(\fb_pixel[2]_i_96_n_0 ),
+        .I1(\fb_pixel[2]_i_97_n_0 ),
+        .I2(\pixel_x_reg_n_0_[2] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\pixel_x_reg_n_0_[3] ),
+        .O(\fb_pixel[2]_i_41_n_0 ));
+  LUT6 #(
+    .INIT(64'h0200000000000000)) 
+    \fb_pixel[2]_i_42 
+       (.I0(\fb_pixel[2]_i_88_n_0 ),
+        .I1(\pixel_x_reg_n_0_[8] ),
+        .I2(pin_6_hit_reg_n_0),
+        .I3(fb_pixel475_in),
+        .I4(fb_pixel376_in),
+        .I5(\fb_pixel[2]_i_91_n_0 ),
+        .O(fb_pixel182_out));
+  LUT6 #(
+    .INIT(64'h000B000000000000)) 
+    \fb_pixel[2]_i_43 
+       (.I0(\fb_pixel[2]_i_107_n_0 ),
+        .I1(\fb_pixel[2]_i_106_n_0 ),
+        .I2(\pixel_x_reg_n_0_[8] ),
+        .I3(pin_5_hit_reg_n_0),
+        .I4(\fb_pixel[2]_i_110_n_0 ),
+        .I5(\fb_pixel[2]_i_111_n_0 ),
+        .O(fb_pixel179_out));
+  LUT6 #(
+    .INIT(64'h0000ACCA00000000)) 
+    \fb_pixel[2]_i_44 
+       (.I0(\fb_pixel[2]_i_112_n_0 ),
+        .I1(\fb_pixel[2]_i_113_n_0 ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_44_n_0 ));
+  LUT6 #(
+    .INIT(64'hCCCAACCC00CC00CC)) 
+    \fb_pixel[2]_i_45 
+       (.I0(\fb_pixel[2]_i_53_n_0 ),
+        .I1(\fb_pixel[2]_i_52_n_0 ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[2] ),
+        .I4(\pixel_x_reg_n_0_[0] ),
+        .I5(\pixel_x_reg_n_0_[1] ),
+        .O(\fb_pixel[2]_i_45_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_46 
+       (.I0(fb_pixel182_out),
+        .I1(fb_pixel179_out),
+        .O(\fb_pixel[2]_i_46_n_0 ));
+  LUT4 #(
+    .INIT(16'h4440)) 
+    \fb_pixel[2]_i_47 
+       (.I0(fb_pixel173_out),
+        .I1(fb_pixel169_out),
+        .I2(\fb_pixel[2]_i_114_n_0 ),
+        .I3(\fb_pixel[2]_i_115_n_0 ),
+        .O(\fb_pixel[2]_i_47_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFF0000F8880000)) 
+    \fb_pixel[2]_i_48 
+       (.I0(\fb_pixel[2]_i_38_n_0 ),
+        .I1(\fb_pixel[2]_i_116_n_0 ),
+        .I2(\fb_pixel[2]_i_39_n_0 ),
+        .I3(\fb_pixel[2]_i_117_n_0 ),
+        .I4(fb_pixel166_out),
+        .I5(\fb_pixel[2]_i_119_n_0 ),
+        .O(\fb_pixel[2]_i_48_n_0 ));
+  LUT6 #(
+    .INIT(64'hBBBBBBBBBABABAAA)) 
     \fb_pixel[2]_i_49 
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
+       (.I0(\fb_pixel[2]_i_120_n_0 ),
+        .I1(\fb_pixel[2]_i_105_n_0 ),
+        .I2(fb_pixel1),
+        .I3(\fb_pixel[1]_i_25_n_0 ),
+        .I4(\fb_pixel[2]_i_121_n_0 ),
+        .I5(\fb_pixel[2]_i_122_n_0 ),
         .O(\fb_pixel[2]_i_49_n_0 ));
   LUT6 #(
-    .INIT(64'h0000000020F02020)) 
+    .INIT(64'hAAAAA888A888A888)) 
     \fb_pixel[2]_i_5 
-       (.I0(\fb_pixel[2]_i_21_n_0 ),
-        .I1(\fb_pixel[2]_i_22_n_0 ),
-        .I2(\fb_pixel[2]_i_15_n_0 ),
-        .I3(\fb_pixel[2]_i_23_n_0 ),
-        .I4(\fb_pixel[2]_i_24_n_0 ),
-        .I5(\fb_pixel[2]_i_14_n_0 ),
+       (.I0(\fb_pixel[2]_i_24_n_0 ),
+        .I1(\fb_pixel[2]_i_25_n_0 ),
+        .I2(\fb_pixel[2]_i_26_n_0 ),
+        .I3(\fb_pixel[2]_i_27_n_0 ),
+        .I4(\fb_pixel[2]_i_28_n_0 ),
+        .I5(\fb_pixel[2]_i_29_n_0 ),
         .O(\fb_pixel[2]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h22002200220F2200)) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
     \fb_pixel[2]_i_50 
-       (.I0(\fb_pixel[2]_i_79_n_0 ),
-        .I1(\fb_pixel[2]_i_23_n_0 ),
-        .I2(\fb_pixel[2]_i_14_n_0 ),
-        .I3(\fb_pixel[2]_i_22_n_0 ),
-        .I4(pixel_y_reg[2]),
-        .I5(\fb_pixel[2]_i_80_n_0 ),
+       (.I0(fb_pixel169_out),
+        .I1(fb_pixel173_out),
         .O(\fb_pixel[2]_i_50_n_0 ));
   LUT6 #(
-    .INIT(64'h1000000110011001)) 
+    .INIT(64'hFFFF000098100000)) 
     \fb_pixel[2]_i_51 
-       (.I0(i__i_3_n_0),
-        .I1(i__i_4_n_0),
-        .I2(i__i_1_n_0),
-        .I3(i__i_2_n_0),
-        .I4(\fb_pixel[2]_i_81_n_0 ),
-        .I5(\fb_pixel[2]_i_57_n_0 ),
+       (.I0(\fb_pixel[2]_i_123_n_0 ),
+        .I1(\fb_pixel[2]_i_124_n_0 ),
+        .I2(\fb_pixel[2]_i_116_n_0 ),
+        .I3(\fb_pixel[2]_i_117_n_0 ),
+        .I4(fb_pixel173_out),
+        .I5(\fb_pixel[2]_i_125_n_0 ),
         .O(\fb_pixel[2]_i_51_n_0 ));
-  LUT5 #(
-    .INIT(32'h04040444)) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  LUT4 #(
+    .INIT(16'h1F3E)) 
     \fb_pixel[2]_i_52 
-       (.I0(\fb_pixel[2]_i_57_n_0 ),
-        .I1(\fb_pixel[2]_i_56_n_0 ),
-        .I2(i__i_3_n_0),
-        .I3(i__i_1_n_0),
-        .I4(i__i_2_n_0),
+       (.I0(pixel_y_reg[0]),
+        .I1(\fb_pixel[2]_i_126_n_0 ),
+        .I2(\fb_pixel[2]_i_127_n_0 ),
+        .I3(pixel_y_reg[1]),
         .O(\fb_pixel[2]_i_52_n_0 ));
   LUT6 #(
-    .INIT(64'h0404040000040400)) 
+    .INIT(64'h00FF821400FFC355)) 
     \fb_pixel[2]_i_53 
-       (.I0(i__i_1_n_0),
-        .I1(i__i_3_n_0),
-        .I2(\fb_pixel[2]_i_57_n_0 ),
-        .I3(\fb_pixel[2]_i_81_n_0 ),
-        .I4(i__i_2_n_0),
-        .I5(i__i_4_n_0),
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[2]),
+        .I2(pin_4_location_y[4]),
+        .I3(\fb_pixel[2]_i_127_n_0 ),
+        .I4(\fb_pixel[2]_i_128_n_0 ),
+        .I5(pixel_y_reg[1]),
         .O(\fb_pixel[2]_i_53_n_0 ));
-  LUT5 #(
-    .INIT(32'h08803883)) 
+  LUT6 #(
+    .INIT(64'h000000000000CAAC)) 
     \fb_pixel[2]_i_54 
-       (.I0(\fb_pixel[2]_i_82_n_0 ),
-        .I1(\fb_pixel[2]_i_61_n_0 ),
-        .I2(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .I4(\fb_pixel[2]_i_58_n_0 ),
+       (.I0(\fb_pixel[2]_i_112_n_0 ),
+        .I1(\fb_pixel[2]_i_113_n_0 ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[1] ),
+        .I5(\pixel_x_reg_n_0_[2] ),
         .O(\fb_pixel[2]_i_54_n_0 ));
-  LUT5 #(
-    .INIT(32'h4F404040)) 
+  LUT6 #(
+    .INIT(64'h0000004400000004)) 
     \fb_pixel[2]_i_55 
-       (.I0(i__i_4_n_0),
-        .I1(\fb_pixel[2]_i_83_n_0 ),
-        .I2(\fb_pixel[2]_i_54_n_0 ),
-        .I3(\fb_pixel[2]_i_57_n_0 ),
-        .I4(\bowling_ball[0,1]/i__n_0 ),
-        .O(\fb_pixel[2]_i_55_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
-  LUT4 #(
-    .INIT(16'h8228)) 
+       (.I0(\fb_pixel[2]_i_129_n_0 ),
+        .I1(\fb_pixel[2]_i_130_n_0 ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\pixel_x_reg_n_0_[5] ),
+        .I5(\pixel_x[5]_i_2_n_0 ),
+        .O(fb_pixel186_out));
+  (* SOFT_HLUTNM = "soft_lutpair90" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
     \fb_pixel[2]_i_56 
-       (.I0(\fb_pixel[2]_i_54_n_0 ),
-        .I1(i__i_5_n_0),
-        .I2(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I3(pixel_y_reg[3]),
+       (.I0(fb_pixel186_out),
+        .I1(fb_pixel194_out),
         .O(\fb_pixel[2]_i_56_n_0 ));
   LUT6 #(
-    .INIT(64'h3CC33C3C28822828)) 
+    .INIT(64'h0000CAAC00000000)) 
     \fb_pixel[2]_i_57 
-       (.I0(\fb_pixel[2]_i_84_n_0 ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I4(\pixel_x_reg_n_0_[0] ),
-        .I5(\fb_pixel[2]_i_82_n_0 ),
-        .O(\fb_pixel[2]_i_57_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT3 #(
-    .INIT(8'h69)) 
-    \fb_pixel[2]_i_58 
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\fb_pixel[2]_i_85_n_0 ),
-        .O(\fb_pixel[2]_i_58_n_0 ));
-  LUT6 #(
-    .INIT(64'h6696999966666696)) 
-    \fb_pixel[2]_i_59 
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
+       (.I0(\fb_pixel[2]_i_112_n_0 ),
+        .I1(\fb_pixel[2]_i_113_n_0 ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
         .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I5(\pixel_x_reg_n_0_[2] ),
+        .O(\fb_pixel[2]_i_57_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  LUT4 #(
+    .INIT(16'h4228)) 
+    \fb_pixel[2]_i_58 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x_reg_n_0_[3] ),
+        .I3(\pixel_x_reg_n_0_[0] ),
+        .O(\fb_pixel[2]_i_58_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  LUT4 #(
+    .INIT(16'h4282)) 
+    \fb_pixel[2]_i_59 
+       (.I0(\pixel_x_reg_n_0_[2] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x_reg_n_0_[1] ),
         .O(\fb_pixel[2]_i_59_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFFFF0E0)) 
+  LUT4 #(
+    .INIT(16'hFAEA)) 
     \fb_pixel[2]_i_6 
-       (.I0(\fb_pixel[1]_i_3_n_0 ),
-        .I1(\fb_pixel[2]_i_25_n_0 ),
+       (.I0(\fb_pixel[2]_i_30_n_0 ),
+        .I1(\fb_pixel[1]_i_3_n_0 ),
         .I2(pixel_x),
-        .I3(\fb_pixel[2]_i_26_n_0 ),
-        .I4(\fb_addr[17]_i_1_n_0 ),
+        .I3(\fb_pixel[2]_i_31_n_0 ),
         .O(\fb_pixel[2]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_61 
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
+        .O(\fb_pixel[2]_i_61_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_62 
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
+        .O(\fb_pixel[2]_i_62_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_63 
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
+        .O(\fb_pixel[2]_i_63_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_64 
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
+        .O(\fb_pixel[2]_i_64_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_66 
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+        .O(\fb_pixel[2]_i_66_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_67 
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(\fb_pixel[2]_i_67_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_68 
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(\fb_pixel[2]_i_68_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_69 
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(\fb_pixel[2]_i_69_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT4 #(
     .INIT(16'h2DD2)) 
-    \fb_pixel[2]_i_60 
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .O(\fb_pixel[2]_i_60_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+    \fb_pixel[2]_i_7 
+       (.I0(pin_4_location_y[4]),
+        .I1(pixel_y_reg[3]),
+        .I2(pixel_y_reg[4]),
+        .I3(pin_4_location_y[6]),
+        .O(\fb_pixel[2]_i_7_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_71 
+       (.I0(\fb_pixel_reg[2]_i_150_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_150_n_5 ),
+        .O(\fb_pixel[2]_i_71_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_72 
+       (.I0(\fb_pixel_reg[2]_i_151_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_150_n_7 ),
+        .O(\fb_pixel[2]_i_72_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_73 
+       (.I0(\fb_pixel_reg[2]_i_151_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_151_n_5 ),
+        .O(\fb_pixel[2]_i_73_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_74 
+       (.I0(\fb_pixel_reg[2]_i_152_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_151_n_7 ),
+        .O(\fb_pixel[2]_i_74_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_75 
+       (.I0(\fb_pixel_reg[2]_i_150_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_150_n_6 ),
+        .O(\fb_pixel[2]_i_75_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_76 
+       (.I0(\fb_pixel_reg[2]_i_150_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_151_n_4 ),
+        .O(\fb_pixel[2]_i_76_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_77 
+       (.I0(\fb_pixel_reg[2]_i_151_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_151_n_6 ),
+        .O(\fb_pixel[2]_i_77_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_78 
+       (.I0(\fb_pixel_reg[2]_i_151_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_152_n_4 ),
+        .O(\fb_pixel[2]_i_78_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT5 #(
-    .INIT(32'h693CC369)) 
-    \fb_pixel[2]_i_61 
-       (.I0(\fb_pixel[2]_i_85_n_0 ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[4] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[2]_i_61_n_0 ));
+    .INIT(32'h2AAAAAAA)) 
+    \fb_pixel[2]_i_8 
+       (.I0(fb_pixel1106_out),
+        .I1(fb_pixel3108_in),
+        .I2(fb_pixel4110_in),
+        .I3(fb_pixel4107_in),
+        .I4(fb_pixel2109_in),
+        .O(\fb_pixel[2]_i_8_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_80 
+       (.I0(\fb_pixel_reg[2]_i_162_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_162_n_5 ),
+        .O(\fb_pixel[2]_i_80_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_81 
+       (.I0(\fb_pixel_reg[2]_i_163_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_162_n_7 ),
+        .O(\fb_pixel[2]_i_81_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_82 
+       (.I0(\fb_pixel_reg[2]_i_163_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_163_n_5 ),
+        .O(\fb_pixel[2]_i_82_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \fb_pixel[2]_i_83 
+       (.I0(\fb_pixel_reg[2]_i_164_n_4 ),
+        .I1(\fb_pixel_reg[2]_i_163_n_7 ),
+        .O(\fb_pixel[2]_i_83_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_84 
+       (.I0(\fb_pixel_reg[2]_i_162_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_162_n_6 ),
+        .O(\fb_pixel[2]_i_84_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_85 
+       (.I0(\fb_pixel_reg[2]_i_162_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_163_n_4 ),
+        .O(\fb_pixel[2]_i_85_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_86 
+       (.I0(\fb_pixel_reg[2]_i_163_n_5 ),
+        .I1(\fb_pixel_reg[2]_i_163_n_6 ),
+        .O(\fb_pixel[2]_i_86_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \fb_pixel[2]_i_87 
+       (.I0(\fb_pixel_reg[2]_i_163_n_7 ),
+        .I1(\fb_pixel_reg[2]_i_164_n_4 ),
+        .O(\fb_pixel[2]_i_87_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT5 #(
+    .INIT(32'hFFFF8000)) 
+    \fb_pixel[2]_i_88 
+       (.I0(\pixel_x_reg_n_0_[6] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\pixel_x_reg_n_0_[4] ),
+        .I4(\pixel_x_reg_n_0_[8] ),
+        .O(\fb_pixel[2]_i_88_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  LUT5 #(
+    .INIT(32'h02AA0F0E)) 
+    \fb_pixel[2]_i_9 
+       (.I0(pixel_y_reg[2]),
+        .I1(pixel_y_reg[1]),
+        .I2(\fb_pixel[2]_i_32_n_0 ),
+        .I3(pixel_y_reg[0]),
+        .I4(\fb_pixel[2]_i_33_n_0 ),
+        .O(\fb_pixel[2]_i_9_n_0 ));
   LUT6 #(
-    .INIT(64'h4000000000000000)) 
-    \fb_pixel[2]_i_62 
-       (.I0(\pixel_x_reg_n_0_[5] ),
-        .I1(\fb_pixel[2]_i_86_n_0 ),
-        .I2(\fb_pixel[2]_i_87_n_0 ),
-        .I3(fb_pixel3__4),
-        .I4(fb_pixel4__4),
-        .I5(\fb_pixel[2]_i_88_n_0 ),
-        .O(fb_pixel147_out__9));
-  LUT4 #(
-    .INIT(16'h4000)) 
-    \fb_pixel[2]_i_63 
-       (.I0(pin_3_hit_reg_n_0),
-        .I1(fb_pixel4__4),
-        .I2(fb_pixel3__4),
-        .I3(\fb_pixel[1]_i_32_n_0 ),
-        .O(fb_pixel143_out__1));
+    .INIT(64'h7FFFFFFFFFFFFFFF)) 
+    \fb_pixel[2]_i_91 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\pixel_x_reg_n_0_[7] ),
+        .I4(\pixel_x_reg_n_0_[6] ),
+        .I5(\fb_pixel[2]_i_176_n_0 ),
+        .O(\fb_pixel[2]_i_91_n_0 ));
   LUT6 #(
-    .INIT(64'hAFAAFEAAAAAAAAAA)) 
-    \fb_pixel[2]_i_64 
-       (.I0(fb_pixel140_out__1),
+    .INIT(64'h00000001FFFFFFFF)) 
+    \fb_pixel[2]_i_92 
+       (.I0(\pixel_x_reg_n_0_[3] ),
+        .I1(\pixel_x_reg_n_0_[4] ),
+        .I2(\pixel_x_reg_n_0_[5] ),
+        .I3(\fb_pixel[2]_i_177_n_0 ),
+        .I4(\pixel_x_reg_n_0_[2] ),
+        .I5(\pixel_x_reg_n_0_[8] ),
+        .O(fb_pixel558_in));
+  LUT6 #(
+    .INIT(64'hFFFFFFFF54000000)) 
+    \fb_pixel[2]_i_95 
+       (.I0(\fb_pixel[2]_i_107_n_0 ),
         .I1(\pixel_x_reg_n_0_[1] ),
         .I2(\pixel_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[4] ),
-        .I4(\pixel_x_reg_n_0_[3] ),
-        .I5(\fb_pixel[2]_i_90_n_0 ),
-        .O(\fb_pixel[2]_i_64_n_0 ));
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\pixel_x_reg_n_0_[8] ),
+        .O(\fb_pixel[2]_i_95_n_0 ));
   LUT6 #(
     .INIT(64'h1171371313713733)) 
-    \fb_pixel[2]_i_65 
-       (.I0(\fb_pixel[2]_i_69_n_0 ),
-        .I1(\fb_pixel[2]_i_68_n_0 ),
+    \fb_pixel[2]_i_96 
+       (.I0(\fb_pixel[2]_i_100_n_0 ),
+        .I1(\fb_pixel[2]_i_99_n_0 ),
         .I2(pixel_y_reg[1]),
         .I3(pin_4_location_y[4]),
         .I4(pixel_y_reg[2]),
         .I5(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_65_n_0 ));
+        .O(\fb_pixel[2]_i_96_n_0 ));
   LUT6 #(
     .INIT(64'h0000A6A69A82FFFF)) 
-    \fb_pixel[2]_i_66 
+    \fb_pixel[2]_i_97 
        (.I0(pixel_y_reg[2]),
         .I1(pin_4_location_y[4]),
         .I2(pixel_y_reg[1]),
         .I3(pixel_y_reg[0]),
-        .I4(\fb_pixel[2]_i_69_n_0 ),
-        .I5(\fb_pixel[2]_i_68_n_0 ),
-        .O(\fb_pixel[2]_i_66_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+        .I4(\fb_pixel[2]_i_100_n_0 ),
+        .I5(\fb_pixel[2]_i_99_n_0 ),
+        .O(\fb_pixel[2]_i_97_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT5 #(
-    .INIT(32'h6F66F9FF)) 
-    \fb_pixel[2]_i_67 
+    .INIT(32'h5DFBAEF7)) 
+    \fb_pixel[2]_i_98 
        (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[3]),
+        .I1(pin_4_location_y[4]),
         .I2(pixel_y_reg[1]),
-        .I3(pin_4_location_y[4]),
-        .I4(pixel_y_reg[2]),
-        .O(\fb_pixel[2]_i_67_n_0 ));
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[3]),
+        .O(\fb_pixel[2]_i_98_n_0 ));
   LUT6 #(
-    .INIT(64'h7F88807715EEEA11)) 
-    \fb_pixel[2]_i_68 
+    .INIT(64'h7F80887715EAEE11)) 
+    \fb_pixel[2]_i_99 
        (.I0(pixel_y_reg[3]),
         .I1(pixel_y_reg[2]),
         .I2(pixel_y_reg[1]),
-        .I3(pin_4_location_y[4]),
-        .I4(pixel_y_reg[4]),
-        .I5(pin_4_location_y[6]),
-        .O(\fb_pixel[2]_i_68_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT5 #(
-    .INIT(32'h5DA2A25D)) 
-    \fb_pixel[2]_i_69 
-       (.I0(pixel_y_reg[2]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[3]),
-        .I4(pin_4_location_y[6]),
-        .O(\fb_pixel[2]_i_69_n_0 ));
-  LUT6 #(
-    .INIT(64'hAAAAA888A888A888)) 
-    \fb_pixel[2]_i_7 
-       (.I0(\fb_pixel[2]_i_27_n_0 ),
-        .I1(\fb_pixel[2]_i_28_n_0 ),
-        .I2(\fb_pixel[2]_i_29_n_0 ),
-        .I3(\fb_pixel[2]_i_30_n_0 ),
-        .I4(\fb_pixel[2]_i_31_n_0 ),
-        .I5(\fb_pixel[2]_i_32_n_0 ),
-        .O(\fb_pixel[2]_i_7_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFF000098100000)) 
-    \fb_pixel[2]_i_70 
-       (.I0(\fb_pixel[1]_i_49_n_0 ),
-        .I1(\fb_pixel[1]_i_50_n_0 ),
-        .I2(\fb_pixel[2]_i_91_n_0 ),
-        .I3(\fb_pixel[2]_i_92_n_0 ),
-        .I4(fb_pixel147_out__9),
-        .I5(\fb_pixel[2]_i_93_n_0 ),
-        .O(\fb_pixel[2]_i_70_n_0 ));
-  LUT5 #(
-    .INIT(32'hF8008800)) 
-    \fb_pixel[2]_i_71 
-       (.I0(\fb_pixel[2]_i_92_n_0 ),
-        .I1(\fb_pixel[2]_i_34_n_0 ),
-        .I2(\fb_pixel[2]_i_91_n_0 ),
-        .I3(fb_pixel140_out__1),
-        .I4(\fb_pixel[2]_i_33_n_0 ),
-        .O(\fb_pixel[2]_i_71_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFAB010000AB01)) 
-    \fb_pixel[2]_i_72 
-       (.I0(fb_pixel1__12),
-        .I1(\fb_pixel[0]_i_6_n_0 ),
-        .I2(\fb_pixel[0]_i_5_n_0 ),
-        .I3(\fb_pixel[2]_i_95_n_0 ),
-        .I4(fb_pixel140_out__1),
-        .I5(\fb_pixel[2]_i_96_n_0 ),
-        .O(\fb_pixel[2]_i_72_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFFCA0FCAF0CA00C)) 
-    \fb_pixel[2]_i_73 
-       (.I0(\fb_pixel[2]_i_92_n_0 ),
-        .I1(\fb_pixel[2]_i_91_n_0 ),
-        .I2(\fb_pixel[2]_i_97_n_0 ),
-        .I3(\fb_pixel[2]_i_98_n_0 ),
-        .I4(\fb_pixel[1]_i_46_n_0 ),
-        .I5(\fb_pixel[1]_i_45_n_0 ),
-        .O(\fb_pixel[2]_i_73_n_0 ));
-  LUT6 #(
-    .INIT(64'h0008000000000000)) 
-    \fb_pixel[2]_i_74 
-       (.I0(\pixel_x_reg_n_0_[7] ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .I2(pin_5_hit_reg_n_0),
-        .I3(\pixel_x_reg_n_0_[8] ),
-        .I4(fb_pixel449_in),
-        .I5(fb_pixel350_in),
-        .O(\fb_pixel[2]_i_74_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT5 #(
-    .INIT(32'hF50A718E)) 
-    \fb_pixel[2]_i_75 
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[3]),
         .I3(pixel_y_reg[4]),
-        .I4(pixel_y_reg[2]),
-        .O(\fb_pixel[2]_i_75_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
-  LUT4 #(
-    .INIT(16'h6FF6)) 
-    \fb_pixel[2]_i_76 
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[3]),
-        .I2(pixel_y_reg[2]),
-        .I3(pin_4_location_y[4]),
-        .O(\fb_pixel[2]_i_76_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT2 #(
-    .INIT(4'h9)) 
-    \fb_pixel[2]_i_77 
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[3]),
-        .O(\fb_pixel[2]_i_77_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
-  LUT2 #(
-    .INIT(4'h6)) 
-    \fb_pixel[2]_i_78 
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[3]),
-        .O(\fb_pixel[2]_i_78_n_0 ));
-  LUT6 #(
-    .INIT(64'h5C5555D055555C0D)) 
-    \fb_pixel[2]_i_79 
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .I4(\pixel_x_reg_n_0_[2] ),
-        .I5(\pixel_x_reg_n_0_[0] ),
-        .O(\fb_pixel[2]_i_79_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFF0000F8880000)) 
-    \fb_pixel[2]_i_8 
-       (.I0(\fb_pixel[2]_i_33_n_0 ),
-        .I1(\fb_pixel[2]_i_29_n_0 ),
-        .I2(\fb_pixel[2]_i_34_n_0 ),
-        .I3(\fb_pixel[2]_i_31_n_0 ),
-        .I4(fb_pixel168_out__1),
-        .I5(\fb_pixel[2]_i_35_n_0 ),
-        .O(\fb_pixel[2]_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
-    \fb_pixel[2]_i_80 
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_80_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
-  LUT2 #(
-    .INIT(4'h6)) 
-    \fb_pixel[2]_i_81 
-       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I1(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_81_n_0 ));
-  LUT5 #(
-    .INIT(32'h90060990)) 
-    \fb_pixel[2]_i_82 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I2(\fb_pixel[2]_i_99_n_0 ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\bowling_ball_location_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_82_n_0 ));
-  LUT6 #(
-    .INIT(64'h000000007EE79FF9)) 
-    \fb_pixel[2]_i_83 
-       (.I0(i__i_1_n_0),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I3(pixel_y_reg[1]),
-        .I4(pixel_y_reg[0]),
-        .I5(i__i_3_n_0),
-        .O(\fb_pixel[2]_i_83_n_0 ));
-  LUT6 #(
-    .INIT(64'h00B42D002D00002D)) 
-    \fb_pixel[2]_i_84 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I2(\fb_pixel[2]_i_100_n_0 ),
-        .I3(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I4(\fb_pixel[2]_i_99_n_0 ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_84_n_0 ));
-  LUT6 #(
-    .INIT(64'hF775F7F751105151)) 
-    \fb_pixel[2]_i_85 
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[0] ),
-        .I4(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_85_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
-    \fb_pixel[2]_i_86 
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[2]_i_86_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
-  LUT4 #(
-    .INIT(16'h0004)) 
-    \fb_pixel[2]_i_87 
-       (.I0(pin_4_hit_reg_n_0),
-        .I1(\pixel_x_reg_n_0_[8] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .O(\fb_pixel[2]_i_87_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFDFDFDFDFDFDFD)) 
-    \fb_pixel[2]_i_88 
-       (.I0(\fb_pixel[1]_i_38_n_0 ),
-        .I1(\pixel_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[2]_i_88_n_0 ));
-  LUT6 #(
-    .INIT(64'h0080008000800000)) 
-    \fb_pixel[2]_i_89 
-       (.I0(\fb_pixel[1]_i_25_n_0 ),
-        .I1(fb_pixel3__4),
-        .I2(fb_pixel4__4),
-        .I3(pin_2_hit_reg_n_0),
-        .I4(\pixel_x_reg_n_0_[8] ),
-        .I5(\fb_pixel[1]_i_26_n_0 ),
-        .O(fb_pixel140_out__1));
-  LUT6 #(
-    .INIT(64'hAAFEAAFEAAFEAAAE)) 
-    \fb_pixel[2]_i_9 
-       (.I0(\fb_pixel[2]_i_36_n_0 ),
-        .I1(\fb_pixel[2]_i_37_n_0 ),
-        .I2(fb_pixel153_out__9),
-        .I3(fb_pixel156_out__1),
-        .I4(\fb_pixel[2]_i_40_n_0 ),
-        .I5(\fb_pixel[2]_i_41_n_0 ),
-        .O(\fb_pixel[2]_i_9_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000040)) 
-    \fb_pixel[2]_i_90 
-       (.I0(\fb_pixel[1]_i_37_n_0 ),
-        .I1(fb_pixel4__4),
-        .I2(fb_pixel3__4),
-        .I3(pin_1_hit_reg_n_0),
-        .I4(\pixel_x_reg_n_0_[5] ),
-        .I5(\pixel_x_reg_n_0_[8] ),
-        .O(\fb_pixel[2]_i_90_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT5 #(
-    .INIT(32'h75576776)) 
-    \fb_pixel[2]_i_91 
-       (.I0(\fb_pixel[1]_i_57_n_0 ),
-        .I1(\fb_pixel[1]_i_59_n_0 ),
-        .I2(pin_4_location_y[4]),
-        .I3(pixel_y_reg[1]),
-        .I4(pixel_y_reg[0]),
-        .O(\fb_pixel[2]_i_91_n_0 ));
-  LUT6 #(
-    .INIT(64'h0F350F240F240F35)) 
-    \fb_pixel[2]_i_92 
-       (.I0(pixel_y_reg[0]),
-        .I1(\fb_pixel[1]_i_58_n_0 ),
-        .I2(\fb_pixel[1]_i_57_n_0 ),
-        .I3(\fb_pixel[1]_i_56_n_0 ),
-        .I4(pixel_y_reg[1]),
-        .I5(pin_4_location_y[4]),
-        .O(\fb_pixel[2]_i_92_n_0 ));
-  LUT6 #(
-    .INIT(64'hACCA000000000000)) 
-    \fb_pixel[2]_i_93 
-       (.I0(\fb_pixel[1]_i_45_n_0 ),
-        .I1(\fb_pixel[1]_i_46_n_0 ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_93_n_0 ));
-  LUT6 #(
-    .INIT(64'h8000000000000000)) 
-    \fb_pixel[2]_i_94 
-       (.I0(\fb_pixel[2]_i_101_n_0 ),
-        .I1(fb_pixel3__4),
-        .I2(fb_pixel4__4),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(\pixel_x_reg_n_0_[7] ),
-        .I5(\fb_pixel[2]_i_102_n_0 ),
-        .O(fb_pixel1__12));
-  LUT6 #(
-    .INIT(64'hCFFAC0FACF0AC00A)) 
-    \fb_pixel[2]_i_95 
-       (.I0(\fb_pixel[2]_i_91_n_0 ),
-        .I1(\fb_pixel[2]_i_92_n_0 ),
-        .I2(\fb_pixel[1]_i_52_n_0 ),
-        .I3(\fb_pixel[1]_i_53_n_0 ),
-        .I4(\fb_pixel[1]_i_46_n_0 ),
-        .I5(\fb_pixel[1]_i_45_n_0 ),
-        .O(\fb_pixel[2]_i_95_n_0 ));
-  LUT6 #(
-    .INIT(64'hCAAC000000000000)) 
-    \fb_pixel[2]_i_96 
-       (.I0(\fb_pixel[1]_i_45_n_0 ),
-        .I1(\fb_pixel[1]_i_46_n_0 ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .I4(\pixel_x_reg_n_0_[1] ),
-        .I5(\pixel_x_reg_n_0_[2] ),
-        .O(\fb_pixel[2]_i_96_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
-  LUT4 #(
-    .INIT(16'h0924)) 
-    \fb_pixel[2]_i_97 
-       (.I0(\pixel_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(\pixel_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .O(\fb_pixel[2]_i_97_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
-  LUT4 #(
-    .INIT(16'h0630)) 
-    \fb_pixel[2]_i_98 
-       (.I0(\pixel_x_reg_n_0_[1] ),
-        .I1(\pixel_x_reg_n_0_[2] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[3] ),
-        .O(\fb_pixel[2]_i_98_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
-  LUT4 #(
-    .INIT(16'hD4DD)) 
-    \fb_pixel[2]_i_99 
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I4(pin_4_location_y[4]),
+        .I5(pin_4_location_y[6]),
         .O(\fb_pixel[2]_i_99_n_0 ));
   FDRE \fb_pixel_reg[0] 
        (.C(clk),
@@ -8178,23 +10766,407 @@ module bowling_game_controller_0_0_controller
         .D(\fb_pixel[1]_i_1_n_0 ),
         .Q(fb_pixel[1]),
         .R(1'b0));
-  MUXF7 \fb_pixel_reg[1]_i_13 
-       (.I0(\fb_pixel[1]_i_33_n_0 ),
-        .I1(\fb_pixel[1]_i_34_n_0 ),
-        .O(\fb_pixel_reg[1]_i_13_n_0 ),
-        .S(fb_pixel147_out__9));
   FDRE \fb_pixel_reg[2] 
        (.C(clk),
         .CE(1'b1),
         .D(\fb_pixel[2]_i_1_n_0 ),
         .Q(fb_pixel[2]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  CARRY4 \fb_pixel_reg[2]_i_108 
+       (.CI(1'b0),
+        .CO({fb_pixel475_in,\fb_pixel_reg[2]_i_108_n_1 ,\fb_pixel_reg[2]_i_108_n_2 ,\fb_pixel_reg[2]_i_108_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_192_n_0 ,\fb_pixel[2]_i_193_n_0 ,\fb_pixel[2]_i_194_n_0 ,\fb_pixel[2]_i_195_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_108_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_196_n_0 ,\fb_pixel[2]_i_197_n_0 ,\fb_pixel[2]_i_198_n_0 ,\fb_pixel[2]_i_199_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_109 
+       (.CI(\fb_pixel_reg[2]_i_200_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_109_CO_UNCONNECTED [3:1],fb_pixel376_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,pixel_y_reg__0[8]}),
+        .O(\NLW_fb_pixel_reg[2]_i_109_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,\fb_pixel[2]_i_201_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_131 
+       (.CI(\fb_pixel_reg[2]_i_209_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_131_n_0 ,\fb_pixel_reg[2]_i_131_n_1 ,\fb_pixel_reg[2]_i_131_n_2 ,\fb_pixel_reg[2]_i_131_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,\fb_pixel[2]_i_210_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_131_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_211_n_0 ,\fb_pixel[2]_i_212_n_0 ,\fb_pixel[2]_i_213_n_0 ,\fb_pixel[2]_i_214_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_136 
+       (.CI(\fb_pixel_reg[2]_i_215_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_136_n_0 ,\fb_pixel_reg[2]_i_136_n_1 ,\fb_pixel_reg[2]_i_136_n_2 ,\fb_pixel_reg[2]_i_136_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,\fb_pixel[2]_i_216_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_136_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_217_n_0 ,\fb_pixel[2]_i_218_n_0 ,\fb_pixel[2]_i_219_n_0 ,\fb_pixel[2]_i_220_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_141 
+       (.CI(\fb_pixel_reg[2]_i_221_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_141_n_0 ,\fb_pixel_reg[2]_i_141_n_1 ,\fb_pixel_reg[2]_i_141_n_2 ,\fb_pixel_reg[2]_i_141_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_222_n_0 ,\fb_pixel[2]_i_223_n_0 ,\fb_pixel[2]_i_224_n_0 ,\fb_pixel[2]_i_225_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_141_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_226_n_0 ,\fb_pixel[2]_i_227_n_0 ,\fb_pixel[2]_i_228_n_0 ,\fb_pixel[2]_i_229_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_150 
+       (.CI(\fb_pixel_reg[2]_i_151_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_150_CO_UNCONNECTED [3:2],\fb_pixel_reg[2]_i_150_n_2 ,\fb_pixel_reg[2]_i_150_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_fb_pixel_reg[2]_i_150_O_UNCONNECTED [3],\fb_pixel_reg[2]_i_150_n_5 ,\fb_pixel_reg[2]_i_150_n_6 ,\fb_pixel_reg[2]_i_150_n_7 }),
+        .S({1'b0,\bowling_ball_location_x_reg_n_0_[31] ,\bowling_ball_location_x_reg_n_0_[30] ,\bowling_ball_location_x_reg_n_0_[29] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_151 
+       (.CI(\fb_pixel_reg[2]_i_152_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_151_n_0 ,\fb_pixel_reg[2]_i_151_n_1 ,\fb_pixel_reg[2]_i_151_n_2 ,\fb_pixel_reg[2]_i_151_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_151_n_4 ,\fb_pixel_reg[2]_i_151_n_5 ,\fb_pixel_reg[2]_i_151_n_6 ,\fb_pixel_reg[2]_i_151_n_7 }),
+        .S({\bowling_ball_location_x_reg_n_0_[28] ,\bowling_ball_location_x_reg_n_0_[27] ,\bowling_ball_location_x_reg_n_0_[26] ,\bowling_ball_location_x_reg_n_0_[25] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_152 
+       (.CI(\fb_pixel_reg[2]_i_230_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_152_n_0 ,\fb_pixel_reg[2]_i_152_n_1 ,\fb_pixel_reg[2]_i_152_n_2 ,\fb_pixel_reg[2]_i_152_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_152_n_4 ,\fb_pixel_reg[2]_i_152_n_5 ,\fb_pixel_reg[2]_i_152_n_6 ,\fb_pixel_reg[2]_i_152_n_7 }),
+        .S({\bowling_ball_location_x_reg_n_0_[24] ,\bowling_ball_location_x_reg_n_0_[23] ,\bowling_ball_location_x_reg_n_0_[22] ,\bowling_ball_location_x_reg_n_0_[21] }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_153 
+       (.CI(\fb_pixel_reg[2]_i_232_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_153_n_0 ,\fb_pixel_reg[2]_i_153_n_1 ,\fb_pixel_reg[2]_i_153_n_2 ,\fb_pixel_reg[2]_i_153_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_233_n_0 ,\fb_pixel[2]_i_234_n_0 ,\fb_pixel[2]_i_235_n_0 ,\fb_pixel[2]_i_236_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_153_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_237_n_0 ,\fb_pixel[2]_i_238_n_0 ,\fb_pixel[2]_i_239_n_0 ,\fb_pixel[2]_i_240_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_162 
+       (.CI(\fb_pixel_reg[2]_i_163_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_162_CO_UNCONNECTED [3:2],\fb_pixel_reg[2]_i_162_n_2 ,\fb_pixel_reg[2]_i_162_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_fb_pixel_reg[2]_i_162_O_UNCONNECTED [3],\fb_pixel_reg[2]_i_162_n_5 ,\fb_pixel_reg[2]_i_162_n_6 ,\fb_pixel_reg[2]_i_162_n_7 }),
+        .S({1'b0,\bowling_ball_location_y_reg_n_0_[31] ,\bowling_ball_location_y_reg_n_0_[30] ,\bowling_ball_location_y_reg_n_0_[29] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_163 
+       (.CI(\fb_pixel_reg[2]_i_164_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_163_n_0 ,\fb_pixel_reg[2]_i_163_n_1 ,\fb_pixel_reg[2]_i_163_n_2 ,\fb_pixel_reg[2]_i_163_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_163_n_4 ,\fb_pixel_reg[2]_i_163_n_5 ,\fb_pixel_reg[2]_i_163_n_6 ,\fb_pixel_reg[2]_i_163_n_7 }),
+        .S({\bowling_ball_location_y_reg_n_0_[28] ,\bowling_ball_location_y_reg_n_0_[27] ,\bowling_ball_location_y_reg_n_0_[26] ,\bowling_ball_location_y_reg_n_0_[25] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_164 
+       (.CI(\fb_pixel_reg[2]_i_241_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_164_n_0 ,\fb_pixel_reg[2]_i_164_n_1 ,\fb_pixel_reg[2]_i_164_n_2 ,\fb_pixel_reg[2]_i_164_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_164_n_4 ,\fb_pixel_reg[2]_i_164_n_5 ,\fb_pixel_reg[2]_i_164_n_6 ,\fb_pixel_reg[2]_i_164_n_7 }),
+        .S({\bowling_ball_location_y_reg_n_0_[24] ,\bowling_ball_location_y_reg_n_0_[23] ,\bowling_ball_location_y_reg_n_0_[22] ,\bowling_ball_location_y_reg_n_0_[21] }));
+  CARRY4 \fb_pixel_reg[2]_i_173 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_173_n_0 ,\fb_pixel_reg[2]_i_173_n_1 ,\fb_pixel_reg[2]_i_173_n_2 ,\fb_pixel_reg[2]_i_173_n_3 }),
+        .CYINIT(1'b1),
+        .DI({\fb_pixel[2]_i_243_n_0 ,\fb_pixel[2]_i_244_n_0 ,\fb_pixel[2]_i_245_n_0 ,\fb_pixel[2]_i_246_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_173_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_247_n_0 ,\fb_pixel[2]_i_248_n_0 ,\fb_pixel[2]_i_249_n_0 ,\fb_pixel[2]_i_250_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_178 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_178_n_0 ,\fb_pixel_reg[2]_i_178_n_1 ,\fb_pixel_reg[2]_i_178_n_2 ,\fb_pixel_reg[2]_i_178_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_251_n_0 ,\fb_pixel[2]_i_252_n_0 ,\fb_pixel[2]_i_253_n_0 ,\fb_pixel[2]_i_254_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_178_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_255_n_0 ,\fb_pixel[2]_i_256_n_0 ,\fb_pixel[2]_i_257_n_0 ,\fb_pixel[2]_i_258_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_18 
+       (.CI(\fb_pixel_reg[2]_i_60_n_0 ),
+        .CO({fb_pixel2109_in,\fb_pixel_reg[2]_i_18_n_1 ,\fb_pixel_reg[2]_i_18_n_2 ,\fb_pixel_reg[2]_i_18_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_fb_pixel_reg[2]_i_18_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_61_n_0 ,\fb_pixel[2]_i_62_n_0 ,\fb_pixel[2]_i_63_n_0 ,\fb_pixel[2]_i_64_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_181 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_181_n_0 ,\fb_pixel_reg[2]_i_181_n_1 ,\fb_pixel_reg[2]_i_181_n_2 ,\fb_pixel_reg[2]_i_181_n_3 }),
+        .CYINIT(1'b1),
+        .DI({\fb_pixel[2]_i_259_n_0 ,\fb_pixel[2]_i_260_n_0 ,\fb_pixel[2]_i_261_n_0 ,\fb_pixel[2]_i_262_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_181_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_263_n_0 ,\fb_pixel[2]_i_264_n_0 ,\fb_pixel[2]_i_265_n_0 ,\fb_pixel[2]_i_266_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_189 
+       (.CI(\fb_pixel_reg[2]_i_268_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_189_CO_UNCONNECTED [3:1],fb_pixel360_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,pixel_y_reg__0[8]}),
+        .O(\NLW_fb_pixel_reg[2]_i_189_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,\fb_pixel[2]_i_269_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_19 
+       (.CI(\fb_pixel_reg[2]_i_65_n_0 ),
+        .CO({fb_pixel4107_in,\fb_pixel_reg[2]_i_19_n_1 ,\fb_pixel_reg[2]_i_19_n_2 ,\fb_pixel_reg[2]_i_19_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_fb_pixel_reg[2]_i_19_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_66_n_0 ,\fb_pixel[2]_i_67_n_0 ,\fb_pixel[2]_i_68_n_0 ,\fb_pixel[2]_i_69_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_190 
+       (.CI(\fb_pixel_reg[2]_i_270_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_190_CO_UNCONNECTED [3:1],fb_pixel4}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_fb_pixel_reg[2]_i_190_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,\fb_pixel[2]_i_271_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_20 
+       (.CI(\fb_pixel_reg[2]_i_70_n_0 ),
+        .CO({fb_pixel4110_in,\fb_pixel_reg[2]_i_20_n_1 ,\fb_pixel_reg[2]_i_20_n_2 ,\fb_pixel_reg[2]_i_20_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_71_n_0 ,\fb_pixel[2]_i_72_n_0 ,\fb_pixel[2]_i_73_n_0 ,\fb_pixel[2]_i_74_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_20_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_75_n_0 ,\fb_pixel[2]_i_76_n_0 ,\fb_pixel[2]_i_77_n_0 ,\fb_pixel[2]_i_78_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_200 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_200_n_0 ,\fb_pixel_reg[2]_i_200_n_1 ,\fb_pixel_reg[2]_i_200_n_2 ,\fb_pixel_reg[2]_i_200_n_3 }),
+        .CYINIT(1'b1),
+        .DI({\fb_pixel[2]_i_276_n_0 ,\fb_pixel[2]_i_277_n_0 ,\fb_pixel[2]_i_278_n_0 ,\fb_pixel[2]_i_279_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_200_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_280_n_0 ,\fb_pixel[2]_i_281_n_0 ,\fb_pixel[2]_i_282_n_0 ,\fb_pixel[2]_i_283_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_209 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_209_n_0 ,\fb_pixel_reg[2]_i_209_n_1 ,\fb_pixel_reg[2]_i_209_n_2 ,\fb_pixel_reg[2]_i_209_n_3 }),
+        .CYINIT(1'b1),
+        .DI({\fb_pixel[2]_i_284_n_0 ,\fb_pixel[2]_i_285_n_0 ,\fb_pixel[2]_i_286_n_0 ,\fb_pixel[2]_i_287_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_209_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_288_n_0 ,\fb_pixel[2]_i_289_n_0 ,\fb_pixel[2]_i_290_n_0 ,\fb_pixel[2]_i_291_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_21 
+       (.CI(\fb_pixel_reg[2]_i_79_n_0 ),
+        .CO({fb_pixel3108_in,\fb_pixel_reg[2]_i_21_n_1 ,\fb_pixel_reg[2]_i_21_n_2 ,\fb_pixel_reg[2]_i_21_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_80_n_0 ,\fb_pixel[2]_i_81_n_0 ,\fb_pixel[2]_i_82_n_0 ,\fb_pixel[2]_i_83_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_21_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_84_n_0 ,\fb_pixel[2]_i_85_n_0 ,\fb_pixel[2]_i_86_n_0 ,\fb_pixel[2]_i_87_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_215 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_215_n_0 ,\fb_pixel_reg[2]_i_215_n_1 ,\fb_pixel_reg[2]_i_215_n_2 ,\fb_pixel_reg[2]_i_215_n_3 }),
+        .CYINIT(1'b1),
+        .DI({\fb_pixel[2]_i_292_n_0 ,\fb_pixel[2]_i_293_n_0 ,\fb_pixel[2]_i_294_n_0 ,\fb_pixel[2]_i_295_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_215_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_296_n_0 ,\fb_pixel[2]_i_297_n_0 ,\fb_pixel[2]_i_298_n_0 ,\fb_pixel[2]_i_299_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_221 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_221_n_0 ,\fb_pixel_reg[2]_i_221_n_1 ,\fb_pixel_reg[2]_i_221_n_2 ,\fb_pixel_reg[2]_i_221_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_300_n_0 ,\fb_pixel[2]_i_301_n_0 ,\fb_pixel[2]_i_302_n_0 ,\fb_pixel[2]_i_303_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_221_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_304_n_0 ,\fb_pixel[2]_i_305_n_0 ,\fb_pixel[2]_i_306_n_0 ,\fb_pixel[2]_i_307_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_230 
+       (.CI(\fb_pixel_reg[2]_i_231_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_230_n_0 ,\fb_pixel_reg[2]_i_230_n_1 ,\fb_pixel_reg[2]_i_230_n_2 ,\fb_pixel_reg[2]_i_230_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_230_n_4 ,\fb_pixel_reg[2]_i_230_n_5 ,\fb_pixel_reg[2]_i_230_n_6 ,\fb_pixel_reg[2]_i_230_n_7 }),
+        .S({\bowling_ball_location_x_reg_n_0_[20] ,\bowling_ball_location_x_reg_n_0_[19] ,\bowling_ball_location_x_reg_n_0_[18] ,\bowling_ball_location_x_reg_n_0_[17] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_231 
+       (.CI(\fb_pixel_reg[2]_i_308_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_231_n_0 ,\fb_pixel_reg[2]_i_231_n_1 ,\fb_pixel_reg[2]_i_231_n_2 ,\fb_pixel_reg[2]_i_231_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_231_n_4 ,\fb_pixel_reg[2]_i_231_n_5 ,\fb_pixel_reg[2]_i_231_n_6 ,\fb_pixel_reg[2]_i_231_n_7 }),
+        .S({\bowling_ball_location_x_reg_n_0_[16] ,\bowling_ball_location_x_reg_n_0_[15] ,\bowling_ball_location_x_reg_n_0_[14] ,\bowling_ball_location_x_reg_n_0_[13] }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_232 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_232_n_0 ,\fb_pixel_reg[2]_i_232_n_1 ,\fb_pixel_reg[2]_i_232_n_2 ,\fb_pixel_reg[2]_i_232_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_310_n_0 ,\fb_pixel[2]_i_311_n_0 ,\fb_pixel[2]_i_312_n_0 ,\fb_pixel[2]_i_313_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_232_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_314_n_0 ,\fb_pixel[2]_i_315_n_0 ,\fb_pixel[2]_i_316_n_0 ,\fb_pixel[2]_i_317_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_241 
+       (.CI(\fb_pixel_reg[2]_i_242_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_241_n_0 ,\fb_pixel_reg[2]_i_241_n_1 ,\fb_pixel_reg[2]_i_241_n_2 ,\fb_pixel_reg[2]_i_241_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_241_n_4 ,\fb_pixel_reg[2]_i_241_n_5 ,\fb_pixel_reg[2]_i_241_n_6 ,\fb_pixel_reg[2]_i_241_n_7 }),
+        .S({\bowling_ball_location_y_reg_n_0_[20] ,\bowling_ball_location_y_reg_n_0_[19] ,\bowling_ball_location_y_reg_n_0_[18] ,\bowling_ball_location_y_reg_n_0_[17] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_242 
+       (.CI(\fb_pixel_reg[2]_i_318_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_242_n_0 ,\fb_pixel_reg[2]_i_242_n_1 ,\fb_pixel_reg[2]_i_242_n_2 ,\fb_pixel_reg[2]_i_242_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_242_n_4 ,\fb_pixel_reg[2]_i_242_n_5 ,\fb_pixel_reg[2]_i_242_n_6 ,\fb_pixel_reg[2]_i_242_n_7 }),
+        .S({\bowling_ball_location_y_reg_n_0_[16] ,\bowling_ball_location_y_reg_n_0_[15] ,\bowling_ball_location_y_reg_n_0_[14] ,\bowling_ball_location_y_reg_n_0_[13] }));
+  CARRY4 \fb_pixel_reg[2]_i_268 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_268_n_0 ,\fb_pixel_reg[2]_i_268_n_1 ,\fb_pixel_reg[2]_i_268_n_2 ,\fb_pixel_reg[2]_i_268_n_3 }),
+        .CYINIT(1'b1),
+        .DI({\fb_pixel[2]_i_321_n_0 ,\fb_pixel[2]_i_322_n_0 ,\fb_pixel[2]_i_323_n_0 ,\fb_pixel[2]_i_324_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_268_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_325_n_0 ,\fb_pixel[2]_i_326_n_0 ,\fb_pixel[2]_i_327_n_0 ,\fb_pixel[2]_i_328_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_270 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_270_n_0 ,\fb_pixel_reg[2]_i_270_n_1 ,\fb_pixel_reg[2]_i_270_n_2 ,\fb_pixel_reg[2]_i_270_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_329_n_0 ,\fb_pixel[2]_i_330_n_0 ,\fb_pixel[2]_i_331_n_0 ,\fb_pixel[2]_i_332_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_270_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_333_n_0 ,\fb_pixel[2]_i_334_n_0 ,\fb_pixel[2]_i_335_n_0 ,\fb_pixel[2]_i_336_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_273 
+       (.CI(1'b0),
+        .CO({\NLW_fb_pixel_reg[2]_i_273_CO_UNCONNECTED [3],\fb_pixel_reg[2]_i_273_n_1 ,\NLW_fb_pixel_reg[2]_i_273_CO_UNCONNECTED [1],\fb_pixel_reg[2]_i_273_n_3 }),
+        .CYINIT(\fb_pixel_reg[2]_i_274_n_1 ),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_fb_pixel_reg[2]_i_273_O_UNCONNECTED [3:2],\fb_pixel_reg[2]_i_273_n_6 ,\NLW_fb_pixel_reg[2]_i_273_O_UNCONNECTED [0]}),
+        .S({1'b0,1'b1,pin_4_location_y[6],1'b1}));
+  CARRY4 \fb_pixel_reg[2]_i_274 
+       (.CI(1'b0),
+        .CO({\NLW_fb_pixel_reg[2]_i_274_CO_UNCONNECTED [3],\fb_pixel_reg[2]_i_274_n_1 ,\NLW_fb_pixel_reg[2]_i_274_CO_UNCONNECTED [1],\fb_pixel_reg[2]_i_274_n_3 }),
+        .CYINIT(\fb_pixel_reg[2]_i_275_n_0 ),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\NLW_fb_pixel_reg[2]_i_274_O_UNCONNECTED [3:2],\fb_pixel_reg[2]_i_274_n_6 ,\NLW_fb_pixel_reg[2]_i_274_O_UNCONNECTED [0]}),
+        .S({1'b0,1'b1,pin_4_location_y[4],1'b1}));
+  CARRY4 \fb_pixel_reg[2]_i_275 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_275_n_0 ,\NLW_fb_pixel_reg[2]_i_275_CO_UNCONNECTED [2],\fb_pixel_reg[2]_i_275_n_2 ,\fb_pixel_reg[2]_i_275_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,pin_4_location_y[4],1'b0}),
+        .O({\NLW_fb_pixel_reg[2]_i_275_O_UNCONNECTED [3],\fb_pixel_reg[2]_i_275_n_5 ,\fb_pixel_reg[2]_i_275_n_6 ,\NLW_fb_pixel_reg[2]_i_275_O_UNCONNECTED [0]}),
+        .S({1'b1,pin_4_location_y[6],\fb_pixel[2]_i_338_n_0 ,1'b0}));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_308 
+       (.CI(\fb_pixel_reg[2]_i_309_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_308_n_0 ,\fb_pixel_reg[2]_i_308_n_1 ,\fb_pixel_reg[2]_i_308_n_2 ,\fb_pixel_reg[2]_i_308_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_308_n_4 ,\fb_pixel_reg[2]_i_308_n_5 ,\fb_pixel_reg[2]_i_308_n_6 ,\fb_pixel_reg[2]_i_308_n_7 }),
+        .S({\bowling_ball_location_x_reg_n_0_[12] ,\bowling_ball_location_x_reg_n_0_[11] ,\bowling_ball_location_x_reg_n_0_[10] ,\bowling_ball_location_x_reg_n_0_[9] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_309 
+       (.CI(\fb_pixel_reg[2]_i_339_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_309_n_0 ,\fb_pixel_reg[2]_i_309_n_1 ,\fb_pixel_reg[2]_i_309_n_2 ,\fb_pixel_reg[2]_i_309_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_309_n_4 ,\fb_pixel_reg[2]_i_309_n_5 ,\fb_pixel_reg[2]_i_309_n_6 ,\fb_pixel_reg[2]_i_309_n_7 }),
+        .S({\bowling_ball_location_x_reg_n_0_[8] ,\bowling_ball_location_x_reg_n_0_[7] ,\bowling_ball_location_x_reg_n_0_[6] ,\bowling_ball_location_x_reg_n_0_[5] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_318 
+       (.CI(\fb_pixel_reg[2]_i_319_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_318_n_0 ,\fb_pixel_reg[2]_i_318_n_1 ,\fb_pixel_reg[2]_i_318_n_2 ,\fb_pixel_reg[2]_i_318_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_318_n_4 ,\fb_pixel_reg[2]_i_318_n_5 ,\fb_pixel_reg[2]_i_318_n_6 ,\fb_pixel_reg[2]_i_318_n_7 }),
+        .S({\bowling_ball_location_y_reg_n_0_[12] ,\bowling_ball_location_y_reg_n_0_[11] ,\bowling_ball_location_y_reg_n_0_[10] ,\bowling_ball_location_y_reg_n_0_[9] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_319 
+       (.CI(\fb_pixel_reg[2]_i_340_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_319_n_0 ,\fb_pixel_reg[2]_i_319_n_1 ,\fb_pixel_reg[2]_i_319_n_2 ,\fb_pixel_reg[2]_i_319_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\fb_pixel_reg[2]_i_319_n_4 ,\fb_pixel_reg[2]_i_319_n_5 ,\fb_pixel_reg[2]_i_319_n_6 ,\fb_pixel_reg[2]_i_319_n_7 }),
+        .S({\bowling_ball_location_y_reg_n_0_[8] ,\bowling_ball_location_y_reg_n_0_[7] ,\bowling_ball_location_y_reg_n_0_[6] ,\bowling_ball_location_y_reg_n_0_[5] }));
+  CARRY4 \fb_pixel_reg[2]_i_320 
+       (.CI(1'b0),
+        .CO({\NLW_fb_pixel_reg[2]_i_320_CO_UNCONNECTED [3],\fb_pixel_reg[2]_i_320_n_1 ,\NLW_fb_pixel_reg[2]_i_320_CO_UNCONNECTED [1],\fb_pixel_reg[2]_i_320_n_3 }),
+        .CYINIT(pin_4_location_y[6]),
+        .DI({1'b0,1'b0,1'b0,pin_4_location_y[4]}),
+        .O({\NLW_fb_pixel_reg[2]_i_320_O_UNCONNECTED [3:2],\fb_pixel_reg[2]_i_320_n_6 ,\fb_pixel_reg[2]_i_320_n_7 }),
+        .S({1'b0,1'b1,pin_4_location_y[6],\fb_pixel[2]_i_341_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_339 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_339_n_0 ,\fb_pixel_reg[2]_i_339_n_1 ,\fb_pixel_reg[2]_i_339_n_2 ,\fb_pixel_reg[2]_i_339_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\bowling_ball_location_x_reg_n_0_[4] ,1'b0,\bowling_ball_location_x_reg_n_0_[2] ,1'b0}),
+        .O({\fb_pixel_reg[2]_i_339_n_4 ,\fb_pixel_reg[2]_i_339_n_5 ,\fb_pixel_reg[2]_i_339_n_6 ,\fb_pixel_reg[2]_i_339_n_7 }),
+        .S({\fb_pixel[2]_i_343_n_0 ,\bowling_ball_location_x_reg_n_0_[3] ,\fb_pixel[2]_i_344_n_0 ,\bowling_ball_location_x_reg_n_0_[1] }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \fb_pixel_reg[2]_i_340 
+       (.CI(1'b0),
+        .CO({\fb_pixel_reg[2]_i_340_n_0 ,\fb_pixel_reg[2]_i_340_n_1 ,\fb_pixel_reg[2]_i_340_n_2 ,\fb_pixel_reg[2]_i_340_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\bowling_ball_location_y_reg_n_0_[4] ,1'b0,\bowling_ball_location_y_reg_n_0_[2] ,1'b0}),
+        .O({\fb_pixel_reg[2]_i_340_n_4 ,\fb_pixel_reg[2]_i_340_n_5 ,\fb_pixel_reg[2]_i_340_n_6 ,\fb_pixel_reg[2]_i_340_n_7 }),
+        .S({\fb_pixel[2]_i_345_n_0 ,\bowling_ball_location_y_reg_n_0_[3] ,\fb_pixel[2]_i_346_n_0 ,\bowling_ball_location_y_reg_n_0_[1] }));
+  CARRY4 \fb_pixel_reg[2]_i_342 
+       (.CI(1'b0),
+        .CO({\NLW_fb_pixel_reg[2]_i_342_CO_UNCONNECTED [3],\fb_pixel_reg[2]_i_342_n_1 ,\NLW_fb_pixel_reg[2]_i_342_CO_UNCONNECTED [1],\fb_pixel_reg[2]_i_342_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,pin_4_location_y[6],1'b0}),
+        .O({\NLW_fb_pixel_reg[2]_i_342_O_UNCONNECTED [3:2],\fb_pixel_reg[2]_i_342_n_6 ,\fb_pixel_reg[2]_i_342_n_7 }),
+        .S({1'b0,1'b1,\fb_pixel[2]_i_347_n_0 ,pin_4_location_y[4]}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_60 
+       (.CI(\fb_pixel_reg[2]_i_131_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_60_n_0 ,\fb_pixel_reg[2]_i_60_n_1 ,\fb_pixel_reg[2]_i_60_n_2 ,\fb_pixel_reg[2]_i_60_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_fb_pixel_reg[2]_i_60_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_132_n_0 ,\fb_pixel[2]_i_133_n_0 ,\fb_pixel[2]_i_134_n_0 ,\fb_pixel[2]_i_135_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_65 
+       (.CI(\fb_pixel_reg[2]_i_136_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_65_n_0 ,\fb_pixel_reg[2]_i_65_n_1 ,\fb_pixel_reg[2]_i_65_n_2 ,\fb_pixel_reg[2]_i_65_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_fb_pixel_reg[2]_i_65_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_137_n_0 ,\fb_pixel[2]_i_138_n_0 ,\fb_pixel[2]_i_139_n_0 ,\fb_pixel[2]_i_140_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_70 
+       (.CI(\fb_pixel_reg[2]_i_141_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_70_n_0 ,\fb_pixel_reg[2]_i_70_n_1 ,\fb_pixel_reg[2]_i_70_n_2 ,\fb_pixel_reg[2]_i_70_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_142_n_0 ,\fb_pixel[2]_i_143_n_0 ,\fb_pixel[2]_i_144_n_0 ,\fb_pixel[2]_i_145_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_70_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_146_n_0 ,\fb_pixel[2]_i_147_n_0 ,\fb_pixel[2]_i_148_n_0 ,\fb_pixel[2]_i_149_n_0 }));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 \fb_pixel_reg[2]_i_79 
+       (.CI(\fb_pixel_reg[2]_i_153_n_0 ),
+        .CO({\fb_pixel_reg[2]_i_79_n_0 ,\fb_pixel_reg[2]_i_79_n_1 ,\fb_pixel_reg[2]_i_79_n_2 ,\fb_pixel_reg[2]_i_79_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_154_n_0 ,\fb_pixel[2]_i_155_n_0 ,\fb_pixel[2]_i_156_n_0 ,\fb_pixel[2]_i_157_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_79_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_158_n_0 ,\fb_pixel[2]_i_159_n_0 ,\fb_pixel[2]_i_160_n_0 ,\fb_pixel[2]_i_161_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_89 
+       (.CI(1'b0),
+        .CO({fb_pixel4102_in,\fb_pixel_reg[2]_i_89_n_1 ,\fb_pixel_reg[2]_i_89_n_2 ,\fb_pixel_reg[2]_i_89_n_3 }),
+        .CYINIT(1'b0),
+        .DI({\fb_pixel[2]_i_165_n_0 ,\fb_pixel[2]_i_166_n_0 ,\fb_pixel[2]_i_167_n_0 ,\fb_pixel[2]_i_168_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_89_O_UNCONNECTED [3:0]),
+        .S({\fb_pixel[2]_i_169_n_0 ,\fb_pixel[2]_i_170_n_0 ,\fb_pixel[2]_i_171_n_0 ,\fb_pixel[2]_i_172_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_90 
+       (.CI(\fb_pixel_reg[2]_i_173_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_90_CO_UNCONNECTED [3:1],fb_pixel3103_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,\fb_pixel[2]_i_174_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_90_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,\fb_pixel[2]_i_175_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_93 
+       (.CI(\fb_pixel_reg[2]_i_178_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_93_CO_UNCONNECTED [3:1],fb_pixel490_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,\fb_pixel[2]_i_179_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_93_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,\fb_pixel[2]_i_180_n_0 }));
+  CARRY4 \fb_pixel_reg[2]_i_94 
+       (.CI(\fb_pixel_reg[2]_i_181_n_0 ),
+        .CO({\NLW_fb_pixel_reg[2]_i_94_CO_UNCONNECTED [3:1],fb_pixel391_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,\fb_pixel[2]_i_182_n_0 }),
+        .O(\NLW_fb_pixel_reg[2]_i_94_O_UNCONNECTED [3:0]),
+        .S({1'b0,1'b0,1'b0,\fb_pixel[2]_i_183_n_0 }));
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'h00AC)) 
     \game_time[0]_i_1 
-       (.I0(game_time__45),
-        .I1(game_time0__6),
+       (.I0(game_time),
+        .I1(game_time0),
         .I2(\game_time_reg_n_0_[0] ),
         .I3(pin_1_location_y),
         .O(\game_time[0]_i_1_n_0 ));
@@ -8216,20 +11188,20 @@ module bowling_game_controller_0_0_controller
         .I4(game_turn_i_4_n_0),
         .I5(game_turn),
         .O(game_turn_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT2 #(
     .INIT(4'hE)) 
     game_turn_i_10
        (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
         .I1(\bowling_ball_location_y_reg_n_0_[3] ),
         .O(game_turn_i_10_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT2 #(
     .INIT(4'hE)) 
     game_turn_i_11
        (.I0(\bowling_ball_location_y_reg_n_0_[8] ),
         .I1(\bowling_ball_location_y_reg_n_0_[9] ),
         .O(game_turn_i_11_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT2 #(
     .INIT(4'hE)) 
     game_turn_i_12
@@ -8305,7 +11277,7 @@ module bowling_game_controller_0_0_controller
         .I4(\bowling_ball_location_y_reg_n_0_[31] ),
         .I5(\bowling_ball_location_y_reg_n_0_[30] ),
         .O(game_turn_i_8_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT2 #(
     .INIT(4'hE)) 
     game_turn_i_9
@@ -8320,1551 +11292,345 @@ module bowling_game_controller_0_0_controller
         .D(game_turn_i_1_n_0),
         .Q(game_turn),
         .R(1'b0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__0_i_1
-       (.I0(i__carry__0_i_9_n_6),
-        .I1(i__carry__0_i_9_n_5),
-        .O(i__carry__0_i_1_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry__0_i_10
-       (.CI(i__carry_i_9_n_0),
-        .CO({i__carry__0_i_10_n_0,i__carry__0_i_10_n_1,i__carry__0_i_10_n_2,i__carry__0_i_10_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry__0_i_10_n_4,i__carry__0_i_10_n_5,i__carry__0_i_10_n_6,i__carry__0_i_10_n_7}),
-        .S({\bowling_ball_location_y_reg_n_0_[12] ,\bowling_ball_location_y_reg_n_0_[11] ,\bowling_ball_location_y_reg_n_0_[10] ,\bowling_ball_location_y_reg_n_0_[9] }));
-  LUT3 #(
-    .INIT(8'h02)) 
-    i__carry__0_i_1__0
-       (.I0(\pixel_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(i__carry__0_i_1__0_n_0));
+  LUT4 #(
+    .INIT(16'hCF80)) 
+    pin_10_hit_i_1
+       (.I0(score157_out),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_10_hit_reg_n_0),
+        .O(pin_10_hit_i_1_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    i__carry__0_i_1__1
-       (.I0(pixel_y_reg[8]),
-        .I1(pin_4_location_y[6]),
-        .O(i__carry__0_i_1__1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    i__carry__0_i_1__2
-       (.I0(pixel_y_reg[8]),
-        .O(i__carry__0_i_1__2_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry__0_i_1__3
-       (.I0(pixel_y_reg[8]),
-        .I1(pin_4_location_y[6]),
-        .O(i__carry__0_i_1__3_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry__0_i_1__4
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[8]),
-        .O(i__carry__0_i_1__4_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__0_i_2
-       (.I0(i__carry__0_i_10_n_4),
-        .I1(i__carry__0_i_9_n_7),
-        .O(i__carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__0_i_2__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(i__carry__0_i_2__0_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    i__carry__0_i_2__1
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[8]),
-        .O(i__carry__0_i_2__1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    i__carry__0_i_2__2
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[8]),
-        .O(i__carry__0_i_2__2_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    i__carry__0_i_2__3
-       (.I0(pixel_y_reg[8]),
-        .I1(pin_4_location_y[6]),
-        .O(i__carry__0_i_2__3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__0_i_3
-       (.I0(i__carry__0_i_10_n_6),
-        .I1(i__carry__0_i_10_n_5),
-        .O(i__carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__0_i_3__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
-        .O(i__carry__0_i_3__0_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    i__carry__0_i_4
-       (.I0(pixel_y_reg[8]),
-        .I1(i__carry_i_9_n_4),
-        .I2(i__carry__0_i_10_n_7),
-        .O(i__carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__0_i_4__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
-        .O(i__carry__0_i_4__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__0_i_5
-       (.I0(i__carry__0_i_9_n_5),
-        .I1(i__carry__0_i_9_n_6),
-        .O(i__carry__0_i_5_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry__0_i_5__0
-       (.I0(\pixel_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[8] ),
-        .O(i__carry__0_i_5__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__0_i_6
-       (.I0(i__carry__0_i_9_n_7),
-        .I1(i__carry__0_i_10_n_4),
-        .O(i__carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__0_i_7
-       (.I0(i__carry__0_i_10_n_5),
-        .I1(i__carry__0_i_10_n_6),
-        .O(i__carry__0_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry__0_i_8
-       (.I0(i__carry_i_9_n_4),
-        .I1(i__carry__0_i_10_n_7),
-        .I2(pixel_y_reg[8]),
-        .O(i__carry__0_i_8_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry__0_i_9
-       (.CI(i__carry__0_i_10_n_0),
-        .CO({i__carry__0_i_9_n_0,i__carry__0_i_9_n_1,i__carry__0_i_9_n_2,i__carry__0_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry__0_i_9_n_4,i__carry__0_i_9_n_5,i__carry__0_i_9_n_6,i__carry__0_i_9_n_7}),
-        .S({\bowling_ball_location_y_reg_n_0_[16] ,\bowling_ball_location_y_reg_n_0_[15] ,\bowling_ball_location_y_reg_n_0_[14] ,\bowling_ball_location_y_reg_n_0_[13] }));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__1_i_1
-       (.I0(i__carry__1_i_9_n_6),
-        .I1(i__carry__1_i_9_n_5),
-        .O(i__carry__1_i_1_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry__1_i_10
-       (.CI(i__carry__0_i_9_n_0),
-        .CO({i__carry__1_i_10_n_0,i__carry__1_i_10_n_1,i__carry__1_i_10_n_2,i__carry__1_i_10_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry__1_i_10_n_4,i__carry__1_i_10_n_5,i__carry__1_i_10_n_6,i__carry__1_i_10_n_7}),
-        .S({\bowling_ball_location_y_reg_n_0_[20] ,\bowling_ball_location_y_reg_n_0_[19] ,\bowling_ball_location_y_reg_n_0_[18] ,\bowling_ball_location_y_reg_n_0_[17] }));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_1__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(i__carry__1_i_1__0_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__1_i_2
-       (.I0(i__carry__1_i_10_n_4),
-        .I1(i__carry__1_i_9_n_7),
-        .O(i__carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_2__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
-        .O(i__carry__1_i_2__0_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__1_i_3
-       (.I0(i__carry__1_i_10_n_6),
-        .I1(i__carry__1_i_10_n_5),
-        .O(i__carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_3__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
-        .O(i__carry__1_i_3__0_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__1_i_4
-       (.I0(i__carry__0_i_9_n_4),
-        .I1(i__carry__1_i_10_n_7),
-        .O(i__carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_4__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(i__carry__1_i_4__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_5
-       (.I0(i__carry__1_i_9_n_5),
-        .I1(i__carry__1_i_9_n_6),
-        .O(i__carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_6
-       (.I0(i__carry__1_i_9_n_7),
-        .I1(i__carry__1_i_10_n_4),
-        .O(i__carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_7
-       (.I0(i__carry__1_i_10_n_5),
-        .I1(i__carry__1_i_10_n_6),
-        .O(i__carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__1_i_8
-       (.I0(i__carry__1_i_10_n_7),
-        .I1(i__carry__0_i_9_n_4),
-        .O(i__carry__1_i_8_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry__1_i_9
-       (.CI(i__carry__1_i_10_n_0),
-        .CO({i__carry__1_i_9_n_0,i__carry__1_i_9_n_1,i__carry__1_i_9_n_2,i__carry__1_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry__1_i_9_n_4,i__carry__1_i_9_n_5,i__carry__1_i_9_n_6,i__carry__1_i_9_n_7}),
-        .S({\bowling_ball_location_y_reg_n_0_[24] ,\bowling_ball_location_y_reg_n_0_[23] ,\bowling_ball_location_y_reg_n_0_[22] ,\bowling_ball_location_y_reg_n_0_[21] }));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__2_i_1
-       (.I0(i__carry__2_i_9_n_6),
-        .I1(i__carry__2_i_9_n_5),
-        .O(i__carry__2_i_1_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry__2_i_10
-       (.CI(i__carry__1_i_9_n_0),
-        .CO({i__carry__2_i_10_n_0,i__carry__2_i_10_n_1,i__carry__2_i_10_n_2,i__carry__2_i_10_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry__2_i_10_n_4,i__carry__2_i_10_n_5,i__carry__2_i_10_n_6,i__carry__2_i_10_n_7}),
-        .S({\bowling_ball_location_y_reg_n_0_[28] ,\bowling_ball_location_y_reg_n_0_[27] ,\bowling_ball_location_y_reg_n_0_[26] ,\bowling_ball_location_y_reg_n_0_[25] }));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_1__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(i__carry__2_i_1__0_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__2_i_2
-       (.I0(i__carry__2_i_10_n_4),
-        .I1(i__carry__2_i_9_n_7),
-        .O(i__carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_2__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
-        .O(i__carry__2_i_2__0_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__2_i_3
-       (.I0(i__carry__2_i_10_n_6),
-        .I1(i__carry__2_i_10_n_5),
-        .O(i__carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_3__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
-        .O(i__carry__2_i_3__0_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry__2_i_4
-       (.I0(i__carry__1_i_9_n_4),
-        .I1(i__carry__2_i_10_n_7),
-        .O(i__carry__2_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_4__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(i__carry__2_i_4__0_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_5
-       (.I0(i__carry__2_i_9_n_5),
-        .I1(i__carry__2_i_9_n_6),
-        .O(i__carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_6
-       (.I0(i__carry__2_i_9_n_7),
-        .I1(i__carry__2_i_10_n_4),
-        .O(i__carry__2_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_7
-       (.I0(i__carry__2_i_10_n_5),
-        .I1(i__carry__2_i_10_n_6),
-        .O(i__carry__2_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry__2_i_8
-       (.I0(i__carry__2_i_10_n_7),
-        .I1(i__carry__1_i_9_n_4),
-        .O(i__carry__2_i_8_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry__2_i_9
-       (.CI(i__carry__2_i_10_n_0),
-        .CO({NLW_i__carry__2_i_9_CO_UNCONNECTED[3:2],i__carry__2_i_9_n_2,i__carry__2_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_i__carry__2_i_9_O_UNCONNECTED[3],i__carry__2_i_9_n_5,i__carry__2_i_9_n_6,i__carry__2_i_9_n_7}),
-        .S({1'b0,\bowling_ball_location_y_reg_n_0_[31] ,\bowling_ball_location_y_reg_n_0_[30] ,\bowling_ball_location_y_reg_n_0_[29] }));
-  LUT4 #(
-    .INIT(16'h7150)) 
-    i__carry_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .O(i__carry_i_1_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_10
-       (.CI(1'b0),
-        .CO({i__carry_i_10_n_0,i__carry_i_10_n_1,i__carry_i_10_n_2,i__carry_i_10_n_3}),
-        .CYINIT(1'b0),
-        .DI({\bowling_ball_location_y_reg_n_0_[4] ,1'b0,\bowling_ball_location_y_reg_n_0_[2] ,1'b0}),
-        .O({i__carry_i_10_n_4,i__carry_i_10_n_5,i__carry_i_10_n_6,i__carry_i_10_n_7}),
-        .S({i__carry_i_11_n_0,\bowling_ball_location_y_reg_n_0_[3] ,i__carry_i_12_n_0,\bowling_ball_location_y_reg_n_0_[1] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_10__0
-       (.CI(1'b0),
-        .CO({i__carry_i_10__0_n_0,i__carry_i_10__0_n_1,i__carry_i_10__0_n_2,i__carry_i_10__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x_reg_n_0_[4] ,1'b0,\bowling_ball_location_x_reg_n_0_[2] ,1'b0}),
-        .O({i__carry_i_10__0_n_4,i__carry_i_10__0_n_5,i__carry_i_10__0_n_6,i__carry_i_10__0_n_7}),
-        .S({i__carry_i_11__0_n_0,\bowling_ball_location_x_reg_n_0_[3] ,i__carry_i_12__0_n_0,\bowling_ball_location_x_reg_n_0_[1] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_10__1
-       (.CI(i__carry_i_9__0_n_0),
-        .CO({i__carry_i_10__1_n_0,i__carry_i_10__1_n_1,i__carry_i_10__1_n_2,i__carry_i_10__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_10__1_n_4,i__carry_i_10__1_n_5,i__carry_i_10__1_n_6,i__carry_i_10__1_n_7}),
-        .S({\bowling_ball_location_x_reg_n_0_[12] ,\bowling_ball_location_x_reg_n_0_[11] ,\bowling_ball_location_x_reg_n_0_[10] ,\bowling_ball_location_x_reg_n_0_[9] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_10__2
-       (.CI(i__carry_i_9__1_n_0),
-        .CO({i__carry_i_10__2_n_0,i__carry_i_10__2_n_1,i__carry_i_10__2_n_2,i__carry_i_10__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_10__2_n_4,i__carry_i_10__2_n_5,i__carry_i_10__2_n_6,i__carry_i_10__2_n_7}),
-        .S({\bowling_ball_location_x_reg_n_0_[20] ,\bowling_ball_location_x_reg_n_0_[19] ,\bowling_ball_location_x_reg_n_0_[18] ,\bowling_ball_location_x_reg_n_0_[17] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_10__3
-       (.CI(i__carry_i_9__2_n_0),
-        .CO({i__carry_i_10__3_n_0,i__carry_i_10__3_n_1,i__carry_i_10__3_n_2,i__carry_i_10__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_10__3_n_4,i__carry_i_10__3_n_5,i__carry_i_10__3_n_6,i__carry_i_10__3_n_7}),
-        .S({\bowling_ball_location_x_reg_n_0_[28] ,\bowling_ball_location_x_reg_n_0_[27] ,\bowling_ball_location_x_reg_n_0_[26] ,\bowling_ball_location_x_reg_n_0_[25] }));
-  LUT1 #(
-    .INIT(2'h1)) 
-    i__carry_i_11
-       (.I0(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(i__carry_i_11_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    i__carry_i_11__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(i__carry_i_11__0_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    i__carry_i_12
-       (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(i__carry_i_12_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    i__carry_i_12__0
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .O(i__carry_i_12__0_n_0));
-  LUT3 #(
-    .INIT(8'h08)) 
-    i__carry_i_1__0
-       (.I0(pixel_y_reg[6]),
-        .I1(pixel_y_reg[7]),
-        .I2(pin_4_location_y[4]),
-        .O(i__carry_i_1__0_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    i__carry_i_1__1
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[7]),
-        .O(i__carry_i_1__1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_1__10
-       (.I0(i__carry_i_9__3_n_6),
-        .I1(i__carry_i_9__3_n_5),
-        .O(i__carry_i_1__10_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    i__carry_i_1__11
-       (.I0(pin_4_location_y[4]),
-        .O(i__carry_i_1__11_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_1__2
-       (.I0(pixel_y_reg[7]),
-        .I1(pixel_y_reg[6]),
-        .I2(pin_8_hit2_carry_i_9_n_1),
-        .I3(pin_4_location_y[4]),
-        .O(i__carry_i_1__2_n_0));
-  LUT4 #(
-    .INIT(16'h50D4)) 
-    i__carry_i_1__3
-       (.I0(pixel_y_reg[7]),
-        .I1(i__carry_i_9_n_6),
-        .I2(i__carry_i_9_n_5),
-        .I3(pixel_y_reg[6]),
-        .O(i__carry_i_1__3_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry_i_1__4
-       (.I0(pin_5_hit2_carry_i_9_n_1),
-        .I1(pixel_y_reg[8]),
-        .O(i__carry_i_1__4_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry_i_1__5
-       (.I0(pixel_y_reg[7]),
-        .I1(pin_4_location_y[6]),
-        .O(i__carry_i_1__5_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry_i_1__6
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[8]),
-        .O(i__carry_i_1__6_n_0));
-  LUT4 #(
-    .INIT(16'h50D4)) 
-    i__carry_i_1__7
-       (.I0(\pixel_x_reg_n_0_[7] ),
-        .I1(i__carry_i_9__0_n_6),
-        .I2(i__carry_i_9__0_n_5),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .O(i__carry_i_1__7_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_1__8
-       (.I0(i__carry_i_9__1_n_6),
-        .I1(i__carry_i_9__1_n_5),
-        .O(i__carry_i_1__8_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_1__9
-       (.I0(i__carry_i_9__2_n_6),
-        .I1(i__carry_i_9__2_n_5),
-        .O(i__carry_i_1__9_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_2
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[4]),
-        .I3(pixel_y_reg[5]),
-        .O(i__carry_i_2_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    i__carry_i_2__0
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[5]),
-        .I2(pixel_y_reg[4]),
-        .O(i__carry_i_2__0_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_2__1
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[4] ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .O(i__carry_i_2__1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_2__10
-       (.I0(i__carry_i_10__3_n_4),
-        .I1(i__carry_i_9__3_n_7),
-        .O(i__carry_i_2__10_n_0));
-  LUT4 #(
-    .INIT(16'h5071)) 
-    i__carry_i_2__2
-       (.I0(pixel_y_reg[7]),
-        .I1(pixel_y_reg[6]),
-        .I2(pin_5_hit2_carry_i_9_n_6),
-        .I3(pin_5_hit2_carry_i_10_n_1),
-        .O(i__carry_i_2__2_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_2__3
-       (.I0(pixel_y_reg[5]),
-        .I1(pixel_y_reg[4]),
-        .I2(pin_8_hit2_carry_i_9_n_7),
-        .I3(pin_8_hit2_carry_i_9_n_6),
-        .O(i__carry_i_2__3_n_0));
-  LUT4 #(
-    .INIT(16'h50D4)) 
-    i__carry_i_2__4
-       (.I0(pixel_y_reg[5]),
-        .I1(i__carry_i_10_n_4),
-        .I2(i__carry_i_9_n_7),
-        .I3(pixel_y_reg[4]),
-        .O(i__carry_i_2__4_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    i__carry_i_2__5
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[4]),
-        .I2(pixel_y_reg[5]),
-        .O(i__carry_i_2__5_n_0));
-  LUT3 #(
-    .INIT(8'h4F)) 
-    i__carry_i_2__6
-       (.I0(pixel_y_reg[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[7]),
-        .O(i__carry_i_2__6_n_0));
-  LUT4 #(
-    .INIT(16'h50D4)) 
-    i__carry_i_2__7
-       (.I0(\pixel_x_reg_n_0_[5] ),
-        .I1(i__carry_i_10__0_n_4),
-        .I2(i__carry_i_9__0_n_7),
-        .I3(\pixel_x_reg_n_0_[4] ),
-        .O(i__carry_i_2__7_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_2__8
-       (.I0(i__carry_i_10__1_n_4),
-        .I1(i__carry_i_9__1_n_7),
-        .O(i__carry_i_2__8_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_2__9
-       (.I0(i__carry_i_10__2_n_4),
-        .I1(i__carry_i_9__2_n_7),
-        .O(i__carry_i_2__9_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    i__carry_i_3
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[3]),
-        .O(i__carry_i_3_n_0));
-  LUT4 #(
-    .INIT(16'h7150)) 
-    i__carry_i_3__0
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[3]),
-        .I3(pixel_y_reg[2]),
-        .O(i__carry_i_3__0_n_0));
-  LUT4 #(
-    .INIT(16'h5071)) 
-    i__carry_i_3__1
-       (.I0(pixel_y_reg[5]),
-        .I1(pixel_y_reg[4]),
-        .I2(pin_5_hit2_carry_i_10_n_6),
-        .I3(\fb_pixel5_inferred__0/i__carry_n_0 ),
-        .O(i__carry_i_3__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_3__10
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[3]),
-        .O(i__carry_i_3__10_n_0));
-  LUT4 #(
-    .INIT(16'h50D4)) 
-    i__carry_i_3__2
-       (.I0(pixel_y_reg[3]),
-        .I1(i__carry_i_10_n_6),
-        .I2(i__carry_i_10_n_5),
-        .I3(pixel_y_reg[2]),
-        .O(i__carry_i_3__2_n_0));
-  LUT3 #(
-    .INIT(8'h23)) 
-    i__carry_i_3__3
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[5]),
-        .I2(pixel_y_reg[4]),
-        .O(i__carry_i_3__3_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry_i_3__4
-       (.I0(pixel_y_reg[3]),
-        .I1(pin_4_location_y[6]),
-        .O(i__carry_i_3__4_n_0));
-  LUT4 #(
-    .INIT(16'h20F2)) 
-    i__carry_i_3__5
-       (.I0(\pixel_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I2(\pixel_x_reg_n_0_[3] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(i__carry_i_3__5_n_0));
-  LUT4 #(
-    .INIT(16'h22B2)) 
-    i__carry_i_3__6
-       (.I0(i__carry_i_10__0_n_5),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(i__carry_i_10__0_n_6),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .O(i__carry_i_3__6_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_3__7
-       (.I0(i__carry_i_10__1_n_6),
-        .I1(i__carry_i_10__1_n_5),
-        .O(i__carry_i_3__7_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_3__8
-       (.I0(i__carry_i_10__2_n_6),
-        .I1(i__carry_i_10__2_n_5),
-        .O(i__carry_i_3__8_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_3__9
-       (.I0(i__carry_i_10__3_n_6),
-        .I1(i__carry_i_10__3_n_5),
-        .O(i__carry_i_3__9_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    i__carry_i_4
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .O(i__carry_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h2B)) 
-    i__carry_i_4__0
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[3]),
-        .O(i__carry_i_4__0_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_4__1
-       (.I0(pixel_y_reg[3]),
-        .I1(pixel_y_reg[2]),
-        .I2(\fb_pixel5_inferred__0/i__carry_n_6 ),
-        .I3(\fb_pixel5_inferred__0/i__carry_n_5 ),
-        .O(i__carry_i_4__1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_4__10
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
-        .O(i__carry_i_4__10_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_4__2
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
-        .I2(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I3(i__carry_i_10_n_7),
-        .O(i__carry_i_4__2_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    i__carry_i_4__3
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[1]),
-        .O(i__carry_i_4__3_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    i__carry_i_4__4
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .O(i__carry_i_4__4_n_0));
-  LUT4 #(
-    .INIT(16'h2B22)) 
-    i__carry_i_4__5
-       (.I0(i__carry_i_10__0_n_7),
-        .I1(\pixel_x_reg_n_0_[1] ),
-        .I2(\pixel_x_reg_n_0_[0] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[0] ),
-        .O(i__carry_i_4__5_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    i__carry_i_4__6
-       (.I0(\pixel_x_reg_n_0_[8] ),
-        .I1(i__carry_i_9__0_n_4),
-        .I2(i__carry_i_10__1_n_7),
-        .O(i__carry_i_4__6_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_4__7
-       (.I0(i__carry_i_9__1_n_4),
-        .I1(i__carry_i_10__2_n_7),
-        .O(i__carry_i_4__7_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_4__8
-       (.I0(i__carry_i_9__2_n_4),
-        .I1(i__carry_i_10__3_n_7),
-        .O(i__carry_i_4__8_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_4__9
-       (.I0(pixel_y_reg[1]),
-        .I1(pixel_y_reg[0]),
-        .O(i__carry_i_4__9_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_5
-       (.I0(i__carry_i_9__0_n_5),
-        .I1(i__carry_i_9__0_n_6),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[6] ),
-        .O(i__carry_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_5__0
-       (.I0(\pixel_x_reg_n_0_[7] ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(i__carry_i_5__0_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    i__carry_i_5__1
-       (.I0(i__carry_i_9_n_5),
-        .I1(i__carry_i_9_n_6),
-        .I2(pixel_y_reg[6]),
-        .I3(pixel_y_reg[7]),
-        .O(i__carry_i_5__1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    i__carry_i_5__10
-       (.I0(pixel_y_reg[8]),
-        .I1(pin_4_location_y[6]),
-        .O(i__carry_i_5__10_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    i__carry_i_5__2
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[7]),
-        .O(i__carry_i_5__2_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    i__carry_i_5__3
-       (.I0(pixel_y_reg[7]),
-        .I1(pixel_y_reg[6]),
-        .I2(pin_8_hit2_carry_i_9_n_1),
-        .I3(pin_4_location_y[4]),
-        .O(i__carry_i_5__3_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry_i_5__4
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[7]),
-        .O(i__carry_i_5__4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_5__5
-       (.I0(i__carry_i_9__1_n_5),
-        .I1(i__carry_i_9__1_n_6),
-        .O(i__carry_i_5__5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_5__6
-       (.I0(i__carry_i_9__2_n_5),
-        .I1(i__carry_i_9__2_n_6),
-        .O(i__carry_i_5__6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_5__7
-       (.I0(i__carry_i_9__3_n_5),
-        .I1(i__carry_i_9__3_n_6),
-        .O(i__carry_i_5__7_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    i__carry_i_5__8
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[7]),
-        .I2(pixel_y_reg[6]),
-        .O(i__carry_i_5__8_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    i__carry_i_5__9
-       (.I0(pixel_y_reg[8]),
-        .I1(pin_5_hit2_carry_i_9_n_1),
-        .O(i__carry_i_5__9_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    i__carry_i_6
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[7]),
-        .I2(pixel_y_reg[6]),
-        .O(i__carry_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h4182)) 
-    i__carry_i_6__0
-       (.I0(pin_5_hit2_carry_i_10_n_1),
-        .I1(pin_5_hit2_carry_i_9_n_6),
-        .I2(pixel_y_reg[7]),
-        .I3(pixel_y_reg[6]),
-        .O(i__carry_i_6__0_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_6__1
-       (.I0(i__carry_i_9_n_7),
-        .I1(i__carry_i_10_n_4),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[4]),
-        .O(i__carry_i_6__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_6__10
-       (.I0(i__carry_i_9__3_n_7),
-        .I1(i__carry_i_10__3_n_4),
-        .O(i__carry_i_6__10_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_6__2
-       (.I0(pin_8_hit2_carry_i_9_n_6),
-        .I1(pin_8_hit2_carry_i_9_n_7),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[4]),
-        .O(i__carry_i_6__2_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_6__3
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[4]),
-        .O(i__carry_i_6__3_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    i__carry_i_6__4
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[5]),
-        .I2(pixel_y_reg[4]),
-        .O(i__carry_i_6__4_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    i__carry_i_6__5
-       (.I0(pixel_y_reg[4]),
-        .I1(pin_4_location_y[6]),
-        .I2(pixel_y_reg[5]),
-        .O(i__carry_i_6__5_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_6__6
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I2(\pixel_x_reg_n_0_[5] ),
-        .I3(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(i__carry_i_6__6_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_6__7
-       (.I0(i__carry_i_9__0_n_7),
-        .I1(\pixel_x_reg_n_0_[5] ),
-        .I2(i__carry_i_10__0_n_4),
-        .I3(\pixel_x_reg_n_0_[4] ),
-        .O(i__carry_i_6__7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_6__8
-       (.I0(i__carry_i_9__1_n_7),
-        .I1(i__carry_i_10__1_n_4),
-        .O(i__carry_i_6__8_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_6__9
-       (.I0(i__carry_i_9__2_n_7),
-        .I1(i__carry_i_10__2_n_4),
-        .O(i__carry_i_6__9_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    i__carry_i_7
-       (.I0(i__carry_i_10_n_5),
-        .I1(i__carry_i_10_n_6),
-        .I2(pixel_y_reg[2]),
-        .I3(pixel_y_reg[3]),
-        .O(i__carry_i_7_n_0));
-  LUT4 #(
-    .INIT(16'h4182)) 
-    i__carry_i_7__0
-       (.I0(\fb_pixel5_inferred__0/i__carry_n_0 ),
-        .I1(pin_5_hit2_carry_i_10_n_6),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[4]),
-        .O(i__carry_i_7__0_n_0));
-  LUT3 #(
-    .INIT(8'h24)) 
-    i__carry_i_7__1
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[4]),
-        .I2(pixel_y_reg[5]),
-        .O(i__carry_i_7__1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_7__10
-       (.I0(i__carry_i_10__3_n_5),
-        .I1(i__carry_i_10__3_n_6),
-        .O(i__carry_i_7__10_n_0));
-  LUT3 #(
-    .INIT(8'h06)) 
-    i__carry_i_7__2
-       (.I0(pin_4_location_y[6]),
-        .I1(pixel_y_reg[3]),
-        .I2(pixel_y_reg[2]),
-        .O(i__carry_i_7__2_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry_i_7__3
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[3]),
-        .O(i__carry_i_7__3_n_0));
-  LUT3 #(
-    .INIT(8'h90)) 
-    i__carry_i_7__4
-       (.I0(pixel_y_reg[3]),
-        .I1(pin_4_location_y[6]),
-        .I2(pixel_y_reg[2]),
-        .O(i__carry_i_7__4_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_7__5
-       (.I0(pixel_y_reg[2]),
-        .I1(pin_4_location_y[4]),
-        .I2(pixel_y_reg[3]),
-        .I3(pin_4_location_y[6]),
-        .O(i__carry_i_7__5_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_7__6
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .O(i__carry_i_7__6_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_7__7
-       (.I0(i__carry_i_10__0_n_5),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(i__carry_i_10__0_n_6),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .O(i__carry_i_7__7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_7__8
-       (.I0(i__carry_i_10__1_n_5),
-        .I1(i__carry_i_10__1_n_6),
-        .O(i__carry_i_7__8_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_7__9
-       (.I0(i__carry_i_10__2_n_5),
-        .I1(i__carry_i_10__2_n_6),
-        .O(i__carry_i_7__9_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_8
-       (.I0(i__carry_i_10_n_7),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[0]),
-        .O(i__carry_i_8_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    i__carry_i_8__0
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[3]),
-        .O(i__carry_i_8__0_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    i__carry_i_8__1
-       (.I0(\fb_pixel5_inferred__0/i__carry_n_6 ),
-        .I1(\fb_pixel5_inferred__0/i__carry_n_5 ),
-        .I2(pixel_y_reg[2]),
-        .I3(pixel_y_reg[3]),
-        .O(i__carry_i_8__1_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry_i_8__10
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .O(i__carry_i_8__10_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry_i_8__2
-       (.I0(pin_4_location_y[4]),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .O(i__carry_i_8__2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_8__3
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[1]),
-        .O(i__carry_i_8__3_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_8__4
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .O(i__carry_i_8__4_n_0));
-  LUT4 #(
-    .INIT(16'h9009)) 
-    i__carry_i_8__5
-       (.I0(\pixel_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I2(i__carry_i_10__0_n_7),
-        .I3(\pixel_x_reg_n_0_[1] ),
-        .O(i__carry_i_8__5_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    i__carry_i_8__6
-       (.I0(i__carry_i_9__0_n_4),
-        .I1(i__carry_i_10__1_n_7),
-        .I2(\pixel_x_reg_n_0_[8] ),
-        .O(i__carry_i_8__6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_8__7
-       (.I0(i__carry_i_10__2_n_7),
-        .I1(i__carry_i_9__1_n_4),
-        .O(i__carry_i_8__7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_8__8
-       (.I0(i__carry_i_10__3_n_7),
-        .I1(i__carry_i_9__2_n_4),
-        .O(i__carry_i_8__8_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    i__carry_i_8__9
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[1]),
-        .O(i__carry_i_8__9_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_9
-       (.CI(i__carry_i_10_n_0),
-        .CO({i__carry_i_9_n_0,i__carry_i_9_n_1,i__carry_i_9_n_2,i__carry_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_9_n_4,i__carry_i_9_n_5,i__carry_i_9_n_6,i__carry_i_9_n_7}),
-        .S({\bowling_ball_location_y_reg_n_0_[8] ,\bowling_ball_location_y_reg_n_0_[7] ,\bowling_ball_location_y_reg_n_0_[6] ,\bowling_ball_location_y_reg_n_0_[5] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_9__0
-       (.CI(i__carry_i_10__0_n_0),
-        .CO({i__carry_i_9__0_n_0,i__carry_i_9__0_n_1,i__carry_i_9__0_n_2,i__carry_i_9__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_9__0_n_4,i__carry_i_9__0_n_5,i__carry_i_9__0_n_6,i__carry_i_9__0_n_7}),
-        .S({\bowling_ball_location_x_reg_n_0_[8] ,\bowling_ball_location_x_reg_n_0_[7] ,\bowling_ball_location_x_reg_n_0_[6] ,\bowling_ball_location_x_reg_n_0_[5] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_9__1
-       (.CI(i__carry_i_10__1_n_0),
-        .CO({i__carry_i_9__1_n_0,i__carry_i_9__1_n_1,i__carry_i_9__1_n_2,i__carry_i_9__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_9__1_n_4,i__carry_i_9__1_n_5,i__carry_i_9__1_n_6,i__carry_i_9__1_n_7}),
-        .S({\bowling_ball_location_x_reg_n_0_[16] ,\bowling_ball_location_x_reg_n_0_[15] ,\bowling_ball_location_x_reg_n_0_[14] ,\bowling_ball_location_x_reg_n_0_[13] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_9__2
-       (.CI(i__carry_i_10__2_n_0),
-        .CO({i__carry_i_9__2_n_0,i__carry_i_9__2_n_1,i__carry_i_9__2_n_2,i__carry_i_9__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({i__carry_i_9__2_n_4,i__carry_i_9__2_n_5,i__carry_i_9__2_n_6,i__carry_i_9__2_n_7}),
-        .S({\bowling_ball_location_x_reg_n_0_[24] ,\bowling_ball_location_x_reg_n_0_[23] ,\bowling_ball_location_x_reg_n_0_[22] ,\bowling_ball_location_x_reg_n_0_[21] }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 i__carry_i_9__3
-       (.CI(i__carry_i_10__3_n_0),
-        .CO({NLW_i__carry_i_9__3_CO_UNCONNECTED[3:2],i__carry_i_9__3_n_2,i__carry_i_9__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_i__carry_i_9__3_O_UNCONNECTED[3],i__carry_i_9__3_n_5,i__carry_i_9__3_n_6,i__carry_i_9__3_n_7}),
-        .S({1'b0,\bowling_ball_location_x_reg_n_0_[31] ,\bowling_ball_location_x_reg_n_0_[30] ,\bowling_ball_location_x_reg_n_0_[29] }));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT5 #(
-    .INIT(32'h693CC369)) 
-    i__i_1
-       (.I0(i__i_5_n_0),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(pixel_y_reg[4]),
-        .I3(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I4(pixel_y_reg[3]),
-        .O(i__i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
-  LUT4 #(
-    .INIT(16'h693C)) 
-    i__i_2
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[1]),
-        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[0] ),
-        .O(i__i_2_n_0));
-  LUT6 #(
-    .INIT(64'h6999666966996666)) 
-    i__i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I1(pixel_y_reg[2]),
-        .I2(pixel_y_reg[0]),
-        .I3(pixel_y_reg[1]),
-        .I4(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I5(\bowling_ball_location_y_reg_n_0_[0] ),
-        .O(i__i_3_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT3 #(
-    .INIT(8'h69)) 
-    i__i_4
-       (.I0(pixel_y_reg[3]),
-        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I2(i__i_5_n_0),
-        .O(i__i_4_n_0));
-  LUT6 #(
-    .INIT(64'hFF5F7F5755051501)) 
-    i__i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I3(pixel_y_reg[1]),
-        .I4(pixel_y_reg[0]),
-        .I5(pixel_y_reg[2]),
-        .O(i__i_5_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit1_carry
-       (.CI(1'b0),
-        .CO({pin_10_hit1_carry_n_0,pin_10_hit1_carry_n_1,pin_10_hit1_carry_n_2,pin_10_hit1_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_10_hit1_carry_i_1_n_0,pin_10_hit1_carry_i_2_n_0,pin_10_hit1_carry_i_3_n_0,pin_10_hit1_carry_i_4_n_0}),
-        .O(NLW_pin_10_hit1_carry_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit1_carry_i_5_n_0,pin_10_hit1_carry_i_6_n_0,pin_10_hit1_carry_i_7_n_0,pin_10_hit1_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit1_carry__0
-       (.CI(pin_10_hit1_carry_n_0),
-        .CO({pin_10_hit1_carry__0_n_0,pin_10_hit1_carry__0_n_1,pin_10_hit1_carry__0_n_2,pin_10_hit1_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_10_hit1_carry__0_i_1_n_0,pin_10_hit1_carry__0_i_2_n_0,pin_10_hit1_carry__0_i_3_n_0,pin_10_hit1_carry__0_i_4_n_0}),
-        .O(NLW_pin_10_hit1_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit1_carry__0_i_5_n_0,pin_10_hit1_carry__0_i_6_n_0,pin_10_hit1_carry__0_i_7_n_0,pin_10_hit1_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
-        .O(pin_10_hit1_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
-        .O(pin_10_hit1_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
-        .O(pin_10_hit1_carry__0_i_3_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    pin_10_hit1_carry__0_i_4
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_10_hit1_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__0_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_10_hit1_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__0_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_10_hit1_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__0_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_10_hit1_carry__0_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_10_hit1_carry__0_i_8
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_10_hit1_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit1_carry__1
-       (.CI(pin_10_hit1_carry__0_n_0),
-        .CO({pin_10_hit1_carry__1_n_0,pin_10_hit1_carry__1_n_1,pin_10_hit1_carry__1_n_2,pin_10_hit1_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_10_hit1_carry__1_i_1_n_0,pin_10_hit1_carry__1_i_2_n_0,pin_10_hit1_carry__1_i_3_n_0,pin_10_hit1_carry__1_i_4_n_0}),
-        .O(NLW_pin_10_hit1_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit1_carry__1_i_5_n_0,pin_10_hit1_carry__1_i_6_n_0,pin_10_hit1_carry__1_i_7_n_0,pin_10_hit1_carry__1_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
-        .O(pin_10_hit1_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
-        .O(pin_10_hit1_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
-        .O(pin_10_hit1_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
-        .O(pin_10_hit1_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__1_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_10_hit1_carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__1_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_10_hit1_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__1_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_10_hit1_carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit1_carry__1_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_10_hit1_carry__1_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit1_carry__2
-       (.CI(pin_10_hit1_carry__1_n_0),
-        .CO({pin_10_hit1__15,pin_10_hit1_carry__2_n_1,pin_10_hit1_carry__2_n_2,pin_10_hit1_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_10_hit1_carry__2_i_1_n_0,pin_10_hit1_carry__2_i_2_n_0,pin_10_hit1_carry__2_i_3_n_0,pin_10_hit1_carry__2_i_4_n_0}),
-        .O(NLW_pin_10_hit1_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit1_carry__2_i_5_n_0,pin_10_hit1_carry__2_i_6_n_0,pin_10_hit1_carry__2_i_7_n_0,pin_10_hit1_carry__2_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_10_hit1_carry__2_i_1
+    pin_10_hit_i_10
        (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
         .I1(\bowling_ball_location_y_reg_n_0_[31] ),
-        .O(pin_10_hit1_carry__2_i_1_n_0));
+        .O(pin_10_hit_i_10_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    pin_10_hit1_carry__2_i_2
+    pin_10_hit_i_11
        (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
         .I1(\bowling_ball_location_y_reg_n_0_[29] ),
-        .O(pin_10_hit1_carry__2_i_2_n_0));
+        .O(pin_10_hit_i_11_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    pin_10_hit1_carry__2_i_3
+    pin_10_hit_i_12
        (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
         .I1(\bowling_ball_location_y_reg_n_0_[27] ),
-        .O(pin_10_hit1_carry__2_i_3_n_0));
+        .O(pin_10_hit_i_12_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    pin_10_hit1_carry__2_i_4
+    pin_10_hit_i_13
        (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
         .I1(\bowling_ball_location_y_reg_n_0_[25] ),
-        .O(pin_10_hit1_carry__2_i_4_n_0));
+        .O(pin_10_hit_i_13_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit1_carry__2_i_5
+    pin_10_hit_i_14
        (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
         .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_10_hit1_carry__2_i_5_n_0));
+        .O(pin_10_hit_i_14_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit1_carry__2_i_6
+    pin_10_hit_i_15
        (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
         .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_10_hit1_carry__2_i_6_n_0));
+        .O(pin_10_hit_i_15_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit1_carry__2_i_7
+    pin_10_hit_i_16
        (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
         .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_10_hit1_carry__2_i_7_n_0));
+        .O(pin_10_hit_i_16_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit1_carry__2_i_8
+    pin_10_hit_i_17
        (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
         .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_10_hit1_carry__2_i_8_n_0));
-  LUT3 #(
-    .INIT(8'h08)) 
-    pin_10_hit1_carry_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
-        .I2(pin_4_location_y[4]),
-        .O(pin_10_hit1_carry_i_1_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    pin_10_hit1_carry_i_2
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
-        .O(pin_10_hit1_carry_i_2_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    pin_10_hit1_carry_i_3
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_10_hit1_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_10_hit1_carry_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_10_hit1_carry_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    pin_10_hit1_carry_i_5
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_10_hit1_carry_i_5_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    pin_10_hit1_carry_i_6
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_10_hit1_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_10_hit1_carry_i_7
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_10_hit1_carry_i_7_n_0));
+        .O(pin_10_hit_i_17_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit1_carry_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .O(pin_10_hit1_carry_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit2_carry
-       (.CI(1'b0),
-        .CO({pin_10_hit2_carry_n_0,pin_10_hit2_carry_n_1,pin_10_hit2_carry_n_2,pin_10_hit2_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_10_hit2_carry_i_1_n_0,pin_10_hit2_carry_i_2_n_0,pin_10_hit2_carry_i_3_n_0,pin_10_hit2_carry_i_4_n_0}),
-        .O(NLW_pin_10_hit2_carry_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit2_carry_i_5_n_0,pin_10_hit2_carry_i_6_n_0,pin_10_hit2_carry_i_7_n_0,pin_10_hit2_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit2_carry__0
-       (.CI(pin_10_hit2_carry_n_0),
-        .CO({pin_10_hit2_carry__0_n_0,pin_10_hit2_carry__0_n_1,pin_10_hit2_carry__0_n_2,pin_10_hit2_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_10_hit2_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit2_carry__0_i_1_n_0,pin_10_hit2_carry__0_i_2_n_0,pin_10_hit2_carry__0_i_3_n_0,pin_10_hit2_carry__0_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit2_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_10_hit2_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit2_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_10_hit2_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit2_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_10_hit2_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit2_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_10_hit2_carry__0_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit2_carry__1
-       (.CI(pin_10_hit2_carry__0_n_0),
-        .CO({pin_10_hit2_carry__1_n_0,pin_10_hit2_carry__1_n_1,pin_10_hit2_carry__1_n_2,pin_10_hit2_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_10_hit2_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_10_hit2_carry__1_i_1_n_0,pin_10_hit2_carry__1_i_2_n_0,pin_10_hit2_carry__1_i_3_n_0,pin_10_hit2_carry__1_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_10_hit2_carry__1_i_1
+    pin_10_hit_i_19
        (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
         .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_10_hit2_carry__1_i_1_n_0));
+        .O(pin_10_hit_i_19_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
+    pin_10_hit_i_2
+       (.I0(score354_in),
+        .I1(score255_in),
+        .I2(score452_in),
+        .I3(score451_in),
+        .O(score157_out));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit2_carry__1_i_2
+    pin_10_hit_i_20
        (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
         .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_10_hit2_carry__1_i_2_n_0));
+        .O(pin_10_hit_i_20_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit2_carry__1_i_3
+    pin_10_hit_i_21
        (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
         .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_10_hit2_carry__1_i_3_n_0));
+        .O(pin_10_hit_i_21_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit2_carry__1_i_4
+    pin_10_hit_i_22
        (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
         .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_10_hit2_carry__1_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_10_hit2_carry__2
-       (.CI(pin_10_hit2_carry__1_n_0),
-        .CO({NLW_pin_10_hit2_carry__2_CO_UNCONNECTED[3],pin_10_hit2__14,pin_10_hit2_carry__2_n_2,pin_10_hit2_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0}),
-        .O(NLW_pin_10_hit2_carry__2_O_UNCONNECTED[3:0]),
-        .S({1'b0,pin_10_hit2_carry__2_i_1_n_0,pin_10_hit2_carry__2_i_2_n_0,pin_10_hit2_carry__2_i_3_n_0}));
+        .O(pin_10_hit_i_22_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_24
+       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
+        .O(pin_10_hit_i_24_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_25
+       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
+        .O(pin_10_hit_i_25_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_26
+       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
+        .O(pin_10_hit_i_26_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_27
+       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
+        .O(pin_10_hit_i_27_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit2_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_10_hit2_carry__2_i_1_n_0));
+    pin_10_hit_i_28
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
+        .O(pin_10_hit_i_28_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit2_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_10_hit2_carry__2_i_2_n_0));
+    pin_10_hit_i_29
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_10_hit_i_29_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_10_hit2_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_10_hit2_carry__2_i_3_n_0));
+    pin_10_hit_i_30
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
+        .O(pin_10_hit_i_30_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_31
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(pin_10_hit_i_31_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_33
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(pin_10_hit_i_33_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_34
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
+        .O(pin_10_hit_i_34_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_35
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(pin_10_hit_i_35_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_36
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(pin_10_hit_i_36_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_38
+       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
+        .O(pin_10_hit_i_38_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_39
+       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
+        .O(pin_10_hit_i_39_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_10_hit_i_40
+       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
+        .O(pin_10_hit_i_40_n_0));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    pin_10_hit_i_41
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(pin_10_hit_i_41_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_42
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
+        .O(pin_10_hit_i_42_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_43
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(pin_10_hit_i_43_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_44
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(pin_10_hit_i_44_n_0));
+  LUT3 #(
+    .INIT(8'h09)) 
+    pin_10_hit_i_45
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(pin_10_hit_i_45_n_0));
   LUT3 #(
     .INIT(8'h02)) 
-    pin_10_hit2_carry_i_1
+    pin_10_hit_i_46
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[9] ),
         .I2(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(pin_10_hit2_carry_i_1_n_0));
+        .O(pin_10_hit_i_46_n_0));
   LUT3 #(
     .INIT(8'h4F)) 
-    pin_10_hit2_carry_i_2
+    pin_10_hit_i_47
        (.I0(\bowling_ball_location_y_reg_n_0_[6] ),
         .I1(pin_4_location_y[4]),
         .I2(\bowling_ball_location_y_reg_n_0_[7] ),
-        .O(pin_10_hit2_carry_i_2_n_0));
+        .O(pin_10_hit_i_47_n_0));
   LUT3 #(
     .INIT(8'h23)) 
-    pin_10_hit2_carry_i_3
+    pin_10_hit_i_48
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[5] ),
         .I2(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_10_hit2_carry_i_3_n_0));
+        .O(pin_10_hit_i_48_n_0));
   LUT3 #(
     .INIT(8'h2B)) 
-    pin_10_hit2_carry_i_4
+    pin_10_hit_i_49
        (.I0(pin_4_location_y[4]),
         .I1(\bowling_ball_location_y_reg_n_0_[3] ),
         .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_10_hit2_carry_i_4_n_0));
+        .O(pin_10_hit_i_49_n_0));
   LUT3 #(
     .INIT(8'h09)) 
-    pin_10_hit2_carry_i_5
+    pin_10_hit_i_50
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[8] ),
         .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_10_hit2_carry_i_5_n_0));
+        .O(pin_10_hit_i_50_n_0));
   LUT3 #(
     .INIT(8'h84)) 
-    pin_10_hit2_carry_i_6
+    pin_10_hit_i_51
        (.I0(pin_4_location_y[4]),
         .I1(\bowling_ball_location_y_reg_n_0_[7] ),
         .I2(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_10_hit2_carry_i_6_n_0));
+        .O(pin_10_hit_i_51_n_0));
   LUT3 #(
     .INIT(8'h24)) 
-    pin_10_hit2_carry_i_7
+    pin_10_hit_i_52
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[4] ),
         .I2(\bowling_ball_location_y_reg_n_0_[5] ),
-        .O(pin_10_hit2_carry_i_7_n_0));
+        .O(pin_10_hit_i_52_n_0));
   LUT3 #(
     .INIT(8'h84)) 
-    pin_10_hit2_carry_i_8
+    pin_10_hit_i_53
        (.I0(pin_4_location_y[4]),
         .I1(\bowling_ball_location_y_reg_n_0_[2] ),
         .I2(\bowling_ball_location_y_reg_n_0_[3] ),
-        .O(pin_10_hit2_carry_i_8_n_0));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
-    pin_10_hit_i_1
-       (.I0(pin_10_hit_i_2_n_0),
-        .I1(pin_10_hit1__15),
-        .I2(pin_10_hit2__14),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_10_hit_reg_n_0),
-        .O(pin_10_hit_i_1_n_0));
+        .O(pin_10_hit_i_53_n_0));
+  LUT3 #(
+    .INIT(8'h08)) 
+    pin_10_hit_i_54
+       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
+        .I2(pin_4_location_y[4]),
+        .O(pin_10_hit_i_54_n_0));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    pin_10_hit_i_55
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
+        .O(pin_10_hit_i_55_n_0));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    pin_10_hit_i_56
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
+        .O(pin_10_hit_i_56_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
-    pin_10_hit_i_2
-       (.I0(pin_6_hit328_in),
-        .I1(pin_6_hit3),
-        .O(pin_10_hit_i_2_n_0));
+    .INIT(4'hE)) 
+    pin_10_hit_i_57
+       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
+        .O(pin_10_hit_i_57_n_0));
+  LUT3 #(
+    .INIT(8'h84)) 
+    pin_10_hit_i_58
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[6] ),
+        .O(pin_10_hit_i_58_n_0));
+  LUT3 #(
+    .INIT(8'h21)) 
+    pin_10_hit_i_59
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
+        .O(pin_10_hit_i_59_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_6
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
+        .O(pin_10_hit_i_6_n_0));
+  LUT3 #(
+    .INIT(8'h09)) 
+    pin_10_hit_i_60
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
+        .O(pin_10_hit_i_60_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_61
+       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .O(pin_10_hit_i_61_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_7
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
+        .O(pin_10_hit_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_10_hit_i_8
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
+        .O(pin_10_hit_i_8_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_10_hit_reg
@@ -9874,501 +11640,281 @@ module bowling_game_controller_0_0_controller
         .Q(pin_10_hit_reg_n_0),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit1_carry
-       (.CI(1'b0),
-        .CO({pin_1_hit1_carry_n_0,pin_1_hit1_carry_n_1,pin_1_hit1_carry_n_2,pin_1_hit1_carry_n_3}),
+  CARRY4 pin_10_hit_reg_i_18
+       (.CI(pin_10_hit_reg_i_32_n_0),
+        .CO({pin_10_hit_reg_i_18_n_0,pin_10_hit_reg_i_18_n_1,pin_10_hit_reg_i_18_n_2,pin_10_hit_reg_i_18_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_1_hit1_carry_i_1_n_0,pin_1_hit1_carry_i_2_n_0,pin_1_hit1_carry_i_3_n_0,pin_1_hit1_carry_i_4_n_0}),
-        .O(NLW_pin_1_hit1_carry_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit1_carry_i_5_n_0,pin_1_hit1_carry_i_6_n_0,pin_1_hit1_carry_i_7_n_0,pin_1_hit1_carry_i_8_n_0}));
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_10_hit_reg_i_18_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_33_n_0,pin_10_hit_i_34_n_0,pin_10_hit_i_35_n_0,pin_10_hit_i_36_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit1_carry__0
-       (.CI(pin_1_hit1_carry_n_0),
-        .CO({pin_1_hit1_carry__0_n_0,pin_1_hit1_carry__0_n_1,pin_1_hit1_carry__0_n_2,pin_1_hit1_carry__0_n_3}),
+  CARRY4 pin_10_hit_reg_i_23
+       (.CI(pin_10_hit_reg_i_37_n_0),
+        .CO({pin_10_hit_reg_i_23_n_0,pin_10_hit_reg_i_23_n_1,pin_10_hit_reg_i_23_n_2,pin_10_hit_reg_i_23_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_1_hit1_carry__0_i_1_n_0,pin_1_hit1_carry__0_i_2_n_0,pin_1_hit1_carry__0_i_3_n_0,pin_1_hit1_carry__0_i_4_n_0}),
-        .O(NLW_pin_1_hit1_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit1_carry__0_i_5_n_0,pin_1_hit1_carry__0_i_6_n_0,pin_1_hit1_carry__0_i_7_n_0,pin_1_hit1_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
-        .O(pin_1_hit1_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
-        .O(pin_1_hit1_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
-        .O(pin_1_hit1_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_1_hit1_carry__0_i_4_n_0));
+        .DI({pin_10_hit_i_38_n_0,pin_10_hit_i_39_n_0,pin_10_hit_i_40_n_0,pin_10_hit_i_41_n_0}),
+        .O(NLW_pin_10_hit_reg_i_23_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_42_n_0,pin_10_hit_i_43_n_0,pin_10_hit_i_44_n_0,pin_10_hit_i_45_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_10_hit_reg_i_3
+       (.CI(pin_10_hit_reg_i_5_n_0),
+        .CO({NLW_pin_10_hit_reg_i_3_CO_UNCONNECTED[3],score354_in,pin_10_hit_reg_i_3_n_2,pin_10_hit_reg_i_3_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0}),
+        .O(NLW_pin_10_hit_reg_i_3_O_UNCONNECTED[3:0]),
+        .S({1'b0,pin_10_hit_i_6_n_0,pin_10_hit_i_7_n_0,pin_10_hit_i_8_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_10_hit_reg_i_32
+       (.CI(1'b0),
+        .CO({pin_10_hit_reg_i_32_n_0,pin_10_hit_reg_i_32_n_1,pin_10_hit_reg_i_32_n_2,pin_10_hit_reg_i_32_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_10_hit_i_46_n_0,pin_10_hit_i_47_n_0,pin_10_hit_i_48_n_0,pin_10_hit_i_49_n_0}),
+        .O(NLW_pin_10_hit_reg_i_32_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_50_n_0,pin_10_hit_i_51_n_0,pin_10_hit_i_52_n_0,pin_10_hit_i_53_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_10_hit_reg_i_37
+       (.CI(1'b0),
+        .CO({pin_10_hit_reg_i_37_n_0,pin_10_hit_reg_i_37_n_1,pin_10_hit_reg_i_37_n_2,pin_10_hit_reg_i_37_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_10_hit_i_54_n_0,pin_10_hit_i_55_n_0,pin_10_hit_i_56_n_0,pin_10_hit_i_57_n_0}),
+        .O(NLW_pin_10_hit_reg_i_37_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_58_n_0,pin_10_hit_i_59_n_0,pin_10_hit_i_60_n_0,pin_10_hit_i_61_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_10_hit_reg_i_4
+       (.CI(pin_10_hit_reg_i_9_n_0),
+        .CO({score255_in,pin_10_hit_reg_i_4_n_1,pin_10_hit_reg_i_4_n_2,pin_10_hit_reg_i_4_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_10_hit_i_10_n_0,pin_10_hit_i_11_n_0,pin_10_hit_i_12_n_0,pin_10_hit_i_13_n_0}),
+        .O(NLW_pin_10_hit_reg_i_4_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_14_n_0,pin_10_hit_i_15_n_0,pin_10_hit_i_16_n_0,pin_10_hit_i_17_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_10_hit_reg_i_5
+       (.CI(pin_10_hit_reg_i_18_n_0),
+        .CO({pin_10_hit_reg_i_5_n_0,pin_10_hit_reg_i_5_n_1,pin_10_hit_reg_i_5_n_2,pin_10_hit_reg_i_5_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_10_hit_reg_i_5_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_19_n_0,pin_10_hit_i_20_n_0,pin_10_hit_i_21_n_0,pin_10_hit_i_22_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_10_hit_reg_i_9
+       (.CI(pin_10_hit_reg_i_23_n_0),
+        .CO({pin_10_hit_reg_i_9_n_0,pin_10_hit_reg_i_9_n_1,pin_10_hit_reg_i_9_n_2,pin_10_hit_reg_i_9_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_10_hit_i_24_n_0,pin_10_hit_i_25_n_0,pin_10_hit_i_26_n_0,pin_10_hit_i_27_n_0}),
+        .O(NLW_pin_10_hit_reg_i_9_O_UNCONNECTED[3:0]),
+        .S({pin_10_hit_i_28_n_0,pin_10_hit_i_29_n_0,pin_10_hit_i_30_n_0,pin_10_hit_i_31_n_0}));
+  LUT6 #(
+    .INIT(64'hFF00FFFF08000000)) 
+    pin_1_hit_i_1
+       (.I0(score421_in),
+        .I1(score4),
+        .I2(pin_1_hit_i_4_n_0),
+        .I3(pin_1_hit_i_5_n_0),
+        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I5(pin_1_hit_reg_n_0),
+        .O(pin_1_hit_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_1_hit1_carry__0_i_5
+    pin_1_hit_i_101
        (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
         .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_1_hit1_carry__0_i_5_n_0));
+        .O(pin_1_hit_i_101_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_1_hit1_carry__0_i_6
+    pin_1_hit_i_102
        (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
         .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_1_hit1_carry__0_i_6_n_0));
+        .O(pin_1_hit_i_102_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_1_hit1_carry__0_i_7
+    pin_1_hit_i_103
        (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
         .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_1_hit1_carry__0_i_7_n_0));
+        .O(pin_1_hit_i_103_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_1_hit1_carry__0_i_8
+    pin_1_hit_i_104
        (.I0(\bowling_ball_location_y_reg_n_0_[9] ),
         .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(pin_1_hit1_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit1_carry__1
-       (.CI(pin_1_hit1_carry__0_n_0),
-        .CO({pin_1_hit1_carry__1_n_0,pin_1_hit1_carry__1_n_1,pin_1_hit1_carry__1_n_2,pin_1_hit1_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_1_hit1_carry__1_i_1_n_0,pin_1_hit1_carry__1_i_2_n_0,pin_1_hit1_carry__1_i_3_n_0,pin_1_hit1_carry__1_i_4_n_0}),
-        .O(NLW_pin_1_hit1_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit1_carry__1_i_5_n_0,pin_1_hit1_carry__1_i_6_n_0,pin_1_hit1_carry__1_i_7_n_0,pin_1_hit1_carry__1_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
-        .O(pin_1_hit1_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
-        .O(pin_1_hit1_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
-        .O(pin_1_hit1_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
-        .O(pin_1_hit1_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__1_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_1_hit1_carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__1_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_1_hit1_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__1_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_1_hit1_carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__1_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_1_hit1_carry__1_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit1_carry__2
-       (.CI(pin_1_hit1_carry__1_n_0),
-        .CO({pin_4_hit1,pin_1_hit1_carry__2_n_1,pin_1_hit1_carry__2_n_2,pin_1_hit1_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_1_hit1_carry__2_i_1_n_0,pin_1_hit1_carry__2_i_2_n_0,pin_1_hit1_carry__2_i_3_n_0,pin_1_hit1_carry__2_i_4_n_0}),
-        .O(NLW_pin_1_hit1_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit1_carry__2_i_5_n_0,pin_1_hit1_carry__2_i_6_n_0,pin_1_hit1_carry__2_i_7_n_0,pin_1_hit1_carry__2_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_1_hit1_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[31] ),
-        .O(pin_1_hit1_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[29] ),
-        .O(pin_1_hit1_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[27] ),
-        .O(pin_1_hit1_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit1_carry__2_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[25] ),
-        .O(pin_1_hit1_carry__2_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__2_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_1_hit1_carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__2_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_1_hit1_carry__2_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__2_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_1_hit1_carry__2_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit1_carry__2_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_1_hit1_carry__2_i_8_n_0));
+        .O(pin_1_hit_i_104_n_0));
   LUT3 #(
     .INIT(8'hF4)) 
-    pin_1_hit1_carry_i_1
+    pin_1_hit_i_105
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[6] ),
         .I2(\bowling_ball_location_y_reg_n_0_[7] ),
-        .O(pin_1_hit1_carry_i_1_n_0));
+        .O(pin_1_hit_i_105_n_0));
   LUT3 #(
     .INIT(8'h08)) 
-    pin_1_hit1_carry_i_2
+    pin_1_hit_i_106
        (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
         .I1(\bowling_ball_location_y_reg_n_0_[4] ),
         .I2(pin_4_location_y[4]),
-        .O(pin_1_hit1_carry_i_2_n_0));
+        .O(pin_1_hit_i_106_n_0));
   LUT3 #(
     .INIT(8'hF4)) 
-    pin_1_hit1_carry_i_3
+    pin_1_hit_i_107
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[2] ),
         .I2(\bowling_ball_location_y_reg_n_0_[3] ),
-        .O(pin_1_hit1_carry_i_3_n_0));
+        .O(pin_1_hit_i_107_n_0));
   LUT3 #(
     .INIT(8'hD4)) 
-    pin_1_hit1_carry_i_4
+    pin_1_hit_i_108
        (.I0(pin_4_location_y[4]),
         .I1(\bowling_ball_location_y_reg_n_0_[0] ),
         .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_1_hit1_carry_i_4_n_0));
+        .O(pin_1_hit_i_108_n_0));
   LUT3 #(
     .INIT(8'h21)) 
-    pin_1_hit1_carry_i_5
+    pin_1_hit_i_109
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[7] ),
         .I2(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_1_hit1_carry_i_5_n_0));
+        .O(pin_1_hit_i_109_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_1_hit_i_11
+       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
+        .O(pin_1_hit_i_11_n_0));
   LUT3 #(
     .INIT(8'h84)) 
-    pin_1_hit1_carry_i_6
+    pin_1_hit_i_110
        (.I0(\bowling_ball_location_y_reg_n_0_[4] ),
         .I1(\bowling_ball_location_y_reg_n_0_[5] ),
         .I2(pin_4_location_y[4]),
-        .O(pin_1_hit1_carry_i_6_n_0));
+        .O(pin_1_hit_i_110_n_0));
   LUT3 #(
     .INIT(8'h21)) 
-    pin_1_hit1_carry_i_7
+    pin_1_hit_i_111
        (.I0(pin_4_location_y[6]),
         .I1(\bowling_ball_location_y_reg_n_0_[3] ),
         .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_1_hit1_carry_i_7_n_0));
+        .O(pin_1_hit_i_111_n_0));
   LUT3 #(
     .INIT(8'h21)) 
-    pin_1_hit1_carry_i_8
+    pin_1_hit_i_112
        (.I0(pin_4_location_y[4]),
         .I1(\bowling_ball_location_y_reg_n_0_[0] ),
         .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_1_hit1_carry_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit2_carry
-       (.CI(1'b0),
-        .CO({pin_1_hit2_carry_n_0,pin_1_hit2_carry_n_1,pin_1_hit2_carry_n_2,pin_1_hit2_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_1_hit2_carry_i_1_n_0,pin_1_hit2_carry_i_2_n_0,pin_1_hit2_carry_i_3_n_0,pin_1_hit2_carry_i_4_n_0}),
-        .O(NLW_pin_1_hit2_carry_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit2_carry_i_5_n_0,pin_1_hit2_carry_i_6_n_0,pin_1_hit2_carry_i_7_n_0,pin_1_hit2_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit2_carry__0
-       (.CI(pin_1_hit2_carry_n_0),
-        .CO({pin_1_hit2_carry__0_n_0,pin_1_hit2_carry__0_n_1,pin_1_hit2_carry__0_n_2,pin_1_hit2_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_1_hit2_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit2_carry__0_i_1_n_0,pin_1_hit2_carry__0_i_2_n_0,pin_1_hit2_carry__0_i_3_n_0,pin_1_hit2_carry__0_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_1_hit2_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_1_hit2_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_1_hit2_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(pin_1_hit2_carry__0_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit2_carry__1
-       (.CI(pin_1_hit2_carry__0_n_0),
-        .CO({pin_1_hit2_carry__1_n_0,pin_1_hit2_carry__1_n_1,pin_1_hit2_carry__1_n_2,pin_1_hit2_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_1_hit2_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit2_carry__1_i_1_n_0,pin_1_hit2_carry__1_i_2_n_0,pin_1_hit2_carry__1_i_3_n_0,pin_1_hit2_carry__1_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_1_hit2_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_1_hit2_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_1_hit2_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_1_hit2_carry__1_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit2_carry__2
-       (.CI(pin_1_hit2_carry__1_n_0),
-        .CO({pin_4_hit2,pin_1_hit2_carry__2_n_1,pin_1_hit2_carry__2_n_2,pin_1_hit2_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_1_hit2_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit2_carry__2_i_1_n_0,pin_1_hit2_carry__2_i_2_n_0,pin_1_hit2_carry__2_i_3_n_0,pin_1_hit2_carry__2_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_1_hit2_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_1_hit2_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_1_hit2_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit2_carry__2_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_1_hit2_carry__2_i_4_n_0));
+        .O(pin_1_hit_i_112_n_0));
   LUT4 #(
     .INIT(16'h5110)) 
-    pin_1_hit2_carry_i_1
+    pin_1_hit_i_113
        (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
         .I1(\bowling_ball_location_y_reg_n_0_[6] ),
         .I2(pin_4_location_y[4]),
         .I3(pin_4_location_y[6]),
-        .O(pin_1_hit2_carry_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    pin_1_hit2_carry_i_10
-       (.I0(pin_4_location_y[6]),
-        .O(pin_1_hit2_carry_i_10_n_0));
+        .O(pin_1_hit_i_113_n_0));
   LUT3 #(
     .INIT(8'h07)) 
-    pin_1_hit2_carry_i_2
+    pin_1_hit_i_114
        (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
         .I1(\bowling_ball_location_y_reg_n_0_[4] ),
         .I2(pin_4_location_y[4]),
-        .O(pin_1_hit2_carry_i_2_n_0));
+        .O(pin_1_hit_i_114_n_0));
   LUT4 #(
     .INIT(16'h7510)) 
-    pin_1_hit2_carry_i_3
+    pin_1_hit_i_115
        (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
         .I1(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I2(fb_pixel5[2]),
-        .I3(fb_pixel5[3]),
-        .O(pin_1_hit2_carry_i_3_n_0));
+        .I2(\fb_pixel_reg[2]_i_342_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_342_n_1 ),
+        .O(pin_1_hit_i_115_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    pin_1_hit2_carry_i_4
-       (.I0(fb_pixel5[1]),
+    pin_1_hit_i_116
+       (.I0(\fb_pixel_reg[2]_i_342_n_7 ),
         .I1(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_1_hit2_carry_i_4_n_0));
+        .O(pin_1_hit_i_116_n_0));
   LUT4 #(
     .INIT(16'h0681)) 
-    pin_1_hit2_carry_i_5
+    pin_1_hit_i_117
        (.I0(pin_4_location_y[6]),
         .I1(pin_4_location_y[4]),
         .I2(\bowling_ball_location_y_reg_n_0_[7] ),
         .I3(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_1_hit2_carry_i_5_n_0));
+        .O(pin_1_hit_i_117_n_0));
   LUT3 #(
     .INIT(8'h42)) 
-    pin_1_hit2_carry_i_6
+    pin_1_hit_i_118
        (.I0(pin_4_location_y[4]),
         .I1(\bowling_ball_location_y_reg_n_0_[5] ),
         .I2(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_1_hit2_carry_i_6_n_0));
+        .O(pin_1_hit_i_118_n_0));
   LUT4 #(
     .INIT(16'h8421)) 
-    pin_1_hit2_carry_i_7
-       (.I0(fb_pixel5[3]),
-        .I1(fb_pixel5[2]),
+    pin_1_hit_i_119
+       (.I0(\fb_pixel_reg[2]_i_342_n_1 ),
+        .I1(\fb_pixel_reg[2]_i_342_n_6 ),
         .I2(\bowling_ball_location_y_reg_n_0_[3] ),
         .I3(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_1_hit2_carry_i_7_n_0));
+        .O(pin_1_hit_i_119_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_12
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
+        .O(pin_1_hit_i_12_n_0));
   LUT3 #(
     .INIT(8'h21)) 
-    pin_1_hit2_carry_i_8
-       (.I0(fb_pixel5[1]),
+    pin_1_hit_i_120
+       (.I0(\fb_pixel_reg[2]_i_342_n_7 ),
         .I1(\bowling_ball_location_y_reg_n_0_[0] ),
         .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_1_hit2_carry_i_8_n_0));
-  CARRY4 pin_1_hit2_carry_i_9
-       (.CI(1'b0),
-        .CO({NLW_pin_1_hit2_carry_i_9_CO_UNCONNECTED[3],fb_pixel5[3],NLW_pin_1_hit2_carry_i_9_CO_UNCONNECTED[1],pin_1_hit2_carry_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,pin_4_location_y[6],1'b0}),
-        .O({NLW_pin_1_hit2_carry_i_9_O_UNCONNECTED[3:2],fb_pixel5[2:1]}),
-        .S({1'b0,1'b1,pin_1_hit2_carry_i_10_n_0,pin_4_location_y[4]}));
-  LUT6 #(
-    .INIT(64'hA000BFFFA0008000)) 
-    pin_1_hit_i_1
-       (.I0(pin_1_hit_i_2_n_0),
-        .I1(pin_1_hit_i_3_n_0),
-        .I2(pin_1_hit3),
-        .I3(pin_1_hit336_in),
-        .I4(pin_1_hit_i_6_n_0),
-        .I5(pin_1_hit_reg_n_0),
-        .O(pin_1_hit_i_1_n_0));
+        .O(pin_1_hit_i_120_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    pin_1_hit_i_10
+    pin_1_hit_i_13
        (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
         .I1(\bowling_ball_location_x_reg_n_0_[27] ),
-        .O(pin_1_hit_i_10_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit_i_11
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
-        .O(pin_1_hit_i_11_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_1_hit_i_12_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit_i_13
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(pin_1_hit_i_13_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_1_hit_i_14
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
         .O(pin_1_hit_i_14_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_1_hit_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_1_hit_i_15_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    pin_1_hit_i_16
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_1_hit_i_16_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_1_hit_i_17
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(pin_1_hit_i_17_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_1_hit_i_18
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(pin_1_hit_i_18_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
-    pin_1_hit_i_2
-       (.I0(pin_4_hit1),
-        .I1(pin_4_hit2),
-        .I2(pin_2_hit_i_3_n_0),
-        .O(pin_1_hit_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
-        .O(pin_1_hit_i_20_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     pin_1_hit_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I2(game_turn_i_4_n_0),
+        .I3(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I4(\bowling_ball_location_y_reg_n_0_[14] ),
         .O(pin_1_hit_i_21_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
-        .O(pin_1_hit_i_22_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_23
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(pin_1_hit_i_23_n_0));
   LUT2 #(
     .INIT(4'h1)) 
@@ -10389,212 +11935,427 @@ module bowling_game_controller_0_0_controller
         .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(pin_1_hit_i_26_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit_i_27
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(pin_1_hit_i_27_n_0));
+    .INIT(4'hE)) 
+    pin_1_hit_i_28
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
+        .O(pin_1_hit_i_28_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_1_hit_i_29
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
         .O(pin_1_hit_i_29_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
-    pin_1_hit_i_3
-       (.I0(pin_4_hit1),
-        .I1(pin_4_hit2),
-        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .O(pin_1_hit_i_3_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_1_hit_i_30
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
         .O(pin_1_hit_i_30_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_1_hit_i_31
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
         .O(pin_1_hit_i_31_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_1_hit_i_32
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(pin_1_hit_i_32_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
+    pin_1_hit_i_33
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_1_hit_i_33_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_1_hit_i_34
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(pin_1_hit_i_34_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_35
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
         .O(pin_1_hit_i_35_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_1_hit_i_36
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
-        .O(pin_1_hit_i_36_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h2)) 
     pin_1_hit_i_37
-       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[31] ),
         .O(pin_1_hit_i_37_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_1_hit_i_38
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[29] ),
         .O(pin_1_hit_i_38_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_1_hit_i_39
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[27] ),
         .O(pin_1_hit_i_39_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h7)) 
+    pin_1_hit_i_4
+       (.I0(score2),
+        .I1(score3),
+        .O(pin_1_hit_i_4_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
     pin_1_hit_i_40
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[25] ),
         .O(pin_1_hit_i_40_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_1_hit_i_41
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
         .O(pin_1_hit_i_41_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    pin_1_hit_i_42
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
+        .O(pin_1_hit_i_42_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_1_hit_i_43
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
         .O(pin_1_hit_i_43_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_1_hit_i_44
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
         .O(pin_1_hit_i_44_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_1_hit_i_45
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(pin_1_hit_i_45_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
     pin_1_hit_i_46
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
         .O(pin_1_hit_i_46_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_47
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
         .O(pin_1_hit_i_47_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_48
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
         .O(pin_1_hit_i_48_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_49
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
         .O(pin_1_hit_i_49_n_0));
+  LUT3 #(
+    .INIT(8'hEF)) 
+    pin_1_hit_i_5
+       (.I0(pin_1_hit_i_21_n_0),
+        .I1(\FSM_onehot_game_time[2]_i_4_n_0 ),
+        .I2(game_turn),
+        .O(pin_1_hit_i_5_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
-    pin_1_hit_i_50
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(pin_1_hit_i_50_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_51
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
         .O(pin_1_hit_i_51_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_52
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
         .O(pin_1_hit_i_52_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_53
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
         .O(pin_1_hit_i_53_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h1)) 
     pin_1_hit_i_54
-       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
-        .O(pin_1_hit_i_54_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit_i_55
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(pin_1_hit_i_55_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit_i_56
        (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
         .I1(\bowling_ball_location_x_reg_n_0_[10] ),
-        .O(pin_1_hit_i_56_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_1_hit_i_57
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_1_hit_i_57_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_1_hit_i_58
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_1_hit_i_58_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_1_hit_i_59
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(pin_1_hit_i_59_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_1_hit_i_6
-       (.I0(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I1(pin_2_hit_i_3_n_0),
-        .O(pin_1_hit_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_1_hit_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
-        .O(pin_1_hit_i_8_n_0));
+        .O(pin_1_hit_i_54_n_0));
   LUT2 #(
     .INIT(4'hE)) 
+    pin_1_hit_i_56
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+        .O(pin_1_hit_i_56_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_57
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+        .O(pin_1_hit_i_57_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_58
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+        .O(pin_1_hit_i_58_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_59
+       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+        .O(pin_1_hit_i_59_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_60
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_1_hit_i_60_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_61
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_1_hit_i_61_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_62
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_1_hit_i_62_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_63
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_1_hit_i_63_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_65
+       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
+        .O(pin_1_hit_i_65_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_66
+       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
+        .O(pin_1_hit_i_66_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_67
+       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
+        .O(pin_1_hit_i_67_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_68
+       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
+        .O(pin_1_hit_i_68_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_69
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
+        .O(pin_1_hit_i_69_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_7
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+        .O(pin_1_hit_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_70
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_1_hit_i_70_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_71
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
+        .O(pin_1_hit_i_71_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_72
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(pin_1_hit_i_72_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_74
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
+        .O(pin_1_hit_i_74_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_75
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_1_hit_i_75_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_76
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
+        .O(pin_1_hit_i_76_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_77
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(pin_1_hit_i_77_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_1_hit_i_78
+       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+        .O(pin_1_hit_i_78_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_79
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(pin_1_hit_i_79_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_8
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_1_hit_i_8_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_1_hit_i_80
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .O(pin_1_hit_i_80_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_81
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_1_hit_i_81_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_1_hit_i_82
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_1_hit_i_82_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_1_hit_i_83
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_1_hit_i_83_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_1_hit_i_84
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_1_hit_i_84_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_1_hit_i_85
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_1_hit_i_85_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_1_hit_i_86
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_1_hit_i_86_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_1_hit_i_87
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_1_hit_i_87_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_1_hit_i_88
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_1_hit_i_88_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_1_hit_i_89
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_1_hit_i_89_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_1_hit_i_9
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(pin_1_hit_i_9_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_1_hit_i_90
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_1_hit_i_90_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_92
+       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
+        .O(pin_1_hit_i_92_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_93
+       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
+        .O(pin_1_hit_i_93_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_94
+       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
+        .O(pin_1_hit_i_94_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_1_hit_i_95
+       (.I0(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(pin_1_hit_i_95_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_96
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
+        .O(pin_1_hit_i_96_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_97
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(pin_1_hit_i_97_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_98
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(pin_1_hit_i_98_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_1_hit_i_99
+       (.I0(\bowling_ball_location_y_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .O(pin_1_hit_i_99_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_1_hit_reg
@@ -10604,77 +12365,141 @@ module bowling_game_controller_0_0_controller
         .Q(pin_1_hit_reg_n_0),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_16
-       (.CI(pin_1_hit_reg_i_28_n_0),
-        .CO({pin_1_hit_reg_i_16_n_0,pin_1_hit_reg_i_16_n_1,pin_1_hit_reg_i_16_n_2,pin_1_hit_reg_i_16_n_3}),
+  CARRY4 pin_1_hit_reg_i_10
+       (.CI(pin_1_hit_reg_i_27_n_0),
+        .CO({pin_1_hit_reg_i_10_n_0,pin_1_hit_reg_i_10_n_1,pin_1_hit_reg_i_10_n_2,pin_1_hit_reg_i_10_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_1_hit_reg_i_16_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_29_n_0,pin_1_hit_i_30_n_0,pin_1_hit_i_31_n_0,pin_1_hit_i_32_n_0}));
+        .DI({pin_1_hit_i_28_n_0,pin_1_hit_i_29_n_0,pin_1_hit_i_30_n_0,pin_1_hit_i_31_n_0}),
+        .O(NLW_pin_1_hit_reg_i_10_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_32_n_0,pin_1_hit_i_33_n_0,pin_1_hit_i_34_n_0,pin_1_hit_i_35_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_100
+       (.CI(1'b0),
+        .CO({pin_1_hit_reg_i_100_n_0,pin_1_hit_reg_i_100_n_1,pin_1_hit_reg_i_100_n_2,pin_1_hit_reg_i_100_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_1_hit_i_113_n_0,pin_1_hit_i_114_n_0,pin_1_hit_i_115_n_0,pin_1_hit_i_116_n_0}),
+        .O(NLW_pin_1_hit_reg_i_100_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_117_n_0,pin_1_hit_i_118_n_0,pin_1_hit_i_119_n_0,pin_1_hit_i_120_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_1_hit_reg_i_19
-       (.CI(pin_1_hit_reg_i_33_n_0),
-        .CO({pin_1_hit_reg_i_19_n_0,pin_1_hit_reg_i_19_n_1,pin_1_hit_reg_i_19_n_2,pin_1_hit_reg_i_19_n_3}),
+       (.CI(pin_1_hit_reg_i_36_n_0),
+        .CO({score2,pin_1_hit_reg_i_19_n_1,pin_1_hit_reg_i_19_n_2,pin_1_hit_reg_i_19_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_1_hit_i_34_n_0,pin_1_hit_i_35_n_0,pin_1_hit_i_36_n_0,pin_1_hit_i_37_n_0}),
+        .DI({pin_1_hit_i_37_n_0,pin_1_hit_i_38_n_0,pin_1_hit_i_39_n_0,pin_1_hit_i_40_n_0}),
         .O(NLW_pin_1_hit_reg_i_19_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_38_n_0,pin_1_hit_i_39_n_0,pin_1_hit_i_40_n_0,pin_1_hit_i_41_n_0}));
+        .S({pin_1_hit_i_41_n_0,pin_1_hit_i_42_n_0,pin_1_hit_i_43_n_0,pin_1_hit_i_44_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_28
-       (.CI(pin_1_hit_reg_i_42_n_0),
-        .CO({pin_1_hit_reg_i_28_n_0,pin_1_hit_reg_i_28_n_1,pin_1_hit_reg_i_28_n_2,pin_1_hit_reg_i_28_n_3}),
+  CARRY4 pin_1_hit_reg_i_2
+       (.CI(pin_1_hit_reg_i_6_n_0),
+        .CO({NLW_pin_1_hit_reg_i_2_CO_UNCONNECTED[3],score421_in,pin_1_hit_reg_i_2_n_2,pin_1_hit_reg_i_2_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0}),
+        .O(NLW_pin_1_hit_reg_i_2_O_UNCONNECTED[3:0]),
+        .S({1'b0,pin_1_hit_i_7_n_0,pin_1_hit_i_8_n_0,pin_1_hit_i_9_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_20
+       (.CI(pin_1_hit_reg_i_45_n_0),
+        .CO({score3,pin_1_hit_reg_i_20_n_1,pin_1_hit_reg_i_20_n_2,pin_1_hit_reg_i_20_n_3}),
+        .CYINIT(1'b0),
+        .DI({\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_1_hit_reg_i_20_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_46_n_0,pin_1_hit_i_47_n_0,pin_1_hit_i_48_n_0,pin_1_hit_i_49_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_22
+       (.CI(pin_1_hit_reg_i_50_n_0),
+        .CO({pin_1_hit_reg_i_22_n_0,pin_1_hit_reg_i_22_n_1,pin_1_hit_reg_i_22_n_2,pin_1_hit_reg_i_22_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_1_hit_reg_i_28_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_43_n_0,pin_1_hit_i_44_n_0,pin_1_hit_i_45_n_0,pin_1_hit_i_46_n_0}));
+        .O(NLW_pin_1_hit_reg_i_22_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_51_n_0,pin_1_hit_i_52_n_0,pin_1_hit_i_53_n_0,pin_1_hit_i_54_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_33
+  CARRY4 pin_1_hit_reg_i_27
+       (.CI(pin_1_hit_reg_i_55_n_0),
+        .CO({pin_1_hit_reg_i_27_n_0,pin_1_hit_reg_i_27_n_1,pin_1_hit_reg_i_27_n_2,pin_1_hit_reg_i_27_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_1_hit_i_56_n_0,pin_1_hit_i_57_n_0,pin_1_hit_i_58_n_0,pin_1_hit_i_59_n_0}),
+        .O(NLW_pin_1_hit_reg_i_27_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_60_n_0,pin_1_hit_i_61_n_0,pin_1_hit_i_62_n_0,pin_1_hit_i_63_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_3
+       (.CI(pin_1_hit_reg_i_10_n_0),
+        .CO({score4,pin_1_hit_reg_i_3_n_1,pin_1_hit_reg_i_3_n_2,pin_1_hit_reg_i_3_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_1_hit_i_11_n_0,pin_1_hit_i_12_n_0,pin_1_hit_i_13_n_0,pin_1_hit_i_14_n_0}),
+        .O(NLW_pin_1_hit_reg_i_3_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_15_n_0,pin_1_hit_i_16_n_0,pin_1_hit_i_17_n_0,pin_1_hit_i_18_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_36
+       (.CI(pin_1_hit_reg_i_64_n_0),
+        .CO({pin_1_hit_reg_i_36_n_0,pin_1_hit_reg_i_36_n_1,pin_1_hit_reg_i_36_n_2,pin_1_hit_reg_i_36_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_1_hit_i_65_n_0,pin_1_hit_i_66_n_0,pin_1_hit_i_67_n_0,pin_1_hit_i_68_n_0}),
+        .O(NLW_pin_1_hit_reg_i_36_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_69_n_0,pin_1_hit_i_70_n_0,pin_1_hit_i_71_n_0,pin_1_hit_i_72_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_45
+       (.CI(pin_1_hit_reg_i_73_n_0),
+        .CO({pin_1_hit_reg_i_45_n_0,pin_1_hit_reg_i_45_n_1,pin_1_hit_reg_i_45_n_2,pin_1_hit_reg_i_45_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_1_hit_reg_i_45_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_74_n_0,pin_1_hit_i_75_n_0,pin_1_hit_i_76_n_0,pin_1_hit_i_77_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_50
        (.CI(1'b0),
-        .CO({pin_1_hit_reg_i_33_n_0,pin_1_hit_reg_i_33_n_1,pin_1_hit_reg_i_33_n_2,pin_1_hit_reg_i_33_n_3}),
+        .CO({pin_1_hit_reg_i_50_n_0,pin_1_hit_reg_i_50_n_1,pin_1_hit_reg_i_50_n_2,pin_1_hit_reg_i_50_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_1_hit_i_47_n_0,1'b0,1'b0,pin_1_hit_i_48_n_0}),
-        .O(NLW_pin_1_hit_reg_i_33_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_49_n_0,pin_1_hit_i_50_n_0,pin_1_hit_i_51_n_0,pin_1_hit_i_52_n_0}));
+        .DI({1'b0,pin_1_hit_i_78_n_0,pin_1_hit_i_79_n_0,pin_1_hit_i_80_n_0}),
+        .O(NLW_pin_1_hit_reg_i_50_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_81_n_0,pin_1_hit_i_82_n_0,pin_1_hit_i_83_n_0,pin_1_hit_i_84_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_4
-       (.CI(pin_1_hit_reg_i_7_n_0),
-        .CO({pin_1_hit3,pin_1_hit_reg_i_4_n_1,pin_1_hit_reg_i_4_n_2,pin_1_hit_reg_i_4_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_1_hit_i_8_n_0,pin_1_hit_i_9_n_0,pin_1_hit_i_10_n_0,pin_1_hit_i_11_n_0}),
-        .O(NLW_pin_1_hit_reg_i_4_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_12_n_0,pin_1_hit_i_13_n_0,pin_1_hit_i_14_n_0,pin_1_hit_i_15_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_42
+  CARRY4 pin_1_hit_reg_i_55
        (.CI(1'b0),
-        .CO({pin_1_hit_reg_i_42_n_0,pin_1_hit_reg_i_42_n_1,pin_1_hit_reg_i_42_n_2,pin_1_hit_reg_i_42_n_3}),
-        .CYINIT(pin_1_hit_i_53_n_0),
-        .DI({1'b0,1'b0,pin_1_hit_i_54_n_0,pin_1_hit_i_55_n_0}),
-        .O(NLW_pin_1_hit_reg_i_42_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_56_n_0,pin_1_hit_i_57_n_0,pin_1_hit_i_58_n_0,pin_1_hit_i_59_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_5
-       (.CI(pin_1_hit_reg_i_16_n_0),
-        .CO({NLW_pin_1_hit_reg_i_5_CO_UNCONNECTED[3:2],pin_1_hit336_in,pin_1_hit_reg_i_5_n_3}),
+        .CO({pin_1_hit_reg_i_55_n_0,pin_1_hit_reg_i_55_n_1,pin_1_hit_reg_i_55_n_2,pin_1_hit_reg_i_55_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\bowling_ball_location_x_reg_n_0_[31] ,1'b0}),
-        .O(NLW_pin_1_hit_reg_i_5_O_UNCONNECTED[3:0]),
-        .S({1'b0,1'b0,pin_1_hit_i_17_n_0,pin_1_hit_i_18_n_0}));
+        .DI({pin_1_hit_i_85_n_0,1'b0,1'b0,pin_1_hit_i_86_n_0}),
+        .O(NLW_pin_1_hit_reg_i_55_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_87_n_0,pin_1_hit_i_88_n_0,pin_1_hit_i_89_n_0,pin_1_hit_i_90_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_1_hit_reg_i_7
-       (.CI(pin_1_hit_reg_i_19_n_0),
-        .CO({pin_1_hit_reg_i_7_n_0,pin_1_hit_reg_i_7_n_1,pin_1_hit_reg_i_7_n_2,pin_1_hit_reg_i_7_n_3}),
+  CARRY4 pin_1_hit_reg_i_6
+       (.CI(pin_1_hit_reg_i_22_n_0),
+        .CO({pin_1_hit_reg_i_6_n_0,pin_1_hit_reg_i_6_n_1,pin_1_hit_reg_i_6_n_2,pin_1_hit_reg_i_6_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_1_hit_i_20_n_0,pin_1_hit_i_21_n_0,pin_1_hit_i_22_n_0,pin_1_hit_i_23_n_0}),
-        .O(NLW_pin_1_hit_reg_i_7_O_UNCONNECTED[3:0]),
-        .S({pin_1_hit_i_24_n_0,pin_1_hit_i_25_n_0,pin_1_hit_i_26_n_0,pin_1_hit_i_27_n_0}));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_1_hit_reg_i_6_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_23_n_0,pin_1_hit_i_24_n_0,pin_1_hit_i_25_n_0,pin_1_hit_i_26_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_64
+       (.CI(pin_1_hit_reg_i_91_n_0),
+        .CO({pin_1_hit_reg_i_64_n_0,pin_1_hit_reg_i_64_n_1,pin_1_hit_reg_i_64_n_2,pin_1_hit_reg_i_64_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_1_hit_i_92_n_0,pin_1_hit_i_93_n_0,pin_1_hit_i_94_n_0,pin_1_hit_i_95_n_0}),
+        .O(NLW_pin_1_hit_reg_i_64_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_96_n_0,pin_1_hit_i_97_n_0,pin_1_hit_i_98_n_0,pin_1_hit_i_99_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_73
+       (.CI(pin_1_hit_reg_i_100_n_0),
+        .CO({pin_1_hit_reg_i_73_n_0,pin_1_hit_reg_i_73_n_1,pin_1_hit_reg_i_73_n_2,pin_1_hit_reg_i_73_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_1_hit_reg_i_73_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_101_n_0,pin_1_hit_i_102_n_0,pin_1_hit_i_103_n_0,pin_1_hit_i_104_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_1_hit_reg_i_91
+       (.CI(1'b0),
+        .CO({pin_1_hit_reg_i_91_n_0,pin_1_hit_reg_i_91_n_1,pin_1_hit_reg_i_91_n_2,pin_1_hit_reg_i_91_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_1_hit_i_105_n_0,pin_1_hit_i_106_n_0,pin_1_hit_i_107_n_0,pin_1_hit_i_108_n_0}),
+        .O(NLW_pin_1_hit_reg_i_91_O_UNCONNECTED[3:0]),
+        .S({pin_1_hit_i_109_n_0,pin_1_hit_i_110_n_0,pin_1_hit_i_111_n_0,pin_1_hit_i_112_n_0}));
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \pin_1_location_y[4]_i_1 
        (.I0(pin_1_location_y),
         .I1(pin_4_location_y[4]),
         .O(\pin_1_location_y[4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT2 #(
     .INIT(4'h4)) 
     \pin_1_location_y[6]_i_1 
@@ -10697,39 +12522,293 @@ module bowling_game_controller_0_0_controller
         .D(\pin_1_location_y[6]_i_1_n_0 ),
         .Q(pin_4_location_y[6]),
         .R(1'b0));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+  LUT4 #(
+    .INIT(16'hCF80)) 
     pin_2_hit_i_1
        (.I0(pin_2_hit_i_2_n_0),
-        .I1(pin_4_hit1),
-        .I2(pin_4_hit2),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_2_hit_reg_n_0),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_2_hit_reg_n_0),
         .O(pin_2_hit_i_1_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'hE)) 
+    pin_2_hit_i_10
+       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
+        .O(pin_2_hit_i_10_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_11
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
+        .O(pin_2_hit_i_11_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_12
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+        .O(pin_2_hit_i_12_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_13
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_2_hit_i_13_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_14
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(pin_2_hit_i_14_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_15
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(pin_2_hit_i_15_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_17
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_2_hit_i_17_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_18
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(pin_2_hit_i_18_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_19
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(pin_2_hit_i_19_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
     pin_2_hit_i_2
-       (.I0(pin_2_hit334_in),
-        .I1(pin_2_hit3),
+       (.I0(score440_in),
+        .I1(score439_in),
+        .I2(score3),
+        .I3(score2),
         .O(pin_2_hit_i_2_n_0));
-  LUT3 #(
-    .INIT(8'hEF)) 
-    pin_2_hit_i_3
-       (.I0(pin_2_hit_i_4_n_0),
-        .I1(\FSM_onehot_game_time[2]_i_4_n_0 ),
-        .I2(game_turn),
-        .O(pin_2_hit_i_3_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    pin_2_hit_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I2(game_turn_i_4_n_0),
-        .I3(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I4(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_2_hit_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_20
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(pin_2_hit_i_20_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_22
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
+        .O(pin_2_hit_i_22_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_23
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+        .O(pin_2_hit_i_23_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_24
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
+        .O(pin_2_hit_i_24_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_25
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+        .O(pin_2_hit_i_25_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_26
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(pin_2_hit_i_26_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_27
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_2_hit_i_27_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_28
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(pin_2_hit_i_28_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_29
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_2_hit_i_29_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_31
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_2_hit_i_31_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_32
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(pin_2_hit_i_32_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_33
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_2_hit_i_33_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_34
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_2_hit_i_34_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_36
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+        .O(pin_2_hit_i_36_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_37
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+        .O(pin_2_hit_i_37_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_38
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+        .O(pin_2_hit_i_38_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_39
+       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+        .O(pin_2_hit_i_39_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_40
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_2_hit_i_40_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_41
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_2_hit_i_41_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_42
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_2_hit_i_42_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_43
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_2_hit_i_43_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_2_hit_i_44
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(pin_2_hit_i_44_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_2_hit_i_45
+       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+        .O(pin_2_hit_i_45_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_46
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_2_hit_i_46_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_47
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_2_hit_i_47_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_48
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_2_hit_i_48_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_2_hit_i_49
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_2_hit_i_49_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_50
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .O(pin_2_hit_i_50_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_2_hit_i_51
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_2_hit_i_51_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_2_hit_i_52
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_2_hit_i_52_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_2_hit_i_53
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_2_hit_i_53_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_54
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_2_hit_i_54_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_2_hit_i_55
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_2_hit_i_55_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_2_hit_i_6
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+        .O(pin_2_hit_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_2_hit_i_8
+       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
+        .O(pin_2_hit_i_8_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_2_hit_i_9
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
+        .O(pin_2_hit_i_9_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_2_hit_reg
@@ -10738,22 +12817,362 @@ module bowling_game_controller_0_0_controller
         .D(pin_2_hit_i_1_n_0),
         .Q(pin_2_hit_reg_n_0),
         .R(1'b0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_16
+       (.CI(pin_2_hit_reg_i_30_n_0),
+        .CO({pin_2_hit_reg_i_16_n_0,pin_2_hit_reg_i_16_n_1,pin_2_hit_reg_i_16_n_2,pin_2_hit_reg_i_16_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_2_hit_reg_i_16_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_31_n_0,pin_2_hit_i_32_n_0,pin_2_hit_i_33_n_0,pin_2_hit_i_34_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_21
+       (.CI(pin_2_hit_reg_i_35_n_0),
+        .CO({pin_2_hit_reg_i_21_n_0,pin_2_hit_reg_i_21_n_1,pin_2_hit_reg_i_21_n_2,pin_2_hit_reg_i_21_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_2_hit_i_36_n_0,pin_2_hit_i_37_n_0,pin_2_hit_i_38_n_0,pin_2_hit_i_39_n_0}),
+        .O(NLW_pin_2_hit_reg_i_21_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_40_n_0,pin_2_hit_i_41_n_0,pin_2_hit_i_42_n_0,pin_2_hit_i_43_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_3
+       (.CI(pin_2_hit_reg_i_5_n_0),
+        .CO({NLW_pin_2_hit_reg_i_3_CO_UNCONNECTED[3:1],score440_in}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,\bowling_ball_location_x_reg_n_0_[31] }),
+        .O(NLW_pin_2_hit_reg_i_3_O_UNCONNECTED[3:0]),
+        .S({1'b0,1'b0,1'b0,pin_2_hit_i_6_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_30
+       (.CI(1'b0),
+        .CO({pin_2_hit_reg_i_30_n_0,pin_2_hit_reg_i_30_n_1,pin_2_hit_reg_i_30_n_2,pin_2_hit_reg_i_30_n_3}),
+        .CYINIT(pin_2_hit_i_44_n_0),
+        .DI({1'b0,1'b0,1'b0,pin_2_hit_i_45_n_0}),
+        .O(NLW_pin_2_hit_reg_i_30_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_46_n_0,pin_2_hit_i_47_n_0,pin_2_hit_i_48_n_0,pin_2_hit_i_49_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_35
+       (.CI(1'b0),
+        .CO({pin_2_hit_reg_i_35_n_0,pin_2_hit_reg_i_35_n_1,pin_2_hit_reg_i_35_n_2,pin_2_hit_reg_i_35_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[5] ,pin_2_hit_i_50_n_0,pin_2_hit_i_51_n_0}),
+        .O(NLW_pin_2_hit_reg_i_35_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_52_n_0,pin_2_hit_i_53_n_0,pin_2_hit_i_54_n_0,pin_2_hit_i_55_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_4
+       (.CI(pin_2_hit_reg_i_7_n_0),
+        .CO({score439_in,pin_2_hit_reg_i_4_n_1,pin_2_hit_reg_i_4_n_2,pin_2_hit_reg_i_4_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_2_hit_i_8_n_0,pin_2_hit_i_9_n_0,pin_2_hit_i_10_n_0,pin_2_hit_i_11_n_0}),
+        .O(NLW_pin_2_hit_reg_i_4_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_12_n_0,pin_2_hit_i_13_n_0,pin_2_hit_i_14_n_0,pin_2_hit_i_15_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_5
+       (.CI(pin_2_hit_reg_i_16_n_0),
+        .CO({pin_2_hit_reg_i_5_n_0,pin_2_hit_reg_i_5_n_1,pin_2_hit_reg_i_5_n_2,pin_2_hit_reg_i_5_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_2_hit_reg_i_5_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_17_n_0,pin_2_hit_i_18_n_0,pin_2_hit_i_19_n_0,pin_2_hit_i_20_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_2_hit_reg_i_7
+       (.CI(pin_2_hit_reg_i_21_n_0),
+        .CO({pin_2_hit_reg_i_7_n_0,pin_2_hit_reg_i_7_n_1,pin_2_hit_reg_i_7_n_2,pin_2_hit_reg_i_7_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_2_hit_i_22_n_0,pin_2_hit_i_23_n_0,pin_2_hit_i_24_n_0,pin_2_hit_i_25_n_0}),
+        .O(NLW_pin_2_hit_reg_i_7_O_UNCONNECTED[3:0]),
+        .S({pin_2_hit_i_26_n_0,pin_2_hit_i_27_n_0,pin_2_hit_i_28_n_0,pin_2_hit_i_29_n_0}));
   LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+    .INIT(64'hFF00FFFF08000000)) 
     pin_3_hit_i_1
-       (.I0(pin_3_hit_i_2_n_0),
-        .I1(pin_4_hit1),
-        .I2(pin_4_hit2),
-        .I3(pin_2_hit_i_3_n_0),
+       (.I0(score447_in),
+        .I1(score446_in),
+        .I2(pin_1_hit_i_4_n_0),
+        .I3(pin_1_hit_i_5_n_0),
         .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
         .I5(pin_3_hit_reg_n_0),
         .O(pin_3_hit_i_1_n_0));
   LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_10
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
+        .O(pin_3_hit_i_10_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_11
+       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
+        .O(pin_3_hit_i_11_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_12
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
+        .O(pin_3_hit_i_12_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_13
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+        .O(pin_3_hit_i_13_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_14
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_3_hit_i_14_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_15
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(pin_3_hit_i_15_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_16
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(pin_3_hit_i_16_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_18
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(pin_3_hit_i_18_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_19
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(pin_3_hit_i_19_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_20
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_3_hit_i_20_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_21
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(pin_3_hit_i_21_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_23
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
+        .O(pin_3_hit_i_23_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_24
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+        .O(pin_3_hit_i_24_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_25
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
+        .O(pin_3_hit_i_25_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_26
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+        .O(pin_3_hit_i_26_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_27
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(pin_3_hit_i_27_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_28
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_3_hit_i_28_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_29
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(pin_3_hit_i_29_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_30
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_3_hit_i_30_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_32
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_3_hit_i_32_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_33
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_3_hit_i_33_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_34
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_3_hit_i_34_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_35
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_3_hit_i_35_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_37
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+        .O(pin_3_hit_i_37_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_38
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+        .O(pin_3_hit_i_38_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_39
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+        .O(pin_3_hit_i_39_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_3_hit_i_40
+       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+        .O(pin_3_hit_i_40_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_41
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_3_hit_i_41_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_42
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_3_hit_i_42_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_43
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_3_hit_i_43_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_44
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_3_hit_i_44_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_45
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_3_hit_i_45_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_46
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_3_hit_i_46_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_3_hit_i_47
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_3_hit_i_47_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_48
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_3_hit_i_48_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_49
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(pin_3_hit_i_49_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_5
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+        .O(pin_3_hit_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_3_hit_i_50
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_3_hit_i_50_n_0));
+  LUT2 #(
     .INIT(4'h8)) 
-    pin_3_hit_i_2
-       (.I0(pin_3_hit332_in),
-        .I1(pin_3_hit3),
-        .O(pin_3_hit_i_2_n_0));
+    pin_3_hit_i_51
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_3_hit_i_51_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_3_hit_i_52
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_3_hit_i_52_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_3_hit_i_53
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_3_hit_i_53_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_3_hit_i_54
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(pin_3_hit_i_54_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_3_hit_i_55
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_3_hit_i_55_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_3_hit_i_56
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_3_hit_i_56_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_6
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_3_hit_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_3_hit_i_7
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(pin_3_hit_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_3_hit_i_9
+       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
+        .O(pin_3_hit_i_9_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_3_hit_reg
@@ -10762,14 +13181,78 @@ module bowling_game_controller_0_0_controller
         .D(pin_3_hit_i_1_n_0),
         .Q(pin_3_hit_reg_n_0),
         .R(1'b0));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_17
+       (.CI(pin_3_hit_reg_i_31_n_0),
+        .CO({pin_3_hit_reg_i_17_n_0,pin_3_hit_reg_i_17_n_1,pin_3_hit_reg_i_17_n_2,pin_3_hit_reg_i_17_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_3_hit_reg_i_17_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_32_n_0,pin_3_hit_i_33_n_0,pin_3_hit_i_34_n_0,pin_3_hit_i_35_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_2
+       (.CI(pin_3_hit_reg_i_4_n_0),
+        .CO({NLW_pin_3_hit_reg_i_2_CO_UNCONNECTED[3],score447_in,pin_3_hit_reg_i_2_n_2,pin_3_hit_reg_i_2_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0}),
+        .O(NLW_pin_3_hit_reg_i_2_O_UNCONNECTED[3:0]),
+        .S({1'b0,pin_3_hit_i_5_n_0,pin_3_hit_i_6_n_0,pin_3_hit_i_7_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_22
+       (.CI(pin_3_hit_reg_i_36_n_0),
+        .CO({pin_3_hit_reg_i_22_n_0,pin_3_hit_reg_i_22_n_1,pin_3_hit_reg_i_22_n_2,pin_3_hit_reg_i_22_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_3_hit_i_37_n_0,pin_3_hit_i_38_n_0,pin_3_hit_i_39_n_0,pin_3_hit_i_40_n_0}),
+        .O(NLW_pin_3_hit_reg_i_22_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_41_n_0,pin_3_hit_i_42_n_0,pin_3_hit_i_43_n_0,pin_3_hit_i_44_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_3
+       (.CI(pin_3_hit_reg_i_8_n_0),
+        .CO({score446_in,pin_3_hit_reg_i_3_n_1,pin_3_hit_reg_i_3_n_2,pin_3_hit_reg_i_3_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_3_hit_i_9_n_0,pin_3_hit_i_10_n_0,pin_3_hit_i_11_n_0,pin_3_hit_i_12_n_0}),
+        .O(NLW_pin_3_hit_reg_i_3_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_13_n_0,pin_3_hit_i_14_n_0,pin_3_hit_i_15_n_0,pin_3_hit_i_16_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_31
+       (.CI(1'b0),
+        .CO({pin_3_hit_reg_i_31_n_0,pin_3_hit_reg_i_31_n_1,pin_3_hit_reg_i_31_n_2,pin_3_hit_reg_i_31_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_3_hit_i_45_n_0,1'b0,1'b0,pin_3_hit_i_46_n_0}),
+        .O(NLW_pin_3_hit_reg_i_31_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_47_n_0,pin_3_hit_i_48_n_0,pin_3_hit_i_49_n_0,pin_3_hit_i_50_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_36
+       (.CI(1'b0),
+        .CO({pin_3_hit_reg_i_36_n_0,pin_3_hit_reg_i_36_n_1,pin_3_hit_reg_i_36_n_2,pin_3_hit_reg_i_36_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,pin_3_hit_i_51_n_0,\bowling_ball_location_x_reg_n_0_[3] ,pin_3_hit_i_52_n_0}),
+        .O(NLW_pin_3_hit_reg_i_36_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_53_n_0,pin_3_hit_i_54_n_0,pin_3_hit_i_55_n_0,pin_3_hit_i_56_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_4
+       (.CI(pin_3_hit_reg_i_17_n_0),
+        .CO({pin_3_hit_reg_i_4_n_0,pin_3_hit_reg_i_4_n_1,pin_3_hit_reg_i_4_n_2,pin_3_hit_reg_i_4_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_3_hit_reg_i_4_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_18_n_0,pin_3_hit_i_19_n_0,pin_3_hit_i_20_n_0,pin_3_hit_i_21_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_3_hit_reg_i_8
+       (.CI(pin_3_hit_reg_i_22_n_0),
+        .CO({pin_3_hit_reg_i_8_n_0,pin_3_hit_reg_i_8_n_1,pin_3_hit_reg_i_8_n_2,pin_3_hit_reg_i_8_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_3_hit_i_23_n_0,pin_3_hit_i_24_n_0,pin_3_hit_i_25_n_0,pin_3_hit_i_26_n_0}),
+        .O(NLW_pin_3_hit_reg_i_8_O_UNCONNECTED[3:0]),
+        .S({pin_3_hit_i_27_n_0,pin_3_hit_i_28_n_0,pin_3_hit_i_29_n_0,pin_3_hit_i_30_n_0}));
   LUT6 #(
-    .INIT(64'hA000BFFFA0008000)) 
+    .INIT(64'hFF00FFFF08000000)) 
     pin_4_hit_i_1
-       (.I0(pin_1_hit_i_2_n_0),
-        .I1(pin_1_hit_i_3_n_0),
-        .I2(pin_4_hit331_in),
-        .I3(pin_4_hit3),
-        .I4(pin_1_hit_i_6_n_0),
+       (.I0(score427_in),
+        .I1(score426_in),
+        .I2(pin_1_hit_i_4_n_0),
+        .I3(pin_1_hit_i_5_n_0),
+        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
         .I5(pin_4_hit_reg_n_0),
         .O(pin_4_hit_i_1_n_0));
   LUT2 #(
@@ -11078,7 +13561,7 @@ module bowling_game_controller_0_0_controller
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_4_hit_reg_i_2
        (.CI(pin_4_hit_reg_i_4_n_0),
-        .CO({NLW_pin_4_hit_reg_i_2_CO_UNCONNECTED[3],pin_4_hit331_in,pin_4_hit_reg_i_2_n_2,pin_4_hit_reg_i_2_n_3}),
+        .CO({NLW_pin_4_hit_reg_i_2_CO_UNCONNECTED[3],score427_in,pin_4_hit_reg_i_2_n_2,pin_4_hit_reg_i_2_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0}),
         .O(NLW_pin_4_hit_reg_i_2_O_UNCONNECTED[3:0]),
@@ -11094,7 +13577,7 @@ module bowling_game_controller_0_0_controller
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_4_hit_reg_i_3
        (.CI(pin_4_hit_reg_i_8_n_0),
-        .CO({pin_4_hit3,pin_4_hit_reg_i_3_n_1,pin_4_hit_reg_i_3_n_2,pin_4_hit_reg_i_3_n_3}),
+        .CO({score426_in,pin_4_hit_reg_i_3_n_1,pin_4_hit_reg_i_3_n_2,pin_4_hit_reg_i_3_n_3}),
         .CYINIT(1'b0),
         .DI({pin_4_hit_i_9_n_0,pin_4_hit_i_10_n_0,pin_4_hit_i_11_n_0,pin_4_hit_i_12_n_0}),
         .O(NLW_pin_4_hit_reg_i_3_O_UNCONNECTED[3:0]),
@@ -11131,763 +13614,654 @@ module bowling_game_controller_0_0_controller
         .DI({pin_4_hit_i_23_n_0,pin_4_hit_i_24_n_0,pin_4_hit_i_25_n_0,pin_4_hit_i_26_n_0}),
         .O(NLW_pin_4_hit_reg_i_8_O_UNCONNECTED[3:0]),
         .S({pin_4_hit_i_27_n_0,pin_4_hit_i_28_n_0,pin_4_hit_i_29_n_0,pin_4_hit_i_30_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit1_carry
-       (.CI(1'b0),
-        .CO({pin_5_hit1_carry_n_0,pin_5_hit1_carry_n_1,pin_5_hit1_carry_n_2,pin_5_hit1_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit1_carry_i_1_n_0,pin_5_hit1_carry_i_2_n_0,pin_5_hit1_carry_i_3_n_0,pin_5_hit1_carry_i_4_n_0}),
-        .O(NLW_pin_5_hit1_carry_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit1_carry_i_5_n_0,pin_5_hit1_carry_i_6_n_0,pin_5_hit1_carry_i_7_n_0,pin_5_hit1_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit1_carry__0
-       (.CI(pin_5_hit1_carry_n_0),
-        .CO({pin_5_hit1_carry__0_n_0,pin_5_hit1_carry__0_n_1,pin_5_hit1_carry__0_n_2,pin_5_hit1_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit1_carry__0_i_1_n_0,pin_5_hit1_carry__0_i_2_n_0,pin_5_hit1_carry__0_i_3_n_0,pin_5_hit1_carry__0_i_4_n_0}),
-        .O(NLW_pin_5_hit1_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit1_carry__0_i_5_n_0,pin_5_hit1_carry__0_i_6_n_0,pin_5_hit1_carry__0_i_7_n_0,pin_5_hit1_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
-        .O(pin_5_hit1_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
-        .O(pin_5_hit1_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
-        .O(pin_5_hit1_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_5_hit1_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__0_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_5_hit1_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__0_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_5_hit1_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__0_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_5_hit1_carry__0_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__0_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(pin_5_hit1_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit1_carry__1
-       (.CI(pin_5_hit1_carry__0_n_0),
-        .CO({pin_5_hit1_carry__1_n_0,pin_5_hit1_carry__1_n_1,pin_5_hit1_carry__1_n_2,pin_5_hit1_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit1_carry__1_i_1_n_0,pin_5_hit1_carry__1_i_2_n_0,pin_5_hit1_carry__1_i_3_n_0,pin_5_hit1_carry__1_i_4_n_0}),
-        .O(NLW_pin_5_hit1_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit1_carry__1_i_5_n_0,pin_5_hit1_carry__1_i_6_n_0,pin_5_hit1_carry__1_i_7_n_0,pin_5_hit1_carry__1_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
-        .O(pin_5_hit1_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
-        .O(pin_5_hit1_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
-        .O(pin_5_hit1_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
-        .O(pin_5_hit1_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__1_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_5_hit1_carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__1_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_5_hit1_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__1_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_5_hit1_carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__1_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_5_hit1_carry__1_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit1_carry__2
-       (.CI(pin_5_hit1_carry__1_n_0),
-        .CO({pin_7_hit1,pin_5_hit1_carry__2_n_1,pin_5_hit1_carry__2_n_2,pin_5_hit1_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit1_carry__2_i_1_n_0,pin_5_hit1_carry__2_i_2_n_0,pin_5_hit1_carry__2_i_3_n_0,pin_5_hit1_carry__2_i_4_n_0}),
-        .O(NLW_pin_5_hit1_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit1_carry__2_i_5_n_0,pin_5_hit1_carry__2_i_6_n_0,pin_5_hit1_carry__2_i_7_n_0,pin_5_hit1_carry__2_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_5_hit1_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[31] ),
-        .O(pin_5_hit1_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[29] ),
-        .O(pin_5_hit1_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[27] ),
-        .O(pin_5_hit1_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry__2_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[25] ),
-        .O(pin_5_hit1_carry__2_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__2_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_5_hit1_carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__2_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_5_hit1_carry__2_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__2_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_5_hit1_carry__2_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry__2_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_5_hit1_carry__2_i_8_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_5_hit1_carry_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I1(pin_4_location_y[6]),
-        .O(pin_5_hit1_carry_i_1_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    pin_5_hit1_carry_i_2
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_5_hit1_carry_i_2_n_0));
   LUT4 #(
-    .INIT(16'h7510)) 
-    pin_5_hit1_carry_i_3
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[3] ),
-        .O(pin_5_hit1_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit1_carry_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_5_hit1_carry_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    pin_5_hit1_carry_i_5
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[7] ),
-        .O(pin_5_hit1_carry_i_5_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_5_hit1_carry_i_6
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_5_hit1_carry_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    pin_5_hit1_carry_i_7
-       (.I0(pin_4_location_y[4]),
-        .I1(pin_4_location_y[6]),
-        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[3] ),
-        .O(pin_5_hit1_carry_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit1_carry_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .O(pin_5_hit1_carry_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit2_carry
-       (.CI(1'b0),
-        .CO({pin_5_hit2_carry_n_0,pin_5_hit2_carry_n_1,pin_5_hit2_carry_n_2,pin_5_hit2_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit2_carry_i_1_n_0,pin_5_hit2_carry_i_2_n_0,pin_5_hit2_carry_i_3_n_0,pin_5_hit2_carry_i_4_n_0}),
-        .O(NLW_pin_5_hit2_carry_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit2_carry_i_5_n_0,pin_5_hit2_carry_i_6_n_0,pin_5_hit2_carry_i_7_n_0,pin_5_hit2_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit2_carry__0
-       (.CI(pin_5_hit2_carry_n_0),
-        .CO({pin_5_hit2_carry__0_n_0,pin_5_hit2_carry__0_n_1,pin_5_hit2_carry__0_n_2,pin_5_hit2_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_5_hit2_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit2_carry__0_i_1_n_0,pin_5_hit2_carry__0_i_2_n_0,pin_5_hit2_carry__0_i_3_n_0,pin_5_hit2_carry__0_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_5_hit2_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_5_hit2_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_5_hit2_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_5_hit2_carry__0_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit2_carry__1
-       (.CI(pin_5_hit2_carry__0_n_0),
-        .CO({pin_5_hit2_carry__1_n_0,pin_5_hit2_carry__1_n_1,pin_5_hit2_carry__1_n_2,pin_5_hit2_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_5_hit2_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit2_carry__1_i_1_n_0,pin_5_hit2_carry__1_i_2_n_0,pin_5_hit2_carry__1_i_3_n_0,pin_5_hit2_carry__1_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_5_hit2_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_5_hit2_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_5_hit2_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_5_hit2_carry__1_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit2_carry__2
-       (.CI(pin_5_hit2_carry__1_n_0),
-        .CO({NLW_pin_5_hit2_carry__2_CO_UNCONNECTED[3],pin_7_hit2,pin_5_hit2_carry__2_n_2,pin_5_hit2_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0}),
-        .O(NLW_pin_5_hit2_carry__2_O_UNCONNECTED[3:0]),
-        .S({1'b0,pin_5_hit2_carry__2_i_1_n_0,pin_5_hit2_carry__2_i_2_n_0,pin_5_hit2_carry__2_i_3_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_5_hit2_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_5_hit2_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit2_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_5_hit2_carry__2_i_3_n_0));
-  LUT3 #(
-    .INIT(8'h02)) 
-    pin_5_hit2_carry_i_1
-       (.I0(pin_5_hit2_carry_i_9_n_1),
-        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(pin_5_hit2_carry_i_1_n_0));
-  CARRY4 pin_5_hit2_carry_i_10
-       (.CI(1'b0),
-        .CO({NLW_pin_5_hit2_carry_i_10_CO_UNCONNECTED[3],pin_5_hit2_carry_i_10_n_1,NLW_pin_5_hit2_carry_i_10_CO_UNCONNECTED[1],pin_5_hit2_carry_i_10_n_3}),
-        .CYINIT(\fb_pixel5_inferred__0/i__carry_n_0 ),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_pin_5_hit2_carry_i_10_O_UNCONNECTED[3:2],pin_5_hit2_carry_i_10_n_6,NLW_pin_5_hit2_carry_i_10_O_UNCONNECTED[0]}),
-        .S({1'b0,1'b1,pin_4_location_y[4],1'b1}));
-  LUT4 #(
-    .INIT(16'h5071)) 
-    pin_5_hit2_carry_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
-        .I2(pin_5_hit2_carry_i_9_n_6),
-        .I3(pin_5_hit2_carry_i_10_n_1),
-        .O(pin_5_hit2_carry_i_2_n_0));
-  LUT4 #(
-    .INIT(16'h5071)) 
-    pin_5_hit2_carry_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(pin_5_hit2_carry_i_10_n_6),
-        .I3(\fb_pixel5_inferred__0/i__carry_n_0 ),
-        .O(pin_5_hit2_carry_i_3_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    pin_5_hit2_carry_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I2(\fb_pixel5_inferred__0/i__carry_n_6 ),
-        .I3(\fb_pixel5_inferred__0/i__carry_n_5 ),
-        .O(pin_5_hit2_carry_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_5_hit2_carry_i_5
-       (.I0(pin_5_hit2_carry_i_9_n_1),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_5_hit2_carry_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h4182)) 
-    pin_5_hit2_carry_i_6
-       (.I0(pin_5_hit2_carry_i_10_n_1),
-        .I1(pin_5_hit2_carry_i_9_n_6),
-        .I2(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_5_hit2_carry_i_6_n_0));
-  LUT4 #(
-    .INIT(16'h4182)) 
-    pin_5_hit2_carry_i_7
-       (.I0(\fb_pixel5_inferred__0/i__carry_n_0 ),
-        .I1(pin_5_hit2_carry_i_10_n_6),
-        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_5_hit2_carry_i_7_n_0));
-  LUT4 #(
-    .INIT(16'h8241)) 
-    pin_5_hit2_carry_i_8
-       (.I0(\fb_pixel5_inferred__0/i__carry_n_6 ),
-        .I1(\fb_pixel5_inferred__0/i__carry_n_5 ),
-        .I2(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_5_hit2_carry_i_8_n_0));
-  CARRY4 pin_5_hit2_carry_i_9
-       (.CI(1'b0),
-        .CO({NLW_pin_5_hit2_carry_i_9_CO_UNCONNECTED[3],pin_5_hit2_carry_i_9_n_1,NLW_pin_5_hit2_carry_i_9_CO_UNCONNECTED[1],pin_5_hit2_carry_i_9_n_3}),
-        .CYINIT(pin_5_hit2_carry_i_10_n_1),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({NLW_pin_5_hit2_carry_i_9_O_UNCONNECTED[3:2],pin_5_hit2_carry_i_9_n_6,NLW_pin_5_hit2_carry_i_9_O_UNCONNECTED[0]}),
-        .S({1'b0,1'b1,pin_4_location_y[6],1'b1}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit3_carry
-       (.CI(1'b0),
-        .CO({pin_5_hit3_carry_n_0,pin_5_hit3_carry_n_1,pin_5_hit3_carry_n_2,pin_5_hit3_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,pin_5_hit3_carry_i_1_n_0,pin_5_hit3_carry_i_2_n_0,pin_5_hit3_carry_i_3_n_0}),
-        .O(NLW_pin_5_hit3_carry_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit3_carry_i_4_n_0,pin_5_hit3_carry_i_5_n_0,pin_5_hit3_carry_i_6_n_0,pin_5_hit3_carry_i_7_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit3_carry__0
-       (.CI(pin_5_hit3_carry_n_0),
-        .CO({pin_5_hit3_carry__0_n_0,pin_5_hit3_carry__0_n_1,pin_5_hit3_carry__0_n_2,pin_5_hit3_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit3_carry__0_i_1_n_0,pin_5_hit3_carry__0_i_2_n_0,pin_5_hit3_carry__0_i_3_n_0,pin_5_hit3_carry__0_i_4_n_0}),
-        .O(NLW_pin_5_hit3_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit3_carry__0_i_5_n_0,pin_5_hit3_carry__0_i_6_n_0,pin_5_hit3_carry__0_i_7_n_0,pin_5_hit3_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__0_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
-        .O(pin_5_hit3_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__0_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
-        .O(pin_5_hit3_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__0_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
-        .O(pin_5_hit3_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__0_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
-        .O(pin_5_hit3_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__0_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(pin_5_hit3_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__0_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
-        .O(pin_5_hit3_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__0_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
-        .O(pin_5_hit3_carry__0_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__0_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_5_hit3_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit3_carry__1
-       (.CI(pin_5_hit3_carry__0_n_0),
-        .CO({pin_5_hit3_carry__1_n_0,pin_5_hit3_carry__1_n_1,pin_5_hit3_carry__1_n_2,pin_5_hit3_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit3_carry__1_i_1_n_0,pin_5_hit3_carry__1_i_2_n_0,pin_5_hit3_carry__1_i_3_n_0,pin_5_hit3_carry__1_i_4_n_0}),
-        .O(NLW_pin_5_hit3_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit3_carry__1_i_5_n_0,pin_5_hit3_carry__1_i_6_n_0,pin_5_hit3_carry__1_i_7_n_0,pin_5_hit3_carry__1_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__1_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
-        .O(pin_5_hit3_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__1_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
-        .O(pin_5_hit3_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__1_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
-        .O(pin_5_hit3_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__1_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
-        .O(pin_5_hit3_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__1_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(pin_5_hit3_carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__1_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
-        .O(pin_5_hit3_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__1_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
-        .O(pin_5_hit3_carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__1_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(pin_5_hit3_carry__1_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit3_carry__2
-       (.CI(pin_5_hit3_carry__1_n_0),
-        .CO({pin_5_hit3__15,pin_5_hit3_carry__2_n_1,pin_5_hit3_carry__2_n_2,pin_5_hit3_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_5_hit3_carry__2_i_1_n_0,pin_5_hit3_carry__2_i_2_n_0,pin_5_hit3_carry__2_i_3_n_0,pin_5_hit3_carry__2_i_4_n_0}),
-        .O(NLW_pin_5_hit3_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit3_carry__2_i_5_n_0,pin_5_hit3_carry__2_i_6_n_0,pin_5_hit3_carry__2_i_7_n_0,pin_5_hit3_carry__2_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_5_hit3_carry__2_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
-        .O(pin_5_hit3_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__2_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
-        .O(pin_5_hit3_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__2_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
-        .O(pin_5_hit3_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry__2_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
-        .O(pin_5_hit3_carry__2_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__2_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_5_hit3_carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__2_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
-        .O(pin_5_hit3_carry__2_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__2_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
-        .O(pin_5_hit3_carry__2_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry__2_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(pin_5_hit3_carry__2_i_8_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry_i_1
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(pin_5_hit3_carry_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_5_hit3_carry_i_2
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_5_hit3_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_5_hit3_carry_i_3
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
-        .O(pin_5_hit3_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_5_hit3_carry_i_4
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_5_hit3_carry_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(pin_5_hit3_carry_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_5_hit3_carry_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
-        .O(pin_5_hit3_carry_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit3_carry_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
-        .O(pin_5_hit3_carry_i_7_n_0));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+    .INIT(16'hCF40)) 
     pin_5_hit_i_1
        (.I0(pin_5_hit_i_2_n_0),
-        .I1(pin_5_hit3__15),
-        .I2(pin_5_hit330_in),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_5_hit_reg_n_0),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_5_hit_reg_n_0),
         .O(pin_5_hit_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_5_hit_i_10
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(pin_5_hit_i_10_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_100
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_5_hit_i_100_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_5_hit_i_101
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_5_hit_i_101_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_102
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(pin_5_hit_i_102_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_5_hit_i_103
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+        .O(pin_5_hit_i_103_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_104
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_5_hit_i_104_n_0));
+  LUT3 #(
+    .INIT(8'h02)) 
+    pin_5_hit_i_105
+       (.I0(\fb_pixel_reg[2]_i_273_n_1 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[8] ),
+        .O(pin_5_hit_i_105_n_0));
+  LUT4 #(
+    .INIT(16'h5071)) 
+    pin_5_hit_i_106
+       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
+        .I2(\fb_pixel_reg[2]_i_273_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_274_n_1 ),
+        .O(pin_5_hit_i_106_n_0));
+  LUT4 #(
+    .INIT(16'h5071)) 
+    pin_5_hit_i_107
+       (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(\fb_pixel_reg[2]_i_274_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_275_n_0 ),
+        .O(pin_5_hit_i_107_n_0));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    pin_5_hit_i_108
+       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I2(\fb_pixel_reg[2]_i_275_n_6 ),
+        .I3(\fb_pixel_reg[2]_i_275_n_5 ),
+        .O(pin_5_hit_i_108_n_0));
+  LUT3 #(
+    .INIT(8'h09)) 
+    pin_5_hit_i_109
+       (.I0(\fb_pixel_reg[2]_i_273_n_1 ),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(pin_5_hit_i_109_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_5_hit_i_11
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(pin_5_hit_i_11_n_0));
+  LUT4 #(
+    .INIT(16'h4182)) 
+    pin_5_hit_i_110
+       (.I0(\fb_pixel_reg[2]_i_274_n_1 ),
+        .I1(\fb_pixel_reg[2]_i_273_n_6 ),
+        .I2(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[6] ),
+        .O(pin_5_hit_i_110_n_0));
+  LUT4 #(
+    .INIT(16'h4182)) 
+    pin_5_hit_i_111
+       (.I0(\fb_pixel_reg[2]_i_275_n_0 ),
+        .I1(\fb_pixel_reg[2]_i_274_n_6 ),
+        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[4] ),
+        .O(pin_5_hit_i_111_n_0));
+  LUT4 #(
+    .INIT(16'h8241)) 
+    pin_5_hit_i_112
+       (.I0(\fb_pixel_reg[2]_i_275_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_275_n_5 ),
+        .I2(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[2] ),
+        .O(pin_5_hit_i_112_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_5_hit_i_113
+       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I1(pin_4_location_y[6]),
+        .O(pin_5_hit_i_113_n_0));
+  LUT3 #(
+    .INIT(8'hD4)) 
+    pin_5_hit_i_114
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
+        .O(pin_5_hit_i_114_n_0));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    pin_5_hit_i_115
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[3] ),
+        .O(pin_5_hit_i_115_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_116
+       (.I0(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
+        .O(pin_5_hit_i_116_n_0));
+  LUT3 #(
+    .INIT(8'h84)) 
+    pin_5_hit_i_117
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[7] ),
+        .O(pin_5_hit_i_117_n_0));
+  LUT3 #(
+    .INIT(8'h09)) 
+    pin_5_hit_i_118
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
+        .O(pin_5_hit_i_118_n_0));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    pin_5_hit_i_119
+       (.I0(pin_4_location_y[4]),
+        .I1(pin_4_location_y[6]),
+        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[3] ),
+        .O(pin_5_hit_i_119_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_5_hit_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
-        .O(pin_5_hit_i_12_n_0));
+    pin_5_hit_i_120
+       (.I0(\bowling_ball_location_y_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .O(pin_5_hit_i_120_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h2)) 
     pin_5_hit_i_13
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
         .O(pin_5_hit_i_13_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
+    pin_5_hit_i_14
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
+        .O(pin_5_hit_i_14_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
     pin_5_hit_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
         .O(pin_5_hit_i_15_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_5_hit_i_16
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
         .O(pin_5_hit_i_16_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_5_hit_i_17
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_5_hit_i_17_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_5_hit_i_18
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(pin_5_hit_i_18_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h1)) 
     pin_5_hit_i_19
-       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(pin_5_hit_i_19_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT4 #(
+    .INIT(16'h7FFF)) 
     pin_5_hit_i_2
-       (.I0(pin_7_hit2),
-        .I1(pin_7_hit1),
+       (.I0(score432_in),
+        .I1(score429_in),
+        .I2(score330_in),
+        .I3(score231_in),
         .O(pin_5_hit_i_2_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_5_hit_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
         .O(pin_5_hit_i_20_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_5_hit_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_5_hit_i_21_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
     pin_5_hit_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
         .O(pin_5_hit_i_22_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     pin_5_hit_i_23
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
         .O(pin_5_hit_i_23_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     pin_5_hit_i_24
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
         .O(pin_5_hit_i_24_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    pin_5_hit_i_25
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_5_hit_i_25_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
     pin_5_hit_i_26
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[31] ),
         .O(pin_5_hit_i_26_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
-    pin_5_hit_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_5_hit_i_5_n_0));
+    .INIT(4'hE)) 
+    pin_5_hit_i_27
+       (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[29] ),
+        .O(pin_5_hit_i_27_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_28
+       (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[27] ),
+        .O(pin_5_hit_i_28_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_29
+       (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[25] ),
+        .O(pin_5_hit_i_29_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_5_hit_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
-        .O(pin_5_hit_i_6_n_0));
+    pin_5_hit_i_30
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
+        .O(pin_5_hit_i_30_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_5_hit_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
-        .O(pin_5_hit_i_7_n_0));
+    pin_5_hit_i_31
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
+        .O(pin_5_hit_i_31_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_32
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
+        .O(pin_5_hit_i_32_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_33
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
+        .O(pin_5_hit_i_33_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_35
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(pin_5_hit_i_35_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_36
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_5_hit_i_36_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_37
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(pin_5_hit_i_37_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_38
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_5_hit_i_38_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_40
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
+        .O(pin_5_hit_i_40_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_41
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+        .O(pin_5_hit_i_41_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_42
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
+        .O(pin_5_hit_i_42_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_43
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+        .O(pin_5_hit_i_43_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_44
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+        .O(pin_5_hit_i_44_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_45
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+        .O(pin_5_hit_i_45_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_46
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+        .O(pin_5_hit_i_46_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_47
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_5_hit_i_47_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_49
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
+        .O(pin_5_hit_i_49_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_50
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
+        .O(pin_5_hit_i_50_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_51
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_5_hit_i_51_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_52
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
+        .O(pin_5_hit_i_52_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_54
+       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
+        .O(pin_5_hit_i_54_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_55
+       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
+        .O(pin_5_hit_i_55_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_56
+       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
+        .O(pin_5_hit_i_56_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_57
+       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
+        .O(pin_5_hit_i_57_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_58
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
+        .O(pin_5_hit_i_58_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_59
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_5_hit_i_59_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_60
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
+        .O(pin_5_hit_i_60_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_61
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(pin_5_hit_i_61_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_63
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_5_hit_i_63_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_64
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_5_hit_i_64_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_65
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_5_hit_i_65_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_66
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_5_hit_i_66_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_68
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+        .O(pin_5_hit_i_68_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_69
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+        .O(pin_5_hit_i_69_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_70
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+        .O(pin_5_hit_i_70_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_71
+       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+        .O(pin_5_hit_i_71_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_72
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+        .O(pin_5_hit_i_72_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_73
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+        .O(pin_5_hit_i_73_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_74
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+        .O(pin_5_hit_i_74_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_75
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_5_hit_i_75_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_77
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
+        .O(pin_5_hit_i_77_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_78
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
+        .O(pin_5_hit_i_78_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_79
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(pin_5_hit_i_79_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_5_hit_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_5_hit_i_8_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_80
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(pin_5_hit_i_80_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_82
+       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
+        .O(pin_5_hit_i_82_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_83
+       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
+        .O(pin_5_hit_i_83_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_84
+       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
+        .O(pin_5_hit_i_84_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_85
+       (.I0(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(pin_5_hit_i_85_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_86
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
+        .O(pin_5_hit_i_86_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_87
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(pin_5_hit_i_87_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_88
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(pin_5_hit_i_88_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_89
+       (.I0(\bowling_ball_location_y_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .O(pin_5_hit_i_89_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_9
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+        .O(pin_5_hit_i_9_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_5_hit_i_90
+       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+        .O(pin_5_hit_i_90_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    pin_5_hit_i_91
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_5_hit_i_91_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_5_hit_i_92
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_5_hit_i_92_n_0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    pin_5_hit_i_93
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_5_hit_i_93_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_5_hit_i_94
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_5_hit_i_94_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_5_hit_i_95
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+        .O(pin_5_hit_i_95_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_5_hit_i_96
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_5_hit_i_96_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_5_hit_i_97
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_5_hit_i_97_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_5_hit_i_98
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_5_hit_i_98_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_5_hit_i_99
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+        .O(pin_5_hit_i_99_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_5_hit_reg
@@ -11897,339 +14271,442 @@ module bowling_game_controller_0_0_controller
         .Q(pin_5_hit_reg_n_0),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit_reg_i_14
-       (.CI(1'b0),
-        .CO({pin_5_hit_reg_i_14_n_0,pin_5_hit_reg_i_14_n_1,pin_5_hit_reg_i_14_n_2,pin_5_hit_reg_i_14_n_3}),
+  CARRY4 pin_5_hit_reg_i_12
+       (.CI(pin_5_hit_reg_i_39_n_0),
+        .CO({pin_5_hit_reg_i_12_n_0,pin_5_hit_reg_i_12_n_1,pin_5_hit_reg_i_12_n_2,pin_5_hit_reg_i_12_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_5_hit_i_19_n_0,pin_5_hit_i_20_n_0,pin_5_hit_i_21_n_0,pin_5_hit_i_22_n_0}),
-        .O(NLW_pin_5_hit_reg_i_14_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit_i_23_n_0,pin_5_hit_i_24_n_0,pin_5_hit_i_25_n_0,pin_5_hit_i_26_n_0}));
+        .DI({pin_5_hit_i_40_n_0,pin_5_hit_i_41_n_0,pin_5_hit_i_42_n_0,pin_5_hit_i_43_n_0}),
+        .O(NLW_pin_5_hit_reg_i_12_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_44_n_0,pin_5_hit_i_45_n_0,pin_5_hit_i_46_n_0,pin_5_hit_i_47_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_21
+       (.CI(pin_5_hit_reg_i_48_n_0),
+        .CO({pin_5_hit_reg_i_21_n_0,pin_5_hit_reg_i_21_n_1,pin_5_hit_reg_i_21_n_2,pin_5_hit_reg_i_21_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_5_hit_reg_i_21_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_49_n_0,pin_5_hit_i_50_n_0,pin_5_hit_i_51_n_0,pin_5_hit_i_52_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_25
+       (.CI(pin_5_hit_reg_i_53_n_0),
+        .CO({pin_5_hit_reg_i_25_n_0,pin_5_hit_reg_i_25_n_1,pin_5_hit_reg_i_25_n_2,pin_5_hit_reg_i_25_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_54_n_0,pin_5_hit_i_55_n_0,pin_5_hit_i_56_n_0,pin_5_hit_i_57_n_0}),
+        .O(NLW_pin_5_hit_reg_i_25_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_58_n_0,pin_5_hit_i_59_n_0,pin_5_hit_i_60_n_0,pin_5_hit_i_61_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_5_hit_reg_i_3
-       (.CI(pin_5_hit_reg_i_4_n_0),
-        .CO({pin_5_hit330_in,pin_5_hit_reg_i_3_n_1,pin_5_hit_reg_i_3_n_2,pin_5_hit_reg_i_3_n_3}),
+       (.CI(pin_5_hit_reg_i_7_n_0),
+        .CO({score432_in,pin_5_hit_reg_i_3_n_1,pin_5_hit_reg_i_3_n_2,pin_5_hit_reg_i_3_n_3}),
         .CYINIT(1'b0),
         .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
         .O(NLW_pin_5_hit_reg_i_3_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit_i_5_n_0,pin_5_hit_i_6_n_0,pin_5_hit_i_7_n_0,pin_5_hit_i_8_n_0}));
+        .S({pin_5_hit_i_8_n_0,pin_5_hit_i_9_n_0,pin_5_hit_i_10_n_0,pin_5_hit_i_11_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_34
+       (.CI(pin_5_hit_reg_i_62_n_0),
+        .CO({pin_5_hit_reg_i_34_n_0,pin_5_hit_reg_i_34_n_1,pin_5_hit_reg_i_34_n_2,pin_5_hit_reg_i_34_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_5_hit_reg_i_34_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_63_n_0,pin_5_hit_i_64_n_0,pin_5_hit_i_65_n_0,pin_5_hit_i_66_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_39
+       (.CI(pin_5_hit_reg_i_67_n_0),
+        .CO({pin_5_hit_reg_i_39_n_0,pin_5_hit_reg_i_39_n_1,pin_5_hit_reg_i_39_n_2,pin_5_hit_reg_i_39_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_68_n_0,pin_5_hit_i_69_n_0,pin_5_hit_i_70_n_0,pin_5_hit_i_71_n_0}),
+        .O(NLW_pin_5_hit_reg_i_39_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_72_n_0,pin_5_hit_i_73_n_0,pin_5_hit_i_74_n_0,pin_5_hit_i_75_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_5_hit_reg_i_4
-       (.CI(pin_5_hit_reg_i_9_n_0),
-        .CO({pin_5_hit_reg_i_4_n_0,pin_5_hit_reg_i_4_n_1,pin_5_hit_reg_i_4_n_2,pin_5_hit_reg_i_4_n_3}),
+       (.CI(pin_5_hit_reg_i_12_n_0),
+        .CO({score429_in,pin_5_hit_reg_i_4_n_1,pin_5_hit_reg_i_4_n_2,pin_5_hit_reg_i_4_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .DI({pin_5_hit_i_13_n_0,pin_5_hit_i_14_n_0,pin_5_hit_i_15_n_0,pin_5_hit_i_16_n_0}),
         .O(NLW_pin_5_hit_reg_i_4_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit_i_10_n_0,pin_5_hit_i_11_n_0,pin_5_hit_i_12_n_0,pin_5_hit_i_13_n_0}));
+        .S({pin_5_hit_i_17_n_0,pin_5_hit_i_18_n_0,pin_5_hit_i_19_n_0,pin_5_hit_i_20_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_5_hit_reg_i_9
-       (.CI(pin_5_hit_reg_i_14_n_0),
-        .CO({pin_5_hit_reg_i_9_n_0,pin_5_hit_reg_i_9_n_1,pin_5_hit_reg_i_9_n_2,pin_5_hit_reg_i_9_n_3}),
+  CARRY4 pin_5_hit_reg_i_48
+       (.CI(pin_5_hit_reg_i_76_n_0),
+        .CO({pin_5_hit_reg_i_48_n_0,pin_5_hit_reg_i_48_n_1,pin_5_hit_reg_i_48_n_2,pin_5_hit_reg_i_48_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_5_hit_reg_i_9_O_UNCONNECTED[3:0]),
-        .S({pin_5_hit_i_15_n_0,pin_5_hit_i_16_n_0,pin_5_hit_i_17_n_0,pin_5_hit_i_18_n_0}));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+        .O(NLW_pin_5_hit_reg_i_48_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_77_n_0,pin_5_hit_i_78_n_0,pin_5_hit_i_79_n_0,pin_5_hit_i_80_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_5
+       (.CI(pin_5_hit_reg_i_21_n_0),
+        .CO({NLW_pin_5_hit_reg_i_5_CO_UNCONNECTED[3],score330_in,pin_5_hit_reg_i_5_n_2,pin_5_hit_reg_i_5_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0}),
+        .O(NLW_pin_5_hit_reg_i_5_O_UNCONNECTED[3:0]),
+        .S({1'b0,pin_5_hit_i_22_n_0,pin_5_hit_i_23_n_0,pin_5_hit_i_24_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_53
+       (.CI(pin_5_hit_reg_i_81_n_0),
+        .CO({pin_5_hit_reg_i_53_n_0,pin_5_hit_reg_i_53_n_1,pin_5_hit_reg_i_53_n_2,pin_5_hit_reg_i_53_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_82_n_0,pin_5_hit_i_83_n_0,pin_5_hit_i_84_n_0,pin_5_hit_i_85_n_0}),
+        .O(NLW_pin_5_hit_reg_i_53_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_86_n_0,pin_5_hit_i_87_n_0,pin_5_hit_i_88_n_0,pin_5_hit_i_89_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_6
+       (.CI(pin_5_hit_reg_i_25_n_0),
+        .CO({score231_in,pin_5_hit_reg_i_6_n_1,pin_5_hit_reg_i_6_n_2,pin_5_hit_reg_i_6_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_26_n_0,pin_5_hit_i_27_n_0,pin_5_hit_i_28_n_0,pin_5_hit_i_29_n_0}),
+        .O(NLW_pin_5_hit_reg_i_6_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_30_n_0,pin_5_hit_i_31_n_0,pin_5_hit_i_32_n_0,pin_5_hit_i_33_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_62
+       (.CI(1'b0),
+        .CO({pin_5_hit_reg_i_62_n_0,pin_5_hit_reg_i_62_n_1,pin_5_hit_reg_i_62_n_2,pin_5_hit_reg_i_62_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_90_n_0,pin_5_hit_i_91_n_0,pin_5_hit_i_92_n_0,pin_5_hit_i_93_n_0}),
+        .O(NLW_pin_5_hit_reg_i_62_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_94_n_0,pin_5_hit_i_95_n_0,pin_5_hit_i_96_n_0,pin_5_hit_i_97_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_67
+       (.CI(1'b0),
+        .CO({pin_5_hit_reg_i_67_n_0,pin_5_hit_reg_i_67_n_1,pin_5_hit_reg_i_67_n_2,pin_5_hit_reg_i_67_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,pin_5_hit_i_98_n_0,pin_5_hit_i_99_n_0,pin_5_hit_i_100_n_0}),
+        .O(NLW_pin_5_hit_reg_i_67_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_101_n_0,pin_5_hit_i_102_n_0,pin_5_hit_i_103_n_0,pin_5_hit_i_104_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_7
+       (.CI(pin_5_hit_reg_i_34_n_0),
+        .CO({pin_5_hit_reg_i_7_n_0,pin_5_hit_reg_i_7_n_1,pin_5_hit_reg_i_7_n_2,pin_5_hit_reg_i_7_n_3}),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(NLW_pin_5_hit_reg_i_7_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_35_n_0,pin_5_hit_i_36_n_0,pin_5_hit_i_37_n_0,pin_5_hit_i_38_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_76
+       (.CI(1'b0),
+        .CO({pin_5_hit_reg_i_76_n_0,pin_5_hit_reg_i_76_n_1,pin_5_hit_reg_i_76_n_2,pin_5_hit_reg_i_76_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_105_n_0,pin_5_hit_i_106_n_0,pin_5_hit_i_107_n_0,pin_5_hit_i_108_n_0}),
+        .O(NLW_pin_5_hit_reg_i_76_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_109_n_0,pin_5_hit_i_110_n_0,pin_5_hit_i_111_n_0,pin_5_hit_i_112_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_5_hit_reg_i_81
+       (.CI(1'b0),
+        .CO({pin_5_hit_reg_i_81_n_0,pin_5_hit_reg_i_81_n_1,pin_5_hit_reg_i_81_n_2,pin_5_hit_reg_i_81_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_5_hit_i_113_n_0,pin_5_hit_i_114_n_0,pin_5_hit_i_115_n_0,pin_5_hit_i_116_n_0}),
+        .O(NLW_pin_5_hit_reg_i_81_O_UNCONNECTED[3:0]),
+        .S({pin_5_hit_i_117_n_0,pin_5_hit_i_118_n_0,pin_5_hit_i_119_n_0,pin_5_hit_i_120_n_0}));
+  LUT4 #(
+    .INIT(16'hCF40)) 
     pin_6_hit_i_1
-       (.I0(pin_6_hit328_in),
-        .I1(pin_6_hit3),
-        .I2(pin_5_hit_i_2_n_0),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_6_hit_reg_n_0),
+       (.I0(pin_6_hit_i_2_n_0),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_6_hit_reg_n_0),
         .O(pin_6_hit_i_1_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    pin_6_hit_i_10
+    pin_6_hit_i_11
        (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
         .I1(\bowling_ball_location_x_reg_n_0_[31] ),
-        .O(pin_6_hit_i_10_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_6_hit_i_11
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
         .O(pin_6_hit_i_11_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
         .O(pin_6_hit_i_12_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_13
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
         .O(pin_6_hit_i_13_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_6_hit_i_14
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
         .O(pin_6_hit_i_14_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_6_hit_i_15_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_16
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(pin_6_hit_i_16_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_17
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(pin_6_hit_i_17_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_6_hit_i_19
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(pin_6_hit_i_19_n_0));
+    pin_6_hit_i_18
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(pin_6_hit_i_18_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  LUT4 #(
+    .INIT(16'h7FFF)) 
+    pin_6_hit_i_2
+       (.I0(score452_in),
+        .I1(score451_in),
+        .I2(score330_in),
+        .I3(score231_in),
+        .O(pin_6_hit_i_2_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(pin_6_hit_i_20_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
         .O(pin_6_hit_i_21_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(pin_6_hit_i_22_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_6_hit_i_24
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
-        .O(pin_6_hit_i_24_n_0));
+    .INIT(4'h1)) 
+    pin_6_hit_i_23
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_6_hit_i_23_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_25
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
         .O(pin_6_hit_i_25_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_26
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
         .O(pin_6_hit_i_26_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_27
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
         .O(pin_6_hit_i_27_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_6_hit_i_28
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
         .O(pin_6_hit_i_28_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_29
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(pin_6_hit_i_29_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_30
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
         .O(pin_6_hit_i_30_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_31
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(pin_6_hit_i_31_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_6_hit_i_33
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(pin_6_hit_i_33_n_0));
+    pin_6_hit_i_32
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_6_hit_i_32_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_34
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
         .O(pin_6_hit_i_34_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_35
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
         .O(pin_6_hit_i_35_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_36
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
         .O(pin_6_hit_i_36_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_6_hit_i_38
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
-        .O(pin_6_hit_i_38_n_0));
+    .INIT(4'h1)) 
+    pin_6_hit_i_37
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_6_hit_i_37_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_39
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
         .O(pin_6_hit_i_39_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_40
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
         .O(pin_6_hit_i_40_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_6_hit_i_41
-       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
         .O(pin_6_hit_i_41_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_6_hit_i_42
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
         .O(pin_6_hit_i_42_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_43
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
         .O(pin_6_hit_i_43_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_44
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
         .O(pin_6_hit_i_44_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_45
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
         .O(pin_6_hit_i_45_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h1)) 
     pin_6_hit_i_46
-       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
         .O(pin_6_hit_i_46_n_0));
   LUT2 #(
     .INIT(4'h7)) 
     pin_6_hit_i_47
+       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+        .O(pin_6_hit_i_47_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_6_hit_i_48
        (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
         .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(pin_6_hit_i_47_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    pin_6_hit_i_48
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
         .O(pin_6_hit_i_48_n_0));
   LUT1 #(
     .INIT(2'h1)) 
     pin_6_hit_i_49
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
         .O(pin_6_hit_i_49_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_6_hit_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_6_hit_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     pin_6_hit_i_50
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
         .O(pin_6_hit_i_50_n_0));
   LUT2 #(
     .INIT(4'h8)) 
     pin_6_hit_i_51
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
         .O(pin_6_hit_i_51_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h8)) 
     pin_6_hit_i_52
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
         .O(pin_6_hit_i_52_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     pin_6_hit_i_53
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
         .O(pin_6_hit_i_53_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_6_hit_i_54
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
-        .O(pin_6_hit_i_54_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_6_hit_i_55
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_6_hit_i_55_n_0));
-  LUT2 #(
     .INIT(4'h2)) 
-    pin_6_hit_i_56
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(pin_6_hit_i_56_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_6_hit_i_57
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_6_hit_i_57_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_6_hit_i_58
+    pin_6_hit_i_54
        (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
         .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_6_hit_i_54_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    pin_6_hit_i_55
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+        .O(pin_6_hit_i_55_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_6_hit_i_56
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+        .O(pin_6_hit_i_56_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    pin_6_hit_i_57
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+        .O(pin_6_hit_i_57_n_0));
+  LUT2 #(
+    .INIT(4'h8)) 
+    pin_6_hit_i_58
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
         .O(pin_6_hit_i_58_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    pin_6_hit_i_59
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_6_hit_i_59_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_6_hit_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_6_hit_i_6_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(pin_6_hit_i_7_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_6_hit_i_8
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(pin_6_hit_i_8_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_6_hit_i_9
        (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
         .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(pin_6_hit_i_8_n_0));
+        .O(pin_6_hit_i_9_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_6_hit_reg
@@ -12239,372 +14716,379 @@ module bowling_game_controller_0_0_controller
         .Q(pin_6_hit_reg_n_0),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_6_hit_reg_i_18
-       (.CI(pin_6_hit_reg_i_32_n_0),
-        .CO({pin_6_hit_reg_i_18_n_0,pin_6_hit_reg_i_18_n_1,pin_6_hit_reg_i_18_n_2,pin_6_hit_reg_i_18_n_3}),
+  CARRY4 pin_6_hit_reg_i_10
+       (.CI(pin_6_hit_reg_i_24_n_0),
+        .CO({pin_6_hit_reg_i_10_n_0,pin_6_hit_reg_i_10_n_1,pin_6_hit_reg_i_10_n_2,pin_6_hit_reg_i_10_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_6_hit_i_25_n_0,pin_6_hit_i_26_n_0,pin_6_hit_i_27_n_0,pin_6_hit_i_28_n_0}),
+        .O(NLW_pin_6_hit_reg_i_10_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_29_n_0,pin_6_hit_i_30_n_0,pin_6_hit_i_31_n_0,pin_6_hit_i_32_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_6_hit_reg_i_19
+       (.CI(pin_6_hit_reg_i_33_n_0),
+        .CO({pin_6_hit_reg_i_19_n_0,pin_6_hit_reg_i_19_n_1,pin_6_hit_reg_i_19_n_2,pin_6_hit_reg_i_19_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_6_hit_reg_i_18_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_33_n_0,pin_6_hit_i_34_n_0,pin_6_hit_i_35_n_0,pin_6_hit_i_36_n_0}));
+        .O(NLW_pin_6_hit_reg_i_19_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_34_n_0,pin_6_hit_i_35_n_0,pin_6_hit_i_36_n_0,pin_6_hit_i_37_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_6_hit_reg_i_2
-       (.CI(pin_6_hit_reg_i_4_n_0),
-        .CO({pin_6_hit328_in,pin_6_hit_reg_i_2_n_1,pin_6_hit_reg_i_2_n_2,pin_6_hit_reg_i_2_n_3}),
+  CARRY4 pin_6_hit_reg_i_24
+       (.CI(pin_6_hit_reg_i_38_n_0),
+        .CO({pin_6_hit_reg_i_24_n_0,pin_6_hit_reg_i_24_n_1,pin_6_hit_reg_i_24_n_2,pin_6_hit_reg_i_24_n_3}),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_6_hit_reg_i_2_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_5_n_0,pin_6_hit_i_6_n_0,pin_6_hit_i_7_n_0,pin_6_hit_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_6_hit_reg_i_23
-       (.CI(pin_6_hit_reg_i_37_n_0),
-        .CO({pin_6_hit_reg_i_23_n_0,pin_6_hit_reg_i_23_n_1,pin_6_hit_reg_i_23_n_2,pin_6_hit_reg_i_23_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_6_hit_i_38_n_0,pin_6_hit_i_39_n_0,pin_6_hit_i_40_n_0,pin_6_hit_i_41_n_0}),
-        .O(NLW_pin_6_hit_reg_i_23_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_42_n_0,pin_6_hit_i_43_n_0,pin_6_hit_i_44_n_0,pin_6_hit_i_45_n_0}));
+        .DI({pin_6_hit_i_39_n_0,pin_6_hit_i_40_n_0,pin_6_hit_i_41_n_0,pin_6_hit_i_42_n_0}),
+        .O(NLW_pin_6_hit_reg_i_24_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_43_n_0,pin_6_hit_i_44_n_0,pin_6_hit_i_45_n_0,pin_6_hit_i_46_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_6_hit_reg_i_3
-       (.CI(pin_6_hit_reg_i_9_n_0),
-        .CO({pin_6_hit3,pin_6_hit_reg_i_3_n_1,pin_6_hit_reg_i_3_n_2,pin_6_hit_reg_i_3_n_3}),
+       (.CI(pin_6_hit_reg_i_5_n_0),
+        .CO({score452_in,pin_6_hit_reg_i_3_n_1,pin_6_hit_reg_i_3_n_2,pin_6_hit_reg_i_3_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_6_hit_i_10_n_0,pin_6_hit_i_11_n_0,pin_6_hit_i_12_n_0,pin_6_hit_i_13_n_0}),
+        .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
         .O(NLW_pin_6_hit_reg_i_3_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_14_n_0,pin_6_hit_i_15_n_0,pin_6_hit_i_16_n_0,pin_6_hit_i_17_n_0}));
+        .S({pin_6_hit_i_6_n_0,pin_6_hit_i_7_n_0,pin_6_hit_i_8_n_0,pin_6_hit_i_9_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_6_hit_reg_i_32
+  CARRY4 pin_6_hit_reg_i_33
        (.CI(1'b0),
-        .CO({pin_6_hit_reg_i_32_n_0,pin_6_hit_reg_i_32_n_1,pin_6_hit_reg_i_32_n_2,pin_6_hit_reg_i_32_n_3}),
+        .CO({pin_6_hit_reg_i_33_n_0,pin_6_hit_reg_i_33_n_1,pin_6_hit_reg_i_33_n_2,pin_6_hit_reg_i_33_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_6_hit_i_46_n_0,pin_6_hit_i_47_n_0,pin_6_hit_i_48_n_0,pin_6_hit_i_49_n_0}),
-        .O(NLW_pin_6_hit_reg_i_32_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_50_n_0,pin_6_hit_i_51_n_0,pin_6_hit_i_52_n_0,pin_6_hit_i_53_n_0}));
+        .DI({pin_6_hit_i_47_n_0,pin_6_hit_i_48_n_0,pin_6_hit_i_49_n_0,pin_6_hit_i_50_n_0}),
+        .O(NLW_pin_6_hit_reg_i_33_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_51_n_0,pin_6_hit_i_52_n_0,pin_6_hit_i_53_n_0,pin_6_hit_i_54_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_6_hit_reg_i_37
+  CARRY4 pin_6_hit_reg_i_38
        (.CI(1'b0),
-        .CO({pin_6_hit_reg_i_37_n_0,pin_6_hit_reg_i_37_n_1,pin_6_hit_reg_i_37_n_2,pin_6_hit_reg_i_37_n_3}),
+        .CO({pin_6_hit_reg_i_38_n_0,pin_6_hit_reg_i_38_n_1,pin_6_hit_reg_i_38_n_2,pin_6_hit_reg_i_38_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[5] ,1'b0,pin_6_hit_i_54_n_0}),
-        .O(NLW_pin_6_hit_reg_i_37_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_55_n_0,pin_6_hit_i_56_n_0,pin_6_hit_i_57_n_0,pin_6_hit_i_58_n_0}));
+        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[5] ,1'b0,pin_6_hit_i_55_n_0}),
+        .O(NLW_pin_6_hit_reg_i_38_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_56_n_0,pin_6_hit_i_57_n_0,pin_6_hit_i_58_n_0,pin_6_hit_i_59_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_6_hit_reg_i_4
-       (.CI(pin_6_hit_reg_i_18_n_0),
-        .CO({pin_6_hit_reg_i_4_n_0,pin_6_hit_reg_i_4_n_1,pin_6_hit_reg_i_4_n_2,pin_6_hit_reg_i_4_n_3}),
+       (.CI(pin_6_hit_reg_i_10_n_0),
+        .CO({score451_in,pin_6_hit_reg_i_4_n_1,pin_6_hit_reg_i_4_n_2,pin_6_hit_reg_i_4_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_6_hit_i_11_n_0,pin_6_hit_i_12_n_0,pin_6_hit_i_13_n_0,pin_6_hit_i_14_n_0}),
+        .O(NLW_pin_6_hit_reg_i_4_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_15_n_0,pin_6_hit_i_16_n_0,pin_6_hit_i_17_n_0,pin_6_hit_i_18_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_6_hit_reg_i_5
+       (.CI(pin_6_hit_reg_i_19_n_0),
+        .CO({pin_6_hit_reg_i_5_n_0,pin_6_hit_reg_i_5_n_1,pin_6_hit_reg_i_5_n_2,pin_6_hit_reg_i_5_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_6_hit_reg_i_4_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_19_n_0,pin_6_hit_i_20_n_0,pin_6_hit_i_21_n_0,pin_6_hit_i_22_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_6_hit_reg_i_9
-       (.CI(pin_6_hit_reg_i_23_n_0),
-        .CO({pin_6_hit_reg_i_9_n_0,pin_6_hit_reg_i_9_n_1,pin_6_hit_reg_i_9_n_2,pin_6_hit_reg_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_6_hit_i_24_n_0,pin_6_hit_i_25_n_0,pin_6_hit_i_26_n_0,pin_6_hit_i_27_n_0}),
-        .O(NLW_pin_6_hit_reg_i_9_O_UNCONNECTED[3:0]),
-        .S({pin_6_hit_i_28_n_0,pin_6_hit_i_29_n_0,pin_6_hit_i_30_n_0,pin_6_hit_i_31_n_0}));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+        .O(NLW_pin_6_hit_reg_i_5_O_UNCONNECTED[3:0]),
+        .S({pin_6_hit_i_20_n_0,pin_6_hit_i_21_n_0,pin_6_hit_i_22_n_0,pin_6_hit_i_23_n_0}));
+  LUT4 #(
+    .INIT(16'hCF80)) 
     pin_7_hit_i_1
-       (.I0(pin_5_hit_i_2_n_0),
-        .I1(pin_7_hit327_in),
-        .I2(pin_7_hit3),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_7_hit_reg_n_0),
+       (.I0(score138_out),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_7_hit_reg_n_0),
         .O(pin_7_hit_i_1_n_0));
   LUT2 #(
     .INIT(4'h2)) 
-    pin_7_hit_i_10
+    pin_7_hit_i_11
        (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
         .I1(\bowling_ball_location_x_reg_n_0_[31] ),
-        .O(pin_7_hit_i_10_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_7_hit_i_11
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
         .O(pin_7_hit_i_11_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
         .O(pin_7_hit_i_12_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_13
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
         .O(pin_7_hit_i_13_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_7_hit_i_14
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
         .O(pin_7_hit_i_14_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_7_hit_i_15_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_16
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(pin_7_hit_i_16_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_17
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
         .O(pin_7_hit_i_17_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_7_hit_i_19
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(pin_7_hit_i_19_n_0));
+    pin_7_hit_i_18
+       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+        .O(pin_7_hit_i_18_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
+    pin_7_hit_i_2
+       (.I0(score437_in),
+        .I1(score436_in),
+        .I2(score330_in),
+        .I3(score231_in),
+        .O(score138_out));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(pin_7_hit_i_20_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
         .O(pin_7_hit_i_21_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(pin_7_hit_i_22_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_7_hit_i_24
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
-        .O(pin_7_hit_i_24_n_0));
+    .INIT(4'h1)) 
+    pin_7_hit_i_23
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_7_hit_i_23_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_25
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
         .O(pin_7_hit_i_25_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_26
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
         .O(pin_7_hit_i_26_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_27
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
         .O(pin_7_hit_i_27_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_7_hit_i_28
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
         .O(pin_7_hit_i_28_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_29
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
         .O(pin_7_hit_i_29_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_30
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
         .O(pin_7_hit_i_30_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_31
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
         .O(pin_7_hit_i_31_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_7_hit_i_33
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_7_hit_i_33_n_0));
+    pin_7_hit_i_32
+       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+        .O(pin_7_hit_i_32_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_34
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
         .O(pin_7_hit_i_34_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_35
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
         .O(pin_7_hit_i_35_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_36
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
         .O(pin_7_hit_i_36_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h1)) 
     pin_7_hit_i_37
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
         .O(pin_7_hit_i_37_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    pin_7_hit_i_39
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
-        .O(pin_7_hit_i_39_n_0));
+    .INIT(4'h2)) 
+    pin_7_hit_i_38
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_7_hit_i_38_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_40
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
         .O(pin_7_hit_i_40_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_41
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
         .O(pin_7_hit_i_41_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_42
-       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
         .O(pin_7_hit_i_42_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_7_hit_i_43
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
         .O(pin_7_hit_i_43_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_44
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
         .O(pin_7_hit_i_44_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_45
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
         .O(pin_7_hit_i_45_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_46
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
         .O(pin_7_hit_i_46_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h1)) 
     pin_7_hit_i_47
+       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+        .O(pin_7_hit_i_47_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    pin_7_hit_i_48
        (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
         .I1(\bowling_ball_location_x_reg_n_0_[2] ),
-        .O(pin_7_hit_i_47_n_0));
+        .O(pin_7_hit_i_48_n_0));
   LUT1 #(
     .INIT(2'h1)) 
-    pin_7_hit_i_48
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .O(pin_7_hit_i_48_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
     pin_7_hit_i_49
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
         .O(pin_7_hit_i_49_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_7_hit_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_7_hit_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
     pin_7_hit_i_50
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
         .O(pin_7_hit_i_50_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     pin_7_hit_i_51
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
         .O(pin_7_hit_i_51_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h8)) 
     pin_7_hit_i_52
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
         .O(pin_7_hit_i_52_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h2)) 
     pin_7_hit_i_53
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
         .O(pin_7_hit_i_53_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_7_hit_i_54
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
         .O(pin_7_hit_i_54_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'hE)) 
     pin_7_hit_i_55
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
         .O(pin_7_hit_i_55_n_0));
   LUT2 #(
     .INIT(4'h8)) 
     pin_7_hit_i_56
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
         .O(pin_7_hit_i_56_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h8)) 
     pin_7_hit_i_57
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
         .O(pin_7_hit_i_57_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_58
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
         .O(pin_7_hit_i_58_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    pin_7_hit_i_59
+       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+        .O(pin_7_hit_i_59_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_7_hit_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
         .O(pin_7_hit_i_6_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
         .O(pin_7_hit_i_7_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_7_hit_i_8
+       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+        .O(pin_7_hit_i_8_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
+    pin_7_hit_i_9
        (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
         .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(pin_7_hit_i_8_n_0));
+        .O(pin_7_hit_i_9_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_7_hit_reg
@@ -12614,771 +15098,426 @@ module bowling_game_controller_0_0_controller
         .Q(pin_7_hit_reg_n_0),
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_7_hit_reg_i_18
-       (.CI(pin_7_hit_reg_i_32_n_0),
-        .CO({pin_7_hit_reg_i_18_n_0,pin_7_hit_reg_i_18_n_1,pin_7_hit_reg_i_18_n_2,pin_7_hit_reg_i_18_n_3}),
+  CARRY4 pin_7_hit_reg_i_10
+       (.CI(pin_7_hit_reg_i_24_n_0),
+        .CO({pin_7_hit_reg_i_10_n_0,pin_7_hit_reg_i_10_n_1,pin_7_hit_reg_i_10_n_2,pin_7_hit_reg_i_10_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,pin_7_hit_i_33_n_0}),
-        .O(NLW_pin_7_hit_reg_i_18_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_34_n_0,pin_7_hit_i_35_n_0,pin_7_hit_i_36_n_0,pin_7_hit_i_37_n_0}));
+        .DI({pin_7_hit_i_25_n_0,pin_7_hit_i_26_n_0,pin_7_hit_i_27_n_0,pin_7_hit_i_28_n_0}),
+        .O(NLW_pin_7_hit_reg_i_10_O_UNCONNECTED[3:0]),
+        .S({pin_7_hit_i_29_n_0,pin_7_hit_i_30_n_0,pin_7_hit_i_31_n_0,pin_7_hit_i_32_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_7_hit_reg_i_2
-       (.CI(pin_7_hit_reg_i_4_n_0),
-        .CO({pin_7_hit327_in,pin_7_hit_reg_i_2_n_1,pin_7_hit_reg_i_2_n_2,pin_7_hit_reg_i_2_n_3}),
+  CARRY4 pin_7_hit_reg_i_19
+       (.CI(pin_7_hit_reg_i_33_n_0),
+        .CO({pin_7_hit_reg_i_19_n_0,pin_7_hit_reg_i_19_n_1,pin_7_hit_reg_i_19_n_2,pin_7_hit_reg_i_19_n_3}),
         .CYINIT(1'b0),
-        .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_7_hit_reg_i_2_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_5_n_0,pin_7_hit_i_6_n_0,pin_7_hit_i_7_n_0,pin_7_hit_i_8_n_0}));
+        .DI({1'b0,1'b0,1'b0,pin_7_hit_i_34_n_0}),
+        .O(NLW_pin_7_hit_reg_i_19_O_UNCONNECTED[3:0]),
+        .S({pin_7_hit_i_35_n_0,pin_7_hit_i_36_n_0,pin_7_hit_i_37_n_0,pin_7_hit_i_38_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_7_hit_reg_i_23
-       (.CI(pin_7_hit_reg_i_38_n_0),
-        .CO({pin_7_hit_reg_i_23_n_0,pin_7_hit_reg_i_23_n_1,pin_7_hit_reg_i_23_n_2,pin_7_hit_reg_i_23_n_3}),
+  CARRY4 pin_7_hit_reg_i_24
+       (.CI(pin_7_hit_reg_i_39_n_0),
+        .CO({pin_7_hit_reg_i_24_n_0,pin_7_hit_reg_i_24_n_1,pin_7_hit_reg_i_24_n_2,pin_7_hit_reg_i_24_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_7_hit_i_39_n_0,pin_7_hit_i_40_n_0,pin_7_hit_i_41_n_0,pin_7_hit_i_42_n_0}),
-        .O(NLW_pin_7_hit_reg_i_23_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_43_n_0,pin_7_hit_i_44_n_0,pin_7_hit_i_45_n_0,pin_7_hit_i_46_n_0}));
+        .DI({pin_7_hit_i_40_n_0,pin_7_hit_i_41_n_0,pin_7_hit_i_42_n_0,pin_7_hit_i_43_n_0}),
+        .O(NLW_pin_7_hit_reg_i_24_O_UNCONNECTED[3:0]),
+        .S({pin_7_hit_i_44_n_0,pin_7_hit_i_45_n_0,pin_7_hit_i_46_n_0,pin_7_hit_i_47_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_7_hit_reg_i_3
-       (.CI(pin_7_hit_reg_i_9_n_0),
-        .CO({pin_7_hit3,pin_7_hit_reg_i_3_n_1,pin_7_hit_reg_i_3_n_2,pin_7_hit_reg_i_3_n_3}),
+       (.CI(pin_7_hit_reg_i_5_n_0),
+        .CO({score437_in,pin_7_hit_reg_i_3_n_1,pin_7_hit_reg_i_3_n_2,pin_7_hit_reg_i_3_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_7_hit_i_10_n_0,pin_7_hit_i_11_n_0,pin_7_hit_i_12_n_0,pin_7_hit_i_13_n_0}),
+        .DI({\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
         .O(NLW_pin_7_hit_reg_i_3_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_14_n_0,pin_7_hit_i_15_n_0,pin_7_hit_i_16_n_0,pin_7_hit_i_17_n_0}));
+        .S({pin_7_hit_i_6_n_0,pin_7_hit_i_7_n_0,pin_7_hit_i_8_n_0,pin_7_hit_i_9_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_7_hit_reg_i_32
+  CARRY4 pin_7_hit_reg_i_33
        (.CI(1'b0),
-        .CO({pin_7_hit_reg_i_32_n_0,pin_7_hit_reg_i_32_n_1,pin_7_hit_reg_i_32_n_2,pin_7_hit_reg_i_32_n_3}),
+        .CO({pin_7_hit_reg_i_33_n_0,pin_7_hit_reg_i_33_n_1,pin_7_hit_reg_i_33_n_2,pin_7_hit_reg_i_33_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,pin_7_hit_i_47_n_0,pin_7_hit_i_48_n_0}),
-        .O(NLW_pin_7_hit_reg_i_32_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_49_n_0,pin_7_hit_i_50_n_0,pin_7_hit_i_51_n_0,pin_7_hit_i_52_n_0}));
+        .DI({1'b0,1'b0,pin_7_hit_i_48_n_0,pin_7_hit_i_49_n_0}),
+        .O(NLW_pin_7_hit_reg_i_33_O_UNCONNECTED[3:0]),
+        .S({pin_7_hit_i_50_n_0,pin_7_hit_i_51_n_0,pin_7_hit_i_52_n_0,pin_7_hit_i_53_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_7_hit_reg_i_38
+  CARRY4 pin_7_hit_reg_i_39
        (.CI(1'b0),
-        .CO({pin_7_hit_reg_i_38_n_0,pin_7_hit_reg_i_38_n_1,pin_7_hit_reg_i_38_n_2,pin_7_hit_reg_i_38_n_3}),
+        .CO({pin_7_hit_reg_i_39_n_0,pin_7_hit_reg_i_39_n_1,pin_7_hit_reg_i_39_n_2,pin_7_hit_reg_i_39_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,pin_7_hit_i_53_n_0,pin_7_hit_i_54_n_0}),
-        .O(NLW_pin_7_hit_reg_i_38_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_55_n_0,pin_7_hit_i_56_n_0,pin_7_hit_i_57_n_0,pin_7_hit_i_58_n_0}));
+        .DI({1'b0,1'b0,pin_7_hit_i_54_n_0,pin_7_hit_i_55_n_0}),
+        .O(NLW_pin_7_hit_reg_i_39_O_UNCONNECTED[3:0]),
+        .S({pin_7_hit_i_56_n_0,pin_7_hit_i_57_n_0,pin_7_hit_i_58_n_0,pin_7_hit_i_59_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_7_hit_reg_i_4
-       (.CI(pin_7_hit_reg_i_18_n_0),
-        .CO({pin_7_hit_reg_i_4_n_0,pin_7_hit_reg_i_4_n_1,pin_7_hit_reg_i_4_n_2,pin_7_hit_reg_i_4_n_3}),
+       (.CI(pin_7_hit_reg_i_10_n_0),
+        .CO({score436_in,pin_7_hit_reg_i_4_n_1,pin_7_hit_reg_i_4_n_2,pin_7_hit_reg_i_4_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .DI({pin_7_hit_i_11_n_0,pin_7_hit_i_12_n_0,pin_7_hit_i_13_n_0,pin_7_hit_i_14_n_0}),
         .O(NLW_pin_7_hit_reg_i_4_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_19_n_0,pin_7_hit_i_20_n_0,pin_7_hit_i_21_n_0,pin_7_hit_i_22_n_0}));
+        .S({pin_7_hit_i_15_n_0,pin_7_hit_i_16_n_0,pin_7_hit_i_17_n_0,pin_7_hit_i_18_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_7_hit_reg_i_9
-       (.CI(pin_7_hit_reg_i_23_n_0),
-        .CO({pin_7_hit_reg_i_9_n_0,pin_7_hit_reg_i_9_n_1,pin_7_hit_reg_i_9_n_2,pin_7_hit_reg_i_9_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_7_hit_i_24_n_0,pin_7_hit_i_25_n_0,pin_7_hit_i_26_n_0,pin_7_hit_i_27_n_0}),
-        .O(NLW_pin_7_hit_reg_i_9_O_UNCONNECTED[3:0]),
-        .S({pin_7_hit_i_28_n_0,pin_7_hit_i_29_n_0,pin_7_hit_i_30_n_0,pin_7_hit_i_31_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit1_carry
-       (.CI(1'b0),
-        .CO({pin_8_hit1_carry_n_0,pin_8_hit1_carry_n_1,pin_8_hit1_carry_n_2,pin_8_hit1_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_8_hit1_carry_i_1_n_0,pin_8_hit1_carry_i_2_n_0,pin_8_hit1_carry_i_3_n_0,pin_8_hit1_carry_i_4_n_0}),
-        .O(NLW_pin_8_hit1_carry_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit1_carry_i_5_n_0,pin_8_hit1_carry_i_6_n_0,pin_8_hit1_carry_i_7_n_0,pin_8_hit1_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit1_carry__0
-       (.CI(pin_8_hit1_carry_n_0),
-        .CO({pin_8_hit1_carry__0_n_0,pin_8_hit1_carry__0_n_1,pin_8_hit1_carry__0_n_2,pin_8_hit1_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_8_hit1_carry__0_i_1_n_0,pin_8_hit1_carry__0_i_2_n_0,pin_8_hit1_carry__0_i_3_n_0,pin_8_hit1_carry__0_i_4_n_0}),
-        .O(NLW_pin_8_hit1_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit1_carry__0_i_5_n_0,pin_8_hit1_carry__0_i_6_n_0,pin_8_hit1_carry__0_i_7_n_0,pin_8_hit1_carry__0_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__0_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
-        .O(pin_8_hit1_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
-        .O(pin_8_hit1_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
-        .O(pin_8_hit1_carry__0_i_3_n_0));
-  LUT3 #(
-    .INIT(8'hF4)) 
-    pin_8_hit1_carry__0_i_4
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_8_hit1_carry__0_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__0_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_8_hit1_carry__0_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__0_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_8_hit1_carry__0_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__0_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_8_hit1_carry__0_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_8_hit1_carry__0_i_8
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_8_hit1_carry__0_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit1_carry__1
-       (.CI(pin_8_hit1_carry__0_n_0),
-        .CO({pin_8_hit1_carry__1_n_0,pin_8_hit1_carry__1_n_1,pin_8_hit1_carry__1_n_2,pin_8_hit1_carry__1_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_8_hit1_carry__1_i_1_n_0,pin_8_hit1_carry__1_i_2_n_0,pin_8_hit1_carry__1_i_3_n_0,pin_8_hit1_carry__1_i_4_n_0}),
-        .O(NLW_pin_8_hit1_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit1_carry__1_i_5_n_0,pin_8_hit1_carry__1_i_6_n_0,pin_8_hit1_carry__1_i_7_n_0,pin_8_hit1_carry__1_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
-        .O(pin_8_hit1_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
-        .O(pin_8_hit1_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
-        .O(pin_8_hit1_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
-        .O(pin_8_hit1_carry__1_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__1_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_8_hit1_carry__1_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__1_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_8_hit1_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__1_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_8_hit1_carry__1_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__1_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_8_hit1_carry__1_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit1_carry__2
-       (.CI(pin_8_hit1_carry__1_n_0),
-        .CO({pin_9_hit1,pin_8_hit1_carry__2_n_1,pin_8_hit1_carry__2_n_2,pin_8_hit1_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_8_hit1_carry__2_i_1_n_0,pin_8_hit1_carry__2_i_2_n_0,pin_8_hit1_carry__2_i_3_n_0,pin_8_hit1_carry__2_i_4_n_0}),
-        .O(NLW_pin_8_hit1_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit1_carry__2_i_5_n_0,pin_8_hit1_carry__2_i_6_n_0,pin_8_hit1_carry__2_i_7_n_0,pin_8_hit1_carry__2_i_8_n_0}));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_8_hit1_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[31] ),
-        .O(pin_8_hit1_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[29] ),
-        .O(pin_8_hit1_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[27] ),
-        .O(pin_8_hit1_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit1_carry__2_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[25] ),
-        .O(pin_8_hit1_carry__2_i_4_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__2_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_8_hit1_carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__2_i_6
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_8_hit1_carry__2_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__2_i_7
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_8_hit1_carry__2_i_7_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit1_carry__2_i_8
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_8_hit1_carry__2_i_8_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    pin_8_hit1_carry_i_1
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_8_hit1_carry_i_1_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    pin_8_hit1_carry_i_2
-       (.I0(pin_4_location_y[6]),
-        .I1(pin_4_location_y[4]),
-        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[5] ),
-        .O(pin_8_hit1_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_8_hit1_carry_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I1(pin_4_location_y[6]),
-        .O(pin_8_hit1_carry_i_3_n_0));
-  LUT3 #(
-    .INIT(8'hD4)) 
-    pin_8_hit1_carry_i_4
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_8_hit1_carry_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_8_hit1_carry_i_5
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[6] ),
-        .O(pin_8_hit1_carry_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    pin_8_hit1_carry_i_6
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I3(pin_4_location_y[4]),
-        .O(pin_8_hit1_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h84)) 
-    pin_8_hit1_carry_i_7
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[3] ),
-        .O(pin_8_hit1_carry_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    pin_8_hit1_carry_i_8
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_8_hit1_carry_i_8_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit2_carry
-       (.CI(1'b0),
-        .CO({pin_8_hit2_carry_n_0,pin_8_hit2_carry_n_1,pin_8_hit2_carry_n_2,pin_8_hit2_carry_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_8_hit2_carry_i_1_n_0,pin_8_hit2_carry_i_2_n_0,pin_8_hit2_carry_i_3_n_0,pin_8_hit2_carry_i_4_n_0}),
-        .O(NLW_pin_8_hit2_carry_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit2_carry_i_5_n_0,pin_8_hit2_carry_i_6_n_0,pin_8_hit2_carry_i_7_n_0,pin_8_hit2_carry_i_8_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit2_carry__0
-       (.CI(pin_8_hit2_carry_n_0),
-        .CO({pin_8_hit2_carry__0_n_0,pin_8_hit2_carry__0_n_1,pin_8_hit2_carry__0_n_2,pin_8_hit2_carry__0_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,pin_8_hit2_carry__0_i_1_n_0}),
-        .O(NLW_pin_8_hit2_carry__0_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit2_carry__0_i_2_n_0,pin_8_hit2_carry__0_i_3_n_0,pin_8_hit2_carry__0_i_4_n_0,pin_8_hit2_carry__0_i_5_n_0}));
-  LUT3 #(
-    .INIT(8'h02)) 
-    pin_8_hit2_carry__0_i_1
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[8] ),
-        .O(pin_8_hit2_carry__0_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__0_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
-        .O(pin_8_hit2_carry__0_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__0_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
-        .O(pin_8_hit2_carry__0_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__0_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
-        .O(pin_8_hit2_carry__0_i_4_n_0));
-  LUT3 #(
-    .INIT(8'h09)) 
-    pin_8_hit2_carry__0_i_5
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
-        .O(pin_8_hit2_carry__0_i_5_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit2_carry__1
-       (.CI(pin_8_hit2_carry__0_n_0),
-        .CO({pin_8_hit2_carry__1_n_0,pin_8_hit2_carry__1_n_1,pin_8_hit2_carry__1_n_2,pin_8_hit2_carry__1_n_3}),
+  CARRY4 pin_7_hit_reg_i_5
+       (.CI(pin_7_hit_reg_i_19_n_0),
+        .CO({pin_7_hit_reg_i_5_n_0,pin_7_hit_reg_i_5_n_1,pin_7_hit_reg_i_5_n_2,pin_7_hit_reg_i_5_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_8_hit2_carry__1_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit2_carry__1_i_1_n_0,pin_8_hit2_carry__1_i_2_n_0,pin_8_hit2_carry__1_i_3_n_0,pin_8_hit2_carry__1_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__1_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
-        .O(pin_8_hit2_carry__1_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__1_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
-        .O(pin_8_hit2_carry__1_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__1_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
-        .O(pin_8_hit2_carry__1_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__1_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
-        .O(pin_8_hit2_carry__1_i_4_n_0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit2_carry__2
-       (.CI(pin_8_hit2_carry__1_n_0),
-        .CO({pin_9_hit2,pin_8_hit2_carry__2_n_1,pin_8_hit2_carry__2_n_2,pin_8_hit2_carry__2_n_3}),
-        .CYINIT(1'b0),
-        .DI({\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_8_hit2_carry__2_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit2_carry__2_i_1_n_0,pin_8_hit2_carry__2_i_2_n_0,pin_8_hit2_carry__2_i_3_n_0,pin_8_hit2_carry__2_i_4_n_0}));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__2_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
-        .O(pin_8_hit2_carry__2_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__2_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
-        .O(pin_8_hit2_carry__2_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__2_i_3
-       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
-        .O(pin_8_hit2_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry__2_i_4
-       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
-        .O(pin_8_hit2_carry__2_i_4_n_0));
+        .O(NLW_pin_7_hit_reg_i_5_O_UNCONNECTED[3:0]),
+        .S({pin_7_hit_i_20_n_0,pin_7_hit_i_21_n_0,pin_7_hit_i_22_n_0,pin_7_hit_i_23_n_0}));
   LUT4 #(
-    .INIT(16'h7510)) 
-    pin_8_hit2_carry_i_1
-       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
-        .I2(pin_8_hit2_carry_i_9_n_1),
-        .I3(pin_4_location_y[4]),
-        .O(pin_8_hit2_carry_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    pin_8_hit2_carry_i_10
-       (.I0(pin_4_location_y[4]),
-        .O(pin_8_hit2_carry_i_10_n_0));
-  LUT4 #(
-    .INIT(16'h7510)) 
-    pin_8_hit2_carry_i_2
-       (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
-        .I2(pin_8_hit2_carry_i_9_n_7),
-        .I3(pin_8_hit2_carry_i_9_n_6),
-        .O(pin_8_hit2_carry_i_2_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit2_carry_i_3
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
-        .O(pin_8_hit2_carry_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_8_hit2_carry_i_4
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_8_hit2_carry_i_4_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    pin_8_hit2_carry_i_5
-       (.I0(\bowling_ball_location_y_reg_n_0_[6] ),
-        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
-        .I2(pin_8_hit2_carry_i_9_n_1),
-        .I3(pin_4_location_y[4]),
-        .O(pin_8_hit2_carry_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h8421)) 
-    pin_8_hit2_carry_i_6
-       (.I0(pin_8_hit2_carry_i_9_n_6),
-        .I1(pin_8_hit2_carry_i_9_n_7),
-        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
-        .I3(\bowling_ball_location_y_reg_n_0_[4] ),
-        .O(pin_8_hit2_carry_i_6_n_0));
-  LUT3 #(
-    .INIT(8'h06)) 
-    pin_8_hit2_carry_i_7
-       (.I0(pin_4_location_y[6]),
-        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
-        .O(pin_8_hit2_carry_i_7_n_0));
-  LUT3 #(
-    .INIT(8'h21)) 
-    pin_8_hit2_carry_i_8
-       (.I0(pin_4_location_y[4]),
-        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
-        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
-        .O(pin_8_hit2_carry_i_8_n_0));
-  CARRY4 pin_8_hit2_carry_i_9
-       (.CI(1'b0),
-        .CO({NLW_pin_8_hit2_carry_i_9_CO_UNCONNECTED[3],pin_8_hit2_carry_i_9_n_1,NLW_pin_8_hit2_carry_i_9_CO_UNCONNECTED[1],pin_8_hit2_carry_i_9_n_3}),
-        .CYINIT(pin_4_location_y[6]),
-        .DI({1'b0,1'b0,1'b0,pin_4_location_y[4]}),
-        .O({NLW_pin_8_hit2_carry_i_9_O_UNCONNECTED[3:2],pin_8_hit2_carry_i_9_n_6,pin_8_hit2_carry_i_9_n_7}),
-        .S({1'b0,1'b1,pin_4_location_y[6],pin_8_hit2_carry_i_10_n_0}));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+    .INIT(16'hCF80)) 
     pin_8_hit_i_1
-       (.I0(pin_8_hit_i_2_n_0),
-        .I1(pin_2_hit3),
-        .I2(pin_2_hit334_in),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_8_hit_reg_n_0),
+       (.I0(score145_out),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_8_hit_reg_n_0),
         .O(pin_8_hit_i_1_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_10
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
         .O(pin_8_hit_i_10_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_11
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
         .O(pin_8_hit_i_11_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
         .O(pin_8_hit_i_12_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_13
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
         .O(pin_8_hit_i_13_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[31] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[30] ),
         .O(pin_8_hit_i_15_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
+    pin_8_hit_i_16
+       (.I0(\bowling_ball_location_y_reg_n_0_[29] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[28] ),
+        .O(pin_8_hit_i_16_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_8_hit_i_17
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[27] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[26] ),
         .O(pin_8_hit_i_17_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     pin_8_hit_i_18
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[25] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[24] ),
         .O(pin_8_hit_i_18_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_8_hit_i_19
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
-        .O(pin_8_hit_i_19_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
     pin_8_hit_i_2
-       (.I0(pin_9_hit2),
-        .I1(pin_9_hit1),
-        .O(pin_8_hit_i_2_n_0));
+       (.I0(score440_in),
+        .I1(score439_in),
+        .I2(score243_in),
+        .I3(score342_in),
+        .O(score145_out));
   LUT2 #(
     .INIT(4'hE)) 
     pin_8_hit_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[22] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[23] ),
         .O(pin_8_hit_i_20_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_8_hit_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[20] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[21] ),
         .O(pin_8_hit_i_21_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_8_hit_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[18] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[19] ),
         .O(pin_8_hit_i_22_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_8_hit_i_23
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[16] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[17] ),
         .O(pin_8_hit_i_23_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_24
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
         .O(pin_8_hit_i_24_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    pin_8_hit_i_25
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_8_hit_i_25_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_8_hit_i_26
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
         .O(pin_8_hit_i_26_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_27
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
         .O(pin_8_hit_i_27_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_8_hit_i_28
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(pin_8_hit_i_28_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
     pin_8_hit_i_29
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[23] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[22] ),
         .O(pin_8_hit_i_29_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
+    pin_8_hit_i_30
+       (.I0(\bowling_ball_location_y_reg_n_0_[21] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[20] ),
+        .O(pin_8_hit_i_30_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_8_hit_i_31
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[19] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[18] ),
         .O(pin_8_hit_i_31_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     pin_8_hit_i_32
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[17] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[16] ),
         .O(pin_8_hit_i_32_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    pin_8_hit_i_33
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
-        .O(pin_8_hit_i_33_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
     pin_8_hit_i_34
-       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[14] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[15] ),
         .O(pin_8_hit_i_34_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_8_hit_i_35
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[12] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[13] ),
         .O(pin_8_hit_i_35_n_0));
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'hE)) 
     pin_8_hit_i_36
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[10] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[11] ),
         .O(pin_8_hit_i_36_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT3 #(
+    .INIT(8'hF4)) 
     pin_8_hit_i_37
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
         .O(pin_8_hit_i_37_n_0));
   LUT2 #(
     .INIT(4'h1)) 
     pin_8_hit_i_38
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
         .O(pin_8_hit_i_38_n_0));
   LUT2 #(
     .INIT(4'h1)) 
+    pin_8_hit_i_39
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
+        .O(pin_8_hit_i_39_n_0));
+  LUT2 #(
+    .INIT(4'h1)) 
     pin_8_hit_i_40
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
         .O(pin_8_hit_i_40_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT3 #(
+    .INIT(8'h09)) 
     pin_8_hit_i_41
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
         .O(pin_8_hit_i_41_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_8_hit_i_42
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(pin_8_hit_i_42_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT3 #(
+    .INIT(8'h02)) 
     pin_8_hit_i_43
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[9] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[8] ),
         .O(pin_8_hit_i_43_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
+    .INIT(4'h1)) 
     pin_8_hit_i_44
-       (.I0(\bowling_ball_location_x_reg_n_0_[3] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[2] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[15] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[14] ),
         .O(pin_8_hit_i_44_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h1)) 
     pin_8_hit_i_45
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[13] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[12] ),
         .O(pin_8_hit_i_45_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
-    pin_8_hit_i_46
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_8_hit_i_46_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_8_hit_i_47
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(pin_8_hit_i_47_n_0));
-  LUT2 #(
     .INIT(4'h1)) 
+    pin_8_hit_i_46
+       (.I0(\bowling_ball_location_y_reg_n_0_[11] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[10] ),
+        .O(pin_8_hit_i_46_n_0));
+  LUT3 #(
+    .INIT(8'h09)) 
+    pin_8_hit_i_47
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[8] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[9] ),
+        .O(pin_8_hit_i_47_n_0));
+  LUT3 #(
+    .INIT(8'hD4)) 
     pin_8_hit_i_48
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[6] ),
         .O(pin_8_hit_i_48_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT4 #(
+    .INIT(16'h7510)) 
     pin_8_hit_i_49
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
+       (.I0(pin_4_location_y[6]),
+        .I1(pin_4_location_y[4]),
+        .I2(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[5] ),
         .O(pin_8_hit_i_49_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h2)) 
     pin_8_hit_i_50
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I1(pin_4_location_y[6]),
         .O(pin_8_hit_i_50_n_0));
-  LUT2 #(
-    .INIT(4'h7)) 
+  LUT3 #(
+    .INIT(8'hD4)) 
     pin_8_hit_i_51
-       (.I0(\bowling_ball_location_x_reg_n_0_[6] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[7] ),
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
         .O(pin_8_hit_i_51_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT3 #(
+    .INIT(8'h09)) 
     pin_8_hit_i_52
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[6] ),
         .O(pin_8_hit_i_52_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT4 #(
+    .INIT(16'h8421)) 
     pin_8_hit_i_53
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I3(pin_4_location_y[4]),
         .O(pin_8_hit_i_53_n_0));
+  LUT3 #(
+    .INIT(8'h84)) 
+    pin_8_hit_i_54
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[2] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[3] ),
+        .O(pin_8_hit_i_54_n_0));
+  LUT3 #(
+    .INIT(8'h21)) 
+    pin_8_hit_i_55
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
+        .O(pin_8_hit_i_55_n_0));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    pin_8_hit_i_56
+       (.I0(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[6] ),
+        .I2(\fb_pixel_reg[2]_i_320_n_1 ),
+        .I3(pin_4_location_y[4]),
+        .O(pin_8_hit_i_56_n_0));
+  LUT4 #(
+    .INIT(16'h7510)) 
+    pin_8_hit_i_57
+       (.I0(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[4] ),
+        .I2(\fb_pixel_reg[2]_i_320_n_7 ),
+        .I3(\fb_pixel_reg[2]_i_320_n_6 ),
+        .O(pin_8_hit_i_57_n_0));
   LUT2 #(
     .INIT(4'h1)) 
-    pin_8_hit_i_54
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_8_hit_i_54_n_0));
+    pin_8_hit_i_58
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
+        .O(pin_8_hit_i_58_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
-    pin_8_hit_i_55
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_8_hit_i_55_n_0));
+    .INIT(4'h2)) 
+    pin_8_hit_i_59
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[1] ),
+        .O(pin_8_hit_i_59_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     pin_8_hit_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[30] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[31] ),
         .O(pin_8_hit_i_6_n_0));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    pin_8_hit_i_60
+       (.I0(\bowling_ball_location_y_reg_n_0_[6] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[7] ),
+        .I2(\fb_pixel_reg[2]_i_320_n_1 ),
+        .I3(pin_4_location_y[4]),
+        .O(pin_8_hit_i_60_n_0));
+  LUT4 #(
+    .INIT(16'h8421)) 
+    pin_8_hit_i_61
+       (.I0(\fb_pixel_reg[2]_i_320_n_6 ),
+        .I1(\fb_pixel_reg[2]_i_320_n_7 ),
+        .I2(\bowling_ball_location_y_reg_n_0_[5] ),
+        .I3(\bowling_ball_location_y_reg_n_0_[4] ),
+        .O(pin_8_hit_i_61_n_0));
+  LUT3 #(
+    .INIT(8'h06)) 
+    pin_8_hit_i_62
+       (.I0(pin_4_location_y[6]),
+        .I1(\bowling_ball_location_y_reg_n_0_[3] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[2] ),
+        .O(pin_8_hit_i_62_n_0));
+  LUT3 #(
+    .INIT(8'h21)) 
+    pin_8_hit_i_63
+       (.I0(pin_4_location_y[4]),
+        .I1(\bowling_ball_location_y_reg_n_0_[0] ),
+        .I2(\bowling_ball_location_y_reg_n_0_[1] ),
+        .O(pin_8_hit_i_63_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_8_hit_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[28] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[29] ),
         .O(pin_8_hit_i_7_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_8_hit_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[26] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[27] ),
         .O(pin_8_hit_i_8_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     pin_8_hit_i_9
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
+       (.I0(\bowling_ball_location_y_reg_n_0_[24] ),
+        .I1(\bowling_ball_location_y_reg_n_0_[25] ),
         .O(pin_8_hit_i_9_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13390,360 +15529,85 @@ module bowling_game_controller_0_0_controller
         .R(1'b0));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_8_hit_reg_i_14
-       (.CI(pin_8_hit_reg_i_25_n_0),
+       (.CI(pin_8_hit_reg_i_28_n_0),
         .CO({pin_8_hit_reg_i_14_n_0,pin_8_hit_reg_i_14_n_1,pin_8_hit_reg_i_14_n_2,pin_8_hit_reg_i_14_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_pin_8_hit_reg_i_14_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit_i_26_n_0,pin_8_hit_i_27_n_0,pin_8_hit_i_28_n_0,pin_8_hit_i_29_n_0}));
+        .S({pin_8_hit_i_29_n_0,pin_8_hit_i_30_n_0,pin_8_hit_i_31_n_0,pin_8_hit_i_32_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit_reg_i_16
-       (.CI(pin_8_hit_reg_i_30_n_0),
-        .CO({pin_8_hit_reg_i_16_n_0,pin_8_hit_reg_i_16_n_1,pin_8_hit_reg_i_16_n_2,pin_8_hit_reg_i_16_n_3}),
+  CARRY4 pin_8_hit_reg_i_19
+       (.CI(pin_8_hit_reg_i_33_n_0),
+        .CO({pin_8_hit_reg_i_19_n_0,pin_8_hit_reg_i_19_n_1,pin_8_hit_reg_i_19_n_2,pin_8_hit_reg_i_19_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_8_hit_i_31_n_0,pin_8_hit_i_32_n_0,pin_8_hit_i_33_n_0,pin_8_hit_i_34_n_0}),
-        .O(NLW_pin_8_hit_reg_i_16_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit_i_35_n_0,pin_8_hit_i_36_n_0,pin_8_hit_i_37_n_0,pin_8_hit_i_38_n_0}));
+        .DI({pin_8_hit_i_34_n_0,pin_8_hit_i_35_n_0,pin_8_hit_i_36_n_0,pin_8_hit_i_37_n_0}),
+        .O(NLW_pin_8_hit_reg_i_19_O_UNCONNECTED[3:0]),
+        .S({pin_8_hit_i_38_n_0,pin_8_hit_i_39_n_0,pin_8_hit_i_40_n_0,pin_8_hit_i_41_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit_reg_i_25
-       (.CI(pin_8_hit_reg_i_39_n_0),
-        .CO({pin_8_hit_reg_i_25_n_0,pin_8_hit_reg_i_25_n_1,pin_8_hit_reg_i_25_n_2,pin_8_hit_reg_i_25_n_3}),
+  CARRY4 pin_8_hit_reg_i_28
+       (.CI(pin_8_hit_reg_i_42_n_0),
+        .CO({pin_8_hit_reg_i_28_n_0,pin_8_hit_reg_i_28_n_1,pin_8_hit_reg_i_28_n_2,pin_8_hit_reg_i_28_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_8_hit_reg_i_25_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit_i_40_n_0,pin_8_hit_i_41_n_0,pin_8_hit_i_42_n_0,pin_8_hit_i_43_n_0}));
+        .DI({1'b0,1'b0,1'b0,pin_8_hit_i_43_n_0}),
+        .O(NLW_pin_8_hit_reg_i_28_O_UNCONNECTED[3:0]),
+        .S({pin_8_hit_i_44_n_0,pin_8_hit_i_45_n_0,pin_8_hit_i_46_n_0,pin_8_hit_i_47_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_8_hit_reg_i_3
        (.CI(pin_8_hit_reg_i_5_n_0),
-        .CO({pin_2_hit3,pin_8_hit_reg_i_3_n_1,pin_8_hit_reg_i_3_n_2,pin_8_hit_reg_i_3_n_3}),
+        .CO({score243_in,pin_8_hit_reg_i_3_n_1,pin_8_hit_reg_i_3_n_2,pin_8_hit_reg_i_3_n_3}),
         .CYINIT(1'b0),
         .DI({pin_8_hit_i_6_n_0,pin_8_hit_i_7_n_0,pin_8_hit_i_8_n_0,pin_8_hit_i_9_n_0}),
         .O(NLW_pin_8_hit_reg_i_3_O_UNCONNECTED[3:0]),
         .S({pin_8_hit_i_10_n_0,pin_8_hit_i_11_n_0,pin_8_hit_i_12_n_0,pin_8_hit_i_13_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit_reg_i_30
+  CARRY4 pin_8_hit_reg_i_33
        (.CI(1'b0),
-        .CO({pin_8_hit_reg_i_30_n_0,pin_8_hit_reg_i_30_n_1,pin_8_hit_reg_i_30_n_2,pin_8_hit_reg_i_30_n_3}),
+        .CO({pin_8_hit_reg_i_33_n_0,pin_8_hit_reg_i_33_n_1,pin_8_hit_reg_i_33_n_2,pin_8_hit_reg_i_33_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[5] ,pin_8_hit_i_44_n_0,pin_8_hit_i_45_n_0}),
-        .O(NLW_pin_8_hit_reg_i_30_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit_i_46_n_0,pin_8_hit_i_47_n_0,pin_8_hit_i_48_n_0,pin_8_hit_i_49_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_8_hit_reg_i_39
-       (.CI(1'b0),
-        .CO({pin_8_hit_reg_i_39_n_0,pin_8_hit_reg_i_39_n_1,pin_8_hit_reg_i_39_n_2,pin_8_hit_reg_i_39_n_3}),
-        .CYINIT(pin_8_hit_i_50_n_0),
-        .DI({1'b0,1'b0,1'b0,pin_8_hit_i_51_n_0}),
-        .O(NLW_pin_8_hit_reg_i_39_O_UNCONNECTED[3:0]),
+        .DI({pin_8_hit_i_48_n_0,pin_8_hit_i_49_n_0,pin_8_hit_i_50_n_0,pin_8_hit_i_51_n_0}),
+        .O(NLW_pin_8_hit_reg_i_33_O_UNCONNECTED[3:0]),
         .S({pin_8_hit_i_52_n_0,pin_8_hit_i_53_n_0,pin_8_hit_i_54_n_0,pin_8_hit_i_55_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_8_hit_reg_i_4
        (.CI(pin_8_hit_reg_i_14_n_0),
-        .CO({NLW_pin_8_hit_reg_i_4_CO_UNCONNECTED[3:1],pin_2_hit334_in}),
+        .CO({score342_in,pin_8_hit_reg_i_4_n_1,pin_8_hit_reg_i_4_n_2,pin_8_hit_reg_i_4_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,\bowling_ball_location_x_reg_n_0_[31] }),
+        .DI({\bowling_ball_location_y_reg_n_0_[31] ,1'b0,1'b0,1'b0}),
         .O(NLW_pin_8_hit_reg_i_4_O_UNCONNECTED[3:0]),
-        .S({1'b0,1'b0,1'b0,pin_8_hit_i_15_n_0}));
+        .S({pin_8_hit_i_15_n_0,pin_8_hit_i_16_n_0,pin_8_hit_i_17_n_0,pin_8_hit_i_18_n_0}));
+  (* COMPARATOR_THRESHOLD = "11" *) 
+  CARRY4 pin_8_hit_reg_i_42
+       (.CI(1'b0),
+        .CO({pin_8_hit_reg_i_42_n_0,pin_8_hit_reg_i_42_n_1,pin_8_hit_reg_i_42_n_2,pin_8_hit_reg_i_42_n_3}),
+        .CYINIT(1'b0),
+        .DI({pin_8_hit_i_56_n_0,pin_8_hit_i_57_n_0,pin_8_hit_i_58_n_0,pin_8_hit_i_59_n_0}),
+        .O(NLW_pin_8_hit_reg_i_42_O_UNCONNECTED[3:0]),
+        .S({pin_8_hit_i_60_n_0,pin_8_hit_i_61_n_0,pin_8_hit_i_62_n_0,pin_8_hit_i_63_n_0}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 pin_8_hit_reg_i_5
-       (.CI(pin_8_hit_reg_i_16_n_0),
+       (.CI(pin_8_hit_reg_i_19_n_0),
         .CO({pin_8_hit_reg_i_5_n_0,pin_8_hit_reg_i_5_n_1,pin_8_hit_reg_i_5_n_2,pin_8_hit_reg_i_5_n_3}),
         .CYINIT(1'b0),
-        .DI({pin_8_hit_i_17_n_0,pin_8_hit_i_18_n_0,pin_8_hit_i_19_n_0,pin_8_hit_i_20_n_0}),
+        .DI({pin_8_hit_i_20_n_0,pin_8_hit_i_21_n_0,pin_8_hit_i_22_n_0,pin_8_hit_i_23_n_0}),
         .O(NLW_pin_8_hit_reg_i_5_O_UNCONNECTED[3:0]),
-        .S({pin_8_hit_i_21_n_0,pin_8_hit_i_22_n_0,pin_8_hit_i_23_n_0,pin_8_hit_i_24_n_0}));
-  LUT6 #(
-    .INIT(64'hFF00FFFF80000000)) 
+        .S({pin_8_hit_i_24_n_0,pin_8_hit_i_25_n_0,pin_8_hit_i_26_n_0,pin_8_hit_i_27_n_0}));
+  LUT4 #(
+    .INIT(16'hCF40)) 
     pin_9_hit_i_1
-       (.I0(pin_8_hit_i_2_n_0),
-        .I1(pin_3_hit3),
-        .I2(pin_3_hit332_in),
-        .I3(pin_2_hit_i_3_n_0),
-        .I4(\FSM_onehot_game_time_reg_n_0_[2] ),
-        .I5(pin_9_hit_reg_n_0),
+       (.I0(pin_9_hit_i_2_n_0),
+        .I1(pin_1_hit_i_5_n_0),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_9_hit_reg_n_0),
         .O(pin_9_hit_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_10
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
-        .O(pin_9_hit_i_10_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_11
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
-        .O(pin_9_hit_i_11_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_12
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(pin_9_hit_i_12_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_14
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_9_hit_i_14_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_15
-       (.I0(\bowling_ball_location_x_reg_n_0_[29] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[28] ),
-        .O(pin_9_hit_i_15_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_16
-       (.I0(\bowling_ball_location_x_reg_n_0_[27] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[26] ),
-        .O(pin_9_hit_i_16_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_18
-       (.I0(\bowling_ball_location_x_reg_n_0_[22] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[23] ),
-        .O(pin_9_hit_i_18_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_19
-       (.I0(\bowling_ball_location_x_reg_n_0_[20] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[21] ),
-        .O(pin_9_hit_i_19_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_20
-       (.I0(\bowling_ball_location_x_reg_n_0_[18] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[19] ),
-        .O(pin_9_hit_i_20_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_21
-       (.I0(\bowling_ball_location_x_reg_n_0_[16] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[17] ),
-        .O(pin_9_hit_i_21_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_22
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(pin_9_hit_i_22_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_23
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
-        .O(pin_9_hit_i_23_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_24
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
-        .O(pin_9_hit_i_24_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_25
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(pin_9_hit_i_25_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_27
-       (.I0(\bowling_ball_location_x_reg_n_0_[25] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[24] ),
-        .O(pin_9_hit_i_27_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_28
-       (.I0(\bowling_ball_location_x_reg_n_0_[23] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[22] ),
-        .O(pin_9_hit_i_28_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_29
-       (.I0(\bowling_ball_location_x_reg_n_0_[21] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[20] ),
-        .O(pin_9_hit_i_29_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_30
-       (.I0(\bowling_ball_location_x_reg_n_0_[19] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[18] ),
-        .O(pin_9_hit_i_30_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_32
-       (.I0(\bowling_ball_location_x_reg_n_0_[14] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[15] ),
-        .O(pin_9_hit_i_32_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_33
-       (.I0(\bowling_ball_location_x_reg_n_0_[12] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[13] ),
-        .O(pin_9_hit_i_33_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_34
-       (.I0(\bowling_ball_location_x_reg_n_0_[10] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[11] ),
-        .O(pin_9_hit_i_34_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_35
-       (.I0(\bowling_ball_location_x_reg_n_0_[9] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[8] ),
-        .O(pin_9_hit_i_35_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_36
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(pin_9_hit_i_36_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_37
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
-        .O(pin_9_hit_i_37_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_38
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
-        .O(pin_9_hit_i_38_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_39
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_9_hit_i_39_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_41
-       (.I0(\bowling_ball_location_x_reg_n_0_[17] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[16] ),
-        .O(pin_9_hit_i_41_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_42
-       (.I0(\bowling_ball_location_x_reg_n_0_[15] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[14] ),
-        .O(pin_9_hit_i_42_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_43
-       (.I0(\bowling_ball_location_x_reg_n_0_[13] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[12] ),
-        .O(pin_9_hit_i_43_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_44
-       (.I0(\bowling_ball_location_x_reg_n_0_[11] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[10] ),
-        .O(pin_9_hit_i_44_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_9_hit_i_45
-       (.I0(\bowling_ball_location_x_reg_n_0_[4] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[5] ),
-        .O(pin_9_hit_i_45_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_9_hit_i_46
-       (.I0(\bowling_ball_location_x_reg_n_0_[0] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[1] ),
-        .O(pin_9_hit_i_46_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    pin_9_hit_i_47
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_9_hit_i_47_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_9_hit_i_48
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(pin_9_hit_i_48_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_9_hit_i_49
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_9_hit_i_49_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_9_hit_i_5
-       (.I0(\bowling_ball_location_x_reg_n_0_[30] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[31] ),
-        .O(pin_9_hit_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_9_hit_i_50
-       (.I0(\bowling_ball_location_x_reg_n_0_[1] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[0] ),
-        .O(pin_9_hit_i_50_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_51
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_9_hit_i_51_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_52
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_9_hit_i_52_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_9_hit_i_53
-       (.I0(\bowling_ball_location_x_reg_n_0_[8] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[9] ),
-        .O(pin_9_hit_i_53_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_54
-       (.I0(\bowling_ball_location_x_reg_n_0_[7] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[6] ),
-        .O(pin_9_hit_i_54_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_55
-       (.I0(\bowling_ball_location_x_reg_n_0_[5] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[4] ),
-        .O(pin_9_hit_i_55_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    pin_9_hit_i_56
-       (.I0(\bowling_ball_location_x_reg_n_0_[2] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[3] ),
-        .O(pin_9_hit_i_56_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_6
-       (.I0(\bowling_ball_location_x_reg_n_0_[28] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[29] ),
-        .O(pin_9_hit_i_6_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_7
-       (.I0(\bowling_ball_location_x_reg_n_0_[26] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[27] ),
-        .O(pin_9_hit_i_7_n_0));
-  LUT2 #(
-    .INIT(4'hE)) 
-    pin_9_hit_i_8
-       (.I0(\bowling_ball_location_x_reg_n_0_[24] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[25] ),
-        .O(pin_9_hit_i_8_n_0));
-  LUT2 #(
-    .INIT(4'h1)) 
-    pin_9_hit_i_9
-       (.I0(\bowling_ball_location_x_reg_n_0_[31] ),
-        .I1(\bowling_ball_location_x_reg_n_0_[30] ),
-        .O(pin_9_hit_i_9_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT4 #(
+    .INIT(16'h7FFF)) 
+    pin_9_hit_i_2
+       (.I0(score243_in),
+        .I1(score342_in),
+        .I2(score447_in),
+        .I3(score446_in),
+        .O(pin_9_hit_i_2_n_0));
   FDRE #(
     .INIT(1'b0)) 
     pin_9_hit_reg
@@ -13752,70 +15616,6 @@ module bowling_game_controller_0_0_controller
         .D(pin_9_hit_i_1_n_0),
         .Q(pin_9_hit_reg_n_0),
         .R(1'b0));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_13
-       (.CI(pin_9_hit_reg_i_26_n_0),
-        .CO({pin_9_hit_reg_i_13_n_0,pin_9_hit_reg_i_13_n_1,pin_9_hit_reg_i_13_n_2,pin_9_hit_reg_i_13_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_9_hit_reg_i_13_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_27_n_0,pin_9_hit_i_28_n_0,pin_9_hit_i_29_n_0,pin_9_hit_i_30_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_17
-       (.CI(pin_9_hit_reg_i_31_n_0),
-        .CO({pin_9_hit_reg_i_17_n_0,pin_9_hit_reg_i_17_n_1,pin_9_hit_reg_i_17_n_2,pin_9_hit_reg_i_17_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_9_hit_i_32_n_0,pin_9_hit_i_33_n_0,pin_9_hit_i_34_n_0,pin_9_hit_i_35_n_0}),
-        .O(NLW_pin_9_hit_reg_i_17_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_36_n_0,pin_9_hit_i_37_n_0,pin_9_hit_i_38_n_0,pin_9_hit_i_39_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_2
-       (.CI(pin_9_hit_reg_i_4_n_0),
-        .CO({pin_3_hit3,pin_9_hit_reg_i_2_n_1,pin_9_hit_reg_i_2_n_2,pin_9_hit_reg_i_2_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_9_hit_i_5_n_0,pin_9_hit_i_6_n_0,pin_9_hit_i_7_n_0,pin_9_hit_i_8_n_0}),
-        .O(NLW_pin_9_hit_reg_i_2_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_9_n_0,pin_9_hit_i_10_n_0,pin_9_hit_i_11_n_0,pin_9_hit_i_12_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_26
-       (.CI(pin_9_hit_reg_i_40_n_0),
-        .CO({pin_9_hit_reg_i_26_n_0,pin_9_hit_reg_i_26_n_1,pin_9_hit_reg_i_26_n_2,pin_9_hit_reg_i_26_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(NLW_pin_9_hit_reg_i_26_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_41_n_0,pin_9_hit_i_42_n_0,pin_9_hit_i_43_n_0,pin_9_hit_i_44_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_3
-       (.CI(pin_9_hit_reg_i_13_n_0),
-        .CO({NLW_pin_9_hit_reg_i_3_CO_UNCONNECTED[3],pin_3_hit332_in,pin_9_hit_reg_i_3_n_2,pin_9_hit_reg_i_3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,\bowling_ball_location_x_reg_n_0_[31] ,1'b0,1'b0}),
-        .O(NLW_pin_9_hit_reg_i_3_O_UNCONNECTED[3:0]),
-        .S({1'b0,pin_9_hit_i_14_n_0,pin_9_hit_i_15_n_0,pin_9_hit_i_16_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_31
-       (.CI(1'b0),
-        .CO({pin_9_hit_reg_i_31_n_0,pin_9_hit_reg_i_31_n_1,pin_9_hit_reg_i_31_n_2,pin_9_hit_reg_i_31_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,pin_9_hit_i_45_n_0,\bowling_ball_location_x_reg_n_0_[3] ,pin_9_hit_i_46_n_0}),
-        .O(NLW_pin_9_hit_reg_i_31_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_47_n_0,pin_9_hit_i_48_n_0,pin_9_hit_i_49_n_0,pin_9_hit_i_50_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_4
-       (.CI(pin_9_hit_reg_i_17_n_0),
-        .CO({pin_9_hit_reg_i_4_n_0,pin_9_hit_reg_i_4_n_1,pin_9_hit_reg_i_4_n_2,pin_9_hit_reg_i_4_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_9_hit_i_18_n_0,pin_9_hit_i_19_n_0,pin_9_hit_i_20_n_0,pin_9_hit_i_21_n_0}),
-        .O(NLW_pin_9_hit_reg_i_4_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_22_n_0,pin_9_hit_i_23_n_0,pin_9_hit_i_24_n_0,pin_9_hit_i_25_n_0}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
-  CARRY4 pin_9_hit_reg_i_40
-       (.CI(1'b0),
-        .CO({pin_9_hit_reg_i_40_n_0,pin_9_hit_reg_i_40_n_1,pin_9_hit_reg_i_40_n_2,pin_9_hit_reg_i_40_n_3}),
-        .CYINIT(1'b0),
-        .DI({pin_9_hit_i_51_n_0,1'b0,1'b0,pin_9_hit_i_52_n_0}),
-        .O(NLW_pin_9_hit_reg_i_40_O_UNCONNECTED[3:0]),
-        .S({pin_9_hit_i_53_n_0,pin_9_hit_i_54_n_0,pin_9_hit_i_55_n_0,pin_9_hit_i_56_n_0}));
   LUT6 #(
     .INIT(64'h0000000000007FFF)) 
     \pixel_x[0]_i_1 
@@ -13823,57 +15623,57 @@ module bowling_game_controller_0_0_controller
         .I1(\pixel_x_reg_n_0_[5] ),
         .I2(\pixel_x_reg_n_0_[7] ),
         .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(p_0_in_0),
+        .I4(p_0_in),
         .I5(\pixel_x_reg_n_0_[0] ),
         .O(C[0]));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT3 #(
-    .INIT(8'h14)) 
+    .INIT(8'h06)) 
     \pixel_x[1]_i_1 
-       (.I0(\pixel_x[6]_i_3_n_0 ),
-        .I1(\pixel_x_reg_n_0_[0] ),
-        .I2(\pixel_x_reg_n_0_[1] ),
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[1] ),
+        .I2(\pixel_x[7]_i_4_n_0 ),
         .O(C[1]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT4 #(
     .INIT(16'h1540)) 
     \pixel_x[2]_i_1 
-       (.I0(\pixel_x[6]_i_3_n_0 ),
+       (.I0(\pixel_x[7]_i_4_n_0 ),
         .I1(\pixel_x_reg_n_0_[1] ),
         .I2(\pixel_x_reg_n_0_[0] ),
         .I3(\pixel_x_reg_n_0_[2] ),
         .O(C[2]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT5 #(
     .INIT(32'h15554000)) 
     \pixel_x[3]_i_1 
-       (.I0(\pixel_x[6]_i_3_n_0 ),
+       (.I0(\pixel_x[7]_i_4_n_0 ),
         .I1(\pixel_x_reg_n_0_[0] ),
         .I2(\pixel_x_reg_n_0_[2] ),
         .I3(\pixel_x_reg_n_0_[1] ),
         .I4(\pixel_x_reg_n_0_[3] ),
         .O(C[3]));
   LUT6 #(
-    .INIT(64'h1555555540000000)) 
+    .INIT(64'h007F008000FF0000)) 
     \pixel_x[4]_i_1 
-       (.I0(\pixel_x[6]_i_3_n_0 ),
-        .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\pixel_x_reg_n_0_[0] ),
-        .I5(\pixel_x_reg_n_0_[4] ),
+       (.I0(\pixel_x_reg_n_0_[1] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
+        .I2(\pixel_x_reg_n_0_[0] ),
+        .I3(\pixel_x[7]_i_4_n_0 ),
+        .I4(\pixel_x_reg_n_0_[4] ),
+        .I5(\pixel_x_reg_n_0_[3] ),
         .O(C[4]));
   LUT6 #(
     .INIT(64'h5515555500400000)) 
     \pixel_x[5]_i_1 
-       (.I0(\pixel_x[6]_i_3_n_0 ),
+       (.I0(\pixel_x[7]_i_4_n_0 ),
         .I1(\pixel_x_reg_n_0_[4] ),
         .I2(\pixel_x_reg_n_0_[3] ),
         .I3(\pixel_x[5]_i_2_n_0 ),
         .I4(\pixel_x_reg_n_0_[0] ),
         .I5(\pixel_x_reg_n_0_[5] ),
         .O(C[5]));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \pixel_x[5]_i_2 
@@ -13885,58 +15685,65 @@ module bowling_game_controller_0_0_controller
     \pixel_x[6]_i_1 
        (.I0(\pixel_x_reg_n_0_[4] ),
         .I1(\pixel_x_reg_n_0_[3] ),
-        .I2(\pixel_x[6]_i_2_n_0 ),
+        .I2(\pixel_x[7]_i_2_n_0 ),
         .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(\pixel_x[6]_i_3_n_0 ),
+        .I4(\pixel_x[7]_i_4_n_0 ),
         .I5(\pixel_x_reg_n_0_[6] ),
         .O(C[6]));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  LUT6 #(
+    .INIT(64'h0000FDFF00000200)) 
+    \pixel_x[7]_i_1 
+       (.I0(\pixel_x_reg_n_0_[5] ),
+        .I1(\pixel_x[7]_i_2_n_0 ),
+        .I2(\pixel_x[7]_i_3_n_0 ),
+        .I3(\pixel_x_reg_n_0_[6] ),
+        .I4(\pixel_x[7]_i_4_n_0 ),
+        .I5(\pixel_x_reg_n_0_[7] ),
+        .O(C[7]));
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT3 #(
     .INIT(8'h7F)) 
-    \pixel_x[6]_i_2 
+    \pixel_x[7]_i_2 
        (.I0(\pixel_x_reg_n_0_[1] ),
         .I1(\pixel_x_reg_n_0_[2] ),
         .I2(\pixel_x_reg_n_0_[0] ),
-        .O(\pixel_x[6]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+        .O(\pixel_x[7]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \pixel_x[7]_i_3 
+       (.I0(\pixel_x_reg_n_0_[4] ),
+        .I1(\pixel_x_reg_n_0_[3] ),
+        .O(\pixel_x[7]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT5 #(
     .INIT(32'hEAAAAAAA)) 
-    \pixel_x[6]_i_3 
-       (.I0(p_0_in_0),
+    \pixel_x[7]_i_4 
+       (.I0(p_0_in),
         .I1(\pixel_x_reg_n_0_[6] ),
         .I2(\pixel_x_reg_n_0_[7] ),
         .I3(\pixel_x_reg_n_0_[5] ),
         .I4(\pixel_x_reg_n_0_[8] ),
-        .O(\pixel_x[6]_i_3_n_0 ));
+        .O(\pixel_x[7]_i_4_n_0 ));
   LUT6 #(
-    .INIT(64'h00003BBB00004444)) 
-    \pixel_x[7]_i_1 
-       (.I0(\pixel_x[8]_i_2_n_0 ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .I2(\pixel_x_reg_n_0_[8] ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(p_0_in_0),
-        .I5(\pixel_x_reg_n_0_[7] ),
-        .O(C[7]));
-  LUT6 #(
-    .INIT(64'h00003FBF00004040)) 
+    .INIT(64'h00007F7F00008000)) 
     \pixel_x[8]_i_1 
-       (.I0(\pixel_x[8]_i_2_n_0 ),
-        .I1(\pixel_x_reg_n_0_[6] ),
-        .I2(\pixel_x_reg_n_0_[7] ),
-        .I3(\pixel_x_reg_n_0_[5] ),
-        .I4(p_0_in_0),
+       (.I0(\pixel_x_reg_n_0_[5] ),
+        .I1(\pixel_x_reg_n_0_[7] ),
+        .I2(\pixel_x_reg_n_0_[6] ),
+        .I3(\pixel_x[8]_i_2_n_0 ),
+        .I4(p_0_in),
         .I5(\pixel_x_reg_n_0_[8] ),
         .O(C[8]));
-  LUT6 #(
-    .INIT(64'h7FFFFFFFFFFFFFFF)) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  LUT5 #(
+    .INIT(32'h80000000)) 
     \pixel_x[8]_i_2 
-       (.I0(\pixel_x_reg_n_0_[4] ),
-        .I1(\pixel_x_reg_n_0_[3] ),
+       (.I0(\pixel_x_reg_n_0_[0] ),
+        .I1(\pixel_x_reg_n_0_[2] ),
         .I2(\pixel_x_reg_n_0_[1] ),
-        .I3(\pixel_x_reg_n_0_[2] ),
-        .I4(\pixel_x_reg_n_0_[0] ),
-        .I5(\pixel_x_reg_n_0_[5] ),
+        .I3(\pixel_x_reg_n_0_[3] ),
+        .I4(\pixel_x_reg_n_0_[4] ),
         .O(\pixel_x[8]_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -14010,91 +15817,95 @@ module bowling_game_controller_0_0_controller
         .D(C[8]),
         .Q(\pixel_x_reg_n_0_[8] ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT5 #(
     .INIT(32'h00007FFF)) 
     \pixel_y[0]_i_1 
-       (.I0(pixel_y_reg[7]),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[8]),
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
+        .I2(pixel_y_reg__0[5]),
+        .I3(pixel_y_reg__0[8]),
         .I4(pixel_y_reg[0]),
-        .O(p_0_in[0]));
+        .O(p_0_in__0[0]));
   LUT6 #(
     .INIT(64'h0666666666666666)) 
     \pixel_y[1]_i_1 
-       (.I0(pixel_y_reg[0]),
-        .I1(pixel_y_reg[1]),
-        .I2(pixel_y_reg[7]),
-        .I3(pixel_y_reg[6]),
-        .I4(pixel_y_reg[5]),
-        .I5(pixel_y_reg[8]),
-        .O(p_0_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .I2(pixel_y_reg__0[7]),
+        .I3(pixel_y_reg__0[6]),
+        .I4(pixel_y_reg__0[5]),
+        .I5(pixel_y_reg__0[8]),
+        .O(p_0_in__0[1]));
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT4 #(
     .INIT(16'h1540)) 
     \pixel_y[2]_i_1 
-       (.I0(p_0_in_0),
+       (.I0(p_0_in),
         .I1(pixel_y_reg[0]),
         .I2(pixel_y_reg[1]),
         .I3(pixel_y_reg[2]),
-        .O(p_0_in[2]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+        .O(p_0_in__0[2]));
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT5 #(
     .INIT(32'h07080F00)) 
     \pixel_y[3]_i_1 
        (.I0(pixel_y_reg[1]),
         .I1(pixel_y_reg[0]),
-        .I2(p_0_in_0),
+        .I2(p_0_in),
         .I3(pixel_y_reg[3]),
         .I4(pixel_y_reg[2]),
-        .O(p_0_in[3]));
+        .O(p_0_in__0[3]));
   LUT6 #(
-    .INIT(64'h00007FFF00008000)) 
+    .INIT(64'h1444444444444444)) 
     \pixel_y[4]_i_1 
-       (.I0(pixel_y_reg[2]),
-        .I1(pixel_y_reg[3]),
-        .I2(pixel_y_reg[0]),
-        .I3(pixel_y_reg[1]),
-        .I4(p_0_in_0),
-        .I5(pixel_y_reg[4]),
-        .O(p_0_in[4]));
+       (.I0(p_0_in),
+        .I1(pixel_y_reg[4]),
+        .I2(pixel_y_reg[3]),
+        .I3(pixel_y_reg[2]),
+        .I4(pixel_y_reg[0]),
+        .I5(pixel_y_reg[1]),
+        .O(p_0_in__0[4]));
   LUT6 #(
     .INIT(64'h00BF004000FF0000)) 
     \pixel_y[5]_i_1 
-       (.I0(\pixel_y[5]_i_2_n_0 ),
-        .I1(pixel_y_reg[0]),
-        .I2(pixel_y_reg[1]),
-        .I3(p_0_in_0),
-        .I4(pixel_y_reg[5]),
+       (.I0(\pixel_y[8]_i_4_n_0 ),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[0]),
+        .I3(p_0_in),
+        .I4(pixel_y_reg__0[5]),
         .I5(pixel_y_reg[4]),
-        .O(p_0_in[5]));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
-    \pixel_y[5]_i_2 
-       (.I0(pixel_y_reg[3]),
-        .I1(pixel_y_reg[2]),
-        .O(\pixel_y[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT5 #(
-    .INIT(32'h2AAA5555)) 
+        .O(p_0_in__0[5]));
+  LUT6 #(
+    .INIT(64'h0000EFFF00001000)) 
     \pixel_y[6]_i_1 
-       (.I0(\pixel_y[8]_i_3_n_0 ),
-        .I1(pixel_y_reg[7]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[8]),
-        .I4(pixel_y_reg[6]),
-        .O(p_0_in[6]));
+       (.I0(\pixel_y[8]_i_5_n_0 ),
+        .I1(\pixel_y[8]_i_4_n_0 ),
+        .I2(pixel_y_reg__0[5]),
+        .I3(pixel_y_reg[4]),
+        .I4(p_0_in),
+        .I5(pixel_y_reg__0[6]),
+        .O(p_0_in__0[6]));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT5 #(
-    .INIT(32'h2AFF5500)) 
+    .INIT(32'h15FFAA00)) 
     \pixel_y[7]_i_1 
-       (.I0(\pixel_y[8]_i_3_n_0 ),
-        .I1(pixel_y_reg[8]),
-        .I2(pixel_y_reg[5]),
-        .I3(pixel_y_reg[6]),
-        .I4(pixel_y_reg[7]),
-        .O(p_0_in[7]));
+       (.I0(\pixel_y[7]_i_2_n_0 ),
+        .I1(pixel_y_reg__0[8]),
+        .I2(pixel_y_reg__0[5]),
+        .I3(pixel_y_reg__0[6]),
+        .I4(pixel_y_reg__0[7]),
+        .O(p_0_in__0[7]));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \pixel_y[7]_i_2 
+       (.I0(pixel_y_reg[0]),
+        .I1(pixel_y_reg[1]),
+        .I2(pixel_y_reg[2]),
+        .I3(pixel_y_reg[3]),
+        .I4(pixel_y_reg__0[5]),
+        .I5(pixel_y_reg[4]),
+        .O(\pixel_y[7]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'hFFFF800000000000)) 
     \pixel_y[8]_i_1 
@@ -14102,35 +15913,46 @@ module bowling_game_controller_0_0_controller
         .I1(\pixel_x_reg_n_0_[5] ),
         .I2(\pixel_x_reg_n_0_[7] ),
         .I3(\pixel_x_reg_n_0_[6] ),
-        .I4(p_0_in_0),
+        .I4(p_0_in),
         .I5(pixel_x),
         .O(pixel_y));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT5 #(
-    .INIT(32'h3FBF4040)) 
+  LUT6 #(
+    .INIT(64'hAFAFAFAF00000040)) 
     \pixel_y[8]_i_2 
        (.I0(\pixel_y[8]_i_3_n_0 ),
-        .I1(pixel_y_reg[6]),
-        .I2(pixel_y_reg[7]),
-        .I3(pixel_y_reg[5]),
-        .I4(pixel_y_reg[8]),
-        .O(p_0_in[8]));
-  LUT6 #(
-    .INIT(64'h7FFFFFFFFFFFFFFF)) 
-    \pixel_y[8]_i_3 
-       (.I0(pixel_y_reg[5]),
         .I1(pixel_y_reg[4]),
-        .I2(pixel_y_reg[1]),
-        .I3(pixel_y_reg[0]),
-        .I4(pixel_y_reg[3]),
-        .I5(pixel_y_reg[2]),
+        .I2(pixel_y_reg__0[5]),
+        .I3(\pixel_y[8]_i_4_n_0 ),
+        .I4(\pixel_y[8]_i_5_n_0 ),
+        .I5(pixel_y_reg__0[8]),
+        .O(p_0_in__0[8]));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \pixel_y[8]_i_3 
+       (.I0(pixel_y_reg__0[7]),
+        .I1(pixel_y_reg__0[6]),
         .O(\pixel_y[8]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \pixel_y[8]_i_4 
+       (.I0(pixel_y_reg[3]),
+        .I1(pixel_y_reg[2]),
+        .O(\pixel_y[8]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \pixel_y[8]_i_5 
+       (.I0(pixel_y_reg[1]),
+        .I1(pixel_y_reg[0]),
+        .O(\pixel_y[8]_i_5_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[0] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[0]),
+        .D(p_0_in__0[0]),
         .Q(pixel_y_reg[0]),
         .R(1'b0));
   FDRE #(
@@ -14138,7 +15960,7 @@ module bowling_game_controller_0_0_controller
     \pixel_y_reg[1] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[1]),
+        .D(p_0_in__0[1]),
         .Q(pixel_y_reg[1]),
         .R(1'b0));
   FDRE #(
@@ -14146,7 +15968,7 @@ module bowling_game_controller_0_0_controller
     \pixel_y_reg[2] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[2]),
+        .D(p_0_in__0[2]),
         .Q(pixel_y_reg[2]),
         .R(1'b0));
   FDRE #(
@@ -14154,7 +15976,7 @@ module bowling_game_controller_0_0_controller
     \pixel_y_reg[3] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[3]),
+        .D(p_0_in__0[3]),
         .Q(pixel_y_reg[3]),
         .R(1'b0));
   FDRE #(
@@ -14162,7 +15984,7 @@ module bowling_game_controller_0_0_controller
     \pixel_y_reg[4] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[4]),
+        .D(p_0_in__0[4]),
         .Q(pixel_y_reg[4]),
         .R(1'b0));
   FDRE #(
@@ -14170,32 +15992,32 @@ module bowling_game_controller_0_0_controller
     \pixel_y_reg[5] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[5]),
-        .Q(pixel_y_reg[5]),
+        .D(p_0_in__0[5]),
+        .Q(pixel_y_reg__0[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[6] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[6]),
-        .Q(pixel_y_reg[6]),
+        .D(p_0_in__0[6]),
+        .Q(pixel_y_reg__0[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[7] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[7]),
-        .Q(pixel_y_reg[7]),
+        .D(p_0_in__0[7]),
+        .Q(pixel_y_reg__0[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \pixel_y_reg[8] 
        (.C(clk),
         .CE(pixel_y),
-        .D(p_0_in[8]),
-        .Q(pixel_y_reg[8]),
+        .D(p_0_in__0[8]),
+        .Q(pixel_y_reg__0[8]),
         .R(1'b0));
   LUT4 #(
     .INIT(16'h5F40)) 
@@ -14213,6 +16035,890 @@ module bowling_game_controller_0_0_controller
         .D(railing_up_i_1_n_0),
         .Q(railing_up_reg_n_0),
         .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair109" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[0]_i_1 
+       (.I0(in17[0]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair104" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[10]_i_1 
+       (.I0(in17[10]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[10]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair104" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[11]_i_1 
+       (.I0(in17[11]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[11]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair103" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[12]_i_1 
+       (.I0(in17[12]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[12]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair103" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[13]_i_1 
+       (.I0(in17[13]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[13]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair102" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[14]_i_1 
+       (.I0(in17[14]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[14]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair102" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[15]_i_1 
+       (.I0(in17[15]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[15]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair101" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[16]_i_1 
+       (.I0(in17[16]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[16]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair101" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[17]_i_1 
+       (.I0(in17[17]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[17]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair100" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[18]_i_1 
+       (.I0(in17[18]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[18]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair100" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[19]_i_1 
+       (.I0(in17[19]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[19]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair109" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[1]_i_1 
+       (.I0(in17[1]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair99" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[20]_i_1 
+       (.I0(in17[20]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[20]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair99" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[21]_i_1 
+       (.I0(in17[21]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[21]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair98" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[22]_i_1 
+       (.I0(in17[22]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[22]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair98" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[23]_i_1 
+       (.I0(in17[23]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[23]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair97" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[24]_i_1 
+       (.I0(in17[24]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[24]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair97" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[25]_i_1 
+       (.I0(in17[25]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[25]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair96" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[26]_i_1 
+       (.I0(in17[26]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[26]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair96" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[27]_i_1 
+       (.I0(in17[27]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[27]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair95" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[28]_i_1 
+       (.I0(in17[28]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[28]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair95" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[29]_i_1 
+       (.I0(in17[29]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[29]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair108" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[2]_i_1 
+       (.I0(in17[2]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[30]_i_1 
+       (.I0(in17[30]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[30]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'hF4A0F400)) 
+    \score[31]_i_1 
+       (.I0(game_turn),
+        .I1(\FSM_onehot_game_time[2]_i_3_n_0 ),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .I3(pin_1_location_y),
+        .I4(\FSM_onehot_game_time_reg_n_0_[1] ),
+        .O(\score[31]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    \score[31]_i_2 
+       (.I0(game_turn),
+        .I1(\FSM_onehot_game_time[2]_i_3_n_0 ),
+        .I2(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[31]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[31]_i_3 
+       (.I0(in17[31]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[31]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair108" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[3]_i_1 
+       (.I0(in17[3]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[3]_i_1_n_0 ));
+  LUT4 #(
+    .INIT(16'hB44B)) 
+    \score[3]_i_10 
+       (.I0(pin_2_hit_reg_n_0),
+        .I1(pin_2_hit_i_2_n_0),
+        .I2(\score_reg[3]_i_8_n_7 ),
+        .I3(\score[3]_i_18_n_0 ),
+        .O(\score[3]_i_10_n_0 ));
+  LUT6 #(
+    .INIT(64'h6666666669666666)) 
+    \score[3]_i_11 
+       (.I0(\score[3]_i_19_n_0 ),
+        .I1(\score[3]_i_20_n_0 ),
+        .I2(pin_1_hit_i_4_n_0),
+        .I3(score446_in),
+        .I4(score447_in),
+        .I5(pin_3_hit_reg_n_0),
+        .O(\score[3]_i_11_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  LUT3 #(
+    .INIT(8'h69)) 
+    \score[3]_i_12 
+       (.I0(\score[3]_i_21_n_0 ),
+        .I1(\score[3]_i_22_n_0 ),
+        .I2(\score[3]_i_23_n_0 ),
+        .O(\score[3]_i_12_n_0 ));
+  LUT6 #(
+    .INIT(64'h000000080008FFFF)) 
+    \score[3]_i_13 
+       (.I0(score427_in),
+        .I1(score426_in),
+        .I2(pin_1_hit_i_4_n_0),
+        .I3(pin_4_hit_reg_n_0),
+        .I4(\score[3]_i_24_n_0 ),
+        .I5(\score[3]_i_19_n_0 ),
+        .O(\score[3]_i_13_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  LUT3 #(
+    .INIT(8'h17)) 
+    \score[3]_i_14 
+       (.I0(\score[3]_i_22_n_0 ),
+        .I1(\score[3]_i_21_n_0 ),
+        .I2(\score[3]_i_23_n_0 ),
+        .O(\score[3]_i_14_n_0 ));
+  LUT4 #(
+    .INIT(16'h8E71)) 
+    \score[3]_i_15 
+       (.I0(\score[3]_i_25_n_0 ),
+        .I1(\score[3]_i_26_n_0 ),
+        .I2(score[0]),
+        .I3(score[1]),
+        .O(\score[3]_i_15_n_0 ));
+  LUT3 #(
+    .INIT(8'h96)) 
+    \score[3]_i_16 
+       (.I0(score[0]),
+        .I1(\score[3]_i_26_n_0 ),
+        .I2(\score[3]_i_25_n_0 ),
+        .O(\score[3]_i_16_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[3]_i_17 
+       (.I0(score439_in),
+        .I1(score440_in),
+        .O(\score[3]_i_17_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFF7FFF)) 
+    \score[3]_i_18 
+       (.I0(score2),
+        .I1(score3),
+        .I2(score4),
+        .I3(score421_in),
+        .I4(pin_1_hit_reg_n_0),
+        .O(\score[3]_i_18_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT5 #(
+    .INIT(32'hFFFF7FFF)) 
+    \score[3]_i_19 
+       (.I0(score231_in),
+        .I1(score330_in),
+        .I2(score429_in),
+        .I3(score432_in),
+        .I4(pin_5_hit_reg_n_0),
+        .O(\score[3]_i_19_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT5 #(
+    .INIT(32'hBFFFFFFF)) 
+    \score[3]_i_20 
+       (.I0(pin_4_hit_reg_n_0),
+        .I1(score2),
+        .I2(score3),
+        .I3(score426_in),
+        .I4(score427_in),
+        .O(\score[3]_i_20_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT5 #(
+    .INIT(32'hBFFFFFFF)) 
+    \score[3]_i_21 
+       (.I0(pin_8_hit_reg_n_0),
+        .I1(score342_in),
+        .I2(score243_in),
+        .I3(score439_in),
+        .I4(score440_in),
+        .O(\score[3]_i_21_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT5 #(
+    .INIT(32'hBFFFFFFF)) 
+    \score[3]_i_22 
+       (.I0(pin_7_hit_reg_n_0),
+        .I1(score231_in),
+        .I2(score330_in),
+        .I3(score436_in),
+        .I4(score437_in),
+        .O(\score[3]_i_22_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  LUT5 #(
+    .INIT(32'hFFFF7FFF)) 
+    \score[3]_i_23 
+       (.I0(score231_in),
+        .I1(score330_in),
+        .I2(score451_in),
+        .I3(score452_in),
+        .I4(pin_6_hit_reg_n_0),
+        .O(\score[3]_i_23_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFF7FFF)) 
+    \score[3]_i_24 
+       (.I0(score2),
+        .I1(score3),
+        .I2(score446_in),
+        .I3(score447_in),
+        .I4(pin_3_hit_reg_n_0),
+        .O(\score[3]_i_24_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT5 #(
+    .INIT(32'hFFFF7FFF)) 
+    \score[3]_i_25 
+       (.I0(score446_in),
+        .I1(score447_in),
+        .I2(score342_in),
+        .I3(score243_in),
+        .I4(pin_9_hit_reg_n_0),
+        .O(\score[3]_i_25_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT5 #(
+    .INIT(32'hBFFFFFFF)) 
+    \score[3]_i_26 
+       (.I0(pin_10_hit_reg_n_0),
+        .I1(score451_in),
+        .I2(score452_in),
+        .I3(score255_in),
+        .I4(score354_in),
+        .O(\score[3]_i_26_n_0 ));
+  LUT3 #(
+    .INIT(8'hE8)) 
+    \score[3]_i_4 
+       (.I0(\score_reg[3]_i_3_n_7 ),
+        .I1(\score[3]_i_11_n_0 ),
+        .I2(\score[3]_i_12_n_0 ),
+        .O(\score[3]_i_4_n_0 ));
+  LUT4 #(
+    .INIT(16'h17E8)) 
+    \score[3]_i_5 
+       (.I0(\score[3]_i_13_n_0 ),
+        .I1(\score_reg[3]_i_3_n_6 ),
+        .I2(\score[3]_i_14_n_0 ),
+        .I3(\score_reg[3]_i_3_n_5 ),
+        .O(\score[3]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h17E8E817E81717E8)) 
+    \score[3]_i_6 
+       (.I0(\score_reg[3]_i_3_n_7 ),
+        .I1(\score[3]_i_11_n_0 ),
+        .I2(\score[3]_i_12_n_0 ),
+        .I3(\score[3]_i_14_n_0 ),
+        .I4(\score[3]_i_13_n_0 ),
+        .I5(\score_reg[3]_i_3_n_6 ),
+        .O(\score[3]_i_6_n_0 ));
+  LUT3 #(
+    .INIT(8'h96)) 
+    \score[3]_i_7 
+       (.I0(\score[3]_i_12_n_0 ),
+        .I1(\score_reg[3]_i_3_n_7 ),
+        .I2(\score[3]_i_11_n_0 ),
+        .O(\score[3]_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'hA0F0FBFB5F0F0404)) 
+    \score[3]_i_9 
+       (.I0(pin_2_hit_reg_n_0),
+        .I1(\score[3]_i_17_n_0 ),
+        .I2(\score[3]_i_18_n_0 ),
+        .I3(pin_2_hit_i_2_n_0),
+        .I4(\score_reg[3]_i_8_n_7 ),
+        .I5(\score_reg[3]_i_8_n_6 ),
+        .O(\score[3]_i_9_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair107" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[4]_i_1 
+       (.I0(in17[4]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[4]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair107" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[5]_i_1 
+       (.I0(in17[5]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[5]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair106" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[6]_i_1 
+       (.I0(in17[6]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[6]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair106" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[7]_i_1 
+       (.I0(in17[7]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[7]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair105" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[8]_i_1 
+       (.I0(in17[8]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[8]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair105" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \score[9]_i_1 
+       (.I0(in17[9]),
+        .I1(\FSM_onehot_game_time_reg_n_0_[2] ),
+        .O(\score[9]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[0] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[0]_i_1_n_0 ),
+        .Q(score[0]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[10] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[10]_i_1_n_0 ),
+        .Q(score[10]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[11] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[11]_i_1_n_0 ),
+        .Q(score[11]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[11]_i_2 
+       (.CI(\score_reg[7]_i_2_n_0 ),
+        .CO({\score_reg[11]_i_2_n_0 ,\score_reg[11]_i_2_n_1 ,\score_reg[11]_i_2_n_2 ,\score_reg[11]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[11:8]),
+        .S({\score_reg[11]_i_3_n_4 ,\score_reg[11]_i_3_n_5 ,\score_reg[11]_i_3_n_6 ,\score_reg[11]_i_3_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[11]_i_3 
+       (.CI(\score_reg[7]_i_3_n_0 ),
+        .CO({\score_reg[11]_i_3_n_0 ,\score_reg[11]_i_3_n_1 ,\score_reg[11]_i_3_n_2 ,\score_reg[11]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[11]_i_3_n_4 ,\score_reg[11]_i_3_n_5 ,\score_reg[11]_i_3_n_6 ,\score_reg[11]_i_3_n_7 }),
+        .S({\score_reg[11]_i_4_n_4 ,\score_reg[11]_i_4_n_5 ,\score_reg[11]_i_4_n_6 ,\score_reg[11]_i_4_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[11]_i_4 
+       (.CI(\score_reg[7]_i_4_n_0 ),
+        .CO({\score_reg[11]_i_4_n_0 ,\score_reg[11]_i_4_n_1 ,\score_reg[11]_i_4_n_2 ,\score_reg[11]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[11]_i_4_n_4 ,\score_reg[11]_i_4_n_5 ,\score_reg[11]_i_4_n_6 ,\score_reg[11]_i_4_n_7 }),
+        .S(score[11:8]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[12] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[12]_i_1_n_0 ),
+        .Q(score[12]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[13] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[13]_i_1_n_0 ),
+        .Q(score[13]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[14] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[14]_i_1_n_0 ),
+        .Q(score[14]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[15] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[15]_i_1_n_0 ),
+        .Q(score[15]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[15]_i_2 
+       (.CI(\score_reg[11]_i_2_n_0 ),
+        .CO({\score_reg[15]_i_2_n_0 ,\score_reg[15]_i_2_n_1 ,\score_reg[15]_i_2_n_2 ,\score_reg[15]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[15:12]),
+        .S({\score_reg[15]_i_3_n_4 ,\score_reg[15]_i_3_n_5 ,\score_reg[15]_i_3_n_6 ,\score_reg[15]_i_3_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[15]_i_3 
+       (.CI(\score_reg[11]_i_3_n_0 ),
+        .CO({\score_reg[15]_i_3_n_0 ,\score_reg[15]_i_3_n_1 ,\score_reg[15]_i_3_n_2 ,\score_reg[15]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[15]_i_3_n_4 ,\score_reg[15]_i_3_n_5 ,\score_reg[15]_i_3_n_6 ,\score_reg[15]_i_3_n_7 }),
+        .S({\score_reg[15]_i_4_n_4 ,\score_reg[15]_i_4_n_5 ,\score_reg[15]_i_4_n_6 ,\score_reg[15]_i_4_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[15]_i_4 
+       (.CI(\score_reg[11]_i_4_n_0 ),
+        .CO({\score_reg[15]_i_4_n_0 ,\score_reg[15]_i_4_n_1 ,\score_reg[15]_i_4_n_2 ,\score_reg[15]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[15]_i_4_n_4 ,\score_reg[15]_i_4_n_5 ,\score_reg[15]_i_4_n_6 ,\score_reg[15]_i_4_n_7 }),
+        .S(score[15:12]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[16] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[16]_i_1_n_0 ),
+        .Q(score[16]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[17] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[17]_i_1_n_0 ),
+        .Q(score[17]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[18] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[18]_i_1_n_0 ),
+        .Q(score[18]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[19] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[19]_i_1_n_0 ),
+        .Q(score[19]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[19]_i_2 
+       (.CI(\score_reg[15]_i_2_n_0 ),
+        .CO({\score_reg[19]_i_2_n_0 ,\score_reg[19]_i_2_n_1 ,\score_reg[19]_i_2_n_2 ,\score_reg[19]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[19:16]),
+        .S({\score_reg[19]_i_3_n_4 ,\score_reg[19]_i_3_n_5 ,\score_reg[19]_i_3_n_6 ,\score_reg[19]_i_3_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[19]_i_3 
+       (.CI(\score_reg[15]_i_3_n_0 ),
+        .CO({\score_reg[19]_i_3_n_0 ,\score_reg[19]_i_3_n_1 ,\score_reg[19]_i_3_n_2 ,\score_reg[19]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[19]_i_3_n_4 ,\score_reg[19]_i_3_n_5 ,\score_reg[19]_i_3_n_6 ,\score_reg[19]_i_3_n_7 }),
+        .S({\score_reg[19]_i_4_n_4 ,\score_reg[19]_i_4_n_5 ,\score_reg[19]_i_4_n_6 ,\score_reg[19]_i_4_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[19]_i_4 
+       (.CI(\score_reg[15]_i_4_n_0 ),
+        .CO({\score_reg[19]_i_4_n_0 ,\score_reg[19]_i_4_n_1 ,\score_reg[19]_i_4_n_2 ,\score_reg[19]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[19]_i_4_n_4 ,\score_reg[19]_i_4_n_5 ,\score_reg[19]_i_4_n_6 ,\score_reg[19]_i_4_n_7 }),
+        .S(score[19:16]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[1] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[1]_i_1_n_0 ),
+        .Q(score[1]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[20] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[20]_i_1_n_0 ),
+        .Q(score[20]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[21] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[21]_i_1_n_0 ),
+        .Q(score[21]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[22] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[22]_i_1_n_0 ),
+        .Q(score[22]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[23] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[23]_i_1_n_0 ),
+        .Q(score[23]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[23]_i_2 
+       (.CI(\score_reg[19]_i_2_n_0 ),
+        .CO({\score_reg[23]_i_2_n_0 ,\score_reg[23]_i_2_n_1 ,\score_reg[23]_i_2_n_2 ,\score_reg[23]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[23:20]),
+        .S({\score_reg[23]_i_3_n_4 ,\score_reg[23]_i_3_n_5 ,\score_reg[23]_i_3_n_6 ,\score_reg[23]_i_3_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[23]_i_3 
+       (.CI(\score_reg[19]_i_3_n_0 ),
+        .CO({\score_reg[23]_i_3_n_0 ,\score_reg[23]_i_3_n_1 ,\score_reg[23]_i_3_n_2 ,\score_reg[23]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[23]_i_3_n_4 ,\score_reg[23]_i_3_n_5 ,\score_reg[23]_i_3_n_6 ,\score_reg[23]_i_3_n_7 }),
+        .S({\score_reg[23]_i_4_n_4 ,\score_reg[23]_i_4_n_5 ,\score_reg[23]_i_4_n_6 ,\score_reg[23]_i_4_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[23]_i_4 
+       (.CI(\score_reg[19]_i_4_n_0 ),
+        .CO({\score_reg[23]_i_4_n_0 ,\score_reg[23]_i_4_n_1 ,\score_reg[23]_i_4_n_2 ,\score_reg[23]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[23]_i_4_n_4 ,\score_reg[23]_i_4_n_5 ,\score_reg[23]_i_4_n_6 ,\score_reg[23]_i_4_n_7 }),
+        .S(score[23:20]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[24] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[24]_i_1_n_0 ),
+        .Q(score[24]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[25] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[25]_i_1_n_0 ),
+        .Q(score[25]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[26] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[26]_i_1_n_0 ),
+        .Q(score[26]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[27] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[27]_i_1_n_0 ),
+        .Q(score[27]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[27]_i_2 
+       (.CI(\score_reg[23]_i_2_n_0 ),
+        .CO({\score_reg[27]_i_2_n_0 ,\score_reg[27]_i_2_n_1 ,\score_reg[27]_i_2_n_2 ,\score_reg[27]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[27:24]),
+        .S({\score_reg[27]_i_3_n_4 ,\score_reg[27]_i_3_n_5 ,\score_reg[27]_i_3_n_6 ,\score_reg[27]_i_3_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[27]_i_3 
+       (.CI(\score_reg[23]_i_3_n_0 ),
+        .CO({\score_reg[27]_i_3_n_0 ,\score_reg[27]_i_3_n_1 ,\score_reg[27]_i_3_n_2 ,\score_reg[27]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[27]_i_3_n_4 ,\score_reg[27]_i_3_n_5 ,\score_reg[27]_i_3_n_6 ,\score_reg[27]_i_3_n_7 }),
+        .S({\score_reg[27]_i_4_n_4 ,\score_reg[27]_i_4_n_5 ,\score_reg[27]_i_4_n_6 ,\score_reg[27]_i_4_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[27]_i_4 
+       (.CI(\score_reg[23]_i_4_n_0 ),
+        .CO({\score_reg[27]_i_4_n_0 ,\score_reg[27]_i_4_n_1 ,\score_reg[27]_i_4_n_2 ,\score_reg[27]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[27]_i_4_n_4 ,\score_reg[27]_i_4_n_5 ,\score_reg[27]_i_4_n_6 ,\score_reg[27]_i_4_n_7 }),
+        .S(score[27:24]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[28] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[28]_i_1_n_0 ),
+        .Q(score[28]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[29] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[29]_i_1_n_0 ),
+        .Q(score[29]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[2] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[2]_i_1_n_0 ),
+        .Q(score[2]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[30] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[30]_i_1_n_0 ),
+        .Q(score[30]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[31] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[31]_i_3_n_0 ),
+        .Q(score[31]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[31]_i_4 
+       (.CI(\score_reg[27]_i_2_n_0 ),
+        .CO({\NLW_score_reg[31]_i_4_CO_UNCONNECTED [3],\score_reg[31]_i_4_n_1 ,\score_reg[31]_i_4_n_2 ,\score_reg[31]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[31:28]),
+        .S({\score_reg[31]_i_5_n_4 ,\score_reg[31]_i_5_n_5 ,\score_reg[31]_i_5_n_6 ,\score_reg[31]_i_5_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[31]_i_5 
+       (.CI(\score_reg[27]_i_3_n_0 ),
+        .CO({\NLW_score_reg[31]_i_5_CO_UNCONNECTED [3],\score_reg[31]_i_5_n_1 ,\score_reg[31]_i_5_n_2 ,\score_reg[31]_i_5_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[31]_i_5_n_4 ,\score_reg[31]_i_5_n_5 ,\score_reg[31]_i_5_n_6 ,\score_reg[31]_i_5_n_7 }),
+        .S({\score_reg[31]_i_6_n_4 ,\score_reg[31]_i_6_n_5 ,\score_reg[31]_i_6_n_6 ,\score_reg[31]_i_6_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[31]_i_6 
+       (.CI(\score_reg[27]_i_4_n_0 ),
+        .CO({\NLW_score_reg[31]_i_6_CO_UNCONNECTED [3],\score_reg[31]_i_6_n_1 ,\score_reg[31]_i_6_n_2 ,\score_reg[31]_i_6_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[31]_i_6_n_4 ,\score_reg[31]_i_6_n_5 ,\score_reg[31]_i_6_n_6 ,\score_reg[31]_i_6_n_7 }),
+        .S(score[31:28]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[3] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[3]_i_1_n_0 ),
+        .Q(score[3]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[3]_i_2 
+       (.CI(1'b0),
+        .CO({\score_reg[3]_i_2_n_0 ,\score_reg[3]_i_2_n_1 ,\score_reg[3]_i_2_n_2 ,\score_reg[3]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,\score_reg[3]_i_3_n_5 ,\score[3]_i_4_n_0 ,1'b0}),
+        .O(in17[3:0]),
+        .S({\score_reg[3]_i_3_n_4 ,\score[3]_i_5_n_0 ,\score[3]_i_6_n_0 ,\score[3]_i_7_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[3]_i_3 
+       (.CI(1'b0),
+        .CO({\score_reg[3]_i_3_n_0 ,\score_reg[3]_i_3_n_1 ,\score_reg[3]_i_3_n_2 ,\score_reg[3]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,\score_reg[3]_i_8_n_6 ,1'b0}),
+        .O({\score_reg[3]_i_3_n_4 ,\score_reg[3]_i_3_n_5 ,\score_reg[3]_i_3_n_6 ,\score_reg[3]_i_3_n_7 }),
+        .S({\score_reg[3]_i_8_n_4 ,\score_reg[3]_i_8_n_5 ,\score[3]_i_9_n_0 ,\score[3]_i_10_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[3]_i_8 
+       (.CI(1'b0),
+        .CO({\score_reg[3]_i_8_n_0 ,\score_reg[3]_i_8_n_1 ,\score_reg[3]_i_8_n_2 ,\score_reg[3]_i_8_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,score[1],1'b0}),
+        .O({\score_reg[3]_i_8_n_4 ,\score_reg[3]_i_8_n_5 ,\score_reg[3]_i_8_n_6 ,\score_reg[3]_i_8_n_7 }),
+        .S({score[3:2],\score[3]_i_15_n_0 ,\score[3]_i_16_n_0 }));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[4] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[4]_i_1_n_0 ),
+        .Q(score[4]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[5] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[5]_i_1_n_0 ),
+        .Q(score[5]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[6] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[6]_i_1_n_0 ),
+        .Q(score[6]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[7] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[7]_i_1_n_0 ),
+        .Q(score[7]),
+        .S(\score[31]_i_1_n_0 ));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[7]_i_2 
+       (.CI(\score_reg[3]_i_2_n_0 ),
+        .CO({\score_reg[7]_i_2_n_0 ,\score_reg[7]_i_2_n_1 ,\score_reg[7]_i_2_n_2 ,\score_reg[7]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(in17[7:4]),
+        .S({\score_reg[7]_i_3_n_4 ,\score_reg[7]_i_3_n_5 ,\score_reg[7]_i_3_n_6 ,\score_reg[7]_i_3_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[7]_i_3 
+       (.CI(\score_reg[3]_i_3_n_0 ),
+        .CO({\score_reg[7]_i_3_n_0 ,\score_reg[7]_i_3_n_1 ,\score_reg[7]_i_3_n_2 ,\score_reg[7]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[7]_i_3_n_4 ,\score_reg[7]_i_3_n_5 ,\score_reg[7]_i_3_n_6 ,\score_reg[7]_i_3_n_7 }),
+        .S({\score_reg[7]_i_4_n_4 ,\score_reg[7]_i_4_n_5 ,\score_reg[7]_i_4_n_6 ,\score_reg[7]_i_4_n_7 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \score_reg[7]_i_4 
+       (.CI(\score_reg[3]_i_8_n_0 ),
+        .CO({\score_reg[7]_i_4_n_0 ,\score_reg[7]_i_4_n_1 ,\score_reg[7]_i_4_n_2 ,\score_reg[7]_i_4_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({\score_reg[7]_i_4_n_4 ,\score_reg[7]_i_4_n_5 ,\score_reg[7]_i_4_n_6 ,\score_reg[7]_i_4_n_7 }),
+        .S(score[7:4]));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[8] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[8]_i_1_n_0 ),
+        .Q(score[8]),
+        .S(\score[31]_i_1_n_0 ));
+  FDSE #(
+    .INIT(1'b0)) 
+    \score_reg[9] 
+       (.C(game_clk),
+        .CE(\score[31]_i_2_n_0 ),
+        .D(\score[9]_i_1_n_0 ),
+        .Q(score[9]),
+        .S(\score[31]_i_1_n_0 ));
 endmodule
 `ifndef GLBL
 `define GLBL

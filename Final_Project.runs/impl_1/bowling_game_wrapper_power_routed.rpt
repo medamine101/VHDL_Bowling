@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date             : Tue May  2 16:13:45 2023
+| Date             : Tue May  2 21:12:53 2023
 | Host             : ece29 running 64-bit Ubuntu 20.04.2 LTS
 | Command          : report_power -file bowling_game_wrapper_power_routed.rpt -pb bowling_game_wrapper_power_summary_routed.pb -rpx bowling_game_wrapper_power_routed.rpx
 | Design           : bowling_game_wrapper
@@ -30,15 +30,15 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.131        |
+| Total On-Chip Power (W)  | 0.133        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.036        |
+| Dynamic (W)              | 0.038        |
 | Device Static (W)        | 0.095        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.5         |
 | Junction Temperature (C) | 26.5         |
-| Confidence Level         | Medium       |
+| Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -53,18 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |     2170 |       --- |             --- |
-|   LUT as Logic |     0.004 |     1103 |     17600 |            6.27 |
-|   CARRY4       |    <0.001 |      247 |      4400 |            5.61 |
-|   Register     |    <0.001 |      356 |     35200 |            1.01 |
+| Slice Logic    |     0.005 |     2436 |       --- |             --- |
+|   LUT as Logic |     0.005 |     1281 |     17600 |            7.28 |
+|   CARRY4       |    <0.001 |      271 |      4400 |            6.16 |
+|   Register     |    <0.001 |      388 |     35200 |            1.10 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     17600 |           <0.01 |
 |   Others       |     0.000 |       21 |       --- |             --- |
-| Signals        |     0.005 |     1294 |       --- |             --- |
+| Signals        |     0.006 |     1621 |       --- |             --- |
 | Block RAM      |     0.020 |       24 |        60 |           40.00 |
-| I/O            |     0.004 |       25 |       100 |           25.00 |
+| I/O            |     0.003 |       25 |       100 |           25.00 |
 | Static Power   |     0.095 |          |           |                 |
-| Total          |     0.131 |          |           |                 |
+| Total          |     0.133 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.035 |       0.031 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.037 |       0.033 |      0.004 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.005 |       0.000 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -104,12 +103,12 @@ Table of Contents
 | User Input Data             | Confidence | Details                                               | Action                                                                                                             |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                      |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                          |                                                                                                                    |
 |                             |            |                                                       |                                                                                                                    |
-| Overall confidence level    | Medium     |                                                       |                                                                                                                    |
+| Overall confidence level    | Low        |                                                       |                                                                                                                    |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
@@ -150,10 +149,10 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| bowling_game_wrapper |     0.036 |
-|   bowling_game_i     |     0.033 |
-|     controller_0     |     0.007 |
-|       U0             |     0.007 |
+| bowling_game_wrapper |     0.038 |
+|   bowling_game_i     |     0.035 |
+|     controller_0     |     0.010 |
+|       U0             |     0.010 |
 |     framebuffer_0    |     0.021 |
 |       U0             |     0.021 |
 |     pmod_joystick_0  |     0.002 |

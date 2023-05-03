@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue May  2 16:13:02 2023
-# Process ID: 2178130
+# Start of session at: Tue May  2 21:12:06 2023
+# Process ID: 2483525
 # Current directory: /home/user/Documents/VHDL_Bowling/Final_Project.runs/impl_1
 # Command line: vivado -log bowling_game_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bowling_game_wrapper.tcl -notrace
 # Log file: /home/user/Documents/VHDL_Bowling/Final_Project.runs/impl_1/bowling_game_wrapper.vdi

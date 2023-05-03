@@ -146,6 +146,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="bowling_game.bd" FileRelPathName="ip/bowling_game_clock_div_25Mhz_0_0_2/bowling_game_clock_div_25Mhz_0_0.xci">
+          <Proxy FileSetName="bowling_game_clock_div_25Mhz_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="bowling_game.bd" FileRelPathName="ip/bowling_game_pixel_pusher_0_0_2/bowling_game_pixel_pusher_0_0.xci">
           <Proxy FileSetName="bowling_game_pixel_pusher_0_0"/>
         </CompFileExtendedInfo>
@@ -163,9 +166,6 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="bowling_game.bd" FileRelPathName="ip/bowling_game_controller_0_0_1/bowling_game_controller_0_0.xci">
           <Proxy FileSetName="bowling_game_controller_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="bowling_game.bd" FileRelPathName="ip/bowling_game_clock_div_25Mhz_0_0_2/bowling_game_clock_div_25Mhz_0_0.xci">
-          <Proxy FileSetName="bowling_game_clock_div_25Mhz_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/bowling_game/hdl/bowling_game_wrapper.vhd">
